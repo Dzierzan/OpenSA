@@ -1,0 +1,21 @@
+wasps_colony:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 5
+	Range: 10c0
+	Report: sounds|CHAINGUN.SDF
+	ReportLooped: true
+	Projectile: Bullet
+		Speed: 562
+		Inaccuracy: 500
+		Image: projectiles
+		Sequences: medium_bullet
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 782
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Paralyzed

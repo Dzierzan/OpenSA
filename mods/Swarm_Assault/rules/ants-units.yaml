@@ -1,0 +1,66 @@
+ants_light:
+	Inherits@1: ^AntsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Soldier
+	Health:
+		HP: 5300
+	Mobile:
+		Speed: 105
+	Buildable:
+		BuildDuration: 75
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: ants_light
+		PauseOnCondition: paralyzed
+
+ants_medium:
+	Inherits@1: ^AntsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Grenadier
+	Health:
+		HP: 4400
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: ants_medium
+		FireDelay: 10
+		LocalOffset: 500,0,555
+		PauseOnCondition: paralyzed
+
+ants_heavy:
+	Inherits@1: ^AntsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Bazooka
+	Health:
+		HP: 7350
+	Mobile:
+		Speed: 78
+	Buildable:
+		BuildDuration: 250
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: ants_heavy
+		FireDelay: 9
+		LocalOffset: 550,0,0
+		PauseOnCondition: paralyzed

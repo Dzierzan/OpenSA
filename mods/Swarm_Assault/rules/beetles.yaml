@@ -1,0 +1,16 @@
+World:
+	Faction@Beetles:
+		Name: Beetles
+		InternalName: beetles
+	MPStartUnits@Beetles:
+		Class: none
+		ClassName: Colony
+		BaseActor: beetles_colony
+		Factions: beetles
+
+^BeetlesUnit:
+	Inherits: ^CoreUnit
+	Buildable:
+		Prerequisites: ~beetles_colony
+	Voiced:
+		VoiceSet: BeetlesVoice

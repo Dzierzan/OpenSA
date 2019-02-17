@@ -1,0 +1,62 @@
+wasps_light:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 5
+	Range: 6c0
+	Report: sounds|MACHINEGUN.SDF
+	ReportLooped: true
+	Projectile: Bullet
+		Speed: 562
+		Inaccuracy: 600
+		Image: projectiles
+		Sequences: small_bullet
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 782
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Paralyzed
+
+wasps_medium:
+	ReloadDelay: 45
+	Range: 14c0
+	Report: sounds|ARROW.SDF
+	InvalidTargets: Colony
+	Projectile: Bullet
+		Speed: 562
+		Inaccuracy: 500
+		Image: projectiles
+		Sequences: arrow
+	Warhead@Damage: SpreadDamage
+		Spread: 512
+		Falloff: 100, 50, 25, 0
+		Damage: 0
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: paralyze_explosion
+		ImpactSounds: sounds|PARALYSIS.SDF
+		ValidTargets: Ground, Paralyzed
+	Warhead@Paralyze: GrantExternalCondition
+		Range: 2c0
+		Duration: 200
+		Condition: paralyzed
+
+wasps_heavy:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 4
+	Range: 6c0
+	Report: sounds|SONIC.SDF
+	ReportLooped: true
+	Projectile: Bullet
+		Speed: 200
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: sonic
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Damage: 1000
+		ValidTargets: Ground, Paralyzed

@@ -1,0 +1,66 @@
+scorpions_light:
+	Inherits@1: ^ScorpionsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Savage
+	Health:
+		HP: 17528
+	Mobile:
+		Speed: 98
+	Buildable:
+		BuildDuration: 250
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: scorpions_light
+		PauseOnCondition: paralyzed
+
+scorpions_medium:
+	Inherits@1: ^ScorpionsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Spear gun
+	Health:
+		HP: 8600
+	Mobile:	
+		Speed: 82
+	Buildable:
+		BuildDuration: 500
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: scorpions_medium
+		FireDelay: 4
+		LocalOffset: 450,0,0
+		PauseOnCondition: paralyzed
+
+scorpions_heavy:
+	Inherits@1: ^ScorpionsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Ninja
+	Health:
+		HP: 12900
+	Mobile:
+		Speed: 105
+	Buildable:
+		BuildDuration: 750
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: scorpions_heavy
+		FireDelay: 4
+		LocalOffset: 700,0,0
+		PauseOnCondition: paralyzed

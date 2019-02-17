@@ -1,0 +1,39 @@
+spiders_colony:
+	idle-overlay: sprites|STCLYSPB_COLONY.ANI
+		ZOffset: 2000
+	idle: sprites|STCLYSPX_COLONYBASE.ANI
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYSPB_WNORMALT.ANI:
+			sprites|STCLYSPB_WNORMALTL.ANI:
+			sprites|STCLYSPB_WNORMALL.ANI:
+			sprites|STCLYSPB_WNORMALBL.ANI:
+			sprites|STCLYSPB_WNORMALB.ANI:
+			sprites|STCLYSPB_WNORMALBR.ANI:
+			sprites|STCLYSPB_WNORMALR.ANI:
+			sprites|STCLYSPB_WNORMALTR.ANI:
+		Facings: 8
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYSPB_WFIRET.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIREL.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIREBL.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIREB.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIREBR.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIRER.ANI:
+				Length: 2
+			sprites|STCLYSPB_WFIRETR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 80
+		ZOffset: 2100

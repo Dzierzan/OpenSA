@@ -1,0 +1,93 @@
+popcorn:
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^CoreNeutralTowerCreep
+	Inherits@4: ^CoreTurret
+	Tooltip:
+		Name: Popcorn Plant
+	Health:
+		HP: 30000
+	Buildable:
+		BuildDuration: 50
+	Armament:
+		Weapon: popcorn
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
+puff:
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^CoreNeutralTowerCreep
+	Inherits@4: ^CoreTurret
+	Tooltip:
+		Name: Seed Ball
+	Health:
+		HP: 4500
+	Buildable:
+		BuildDuration: 50
+	Armament:
+		Weapon: puff
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
+thorn:
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^CoreNeutralTowerCreep
+	Inherits@4: ^CoreTurret
+	Tooltip:
+		Name: Thorn Bush
+	Health:
+		HP: 35000
+	Buildable:
+		BuildDuration: 50
+	Armament:
+		Weapon: spike
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
+freckle:
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^CoreNeutralTowerCreep
+	Inherits@4: ^CoreTurret
+	Tooltip:
+		Name: Choc Freckle
+	Health:
+		HP: 50000
+	Buildable:
+		BuildDuration: 50
+	Armament:
+		Weapon: freckles
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
+lolly_blue:
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^CoreNeutralTowerCreep
+	Inherits@4: ^CoreTurret
+	Tooltip:
+		Name: Death Lolly
+	Health:
+		HP: 13000
+	Buildable:
+		BuildDuration: 50
+	Explodes:
+		Weapon: death_lolly
+		EmptyWeapon: death_lolly
+	ExternalCondition@SELF_DESTRUCT:
+		Condition: self_destruct
+	KillsSelf:
+		RequiresCondition: self_destruct
+	Mobile:
+		Locomotor: unit
+		Speed: 0
+	-WithAttackAnimation:
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+	-Husk:
+
+lolly_orange:
+	Inherits: lolly_blue
+
+lolly_white:
+	Inherits: lolly_blue
+
+lolly_red:
+	Inherits: lolly_blue

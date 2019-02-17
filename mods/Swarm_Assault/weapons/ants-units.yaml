@@ -1,0 +1,56 @@
+ants_light:
+	ValidTargets: Ground, Paralyzed
+	Range: 1c0
+	ReloadDelay: 8 #8
+	Report: sounds|ANTCRUNCH.SDF
+	Projectile: InstantHit
+	Warhead@Damage: SpreadDamage
+		Damage: 200
+		Spread: 1
+		ValidTargets: Ground, Paralyzed
+
+ants_medium:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 4c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: grenade
+	Warhead@Damage: SpreadDamage
+		Spread: 512
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+ants_heavy:
+	ValidTargets: Ground, Paralyzed
+	Range: 8c0
+	ReloadDelay: 55 #50
+	Report: sounds|ROCKETLAUNCH.SDF
+	Projectile: Missile
+		MinimumLaunchSpeed: 25
+		MaximumLaunchSpeed: 100
+		Speed: 260
+		Acceleration: 25
+		Inaccuracy: 300
+		Image: projectiles
+		Sequences: bazooka
+		TrailImage: smoke_trail
+	Warhead@Damage: SpreadDamage
+		Damage: 1950
+		Spread: 1c0
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_2
+		ImpactSounds: sounds|EXPLOSION3.SDF
+		ValidTargets: Ground, Paralyzed

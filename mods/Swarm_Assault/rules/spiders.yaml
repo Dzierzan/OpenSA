@@ -1,0 +1,16 @@
+World:
+	Faction@Spiders:
+		Name: Spiders
+		InternalName: spiders
+	MPStartUnits@Spiders:
+		Class: none
+		ClassName: Colony
+		BaseActor: spiders_colony
+		Factions: spiders
+
+^SpidersUnit:
+	Inherits: ^CoreUnit
+	Buildable:
+		Prerequisites: ~spiders_colony
+	Voiced:
+		VoiceSet: SpidersVoice

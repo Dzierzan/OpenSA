@@ -1,0 +1,73 @@
+ants_colony:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Ants Colony
+	Health:
+		HP: 100000
+	Building:
+		Dimensions: 6,6
+		Footprint: =xxx== xxxxx= xxxxx= xxxxx= ==xx== ====== 
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -2048
+			BottomRight: 1536, 1024
+		TargetableOffsets: -819,-1024,0, -819,0,0, -819,1024,0, 819,-1024,0, 819,0,0, 819,1024,0, 2458,-1024,0, 2458,0,0, 2458,1024,0 # Y,X,Z - Y uses dark space magic. do NOT touch or kittens will die!
+	Production:
+		Produces: Unit
+	ProductionQueue:
+		Type: Unit
+		Group: Unit
+	ProvidesPrerequisite:
+		Prerequisite: ants_colony
+	Exit:
+		SpawnOffset: 0c512,0,0
+		ExitCell: 5,5
+		Facing: 96 
+	RallyPoint:
+		Cursor: move
+		Image:
+		Offset: 5,5
+	WithIdleOverlay:
+
+	# Turret 1
+	Turreted@primary:
+		Turret: primary
+		Offset: 170,-140,0
+		TurnSpeed: 30
+	WithSpriteTurret@primary:
+		Turret: primary
+	Armament@primary:
+		Name: primary
+		Turret: primary
+		Weapon: ants_colony
+	WithTurretAttackAnimation@primary:
+		Armament: primary
+		Turret: primary
+		Sequence: shoot
+
+	# Turret 2
+	Turreted@secondary:
+		Turret: secondary
+		Offset: 3850,500,0
+		TurnSpeed: 30
+	WithSpriteTurret@secondary:
+		Turret: secondary
+	Armament@secondary:
+		Name: secondary
+		Turret: secondary
+		Weapon: ants_colony
+	WithTurretAttackAnimation@secondary:
+		Armament: secondary
+		Turret: secondary
+		Sequence: shoot
+
+	AttackTurreted:
+		Turrets: primary, secondary
+	
+ants_colony.colorpicker:
+	Inherits: ants_colony
+	-MapEditorData:
+	RenderSprites:
+		Image: ants_colony
+		Palette: colorpicker

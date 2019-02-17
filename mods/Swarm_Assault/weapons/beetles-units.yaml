@@ -1,0 +1,60 @@
+beetles_light:
+	ValidTargets: Ground, Paralyzed
+	Range: 4c0
+	ReloadDelay: 6
+	Report: sounds|MINIGUN.SDF
+	ReportLooped: true
+	Projectile: InstantHit
+	Warhead@Damage: SpreadDamage
+		Damage: 782
+		Spread: 100
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Paralyzed
+
+beetles_medium:
+	ValidTargets: Ground, Paralyzed
+	Range: 2c0
+	Burst: 10
+	BurstDelays: 0
+	ReloadDelay: 25
+	StartBurstReport: sounds|SHRAPNELFIRE.SDF
+	Projectile: Bullet
+		Speed: 250
+		LaunchAngle: 200 #62 
+		Inaccuracy: 5000 #813
+		Image: projectiles
+		Sequences: grenade
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 850
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: shrapnel_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+beetles_heavy:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40
+	Range: 12c0
+	Report: sounds|CANNON.SDF
+	Projectile: Bullet
+		Speed: 562
+		Inaccuracy: 1000
+		Image: projectiles
+		Sequences: cannon
+	Warhead@Damage: SpreadDamage
+		Spread: 1c0
+		Damage: 1950
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|EXPLOSION2.SDF
+		ValidTargets: Ground, Paralyzed

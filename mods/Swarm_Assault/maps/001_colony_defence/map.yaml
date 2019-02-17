@@ -1,0 +1,20 @@
+MapFormat: 11
+RequiresMod: Swarm_Assault
+Title: 001) Colony Defence
+Author: Swarm Assault
+Tileset: NORMAL
+MapSize: 66,66
+Bounds: 1,1,64,64
+Visibility: Lobby
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+Actors:

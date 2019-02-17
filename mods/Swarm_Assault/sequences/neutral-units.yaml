@@ -1,0 +1,425 @@
+ant_bull_pirate:
+	idle:
+		Combine:
+			sprites|UNANTSOX_STT.ANI:
+			sprites|UNANTSOX_STTL.ANI:
+			sprites|UNANTSOX_STL.ANI:
+			sprites|UNANTSOX_STBL.ANI:
+			sprites|UNANTSOX_STB.ANI:
+			sprites|UNANTSOX_STBR.ANI:
+			sprites|UNANTSOX_STR.ANI:
+			sprites|UNANTSOX_STTR.ANI:
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNANTSOX_ATT.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATTL.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATL.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATBL.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATB.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATBR.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATR.ANI:
+				Length: 2
+			sprites|UNANTSOX_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 213
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNANTSOX_WAT.ANI:
+				Length: 3
+			sprites|UNANTSOX_WATL.ANI:
+				Length: 3
+			sprites|UNANTSOX_WAL.ANI:
+				Length: 3
+			sprites|UNANTSOX_WABL.ANI:
+				Length: 3
+			sprites|UNANTSOX_WAB.ANI:
+				Length: 3
+			sprites|UNANTSOX_WABR.ANI:
+				Length: 3
+			sprites|UNANTSOX_WAR.ANI:
+				Length: 3
+			sprites|UNANTSOX_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNANTSOX_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTA00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+ants_grenadier_pirate:
+	idle:
+		Combine:
+			sprites|UNANTRGX_STT.ANI:
+			sprites|UNANTRGX_STTL.ANI:
+			sprites|UNANTRGX_STL.ANI:
+			sprites|UNANTRGX_STBL.ANI:
+			sprites|UNANTRGX_STB.ANI:
+			sprites|UNANTRGX_STBR.ANI:
+			sprites|UNANTRGX_STR.ANI:
+			sprites|UNANTRGX_STTR.ANI:
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNANTRGX_ATT.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATTL.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATL.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATBL.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATB.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATBR.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATR.ANI:
+				Length: 2
+			sprites|UNANTRGX_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 347
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNANTRGX_WAT.ANI:
+				Length: 3
+			sprites|UNANTRGX_WATL.ANI:
+				Length: 3
+			sprites|UNANTRGX_WAL.ANI:
+				Length: 3
+			sprites|UNANTRGX_WABL.ANI:
+				Length: 3
+			sprites|UNANTRGX_WAB.ANI:
+				Length: 3
+			sprites|UNANTRGX_WABR.ANI:
+				Length: 3
+			sprites|UNANTRGX_WAR.ANI:
+				Length: 3
+			sprites|UNANTRGX_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNANTRGX_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTB00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+moth:
+	idle:
+		Combine:
+			sprites|UNDEMOTH_WAT.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WABL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAB.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WABR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNDEMOTH_WAT.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WABL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAB.ANII:
+				Length: 3
+			sprites|UNDEMOTH_WABR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Facings: 8
+		Tick: 80
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNDEMOTH_WAT.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WABL.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAB.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WABR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WAR.ANI:
+				Length: 3
+			sprites|UNDEMOTH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNDEMOTH_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTA00.ANI
+
+dragonfly:
+	idle:
+		Combine:
+			sprites|UNDRABOB_WAT.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WABL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAB.ANI:
+				Length: 3
+			sprites|UNDRABOB_WABR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNDRABOB_WAT.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WABL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAB.ANII:
+				Length: 3
+			sprites|UNDRABOB_WABR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Facings: 8
+		Tick: 80
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNDRABOB_WAT.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WABL.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAB.ANI:
+				Length: 3
+			sprites|UNDRABOB_WABR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WAR.ANI:
+				Length: 3
+			sprites|UNDRABOB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNDRABOB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTA00.ANI
+
+fly:
+	idle:
+		Combine:
+			sprites|UNFLYBIG_WAT.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WABL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAB.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WABR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNFLYBIG_WAT.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WABL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAB.ANII:
+				Length: 3
+			sprites|UNFLYBIG_WABR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATR.ANI:
+				Length: 3
+		Length: 3
+		Facings: 8
+		Tick: 80
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNFLYBIG_WAT.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WABL.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAB.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WABR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WAR.ANI:
+				Length: 3
+			sprites|UNFLYBIG_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNFLYBIG_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTA00.ANI
+
+flying_machine:
+	idle:
+		Combine:
+			sprites|UNFLYMCH_WAT.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WABL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAB.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WABR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	shoot:
+		Combine:
+			sprites|UNFLYMCH_WAT.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WABL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAB.ANII:
+				Length: 3
+			sprites|UNFLYMCH_WABR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Facings: 8
+		Tick: 80
+		ZOffset: 100
+	move:
+		Combine:
+			sprites|UNFLYMCH_WAT.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WABL.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAB.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WABR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WAR.ANI:
+				Length: 3
+			sprites|UNFLYMCH_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: sprites|UNFLYMCH_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYANTA00.ANI

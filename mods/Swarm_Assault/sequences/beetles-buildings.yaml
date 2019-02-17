@@ -1,0 +1,39 @@
+beetles_colony:
+	idle-overlay: sprites|STCLYBTB_COLONY.ANI
+		ZOffset: 2000
+	idle: sprites|STCLYBTX_COLONYBASE.ANI
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYBTG_WNORMALT.ANI:
+			sprites|STCLYBTG_WNORMALTL.ANI:
+			sprites|STCLYBTG_WNORMALL.ANI:
+			sprites|STCLYBTG_WNORMALBL.ANI:
+			sprites|STCLYBTG_WNORMALB.ANI:
+			sprites|STCLYBTG_WNORMALBR.ANI:
+			sprites|STCLYBTG_WNORMALR.ANI:
+			sprites|STCLYBTG_WNORMALTR.ANI:
+		Facings: 8
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYBTG_WFIRET.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIREL.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIREBL.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIREB.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIREBR.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRER.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 40
+		ZOffset: 2100

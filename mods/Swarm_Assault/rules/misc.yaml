@@ -1,0 +1,95 @@
+# The spawnpoint for player actors.
+mpspawn:
+	Interactable:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+		Categories: System
+
+# TODO keep commenting from here on!
+^CorePlayer:
+	AlwaysVisible: # TODO what?
+	Shroud:
+		FogCheckboxDisplayOrder: 3
+
+Player:
+	Inherits: ^CorePlayer
+	DeveloperMode: # TODO what?
+	PlaceBuilding:
+	MissionObjectives:
+	ConquestVictoryConditions:
+	PlayerResources:
+	#	SelectableCash: 5000, 6000, 8000, 10000, 12500, 15000, 10000000
+	PowerManager: # TODO what?
+	SupportPowerManager:
+	TechTree: 
+	FrozenActorLayer: # TODO new - what is this for?
+	
+EditorPlayer:
+	Inherits: ^CorePlayer
+
+^CoreWorld:
+	Inherits: ^Palettes
+	AlwaysVisible: 
+	ScreenMap: 
+	ActorMap: 
+	MusicPlaylist:
+	TerrainGeometryOverlay: # TODO do we need this?
+	TerrainRenderer:
+	ShroudRenderer:
+		Index: 0, 15, 3, 6, 12, 9, 11, 7, 14, 13, 1, 2, 4, 8, 5, 10
+	Faction@Random:
+		Name: Any
+		InternalName: Random
+		Side: Random
+		RandomFactionMembers: ants, beetles, scorpions, spiders, wasps
+	LoadWidgetAtGameStart:
+	Locomotor@Unit:
+		Name: unit
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 75
+			Vegetation: 50
+	Locomotor@Wasp:
+		Name: wasp
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 100
+			Vegetation: 100
+	Locomotor@Special:
+		Name: slapfighter
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 100
+			Vegetation: 100
+
+World:
+	Inherits: ^CoreWorld
+	ChatCommands: # TODO what is this for?
+	DevCommands: # TODO what is this for?
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence: # TODO what is this for?
+	ProductionQueueFromSelection: # TODO we can remove this one as soon as our ui works!
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	DomainIndex:
+	SpawnMapActors:
+	MapBuildRadius: # TODO do we want this?
+	MapOptions: # TODO configure this correctly.
+	MPStartLocations:
+	CreateMPPlayers:
+	SpawnMPUnits:
+	PathFinder:
+	ValidateOrder:
+
+EditorWorld:
+	Inherits: ^CoreWorld
+	EditorActorLayer:
+	EditorSelectionLayer:
+		Palette: Swarm_Assault

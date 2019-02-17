@@ -1,0 +1,212 @@
+# Base for anything.
+^CoreVisibleActor:
+	# Required to render anything.
+	RenderSprites:
+	# At default we never see anything under shroud or fog.
+	HiddenUnderFog:
+	# TODO describe why we need this one.
+	BodyOrientation:
+	# TODO describe why we need this one.
+	QuantizeFacingsFromSequence:
+	# Required to see debug overlays.
+	CombatDebugOverlay:
+	ConditionManager:
+
+
+# Base for all movable units.
+^CoreCreature:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^AffectsDeathLolly
+	HitShape:
+	SelectionDecorations:
+	WithSpriteControlGroupDecoration:
+		Palette: Swarm_Assault
+		GroupSequence: groups
+		ReferencePoint: Bottom, Right
+
+	# In general all units can be selected.
+	Selectable:
+		# The default priority for all units.
+	# Units must be destroyed to win a standard game.
+	MustBeDestroyed:
+	# Units have frames for different directions.
+	WithFacingSpriteBody:
+
+# Base for all stationary buildings.
+^CoreBuilding:
+	Inherits: ^CoreVisibleActor
+	# Last seen state of a building will be rendered till the area is explored again.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Use building specific logic.
+	Building:
+		TerrainTypes: Clear
+	# Actor can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground, Colony
+	HitShape:
+	SelectionDecorations:
+	Selectable:
+		Priority: 10
+	WithSpriteBody:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	Explodes:
+		Weapon: dieBuilding
+		EmptyWeapon: dieBuilding
+	# Group all buildings in the map editor.
+	MapEditorData:
+		Categories: Building
+	RevealsShroud:
+		Range: 10c0 # TODO verify in original game
+	SelfHealing:
+		Step: 100
+		HealIfBelow: 100
+		#RequiresCondition: 
+	AppearsOnRadar:
+	ProvidesRadar:
+
+^CoreUnit:
+	Inherits: ^CoreCreature
+	Mobile:
+		Locomotor: unit
+	Targetable:
+		TargetTypes: Ground
+	Selectable:
+		Bounds: 24,24
+		Priority: 20
+	WithMoveAnimation:
+	MapEditorData:
+		Categories: Unit
+	Buildable:
+		Queue: Unit
+		BuildDurationModifier: 100
+	RevealsShroud:
+		Range: 10c0	
+	AppearsOnRadar:
+	WithDeathAnimation:
+		FallbackSequence: die
+	#SelfHealing:
+	#	Step: 100
+	#	HealIfBelow: 100
+	#Living:
+	#	RotationChance: 800
+
+^CoreNeutralUnit:
+	Inherits: ^CoreCreature
+	Mobile:
+		Locomotor: unit
+	Targetable:
+		TargetTypes: Ground
+	Selectable:
+		Bounds: 24,24
+		Priority: 20
+	WithMoveAnimation:
+	MapEditorData:
+		Categories: NeutralUnit
+	RevealsShroud:
+		Range: 10c0	
+	RenderSprites:
+		Palette: Swarm_Assault
+	RenderSprites:
+		Scale: 1.1
+	AppearsOnRadar:
+	WithDeathAnimation:
+		FallbackSequence: die
+	SelfHealing:
+		Step: 100
+		HealIfBelow: 100
+	Wanders:
+		MinMoveDelay: 1500
+		MaxMoveDelay: 3000
+
+^CoreNeutralTowerCreep:
+	Inherits: ^CoreCreature
+	Targetable:
+		TargetTypes: Ground
+	Selectable:
+		Bounds: 24,24
+		Priority: 20
+	MapEditorData:
+		Categories: NeutralUnit
+	RevealsShroud:
+		Range: 10c0	
+	RenderSprites:
+		Palette: Swarm_Assault
+	SelfHealing:
+		Step: 100
+		HealIfBelow: 100
+	AppearsOnRadar:
+	WithDeathAnimation:
+		FallbackSequence: die
+	Husk:
+	WithAttackAnimation:
+		Sequence: shoot
+	GrantConditionOnDamageState:
+		Condition: injured
+		ValidDamageStates: Heavy, Critical
+		GrantPermanently: False
+	AttackTurreted:
+		RequiresCondition: !injured
+
+# Grouped traits for standard turret behavior.
+^CoreTurret:
+	Turreted:
+	WithSpriteTurret:
+	AttackTurreted:
+	WithTurretAttackAnimation:
+		Sequence: shoot
+
+# Grouped traits for standard non-turreted behavior.
+^CoreArmedSelf:
+	AttackFrontal:
+	WithAttackAnimation:
+		Sequence: shoot
+
+^AutoTargetDefault:
+	AutoTarget:
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: Ground, Paralyzed
+
+^AffectsDeathLolly:
+	ProximityExternalCondition@SELF_DESTRUCT:
+		Condition: self_destruct
+		ValidStances: enemy
+		Range: 2c0
+
+# Creates special effect when actor is disabled
+^Paralyzed:
+	TimedConditionBar@PARALYZED: #to be removed later
+		Condition: paralyzed
+		Color: FFFFFF
+	WithIdleOverlay@PARALYZED:
+		Sequence: paralysis
+		Palette: Swarm_Assault
+		RequiresCondition: paralyzed
+	ExternalCondition@PARALYZED:
+		Condition: paralyzed
+	Mobile:
+		RequiresCondition: !paralyzed
+	Targetable:
+		RequiresCondition: !paralyzed
+	Targetable@PARALYZED:
+		TargetTypes: Paralyzed
+		RequiresCondition: paralyzed
+	
+# Map decoration actors.
+^CoreDecoration:
+	Inherits: ^CoreVisibleActor
+	# Always visible, no special shroud logic here.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Decorations  have sprites but do not use facing for them.
+	WithSpriteBody:
+	# Default setting makes decorations take 1x1 tiles.
+	Building:
+		Dimensions: 1,1
+		Footprint: _
+	# Put decorations in own catgegory in map editor.
+	MapEditorData:
+		Categories: Decorations
+	RenderSprites:
+		Palette: Swarm_Assault

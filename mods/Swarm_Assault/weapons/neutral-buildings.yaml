@@ -1,0 +1,101 @@
+popcorn:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #TODO Verify!
+	Range: 6c0
+	Burst: 8
+	BurstDelays: 0
+	StartBurstReport: sounds|WHIPFIRE.SDF
+	Projectile: Missile
+		LockOnProbability: 100 #Homing probability
+		Speed: 150 #TODO Verify!
+		RangeLimit: 40c0 #Run out of fuel after covering this distance
+		ExplodeWhenEmpty: true #Explode when running out of fuel
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: popcorn
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Damage: 253
+		ValidTargets: Ground, Paralyzed
+
+spike:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 30
+	Range: 6c0
+	Report: sounds|SPEAR.SDF
+	Projectile: Bullet
+		Speed: 450 #TODO Verify!
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: spike
+	Warhead@Damage: SpreadDamage
+		Spread: 512
+		Falloff: 100, 50, 25, 0
+		Damage: 900
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		ImpactSounds: sounds|SNIPERHIT.SDF
+		ValidTargets: Ground, Paralyzed
+
+puff: #Temporary weapon, needs to be changed!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #TODO Verify!
+	Range: 5c0
+	Burst: 6
+	BurstDelays: 0
+	StartBurstReport: sounds|PUFFBALLSPAWN.SDF
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: puff
+	Warhead@Damage: SpreadDamage
+		Spread: 512
+		Falloff: 100, 50, 25, 0
+		Damage: 500 #Might require further verifing
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+freckles: #Temporary weapon, needs to be changed!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 4c0
+	Report: sounds|FRECKLEFIRE.SDF
+	ReportLooped: true
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Image: projectiles
+		Sequences: freckles
+	Warhead@Damage: SpreadDamage
+		Spread: 512
+		Falloff: 100, 50, 25, 0
+		Damage: 600 #Might require further verifing
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+death_lolly:
+	ValidTargets: Ground, Paralyzed
+	Range: 5c0
+	Warhead@Damage: SpreadDamage
+		Damage: 4500
+		Spread: 3c0 
+		Falloff: 100, 100
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|EXPLOSION2.SDF
+		ValidTargets: Ground, Paralyzed
+

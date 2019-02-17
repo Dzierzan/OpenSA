@@ -1,0 +1,191 @@
+spiders_light:
+	idle:
+		Combine:
+			sprites|UNSPIBWB_STT.ANI:
+			sprites|UNSPIBWB_STTL.ANI:
+			sprites|UNSPIBWB_STL.ANI:
+			sprites|UNSPIBWB_STBL.ANI:
+			sprites|UNSPIBWB_STB.ANI:
+			sprites|UNSPIBWB_STBR.ANI:
+			sprites|UNSPIBWB_STR.ANI:
+			sprites|UNSPIBWB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNSPIBWB_ATT.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATTL.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATL.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATBL.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATB.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATBR.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATR.ANI:
+				Length: 2
+			sprites|UNSPIBWB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 213
+	move:
+		Combine:
+			sprites|UNSPIBWB_WAT.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WATL.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WAL.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WABL.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WAB.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WABR.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WAR.ANI:
+				Length: 3
+			sprites|UNSPIBWB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNSPIBWB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYSPIDERA00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+spiders_medium:
+	idle:
+		Combine:
+			sprites|UNSPISNB_STT.ANI:
+			sprites|UNSPISNB_STTL.ANI:
+			sprites|UNSPISNB_STL.ANI:
+			sprites|UNSPISNB_STBL.ANI:
+			sprites|UNSPISNB_STB.ANI:
+			sprites|UNSPISNB_STBR.ANI:
+			sprites|UNSPISNB_STR.ANI:
+			sprites|UNSPISNB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNSPISNB_ATT.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATTL.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATL.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATBL.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATB.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATBR.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATR.ANI:
+				Length: 2
+			sprites|UNSPISNB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 80
+	move:
+		Combine:
+			sprites|UNSPISNB_WAT.ANI:
+				Length: 3
+			sprites|UNSPISNB_WATL.ANI:
+				Length: 3
+			sprites|UNSPISNB_WAL.ANI:
+				Length: 3
+			sprites|UNSPISNB_WABL.ANI:
+				Length: 3
+			sprites|UNSPISNB_WAB.ANI:
+				Length: 3
+			sprites|UNSPISNB_WABR.ANI:
+				Length: 3
+			sprites|UNSPISNB_WAR.ANI:
+				Length: 3
+			sprites|UNSPISNB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNSPISNB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYSPIDERB00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+spiders_heavy:
+	idle:
+		Combine:
+			sprites|UNSPIRKB_STT.ANI:
+			sprites|UNSPIRKB_STTL.ANI:
+			sprites|UNSPIRKB_STL.ANI:
+			sprites|UNSPIRKB_STBL.ANI:
+			sprites|UNSPIRKB_STB.ANI:
+			sprites|UNSPIRKB_STBR.ANI:
+			sprites|UNSPIRKB_STR.ANI:
+			sprites|UNSPIRKB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNSPIRKB_ATT.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATTL.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATL.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATBL.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATB.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATBR.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATR.ANI:
+				Length: 2
+			sprites|UNSPIRKB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 107
+	move:
+		Combine:
+			sprites|UNSPIRKB_WAT.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WATL.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WAL.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WABL.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WAB.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WABR.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WAR.ANI:
+				Length: 3
+			sprites|UNSPIRKB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNSPIRKB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYSPIDERC00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000

@@ -1,0 +1,1601 @@
+General:
+	Name: Normal
+	Id: NORMAL
+	EditorTemplateOrder: Terrain
+	IgnoreTileSpriteOffsets: True
+
+Terrain:
+	TerrainType@Clear:
+		Type: Clear
+		TargetTypes: Ground
+		Color: 865F45
+	TerrainType@Water:
+		Type: Water
+		TargetTypes: Ground
+		Color: 455F86
+	TerrainType@Rock:
+		Type: Rock
+		TargetTypes: Ground
+		Color: 767676
+	TerrainType@Vegetation:
+		Type: Vegetation
+		TargetTypes: Ground
+		Color: 45864B
+
+Templates:
+	#CLEAR
+
+	Template@109:
+		Id: 109
+		Images: bits/normal/clear_144x144.png
+		Size: 2,2
+		PickAny: true
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+			16: Clear
+			17: Clear
+			18: Clear
+			19: Clear
+			20: Clear
+			21: Clear
+			22: Clear
+			23: Clear
+			24: Clear
+			25: Clear
+			26: Clear
+			27: Clear
+			28: Clear
+			29: Clear
+			30: Clear
+			31: Clear
+			32: Clear
+			33: Clear
+			34: Clear
+			35: Clear
+	Template@32:
+		Id: 32
+		Images: sprites|TESANDMB00.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@33:
+		Id: 33
+		Images: sprites|TESANDMB01.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@34:
+		Id: 34
+		Images: sprites|TESANDMB02.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@35:
+		Id: 35
+		Images: sprites|TESANDMB03.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@36:
+		Id: 36
+		Images: sprites|TESANDMB04.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@110:
+		Id: 110
+		Images: bits/normal/clear_144x144.png
+		Size: 6,6
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+			16: Clear
+			17: Clear
+			18: Clear
+			19: Clear
+			20: Clear
+			21: Clear
+			22: Clear
+			23: Clear
+			24: Clear
+			25: Clear
+			26: Clear
+			27: Clear
+			28: Clear
+			29: Clear
+			30: Clear
+			31: Clear
+			32: Clear
+			33: Clear
+			34: Clear
+			35: Clear
+	Template@111:
+		Id: 111
+		Images: bits/normal/clear_96x96.png
+		Size: 4,4
+		Palette: Swarm_Assault
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+
+
+	#Water
+
+	Template@101:
+		Id: 101
+		Images: bits/normal/water_144x144.png
+		Size: 2,2
+		PickAny: true
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+			4: Water
+			5: Water
+			6: Water
+			7: Water
+			8: Water
+			9: Water
+			10: Water
+			11: Water
+			12: Water
+			13: Water
+			14: Water
+			15: Water
+			16: Water
+			17: Water
+			18: Water
+			19: Water
+			20: Water
+			21: Water
+			22: Water
+			23: Water
+			24: Water
+			25: Water
+			26: Water
+			27: Water
+			28: Water
+			29: Water
+			30: Water
+			31: Water
+			32: Water
+			33: Water
+			34: Water
+			35: Water
+	Template@9:
+		Id: 9
+		Images: sprites|TESANDMA09.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@12:
+		Id: 12
+		Images: sprites|TESANDMA12.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@26:
+		Id: 26
+		Images: sprites|TESANDMA26.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@27:
+		Id: 27
+		Images: sprites|TESANDMA27.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@28:
+		Id: 28
+		Images: sprites|TESANDMA28.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@29:
+		Id: 29
+		Images: sprites|TESANDMA29.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@17:
+		Id: 17
+		Images: sprites|TESANDMA17.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@20:
+		Id: 20
+		Images: sprites|TESANDMA20.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@7:
+		Id: 7
+		Images: sprites|TESANDMA07.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@23:
+		Id: 23
+		Images: sprites|TESANDMA23.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@16:
+		Id: 16
+		Images: sprites|TESANDMA16.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Clear
+			3: Water
+	Template@19:
+		Id: 19
+		Images: sprites|TESANDMA19.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Clear
+			3: Water
+	Template@8:
+		Id: 8
+		Images: sprites|TESANDMA08.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@11:
+		Id: 11
+		Images: sprites|TESANDMA11.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@0:
+		Id: 0
+		Images: sprites|TESANDMA00.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Clear
+			1: Water
+			2: Water
+			3: Water
+	Template@3:
+		Id: 3
+		Images: sprites|TESANDMA03.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Clear
+			1: Water
+			2: Water
+			3: Water
+	Template@15:
+		Id: 15
+		Images: sprites|TESANDMA15.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@31:
+		Id: 31
+		Images: sprites|TESANDMA31.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@1:
+		Id: 1
+		Images: sprites|TESANDMA01.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@4:
+		Id: 4
+		Images: sprites|TESANDMA04.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@2:
+		Id: 2
+		Images: sprites|TESANDMA02.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Clear
+			2: Water
+			3: Water
+	Template@5:
+		Id: 5
+		Images: sprites|TESANDMA05.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Clear
+			2: Water
+			3: Water
+	Template@14:
+		Id: 14
+		Images: sprites|TESANDMA14.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@30:
+		Id: 30
+		Images: sprites|TESANDMA30.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@10:
+		Id: 10
+		Images: sprites|TESANDMA10.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@13:
+		Id: 13
+		Images: sprites|TESANDMA13.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@18:
+		Id: 18
+		Images: sprites|TESANDMA18.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Clear
+	Template@21:
+		Id: 21
+		Images: sprites|TESANDMA21.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Clear
+	Template@6:
+		Id: 6
+		Images: sprites|TESANDMA06.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@22:
+		Id: 22
+		Images: sprites|TESANDMA22.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@24:
+		Id: 24
+		Images: sprites|TESANDMA24.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@25:
+		Id: 25
+		Images: sprites|TESANDMA25.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+	Template@102:
+		Id: 102
+		Images: bits/normal/water_144x144.png
+		Size: 6,6
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+			4: Water
+			5: Water
+			6: Water
+			7: Water
+			8: Water
+			9: Water
+			10: Water
+			11: Water
+			12: Water
+			13: Water
+			14: Water
+			15: Water
+			16: Water
+			17: Water
+			18: Water
+			19: Water
+			20: Water
+			21: Water
+			22: Water
+			23: Water
+			24: Water
+			25: Water
+			26: Water
+			27: Water
+			28: Water
+			29: Water
+			30: Water
+			31: Water
+			32: Water
+			33: Water
+			34: Water
+			35: Water
+	Template@103:
+		Id: 103
+		Images: bits/normal/water_96x96.png
+		Size: 4,4
+		Palette: Swarm_Assault
+		Categories: Water
+		Tiles:
+			0: Water
+			1: Water
+			2: Water
+			3: Water
+			4: Water
+			5: Water
+			6: Water
+			7: Water
+			8: Water
+			9: Water
+			10: Water
+			11: Water
+			12: Water
+			13: Water
+			14: Water
+			15: Water
+
+	#Rock
+
+	Template@46:
+		Id: 46
+		Images: sprites|TESANDMC09.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@49:
+		Id: 49
+		Images: sprites|TESANDMC12.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@63:
+		Id: 63
+		Images: sprites|TESANDMC26.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@64:
+		Id: 64
+		Images: sprites|TESANDMC27.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@65:
+		Id: 65
+		Images: sprites|TESANDMC28.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@66:
+		Id: 66
+		Images: sprites|TESANDMC29.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@38:
+		Id: 38
+		Images: sprites|TESANDMC01.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Rock
+			3: Rock
+	Template@41:
+		Id: 41
+		Images: sprites|TESANDMC04.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Rock
+			3: Rock
+	Template@39:
+		Id: 39
+		Images: sprites|TESANDMC02.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Rock
+			3: Clear
+	Template@42:
+		Id: 42
+		Images: sprites|TESANDMC05.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Rock
+			3: Clear
+	Template@51:
+		Id: 51
+		Images: sprites|TESANDMC14.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Rock
+			3: Rock
+	Template@67:
+		Id: 67
+		Images: sprites|TESANDMC30.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Rock
+			3: Rock
+	Template@47:
+		Id: 47
+		Images: sprites|TESANDMC10.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Rock
+			3: Clear
+	Template@50:
+		Id: 50
+		Images: sprites|TESANDMC13.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Rock
+			3: Clear
+	Template@43:
+		Id: 43
+		Images: sprites|TESANDMC06.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Clear
+	Template@59:
+		Id: 59
+		Images: sprites|TESANDMC22.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Clear
+	Template@55:
+		Id: 55
+		Images: sprites|TESANDMC18.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@58:
+		Id: 58
+		Images: sprites|TESANDMC21.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@54:
+		Id: 54
+		Images: sprites|TESANDMC17.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Clear
+			3: Clear
+	Template@57:
+		Id: 57
+		Images: sprites|TESANDMC20.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Clear
+			3: Clear
+	Template@53:
+		Id: 53
+		Images: sprites|TESANDMC16.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Clear
+			3: Clear
+	Template@56:
+		Id: 56
+		Images: sprites|TESANDMC19.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Clear
+			3: Clear
+	Template@60:
+		Id: 60
+		Images: sprites|TESANDMC23.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Clear
+			3: Rock
+	Template@44:
+		Id: 44
+		Images: sprites|TESANDMC07.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Clear
+			3: Rock
+	Template@45:
+		Id: 45
+		Images: sprites|TESANDMC08.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Clear
+			3: Rock
+	Template@48:
+		Id: 48
+		Images: sprites|TESANDMC11.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Clear
+			3: Rock
+	Template@52:
+		Id: 52
+		Images: sprites|TESANDMC15.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@68:
+		Id: 68
+		Images: sprites|TESANDMC31.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@37:
+		Id: 37
+		Images: sprites|TESANDMC00.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Rock
+	Template@40:
+		Id: 40
+		Images: sprites|TESANDMC03.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Rock
+	Template@61:
+		Id: 61
+		Images: sprites|TESANDMC24.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@62:
+		Id: 62
+		Images: sprites|TESANDMC25.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	Template@105:
+		Id: 105
+		Images: bits/normal/rock_144x144.png
+		Size: 6,6
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+			4: Rock
+			5: Rock
+			6: Rock
+			7: Rock
+			8: Rock
+			9: Rock
+			10: Rock
+			11: Rock
+			12: Rock
+			13: Rock
+			14: Rock
+			15: Rock
+			16: Rock
+			17: Rock
+			18: Rock
+			19: Rock
+			20: Rock
+			21: Rock
+			22: Rock
+			23: Rock
+			24: Rock
+			25: Rock
+			26: Rock
+			27: Rock
+			28: Rock
+			29: Rock
+			30: Rock
+			31: Rock
+			32: Rock
+			33: Rock
+			34: Rock
+			35: Rock
+	Template@106:
+		Id: 106
+		Images: bits/normal/rock_96x96.png
+		Size: 4,4
+		Palette: Swarm_Assault
+		Categories: Rock
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+			4: Rock
+			5: Rock
+			6: Rock
+			7: Rock
+			8: Rock
+			9: Rock
+			10: Rock
+			11: Rock
+			12: Rock
+			13: Rock
+			14: Rock
+			15: Rock
+
+	#VEGETATION
+
+	Template@78:
+		Id: 78
+		Images: sprites|TESANDMD09.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@81:
+		Id: 81
+		Images: sprites|TESANDMD12.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@95:
+		Id: 95
+		Images: sprites|TESANDMD26.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@96:
+		Id: 96
+		Images: sprites|TESANDMD27.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@97:
+		Id: 97
+		Images: sprites|TESANDMD28.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@98:
+		Id: 98
+		Images: sprites|TESANDMD29.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@70:
+		Id: 70
+		Images: sprites|TESANDMD01.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Vegetation
+			3: Vegetation
+	Template@73:
+		Id: 73
+		Images: sprites|TESANDMD04.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Vegetation
+			3: Vegetation
+	Template@71:
+		Id: 71
+		Images: sprites|TESANDMD02.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Vegetation
+			3: Rock
+	Template@74:
+		Id: 74
+		Images: sprites|TESANDMD05.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Vegetation
+			3: Rock
+	Template@83:
+		Id: 83
+		Images: sprites|TESANDMD14.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Vegetation
+			3: Vegetation
+	Template@99:
+		Id: 99
+		Images: sprites|TESANDMD30.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Vegetation
+			3: Vegetation
+	Template@79:
+		Id: 79
+		Images: sprites|TESANDMD10.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Vegetation
+			3: Rock
+	Template@82:
+		Id: 82
+		Images: sprites|TESANDMD13.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Vegetation
+			3: Rock
+	Template@75:
+		Id: 75
+		Images: sprites|TESANDMD06.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Rock
+	Template@91:
+		Id: 91
+		Images: sprites|TESANDMD22.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Rock
+	Template@87:
+		Id: 87
+		Images: sprites|TESANDMD18.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@90:
+		Id: 90
+		Images: sprites|TESANDMD21.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@86:
+		Id: 86
+		Images: sprites|TESANDMD17.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Rock
+			3: Rock		
+	Template@89:
+		Id: 89
+		Images: sprites|TESANDMD20.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Rock
+			3: Rock
+	Template@85:
+		Id: 85
+		Images: sprites|TESANDMD16.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Rock
+			3: Rock
+	Template@88:
+		Id: 88
+		Images: sprites|TESANDMD19.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Rock
+			3: Rock
+	Template@92:
+		Id: 92
+		Images: sprites|TESANDMD23.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Rock
+			3: Vegetation
+	Template@76:
+		Id: 76
+		Images: sprites|TESANDMD07.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Rock
+			3: Vegetation
+	Template@77:
+		Id: 77
+		Images: sprites|TESANDMD08.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Rock
+			3: Vegetation		
+	Template@80:
+		Id: 80
+		Images: sprites|TESANDMD11.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Rock
+			3: Vegetation
+	Template@84:
+		Id: 84
+		Images: sprites|TESANDMD15.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@100:
+		Id: 100
+		Images: sprites|TESANDMD31.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@69:
+		Id: 69
+		Images: sprites|TESANDMD00.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Rock
+			3: Vegetation
+	Template@72:
+		Id: 72
+		Images: sprites|TESANDMD03.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Vegetation
+	Template@93:
+		Id: 93
+		Images: sprites|TESANDMD24.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+	Template@94:
+		Id: 94
+		Images: sprites|TESANDMD25.DDF
+		Frames: 0,1,2,3
+		Size: 2,2
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Rock
+			1: Rock
+			2: Rock
+			3: Rock
+	Template@107:
+		Id: 107
+		Images: bits/normal/vegetation_144x144.png
+		Size: 6,6
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+			4: Vegetation
+			5: Vegetation
+			6: Vegetation
+			7: Vegetation
+			8: Vegetation
+			9: Vegetation
+			10: Vegetation
+			11: Vegetation
+			12: Vegetation
+			13: Vegetation
+			14: Vegetation
+			15: Vegetation
+			16: Vegetation
+			17: Vegetation
+			18: Vegetation
+			19: Vegetation
+			20: Vegetation
+			21: Vegetation
+			22: Vegetation
+			23: Vegetation
+			24: Vegetation
+			25: Vegetation
+			26: Vegetation
+			27: Vegetation
+			28: Vegetation
+			29: Vegetation
+			30: Vegetation
+			31: Vegetation
+			32: Vegetation
+			33: Vegetation
+			34: Vegetation
+			35: Vegetation
+	Template@108:
+		Id: 108
+		Images: bits/normal/vegetation_96x96.png
+		Size: 4,4
+		Palette: Swarm_Assault
+		Categories: Vegetation
+		Tiles:
+			0: Vegetation
+			1: Vegetation
+			2: Vegetation
+			3: Vegetation
+			4: Vegetation
+			5: Vegetation
+			6: Vegetation
+			7: Vegetation
+			8: Vegetation
+			9: Vegetation
+			10: Vegetation
+			11: Vegetation
+			12: Vegetation
+			13: Vegetation
+			14: Vegetation
+			15: Vegetation

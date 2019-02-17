@@ -1,0 +1,68 @@
+wasps_light:
+	Inherits@1: ^WaspsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Assault
+	Health:
+		HP: 5300
+	Mobile:
+		Speed: 197
+	Buildable:
+		BuildDuration: 250
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: wasps_light
+		LocalOffset: 500,0,0
+		PauseOnCondition: paralyzed
+
+wasps_medium:
+	Inherits@1: ^WaspsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Tooltip:
+		Name: Parasite
+	Health:
+		HP: 11000
+	Mobile:
+		Speed: 134
+	Buildable:
+		BuildDuration: 350
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: wasps_medium
+		FireDelay: 1
+		LocalOffset: 400,0,0
+	AutoTargetPriority@PARALYZED:
+		InvalidTargets: Paralyzed
+	AutoTargetPriority@COLONY:
+		InvalidTargets: Colony
+
+wasps_heavy:
+	Inherits@1: ^WaspsUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Sonic
+	Health:
+		HP: 15400
+	Mobile:
+		Speed: 155
+	Buildable:
+		BuildDuration: 550
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: wasps_heavy
+		LocalOffset: 1000,0,0
+		PauseOnCondition: paralyzed

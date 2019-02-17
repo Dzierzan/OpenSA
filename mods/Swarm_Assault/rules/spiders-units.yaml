@@ -1,0 +1,64 @@
+spiders_light:
+	Inherits@1: ^SpidersUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Black widow
+	Health:
+		HP: 15400
+	Mobile:
+		Speed: 147
+	Buildable:
+		BuildDuration: 200
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: spiders_light
+		PauseOnCondition: paralyzed
+
+spiders_medium:
+	Inherits@1: ^SpidersUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Sniper
+	Health:
+		HP: 6900
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 450
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: spiders_medium
+		PauseOnCondition: paralyzed
+
+spiders_heavy:
+	Inherits@1: ^SpidersUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Missile
+	Health:
+		HP: 13000
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 550
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: spiders_heavy
+		FireDelay: 2
+		LocalOffset: 500,0,0
+		PauseOnCondition: paralyzed

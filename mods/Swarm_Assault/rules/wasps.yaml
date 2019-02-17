@@ -1,0 +1,18 @@
+World:
+	Faction@Wasps:
+		Name: Wasps
+		InternalName: wasps
+	MPStartUnits@Wasps:
+		Class: none
+		ClassName: Colony
+		BaseActor: wasps_colony
+		Factions: wasps
+
+^WaspsUnit:
+	Inherits: ^CoreUnit
+	Buildable:
+		Prerequisites: ~wasps_colony
+	Voiced:
+		VoiceSet: WaspsVoice
+	Mobile:
+		Locomotor: wasp

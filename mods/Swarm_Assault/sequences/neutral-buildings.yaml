@@ -1,0 +1,102 @@
+popcorn:
+	idle: sprites|OBWHIPPL_NORMAL.ANI
+	scratched-idle: sprites|OBWHIPPL_DAMAGEA.ANI
+	damaged-idle: sprites|OBWHIPPL_DAMAGEB.ANI
+	critical-idle: sprites|OBWHIPPL_DAMAGEC.ANI
+	grow: sprites|OBWHIPPL_GROW.ANI
+		Length: 5
+		Tick: 40
+	shoot: sprites|OBWHIPPL_ATTACK.ANI
+		Length: 6
+		Tick: 80
+	die: sprites|OBWHIPPL_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+
+puff:
+	idle: sprites|OBPUFFBL_NORMAL.ANI
+	scuffed-idle: sprites|OBPUFFBL_DAMAGEA.ANI
+	scratched-idle: sprites|OBPUFFBL_DAMAGEB.ANI
+	damaged-idle: sprites|OBPUFFBL_DAMAGEC.ANI
+	critical-idle: sprites|OBPUFFBL_DAMAGED.ANI
+	grow: sprites|OBPUFFBL_GROW.ANI
+		Length: 4
+		Tick: 40
+	shoot: sprites|OBPUFFBL_SPAWN.ANI
+		Length: 6
+		Tick: 80
+	die: sprites|OBPUFFBL_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+
+thorn:
+	idle: sprites|OBTHORNB_NORMAL.ANI
+	damaged-idle: sprites|OBTHORNB_DAMAGEA.ANI
+	critical-idle: sprites|OBTHORNB_DAMAGEB.ANI
+	grow: sprites|OBTHORNB_GROW.ANI
+		Length: 5
+		Tick: 40
+	shoot: sprites|OBTHORNB_NORMAL.ANI
+	die: sprites|OBTHORNB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+
+freckle:
+	idle: sprites|FRECKLE_NORMAL.ANI
+	damaged-idle: sprites|FRECKLE_DAMAGEA.ANI
+	critical-idle: sprites|FRECKLE_DAMAGEB.ANI
+	grow: sprites|FRECKLE_GROW.ANI
+		Length: 5
+		Tick: 40
+	shoot: sprites|FRECKLE_NORMAL.ANI
+	die: sprites|FRECKLE_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+
+lolly_blue:
+	idle: sprites|OBLOLLYB_NORMAL.ANI
+	grow: sprites|OBLOLLYB_GROW.ANI
+		Length: 4
+		Tick: 40
+	shoot: sprites|OBLOLLYB_NORMAL.ANI
+	die: sprites|OBLOLLYB_DEAD.ANI
+		Length: 3
+		Tick: 9000
+		ZOffset: -2000
+
+lolly_orange:
+	idle: sprites|OBLOLLYO_NORMAL.ANI
+	grow: sprites|OBLOLLYO_GROW.ANI
+		Length: 4
+		Tick: 40
+	shoot: sprites|OBLOLLYO_NORMAL.ANI
+	die: sprites|OBLOLLYO_DEAD.ANI
+		Length: 3
+		Tick: 9000
+		ZOffset: -2000
+
+lolly_white:
+	idle: sprites|OBLOLLYP_NORMAL.ANI
+	grow: sprites|OBLOLLYP_GROW.ANI
+		Length: 4
+		Tick: 40
+	shoot: sprites|OBLOLLYP_NORMAL.ANI
+	die: sprites|OBLOLLYP_DEAD.ANI
+		Length: 3
+		Tick: 9000
+		ZOffset: -2000
+
+lolly_red:
+	idle: sprites|OBLOLLYS_NORMAL.ANI
+	grow: sprites|OBLOLLYS_GROW.ANI
+		Length: 4
+		Tick: 40
+	shoot: sprites|OBLOLLYS_NORMAL.ANI
+	die: sprites|OBLOLLYS_DEAD.ANI
+		Length: 3
+		Tick: 9000
+		ZOffset: -2000

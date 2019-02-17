@@ -1,0 +1,10 @@
+Sounds:
+	DefaultVariant: .SDF
+	Notifications:
+		ChatLine: sounds|COMMAND
+		ClickSound: sounds|COMMAND
+
+Speech:
+	DefaultVariant: .SDF
+	Notifications:
+		UnitReady: sounds|PRODUCTIONCOMPLETE

@@ -1,0 +1,63 @@
+beetles_light:
+	Inherits@1: ^BeetlesUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Lady Bug
+	Health:
+		HP: 7600
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 200
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: beetles_light
+		PauseOnCondition: paralyzed
+
+beetles_medium:
+	Inherits@1: ^BeetlesUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Shrapnel
+	Health:
+		HP: 20200
+	Mobile:
+		Speed: 87
+	Buildable:
+		BuildDuration: 450
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+
+beetles_heavy:
+	Inherits@1: ^BeetlesUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Cannon
+	Health:
+		HP: 7600
+	Mobile:
+		Speed: 53
+	Buildable:
+		BuildDuration: 700
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: beetles_heavy
+		LocalOffset: 500,0,0
+		PauseOnCondition: paralyzed

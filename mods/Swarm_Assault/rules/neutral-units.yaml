@@ -1,0 +1,153 @@
+ant_bull_pirate:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Bull Ant
+	Health:
+		HP: 5300
+	Mobile:
+		Speed: 105
+	Buildable:
+		BuildDuration: 75
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Voiced:
+		VoiceSet: AntsVoice
+	Armament:
+		Weapon: ant_bull_pirate
+		PauseOnCondition: paralyzed
+	Wanders:
+		WanderMoveRadius: 2
+		ReduceMoveRadiusDelay: 50
+		MinMoveDelay: 250
+		MaxMoveDelay: 450
+	RenderSprites:
+		Scale: 1.1
+
+ants_grenadier_pirate:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Pirate Grenadier
+	Health:
+		HP: 4400
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	#RevealsShroud:
+	#	Range: 7c0
+	Voiced:
+		VoiceSet: AntsVoice
+	Armament:
+		Weapon: ants_grenadier_pirate
+		FireDelay: 10
+		LocalOffset: 500,0,555
+		PauseOnCondition: paralyzed
+	Wanders:
+		WanderMoveRadius: 2
+		ReduceMoveRadiusDelay: 50
+		MinMoveDelay: 250
+		MaxMoveDelay: 450
+	RenderSprites:
+		Scale: 1.1
+
+dragonfly:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Tooltip:
+		Name: Dragonfly
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 100
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	Voiced:
+		VoiceSet: NeutralVoice
+	Armament:
+		Weapon: dragonfly
+		LocalOffset: 500,0,555
+	RenderSprites:
+		Palette: Swarm_Assault
+	-Buildable:
+
+fly:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Tooltip:
+		Name: Desert Fly
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 100
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	Voiced:
+		VoiceSet: NeutralVoice
+	Armament:
+		Weapon: fly
+		LocalOffset: 500,0,555
+	RenderSprites:
+		Palette: Swarm_Assault
+	-Buildable:
+
+moth:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Tooltip:
+		Name: Spawn Moth
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 100
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	Voiced:
+		VoiceSet: NeutralVoice
+	Armament:
+		Weapon: moth
+		LocalOffset: 500,0,555
+	RenderSprites:
+		Palette: Swarm_Assault	
+	-Buildable:
+
+flying_machine:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Tooltip:
+		Name: Flying Machine
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 100
+	Buildable:
+		BuildDuration: 150
+	Valued:
+		Cost: 0
+	Voiced:
+		VoiceSet: NeutralVoice
+	Armament:
+		Weapon: flying_machine
+		LocalOffset: 500,0,555
+	RenderSprites:
+		Palette: Swarm_Assault
+	-Buildable:

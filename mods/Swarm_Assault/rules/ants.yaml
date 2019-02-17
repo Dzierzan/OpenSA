@@ -1,0 +1,16 @@
+World:
+	Faction@Ants:
+		Name: Ants
+		InternalName: ants
+	MPStartUnits@Ants:
+		Class: none
+		ClassName: Colony
+		BaseActor: ants_colony
+		Factions: ants
+
+^AntsUnit:
+	Inherits: ^CoreUnit
+	Buildable:
+		Prerequisites: ~ants_colony
+	Voiced:
+		VoiceSet: AntsVoice

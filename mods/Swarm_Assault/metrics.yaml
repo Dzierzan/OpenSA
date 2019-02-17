@@ -1,0 +1,7 @@
+# General dumping-ground for UI element sizes, etc.
+Metrics:
+	ColorPickerActorType: ants_colony.colorpicker
+	ColorPickerRemapIndices: 255
+	ClickSound: ClickSound
+	ClickDisabledSound: ClickSound
+	ChatLineSound: ChatLine

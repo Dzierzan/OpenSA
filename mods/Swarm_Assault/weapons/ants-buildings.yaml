@@ -1,0 +1,16 @@
+ants_colony:
+	ValidTargets: Ground, Paralyzed
+	Range: 10c0
+	ReloadDelay: 6
+	Report: sounds|TURRETMACHINEGUN.SDF
+	ReportLooped: true
+	Projectile: InstantHit
+	Warhead@Damage: SpreadDamage
+		Damage: 690
+		Spread: 512
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Paralyzed

@@ -1,0 +1,191 @@
+wasps_light:
+	idle:
+		Combine:
+			sprites|UNWASPLB_STT.ANI:
+			sprites|UNWASPLB_STTL.ANI:
+			sprites|UNWASPLB_STL.ANI:
+			sprites|UNWASPLB_STBL.ANI:
+			sprites|UNWASPLB_STB.ANI:
+			sprites|UNWASPLB_STBR.ANI:
+			sprites|UNWASPLB_STR.ANI:
+			sprites|UNWASPLB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNWASPLB_ATT.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATTL.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATL.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATBL.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATB.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATBR.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATR.ANI:
+				Length: 2
+			sprites|UNWASPLB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 130 #
+	move:
+		Combine:
+			sprites|UNWASPLB_WAT.ANI:
+				Length: 3
+			sprites|UNWASPLB_WATL.ANI:
+				Length: 3
+			sprites|UNWASPLB_WAL.ANI:
+				Length: 3
+			sprites|UNWASPLB_WABL.ANI:
+				Length: 3
+			sprites|UNWASPLB_WAB.ANI:
+				Length: 3
+			sprites|UNWASPLB_WABR.ANI:
+				Length: 3
+			sprites|UNWASPLB_WAR.ANI:
+				Length: 3
+			sprites|UNWASPLB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 55
+		Facings: 8
+	die: sprites|UNWASPLB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYWASPA00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+wasps_medium:
+	idle:
+		Combine:
+			sprites|UNWASPAB_STT.ANI:
+			sprites|UNWASPAB_STTL.ANI:
+			sprites|UNWASPAB_STL.ANI:
+			sprites|UNWASPAB_STBL.ANI:
+			sprites|UNWASPAB_STB.ANI:
+			sprites|UNWASPAB_STBR.ANI:
+			sprites|UNWASPAB_STR.ANI:
+			sprites|UNWASPAB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNWASPAB_ATT.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATTL.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATL.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATBL.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATB.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATBR.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATR.ANI:
+				Length: 2
+			sprites|UNWASPAB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 107
+	move:
+		Combine:
+			sprites|UNWASPAB_WAT.ANI:
+				Length: 3
+			sprites|UNWASPAB_WATL.ANI:
+				Length: 3
+			sprites|UNWASPAB_WAL.ANI:
+				Length: 3
+			sprites|UNWASPAB_WABL.ANI:
+				Length: 3
+			sprites|UNWASPAB_WAB.ANI:
+				Length: 3
+			sprites|UNWASPAB_WABR.ANI:
+				Length: 3
+			sprites|UNWASPAB_WAR.ANI:
+				Length: 3
+			sprites|UNWASPAB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 55
+		Facings: 8
+	die: sprites|UNWASPAB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511	
+	icon: sprites|COLONYWASPB00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+wasps_heavy:
+	idle:
+		Combine:
+			sprites|UNWASSOB_STT.ANI:
+			sprites|UNWASSOB_STTL.ANI:
+			sprites|UNWASSOB_STL.ANI:
+			sprites|UNWASSOB_STBL.ANI:
+			sprites|UNWASSOB_STB.ANI:
+			sprites|UNWASSOB_STBR.ANI:
+			sprites|UNWASSOB_STR.ANI:
+			sprites|UNWASSOB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNWASSOB_ATT.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATTL.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATL.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATBL.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATB.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATBR.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATR.ANI:
+				Length: 2
+			sprites|UNWASSOB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 100 #53
+	move:
+		Combine:
+			sprites|UNWASSOB_WAT.ANI:
+				Length: 3
+			sprites|UNWASSOB_WATL.ANI:
+				Length: 3
+			sprites|UNWASSOB_WAL.ANI:
+				Length: 3
+			sprites|UNWASSOB_WABL.ANI:
+				Length: 3
+			sprites|UNWASSOB_WAB.ANI:
+				Length: 3
+			sprites|UNWASSOB_WABR.ANI:
+				Length: 3
+			sprites|UNWASSOB_WAR.ANI:
+				Length: 3
+			sprites|UNWASSOB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 55
+		Facings: 8
+	die: sprites|UNWASSOB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511	
+	icon: sprites|COLONYWASPC00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000

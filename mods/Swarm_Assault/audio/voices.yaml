@@ -1,0 +1,48 @@
+AntsVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|STANDANTA, sounds|STANDANTB, sounds|STANDANTC
+		Action: sounds|STANDANTA, sounds|STANDANTB, sounds|STANDANTC
+		Attack: sounds|STANDANTA, sounds|STANDANTB, sounds|STANDANTC
+
+BeetlesVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|STANDBEETLEA, sounds|STANDBEETLEB, sounds|STANDBEETLEC
+		Action: sounds|STANDBEETLEA, sounds|STANDBEETLEB, sounds|STANDBEETLEC
+		Attack: sounds|STANDBEETLEA, sounds|STANDBEETLEB, sounds|STANDBEETLEC
+
+WaspsVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|STANDWASPA, sounds|STANDWASPB, sounds|STANDWASPC
+		Action: sounds|STANDWASPA, sounds|STANDWASPB, sounds|STANDWASPC
+		Attack: sounds|STANDWASPA, sounds|STANDWASPB, sounds|STANDWASPC
+
+SpidersVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|STANDSPIDERA, sounds|STANDSPIDERB, sounds|STANDSPIDERC
+		Action: sounds|STANDSPIDERA, sounds|STANDSPIDERB, sounds|STANDSPIDERC
+		Attack: sounds|STANDSPIDERA, sounds|STANDSPIDERB, sounds|STANDSPIDERC
+
+ScorpionsVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|STANDSCORPIONA, sounds|STANDSCORPIONB, sounds|STANDSCORPIONC
+		Action: sounds|STANDSCORPIONA, sounds|STANDSCORPIONB, sounds|STANDSCORPIONC
+		Attack: sounds|STANDSCORPIONA, sounds|STANDSCORPIONB, sounds|STANDSCORPIONC
+
+NeutralVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|COMMAND
+		Action: sounds|COMMAND
+		Attack: sounds|COMMAND
+
+SlapfighterVoice:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|SLAPFIGHTPOWERUP
+		Action: sounds|COMMAND
+		Attack: sounds|COMMAND

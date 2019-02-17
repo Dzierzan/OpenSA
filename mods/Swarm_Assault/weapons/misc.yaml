@@ -1,0 +1,6 @@
+dieBuilding:
+	Warhead: CreateEffect
+		Image: explosions
+		Explosions: colony_explosion
+		ExplosionPalette: Swarm_Assault
+		ImpactSounds: sounds|COLONYEXPLODE.SDF

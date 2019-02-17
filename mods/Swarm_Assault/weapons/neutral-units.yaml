@@ -1,0 +1,120 @@
+ant_bull_pirate:
+	ValidTargets: Ground, Paralyzed
+	Range: 1c0
+	ReloadDelay: 8 #8
+	Report: sounds|ANTCRUNCH.SDF
+	Projectile: InstantHit
+	Warhead@Damage: SpreadDamage
+		Damage: 200
+		Spread: 1
+		ValidTargets: Ground, Paralyzed
+
+ants_grenadier_pirate:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 4c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: grenade
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+dragonfly: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 7c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: brakebomb
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+fly: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 7c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: bouncebomb
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+moth: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 7c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: puff
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed
+
+flying_machine: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 40 #50
+	Range: 7c0
+	Projectile: Bullet
+		Speed: 230
+		Blockable: false
+		LaunchAngle: 100 #62 
+		Inaccuracy: 813
+		Image: projectiles
+		Sequences: gobstopper
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1470
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: medium_explosion
+		ImpactSounds: sounds|EXPLOSION1.SDF
+		ValidTargets: Ground, Paralyzed

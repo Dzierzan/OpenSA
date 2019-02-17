@@ -1,0 +1,58 @@
+editor-overlay:
+	copy: bits/cursors.png
+	paste: bits/cursors.png
+
+shroud:
+	shroud: bits/shroud.png
+		Length: 16
+	shroudfull: bits/shroud.png
+		Start: 1
+	fog: bits/shroud.png
+		Length: 16
+	fogfull: bits/shroud.png
+		Start: 1
+
+clock:
+	idle: bits/cursors.png
+
+mpspawn:
+	idle: sprites|ScrollPoint.ANI
+
+moveflsh:
+	idle: bits/cursors.png
+
+colonypickupA:
+	idle: sprites|COLONYPICKUPA.ANI
+		Tick: 60
+		Length: 7
+		ZOffset: -1000
+colonypickupB:
+	idle: sprites|COLONYPICKUPB.ANI
+		Tick: 60
+		Length: 7
+		ZOffset: -1000
+colonypickupC:
+	idle: sprites|COLONYPICKUPC.ANI
+		Tick: 60
+		Length: 7
+		ZOffset: -1000
+colonypickupD:
+	idle: sprites|COLONYPICKUPD.ANI
+		Tick: 60
+		Length: 7
+		ZOffset: -1000
+
+pips:
+	groups:
+		Combine:
+			sprites|NUMBER0.ANI:
+			sprites|NUMBER1.ANI:
+			sprites|NUMBER2.ANI:
+			sprites|NUMBER3.ANI:
+			sprites|NUMBER4.ANI:
+			sprites|NUMBER5.ANI:
+			sprites|NUMBER6.ANI:
+			sprites|NUMBER7.ANI:
+			sprites|NUMBER8.ANI:
+			sprites|NUMBER9.ANI:
+		Length: 10

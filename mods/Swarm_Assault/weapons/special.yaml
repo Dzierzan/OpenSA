@@ -1,0 +1,26 @@
+slapfighter:
+	ValidTargets: Ground, Paralyzed
+	Range: 16c0
+	ReloadDelay: 40
+	Report: sounds|SLAPFIGHTFIRE.SDF
+	Projectile: Missile
+		LockOnProbability: 100 #Homing probability
+		MinimumLaunchSpeed: 50
+		MaximumLaunchSpeed: 50
+		Speed: 350
+		Acceleration: 30
+		RangeLimit: 40c0 #Run out of fuel after covering this distance
+		ExplodeWhenEmpty: true #Explode when running out of fuel
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: homing
+		TrailImage: smoke_trail
+	Warhead@Damage: SpreadDamage
+		Damage: 3000
+		Spread: 100
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|SLAPFIGHTHIT.SDF
+		ValidTargets: Ground, Paralyzed

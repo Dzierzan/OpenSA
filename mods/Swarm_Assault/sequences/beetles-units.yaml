@@ -1,0 +1,191 @@
+beetles_light:
+	idle:
+		Combine:
+			sprites|UNBETLBB_STT.ANI:
+			sprites|UNBETLBB_STTL.ANI:
+			sprites|UNBETLBB_STL.ANI:
+			sprites|UNBETLBB_STBL.ANI:
+			sprites|UNBETLBB_STB.ANI:
+			sprites|UNBETLBB_STBR.ANI:
+			sprites|UNBETLBB_STR.ANI:
+			sprites|UNBETLBB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNBETLBB_ATT.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATTL.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATL.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATBL.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATB.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATBR.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATR.ANI:
+				Length: 2
+			sprites|UNBETLBB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 107
+	move:
+		Combine:
+			sprites|UNBETLBB_WAT.ANI:
+				Length: 3
+			sprites|UNBETLBB_WATL.ANI:
+				Length: 3
+			sprites|UNBETLBB_WAL.ANI:
+				Length: 3
+			sprites|UNBETLBB_WABL.ANI:
+				Length: 3
+			sprites|UNBETLBB_WAB.ANI:
+				Length: 3
+			sprites|UNBETLBB_WABR.ANI:
+				Length: 3
+			sprites|UNBETLBB_WAR.ANI:
+				Length: 3
+			sprites|UNBETLBB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNBETLBB_DEAD.ANI
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: sprites|COLONYBEETLEA00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+beetles_medium:
+	idle:
+		Combine:
+			sprites|UNBETSHB_STT.ANI:
+			sprites|UNBETSHB_STTL.ANI:
+			sprites|UNBETSHB_STL.ANI:
+			sprites|UNBETSHB_STBL.ANI:
+			sprites|UNBETSHB_STB.ANI:
+			sprites|UNBETSHB_STBR.ANI:
+			sprites|UNBETSHB_STR.ANI:
+			sprites|UNBETSHB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNBETSHB_ATT.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATTL.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATL.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATBL.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATB.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATBR.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATR.ANI:
+				Length: 2
+			sprites|UNBETSHB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 133
+	move:
+		Combine:
+			sprites|UNBETSHB_WAT.ANI:
+				Length: 3
+			sprites|UNBETSHB_WATL.ANI:
+				Length: 3
+			sprites|UNBETSHB_WAL.ANI:
+				Length: 3
+			sprites|UNBETSHB_WABL.ANI:
+				Length: 3
+			sprites|UNBETSHB_WAB.ANI:
+				Length: 3
+			sprites|UNBETSHB_WABR.ANI:
+				Length: 3
+			sprites|UNBETSHB_WAR.ANI:
+				Length: 3
+			sprites|UNBETSHB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNBETSHB_DEAD.ANI
+		Length: 2
+		Tick: 9000	
+		ZOffset: -511
+	icon: sprites|COLONYBEETLEB00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+
+beetles_heavy:
+	idle:
+		Combine:
+			sprites|UNBETCAB_STT.ANI:
+			sprites|UNBETCAB_STTL.ANI:
+			sprites|UNBETCAB_STL.ANI:
+			sprites|UNBETCAB_STBL.ANI:
+			sprites|UNBETCAB_STB.ANI:
+			sprites|UNBETCAB_STBR.ANI:
+			sprites|UNBETCAB_STR.ANI:
+			sprites|UNBETCAB_STTR.ANI:
+		Facings: 8
+	shoot:
+		Combine:
+			sprites|UNBETCAB_ATT.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATTL.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATL.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATBL.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATB.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATBR.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATR.ANI:
+				Length: 2
+			sprites|UNBETCAB_ATTR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 80
+	move:
+		Combine:
+			sprites|UNBETCAB_WAT.ANI:
+				Length: 3
+			sprites|UNBETCAB_WATL.ANI:
+				Length: 3
+			sprites|UNBETCAB_WAL.ANI:
+				Length: 3
+			sprites|UNBETCAB_WABL.ANI:
+				Length: 3
+			sprites|UNBETCAB_WAB.ANI:
+				Length: 3
+			sprites|UNBETCAB_WABR.ANI:
+				Length: 3
+			sprites|UNBETCAB_WAR.ANI:
+				Length: 3
+			sprites|UNBETCAB_WATR.ANI:
+				Length: 3
+		Length: 3
+		Tick: 80
+		Facings: 8
+	die: sprites|UNBETCAB_DEAD.ANI
+		Length: 2
+		Tick: 9000	
+		ZOffset: -511	
+	icon: sprites|COLONYBEETLEC00.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000

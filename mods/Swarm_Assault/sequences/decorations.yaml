@@ -1,0 +1,198 @@
+object_0:
+	idle: sprites|OBBROWNM00.ANI
+		ZOffset: -2000
+
+object_1:
+	idle: sprites|OBBROWNM01.ANI
+		ZOffset: -2000
+
+object_2:
+	idle: sprites|OBBROWNM02.ANI
+		ZOffset: -2000
+
+object_3:
+	idle: sprites|OBCHERFL00.ANI
+		ZOffset: -2000
+
+object_4:
+	idle: sprites|OBCHERFL01.ANI
+		ZOffset: -2000
+
+object_5:
+	idle: sprites|OBCHERFL02.ANI
+		ZOffset: -2000
+
+object_6:
+	idle: sprites|OBCHOCCH00.ANI
+		ZOffset: -2000
+
+object_7:
+	idle: sprites|OBCHOCCH01.ANI
+		ZOffset: -2000
+
+object_8:
+	idle: sprites|OBCHOCCH02.ANI
+		ZOffset: -2000
+
+object_9:
+	idle: sprites|OBCLOVER00.ANI
+		ZOffset: -2000
+
+object_10:
+	idle: sprites|OBCLOVER01.ANI
+		ZOffset: -2000
+
+object_11:
+	idle: sprites|OBCLOVER02.ANI
+		ZOffset: -2000
+
+object_12:
+	idle: sprites|OBDESTFL00.ANI
+		ZOffset: -2000
+
+object_13:
+	idle: sprites|OBDESTFL01.ANI
+		ZOffset: -2000
+
+object_14:
+	idle: sprites|OBDESTFL02.ANI
+		ZOffset: -2000
+
+object_15:
+	idle: sprites|OBFLOWER00.ANI
+		ZOffset: -2000
+
+object_16:
+	idle: sprites|OBFLOWER01.ANI
+		ZOffset: -2000
+
+object_17:
+	idle: sprites|OBFLOWER02.ANI
+		ZOffset: -2000
+
+object_18:
+	idle: sprites|OBGRASSB00.ANI
+		ZOffset: -2000
+
+object_19:
+	idle: sprites|OBGRASSB01.ANI
+		ZOffset: -2000
+
+object_20:
+	idle: sprites|OBGRASSB02.ANI
+		ZOffset: -2000
+
+object_21:
+	idle: sprites|OBGRASSD00.ANI
+		ZOffset: -2000
+
+object_22:
+	idle: sprites|OBGRASSD01.ANI
+		ZOffset: -2000
+
+object_23:
+	idle: sprites|OBGRASSD02.ANI
+		ZOffset: -2000
+
+object_24:
+	idle: sprites|OBGUMNUT00.ANI
+		ZOffset: -2000
+
+object_25:
+	idle: sprites|OBGUMNUT01.ANI
+		ZOffset: -2000
+
+object_26:
+	idle: sprites|OBGUMNUT02.ANI
+		ZOffset: -2000
+
+object_27:
+	idle: sprites|OBJAFFA00.ANI
+		ZOffset: -2000
+
+object_28:
+	idle: sprites|OBJAFFA01.ANI
+		ZOffset: -2000
+
+object_29:
+	idle: sprites|OBJAFFA02.ANI
+		ZOffset: -2000
+
+object_30:
+	idle: sprites|OBJELLYB00.ANI
+		ZOffset: -2000
+
+object_31:
+	idle: sprites|OBJELLYB01.ANI
+		ZOffset: -2000
+
+object_32:
+	idle: sprites|OBJELLYB02.ANI
+		ZOffset: -2000
+
+object_33:
+	idle: sprites|OBMOONFL00.ANI
+		ZOffset: -2000
+
+object_34:
+	idle: sprites|OBMOONFL01.ANI
+		ZOffset: -2000
+
+object_35:
+	idle: sprites|OBMOONFL02.ANI
+		ZOffset: -2000
+
+object_36:
+	idle: sprites|OBMUSHWH00.ANI
+		ZOffset: -2000
+
+object_37:
+	idle: sprites|OBMUSHWH01.ANI
+		ZOffset: -2000
+
+object_38:
+	idle: sprites|OBMUSHWH02.ANI
+		ZOffset: -2000
+
+object_39:
+	idle: sprites|OBSERATA00.ANI
+		ZOffset: -2000
+
+object_40:
+	idle: sprites|OBSERATA01.ANI
+		ZOffset: -2000
+
+object_41:
+	idle: sprites|OBSERATA02.ANI
+		ZOffset: -2000
+
+object_42:
+	idle: sprites|OBSMARTY00.ANI
+		ZOffset: -2000
+
+object_43:
+	idle: sprites|OBSMARTY01.ANI
+		ZOffset: -2000
+
+object_44:
+	idle: sprites|OBSMARTY02.ANI
+		ZOffset: -2000
+
+object_45:
+	idle: sprites|OBTOADST00.ANI
+		ZOffset: -2000
+
+object_46:
+	idle: sprites|OBTOADST01.ANI
+		ZOffset: -2000
+
+object_47:
+	idle: sprites|OBTOADST02.ANI
+		ZOffset: -2000
+
+object_48:
+	idle: sprites|OBVENUSNORMAL.ANI
+		ZOffset: -2000
+	close: sprites|OBVENUSCLOSE.ANI
+		ZOffset: -2000
+

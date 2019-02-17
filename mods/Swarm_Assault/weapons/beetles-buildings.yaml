@@ -1,0 +1,20 @@
+beetles_colony:
+	ValidTargets: Ground, Paralyzed
+	ReloadDelay: 50
+	Range: 10c0
+	Report: sounds|CANNON.SDF
+	Projectile: Bullet
+		Speed: 562
+		Inaccuracy: 1000
+		Image: projectiles
+		Sequences: cannon
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 1950
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_2
+		ImpactSounds: sounds|EXPLOSION2.SDF
+		ValidTargets: Ground, Paralyzed

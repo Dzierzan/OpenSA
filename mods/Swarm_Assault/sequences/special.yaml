@@ -1,0 +1,24 @@
+slapfighter:
+	idle: bits/spaceship.png
+		Start: 0
+		Facings: -16
+		ZOffset: 100
+	shoot: bits/spaceship.png
+		Start: 0
+		Facings: -16
+		ZOffset: 100
+	move: bits/spaceship.png
+		Start: 16
+		Length: 4
+		Facings: -16
+		ZOffset: 100
+	die: bits/spaceship.png
+		Start: 80
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: bits/slapfightericon.png
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000

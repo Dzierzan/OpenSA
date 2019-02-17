@@ -1,0 +1,16 @@
+World:
+	Faction@Scorpions:
+		Name: Scorpions
+		InternalName: scorpions
+	MPStartUnits@Scorpions:
+		Class: none
+		ClassName: Colony
+		BaseActor: scorpions_colony
+		Factions: scorpions
+
+^ScorpionsUnit:
+	Inherits: ^CoreUnit
+	Buildable:
+		Prerequisites: ~scorpions_colony
+	Voiced:
+		VoiceSet: ScorpionsVoice

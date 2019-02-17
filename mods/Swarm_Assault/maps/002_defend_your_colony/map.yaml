@@ -1,0 +1,21 @@
+MapFormat: 11
+RequiresMod: Swarm_Assault
+Title: 002) Defend Your Colony
+Author: Swarm Assault
+Tileset: NORMAL
+MapSize: 68,100
+Bounds: 1,1,66,98
+Visibility: MissionSelector
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+Actors:
+Rules:

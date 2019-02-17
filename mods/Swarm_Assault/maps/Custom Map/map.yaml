@@ -1,0 +1,41 @@
+MapFormat: 11
+RequiresMod: Swarm_Assault
+Title: Map
+Author: Dzierzan
+Tileset: NORMAL
+MapSize: 50,50
+Bounds: 1,1,48,48
+Visibility: Lobby
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Multi0, Multi1
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+Actors:
+	Actor0: mpspawn
+		Owner: Neutral
+		Location: 7,7
+	Actor1: mpspawn
+		Owner: Neutral
+		Location: 40,42
+	Actor2: ants_colony
+		Owner: Neutral
+		Location: 27,21
+		TurretFacing: 92

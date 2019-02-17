@@ -1,0 +1,21 @@
+MapFormat: 11
+RequiresMod: Swarm_Assault
+Title: 1v1
+Author: Dzierzan
+Tileset: SWAMP
+MapSize: 102,102
+Bounds: 1,1,100,100
+Visibility: Lobby
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+Actors:
+Rules:

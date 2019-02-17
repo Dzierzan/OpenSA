@@ -1,0 +1,39 @@
+ants_colony:
+	idle-overlay: sprites|STCLYANB_COLONY.ANI
+		ZOffset: 2000
+	idle: sprites|STCLYANX_COLONYBASE.ANI	
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYANB_WNORMALT.ANI:
+			sprites|STCLYANB_WNORMALTL.ANI:
+			sprites|STCLYANB_WNORMALL.ANI:
+			sprites|STCLYANB_WNORMALBL.ANI:
+			sprites|STCLYANB_WNORMALB.ANI:
+			sprites|STCLYANB_WNORMALBR.ANI:
+			sprites|STCLYANB_WNORMALR.ANI:
+			sprites|STCLYANB_WNORMALTR.ANI:
+		Facings: 8
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYANB_WFIRET.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREB.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBR.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRER.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETR.ANI:
+				Length: 2
+		Length: 2
+		Facings: 8
+		Tick: 80
+		ZOffset: 2100

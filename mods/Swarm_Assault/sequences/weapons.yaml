@@ -1,0 +1,76 @@
+projectiles:
+	grenade: WEAPON_GRENADE.ANI
+		Length: 2
+		Tick: 30
+		ZOffset: 4900
+	bazooka: bits/rocket.png
+		Length: 4
+		Facings: -16
+		ZOffset: 4900
+	cannon: WEAPON_CANNON.ANI
+		ZOffset: 4900
+	missile: bits/missile.png
+		Length: 4
+		Facings: -16
+		ZOffset: 4900
+	small_bullet: WEAPON_SMALL.ANI
+		ZOffset: 4900
+	medium_bullet: WEAPON_GUN.ANI
+		ZOffset: 4900
+	star: WEAPON_STAR.ANI
+		Length: 2
+		Tick: 50
+		ZOffset: 4900
+	arrow: bits/arrow.png
+		Length: 1
+		Facings: -16
+		ZOffset: 4900
+	spear: bits/spear.png
+		Length: 1
+		Facings: -16
+		ZOffset: 4900
+	sonic: bits/sonic.png
+		Length: 1
+		Facings: -16
+		ZOffset: 4900
+	homing: bits/homing.png
+		Length: 1
+		Facings: -16
+		ZOffset: 4900	
+	freckles: WEAPON_FRECKLE.ANI
+		Length: 1
+		ZOffset: 4900
+	popcorn: WEAPON_WHIP.ANI
+		Length: 1
+		ZOffset: 4900
+	spike: bits/thorn.png
+		Length: 1
+		Facings: -16
+		ZOffset: 4900
+	puff: WEAPON_PUFFBALL.ANI
+		Length: 1
+		ZOffset: 4900
+	gobstopper: WEAPON_GOBSTOPPER.ANI
+		Length: 5
+		Tick: 60
+		ZOffset: 4900
+	brakebomb: WEAPON_BRAKEBOMB.ANI #TODO make facings
+		Length: 4
+		Tick: 500
+		ZOffset: 4900	
+	bouncebomb: WEAPON_BOUNCEBOMB.ANI
+		Length: 6
+		Tick: 60
+		ZOffset: 4900		
+
+	colonybit: COLONYBIT.ANI
+		Length: 4
+		Tick: 60
+		ZOffset: 4900	
+
+
+smoke_trail:
+	idle: SMOKEPUFF.ANI
+		ZOffset: 4800
+		Length: 7
+		Tick: 40

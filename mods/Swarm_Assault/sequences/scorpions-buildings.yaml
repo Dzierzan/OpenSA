@@ -1,0 +1,30 @@
+scorpions_colony:
+	idle-overlay: sprites|STCLYSCB_COLONY.ANI
+		ZOffset: 2000
+	idle: sprites|STCLYSCB_COLONYBASE.ANI
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYSCR_WNORMALT.ANI:
+			sprites|STCLYSCR_WNORMALTL.ANI:
+			sprites|STCLYSCR_WNORMALL.ANI:
+			sprites|STCLYSCR_WNORMALBL.ANI:
+			sprites|STCLYSCR_WNORMALB.ANI:
+			sprites|STCLYSCR_WNORMALBR.ANI:
+			sprites|STCLYSCR_WNORMALR.ANI:
+			sprites|STCLYSCR_WNORMALTR.ANI:
+		Facings: 8
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYSCR_WFIRET.ANI:
+			sprites|STCLYSCR_WFIRETL.ANI:
+			sprites|STCLYSCR_WFIREL.ANI:
+			sprites|STCLYSCR_WFIREBL.ANI:
+			sprites|STCLYSCR_WFIREB.ANI:
+			sprites|STCLYSCR_WFIREBR.ANI:
+			sprites|STCLYSCR_WFIRER.ANI:
+			sprites|STCLYSCR_WFIRETR.ANI:
+		Facings: 8
+		Tick: 160
+		ZOffset: 2100
