@@ -41,3 +41,4 @@ scorpions_colony:
 	Turreted:
 		Offset: 3450,440,0
 		TurnSpeed: 30
+		InitialFacing: 90

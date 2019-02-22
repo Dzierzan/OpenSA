@@ -59,10 +59,12 @@
 		Categories: Building
 	RevealsShroud:
 		Range: 10c0 # TODO verify in original game
-	SelfHealing:
-		Step: 100
-		HealIfBelow: 100
-		#RequiresCondition: 
+	#SelfHealing:
+	#	Step: 100
+	#	HealIfBelow: 100
+	#	RequiresCondition: !production
+	#ExternalCondition:
+	#	Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
 
@@ -86,6 +88,8 @@
 	AppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
+	#GrantExternalConditionToProduced:
+	#	Condition: production
 	#SelfHealing:
 	#	Step: 100
 	#	HealIfBelow: 100
@@ -117,8 +121,10 @@
 		Step: 100
 		HealIfBelow: 100
 	Wanders:
-		MinMoveDelay: 1500
-		MaxMoveDelay: 3000
+		WanderMoveRadius: 2
+		ReduceMoveRadiusDelay: 50
+		MinMoveDelay: 250
+		MaxMoveDelay: 450
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature

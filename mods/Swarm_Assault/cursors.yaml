@@ -87,205 +87,199 @@ Cursors:
 			X: 0
 			Y: 0
 
-#		scroll-t:
-#			Start: 112
-#			X: 24
-#			Y: 24
-#		scroll-tr:
-#			Start: 120
-#			X: 24
-#			Y: 24
-#		scroll-r:
-#			Start: 128
-#			X: 24
-#			Y: 24
-#		scroll-br:
-#			Start: 136
-#			X: 24
-#			Y: 24
-#		scroll-b:
-#			Start: 148
-#			X: 24
-#			Y: 24
-#		scroll-bl:
-#			Start: 156
-#			X: 24
-#			Y: 24
-#		scroll-l:
-#			Start: 164
-#			X: 24
-#			Y: 24
-#		scroll-tl:
-#			Start: 172
-#			X: 24
-#			Y: 24
-#		scroll-t-blocked:
-#			Start: 180
-#			X: 24
-#			Y: 24
-#		scroll-tr-blocked:
-#			Start: 188
-#			X: 24
-#			Y: 24
-#		scroll-r-blocked:
-#			Start: 196
-#			X: 24
-#			Y: 24
-#		scroll-br-blocked:
-#			Start: 204
-#			X: 24
-#			Y: 24
-#		scroll-b-blocked:
-#			Start: 212
-#			X: 24
-#			Y: 24
-#		scroll-bl-blocked:
-#			Start: 220
-#			X: 24
-#			Y: 24
-#		scroll-l-blocked:
-#			Start: 228
-#			X: 24
-#			Y: 24
-#		scroll-tl-blocked:
-#			Start: 236
-#			X: 24
-#			Y: 24
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-t:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-tr:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-r:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-br:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-b:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-bl:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-l:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-tl:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-t-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-tr-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-r-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-br-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-b-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-bl-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-l-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseNormal.ANI: Swarm_Assault
+		scroll-tl-blocked:
+			Start: 0
+			X: 0
+			Y: 0
 
-#		default-minimap:
-#			Start: 0
-#			X: 24
-#			Y: 24
+	#		default-minimap:
+	#			Start: 0
+	#			X: 24
+	#			Y: 24
+	
+	#		generic-blocked:
+	#			Start: 24
+	#			X: 24
+	#			Y: 24
+	#		generic-blocked-minimap:
+	#			Start: 24
+	#			X: 24
+	#			Y: 24
+	
+	#		guard:
+	#			Start: 72
+	#			Length: 8
+	#			X: 24
+	#			Y: 24
+	#		guard-minimap:
+	#			Start: 72
+	#			Length: 8
+	#			X: 24
+	#			Y: 24
+	
+	#		ability:
+	#			Start: 72
+	#			Length: 8
+	#			X: 24
+	#			Y: 24
+	#		ability-minimap:
+	#			Start: 72
+	#			Length: 8
+	#			X: 24
+	#			Y: 24
 
-#		generic-blocked:
-#			Start: 24
-#			X: 24
-#			Y: 24
-#		generic-blocked-minimap:
-#			Start: 24
-#			X: 24
-#			Y: 24
+	bits/joystick.png: Swarm_Assault
+		joystick-all:
+			Start: 0
+			Length: 3
+	bits/cursors.png: Swarm_Assault
+		joystick-t-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-tr-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-r-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-br-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-b-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-bl-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-l-blocked:
+			Start: 0
+			X: 0
+			Y: 0
+	bits/cursors.png: Swarm_Assault
+		joystick-tl-blocked:
+			Start: 0
+			X: 0
+			Y: 0
 
-#		move-minimap:
-#			Start: 48
-#			Length: 8
-#			X: 24
-#			Y: 24
-#		move-blocked:
-#			Start: 24
-#			X: 24
-#			Y: 24
-#		move-blocked-minimap:
-#			Start: 24
-#			X: 24
-#			Y: 24
-
-#		attack-minimap:
-#			Start: 16
-#			Length: 8
-#			X: 24
-#			Y: 24
-#		attackoutsiderange:
-#			Start: 16
-#			Length: 8
-#			X: 24
-#			Y: 24
-#		attackoutsiderange-minimap:
-#			Start: 16
-#			Length: 8
-#			X: 24
-#			Y: 24
-
-#		guard:
-#			Start: 72
-#			Length: 8
-#			X: 24
-#			Y: 24
-#		guard-minimap:
-#			Start: 72
-#			Length: 8
-#			X: 24
-#			Y: 24
-
-#		ability:
-#			Start: 72
-#			Length: 8
-#			X: 24
-#			Y: 24
-#		ability-minimap:
-#			Start: 72
-#			Length: 8
-#			X: 24
-#			Y: 24
-
-#		joystick-all:
-#			Start: 0
-#			X: 24
-#			Y: 24
-#		joystick-t-blocked:
-#			Start: 180
-#			X: 24
-#			Y: 24
-#		joystick-tr-blocked:
-#			Start: 188
-#			X: 24
-#			Y: 24
-#		joystick-r-blocked:
-#			Start: 196
-#			X: 24
-#			Y: 24
-#		joystick-br-blocked:
-#			Start: 204
-#			X: 24
-#			Y: 24
-#		joystick-b-blocked:
-#			Start: 212
-#			X: 24
-#			Y: 24
-#		joystick-bl-blocked:
-#			Start: 220
-#			X: 24
-#			Y: 24
-#		joystick-l-blocked:
-#			Start: 228
-#			X: 24
-#			Y: 24
-#		joystick-tl-blocked:
-#			Start: 236
-#			X: 24
-#			Y: 24
-
-#		move-rough:
-#			Start: 256
-#			Length: 8
-#			X: 24
-#			Y: 24
-
-#	attackmove.shp: mouse
-#		attackmove-minimap:
-#			Start: 0
-#			Length: 8
-#			X: -2
-#			Y: -2
-#		attackmove-blocked:
-#			Start: 8
-#			X: -2
-#			Y: -2
-#		attackmove-blocked-minimap:
-#			Start: 8
-#			X: -2
-#			Y: -2
-#	assaultmove.shp: mouse
-#		assaultmove-minimap:
-#			Start: 0
-#			Length: 8
-#			X: -2
-#			Y: -2
-#		assaultmove-blocked:
-#			Start: 8
-#			X: -2
-#			Y: -2
-#		assaultmove-blocked-minimap:
-#			Start: 8
-#			X: -2
-#			Y: -2
+	#		move-rough:
+	#			Start: 256
+	#			Length: 8
+	#			X: 24
+	#			Y: 24
+	
+	#	attackmove.shp: mouse
+	#		attackmove-minimap:
+	#			Start: 0
+	#			Length: 8
+	#			X: -2
+	#			Y: -2
+	#		attackmove-blocked:
+	#			Start: 8
+	#			X: -2
+	#			Y: -2
+	#		attackmove-blocked-minimap:
+	#			Start: 8
+	#			X: -2
+	#			Y: -2
+	#	assaultmove.shp: mouse
+	#		assaultmove-minimap:
+	#			Start: 0
+	#			Length: 8
+	#			X: -2
+	#			Y: -2
+	#		assaultmove-blocked:
+	#			Start: 8
+	#			X: -2
+	#			Y: -2
+	#		assaultmove-blocked-minimap:
+	#			Start: 8
+	#			X: -2
+	#			Y: -2

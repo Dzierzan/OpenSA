@@ -1,7 +1,7 @@
 popcorn:
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^CoreNeutralTowerCreep
-	Inherits@4: ^CoreTurret
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Popcorn Plant
 	Health:
@@ -14,9 +14,9 @@ popcorn:
 	-WithSpriteTurret:
 
 puff:
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^CoreNeutralTowerCreep
-	Inherits@4: ^CoreTurret
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Seed Ball
 	Health:
@@ -29,9 +29,9 @@ puff:
 	-WithSpriteTurret:
 
 thorn:
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^CoreNeutralTowerCreep
-	Inherits@4: ^CoreTurret
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Thorn Bush
 	Health:
@@ -44,9 +44,9 @@ thorn:
 	-WithSpriteTurret:
 
 freckle:
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^CoreNeutralTowerCreep
-	Inherits@4: ^CoreTurret
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Choc Freckle
 	Health:
@@ -59,9 +59,9 @@ freckle:
 	-WithSpriteTurret:
 
 lolly_blue:
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^CoreNeutralTowerCreep
-	Inherits@4: ^CoreTurret
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Death Lolly
 	Health:

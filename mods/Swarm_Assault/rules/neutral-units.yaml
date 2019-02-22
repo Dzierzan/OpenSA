@@ -20,11 +20,6 @@ ant_bull_pirate:
 	Armament:
 		Weapon: ant_bull_pirate
 		PauseOnCondition: paralyzed
-	Wanders:
-		WanderMoveRadius: 2
-		ReduceMoveRadiusDelay: 50
-		MinMoveDelay: 250
-		MaxMoveDelay: 450
 	RenderSprites:
 		Scale: 1.1
 
@@ -52,16 +47,11 @@ ants_grenadier_pirate:
 		FireDelay: 10
 		LocalOffset: 500,0,555
 		PauseOnCondition: paralyzed
-	Wanders:
-		WanderMoveRadius: 2
-		ReduceMoveRadiusDelay: 50
-		MinMoveDelay: 250
-		MaxMoveDelay: 450
 	RenderSprites:
 		Scale: 1.1
 
 dragonfly:
-	Inherits@1: ^CoreUnit
+	Inherits@1: ^CoreNeutralUnit
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Tooltip:
@@ -79,12 +69,10 @@ dragonfly:
 	Armament:
 		Weapon: dragonfly
 		LocalOffset: 500,0,555
-	RenderSprites:
-		Palette: Swarm_Assault
-	-Buildable:
+	-Wanders:
 
 fly:
-	Inherits@1: ^CoreUnit
+	Inherits@1: ^CoreNeutralUnit
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Tooltip:
@@ -102,12 +90,10 @@ fly:
 	Armament:
 		Weapon: fly
 		LocalOffset: 500,0,555
-	RenderSprites:
-		Palette: Swarm_Assault
-	-Buildable:
+	-Wanders:
 
 moth:
-	Inherits@1: ^CoreUnit
+	Inherits@1: ^CoreNeutralUnit
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Tooltip:
@@ -125,12 +111,10 @@ moth:
 	Armament:
 		Weapon: moth
 		LocalOffset: 500,0,555
-	RenderSprites:
-		Palette: Swarm_Assault	
-	-Buildable:
+	-Wanders:
 
 flying_machine:
-	Inherits@1: ^CoreUnit
+	Inherits@1: ^CoreNeutralUnit
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Tooltip:
@@ -148,6 +132,4 @@ flying_machine:
 	Armament:
 		Weapon: flying_machine
 		LocalOffset: 500,0,555
-	RenderSprites:
-		Palette: Swarm_Assault
-	-Buildable:
+	-Wanders:

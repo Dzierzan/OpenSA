@@ -36,3 +36,4 @@ beetles_colony:
 	Turreted:
 		Offset: 1400,0,0
 		TurnSpeed: 30
+		InitialFacing: 90

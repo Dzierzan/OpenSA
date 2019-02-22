@@ -36,3 +36,4 @@ wasps_colony:
 	Turreted:
 		Offset: 2150,-950,0
 		TurnSpeed: 30
+		InitialFacing: 90

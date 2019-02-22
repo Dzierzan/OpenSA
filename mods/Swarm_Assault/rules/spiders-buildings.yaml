@@ -35,6 +35,7 @@ spiders_colony:
 		Turret: primary
 		Offset: 800,950,0
 		TurnSpeed: 30
+		InitialFacing: 90
 	WithSpriteTurret@primary:
 		Turret: primary
 	Armament@primary:
@@ -51,6 +52,7 @@ spiders_colony:
 		Turret: secondary
 		Offset: 3200,-850,0
 		TurnSpeed: 30
+		InitialFacing: 90
 	WithSpriteTurret@secondary:
 		Turret: secondary
 	Armament@secondary:
