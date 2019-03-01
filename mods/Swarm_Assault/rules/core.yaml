@@ -67,6 +67,10 @@
 	#	Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
+	ThrowsShrapnel:
+		Weapons: colonybits
+		Pieces: 10,10
+		Range: 4c0, 8c0
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
@@ -125,6 +129,9 @@
 		ReduceMoveRadiusDelay: 50
 		MinMoveDelay: 250
 		MaxMoveDelay: 450
+	Buildable:
+		Queue: Unit
+		Prerequisites: ~disabled
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
@@ -139,7 +146,7 @@
 		Range: 10c0	
 	RenderSprites:
 		Palette: Swarm_Assault
-	SelfHealing:
+	SelfHealing: #TODO might require futher adjusting
 		Step: 100
 		HealIfBelow: 100
 	AppearsOnRadar:
@@ -182,7 +189,7 @@
 
 # Creates special effect when actor is disabled
 ^Paralyzed:
-	TimedConditionBar@PARALYZED: #to be removed later
+	TimedConditionBar@PARALYZED: #TODO Remove that later
 		Condition: paralyzed
 		Color: FFFFFF
 	WithIdleOverlay@PARALYZED:
@@ -192,6 +199,8 @@
 	ExternalCondition@PARALYZED:
 		Condition: paralyzed
 	Mobile:
+		RequiresCondition: !paralyzed
+	WithMoveAnimation:
 		RequiresCondition: !paralyzed
 	Targetable:
 		RequiresCondition: !paralyzed

@@ -55,7 +55,7 @@ scorpions_light:
 	die: sprites|UNSCOSAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONA00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -119,7 +119,7 @@ scorpions_medium:
 	die: sprites|UNSCOSGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONB00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -183,7 +183,7 @@ scorpions_heavy:
 	die: sprites|UNSCOSTB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONC00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50

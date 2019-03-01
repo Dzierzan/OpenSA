@@ -55,7 +55,7 @@ wasps_light:
 	die: sprites|UNWASPLB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYWASPA00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -119,7 +119,7 @@ wasps_medium:
 	die: sprites|UNWASPAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511	
+		ZOffset: -1000
 	icon: sprites|COLONYWASPB00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -183,7 +183,7 @@ wasps_heavy:
 	die: sprites|UNWASSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511	
+		ZOffset: -1000
 	icon: sprites|COLONYWASPC00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50

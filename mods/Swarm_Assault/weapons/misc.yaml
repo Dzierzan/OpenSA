@@ -1,6 +1,21 @@
 dieBuilding:
-	Warhead: CreateEffect
+	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: colony_explosion
 		ExplosionPalette: Swarm_Assault
 		ImpactSounds: sounds|COLONYEXPLODE.SDF
+
+colonybits: #TODO Keep improving that so it might reach original behavior
+	Range: 1c0
+	Projectile: Bullet
+		Speed: 140
+		LaunchAngle: 200
+		Inaccuracy: 1000
+		Image: projectiles
+		Sequences: colonybit
+		TrailImage: smoke_trail
+	Warhead@Effect: CreateEffect
+		Image: colonybits
+		Explosions: colonypickupA, colonypickupB, colonypickupC, colonypickupD
+		ExplosionPalette: Swarm_Assault
+		ImpactSounds: sounds|COLONYPICKUPLAND.SDF

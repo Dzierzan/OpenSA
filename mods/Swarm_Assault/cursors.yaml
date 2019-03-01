@@ -87,84 +87,84 @@ Cursors:
 			X: 0
 			Y: 0
 
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-t:
-			Start: 0
+			Start: 4
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-tr:
-			Start: 0
+			Start: 5
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-r:
-			Start: 0
+			Start: 6
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-br:
-			Start: 0
+			Start: 7
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-b:
-			Start: 0
+			Start: 8
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-bl:
-			Start: 0
+			Start: 9
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-l:
-			Start: 0
+			Start: 10
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-tl:
-			Start: 0
+			Start: 11
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-t-blocked:
-			Start: 0
+			Start: 12
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-tr-blocked:
-			Start: 0
+			Start: 13
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-r-blocked:
-			Start: 0
+			Start: 14
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-br-blocked:
-			Start: 0
+			Start: 15
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-b-blocked:
-			Start: 0
+			Start: 16
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-bl-blocked:
-			Start: 0
+			Start: 17
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-l-blocked:
-			Start: 0
+			Start: 18
 			X: 0
 			Y: 0
-	sprites|MouseNormal.ANI: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		scroll-tl-blocked:
-			Start: 0
+			Start: 19
 			X: 0
 			Y: 0
 
@@ -204,48 +204,58 @@ Cursors:
 	#			X: 24
 	#			Y: 24
 
-	bits/joystick.png: Swarm_Assault
+	bits/cursors.png: Swarm_Assault
 		joystick-all:
-			Start: 0
+			Start: 1
 			Length: 3
+			X: 0
+			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-t-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-tr-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-r-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-br-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-b-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-bl-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-l-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-tl-blocked:
-			Start: 0
+			Start: 20
+			Length: 3
 			X: 0
 			Y: 0
 

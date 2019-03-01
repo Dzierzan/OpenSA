@@ -2,7 +2,8 @@
 	Inherits: ^CoreUnit
 	Voiced:
 		VoiceSet: SlapfighterVoice
-	-Buildable:
+	Buildable:
+		Prerequisites: ~disabled
 
 slapfighter:
 	Inherits@1: ^SpecialUnit

@@ -16,7 +16,7 @@ shroud:
 	fogfull: bits/shroud.png
 		Start: 1
 
-clock:
+clock: #TODO Had to be removed
 	idle: bits/empty.png
 
 mpspawn:
@@ -25,26 +25,23 @@ mpspawn:
 moveflsh:
 	idle: bits/empty.png
 
-colonypickupA:
-	idle: sprites|COLONYPICKUPA.ANI
+colonybits:
+	colonypickupA: sprites|COLONYPICKUPA.ANI
 		Tick: 60
 		Length: 7
-		ZOffset: -1000
-colonypickupB:
-	idle: sprites|COLONYPICKUPB.ANI
+		ZOffset: -900
+	colonypickupB: sprites|COLONYPICKUPB.ANI
 		Tick: 60
 		Length: 7
-		ZOffset: -1000
-colonypickupC:
-	idle: sprites|COLONYPICKUPC.ANI
+		ZOffset: -900
+	colonypickupC: sprites|COLONYPICKUPC.ANI
 		Tick: 60
 		Length: 7
-		ZOffset: -1000
-colonypickupD:
-	idle: sprites|COLONYPICKUPD.ANI
+		ZOffset: -900
+	colonypickupD: sprites|COLONYPICKUPD.ANI
 		Tick: 60
 		Length: 7
-		ZOffset: -1000
+		ZOffset: -900
 
 pips:
 	groups:
@@ -60,3 +57,8 @@ pips:
 			sprites|NUMBER8.ANI:
 			sprites|NUMBER9.ANI:
 		Length: 10
+
+beacon:
+	x: bits/beacon.png
+		Length: 40
+		Tick: 60

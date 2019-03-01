@@ -19,16 +19,26 @@ mpspawn:
 
 Player:
 	Inherits: ^CorePlayer
-	DeveloperMode: # TODO what?
+	# Developer debug menu
+	DeveloperMode:
+	# Allow players to place building.
 	PlaceBuilding:
+	# Enable mission objectives, required to win or loose mission.
 	MissionObjectives:
+	# Default objective: Win by killing all enemies.
 	ConquestVictoryConditions:
 	PlayerResources:
 	#	SelectableCash: 5000, 6000, 8000, 10000, 12500, 15000, 10000000
 	PowerManager: # TODO what?
 	SupportPowerManager:
 	TechTree: 
-	FrozenActorLayer: # TODO new - what is this for?
+	# Required for FrozenUnderFog to work
+	FrozenActorLayer:
+	# Allows placing beacon
+	PlaceBeacon:
+		ArrowSequence:
+		CircleSequence: x
+		Duration: 250
 	
 EditorPlayer:
 	Inherits: ^CorePlayer

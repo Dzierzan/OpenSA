@@ -2,9 +2,13 @@ Sounds:
 	DefaultVariant: .SDF
 	Notifications:
 		ChatLine: sounds|COMMAND
-		ClickSound: sounds|COMMAND
+		ClickSound: sounds|COMMAND		
+		Beacon: Swarm_Assault|bits/notification.wav
 
 Speech:
 	DefaultVariant: .SDF
 	Notifications:
 		UnitReady: sounds|PRODUCTIONCOMPLETE
+			RateLimit: 900
+		Building: sounds|PRODUCTIONCHANGE
+			RateLimit: 600

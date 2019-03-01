@@ -58,7 +58,7 @@ ant_bull_pirate:
 	die: sprites|UNANTSOX_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -125,7 +125,7 @@ ants_grenadier_pirate:
 	die: sprites|UNANTRGX_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTB00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -202,7 +202,7 @@ moth:
 	die: sprites|UNDEMOTH_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI
 
 dragonfly:
@@ -275,7 +275,7 @@ dragonfly:
 	die: sprites|UNDRABOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI
 
 fly:
@@ -348,7 +348,7 @@ fly:
 	die: sprites|UNFLYBIG_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI
 
 flying_machine:
@@ -421,5 +421,5 @@ flying_machine:
 	die: sprites|UNFLYMCH_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI

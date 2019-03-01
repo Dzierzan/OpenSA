@@ -58,7 +58,7 @@ ants_light:
 	die: sprites|UNANTSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTA00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -125,7 +125,7 @@ ants_medium:
 	die: sprites|UNANTRGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTB00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -192,7 +192,7 @@ ants_heavy:
 	die: sprites|UNANTBZB_DEAD.ANI
 		Length: 2
 		Tick: 9000	
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYANTC00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50

@@ -55,7 +55,7 @@ spiders_light:
 	die: sprites|UNSPIBWB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSPIDERA00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -119,7 +119,7 @@ spiders_medium:
 	die: sprites|UNSPISNB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSPIDERB00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
@@ -183,7 +183,7 @@ spiders_heavy:
 	die: sprites|UNSPIRKB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -511
+		ZOffset: -1000
 	icon: sprites|COLONYSPIDERC00.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
