@@ -1,6 +1,6 @@
 wasps_colony:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 5
+	ReloadDelay: 4
 	Range: 10c0
 	Report: sounds|CHAINGUN.SDF
 	ReportLooped: true

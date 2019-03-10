@@ -54,9 +54,10 @@ projectiles:
 		Length: 5
 		Tick: 60
 		ZOffset: 4900
-	brakebomb: WEAPON_BRAKEBOMB.ANI #TODO make facings
+	brakebomb: bits/breakbomb.png
 		Length: 4
-		Tick: 500
+		Tick: 250
+		Facings: -16
 		ZOffset: 4900	
 	bouncebomb: WEAPON_BOUNCEBOMB.ANI
 		Length: 6

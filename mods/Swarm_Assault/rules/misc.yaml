@@ -97,9 +97,34 @@ World:
 	SpawnMPUnits:
 	PathFinder:
 	ValidateOrder:
+	MapCreeps:
+		CheckboxLabel: Pirates
+		CheckboxDescription: Allows spawning pirates on the battlefield
+		CheckboxVisible: True
+		CheckboxEnabled: True
+	ActorSpawnManager:
+		Minimum: 1
+		Maximum: 4
+		SpawnInterval: 250
+		Actors: ant_bull_pirate, ants_grenadier_pirate
 
 EditorWorld:
 	Inherits: ^CoreWorld
 	EditorActorLayer:
 	EditorSelectionLayer:
 		Palette: Swarm_Assault
+
+pirates_spawner: #TODO This has to be improved, so spawning points are random
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (anthole spawning location)
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	ActorSpawner:
+	MapEditorData:
+		Categories: System

@@ -15,7 +15,7 @@ scorpions_medium:
 	Range: 16c0
 	Report: sounds|SPEAR.SDF
 	Projectile: Bullet
-		Speed: 250
+		Speed: 300
 		Inaccuracy: 500
 		Image: projectiles
 		Sequences: spear

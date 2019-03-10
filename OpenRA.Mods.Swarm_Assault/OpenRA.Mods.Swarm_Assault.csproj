@@ -46,6 +46,7 @@
     <Compile Include="SpriteLoaders\DdfLoader.cs" />
     <Compile Include="Traits\Player\OverlayPlayerColorPalette.cs" />
     <Compile Include="Traits\World\PaletteFromDdf.cs" />
+    <Compile Include="Traits\Behaviour\Living.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj">

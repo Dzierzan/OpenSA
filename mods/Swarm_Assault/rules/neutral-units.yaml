@@ -11,8 +11,6 @@ ant_bull_pirate:
 		Speed: 105
 	Buildable:
 		BuildDuration: 75
-	Valued:
-		Cost: 0
 	#RevealsShroud:
 	#	Range: 7c0
 	Voiced:
@@ -36,8 +34,6 @@ ants_grenadier_pirate:
 		Speed: 92
 	Buildable:
 		BuildDuration: 150
-	Valued:
-		Cost: 0
 	#RevealsShroud:
 	#	Range: 7c0
 	Voiced:
@@ -51,85 +47,114 @@ ants_grenadier_pirate:
 		Scale: 1.1
 
 dragonfly:
-	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
+	Inherits: ^Bomber
 	Tooltip:
 		Name: Dragonfly
 	Health:
-		HP: 5000
-	Mobile:
-		Speed: 100
-	Buildable:
-		BuildDuration: 150
-	Valued:
-		Cost: 0
+		HP: 10000 #TODO Verify that
+	Aircraft:
+		Speed: 125 #TODO Verify that
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament:
-		Weapon: dragonfly
-		LocalOffset: 500,0,555
-	-Wanders:
+	Armament@LEFT_BOMB: #TODO Make pattern for left -> right -> left -> right
+		Weapon: dragonfly_left
+	#	PauseOnCondition: !ammo
+	Armament@RIGHT_BOMB:
+		Weapon: dragonfly_right
+	#	PauseOnCondition: !ammo
+	#AmmoPool:
+	#	Name: dragonfly_ammo
+	#	Armaments: dragonfly_left, dragonfly_right
+	#	Ammo: 5
+	#	PipCount: 5 #TODO this is for debugging
+	#	AmmoCondition: ammo
+	#ReloadAmmoPool:
+	#	AmmoPool: dragonfly_ammo
+	#	Delay: 1000
+	#	Count: 5
+	#	RequiresCondition: ammo
+	AmbientSound:
+		SoundFiles: sounds|BOMBERBUZZ.SDF
 
 fly:
-	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
+	Inherits: ^Bomber
 	Tooltip:
 		Name: Desert Fly
 	Health:
-		HP: 5000
-	Mobile:
-		Speed: 100
+		HP: 10000
+	Aircraft:
+		Speed: 250
 	Buildable:
 		BuildDuration: 150
-	Valued:
-		Cost: 0
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament:
-		Weapon: fly
-		LocalOffset: 500,0,555
-	-Wanders:
+	Armament@LEFT_BOMB:
+		Weapon: fly_left
+	Armament@RIGHT_BOMB:
+		Weapon: fly_right
+	AmbientSound:
+		SoundFiles: sounds|FLYBUZZ.SDF
 
 moth:
-	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
+	Inherits: ^Bomber
 	Tooltip:
 		Name: Spawn Moth
 	Health:
-		HP: 5000
-	Mobile:
-		Speed: 100
+		HP: 10000
+	Aircraft:
+		Speed: 200
 	Buildable:
 		BuildDuration: 150
-	Valued:
-		Cost: 0
 	Voiced:
 		VoiceSet: NeutralVoice
 	Armament:
 		Weapon: moth
-		LocalOffset: 500,0,555
-	-Wanders:
+	AmbientSound:
+		SoundFiles: sounds|MOTHFLUTTER.SDF
 
 flying_machine:
-	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
+	Inherits: ^Bomber
 	Tooltip:
 		Name: Flying Machine
 	Health:
-		HP: 5000
-	Mobile:
+		HP: 10000
+	Aircraft:
 		Speed: 100
 	Buildable:
 		BuildDuration: 150
-	Valued:
-		Cost: 0
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament:
+	Armament@LEFT_BOMB: 
 		Weapon: flying_machine
-		LocalOffset: 500,0,555
-	-Wanders:
+		LocalOffset: 100, 0, 0
+	Armament@RIGHT_BOMB:
+		Weapon: flying_machine
+		LocalOffset: -100, 0, 0
+	AmbientSound@LOOP:
+		SoundFiles: sounds|FLYINGMACHINE.SDF
+	AmbientSound@STEAM:
+		SoundFiles: sounds|STEAMPUFF.SDF
+		Interval: 100
+		RequiresCondition: Puff
+	SpawnActorOnDeath: #TODO Might require some adjusting
+		Actor: ants_grenadier_pirate
+	LeavesTrails:
+		Image: smoke_trail
+		Sequences: idle
+		Type: CenterPosition
+		VisibleThroughFog: True
+		SpawnAtLastPosition: False
+		MovingInterval: 100
+		StartDelay: 100
+		Offsets: 0,0,10
+		RequiresCondition: Puff
+	GrantRandomCondition:
+		Conditions: Puff
+	Voiced:
+		VoiceSet: NeutralVoiceFlyingMachine
+	DeathSounds:
+		Voice: Die
+	Explodes: #TODO It doesn't work
+		Weapon: dieFlyingMachine
+		EmptyWeapon: dieFlyingMachine
+			

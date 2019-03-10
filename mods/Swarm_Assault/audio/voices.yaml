@@ -40,6 +40,14 @@ NeutralVoice:
 		Action: sounds|COMMAND
 		Attack: sounds|COMMAND
 
+NeutralVoiceFlyingMachine:
+	DefaultVariant: .SDF
+	Voices:
+		Select: sounds|COMMAND
+		Action: sounds|COMMAND
+		Attack: sounds|COMMAND
+		Die: sounds|CRASH
+
 SlapfighterVoice:
 	DefaultVariant: .SDF
 	Voices:

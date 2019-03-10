@@ -100,3 +100,15 @@ lolly_red:
 		Length: 3
 		Tick: 9000
 		ZOffset: -2000
+
+anthole:
+	idle: sprites|NORMAL.ANI
+		ZOffset: 1000
+	close: sprites|CLOSE.ANI
+		Length: 3
+		Tick: 100
+		ZOffset: 1000
+	open: sprites|OPEN.ANI
+		Length: 3
+		Tick: 100
+		ZOffset: 1000

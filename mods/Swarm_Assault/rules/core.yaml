@@ -58,7 +58,7 @@
 	MapEditorData:
 		Categories: Building
 	RevealsShroud:
-		Range: 10c0 # TODO verify in original game
+		Range: 10c0
 	#SelfHealing:
 	#	Step: 100
 	#	HealIfBelow: 100
@@ -71,6 +71,30 @@
 		Weapons: colonybits
 		Pieces: 10,10
 		Range: 4c0, 8c0
+	AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
+		UnitType: dragonfly
+		Description: Debug dragonfly
+		Icon: dragonfly_icon
+		Cursor: attack
+		OrderName: Dragonfly
+	AirstrikePower@FLY: #TODO this is temporary code for testing purposes, to be removed later
+		UnitType: fly
+		Description: Debug Desert Fly
+		Icon: fly_icon
+		Cursor: attack
+		OrderName: DesertFly
+	AirstrikePower@MOTH: #TODO this is temporary code for testing purposes, to be removed later
+		UnitType: moth
+		Description: Debug moth
+		Icon: moth_icon
+		Cursor: attack
+		OrderName: Moth
+	AirstrikePower@FLYINGMACHINE: #TODO this is temporary code for testing purposes, to be removed later
+		UnitType: flying_machine
+		Description: Debug flying machine
+		Icon: flyingmachine_icon
+		Cursor: attack
+		OrderName: Flyingmachine
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
@@ -94,11 +118,8 @@
 		FallbackSequence: die
 	#GrantExternalConditionToProduced:
 	#	Condition: production
-	#SelfHealing:
-	#	Step: 100
-	#	HealIfBelow: 100
-	#Living:
-	#	RotationChance: 800
+	Living:
+		RotationChance: 250
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreCreature
@@ -116,7 +137,6 @@
 		Range: 10c0	
 	RenderSprites:
 		Palette: Swarm_Assault
-	RenderSprites:
 		Scale: 1.1
 	AppearsOnRadar:
 	WithDeathAnimation:
@@ -132,6 +152,8 @@
 	Buildable:
 		Queue: Unit
 		Prerequisites: ~disabled
+	Living:
+		RotationChance: 250
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
@@ -200,14 +222,42 @@
 		Condition: paralyzed
 	Mobile:
 		RequiresCondition: !paralyzed
-	WithMoveAnimation:
+	WithMoveAnimation: #TODO it doesn't work...
 		RequiresCondition: !paralyzed
 	Targetable:
 		RequiresCondition: !paralyzed
 	Targetable@PARALYZED:
 		TargetTypes: Paralyzed
 		RequiresCondition: paralyzed
-	
+
+^Bomber:
+	Inherits: ^CoreCreature
+	Targetable:
+		TargetTypes: Ground
+	Selectable:
+		Bounds: 24,24
+		Priority: 20
+	WithMoveAnimation:
+	RevealsShroud:
+		Range: 10c0	
+	RenderSprites:
+		Palette: Swarm_Assault
+	AppearsOnRadar:
+	WithDeathAnimation:
+		FallbackSequence: die
+		DeathPaletteIsPlayerPalette: False
+		DeathSequencePalette: Swarm_Assault
+	AttackBomber:
+	Aircraft:
+	AmmoPool:
+	RejectsOrders:
+	AppearsOnRadar:
+		UseLocation: true
+	HiddenUnderFog:
+		Type: CenterPosition
+	RevealsShroud:
+		Type: CenterPosition
+
 # Map decoration actors.
 ^CoreDecoration:
 	Inherits: ^CoreVisibleActor
@@ -219,7 +269,7 @@
 	# Default setting makes decorations take 1x1 tiles.
 	Building:
 		Dimensions: 1,1
-		Footprint: _
+		Footprint: x
 	# Put decorations in own catgegory in map editor.
 	MapEditorData:
 		Categories: Decorations

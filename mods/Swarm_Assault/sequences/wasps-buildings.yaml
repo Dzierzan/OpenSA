@@ -6,34 +6,58 @@ wasps_colony:
 	turret:
 		Combine:
 			sprites|STCLYWAY_WNORMALT.ANI:
+			sprites|STCLYWAY_WNORMALT2.ANI:
 			sprites|STCLYWAY_WNORMALTL.ANI:
+			sprites|STCLYWAY_WNORMALTL2.ANI:
 			sprites|STCLYWAY_WNORMALL.ANI:
+			sprites|STCLYWAY_WNORMALL2.ANI:
 			sprites|STCLYWAY_WNORMALBL.ANI:
+			sprites|STCLYWAY_WNORMALBL2.ANI:
 			sprites|STCLYWAY_WNORMALB.ANI:
+			sprites|STCLYWAY_WNORMALB2.ANI:
 			sprites|STCLYWAY_WNORMALBR.ANI:
+			sprites|STCLYWAY_WNORMALBR2.ANI:
 			sprites|STCLYWAY_WNORMALR.ANI:
+			sprites|STCLYWAY_WNORMALR2.ANI:
 			sprites|STCLYWAY_WNORMALTR.ANI:
-		Facings: 8
+			sprites|STCLYWAY_WNORMALTR2.ANI:
+		Facings: 16
 		ZOffset: 2100
 	shoot:
 		Combine:
 			sprites|STCLYWAY_WFIRET.ANI:
 				Length: 2
+			sprites|STCLYWAY_WFIRET2.ANI:
+				Length: 2
 			sprites|STCLYWAY_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYWAY_WFIRETL2.ANI:
 				Length: 2
 			sprites|STCLYWAY_WFIREL.ANI:
 				Length: 2
+			sprites|STCLYWAY_WFIREL2.ANI:
+				Length: 2
 			sprites|STCLYWAY_WFIREBL.ANI:
+				Length: 2
+			sprites|STCLYWAY_WFIREBL2.ANI:
 				Length: 2
 			sprites|STCLYWAY_WFIREB.ANI:
 				Length: 2
+			sprites|STCLYWAY_WFIREB2.ANI:
+				Length: 2
 			sprites|STCLYWAY_WFIREBR.ANI:
+				Length: 2
+			sprites|STCLYWAY_WFIREBR2.ANI:
 				Length: 2
 			sprites|STCLYWAY_WFIRER.ANI:
 				Length: 2
+			sprites|STCLYWAY_WFIRER2.ANI:
+				Length: 2
 			sprites|STCLYWAY_WFIRETR.ANI:
 				Length: 2
+			sprites|STCLYWAY_WFIRETR2.ANI:
+				Length: 2
 		Length: 2
-		Facings: 8
+		Facings: 16
 		Tick: 80
 		ZOffset: 2100

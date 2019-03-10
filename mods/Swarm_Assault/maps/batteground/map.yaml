@@ -400,3 +400,9 @@ Actors:
 	Actor123: mpspawn
 		Owner: Creeps
 		Location: 28,7
+	Actor124: pirates_spawner
+		Owner: Creeps
+		Location: 36,31
+	Actor125: pirates_spawner
+		Owner: Creeps
+		Location: 25,31

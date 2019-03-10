@@ -16,7 +16,7 @@ shroud:
 	fogfull: bits/shroud.png
 		Start: 1
 
-clock: #TODO Had to be removed
+clock: #TODO It has to be removed
 	idle: bits/empty.png
 
 mpspawn:
@@ -57,8 +57,30 @@ pips:
 			sprites|NUMBER8.ANI:
 			sprites|NUMBER9.ANI:
 		Length: 10
+	pip-empty: sprites|NUMBER0.ANI #TODO check these pips later, do I need that?
+	pip-green: sprites|NUMBER0.ANI
+	pip-yellow: sprites|NUMBER0.ANI
+	pip-gray: sprites|NUMBER0.ANI
+	pip-red: sprites|NUMBER0.ANI
+	pip-blue: sprites|NUMBER0.ANI
+	pip-disguise: sprites|NUMBER0.ANI
 
 beacon:
 	x: bits/beacon.png
 		Length: 40
 		Tick: 60
+
+icon:
+	dragonfly_icon: bits/custom_icons.png
+		Start: 1
+	fly_icon: bits/custom_icons.png
+		Start: 2
+	moth_icon: bits/custom_icons.png
+		Start: 3
+	flyingmachine_icon: bits/custom_icons.png
+		Start: 4
+
+pirates_spawner:
+	idle: bits/pirates.png
+
+

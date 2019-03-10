@@ -9,22 +9,28 @@ object_2:
 
 object_3:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_4:
 	Inherits: ^CoreDecoration
-	
+	Building:
+		Footprint: _	
 object_5:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_6:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_7:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_8:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_9:
 	Inherits: ^CoreDecoration
 
@@ -36,22 +42,28 @@ object_11:
 
 object_12:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_13:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_14:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_15:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_16:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_17:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_18:
 	Inherits: ^CoreDecoration
 
@@ -99,13 +111,16 @@ object_32:
 
 object_33:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_34:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_35:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_36:
 	Inherits: ^CoreDecoration
 
@@ -126,13 +141,16 @@ object_41:
 
 object_42:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_43:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_44:
 	Inherits: ^CoreDecoration
-
+	Building:
+		Footprint: _
 object_45:
 	Inherits: ^CoreDecoration
 
@@ -144,3 +162,5 @@ object_47:
 
 object_48:
 	Inherits: ^CoreDecoration
+	#WithIdleOverlay:
+	#	Sequence: close

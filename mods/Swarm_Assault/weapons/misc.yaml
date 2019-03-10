@@ -19,3 +19,9 @@ colonybits: #TODO Keep improving that so it might reach original behavior
 		Explosions: colonypickupA, colonypickupB, colonypickupC, colonypickupD
 		ExplosionPalette: Swarm_Assault
 		ImpactSounds: sounds|COLONYPICKUPLAND.SDF
+
+dieFlyingMachine:
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_2
+		ExplosionPalette: Swarm_Assault

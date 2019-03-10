@@ -6,34 +6,74 @@ spiders_colony:
 	turret:
 		Combine:
 			sprites|STCLYSPB_WNORMALT.ANI:
+			bits/STCLYSPB.png:
+				Start: 0
 			sprites|STCLYSPB_WNORMALTL.ANI:
+			bits/STCLYSPB.png:
+				Start: 1
 			sprites|STCLYSPB_WNORMALL.ANI:
+			bits/STCLYSPB.png:
+				Start: 2
 			sprites|STCLYSPB_WNORMALBL.ANI:
+			bits/STCLYSPB.png:
+				Start: 3
 			sprites|STCLYSPB_WNORMALB.ANI:
+			bits/STCLYSPB.png:
+				Start: 4
 			sprites|STCLYSPB_WNORMALBR.ANI:
+			bits/STCLYSPB.png:
+				Start: 5
 			sprites|STCLYSPB_WNORMALR.ANI:
+			bits/STCLYSPB.png:
+				Start: 6
 			sprites|STCLYSPB_WNORMALTR.ANI:
-		Facings: 8
+			bits/STCLYSPB.png:
+				Start: 7
+		Facings: 16
 		ZOffset: 2100
 	shoot:
 		Combine:
 			sprites|STCLYSPB_WFIRET.ANI:
 				Length: 2
+			bits/STCLYSPB.png:
+				Start: 8
+				Length: 2
 			sprites|STCLYSPB_WFIRETL.ANI:
+				Length: 2
+			bits/STCLYSPB.png:
+				Start: 10
 				Length: 2
 			sprites|STCLYSPB_WFIREL.ANI:
 				Length: 2
+			bits/STCLYSPB.png:
+				Start: 12
+				Length: 2
 			sprites|STCLYSPB_WFIREBL.ANI:
+				Length: 2
+			bits/STCLYSPB.png:
+				Start: 14
 				Length: 2
 			sprites|STCLYSPB_WFIREB.ANI:
 				Length: 2
+			bits/STCLYSPB.png:
+				Start: 16
+				Length: 2
 			sprites|STCLYSPB_WFIREBR.ANI:
+				Length: 2
+			bits/STCLYSPB.png:
+				Start: 18
 				Length: 2
 			sprites|STCLYSPB_WFIRER.ANI:
 				Length: 2
+			bits/STCLYSPB.png:
+				Start: 20
+				Length: 2
 			sprites|STCLYSPB_WFIRETR.ANI:
 				Length: 2
+			bits/STCLYSPB.png:
+				Start: 22
+				Length: 2
 		Length: 2
-		Facings: 8
+		Facings: 16
 		Tick: 80
 		ZOffset: 2100

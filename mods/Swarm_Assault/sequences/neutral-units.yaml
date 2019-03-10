@@ -77,7 +77,7 @@ ants_grenadier_pirate:
 			sprites|UNANTRGX_STR.ANI:
 			sprites|UNANTRGX_STTR.ANI:
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 1000
 	shoot:
 		Combine:
 			sprites|UNANTRGX_ATT.ANI:
@@ -154,7 +154,7 @@ moth:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	shoot:
 		Combine:
 			sprites|UNDEMOTH_WAT.ANI:
@@ -176,7 +176,7 @@ moth:
 		Length: 3
 		Facings: 8
 		Tick: 80
-		ZOffset: 100
+		ZOffset: 3000
 	move:
 		Combine:
 			sprites|UNDEMOTH_WAT.ANI:
@@ -198,12 +198,13 @@ moth:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	die: sprites|UNDEMOTH_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
-	icon: sprites|COLONYANTA00.ANI
+		ZOffset: -5000
+	icon: bits/custom_icons.png
+		Start: 3
 
 dragonfly:
 	idle:
@@ -227,7 +228,7 @@ dragonfly:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	shoot:
 		Combine:
 			sprites|UNDRABOB_WAT.ANI:
@@ -249,7 +250,7 @@ dragonfly:
 		Length: 3
 		Facings: 8
 		Tick: 80
-		ZOffset: 100
+		ZOffset: 3000
 	move:
 		Combine:
 			sprites|UNDRABOB_WAT.ANI:
@@ -271,12 +272,13 @@ dragonfly:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	die: sprites|UNDRABOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
-	icon: sprites|COLONYANTA00.ANI
+		ZOffset: -5000
+	icon: bits/custom_icons.png
+		Start: 1
 
 fly:
 	idle:
@@ -300,7 +302,7 @@ fly:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	shoot:
 		Combine:
 			sprites|UNFLYBIG_WAT.ANI:
@@ -322,7 +324,7 @@ fly:
 		Length: 3
 		Facings: 8
 		Tick: 80
-		ZOffset: 100
+		ZOffset: 3000
 	move:
 		Combine:
 			sprites|UNFLYBIG_WAT.ANI:
@@ -344,12 +346,13 @@ fly:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	die: sprites|UNFLYBIG_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
-	icon: sprites|COLONYANTA00.ANI
+		ZOffset: -5000
+	icon: bits/custom_icons.png
+		Start: 2
 
 flying_machine:
 	idle:
@@ -373,7 +376,7 @@ flying_machine:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	shoot:
 		Combine:
 			sprites|UNFLYMCH_WAT.ANI:
@@ -395,7 +398,7 @@ flying_machine:
 		Length: 3
 		Facings: 8
 		Tick: 80
-		ZOffset: 100
+		ZOffset: 3000
 	move:
 		Combine:
 			sprites|UNFLYMCH_WAT.ANI:
@@ -417,9 +420,10 @@ flying_machine:
 		Length: 3
 		Tick: 80
 		Facings: 8
-		ZOffset: 100
+		ZOffset: 3000
 	die: sprites|UNFLYMCH_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
-	icon: sprites|COLONYANTA00.ANI
+		ZOffset: -5000
+	icon: bits/custom_icons.png
+		Start: 4

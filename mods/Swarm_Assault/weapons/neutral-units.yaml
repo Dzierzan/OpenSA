@@ -31,65 +31,70 @@ ants_grenadier_pirate:
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Paralyzed
 
-dragonfly: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #50
-	Range: 7c0
-	Projectile: Bullet
-		Speed: 230
-		Blockable: false
-		LaunchAngle: 100 #62 
-		Inaccuracy: 813
+	ReloadDelay: 15
+	Range: 1000c0
+	Projectile: GravityBomb
+		Velocity: 0, 50, -70
+		Acceleration: 0, 0, 1
 		Image: projectiles
 		Sequences: brakebomb
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Falloff: 100, 50, 25, 0
-		Damage: 1470
+		Damage: 5000 #TODO Verify that
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
-		Explosions: medium_explosion
-		ImpactSounds: sounds|EXPLOSION1.SDF
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|BRAKEBOMBEXPLODE.SDF
 		ValidTargets: Ground, Paralyzed
 
-fly: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+dragonfly_right:
+	Inherits: dragonfly_left
+	ReloadDelay: 15
+	Projectile: GravityBomb
+		Velocity: 0, -50, -70
+		Acceleration: 0, 0, 1
+
+fly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #50
-	Range: 7c0
-	Projectile: Bullet
-		Speed: 230
-		Blockable: false
-		LaunchAngle: 100 #62 
-		Inaccuracy: 813
+	ReloadDelay: 15
+	Range: 1000c0
+	Projectile: GravityBomb
+		Velocity: 0, 50, -70
+		Acceleration: 0, 0, 1
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Falloff: 100, 50, 25, 0
-		Damage: 1470
+		Damage: 5000 #TODO Verify that
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
-		Explosions: medium_explosion
-		ImpactSounds: sounds|EXPLOSION1.SDF
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
 		ValidTargets: Ground, Paralyzed
 
-moth: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+fly_right:
+	Inherits: fly_left
+	ReloadDelay: 15
+	Projectile: GravityBomb
+		Velocity: 0, -50, -70
+		Acceleration: 0, 0, 1
+
+moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #50
-	Range: 7c0
-	Projectile: Bullet
-		Speed: 230
-		Blockable: false
-		LaunchAngle: 100 #62 
-		Inaccuracy: 813
+	Range: 1000c0
+	Projectile: GravityBomb
+		Velocity: 0, 0, -70
+		Acceleration: 0, 0, 1
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Falloff: 100, 50, 25, 0
-		Damage: 1470
+		Damage: 5000 #TODO Verify that
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -97,24 +102,25 @@ moth: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Paralyzed
 
-flying_machine: #TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #50
-	Range: 7c0
+	Range: 5c0
 	Projectile: Bullet
-		Speed: 230
-		Blockable: false
-		LaunchAngle: 100 #62 
-		Inaccuracy: 813
+		Speed: 226
+		Blockable: true
+		Inaccuracy: 1000
+		LaunchAngle: 80, 140
+		BounceCount: 5
+		BounceRangeModifier: 40
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Falloff: 100, 50, 25, 0
 		Damage: 1470
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
-		ImpactSounds: sounds|EXPLOSION1.SDF
+		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
 		ValidTargets: Ground, Paralyzed

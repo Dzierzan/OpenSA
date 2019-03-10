@@ -15,6 +15,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseAttack.ANI: Swarm_Assault
@@ -22,6 +23,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseAttack.ANI: Swarm_Assault
@@ -29,6 +31,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseAttack.ANI: Swarm_Assault
@@ -36,6 +39,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseSelect.ANI: Swarm_Assault
@@ -43,6 +47,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseSelect.ANI: Swarm_Assault
@@ -50,6 +55,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseSelect.ANI: Swarm_Assault
@@ -57,6 +63,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseSelect.ANI: Swarm_Assault
@@ -64,6 +71,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 
@@ -72,6 +80,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	sprites|MouseMove.ANI: Swarm_Assault
@@ -79,6 +88,7 @@ Cursors:
 			Start: 0
 			Length: 3
 			Tick: 80
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
@@ -208,54 +218,63 @@ Cursors:
 		joystick-all:
 			Start: 1
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-t-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-tr-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-r-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-br-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-b-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-bl-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-l-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 	bits/cursors.png: Swarm_Assault
 		joystick-tl-blocked:
 			Start: 20
 			Length: 3
+			Reverses: true
 			X: 0
 			Y: 0
 
