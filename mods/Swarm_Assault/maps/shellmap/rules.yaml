@@ -1,0 +1,10 @@
+Player:
+	-ConquestVictoryConditions:
+
+World:
+	-SpawnMPUnits:
+	-MPStartLocations:
+	MusicPlaylist:
+		DisableWorldSounds: true
+	LuaScript:
+		Scripts: script.lua

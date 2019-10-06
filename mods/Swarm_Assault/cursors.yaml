@@ -1,12 +1,26 @@
+#Cursors:
+#	sprites|MouseNormalB.ANI: Swarm_Assault
+#		default:
+#			Start: 0
+#			X: 0
+#			Y: 0
+#	sprites|MouseSelectB.ANI: Swarm_Assault
+#		select:
+#			Start: 0
+#			X: 0
+#			Y: 0
+
+
 Cursors:
-	sprites|MouseNormalB.ANI: Swarm_Assault
+	sprites|MouseNormal.ANI: Swarm_Assault
 		default:
 			Start: 0
 			X: 0
 			Y: 0
-	sprites|MouseSelectB.ANI: Swarm_Assault
+	sprites|MouseSelectTemp.ANI: Swarm_Assault
 		select:
 			Start: 0
+			Lenght: 3
 			X: 0
 			Y: 0
 
@@ -42,7 +56,7 @@ Cursors:
 			Reverses: true
 			X: 0
 			Y: 0
-	sprites|MouseSelect.ANI: Swarm_Assault
+	sprites|MouseAttack.ANI: Swarm_Assault
 		assaultmove:
 			Start: 0
 			Length: 3
@@ -50,7 +64,7 @@ Cursors:
 			Reverses: true
 			X: 0
 			Y: 0
-	sprites|MouseSelect.ANI: Swarm_Assault
+	sprites|MouseAttack.ANI: Swarm_Assault
 		assaultmove-blocked:
 			Start: 0
 			Length: 3
@@ -58,7 +72,7 @@ Cursors:
 			Reverses: true
 			X: 0
 			Y: 0
-	sprites|MouseSelect.ANI: Swarm_Assault
+	sprites|MouseAttack.ANI: Swarm_Assault
 		attack-minimap:
 			Start: 0
 			Length: 3
@@ -66,7 +80,7 @@ Cursors:
 			Reverses: true
 			X: 0
 			Y: 0
-	sprites|MouseSelect.ANI: Swarm_Assault
+	sprites|MouseAttack.ANI: Swarm_Assault
 		attackoutsiderange-minimap:
 			Start: 0
 			Length: 3
@@ -191,17 +205,18 @@ Cursors:
 	#			Start: 24
 	#			X: 24
 	#			Y: 24
-	
-	#		guard:
-	#			Start: 72
-	#			Length: 8
-	#			X: 24
-	#			Y: 24
-	#		guard-minimap:
-	#			Start: 72
-	#			Length: 8
-	#			X: 24
-	#			Y: 24
+	sprites|MouseSelect.ANI: Swarm_Assault	
+		guard:
+			Start: 0
+			Length: 3
+			X: 0
+			Y: 0
+	sprites|MouseSelect.ANI: Swarm_Assault	
+		guard-minimap:
+			Start: 0
+			Length: 3
+			X: 0
+			Y: 0
 	
 	#		ability:
 	#			Start: 72

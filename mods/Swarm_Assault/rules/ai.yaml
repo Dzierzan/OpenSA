@@ -15,8 +15,8 @@ Player:
 
 	SquadManagerBotModule@AI:
 		RequiresCondition: enable-WIP-ai
-		SquadSize: 8
-		SquadSizeRandomBonus: 5
+		SquadSize: 5
+		SquadSizeRandomBonus: 0
 		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40

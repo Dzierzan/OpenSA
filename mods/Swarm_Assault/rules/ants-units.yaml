@@ -64,3 +64,11 @@ ants_heavy:
 		FireDelay: 9
 		LocalOffset: 550,0,0
 		PauseOnCondition: paralyzed
+
+ants.colorpicker:
+	Inherits: ants_light
+	-MapEditorData:
+	RenderSprites:
+		Image: ants_light
+		Palette: colorpicker
+	-Buildable:

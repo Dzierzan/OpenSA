@@ -25,21 +25,27 @@ mpspawn:
 moveflsh:
 	idle: bits/empty.png
 
-colonybits:
-	colonypickupA: sprites|COLONYPICKUPA.ANI
-		Tick: 60
+colony_bit1:
+	idle: sprites|COLONYPICKUPA.ANI
+		Tick: 80
 		Length: 7
 		ZOffset: -900
-	colonypickupB: sprites|COLONYPICKUPB.ANI
-		Tick: 60
+
+colony_bit2:
+	idle: sprites|COLONYPICKUPB.ANI
+		Tick: 80
 		Length: 7
 		ZOffset: -900
-	colonypickupC: sprites|COLONYPICKUPC.ANI
-		Tick: 60
+
+colony_bit3:
+	idle: sprites|COLONYPICKUPC.ANI
+		Tick: 80
 		Length: 7
 		ZOffset: -900
-	colonypickupD: sprites|COLONYPICKUPD.ANI
-		Tick: 60
+
+colony_bit4:
+	idle: sprites|COLONYPICKUPD.ANI
+		Tick: 80
 		Length: 7
 		ZOffset: -900
 

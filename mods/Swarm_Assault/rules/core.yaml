@@ -45,32 +45,34 @@
 	Targetable:
 		TargetTypes: Ground, Colony
 	HitShape:
+	Colony:
+		BitFireDelay: 75 #Time before colony bits are launched
+		NumberOfBits: 9 #How many colony bits are launched
+		MinRange: 5 #Min range of colony bits
+		MaxRange: 10 #Max range of colony bits
+		ResurrectHealth: 10
+		Weapon: colony_bit
+		CaptureSound: sounds|POWERUP.SDF
+		LostSound: sounds|POWERDOWN.SDF
 	SelectionDecorations:
 	Selectable:
 		Priority: 10
 	WithSpriteBody:
 	MustBeDestroyed:
 		RequiredForShortGame: true
-	Explodes:
-		Weapon: dieBuilding
-		EmptyWeapon: dieBuilding
 	# Group all buildings in the map editor.
 	MapEditorData:
 		Categories: Building
 	RevealsShroud:
 		Range: 10c0
-	#SelfHealing:
-	#	Step: 100
-	#	HealIfBelow: 100
-	#	RequiresCondition: !production
-	#ExternalCondition:
-	#	Condition: production
+	SelfHealing:
+		Step: 100 #TODO Might require further adjusting
+		HealIfBelow: 100
+		RequiresCondition: !production
+	GrantConditionWhileProducing:
+		Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
-	ThrowsShrapnel:
-		Weapons: colonybits
-		Pieces: 10,10
-		Range: 4c0, 8c0
 	AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
 		UnitType: dragonfly
 		Description: Debug dragonfly
@@ -116,8 +118,6 @@
 	AppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
-	#GrantExternalConditionToProduced:
-	#	Condition: production
 	Living:
 		RotationChance: 250
 
@@ -211,7 +211,7 @@
 
 # Creates special effect when actor is disabled
 ^Paralyzed:
-	TimedConditionBar@PARALYZED: #TODO Remove that later
+	TimedConditionBar@PARALYZED: #TODO for debug purposes, remove that later
 		Condition: paralyzed
 		Color: FFFFFF
 	WithIdleOverlay@PARALYZED:

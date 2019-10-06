@@ -66,3 +66,11 @@ wasps_heavy:
 		Weapon: wasps_heavy
 		LocalOffset: 1000,0,0
 		PauseOnCondition: paralyzed
+
+wasps.colorpicker:
+	Inherits: wasps_heavy
+	-MapEditorData:
+	RenderSprites:
+		Image: wasps_heavy
+		Palette: colorpicker
+	-Buildable:

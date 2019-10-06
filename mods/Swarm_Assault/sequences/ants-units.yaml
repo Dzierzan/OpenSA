@@ -1,14 +1,17 @@
 ants_light:
-	idle:
-		Combine:
-			sprites|UNANTSOB_STT.ANI:
-			sprites|UNANTSOB_STTL.ANI:
-			sprites|UNANTSOB_STL.ANI:
-			sprites|UNANTSOB_STBL.ANI:
-			sprites|UNANTSOB_STB.ANI:
-			sprites|UNANTSOB_STBR.ANI:
-			sprites|UNANTSOB_STR.ANI:
-			sprites|UNANTSOB_STTR.ANI:
+	#idle: #Original sprites
+	#	Combine:
+	#		sprites|UNANTSOB_STT.ANI:
+	#		sprites|UNANTSOB_STTL.ANI:
+	#		sprites|UNANTSOB_STL.ANI:
+	#		sprites|UNANTSOB_STBL.ANI:
+	#		sprites|UNANTSOB_STB.ANI:
+	#		sprites|UNANTSOB_STBR.ANI:
+	#		sprites|UNANTSOB_STR.ANI:
+	#		sprites|UNANTSOB_STTR.ANI:
+	#	Facings: 8
+	#	ZOffset: 100
+	idle: bits/antblue.png #Upscaled/fixed sprites
 		Facings: 8
 		ZOffset: 100
 	shoot:

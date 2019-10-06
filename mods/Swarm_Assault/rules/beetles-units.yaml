@@ -61,3 +61,11 @@ beetles_heavy:
 		Weapon: beetles_heavy
 		LocalOffset: 500,0,0
 		PauseOnCondition: paralyzed
+
+beetles.colorpicker:
+	Inherits: beetles_light
+	-MapEditorData:
+	RenderSprites:
+		Image: beetles_light
+		Palette: colorpicker
+	-Buildable:

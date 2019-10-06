@@ -66,10 +66,3 @@ ants_colony:
 
 	AttackTurreted:
 		Turrets: primary, secondary
-	
-ants_colony.colorpicker:
-	Inherits: ants_colony
-	-MapEditorData:
-	RenderSprites:
-		Image: ants_colony
-		Palette: colorpicker

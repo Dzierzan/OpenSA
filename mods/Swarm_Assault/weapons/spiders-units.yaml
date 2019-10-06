@@ -15,6 +15,7 @@ spiders_medium:
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
 	Projectile: InstantHit
+		Inaccuracy: 0c256
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
 		Spread: 1

@@ -31,22 +31,27 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-      <Reference Include="System" />
-      <Reference Include="System.Core" />
-      <Reference Include="System.Drawing" />
-      <Reference Include="Eluant">
-        <HintPath>..\engine\thirdparty\download\Eluant.dll</HintPath>
-        <Private>False</Private>
-      </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Eluant">
+      <HintPath>..\engine\thirdparty\download\Eluant.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AudioLoaders\SdfLoader.cs" />
     <Compile Include="FileSystem\DdfPackage.cs" />
     <Compile Include="FileSystem\SdfPackage.cs" />
     <Compile Include="SpriteLoaders\DdfLoader.cs" />
+    <Compile Include="Traits\Colony\Colony.cs" />
+    <Compile Include="Traits\Colony\ColonyBit.cs" />
+    <Compile Include="Traits\Conditions\GrantConditionWhileProducing.cs" />
     <Compile Include="Traits\Player\OverlayPlayerColorPalette.cs" />
     <Compile Include="Traits\World\PaletteFromDdf.cs" />
     <Compile Include="Traits\Behaviour\Living.cs" />
+    <Compile Include="Warheads\SpawnColonyBitWarhead.cs" />
+    <Compile Include="Widgets\OverlayColorPreviewManagerWidget.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj">

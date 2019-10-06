@@ -62,3 +62,11 @@ spiders_heavy:
 		FireDelay: 2
 		LocalOffset: 500,0,0
 		PauseOnCondition: paralyzed
+
+spiders.colorpicker:
+	Inherits: spiders_heavy
+	-MapEditorData:
+	RenderSprites:
+		Image: spiders_heavy
+		Palette: colorpicker
+	-Buildable:

@@ -5,6 +5,7 @@ ants_colony:
 	Report: sounds|TURRETMACHINEGUN.SDF
 	ReportLooped: true
 	Projectile: InstantHit
+		Inaccuracy: 0c512
 	Warhead@Damage: SpreadDamage
 		Damage: 690
 		Spread: 512

@@ -5,6 +5,7 @@ beetles_light:
 	Report: sounds|MINIGUN.SDF
 	ReportLooped: true
 	Projectile: InstantHit
+		Inaccuracy: 0c300
 	Warhead@Damage: SpreadDamage
 		Damage: 782
 		Spread: 100

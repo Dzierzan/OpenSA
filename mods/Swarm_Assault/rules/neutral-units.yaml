@@ -136,7 +136,7 @@ flying_machine:
 		SoundFiles: sounds|STEAMPUFF.SDF
 		Interval: 100
 		RequiresCondition: Puff
-	SpawnActorOnDeath: #TODO Might require some adjusting
+	SpawnActorOnDeath: #TODO Requires some adjusting
 		Actor: ants_grenadier_pirate
 	LeavesTrails:
 		Image: smoke_trail

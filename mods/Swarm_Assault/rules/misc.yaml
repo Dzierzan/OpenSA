@@ -16,11 +16,13 @@ mpspawn:
 	AlwaysVisible: # TODO what?
 	Shroud:
 		FogCheckboxDisplayOrder: 3
+		ExploredMapCheckboxEnabled: True
 
 Player:
 	Inherits: ^CorePlayer
 	# Developer debug menu
 	DeveloperMode:
+		CheckboxEnabled: True
 	# Allow players to place building.
 	PlaceBuilding:
 	# Enable mission objectives, required to win or loose mission.
@@ -61,18 +63,21 @@ EditorPlayer:
 	LoadWidgetAtGameStart:
 	Locomotor@Unit:
 		Name: unit
+		Crushes: colony_bit
 		TerrainSpeeds:
 			Clear: 100
 			Rock: 75
 			Vegetation: 50
 	Locomotor@Wasp:
 		Name: wasp
+		Crushes: colony_bit
 		TerrainSpeeds:
 			Clear: 100
 			Rock: 100
 			Vegetation: 100
 	Locomotor@Special:
 		Name: slapfighter
+		Crushes: colony_bit
 		TerrainSpeeds:
 			Clear: 100
 			Rock: 100
@@ -128,3 +133,21 @@ pirates_spawner: #TODO This has to be improved, so spawning points are random
 	ActorSpawner:
 	MapEditorData:
 		Categories: System
+
+colony_bit1:
+	Inherits: ^CoreVisibleActor
+	WithSpriteBody:
+	Immobile:
+	ColonyBit:
+		MinLifetime: 750
+		MaxLifetime: 1000
+		AutoPickupRadius: 10
+
+colony_bit2:
+	Inherits: colony_bit1
+
+colony_bit3:
+	Inherits: colony_bit1
+
+colony_bit4:
+	Inherits: colony_bit1

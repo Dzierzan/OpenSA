@@ -64,3 +64,12 @@ scorpions_heavy:
 		FireDelay: 4
 		LocalOffset: 700,0,0
 		PauseOnCondition: paralyzed
+
+
+scorpions.colorpicker:
+	Inherits: scorpions_light
+	-MapEditorData:
+	RenderSprites:
+		Image: scorpions_light
+		Palette: colorpicker
+	-Buildable:
