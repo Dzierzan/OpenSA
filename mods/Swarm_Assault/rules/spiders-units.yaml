@@ -3,6 +3,7 @@ spiders_light:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Black widow
 	Health:
@@ -11,8 +12,10 @@ spiders_light:
 		Speed: 147
 	Buildable:
 		BuildDuration: 200
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 15400
+	GainsExperience:
+		ExperienceModifier: 15400
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -24,6 +27,7 @@ spiders_medium:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Sniper
 	Health:
@@ -32,8 +36,10 @@ spiders_medium:
 		Speed: 92
 	Buildable:
 		BuildDuration: 450
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 6900
+	GainsExperience:
+		ExperienceModifier: 6900
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -45,6 +51,7 @@ spiders_heavy:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Missile
 	Health:
@@ -53,8 +60,10 @@ spiders_heavy:
 		Speed: 92
 	Buildable:
 		BuildDuration: 550
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 13000
+	GainsExperience:
+		ExperienceModifier: 13000
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

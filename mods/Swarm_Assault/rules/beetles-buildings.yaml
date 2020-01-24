@@ -32,8 +32,42 @@ beetles_colony:
 	WithIdleOverlay:
 	Armament:
 		Weapon: beetles_colony
-		LocalOffset: 500,0,0
+		LocalOffset: 750,0,0
 	Turreted:
 		Offset: 1400,0,0
 		TurnSpeed: 30
 		InitialFacing: 90
+
+beetles_colony_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Beetles Colony Turret
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	HitShape:
+		Type: Circle
+			Radius: 512
+	WithIdleOverlay:
+
+	Turreted:
+		Turret: primary
+		Offset: 100,100,0
+		TurnSpeed: 30
+		InitialFacing: 90
+	WithSpriteTurret:
+		Turret: primary
+	Armament:
+		Name: primary
+		Turret: primary
+		Weapon: beetles_colony
+		LocalOffset: 750,0,0
+	WithTurretAttackAnimation:
+		Armament: primary
+		Turret: primary
+		Sequence: shoot
+	AttackTurreted:
+		Turrets: primary

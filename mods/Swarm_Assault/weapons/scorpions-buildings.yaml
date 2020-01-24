@@ -14,5 +14,5 @@ scorpions_colony:
 		Damage: 1470
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
-		ImpactSounds: sounds|SNIPERHIT.SDF
+		ImpactSounds: sounds|SNIPERHIT.SDF, Swarm_Assault|bits/sounds/ArrowHit.wav
 		ValidTargets: Ground, Paralyzed

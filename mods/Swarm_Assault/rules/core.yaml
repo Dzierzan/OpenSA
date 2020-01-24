@@ -73,6 +73,8 @@
 		Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
+	GivesExperience:
+		Experience: 100000
 	AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
 		UnitType: dragonfly
 		Description: Debug dragonfly
@@ -97,6 +99,58 @@
 		Icon: flyingmachine_icon
 		Cursor: attack
 		OrderName: Flyingmachine
+
+^CoreTurretBuilding:
+	Inherits: ^CoreVisibleActor
+	# Last seen state of a building will be rendered till the area is explored again.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Use building specific logic.
+	Building:
+		TerrainTypes: Clear
+	# Actor can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground, Colony
+	HitShape:
+	Colony:
+		BitFireDelay: 50 #Time before colony bits are launched
+		NumberOfBits: 4 #How many colony bits are launched
+		MinRange: 3 #Min range of colony bits
+		MaxRange: 7 #Max range of colony bits
+		ResurrectHealth: 10
+		Weapon: colony_bit
+		CaptureSound: Swarm_Assault|bits/sounds/TurretPowerUp.wav
+		LostSound: Swarm_Assault|bits/sounds/TurretPowerDown.wav
+		ColonyExplosionSound: Swarm_Assault|bits/sounds/TurretExplosion.wav
+	SelectionDecorations:
+	Selectable:
+		Priority: 10
+	WithSpriteBody:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	# Group all buildings in the map editor.
+	MapEditorData:
+		Categories: Building
+	RevealsShroud:
+		Range: 10c0
+	SelfHealing:
+		Step: 50 #TODO Might require further adjusting
+		HealIfBelow: 100
+		DamageCooldown: 125
+	AppearsOnRadar:
+	Explodes:
+		Weapon: dieTurret
+		EmptyWeapon: dieTurret
+		RequiresCondition: dead
+	ExternalCondition:
+		Condition: dead
+	GivesExperience:
+		Experience: 10000
+	Turreted:
+	WithSpriteTurret:
+	AttackTurreted:
+	WithTurretAttackAnimation:
+		Sequence: shoot
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
@@ -249,7 +303,6 @@
 		DeathSequencePalette: Swarm_Assault
 	AttackBomber:
 	Aircraft:
-	AmmoPool:
 	RejectsOrders:
 	AppearsOnRadar:
 		UseLocation: true
@@ -257,6 +310,85 @@
 		Type: CenterPosition
 	RevealsShroud:
 		Type: CenterPosition
+
+^GainsExperience:
+	GivesExperience:
+		ActorExperienceModifier: 100
+	GainsExperience:
+		#LevelUpNotification: Swarm_Assault|bits/sounds/promotion.wav
+		Conditions:
+			5: rank-veteran
+			10: rank-veteran
+			20: rank-veteran
+	DamageMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 95
+	DamageMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 90
+	DamageMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 85
+	FirepowerMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 105
+	FirepowerMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 110
+	FirepowerMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 120
+	SpeedMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 105
+	SpeedMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 110
+	SpeedMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 120
+	ReloadDelayMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 95
+	ReloadDelayMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 90
+	ReloadDelayMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 85
+	SelfHealing@RANK-2:
+		Step: 200
+		Delay: 100
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: rank-veteran == 2
+	SelfHealing@RANK-3:
+		Step: 400
+		Delay: 100
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: rank-veteran == 3
+	WithDecoration@RANK-1:
+		Image: rank
+		Sequence: rank-veteran-1
+		Palette: Swarm_Assault
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 1
+		ZOffset: 256
+	WithDecoration@RANK-2:
+		Image: rank
+		Sequence: rank-veteran-2
+		Palette: Swarm_Assault
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 2
+		ZOffset: 256
+	WithDecoration@RANK-3:
+		Image: rank
+		Sequence: rank-veteran-3
+		Palette: Swarm_Assault
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 3
+		ZOffset: 256
 
 # Map decoration actors.
 ^CoreDecoration:

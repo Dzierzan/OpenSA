@@ -32,8 +32,42 @@ wasps_colony:
 	WithIdleOverlay:
 	Armament:
 		Weapon: wasps_colony
-		LocalOffset: 500,0,0
+		LocalOffset: 750,0,0
 	Turreted:
 		Offset: 2150,-950,0
 		TurnSpeed: 30
 		InitialFacing: 90
+
+wasps_colony_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Wasps Colony Turret
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	HitShape:
+		Type: Circle
+			Radius: 256
+	WithIdleOverlay:
+	
+	Turreted:
+		Turret: primary
+		Offset: 1100,0,0
+		TurnSpeed: 30
+		InitialFacing: 90
+	WithSpriteTurret:
+		Turret: primary
+	Armament:
+		Name: primary
+		Turret: primary
+		Weapon: wasps_colony
+		LocalOffset: 750,0,0
+	WithTurretAttackAnimation:
+		Armament: primary
+		Turret: primary
+		Sequence: shoot
+	AttackTurreted:
+		Turrets: primary

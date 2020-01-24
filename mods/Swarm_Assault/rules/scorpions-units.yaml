@@ -3,6 +3,7 @@ scorpions_light:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Savage
 	Health:
@@ -11,8 +12,10 @@ scorpions_light:
 		Speed: 98
 	Buildable:
 		BuildDuration: 250
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 17528
+	GainsExperience:
+		ExperienceModifier: 17528
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -24,6 +27,7 @@ scorpions_medium:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Spear gun
 	Health:
@@ -32,8 +36,10 @@ scorpions_medium:
 		Speed: 82
 	Buildable:
 		BuildDuration: 500
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 8600
+	GainsExperience:
+		ExperienceModifier: 8600
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -47,6 +53,7 @@ scorpions_heavy:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Ninja
 	Health:
@@ -55,8 +62,10 @@ scorpions_heavy:
 		Speed: 105
 	Buildable:
 		BuildDuration: 750
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 12900
+	GainsExperience:
+		ExperienceModifier: 12900
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

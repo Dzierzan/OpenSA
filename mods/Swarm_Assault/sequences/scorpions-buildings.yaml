@@ -44,3 +44,52 @@ scorpions_colony:
 		Facings: 16
 		Tick: 160
 		ZOffset: 2100
+
+scorpions_colony_turret:
+	idle-overlay: bits/ScorpionsColonyTurret.png
+		Start: 0
+		ZOffset: 2000
+	idle: bits/ScorpionsColonyTurret.png
+		Start: 1
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYSCR_WNORMALT.ANI:
+			sprites|STCLYSCR_WNORMALT2.ANI:
+			sprites|STCLYSCR_WNORMALTL.ANI:
+			sprites|STCLYSCR_WNORMALTL2.ANI:
+			sprites|STCLYSCR_WNORMALL.ANI:
+			sprites|STCLYSCR_WNORMALL2.ANI:
+			sprites|STCLYSCR_WNORMALBL.ANI:
+			sprites|STCLYSCR_WNORMALBL2.ANI:
+			sprites|STCLYSCR_WNORMALB.ANI:
+			sprites|STCLYSCR_WNORMALB2.ANI:
+			sprites|STCLYSCR_WNORMALBR.ANI:
+			sprites|STCLYSCR_WNORMALBR2.ANI:
+			sprites|STCLYSCR_WNORMALR.ANI:
+			sprites|STCLYSCR_WNORMALR2.ANI:
+			sprites|STCLYSCR_WNORMALTR.ANI:
+			sprites|STCLYSCR_WNORMALTR2.ANI:
+		Facings: 16
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYSCR_WFIRET.ANI:
+			sprites|STCLYSCR_WFIRET2.ANI:
+			sprites|STCLYSCR_WFIRETL.ANI:
+			sprites|STCLYSCR_WFIRETL2.ANI:
+			sprites|STCLYSCR_WFIREL.ANI:
+			sprites|STCLYSCR_WFIREL2.ANI:
+			sprites|STCLYSCR_WFIREBL.ANI:
+			sprites|STCLYSCR_WFIREBL2.ANI:
+			sprites|STCLYSCR_WFIREB.ANI:
+			sprites|STCLYSCR_WFIREB2.ANI:
+			sprites|STCLYSCR_WFIREBR.ANI:
+			sprites|STCLYSCR_WFIREBR2.ANI:
+			sprites|STCLYSCR_WFIRER.ANI:
+			sprites|STCLYSCR_WFIRER2.ANI:
+			sprites|STCLYSCR_WFIRETR.ANI:
+			sprites|STCLYSCR_WFIRETR2.ANI:
+		Facings: 16
+		Tick: 160
+		ZOffset: 2100

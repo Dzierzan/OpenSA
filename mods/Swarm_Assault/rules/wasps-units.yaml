@@ -3,6 +3,7 @@ wasps_light:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Assault
 	Health:
@@ -11,8 +12,10 @@ wasps_light:
 		Speed: 197
 	Buildable:
 		BuildDuration: 250
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 5300
+	GainsExperience:
+		ExperienceModifier: 5300
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -24,6 +27,7 @@ wasps_medium:
 	Inherits@1: ^WaspsUnit
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^GainsExperience
 	Tooltip:
 		Name: Parasite
 	Health:
@@ -32,8 +36,10 @@ wasps_medium:
 		Speed: 134
 	Buildable:
 		BuildDuration: 350
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 11000
+	GainsExperience:
+		ExperienceModifier: 11000
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -50,6 +56,7 @@ wasps_heavy:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Sonic
 	Health:
@@ -58,8 +65,10 @@ wasps_heavy:
 		Speed: 155
 	Buildable:
 		BuildDuration: 550
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 15400
+	GainsExperience:
+		ExperienceModifier: 15400
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

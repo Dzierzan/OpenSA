@@ -5,6 +5,12 @@ dieBuilding:
 		ExplosionPalette: Swarm_Assault
 		ImpactSounds: sounds|COLONYEXPLODE.SDF
 
+dieTurret:
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ExplosionPalette: Swarm_Assault
+
 colony_bit: #TODO Keep improving that so it might reach original behavior
 	Range: 6c0
 	Projectile: Bullet

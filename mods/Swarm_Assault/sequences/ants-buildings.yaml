@@ -61,3 +61,69 @@ ants_colony:
 		Facings: 16
 		Tick: 80
 		ZOffset: 2100
+
+ants_colony_turret:
+	idle-overlay: bits/AntsColonyTurret.png
+		Start: 0
+		ZOffset: 2000
+	idle: bits/AntsColonyTurret.png
+		Start: 1
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYANB_WNORMALT.ANI:
+			sprites|STCLYANB_WNORMALT2.ANI:
+			sprites|STCLYANB_WNORMALTL.ANI:
+			sprites|STCLYANB_WNORMALTL2.ANI:
+			sprites|STCLYANB_WNORMALL.ANI:
+			sprites|STCLYANB_WNORMALL2.ANI:
+			sprites|STCLYANB_WNORMALBL.ANI:
+			sprites|STCLYANB_WNORMALBL2.ANI:
+			sprites|STCLYANB_WNORMALB.ANI:
+			sprites|STCLYANB_WNORMALB2.ANI:
+			sprites|STCLYANB_WNORMALBR.ANI:
+			sprites|STCLYANB_WNORMALBR2.ANI:
+			sprites|STCLYANB_WNORMALR.ANI:
+			sprites|STCLYANB_WNORMALR2.ANI:
+			sprites|STCLYANB_WNORMALTR.ANI:
+			sprites|STCLYANB_WNORMALTR2.ANI:
+		Facings: 16
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYANB_WFIRET.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRET2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETL2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREL2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBL.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBL2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREB.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREB2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBR.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIREBR2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRER.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRER2.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETR.ANI:
+				Length: 2
+			sprites|STCLYANB_WFIRETR2.ANI:
+				Length: 2
+		Length: 2
+		Facings: 16
+		Tick: 80
+		ZOffset: 2100

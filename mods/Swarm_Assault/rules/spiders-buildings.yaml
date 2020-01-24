@@ -1,6 +1,6 @@
 spiders_colony:
 	Inherits@1: ^CoreBuilding
-	Inherits@3: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefault
 	Tooltip:
 		Name: Spiders Colony
 	Health:
@@ -66,3 +66,36 @@ spiders_colony:
 	
 	AttackTurreted:
 		Turrets: primary, secondary
+
+spiders_colony_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Spiders Colony Turret
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	HitShape:
+		Type: Circle
+			Radius: 256
+	WithIdleOverlay:
+
+	Turreted:
+		Turret: primary
+		Offset: 1000,0,0
+		TurnSpeed: 30
+		InitialFacing: 90
+	WithSpriteTurret:
+		Turret: primary
+	Armament:
+		Name: primary
+		Turret: primary
+		Weapon: spiders_colony
+	WithTurretAttackAnimation:
+		Armament: primary
+		Turret: primary
+		Sequence: shoot
+	AttackTurreted:
+		Turrets: primary

@@ -42,3 +42,32 @@ scorpions_colony:
 		Offset: 3450,440,0
 		TurnSpeed: 30
 		InitialFacing: 90
+
+scorpions_colony_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Scorpions Colony Turret
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	HitShape:
+		Type: Circle
+			Radius: 512
+	WithIdleOverlay:
+
+	Turreted:
+		Offset: 800,-50,0
+		TurnSpeed: 30
+		InitialFacing: 90
+	Armament@primary:
+		Name: primary
+		Weapon: scorpions_colony
+		LocalOffset: 0,256,0
+	Armament@secondary:
+		Name: secondary
+		Weapon: scorpions_colony
+		LocalOffset: 0,-256,0
+

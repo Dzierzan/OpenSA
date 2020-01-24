@@ -199,7 +199,7 @@ MapGrid:
 
 SupportsMapsFrom: Swarm_Assault
 
-SoundFormats: Sdf
+SoundFormats: Sdf, Wav
 
 SpriteFormats: Ani, Ddf, PngSheet
 

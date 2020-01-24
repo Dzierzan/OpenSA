@@ -16,6 +16,7 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
         public readonly int MaxRange = 10;
         public readonly int ResurrectHealth = 10;
         public readonly string Weapon = "colony_bit";
+        public readonly string Explode = "dieBuilding";
         public readonly string CaptureSound = "sounds|POWERUP.SDF";
         public readonly string LostSound = "sounds|POWERDOWN.SDF";
         public readonly string ColonyExplosionSound = "sounds|COLONYEXPLODE.SDF";
@@ -25,11 +26,12 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
             return new Colony(init, this);
         }
     }
- 
+
     public class Colony : INotifyKilled, ITick
     {
         private ColonyInfo info;
         private WeaponInfo weaponInfo;
+        private WeaponInfo explodesInfo;
         private Health health;
         private Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
         private int fireBitTimer;
@@ -38,13 +40,13 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
         {
             this.info = info;
             Game.ModData.DefaultRules.Weapons.TryGetValue(info.Weapon, out weaponInfo);
+            Game.ModData.DefaultRules.Weapons.TryGetValue(info.Explode, out explodesInfo);
             health = init.Self.Trait<Health>();
             health.RemoveOnDeath = false;
         }
  
         void INotifyKilled.Killed(Actor self, AttackInfo e)
         {
-            //Game.Sound.PlayToPlayer(SoundType.World, self.Owner, info.LostSound, self.CenterPosition);
             Game.Sound.Play(SoundType.World, info.LostSound, self.CenterPosition);
             self.ChangeOwner(self.World.Players.First(player => player.InternalName == "Neutral"));
             CancelProductions(self);
@@ -86,11 +88,19 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
                 DamageModifiers = new int[0],
                 InaccuracyModifiers = new int[0]
             };
- 
+            if (weaponInfo == null) throw new YamlException("welp nope");
             self.World.AddFrameEndTask(world => world.Add(projectile.Weapon.Projectile.Create(projectile)));
+        }
+
+        private void Explodes(Actor self)
+        { 
+            //var explosion = info.weaponInfo;
+            if (Colony.explodesInfo == null) throw new YamlException("welp nope");
+
+            Colony.explodesInfo.Impact(Target.FromActor(self), self, Enumerable.Empty<int>());
             Game.Sound.Play(SoundType.World, info.ColonyExplosionSound, self.CenterPosition);
         }
- 
+
         private void CancelProductions(Actor self)
         {
             foreach (var productionQueue in self.TraitsImplementing<ProductionQueue>())
@@ -123,12 +133,13 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
                 if (--fireBitTimer == 0)
                 {
                     var tiles = GetBitTargetTiles(self);
- 
+
                     for (var i = 0; i < info.NumberOfBits; i++)
                     {
                         var tile = tiles[self.World.SharedRandom.Next(0, tiles.Count)];
                         tiles.Remove(tile);
                         LaunchBits(self, tile);
+                        Explodes(self);
                     }
                 }
             }
@@ -149,7 +160,6 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
             health.Resurrect(self, self);
             health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
             self.ChangeOwner(newOwner);
-            //Game.Sound.PlayToPlayer(SoundType.World, self.Owner, info.CaptureSound, self.CenterPosition);
             Game.Sound.Play(SoundType.World, info.CaptureSound, self.CenterPosition);
         }
     }

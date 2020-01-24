@@ -3,6 +3,7 @@ beetles_light:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Lady Bug
 	Health:
@@ -11,8 +12,10 @@ beetles_light:
 		Speed: 92
 	Buildable:
 		BuildDuration: 200
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 7600
+	GainsExperience:
+		ExperienceModifier: 7600
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -24,6 +27,7 @@ beetles_medium:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Shrapnel
 	Health:
@@ -32,8 +36,10 @@ beetles_medium:
 		Speed: 87
 	Buildable:
 		BuildDuration: 450
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 20200
+	GainsExperience:
+		ExperienceModifier: 20200
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -45,6 +51,7 @@ beetles_heavy:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Cannon
 	Health:
@@ -53,8 +60,10 @@ beetles_heavy:
 		Speed: 53
 	Buildable:
 		BuildDuration: 700
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 7600
+	GainsExperience:
+		ExperienceModifier: 7600
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

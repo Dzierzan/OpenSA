@@ -3,6 +3,7 @@ ant_bull_pirate:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Bull Ant
 	Health:
@@ -18,6 +19,10 @@ ant_bull_pirate:
 	Armament:
 		Weapon: ant_bull_pirate
 		PauseOnCondition: paralyzed
+	GivesExperience:
+		Experience: 5300
+	GainsExperience:
+		ExperienceModifier: 5300
 	RenderSprites:
 		Scale: 1.1
 
@@ -26,6 +31,7 @@ ants_grenadier_pirate:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Pirate Grenadier
 	Health:
@@ -43,6 +49,10 @@ ants_grenadier_pirate:
 		FireDelay: 10
 		LocalOffset: 500,0,555
 		PauseOnCondition: paralyzed
+	GivesExperience:
+		Experience: 4400
+	GainsExperience:
+		ExperienceModifier: 4400
 	RenderSprites:
 		Scale: 1.1
 
@@ -51,75 +61,81 @@ dragonfly:
 	Tooltip:
 		Name: Dragonfly
 	Health:
-		HP: 10000 #TODO Verify that
+		HP: 25000
 	Aircraft:
-		Speed: 125 #TODO Verify that
+		Speed: 105
 	Voiced:
 		VoiceSet: NeutralVoice
 	Armament@LEFT_BOMB: #TODO Make pattern for left -> right -> left -> right
 		Weapon: dragonfly_left
-	#	PauseOnCondition: !ammo
+	#	PauseOnCondition: lack_of_bombs
 	Armament@RIGHT_BOMB:
 		Weapon: dragonfly_right
-	#	PauseOnCondition: !ammo
+	#	PauseOnCondition: lack_of_bombs
 	#AmmoPool:
-	#	Name: dragonfly_ammo
+	#	Name: primary
 	#	Armaments: dragonfly_left, dragonfly_right
 	#	Ammo: 5
 	#	PipCount: 5 #TODO this is for debugging
-	#	AmmoCondition: ammo
+	#	AmmoCondition: lack_of_bombs
 	#ReloadAmmoPool:
-	#	AmmoPool: dragonfly_ammo
+	#	AmmoPool: primary
 	#	Delay: 1000
 	#	Count: 5
-	#	RequiresCondition: ammo
+	#	RequiresCondition: lack_of_bombs
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF
+	GivesExperience:
+		Experience: 25000
 
 fly:
 	Inherits: ^Bomber
 	Tooltip:
 		Name: Desert Fly
 	Health:
-		HP: 10000
+		HP: 16000
 	Aircraft:
-		Speed: 250
+		Speed: 220
 	Buildable:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament@LEFT_BOMB:
-		Weapon: fly_left
-	Armament@RIGHT_BOMB:
-		Weapon: fly_right
+	Armament:
+		Weapon: fly
+	AmmoPool:
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF
+	GivesExperience:
+		Experience: 16000
 
 moth:
 	Inherits: ^Bomber
 	Tooltip:
 		Name: Spawn Moth
 	Health:
-		HP: 10000
+		HP: 16000
 	Aircraft:
-		Speed: 200
+		Speed: 220
 	Buildable:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
 	Armament:
 		Weapon: moth
+	AmmoPool:
 	AmbientSound:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
+	GivesExperience:
+		Experience: 16000
 
 flying_machine:
 	Inherits: ^Bomber
 	Tooltip:
 		Name: Flying Machine
 	Health:
-		HP: 10000
+		HP: 25000
 	Aircraft:
-		Speed: 100
+		Speed: 105
 	Buildable:
 		BuildDuration: 150
 	Voiced:
@@ -130,6 +146,7 @@ flying_machine:
 	Armament@RIGHT_BOMB:
 		Weapon: flying_machine
 		LocalOffset: -100, 0, 0
+	AmmoPool:
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:
@@ -138,7 +155,7 @@ flying_machine:
 		RequiresCondition: Puff
 	SpawnActorOnDeath: #TODO Requires some adjusting
 		Actor: ants_grenadier_pirate
-	LeavesTrails:
+	LeavesTrails: #TODO Might require some random offsets
 		Image: smoke_trail
 		Sequences: idle
 		Type: CenterPosition
@@ -157,4 +174,6 @@ flying_machine:
 	Explodes: #TODO It doesn't work
 		Weapon: dieFlyingMachine
 		EmptyWeapon: dieFlyingMachine
+	GivesExperience:
+		Experience: 25000
 			

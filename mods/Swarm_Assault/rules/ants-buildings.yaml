@@ -66,3 +66,36 @@ ants_colony:
 
 	AttackTurreted:
 		Turrets: primary, secondary
+
+ants_colony_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefault
+	Tooltip:
+		Name: Ants Colony Turret
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	HitShape:
+		Type: Circle
+			Radius: 256
+	WithIdleOverlay:
+
+	Turreted:
+		Turret: primary
+		Offset: 1100,10,0
+		TurnSpeed: 30
+		InitialFacing: 90
+	WithSpriteTurret:
+		Turret: primary
+	Armament:
+		Name: primary
+		Turret: primary
+		Weapon: ants_colony
+	WithTurretAttackAnimation:
+		Armament: primary
+		Turret: primary
+		Sequence: shoot
+	AttackTurreted:
+		Turrets: primary

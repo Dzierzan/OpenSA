@@ -33,24 +33,110 @@ beetles_colony:
 				Length: 2
 			sprites|STCLYBTG_WFIRETL2.ANI:
 				Length: 2
+				Offset: 0,1
 			sprites|STCLYBTG_WFIREL.ANI:
 				Length: 2
+				Offset: 0,1
 			sprites|STCLYBTG_WFIREL2.ANI:
 				Length: 2
+				Offset: 0,1
 			sprites|STCLYBTG_WFIREBL.ANI:
 				Length: 2
+				Offset: 0,1
 			sprites|STCLYBTG_WFIREBL2.ANI:
 				Length: 2
+				Offset: 1,1
 			sprites|STCLYBTG_WFIREB.ANI:
 				Length: 2
+				Offset: 1,0
 			sprites|STCLYBTG_WFIREB2.ANI:
 				Length: 2
+				Offset: 1,0
 			sprites|STCLYBTG_WFIREBR.ANI:
 				Length: 2
+				Offset: 1,0
 			sprites|STCLYBTG_WFIREBR2.ANI:
 				Length: 2
+				Offset: 1,0
 			sprites|STCLYBTG_WFIRER.ANI:
 				Length: 2
+				Offset: 1,0
+			sprites|STCLYBTG_WFIRER2.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETR.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETR2.ANI:
+				Length: 2
+		Length: 2
+		Facings: 16
+		Tick: 40
+		ZOffset: 2100
+
+beetles_colony_turret:
+	idle-overlay: bits/BeetlesColonyTurret.png
+		Start: 0
+		ZOffset: 2000
+	idle: bits/BeetlesColonyTurret.png
+		Start: 1
+		ZOffset: -100
+	turret:
+		Combine:
+			sprites|STCLYBTG_WNORMALT.ANI:
+			sprites|STCLYBTG_WNORMALT2.ANI:
+			sprites|STCLYBTG_WNORMALTL.ANI:
+			sprites|STCLYBTG_WNORMALTL2.ANI:
+			sprites|STCLYBTG_WNORMALL.ANI:
+			sprites|STCLYBTG_WNORMALL2.ANI:
+			sprites|STCLYBTG_WNORMALBL.ANI:
+			sprites|STCLYBTG_WNORMALBL2.ANI:
+			sprites|STCLYBTG_WNORMALB.ANI:
+			sprites|STCLYBTG_WNORMALB2.ANI:
+			sprites|STCLYBTG_WNORMALBR.ANI:
+			sprites|STCLYBTG_WNORMALBR2.ANI:
+			sprites|STCLYBTG_WNORMALR.ANI:
+			sprites|STCLYBTG_WNORMALR2.ANI:
+			sprites|STCLYBTG_WNORMALTR.ANI:
+			sprites|STCLYBTG_WNORMALTR2.ANI:
+		Facings: 16
+		ZOffset: 2100
+	shoot:
+		Combine:
+			sprites|STCLYBTG_WFIRET.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRET2.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETL.ANI:
+				Length: 2
+			sprites|STCLYBTG_WFIRETL2.ANI:
+				Length: 2
+				Offset: 0,1
+			sprites|STCLYBTG_WFIREL.ANI:
+				Length: 2
+				Offset: 0,1
+			sprites|STCLYBTG_WFIREL2.ANI:
+				Length: 2
+				Offset: 0,1
+			sprites|STCLYBTG_WFIREBL.ANI:
+				Length: 2
+				Offset: 0,1
+			sprites|STCLYBTG_WFIREBL2.ANI:
+				Length: 2
+				Offset: 1,1
+			sprites|STCLYBTG_WFIREB.ANI:
+				Length: 2
+				Offset: 1,0
+			sprites|STCLYBTG_WFIREB2.ANI:
+				Length: 2
+				Offset: 1,0
+			sprites|STCLYBTG_WFIREBR.ANI:
+				Length: 2
+				Offset: 1,0
+			sprites|STCLYBTG_WFIREBR2.ANI:
+				Length: 2
+				Offset: 1,0
+			sprites|STCLYBTG_WFIRER.ANI:
+				Length: 2
+				Offset: 1,0
 			sprites|STCLYBTG_WFIRER2.ANI:
 				Length: 2
 			sprites|STCLYBTG_WFIRETR.ANI:

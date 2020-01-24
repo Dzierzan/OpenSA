@@ -37,12 +37,12 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	Range: 1000c0
 	Projectile: GravityBomb
 		Velocity: 0, 50, -70
-		Acceleration: 0, 0, 1
+		Acceleration: 0, 0, 0
 		Image: projectiles
 		Sequences: brakebomb
 	Warhead@Damage: SpreadDamage
-		Spread: 256
-		Damage: 5000 #TODO Verify that
+		Spread: 512
+		Damage: 8500
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -55,20 +55,20 @@ dragonfly_right:
 	ReloadDelay: 15
 	Projectile: GravityBomb
 		Velocity: 0, -50, -70
-		Acceleration: 0, 0, 1
+		Acceleration: 0, 0, 0
 
-fly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 15
 	Range: 1000c0
 	Projectile: GravityBomb
-		Velocity: 0, 50, -70
-		Acceleration: 0, 0, 1
+		Velocity: 0, 0, -64
+		Acceleration: 0, 0, 0
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Damage: 5000 #TODO Verify that
+		Damage: 4200
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -76,25 +76,18 @@ fly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
 		ValidTargets: Ground, Paralyzed
 
-fly_right:
-	Inherits: fly_left
-	ReloadDelay: 15
-	Projectile: GravityBomb
-		Velocity: 0, -50, -70
-		Acceleration: 0, 0, 1
-
 moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #50
 	Range: 1000c0
 	Projectile: GravityBomb
-		Velocity: 0, 0, -70
-		Acceleration: 0, 0, 1
+		Velocity: 0, 0, -64
+		Acceleration: 0, 0, 0
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Damage: 5000 #TODO Verify that
+		Damage: 500
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -105,19 +98,15 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #50
-	Range: 5c0
-	Projectile: Bullet
-		Speed: 226
-		Blockable: true
-		Inaccuracy: 1000
-		LaunchAngle: 80, 140
-		BounceCount: 5
-		BounceRangeModifier: 40
+	Range: 1000c0
+	Projectile: GravityBomb
+		Velocity: 0, 0, -64
+		Acceleration: 0, 0, 0
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Damage: 1470
+		Damage: 3000
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions

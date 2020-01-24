@@ -47,7 +47,7 @@ beetles_heavy:
 	Report: sounds|CANNON.SDF
 	Projectile: Bullet
 		Speed: 562
-		Inaccuracy: 1000
+		Inaccuracy: 1100
 		Image: projectiles
 		Sequences: cannon
 	Warhead@Damage: SpreadDamage

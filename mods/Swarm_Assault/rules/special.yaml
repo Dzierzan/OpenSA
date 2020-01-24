@@ -10,6 +10,7 @@ slapfighter:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
+	Inherits@5: ^GainsExperience	
 	Tooltip:
 		Name: Slapfighter
 	Health:
@@ -18,8 +19,10 @@ slapfighter:
 		Speed: 200
 	Buildable:
 		BuildDuration: 75
-	Valued:
-		Cost: 0
+	GivesExperience:
+		Experience: 20000
+	GainsExperience:
+		ExperienceModifier: 20000
 	#RevealsShroud:
 	#	Range: 7c0
 	WithShadow:
