@@ -90,7 +90,7 @@ death_lolly:
 	Range: 5c0
 	Warhead@Damage: SpreadDamage
 		Damage: 4500
-		Spread: 3c0 
+		Spread: 3c0
 		Falloff: 100, 100
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
@@ -98,4 +98,3 @@ death_lolly:
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
 		ValidTargets: Ground, Paralyzed
-

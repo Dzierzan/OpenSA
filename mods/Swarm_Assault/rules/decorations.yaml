@@ -14,7 +14,7 @@ object_3:
 object_4:
 	Inherits: ^CoreDecoration
 	Building:
-		Footprint: _	
+		Footprint: _
 object_5:
 	Inherits: ^CoreDecoration
 	Building:

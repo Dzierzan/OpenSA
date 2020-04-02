@@ -7,8 +7,8 @@ beetles_colony:
 	Health:
 		HP: 100000
 	Building:
-		Dimensions: 6,6 
-		Footprint: ==xxx= =xxxx= xxxxxx xxxxxx =xxx== ==xx== 
+		Dimensions: 6,6
+		Footprint: ==xxx= =xxxx= xxxxxx xxxxxx =xxx== ==xx==
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -2048
@@ -28,7 +28,7 @@ beetles_colony:
 	RallyPoint:
 		Cursor: move
 		Image:
-		Offset: 5,5
+		Path: 5,5
 	WithIdleOverlay:
 	Armament:
 		Weapon: beetles_colony
@@ -52,7 +52,6 @@ beetles_colony_turret:
 		Type: Circle
 			Radius: 512
 	WithIdleOverlay:
-
 	Turreted:
 		Turret: primary
 		Offset: 100,100,0

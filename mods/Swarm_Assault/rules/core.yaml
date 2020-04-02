@@ -22,8 +22,7 @@
 	WithSpriteControlGroupDecoration:
 		Palette: Swarm_Assault
 		GroupSequence: groups
-		ReferencePoint: Bottom, Right
-
+		Position: BottomRight
 	# In general all units can be selected.
 	Selectable:
 		# The default priority for all units.
@@ -31,6 +30,7 @@
 	MustBeDestroyed:
 	# Units have frames for different directions.
 	WithFacingSpriteBody:
+
 
 # Base for all stationary buildings.
 ^CoreBuilding:
@@ -168,7 +168,7 @@
 		Queue: Unit
 		BuildDurationModifier: 100
 	RevealsShroud:
-		Range: 10c0	
+		Range: 10c0
 	AppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
@@ -188,7 +188,7 @@
 	MapEditorData:
 		Categories: NeutralUnit
 	RevealsShroud:
-		Range: 10c0	
+		Range: 10c0
 	RenderSprites:
 		Palette: Swarm_Assault
 		Scale: 1.1
@@ -219,7 +219,7 @@
 	MapEditorData:
 		Categories: NeutralUnit
 	RevealsShroud:
-		Range: 10c0	
+		Range: 10c0
 	RenderSprites:
 		Palette: Swarm_Assault
 	SelfHealing: #TODO might require futher adjusting
@@ -275,7 +275,7 @@
 	ExternalCondition@PARALYZED:
 		Condition: paralyzed
 	Mobile:
-		RequiresCondition: !paralyzed
+		PauseOnCondition: !(!paralyzed)
 	WithMoveAnimation: #TODO it doesn't work...
 		RequiresCondition: !paralyzed
 	Targetable:
@@ -293,7 +293,7 @@
 		Priority: 20
 	WithMoveAnimation:
 	RevealsShroud:
-		Range: 10c0	
+		Range: 10c0
 	RenderSprites:
 		Palette: Swarm_Assault
 	AppearsOnRadar:
@@ -372,23 +372,20 @@
 		Image: rank
 		Sequence: rank-veteran-1
 		Palette: Swarm_Assault
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran == 1
-		ZOffset: 256
 	WithDecoration@RANK-2:
 		Image: rank
 		Sequence: rank-veteran-2
 		Palette: Swarm_Assault
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran == 2
-		ZOffset: 256
 	WithDecoration@RANK-3:
 		Image: rank
 		Sequence: rank-veteran-3
 		Palette: Swarm_Assault
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran == 3
-		ZOffset: 256
 
 # Map decoration actors.
 ^CoreDecoration:

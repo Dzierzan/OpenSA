@@ -32,7 +32,7 @@ scorpions_medium:
 		Name: Spear gun
 	Health:
 		HP: 8600
-	Mobile:	
+	Mobile:
 		Speed: 82
 	Buildable:
 		BuildDuration: 500
