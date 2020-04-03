@@ -7,7 +7,7 @@ ants_colony:
 		HP: 100000
 	Building:
 		Dimensions: 6,6
-		Footprint: =xxx== xxxxx= xxxxx= xxxxx= ==xx== ====== 
+		Footprint: =xxx== xxxxx= xxxxx= xxxxx= ==xx== ======
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -2048
@@ -23,13 +23,12 @@ ants_colony:
 	Exit:
 		SpawnOffset: 0c512,0,0
 		ExitCell: 5,5
-		Facing: 96 
+		Facing: 96
 	RallyPoint:
 		Cursor: move
 		Image:
-		Offset: 5,5
+		Path: 5,5
 	WithIdleOverlay:
-
 	# Turret 1
 	Turreted@primary:
 		Turret: primary
@@ -46,7 +45,6 @@ ants_colony:
 		Armament: primary
 		Turret: primary
 		Sequence: shoot
-
 	# Turret 2
 	Turreted@secondary:
 		Turret: secondary
@@ -63,9 +61,11 @@ ants_colony:
 		Armament: secondary
 		Turret: secondary
 		Sequence: shoot
-
 	AttackTurreted:
 		Turrets: primary, secondary
+
+
+
 
 ants_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
@@ -81,7 +81,6 @@ ants_colony_turret:
 		Type: Circle
 			Radius: 256
 	WithIdleOverlay:
-
 	Turreted:
 		Turret: primary
 		Offset: 1100,10,0

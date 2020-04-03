@@ -28,7 +28,7 @@ wasps_colony:
 	RallyPoint:
 		Cursor: move
 		Image:
-		Offset: 6,5
+		Path: 6,5
 	WithIdleOverlay:
 	Armament:
 		Weapon: wasps_colony

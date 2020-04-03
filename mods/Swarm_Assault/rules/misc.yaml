@@ -33,7 +33,7 @@ Player:
 	#	SelectableCash: 5000, 6000, 8000, 10000, 12500, 15000, 10000000
 	PowerManager: # TODO what?
 	SupportPowerManager:
-	TechTree: 
+	TechTree:
 	# Required for FrozenUnderFog to work
 	FrozenActorLayer:
 	# Allows placing beacon
@@ -41,15 +41,16 @@ Player:
 		ArrowSequence:
 		CircleSequence: x
 		Duration: 250
-	
+
 EditorPlayer:
 	Inherits: ^CorePlayer
 
 ^CoreWorld:
 	Inherits: ^Palettes
-	AlwaysVisible: 
-	ScreenMap: 
-	ActorMap: 
+	AlwaysVisible:
+	Selection:
+	ScreenMap:
+	ActorMap:
 	MusicPlaylist:
 	TerrainGeometryOverlay: # TODO do we need this?
 	TerrainRenderer:

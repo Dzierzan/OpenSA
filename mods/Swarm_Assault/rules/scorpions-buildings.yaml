@@ -28,7 +28,7 @@ scorpions_colony:
 	RallyPoint:
 		Cursor: move
 		Image:
-		Offset: 5,5
+		Path: 5,5
 	WithIdleOverlay:
 	Armament@primary:
 		Name: primary
@@ -57,7 +57,6 @@ scorpions_colony_turret:
 		Type: Circle
 			Radius: 512
 	WithIdleOverlay:
-
 	Turreted:
 		Offset: 800,-50,0
 		TurnSpeed: 30
@@ -70,4 +69,3 @@ scorpions_colony_turret:
 		Name: secondary
 		Weapon: scorpions_colony
 		LocalOffset: 0,-256,0
-

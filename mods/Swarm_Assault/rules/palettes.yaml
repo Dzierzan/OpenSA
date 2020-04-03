@@ -12,7 +12,6 @@
 		Name: colorpicker
 		Filename: SWARM_ASSAULT.PAL
 		AllowModifiers: false
-
 	# Workarounds for hardcoded palettes
 	PaletteFromDdf@chrome:
 		Name: chrome
@@ -26,7 +25,6 @@
 	PaletteFromDdf@effect:
 		Name: effect
 		Filename: SWARM_ASSAULT.PAL
-
 	PaletteFromPng@shroud:
 		Name: shroud
 		Filename: bits/palette.png
@@ -34,14 +32,12 @@
 		Name: fog
 		BasePalette: shroud
 		Alpha: 0.5
-
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255
 		G: 255
 		B: 255
 		A: 128
-
 	PaletteFromRGBA@shadow:
 		Name: shadow
 		R: 0

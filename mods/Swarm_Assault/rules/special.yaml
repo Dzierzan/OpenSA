@@ -10,7 +10,7 @@ slapfighter:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience	
+	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Slapfighter
 	Health:

@@ -21,6 +21,7 @@ Players:
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
+		LockFaction: True
 		Faction: ants
 		Color: 57AC49
 		Enemies: Creeps, Multi1

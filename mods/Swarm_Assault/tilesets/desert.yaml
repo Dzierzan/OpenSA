@@ -23,9 +23,7 @@ Terrain:
 		Color: 45864B
 
 Templates:
-
 	#Clear
-
 	Template@109:
 		Id: 109
 		Images: bits/desert/clear_144x144.png
@@ -196,9 +194,7 @@ Templates:
 			13: Clear
 			14: Clear
 			15: Clear
-
 	#Water TEDRYCLA
-
 	Template@101:
 		Id: 101
 		Images: bits/desert/water_144x144.png
@@ -693,9 +689,7 @@ Templates:
 			13: Water
 			14: Water
 			15: Water
-
 	#Rock TEDRYCLC
-
 	Template@46:
 		Id: 46
 		Images: sprites|TEDRYCLC09.DDF
@@ -1146,9 +1140,7 @@ Templates:
 			13: Rock
 			14: Rock
 			15: Rock
-
 	#Vegetation TEDRYCLD
-
 	Template@78:
 		Id: 78
 		Images: sprites|TEDRYCLD09.DDF
@@ -1376,7 +1368,7 @@ Templates:
 			0: Vegetation
 			1: Vegetation
 			2: Rock
-			3: Rock		
+			3: Rock
 	Template@89:
 		Id: 89
 		Images: sprites|TEDRYCLD20.DDF
@@ -1448,7 +1440,7 @@ Templates:
 			0: Rock
 			1: Vegetation
 			2: Rock
-			3: Vegetation		
+			3: Vegetation
 	Template@80:
 		Id: 80
 		Images: sprites|TEDRYCLD11.DDF

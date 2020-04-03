@@ -107,6 +107,9 @@ fly:
 		SoundFiles: sounds|FLYBUZZ.SDF
 	GivesExperience:
 		Experience: 16000
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
 
 moth:
 	Inherits: ^Bomber
@@ -127,6 +130,9 @@ moth:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
 	GivesExperience:
 		Experience: 16000
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
 
 flying_machine:
 	Inherits: ^Bomber
@@ -140,7 +146,7 @@ flying_machine:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament@LEFT_BOMB: 
+	Armament@LEFT_BOMB:
 		Weapon: flying_machine
 		LocalOffset: 100, 0, 0
 	Armament@RIGHT_BOMB:
@@ -177,3 +183,6 @@ flying_machine:
 	GivesExperience:
 		Experience: 25000
 			
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true

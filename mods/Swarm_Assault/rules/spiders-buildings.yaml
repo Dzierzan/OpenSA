@@ -23,13 +23,12 @@ spiders_colony:
 	Exit:
 		SpawnOffset: 0c512,0,0
 		ExitCell: 5,5
-		Facing: 96 
+		Facing: 96
 	RallyPoint:
 		Cursor: move
 		Image:
-		Offset: 5,5
+		Path: 5,5
 	WithIdleOverlay:
-
 	# Turret 1
 	Turreted@primary:
 		Turret: primary
@@ -46,7 +45,6 @@ spiders_colony:
 		Armament: primary
 		Turret: primary
 		Sequence: shoot
-
 	# Turret 2
 	Turreted@secondary:
 		Turret: secondary
@@ -67,6 +65,8 @@ spiders_colony:
 	AttackTurreted:
 		Turrets: primary, secondary
 
+
+
 spiders_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
 	Inherits@2: ^AutoTargetDefault
@@ -81,7 +81,6 @@ spiders_colony_turret:
 		Type: Circle
 			Radius: 256
 	WithIdleOverlay:
-
 	Turreted:
 		Turret: primary
 		Offset: 1000,0,0

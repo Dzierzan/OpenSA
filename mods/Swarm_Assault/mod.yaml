@@ -11,7 +11,8 @@ Packages:
 	./mods/common: common
 	Swarm_Assault|bits/Game.SDF: sounds
 	Swarm_Assault|bits/Game.DDF: sprites
-	
+	Swarm_Assault|uibits
+
 MapFolders:
 	Swarm_Assault|maps: System
 	~^maps/Swarm_Assault/5037495acf92653db30ccdf9cbaa27b45e8786d2: User
@@ -72,9 +73,9 @@ Weapons:
 	Swarm_Assault|weapons/spiders-units.yaml
 	Swarm_Assault|weapons/scorpions-buildings.yaml
 	Swarm_Assault|weapons/scorpions-units.yaml
-	Swarm_Assault|weapons/special.yaml	
-	Swarm_Assault|weapons/neutral-units.yaml	
-	Swarm_Assault|weapons/neutral-buildings.yaml	
+	Swarm_Assault|weapons/special.yaml
+	Swarm_Assault|weapons/neutral-units.yaml
+	Swarm_Assault|weapons/neutral-buildings.yaml
 
 TileSets:
 	Swarm_Assault|tilesets/candy.yaml
@@ -103,15 +104,16 @@ ChromeLayout:
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-observer.yaml
-	common|chrome/ingame-observerstats.yaml
 	Swarm_Assault|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
-	Swarm_Assault|chrome/settings.yaml
+	common|chrome/mainmenu-prompts.yaml
+	common|chrome/settings.yaml
 	common|chrome/credits.yaml
-	Swarm_Assault|chrome/lobby.yaml
+	common|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
 	common|chrome/playerprofile.yaml
 	common|chrome/lobby-players.yaml
@@ -129,11 +131,14 @@ ChromeLayout:
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
-	Swarm_Assault|chrome/assetbrowser.yaml
+	common|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml
+
+AssetBrowser:
+	SupportedExtensions: .ani, .ddf
 
 Voices:
 	Swarm_Assault|audio/voices.yaml

@@ -24,7 +24,6 @@ Terrain:
 
 Templates:
 	#CLEAR
-
 	Template@109:
 		Id: 109
 		Images: bits/swamp/clear_144x144_pickany.png
@@ -68,7 +67,7 @@ Templates:
 			32: Clear
 			33: Clear
 			34: Clear
-			35: Clear	
+			35: Clear
 	Template@32:
 		Id: 32
 		Images: sprites|TEKRYPTB00.DDF
@@ -207,9 +206,7 @@ Templates:
 			13: Clear
 			14: Clear
 			15: Clear
-
 	#Water
-
 	Template@101:
 		Id: 101
 		Images: bits/swamp/water_144x144.png
@@ -254,7 +251,6 @@ Templates:
 			33: Water
 			34: Water
 			35: Water
-
 	Template@9:
 		Id: 9
 		Images: sprites|TEKRYPTA09.DDF
@@ -705,9 +701,7 @@ Templates:
 			13: Water
 			14: Water
 			15: Water
-
 	#Rock TEKRYPTC
-
 	Template@46:
 		Id: 46
 		Images: sprites|TEKRYPTC09.DDF
@@ -1158,9 +1152,7 @@ Templates:
 			13: Rock
 			14: Rock
 			15: Rock
-
 	#Vegetation TEKRYPTD
-
 	Template@78:
 		Id: 78
 		Images: sprites|TEKRYPTD09.DDF
@@ -1388,7 +1380,7 @@ Templates:
 			0: Vegetation
 			1: Vegetation
 			2: Rock
-			3: Rock		
+			3: Rock
 	Template@89:
 		Id: 89
 		Images: sprites|TEKRYPTD20.DDF
@@ -1460,7 +1452,7 @@ Templates:
 			0: Rock
 			1: Vegetation
 			2: Rock
-			3: Vegetation		
+			3: Vegetation
 	Template@80:
 		Id: 80
 		Images: sprites|TEKRYPTD11.DDF
