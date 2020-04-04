@@ -8,15 +8,20 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 {
 	public enum ExplosionType { Footprint, CenterPosition }
 
-	public class ColonyInfo : ITraitInfo, Requires<HealthInfo>
+	public class ColonyInfo : ITraitInfo, Requires<HealthInfo>, IRulesetLoaded
 	{
 		public readonly int BitFireDelay = 50;
 		public readonly int NumberOfBits = 8;
 		public readonly int MinRange = 5;
 		public readonly int MaxRange = 10;
 		public readonly int ResurrectHealth = 10;
+
+		[WeaponReference]
 		public readonly string Weapon = "colony_bit";
+
+		[WeaponReference]
 		public readonly string Explode = "dieBuilding";
+
 		public readonly string CaptureSound = "sounds|POWERUP.SDF";
 		public readonly string LostSound = "sounds|POWERDOWN.SDF";
 		public readonly string ColonyExplosionSound = "sounds|COLONYEXPLODE.SDF";
@@ -25,22 +30,42 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 		{
 			return new Colony(init, this);
 		}
+
+		public WeaponInfo WeaponInfo { get; private set; }
+		public WeaponInfo ExplodeWeaponInfo { get; private set; }
+
+		public void RulesetLoaded(Ruleset rules, ActorInfo ai)
+		{
+			if (!string.IsNullOrEmpty(Weapon))
+			{
+				WeaponInfo weapon;
+				var weaponToLower = Weapon.ToLowerInvariant();
+				if (!rules.Weapons.TryGetValue(weaponToLower, out weapon))
+					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
+				WeaponInfo = weapon;
+			}
+
+			if (!string.IsNullOrEmpty(Explode))
+			{
+				WeaponInfo explodesInfo;
+				var explodesWeaponToLower = Explode.ToLowerInvariant();
+				if (!rules.Weapons.TryGetValue(explodesWeaponToLower, out explodesInfo))
+					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(explodesWeaponToLower));
+				ExplodeWeaponInfo = explodesInfo;
+			}
+		}
 	}
 
 	public class Colony : INotifyKilled, ITick
 	{
-		private ColonyInfo info;
-		private WeaponInfo weaponInfo;
-		private WeaponInfo explodesInfo;
-		private Health health;
-		private Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
-		private int fireBitTimer;
+		readonly ColonyInfo info;
+		readonly Health health;
+		readonly Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
+		int fireBitTimer;
 
 		public Colony(ActorInitializer init, ColonyInfo info)
 		{
 			this.info = info;
-			Game.ModData.DefaultRules.Weapons.TryGetValue(info.Weapon, out weaponInfo);
-			Game.ModData.DefaultRules.Weapons.TryGetValue(info.Explode, out explodesInfo);
 			health = init.Self.Trait<Health>();
 			health.RemoveOnDeath = false;
 		}
@@ -53,7 +78,7 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 			fireBitTimer = info.BitFireDelay;
 		}
 
-		private List<CPos> GetBitTargetTiles(Actor self)
+		List<CPos> GetBitTargetTiles(Actor self)
 		{
 			var cell = self.World.Map.CellContaining(self.CenterPosition);
 			var tiles = new List<CPos>();
@@ -80,7 +105,7 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 		{
 			var projectile = new ProjectileArgs
 			{
-				Weapon = weaponInfo,
+				Weapon = info.WeaponInfo,
 				Source = self.CenterPosition,
 				SourceActor = self,
 				PassiveTarget = self.World.Map.CenterOfCell(tile),
@@ -88,19 +113,16 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 				DamageModifiers = new int[0],
 				InaccuracyModifiers = new int[0]
 			};
-			if (weaponInfo == null) throw new YamlException("welp nope");
 			self.World.AddFrameEndTask(world => world.Add(projectile.Weapon.Projectile.Create(projectile)));
 		}
 
-		private void Explodes(Actor self)
+		void Explodes(Actor self)
 		{
-			if (explodesInfo == null) throw new YamlException("welp nope");
-
-			explodesInfo.Impact(Target.FromActor(self), self);
+			info.ExplodeWeaponInfo.Impact(Target.FromActor(self), self);
 			Game.Sound.Play(SoundType.World, info.ColonyExplosionSound, self.CenterPosition);
 		}
 
-		private void CancelProductions(Actor self)
+		void CancelProductions(Actor self)
 		{
 			foreach (var productionQueue in self.TraitsImplementing<ProductionQueue>())
 			{
