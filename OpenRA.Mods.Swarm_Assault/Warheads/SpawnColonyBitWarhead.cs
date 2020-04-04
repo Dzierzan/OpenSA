@@ -22,9 +22,9 @@ namespace OpenRA.Mods.Swarm_Assault.Warheads
 
 		public override void DoImpact(Target target, WarheadArgs args)
 		{
-			target.Actor.World.AddFrameEndTask(world =>
+			args.SourceActor.World.AddFrameEndTask(world =>
 			{
-				world.CreateActor(BitActors[world.SharedRandom.Next(0, BitActors.Length)], new TypeDictionary
+				world.CreateActor(BitActors.Random(world.SharedRandom), new TypeDictionary
 				{
 					new LocationInit(world.Map.CellContaining(target.CenterPosition)),
 					new ColonyBitInit(args.SourceActor),

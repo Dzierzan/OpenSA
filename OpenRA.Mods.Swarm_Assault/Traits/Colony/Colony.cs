@@ -118,7 +118,8 @@ namespace OpenRA.Mods.Swarm_Assault.Traits.Colony
 
 		void Explodes(Actor self)
 		{
-			info.ExplodeWeaponInfo.Impact(Target.FromActor(self), self);
+			// Don't use Target.FromActor as the actor suicides.
+			info.ExplodeWeaponInfo.Impact(Target.FromPos(self.CenterPosition), self);
 			Game.Sound.Play(SoundType.World, info.ColonyExplosionSound, self.CenterPosition);
 		}
 
