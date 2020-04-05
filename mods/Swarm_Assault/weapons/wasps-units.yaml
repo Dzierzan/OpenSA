@@ -2,8 +2,6 @@ wasps_light:
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 5
 	Range: 6c0
-	Report: sounds|MACHINEGUN.SDF
-	ReportLooped: true
 	Projectile: Bullet
 		Speed: 562
 		Inaccuracy: 600
