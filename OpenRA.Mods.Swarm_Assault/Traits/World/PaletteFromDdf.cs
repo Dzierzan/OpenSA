@@ -3,7 +3,6 @@ using System.Drawing;
 using OpenRA.FileSystem;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Swarm_Assault.FileSystem;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.Swarm_Assault.Traits.World

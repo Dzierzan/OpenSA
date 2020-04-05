@@ -2,8 +2,6 @@ beetles_light:
 	ValidTargets: Ground, Paralyzed
 	Range: 4c0
 	ReloadDelay: 6
-	Report: sounds|MINIGUN.SDF
-	ReportLooped: true
 	Projectile: InstantHit
 		Inaccuracy: 0c300
 	Warhead@Damage: SpreadDamage
@@ -25,7 +23,7 @@ beetles_medium:
 	StartBurstReport: sounds|SHRAPNELFIRE.SDF
 	Projectile: Bullet
 		Speed: 250
-		LaunchAngle: 200 #62 
+		LaunchAngle: 200 #62
 		Inaccuracy: 5000 #813
 		Image: projectiles
 		Sequences: grenade

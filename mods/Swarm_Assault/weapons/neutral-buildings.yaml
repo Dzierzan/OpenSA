@@ -47,7 +47,7 @@ puff: #Temporary weapon, needs to be changed!!!
 	Projectile: Bullet
 		Speed: 230
 		Blockable: false
-		LaunchAngle: 100 #62 
+		LaunchAngle: 100 #62
 		Inaccuracy: 813
 		Image: projectiles
 		Sequences: puff
@@ -66,12 +66,10 @@ freckles: #Temporary weapon, needs to be changed!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #50
 	Range: 4c0
-	Report: sounds|FRECKLEFIRE.SDF
-	ReportLooped: true
 	Projectile: Bullet
 		Speed: 230
 		Blockable: false
-		LaunchAngle: 100 #62 
+		LaunchAngle: 100 #62
 		Image: projectiles
 		Sequences: freckles
 	Warhead@Damage: SpreadDamage

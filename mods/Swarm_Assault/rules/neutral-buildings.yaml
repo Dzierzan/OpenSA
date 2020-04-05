@@ -55,6 +55,9 @@ freckle:
 		BuildDuration: 50
 	Armament:
 		Weapon: freckles
+	WithLoopedAttackSound:
+		Report: sounds|FRECKLEFIRE.SDF
+		ReloadDelay: 40
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 

@@ -2,8 +2,6 @@ ants_colony:
 	ValidTargets: Ground, Paralyzed
 	Range: 10c0
 	ReloadDelay: 6
-	Report: sounds|TURRETMACHINEGUN.SDF
-	ReportLooped: true
 	Projectile: InstantHit
 		Inaccuracy: 0c512
 	Warhead@Damage: SpreadDamage

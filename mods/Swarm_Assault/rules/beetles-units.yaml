@@ -21,6 +21,9 @@ beetles_light:
 	Armament:
 		Weapon: beetles_light
 		PauseOnCondition: paralyzed
+	WithLoopedAttackSound:
+		Report: sounds|MINIGUN.SDF
+		Delay: 6
 
 beetles_medium:
 	Inherits@1: ^BeetlesUnit

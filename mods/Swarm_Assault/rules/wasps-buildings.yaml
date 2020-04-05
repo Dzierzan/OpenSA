@@ -30,6 +30,9 @@ wasps_colony:
 		Image:
 		Path: 6,5
 	WithIdleOverlay:
+	WithLoopedAttackSound:
+		Report: sounds|CHAINGUN.SDF
+		Delay: 4
 	Armament:
 		Weapon: wasps_colony
 		LocalOffset: 750,0,0
@@ -52,7 +55,7 @@ wasps_colony_turret:
 		Type: Circle
 			Radius: 256
 	WithIdleOverlay:
-	
+
 	Turreted:
 		Turret: primary
 		Offset: 1100,0,0

@@ -22,6 +22,9 @@ wasps_light:
 		Weapon: wasps_light
 		LocalOffset: 500,0,0
 		PauseOnCondition: paralyzed
+	WithLoopedAttackSound:
+		Report: sounds|MACHINEGUN.SDF
+		Delay: 5
 
 wasps_medium:
 	Inherits@1: ^WaspsUnit
