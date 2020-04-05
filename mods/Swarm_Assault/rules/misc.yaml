@@ -117,6 +117,8 @@ World:
 EditorWorld:
 	Inherits: ^CoreWorld
 	EditorActorLayer:
+	EditorCursorLayer:
+	EditorActionManager:
 	EditorSelectionLayer:
 		Palette: Swarm_Assault
 
