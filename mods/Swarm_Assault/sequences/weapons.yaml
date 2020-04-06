@@ -15,7 +15,9 @@ projectiles:
 		ZOffset: 4900
 	small_bullet: WEAPON_SMALL.ANI
 		ZOffset: 4900
-	medium_bullet: WEAPON_GUN.ANI
+	medium_bullet: WEAPON_MEDIUM.ANI
+		ZOffset: 4900
+	gun_bullet: WEAPON_GUN.ANI
 		ZOffset: 4900
 	star: WEAPON_STAR.ANI
 		Length: 2
