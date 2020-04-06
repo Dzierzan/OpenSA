@@ -17,7 +17,7 @@ explosions:
 		ZOffset: 5000
 	colony_explosion: sprites|ExplosionC.ANI
 		Length: 28
-		Tick: 20
+		Tick: 40
 		ZOffset: 5000
 	shrapnel_explosion: sprites|ExplosionB.ANI
 		Length: 13
