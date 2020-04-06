@@ -55,6 +55,9 @@ wasps_colony_turret:
 		Type: Circle
 			Radius: 256
 	WithIdleOverlay:
+	WithLoopedAttackSound:
+		Report: sounds|CHAINGUN.SDF
+		Delay: 4
 
 	Turreted:
 		Turret: primary

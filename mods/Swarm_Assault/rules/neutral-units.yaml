@@ -182,8 +182,6 @@ flying_machine:
 		EmptyWeapon: dieFlyingMachine
 	GivesExperience:
 		Experience: 25000
-	WithLoopedAttackSound:
-		Report: sounds|FRECKLEFIRE.SDF
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true

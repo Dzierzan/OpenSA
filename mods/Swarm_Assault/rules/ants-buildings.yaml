@@ -98,3 +98,6 @@ ants_colony_turret:
 		Sequence: shoot
 	AttackTurreted:
 		Turrets: primary
+	WithLoopedAttackSound:
+		Report: sounds|TURRETMACHINEGUN.SDF
+		Delay: 6
