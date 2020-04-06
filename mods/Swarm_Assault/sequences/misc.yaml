@@ -29,24 +29,28 @@ colony_bit1:
 	idle: sprites|COLONYPICKUPA.ANI
 		Tick: 100
 		Length: 7
+		Reverses: true
 		ZOffset: -900
 
 colony_bit2:
 	idle: sprites|COLONYPICKUPB.ANI
 		Tick: 100
 		Length: 7
+		Reverses: true
 		ZOffset: -900
 
 colony_bit3:
 	idle: sprites|COLONYPICKUPC.ANI
 		Tick: 100
 		Length: 7
+		Reverses: true
 		ZOffset: -900
 
 colony_bit4:
 	idle: sprites|COLONYPICKUPD.ANI
 		Tick: 100
 		Length: 7
+		Reverses: true
 		ZOffset: -900
 
 pips:
