@@ -1,10 +1,10 @@
 editor-overlay:
 	copy: bits/copypaste.png
 		Start: 0
-		Lenght: 1
+		Length: 1
 	paste: bits/copypaste.png
 		Start: 1
-		Lenght: 1
+		Length: 1
 
 shroud:
 	shroud: bits/shroud.png
