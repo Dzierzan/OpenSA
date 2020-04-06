@@ -42,8 +42,9 @@ projectiles:
 	freckles: WEAPON_FRECKLE.ANI
 		Length: 1
 		ZOffset: 4900
-	popcorn: WEAPON_WHIP.ANI
+	popcorn: bits/whip.png
 		Length: 1
+		Facings: 16
 		ZOffset: 4900
 	spike: bits/thorn.png
 		Length: 1
