@@ -233,3 +233,6 @@ GameSpeeds:
 		Name: Fastest
 		Timestep: 20
 		OrderLatency: 6
+
+DefaultPlayer:
+	Color: ada294
