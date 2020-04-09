@@ -122,6 +122,7 @@
 		CaptureSound: Swarm_Assault|bits/sounds/TurretPowerUp.wav
 		LostSound: Swarm_Assault|bits/sounds/TurretPowerDown.wav
 		ColonyExplosionSound: Swarm_Assault|bits/sounds/TurretExplosion.wav
+		Explode: dieTurret
 	SelectionDecorations:
 	Selectable:
 		Priority: 10
