@@ -64,6 +64,8 @@ ant_bull_pirate:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMENEUTRALANTBULL.ANI
+	portrait: sprites|COLONYNEUTRALANTBULL.ANI
 
 ants_grenadier_pirate:
 	idle:
@@ -131,6 +133,8 @@ ants_grenadier_pirate:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMENEUTRALGRENADIER.ANI
+	portrait: sprites|COLONYNEUTRALGRENADIER.ANI
 
 moth:
 	idle:
@@ -205,6 +209,8 @@ moth:
 		ZOffset: -5000
 	icon: bits/custom_icons.png
 		Start: 3
+	name: sprites|NAMENEUTRALMOTH.ANI
+	portrait: sprites|COLONYNEUTRALMOTH.ANI
 
 dragonfly:
 	idle:
@@ -279,6 +285,8 @@ dragonfly:
 		ZOffset: -5000
 	icon: bits/custom_icons.png
 		Start: 1
+	name: sprites|NAMENEUTRALDRAGONFLY.ANI
+	portrait: sprites|COLONYNEUTRALDRAGONFLY3D.ANI
 
 fly:
 	idle:
@@ -353,6 +361,8 @@ fly:
 		ZOffset: -5000
 	icon: bits/custom_icons.png
 		Start: 2
+	name: sprites|NAMENEUTRALFLY.ANI
+	portrait: sprites|COLONYNEUTRALFLY3D.ANI
 
 flying_machine:
 	idle:
@@ -427,3 +437,5 @@ flying_machine:
 		ZOffset: -5000
 	icon: bits/custom_icons.png
 		Start: 4
+	name: sprites|NAMENEUTRALFLYINGMACHINE.ANI
+	portrait: sprites|COLONYNEUTRALFLYINGMACHINE3D.ANI

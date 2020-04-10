@@ -61,6 +61,8 @@ wasps_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMEWASPASSAULT.ANI
+	portrait: sprites|COLONYWASPA3DB.ANI
 
 wasps_medium:
 	idle:
@@ -125,6 +127,8 @@ wasps_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMEWASPPARALYSIS.ANI
+	portrait: sprites|COLONYWASPB3DB.ANI
 
 wasps_heavy:
 	idle:
@@ -189,3 +193,5 @@ wasps_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMEWASPSONIC.ANI
+	portrait: sprites|COLONYWASPC3DB.ANI

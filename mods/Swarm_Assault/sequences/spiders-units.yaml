@@ -61,6 +61,8 @@ spiders_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMESPIDERBLACKWIDOW.ANI
+	portrait: sprites|COLONYSPIDERA3DB.ANI
 
 spiders_medium:
 	idle:
@@ -125,6 +127,8 @@ spiders_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMESPIDERSNIPER.ANI
+	portrait: sprites|COLONYSPIDERA3DB.ANI
 
 spiders_heavy:
 	idle:
@@ -189,3 +193,5 @@ spiders_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
+	name: sprites|NAMESPIDERROCKET.ANI
+	portrait: sprites|COLONYSPIDERA3DB.ANI

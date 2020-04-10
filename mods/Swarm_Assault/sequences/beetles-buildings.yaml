@@ -71,6 +71,7 @@ beetles_colony:
 		Facings: 16
 		Tick: 40
 		ZOffset: 2100
+	name: sprites|NAMEBEETLECOLONY.ANI
 
 beetles_colony_turret:
 	idle-overlay: bits/BeetlesColonyTurret.png
@@ -147,3 +148,4 @@ beetles_colony_turret:
 		Facings: 16
 		Tick: 40
 		ZOffset: 2100
+	name: sprites|NAMEBEETLECOLONY.ANI #TODO PLACEHOLDER
