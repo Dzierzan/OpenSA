@@ -83,6 +83,13 @@ EditorPlayer:
 			Clear: 100
 			Rock: 100
 			Vegetation: 100
+	# Required to show the map grid.
+	TerrainGeometryOverlay:
+	# Required for debug overlays:
+	DebugVisualizations:
+	# Required for warhead debug overlays.
+	WarheadDebugOverlay:
+
 
 World:
 	Inherits: ^CoreWorld
