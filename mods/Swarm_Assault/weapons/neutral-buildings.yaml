@@ -41,14 +41,12 @@ puff: #Temporary weapon, needs to be changed!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 40 #TODO Verify!
 	Range: 5c0
-	Burst: 6
-	BurstDelays: 0
-	StartBurstReport: sounds|PUFFBALLSPAWN.SDF
+	Report: sounds|PUFFBALLSPAWN.SDF
 	Projectile: Bullet
-		Speed: 230
+		Speed: 170, 220
 		Blockable: false
-		LaunchAngle: 100 #62
-		Inaccuracy: 813
+		LaunchAngle: 170, 200 #62
+		Inaccuracy: 10000
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage

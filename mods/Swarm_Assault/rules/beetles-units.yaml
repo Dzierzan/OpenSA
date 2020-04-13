@@ -45,7 +45,46 @@ beetles_medium:
 		ExperienceModifier: 20200
 	#RevealsShroud:
 	#	Range: 7c0
-	Armament:
+	AttackFrontal:
+		Armaments: primary, secondary, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th
+	Armament@1:
+		Name: primary
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@2:
+		Name: secondary
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@3:
+		Name: 3rd
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@4:
+		Name: 4th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@5:
+		Name: 5th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@6:
+		Name: 6th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@7:
+		Name: 7th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@8:
+		Name: 8th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@9:
+		Name: 9th
+		Weapon: beetles_medium
+		PauseOnCondition: paralyzed
+	Armament@10:
+		Name: 10th
 		Weapon: beetles_medium
 		PauseOnCondition: paralyzed
 

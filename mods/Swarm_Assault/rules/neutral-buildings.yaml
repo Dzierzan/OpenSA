@@ -23,7 +23,25 @@ puff:
 		HP: 4500
 	Buildable:
 		BuildDuration: 50
-	Armament:
+	AttackTurreted:
+		Armaments: primary, secondary, 3rd, 4th, 5th, 6th
+	Armament@1:
+		Name: primary
+		Weapon: puff
+	Armament@2:
+		Name: secondary
+		Weapon: puff
+	Armament@3:
+		Name: 3rd
+		Weapon: puff
+	Armament@4:
+		Name: 4th
+		Weapon: puff
+	Armament@5:
+		Name: 5th
+		Weapon: puff
+	Armament@6:
+		Name: 6th
 		Weapon: puff
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:

@@ -17,13 +17,11 @@ beetles_light:
 beetles_medium:
 	ValidTargets: Ground, Paralyzed
 	Range: 2c0
-	Burst: 10
-	BurstDelays: 0
 	ReloadDelay: 25
-	StartBurstReport: sounds|SHRAPNELFIRE.SDF
+	Report: sounds|SHRAPNELFIRE.SDF
 	Projectile: Bullet
-		Speed: 250
-		LaunchAngle: 200 #62
+		Speed: 170, 220
+		LaunchAngle: 170, 200 #62
 		Inaccuracy: 5000 #813
 		Image: projectiles
 		Sequences: grenade
