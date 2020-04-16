@@ -48,7 +48,6 @@ wasps_heavy:
 	ReloadDelay: 4
 	Range: 6c0
 	Report: sounds|SONIC.SDF
-	ReportLooped: true
 	Projectile: Bullet
 		Speed: 200
 		Inaccuracy: 100

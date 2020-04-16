@@ -35,6 +35,9 @@ puff:
 	name: sprites|NAMENEUTRALSEEDBALL.ANI
 	portrait: sprites|COLONYNEUTRALSEEDBALL3D.ANI
 
+seed:
+	idle: sprites|WEAPON_PUFFBALL.ANI
+
 thorn:
 	idle: sprites|OBTHORNB_NORMAL.ANI
 	damaged-idle: sprites|OBTHORNB_DAMAGEA.ANI

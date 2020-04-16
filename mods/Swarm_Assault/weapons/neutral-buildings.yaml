@@ -59,6 +59,10 @@ puff: #Temporary weapon, needs to be changed!!!
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Paralyzed
+	Warhead@Spawn: SpawnActor
+		Actors: seed
+		ValidTargets: Ground
+		InternalOwner: Creeps
 
 freckles: #Temporary weapon, needs to be changed!!!
 	ValidTargets: Ground, Paralyzed
