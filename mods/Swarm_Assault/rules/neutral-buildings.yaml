@@ -58,7 +58,7 @@ puff:
 seed:
 	SpawnActorOnDeath:
 		Actor: puff
-		Probability: 5
+		Probability: 7
 		SkipMakeAnimations: false
 	SelfHealing:
 		Step: -1000
