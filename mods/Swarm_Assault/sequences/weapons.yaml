@@ -35,10 +35,10 @@ projectiles:
 		Length: 1
 		Facings: -16
 		ZOffset: 4900
-	homing: bits/homing.png
+	homing: bits/Homing.png
 		Length: 1
 		Facings: -16
-		ZOffset: 4900	
+		ZOffset: 4900
 	freckles: WEAPON_FRECKLE.ANI
 		Length: 1
 		ZOffset: 4900
@@ -61,16 +61,16 @@ projectiles:
 		Length: 4
 		Tick: 250
 		Facings: -16
-		ZOffset: 4900	
+		ZOffset: 4900
 	bouncebomb: WEAPON_BOUNCEBOMB.ANI
 		Length: 6
 		Tick: 60
-		ZOffset: 4900		
+		ZOffset: 4900
 
 	colonybit: COLONYBIT.ANI
 		Length: 4
 		Tick: 60
-		ZOffset: 4900	
+		ZOffset: 4900
 
 
 smoke_trail:

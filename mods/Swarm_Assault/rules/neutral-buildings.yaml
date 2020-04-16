@@ -75,7 +75,7 @@ freckle:
 		Weapon: freckles
 	WithLoopedAttackSound:
 		Report: sounds|FRECKLEFIRE.SDF
-		ReloadDelay: 40
+		Delay: 40
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 
