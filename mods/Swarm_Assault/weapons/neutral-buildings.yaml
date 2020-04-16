@@ -37,22 +37,22 @@ spike:
 		ImpactSounds: sounds|SNIPERHIT.SDF
 		ValidTargets: Ground, Paralyzed
 
-puff: #Temporary weapon, needs to be changed!!!
+puff:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #TODO Verify!
+	ReloadDelay: 20
 	Range: 5c0
 	Report: sounds|PUFFBALLSPAWN.SDF
 	Projectile: Bullet
 		Speed: 170, 220
 		Blockable: false
-		LaunchAngle: 170, 200 #62
+		LaunchAngle: 170, 200
 		Inaccuracy: 10000
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
 		Spread: 512
 		Falloff: 100, 50, 25, 0
-		Damage: 500 #Might require further verifing
+		Damage: 500
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -62,7 +62,7 @@ puff: #Temporary weapon, needs to be changed!!!
 
 puff_normal_seed:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40
+	ReloadDelay: 20
 	Range: 5c0
 	Projectile: Bullet
 		Speed: 170, 220
