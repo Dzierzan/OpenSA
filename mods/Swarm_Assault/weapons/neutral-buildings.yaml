@@ -59,20 +59,15 @@ puff: #Temporary weapon, needs to be changed!!!
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Paralyzed
-	#Warhead@Spawn: SpawnActor
-	#	Actors: seed
-	#	ValidTargets: Ground
-	#	InternalOwner: Creeps
-	#	TerrainTypes: Clear, Rock, Vegetation
 
 puff_normal_seed:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #TODO Verify!
+	ReloadDelay: 40
 	Range: 5c0
 	Projectile: Bullet
 		Speed: 170, 220
 		Blockable: false
-		LaunchAngle: 170, 200 #62
+		LaunchAngle: 170, 200
 		Inaccuracy: 10000
 		Image: projectiles
 		Sequences: puff
