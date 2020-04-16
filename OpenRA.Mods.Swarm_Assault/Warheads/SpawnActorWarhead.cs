@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Collections.Generic;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common.Effects;
 using OpenRA.Mods.Common.Traits;
@@ -35,6 +36,10 @@ namespace OpenRA.Mods.Swarm_Assault.Warheads
 		[Desc("List of sounds that can be played at the spawning location.")]
 		public readonly string[] Sounds = new string[0];
 
+		[FieldLoader.Require]
+		[Desc("The terrain types that the actor is allowed to spawn.")]
+		public readonly HashSet<string> TerrainTypes = new HashSet<string>();
+
 		public readonly bool UsePlayerPalette = false;
 
 		public void RulesetLoaded(Ruleset rules, WeaponInfo info)
@@ -70,7 +75,7 @@ namespace OpenRA.Mods.Swarm_Assault.Warheads
 
 				while (cell.MoveNext())
 				{
-					if (!firedBy.World.ActorMap.GetActorsAt(cell.Current).Any())
+					if (!firedBy.World.ActorMap.GetActorsAt(cell.Current).Any() && TerrainTypes.Contains(firedBy.World.Map.GetTerrainInfo(cell.Current).Type))
 					{
 						td.Add(new LocationInit(cell.Current));
 						var unit = firedBy.World.CreateActor(false, a.ToLowerInvariant(), td);
