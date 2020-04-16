@@ -45,6 +45,26 @@ puff:
 		Weapon: puff
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	WithMakeAnimation:
+		Sequence: grow
+
+seed:
+	SpawnActorOnDeath:
+		Actor: puff
+		Probability: 10
+		SkipMakeAnimations: false
+	SelfHealing:
+		Step: -1000
+		HealIfBelow: 101
+	HitShape:
+	BodyOrientation:
+		QuantizedFacings: 1
+	Health:
+		HP: 16000
+	HiddenUnderFog:
+	Immobile:
+	RenderSprites:
+	WithSpriteBody:
 
 thorn:
 	Inherits@1: ^AutoTargetDefault
