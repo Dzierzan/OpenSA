@@ -24,7 +24,7 @@ puff:
 	Buildable:
 		BuildDuration: 50
 	AttackTurreted:
-		Armaments: primary, secondary, 3rd, 4th, 5th, 6th
+		Armaments: primary, secondary, 3rd, 4th, 5th, 6th, seed
 	Armament@1:
 		Name: primary
 		Weapon: puff
@@ -43,10 +43,17 @@ puff:
 	Armament@6:
 		Name: 6th
 		Weapon: puff
+		PauseOnCondition: normal_seed
+	Armament@seed:
+		Name: seed
+		Weapon: puff_normal_seed
+		RequiresCondition: normal_seed
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	WithMakeAnimation:
 		Sequence: grow
+	GrantRandomCondition:
+		Conditions: normal_seed
 
 seed:
 	SpawnActorOnDeath:
