@@ -71,6 +71,11 @@ puff_normal_seed:
 		Inaccuracy: 10000
 		Image: projectiles
 		Sequences: puff
+	Warhead@Damage: SpreadDamage
+		Spread: 0
+		Falloff: 100, 50, 25, 0
+		Damage: 0
+		ValidTargets: Ground, Paralyzed
 	Warhead@Spawn: SpawnActor
 		Actors: seed
 		ValidTargets: Ground
