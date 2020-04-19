@@ -265,18 +265,6 @@ Actors:
 		Owner: Multi1
 		Location: 69,105
 		Facing: 92
-	Actor57: slapfighter
-		Owner: Multi1
-		Location: 59,99
-		Facing: 92
-	Actor58: slapfighter
-		Owner: Multi1
-		Location: 61,99
-		Facing: 92
-	Actor59: slapfighter
-		Owner: Multi1
-		Location: 63,99
-		Facing: 92
 	Actor60: ants_light
 		Owner: Multi0
 		Location: 67,19
@@ -445,18 +433,6 @@ Actors:
 		Owner: Multi0
 		Location: 89,23
 		Facing: 92
-	Actor106: slapfighter
-		Owner: Multi0
-		Location: 55,25
-		Facing: 92
-	Actor107: slapfighter
-		Owner: Multi0
-		Location: 57,25
-		Facing: 92
-	Actor108: slapfighter
-		Owner: Multi0
-		Location: 59,25
-		Facing: 92
 	Actor109: ant_bull_pirate
 		Location: 9,58
 		Facing: 92
@@ -530,17 +506,17 @@ Actors:
 		Location: 16,73
 		Facing: 92
 	Actor159: ants_heavy
-		Owner: Multi1
 		Facing: 96
 		Location: 71,23
+		Owner: Multi0
 	Actor160: ants_heavy
-		Owner: Multi1
 		Facing: 96
 		Location: 69,23
+		Owner: Multi0
 	Actor161: ants_heavy
-		Owner: Multi1
 		Facing: 96
 		Location: 67,23
+		Owner: Multi0
 	Actor162: ants_colony_turret
 		TurretFacing: 96
 		Location: 69,27
@@ -802,9 +778,6 @@ Actors:
 	Actor211: object_7
 		Owner: Neutral
 		Location: 36,50
-	Actor212: object_3
-		Owner: Neutral
-		Location: 29,53
 	Actor213: object_3
 		Owner: Neutral
 		Location: 23,44
@@ -1186,3 +1159,106 @@ Actors:
 	Actor339: pirates_spawner
 		Owner: Creeps
 		Location: 5,68
+	Actor340: wasps_colony
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 32,62
+	Actor341: wasps_colony_turret
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 35,71
+	Actor342: wasps_colony_turret
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 42,65
+	Actor343: beetles_colony
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 25,51
+	Actor344: beetles_colony_turret
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 36,52
+	Actor345: beetles_colony_turret
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 27,46
+	Actor346: beetles_colony_turret
+		Owner: Creeps
+		TurretFacing: 96
+		Location: 14,52
+	Actor347: wasps_light
+		Owner: Creeps
+		Facing: 96
+		Location: 30,67
+	Actor348: wasps_light
+		Owner: Creeps
+		Facing: 96
+		Location: 32,60
+	Actor349: wasps_light
+		Owner: Creeps
+		Facing: 96
+		Location: 38,68
+	Actor350: wasps_light
+		Owner: Creeps
+		Facing: 96
+		Location: 39,63
+	Actor351: wasps_light
+		Owner: Creeps
+		Facing: 96
+		Location: 37,59
+	Actor352: beetles_heavy
+		Owner: Creeps
+		Facing: 96
+		Location: 28,59
+	Actor353: beetles_heavy
+		Owner: Creeps
+		Facing: 96
+		Location: 23,55
+	Actor354: beetles_heavy
+		Owner: Creeps
+		Facing: 96
+		Location: 26,49
+	Actor355: beetles_heavy
+		Owner: Creeps
+		Facing: 96
+		Location: 33,55
+	Actor356: beetles_heavy
+		Owner: Creeps
+		Facing: 96
+		Location: 33,50
+	Actor357: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 25,68
+	Actor358: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 23,61
+	Actor359: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 5,63
+	Actor360: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 35,57
+	Actor361: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 47,60
+	Actor362: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 18,51
+	Actor363: popcorn
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 10,54
