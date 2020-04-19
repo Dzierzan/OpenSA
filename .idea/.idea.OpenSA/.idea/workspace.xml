@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd46f110-422a-4450-a738-79e64f908117" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenSA/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OpenSA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OpenSA/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OpenSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OpenSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/Colony.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/Colony.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/bits/slapfightericon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/mod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/mod.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/rules/ants-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/rules/ants-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/rules/core.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/rules/core.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/rules/neutral-units.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/rules/neutral-units.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/rules/spiders-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/rules/spiders-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/rules/wasps-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/rules/wasps-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/sequences/ants-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/sequences/ants-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/sequences/spiders-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/sequences/spiders-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/sequences/wasps-buildings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/sequences/wasps-buildings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/weapons/misc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/weapons/misc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods/OpenSA/weapons/neutral-units.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mods/OpenSA/weapons/neutral-units.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ColorPickerRemapIndices</find>
+      <find>color</find>
+      <find>settings.</find>
+      <find>manager</find>
+      <find>creep</find>
+      <find>remove</find>
+      <find>crushableby</find>
+      <find>Remove</find>
+      <find>Creeps</find>
+      <find>condition</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Actor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Graphics/AnimationWithOffset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Immobile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Projectiles/InstantHit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/ColonyBit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/ObjectCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/ActorExts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/SelfHealing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Activities/Move/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/FileSystem/DdfPackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Projectiles/Missile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Player/OverlayPlayerColorPalette.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Widgets/OverlayColorPreviewManagerWidget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Conditions/GrantConditionOnProduction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/GameRules/WeaponInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Primitives/TypeDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/SpawnColonyBitWarhead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Activities/Activity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Conditions/GrantConditionWhileProducing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Crates/Crate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Crates/GiveUnitCrateAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Warheads/SpreadDamageWarhead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Player/PlaceBuilding.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Map/ActorInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/World.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Behaviour/Living.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Orders/PlaceBuildingOrderGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Traits/TraitsInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/World/PaletteFromDdf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Warheads/CreateResourceWarhead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Projectiles/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/Colony.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Buildings/BuildingUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Buildable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Player/ProductionQueue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Util.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/EngineerRepair.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Buildings/Refinery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Power/Power.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Map/TileReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Power/Player/PowerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Widgets/ColorPreviewManagerWidget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Cloak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Render/RenderSprites.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/World/Locomotor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Render/WithSpriteBody.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Armament.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Sound/Sound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Warheads/DamageWarhead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Mobile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Graphics/SequenceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/AudioLoaders/SdfLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/FileSystem/SdfPackage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/Map/MapPlayers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Explodes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Warheads/CreateEffectWarhead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Game/TraitDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/HitShape.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/InstantHit.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/SpreadInstantHit.cs" />
+        <option value="$PROJECT_DIR$/mods/OpenSA/weapons/beetles-units.yaml" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Behaviour/Living.cs" />
+        <option value="$PROJECT_DIR$/mods/OpenSA/metrics.yaml" />
+        <option value="$PROJECT_DIR$/mods/OpenSA/mod.yaml" />
+        <option value="$PROJECT_DIR$/mods/OpenSA/chrome/lobby.yaml" />
+        <option value="$PROJECT_DIR$/mods/OpenSA/chrome/settings.yaml" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Widgets/OverlayColorPreviewManagerWidget.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Conditions/GrantConditionOnProduction.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Conditions/GrantConditionWhileProducing.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/SpawnColonyBitWarhead.cs" />
+        <option value="$PROJECT_DIR$/engine/OpenRA.Mods.Common/Traits/Crates/Crate.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/ColonyBit.cs" />
+        <option value="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Traits/Colony/Colony.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="691" />
+    <option name="y" value="376" />
+    <option name="width" value="2559" />
+    <option name="height" value="1724" />
+  </component>
+  <component name="ProjectId" id="1TDVtFyVg0sUpuqrSzW8uaNk96I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/engine/OpenRA.Game.exe" />
+      <option name="PROGRAM_PARAMETERS" value="Engine.ModSearchPaths=&quot;../mods,./mods&quot; Game.Mod=OpenSA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/engine" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/engine/OpenRA.Game/OpenRA.Game.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView />
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd46f110-422a-4450-a738-79e64f908117" name="Default Changelist" comment="" />
+      <created>1572994866008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572994866008</updated>
+      <workItem from="1572994867383" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1572994948112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1572994948112" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/SpreadInstantHit.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/OpenRA.Mods.OpenSA/Warheads/SpreadInstantHit.cs" initialLine="53" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

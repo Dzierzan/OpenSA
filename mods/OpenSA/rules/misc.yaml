@@ -1,0 +1,163 @@
+# The spawnpoint for player actors.
+mpspawn:
+	Interactable:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+		Categories: System
+
+# TODO keep commenting from here on!
+^CorePlayer:
+	AlwaysVisible: # TODO what?
+	Shroud:
+		FogCheckboxDisplayOrder: 3
+		ExploredMapCheckboxEnabled: True
+
+Player:
+	Inherits: ^CorePlayer
+	# Developer debug menu
+	DeveloperMode:
+		CheckboxEnabled: True
+	# Allow players to place building.
+	PlaceBuilding:
+	# Enable mission objectives, required to win or loose mission.
+	MissionObjectives:
+	# Default objective: Win by killing all enemies.
+	ConquestVictoryConditions:
+	PlayerResources:
+	#	SelectableCash: 5000, 6000, 8000, 10000, 12500, 15000, 10000000
+	PowerManager: # TODO what?
+	SupportPowerManager:
+	TechTree:
+	# Required for FrozenUnderFog to work
+	FrozenActorLayer:
+	# Allows placing beacon
+	PlaceBeacon:
+		ArrowSequence:
+		CircleSequence: x
+		Duration: 250
+
+EditorPlayer:
+	Inherits: ^CorePlayer
+
+^CoreWorld:
+	Inherits: ^Palettes
+	AlwaysVisible:
+	Selection:
+	ScreenMap:
+	ActorMap:
+	MusicPlaylist:
+	TerrainGeometryOverlay: # TODO do we need this?
+	TerrainRenderer:
+	ShroudRenderer:
+		Index: 0, 15, 3, 6, 12, 9, 11, 7, 14, 13, 1, 2, 4, 8, 5, 10
+	Faction@Random:
+		Name: Any
+		InternalName: Random
+		Side: Random
+		RandomFactionMembers: ants, beetles, scorpions, spiders, wasps
+	LoadWidgetAtGameStart:
+	Locomotor@Unit:
+		Name: unit
+		Crushes: colony_bit
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 75
+			Vegetation: 50
+	Locomotor@Wasp:
+		Name: wasp
+		Crushes: colony_bit
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 100
+			Vegetation: 100
+	Locomotor@Special:
+		Name: slapfighter
+		Crushes: colony_bit
+		TerrainSpeeds:
+			Clear: 100
+			Rock: 100
+			Vegetation: 100
+	# Required to show the map grid.
+	TerrainGeometryOverlay:
+	# Required for debug overlays:
+	DebugVisualizations:
+	# Required for warhead debug overlays.
+	WarheadDebugOverlay:
+
+
+World:
+	Inherits: ^CoreWorld
+	ChatCommands: # TODO what is this for?
+	DevCommands: # TODO what is this for?
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence: # TODO what is this for?
+	ProductionQueueFromSelection: # TODO we can remove this one as soon as our ui works!
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	DomainIndex:
+	SpawnMapActors:
+	MapBuildRadius: # TODO do we want this?
+	MapOptions: # TODO configure this correctly.
+	MPStartLocations:
+	CreateMPPlayers:
+	SpawnMPUnits:
+	PathFinder:
+	ValidateOrder:
+	MapCreeps:
+		CheckboxLabel: Pirates
+		CheckboxDescription: Allows spawning pirates on the battlefield
+		CheckboxVisible: True
+		CheckboxEnabled: True
+	ActorSpawnManager:
+		Minimum: 1
+		Maximum: 4
+		SpawnInterval: 250
+		Actors: ant_bull_pirate, ants_grenadier_pirate
+
+EditorWorld:
+	Inherits: ^CoreWorld
+	EditorActorLayer:
+	EditorCursorLayer:
+	EditorActionManager:
+	EditorSelectionLayer:
+		Palette: OpenSA
+
+pirates_spawner: #TODO This has to be improved, so spawning points are random
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (anthole spawning location)
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	ActorSpawner:
+	MapEditorData:
+		Categories: System
+
+colony_bit1:
+	Inherits: ^CoreVisibleActor
+	WithSpriteBody:
+	Immobile:
+	ColonyBit:
+		MinLifetime: 750
+		MaxLifetime: 1000
+		AutoPickupRadius: 10
+
+colony_bit2:
+	Inherits: colony_bit1
+
+colony_bit3:
+	Inherits: colony_bit1
+
+colony_bit4:
+	Inherits: colony_bit1

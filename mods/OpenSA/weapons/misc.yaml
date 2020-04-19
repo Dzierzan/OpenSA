@@ -1,0 +1,31 @@
+dieBuilding:
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: colony_explosion
+		ExplosionPalette: OpenSA
+		ImpactSounds: sounds|COLONYEXPLODE.SDF
+
+dieTurret:
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ExplosionPalette: OpenSA
+
+colony_bit: #TODO Keep improving that so it might reach original behavior
+	Range: 6c0
+	Projectile: Bullet
+		Speed: 125
+		LaunchAngle: 200
+		Inaccuracy: 900
+		Image: projectiles
+		Sequences: colonybit
+		TrailImage: smoke_trail
+	Warhead@Effect: CreateEffect
+		ImpactSounds: sounds|COLONYPICKUPLAND.SDF
+	Warhead@ColonyBit: SpawnColonyBit
+
+dieFlyingMachine:
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_2
+		ExplosionPalette: OpenSA

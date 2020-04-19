@@ -1,0 +1,238 @@
+Metadata:
+	Title: Swarm Assault
+	Version: 5037495acf92653db30ccdf9cbaa27b45e8786d2
+
+PackageFormats: SdfPackage, DdfPackage
+
+Packages:
+	~^Content/OpenSA/
+	.
+	$OpenSA: OpenSA
+	./mods/common: common
+	OpenSA|bits/Game.SDF: sounds
+	OpenSA|bits/Game.DDF: sprites
+	OpenSA|uibits
+
+MapFolders:
+	OpenSA|maps: System
+	~^maps/OpenSA/5037495acf92653db30ccdf9cbaa27b45e8786d2: User
+
+Rules:
+	OpenSA|rules/palettes.yaml
+	OpenSA|rules/core.yaml
+	OpenSA|rules/misc.yaml
+	OpenSA|rules/ants.yaml
+	OpenSA|rules/ants-buildings.yaml
+	OpenSA|rules/ants-units.yaml
+	OpenSA|rules/beetles.yaml
+	OpenSA|rules/beetles-buildings.yaml
+	OpenSA|rules/beetles-units.yaml
+	OpenSA|rules/wasps.yaml
+	OpenSA|rules/wasps-buildings.yaml
+	OpenSA|rules/wasps-units.yaml
+	OpenSA|rules/spiders.yaml
+	OpenSA|rules/spiders-buildings.yaml
+	OpenSA|rules/spiders-units.yaml
+	OpenSA|rules/scorpions.yaml
+	OpenSA|rules/scorpions-buildings.yaml
+	OpenSA|rules/scorpions-units.yaml
+	OpenSA|rules/ai.yaml
+	OpenSA|rules/special.yaml
+	OpenSA|rules/neutral-units.yaml
+	OpenSA|rules/neutral-buildings.yaml
+	OpenSA|rules/decorations.yaml
+
+Sequences:
+	OpenSA|sequences/misc.yaml
+	OpenSA|sequences/weapons.yaml
+	OpenSA|sequences/explosions.yaml
+	OpenSA|sequences/ants-buildings.yaml
+	OpenSA|sequences/ants-units.yaml
+	OpenSA|sequences/beetles-buildings.yaml
+	OpenSA|sequences/beetles-units.yaml
+	OpenSA|sequences/wasps-buildings.yaml
+	OpenSA|sequences/wasps-units.yaml
+	OpenSA|sequences/spiders-buildings.yaml
+	OpenSA|sequences/spiders-units.yaml
+	OpenSA|sequences/scorpions-buildings.yaml
+	OpenSA|sequences/scorpions-units.yaml
+	OpenSA|sequences/special.yaml
+	OpenSA|sequences/neutral-units.yaml
+	OpenSA|sequences/neutral-buildings.yaml
+	OpenSA|sequences/decorations.yaml
+
+Weapons:
+	OpenSA|weapons/misc.yaml
+	OpenSA|weapons/ants-buildings.yaml
+	OpenSA|weapons/ants-units.yaml
+	OpenSA|weapons/beetles-buildings.yaml
+	OpenSA|weapons/beetles-units.yaml
+	OpenSA|weapons/wasps-buildings.yaml
+	OpenSA|weapons/wasps-units.yaml
+	OpenSA|weapons/spiders-buildings.yaml
+	OpenSA|weapons/spiders-units.yaml
+	OpenSA|weapons/scorpions-buildings.yaml
+	OpenSA|weapons/scorpions-units.yaml
+	OpenSA|weapons/special.yaml
+	OpenSA|weapons/neutral-units.yaml
+	OpenSA|weapons/neutral-buildings.yaml
+
+TileSets:
+	OpenSA|tilesets/candy.yaml
+	OpenSA|tilesets/desert.yaml
+	OpenSA|tilesets/swamp.yaml
+	OpenSA|tilesets/normal.yaml
+
+Cursors:
+	OpenSA|cursors.yaml
+
+Chrome:
+	OpenSA|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	OpenSA|OpenRA.Mods.OpenSA.dll
+
+ChromeLayout:
+	common|chrome/ingame.yaml
+	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-fmvplayer.yaml
+	common|chrome/ingame-menu.yaml
+	common|chrome/ingame-info.yaml
+	common|chrome/ingame-infoscripterror.yaml
+	common|chrome/ingame-infobriefing.yaml
+	common|chrome/ingame-infoobjectives.yaml
+	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-observer.yaml
+	OpenSA|chrome/ingame-player.yaml
+	common|chrome/ingame-perf.yaml
+	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
+	common|chrome/ingame-infochat.yaml
+	common|chrome/mainmenu.yaml
+	common|chrome/mainmenu-prompts.yaml
+	common|chrome/settings.yaml
+	common|chrome/credits.yaml
+	common|chrome/lobby.yaml
+	common|chrome/lobby-mappreview.yaml
+	common|chrome/playerprofile.yaml
+	common|chrome/lobby-players.yaml
+	common|chrome/lobby-options.yaml
+	common|chrome/lobby-music.yaml
+	common|chrome/lobby-servers.yaml
+	common|chrome/lobby-kickdialogs.yaml
+	common|chrome/color-picker.yaml
+	common|chrome/map-chooser.yaml
+	common|chrome/multiplayer-browser.yaml
+	common|chrome/multiplayer-browserpanels.yaml
+	common|chrome/multiplayer-createserver.yaml
+	common|chrome/multiplayer-directconnect.yaml
+	common|chrome/connection.yaml
+	common|chrome/dropdowns.yaml
+	common|chrome/musicplayer.yaml
+	common|chrome/tooltips.yaml
+	common|chrome/assetbrowser.yaml
+	common|chrome/missionbrowser.yaml
+	common|chrome/confirmation-dialogs.yaml
+	common|chrome/editor.yaml
+	common|chrome/replaybrowser.yaml
+
+AssetBrowser:
+	SupportedExtensions: .ani, .ddf
+
+Voices:
+	OpenSA|audio/voices.yaml
+
+Notifications:
+	OpenSA|audio/notifications.yaml
+
+Translations:
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/production-peractor.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+
+LoadScreen: LogoStripeLoadScreen
+	Image: OpenSA|uibits/loadscreen.png
+	Text: Filling Crates..., Breeding Sandworms..., Fuelling carryalls..., Deploying harvesters..., Preparing thopters..., Summoning mentats...
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	OpenSA|metrics.yaml
+
+Fonts:
+	Regular:
+		Font: common|FreeSans.ttf
+		Size:14
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size:14
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size:32
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size:18
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size:24
+	Small:
+		Font: common|FreeSans.ttf
+		Size:12
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size:10
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size:10
+
+Missions:
+
+MapGrid:
+	TileSize: 24, 24
+	Type: Rectangular
+
+SupportsMapsFrom: OpenSA
+
+SoundFormats: Sdf, Wav
+
+SpriteFormats: Ani, Ddf, PngSheet
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+GameSpeeds:
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 1
+	fast:
+		Name: Fast
+		Timestep: 35
+		OrderLatency: 4
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
+
+DefaultPlayer:
+	Color: ada294
