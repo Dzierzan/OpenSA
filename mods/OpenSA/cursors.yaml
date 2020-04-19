@@ -17,92 +17,72 @@ Cursors:
 			Start: 0
 			X: 0
 			Y: 0
-	sprites|MouseSelectTemp.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		select:
-			Start: 0
-			Lenght: 3
+			Start: 25
+			Length: 4
 			X: 0
 			Y: 0
 
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attack:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 37
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attackoutsiderange:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 37
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attackmove:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 41
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attackmove-blocked:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 41
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		assaultmove:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 41
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		assaultmove-blocked:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 41
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attack-minimap:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 37
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseAttack.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		attackoutsiderange-minimap:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 37
+			Length: 4
 			X: 0
 			Y: 0
 
-	sprites|MouseMove.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		move:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 29
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseMove.ANI: OpenSA
+	bits/cursors.png: OpenSA
 		move-minimap:
-			Start: 0
-			Length: 3
-			Tick: 80
-			Reverses: true
+			Start: 29
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
@@ -113,82 +93,82 @@ Cursors:
 
 	bits/cursors.png: OpenSA
 		scroll-t:
-			Start: 4
-			X: 0
-			Y: 0
-	bits/cursors.png: OpenSA
-		scroll-tr:
-			Start: 5
-			X: 0
-			Y: 0
-	bits/cursors.png: OpenSA
-		scroll-r:
-			Start: 6
-			X: 0
-			Y: 0
-	bits/cursors.png: OpenSA
-		scroll-br:
-			Start: 7
-			X: 0
-			Y: 0
-	bits/cursors.png: OpenSA
-		scroll-b:
-			Start: 8
-			X: 0
-			Y: 0
-	bits/cursors.png: OpenSA
-		scroll-bl:
 			Start: 9
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-l:
+		scroll-tr:
 			Start: 10
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-tl:
+		scroll-r:
 			Start: 11
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-t-blocked:
+		scroll-br:
 			Start: 12
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-tr-blocked:
+		scroll-b:
 			Start: 13
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-r-blocked:
+		scroll-bl:
 			Start: 14
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-br-blocked:
+		scroll-l:
 			Start: 15
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-b-blocked:
+		scroll-tl:
 			Start: 16
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-bl-blocked:
+		scroll-t-blocked:
 			Start: 17
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-l-blocked:
+		scroll-tr-blocked:
 			Start: 18
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		scroll-tl-blocked:
+		scroll-r-blocked:
 			Start: 19
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		scroll-br-blocked:
+			Start: 20
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		scroll-b-blocked:
+			Start: 21
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		scroll-bl-blocked:
+			Start: 22
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		scroll-l-blocked:
+			Start: 23
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		scroll-tl-blocked:
+			Start: 24
 			X: 0
 			Y: 0
 
@@ -205,16 +185,16 @@ Cursors:
 	#			Start: 24
 	#			X: 24
 	#			Y: 24
-	sprites|MouseSelect.ANI: OpenSA	
+	bits/cursors.png: OpenSA	
 		guard:
-			Start: 0
-			Length: 3
+			Start: 33
+			Length: 4
 			X: 0
 			Y: 0
-	sprites|MouseSelect.ANI: OpenSA	
+	bits/cursors.png: OpenSA	
 		guard-minimap:
-			Start: 0
-			Length: 3
+			Start: 33
+			Length: 4
 			X: 0
 			Y: 0
 	
@@ -232,64 +212,55 @@ Cursors:
 	bits/cursors.png: OpenSA
 		joystick-all:
 			Start: 1
-			Length: 3
-			Reverses: true
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-t-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-tr-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-r-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-br-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-b-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-bl-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-l-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		joystick-tl-blocked:
-			Start: 20
-			Length: 3
-			Reverses: true
+			Start: 5
+			Length: 4
 			X: 0
 			Y: 0
 
