@@ -2,6 +2,7 @@
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.Swarm_Assault.Traits.Render;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.Swarm_Assault.Traits
@@ -62,11 +63,20 @@ namespace OpenRA.Mods.Swarm_Assault.Traits
 		[Sync]
 		int ticks;
 
+		WithSpawnsShrapnelAnimation[] animations;
+
 		public SpawnsShrapnel(Actor self, SpawnsShrapnelInfo info)
 			: base(info)
 		{
 			world = self.World;
 			body = self.TraitOrDefault<BodyOrientation>();
+		}
+
+		protected override void Created(Actor self)
+		{
+			base.Created(self);
+
+			animations = self.TraitsImplementing<WithSpawnsShrapnelAnimation>().ToArray();
 		}
 
 		void ITick.Tick(Actor self)
@@ -159,12 +169,17 @@ namespace OpenRA.Mods.Swarm_Assault.Traits
 					if (args.Weapon.Report != null && args.Weapon.Report.Any())
 						Game.Sound.Play(SoundType.World, args.Weapon.Report.Random(world.SharedRandom), position);
 				}
+
+				foreach (var animation in animations)
+					animation.Trigger(self);
 			}
 		}
 
 		protected override void TraitEnabled(Actor self)
 		{
-			ticks = 0;
+			ticks = Info.Delay.Length == 2
+					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
+					: Info.Delay[0];
 		}
 	}
 }
