@@ -34,7 +34,7 @@ ants_grenadier_pirate:
 dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 15
-	Range: 1000c0
+	Range: 5c0
 	Projectile: GravityBomb
 		Velocity: 0, 50, -70
 		Acceleration: 0, 0, 0
@@ -60,7 +60,7 @@ dragonfly_right:
 fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 15
-	Range: 1000c0
+	Range: 5c0
 	Projectile: GravityBomb
 		Velocity: 0, 0, -64
 		Acceleration: 0, 0, 0
@@ -78,15 +78,18 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 
 moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #50
-	Range: 1000c0
-	Projectile: GravityBomb
-		Velocity: 0, 0, -64
-		Acceleration: 0, 0, 0
+	ReloadDelay: 50
+	Range: 6c0
+	Projectile: Bullet
+		Speed: 170, 220
+		Blockable: false
+		LaunchAngle: 170, 200
+		Inaccuracy: 100
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
-		Spread: 256
+		Spread: 512
+		Falloff: 100, 50, 25, 0
 		Damage: 500
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
@@ -97,15 +100,18 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 
 flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #50
-	Range: 1000c0
-	Projectile: GravityBomb
-		Velocity: 0, 0, -64
-		Acceleration: 0, 0, 0
+	ReloadDelay: 100 #50
+	Range: 10c0
+	Projectile: Bullet
+		Speed: 100
+		LaunchAngle: 220
+		Inaccuracy: 100
+		BounceCount: 5
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
 		Spread: 256
+		Falloff: 100, 50, 25, 0
 		Damage: 3000
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
