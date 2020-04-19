@@ -25,7 +25,7 @@ scorpions_medium:
 		Damage: 1470
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
-		ImpactSounds: sounds|SNIPERHIT.SDF, OpenSA|bits/sounds/ArrowHit.wav
+		ImpactSounds: sounds|SNIPERHIT.SDF
 		ValidTargets: Ground, Paralyzed
 
 scorpions_heavy:
