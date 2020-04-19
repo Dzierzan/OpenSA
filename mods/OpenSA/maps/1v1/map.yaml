@@ -19,3 +19,14 @@ Players:
 		Faction: Random
 Actors:
 Rules:
+	World:
+		CreepFlyerSpawner:
+			ActorTypes: fly
+	fly:
+		-AttackBomber:
+		-Armament:
+		SpawnsShrapnel:
+			Weapon: fly
+			Delay: 20
+			AimChance: 0
+			Amount: 2
