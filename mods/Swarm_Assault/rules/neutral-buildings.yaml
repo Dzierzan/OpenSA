@@ -32,19 +32,31 @@ puff:
 	#Armament:
 	#	Weapon: puff
 	#	RequiresCondition: seed_attack
-	WithAttackOverlay:
-		Sequence: shoot
+	#WithAttackOverlay:
+	#	Sequence: shoot
+	#	RequiresCondition: seed_attack
+	WithIdleAnimation:
+		Sequences: shoot
+		Interval: 20
 		RequiresCondition: seed_attack
 	ExternalCondition@TRIGGER:
 		Condition: seed_attack
-	SpawnsShrapnel:
+	SpawnsShrapnel@1:
 		Weapon: puff
 		Sequence: shoot
-		Amount: 6
+		Amount: 5
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		RequiresCondition: seed_attack
+		RequiresCondition: seed_attack && !injured
+	SpawnsShrapnel@2:
+		Weapon: puff_normal_seed
+		Sequence: shoot
+		Amount: 1
+		Delay: 20
+		AimChance: 0
+		LocalOffset: 0,0,0
+		RequiresCondition: seed_attack && !injured
 
 seed:
 	SpawnActorOnDeath:
