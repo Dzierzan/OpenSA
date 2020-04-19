@@ -14,31 +14,21 @@ popcorn:
 	-WithSpriteTurret:
 
 puff:
-	#Inherits@1: ^AutoTargetDefault
-	Inherits@2: ^CoreNeutralTowerCreep
-	#Inherits@3: ^CoreTurret
+	Inherits: ^CoreNeutralTowerCreep
 	Tooltip:
 		Name: Seed Ball
 	Health:
 		HP: 4500
 	Buildable:
 		BuildDuration: 50
-	#-WithTurretAttackAnimation:
-	#-WithSpriteTurret:
 	-AttackTurreted:
 	-WithAttackAnimation:
 	WithMakeAnimation:
 		Sequence: grow
-	#Armament:
-	#	Weapon: puff
-	#	RequiresCondition: seed_attack
-	#WithAttackOverlay:
-	#	Sequence: shoot
-	#	RequiresCondition: seed_attack
 	WithIdleAnimation:
 		Sequences: shoot
 		Interval: 20
-		RequiresCondition: seed_attack
+		RequiresCondition: seed_attack && !injured
 	ExternalCondition@TRIGGER:
 		Condition: seed_attack
 	SpawnsShrapnel@1:
@@ -48,7 +38,7 @@ puff:
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		RequiresCondition: seed_attack && !injured
+		PauseOnCondition: !seed_attack || injured
 	SpawnsShrapnel@2:
 		Weapon: puff_normal_seed
 		Sequence: shoot
@@ -56,7 +46,7 @@ puff:
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		RequiresCondition: seed_attack && !injured
+		PauseOnCondition: !seed_attack || injured
 
 seed:
 	SpawnActorOnDeath:

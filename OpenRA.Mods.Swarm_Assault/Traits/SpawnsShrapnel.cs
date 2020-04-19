@@ -164,7 +164,9 @@ namespace OpenRA.Mods.Swarm_Assault.Traits
 
 		protected override void TraitEnabled(Actor self)
 		{
-			ticks = 0;
+			ticks = Info.Delay.Length == 2
+					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
+					: Info.Delay[0];
 		}
 	}
 }
