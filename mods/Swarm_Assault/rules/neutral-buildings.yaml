@@ -25,10 +25,8 @@ puff:
 	-WithAttackAnimation:
 	WithMakeAnimation:
 		Sequence: grow
-	WithIdleAnimation:
+	WithSpawnsShrapnelAnimation:
 		Sequences: shoot
-		Interval: 20
-		RequiresCondition: seed_attack && !injured
 	ExternalCondition@TRIGGER:
 		Condition: seed_attack
 	SpawnsShrapnel@1:
