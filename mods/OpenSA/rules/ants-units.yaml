@@ -3,7 +3,6 @@ ants_light:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Soldier
 	Health:
@@ -12,10 +11,6 @@ ants_light:
 		Speed: 105
 	Buildable:
 		BuildDuration: 75
-	GivesExperience:
-		Experience: 5300
-	GainsExperience:
-		ExperienceModifier: 5300
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -27,7 +22,6 @@ ants_medium:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Grenadier
 	Health:
@@ -36,10 +30,6 @@ ants_medium:
 		Speed: 92
 	Buildable:
 		BuildDuration: 150
-	GivesExperience:
-		Experience: 4400
-	GainsExperience:
-		ExperienceModifier: 4400
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -53,7 +43,6 @@ ants_heavy:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Bazooka
 	Health:
@@ -62,10 +51,6 @@ ants_heavy:
 		Speed: 78
 	Buildable:
 		BuildDuration: 250
-	GivesExperience:
-		Experience: 7350
-	GainsExperience:
-		ExperienceModifier: 7350
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

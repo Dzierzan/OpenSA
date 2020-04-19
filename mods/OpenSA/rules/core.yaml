@@ -74,8 +74,6 @@
 		Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
-	GivesExperience:
-		Experience: 100000
 	AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
 		UnitType: dragonfly
 		Description: Debug dragonfly
@@ -146,8 +144,6 @@
 		RequiresCondition: dead
 	ExternalCondition:
 		Condition: dead
-	GivesExperience:
-		Experience: 10000
 	Turreted:
 	WithSpriteTurret:
 	AttackTurreted:
@@ -324,82 +320,6 @@
 		Type: CenterPosition
 	RevealsShroud:
 		Type: CenterPosition
-
-^GainsExperience:
-	GivesExperience:
-		ActorExperienceModifier: 100
-	GainsExperience:
-		#LevelUpNotification: OpenSA|bits/sounds/promotion.wav
-		Conditions:
-			5: rank-veteran
-			10: rank-veteran
-			20: rank-veteran
-	DamageMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 95
-	DamageMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 90
-	DamageMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 85
-	FirepowerMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 105
-	FirepowerMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 110
-	FirepowerMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 120
-	SpeedMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 105
-	SpeedMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 110
-	SpeedMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 120
-	ReloadDelayMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 95
-	ReloadDelayMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 90
-	ReloadDelayMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 85
-	SelfHealing@RANK-2:
-		Step: 200
-		Delay: 100
-		HealIfBelow: 100
-		DamageCooldown: 125
-		RequiresCondition: rank-veteran == 2
-	SelfHealing@RANK-3:
-		Step: 400
-		Delay: 100
-		HealIfBelow: 100
-		DamageCooldown: 125
-		RequiresCondition: rank-veteran == 3
-	WithDecoration@RANK-1:
-		Image: rank
-		Sequence: rank-veteran-1
-		Palette: OpenSA
-		Position: BottomRight
-		RequiresCondition: rank-veteran == 1
-	WithDecoration@RANK-2:
-		Image: rank
-		Sequence: rank-veteran-2
-		Palette: OpenSA
-		Position: BottomRight
-		RequiresCondition: rank-veteran == 2
-	WithDecoration@RANK-3:
-		Image: rank
-		Sequence: rank-veteran-3
-		Palette: OpenSA
-		Position: BottomRight
-		RequiresCondition: rank-veteran == 3
 
 # Map decoration actors.
 ^CoreDecoration:

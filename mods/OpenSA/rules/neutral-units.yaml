@@ -3,7 +3,6 @@ ant_bull_pirate:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Bull Ant
 	Health:
@@ -19,10 +18,6 @@ ant_bull_pirate:
 	Armament:
 		Weapon: ant_bull_pirate
 		PauseOnCondition: paralyzed
-	GivesExperience:
-		Experience: 5300
-	GainsExperience:
-		ExperienceModifier: 5300
 	RenderSprites:
 		Scale: 1.1
 
@@ -31,7 +26,6 @@ ants_grenadier_pirate:
 	Inherits@2: ^CoreArmedSelf
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
-	Inherits@5: ^GainsExperience
 	Tooltip:
 		Name: Pirate Grenadier
 	Health:
@@ -49,10 +43,6 @@ ants_grenadier_pirate:
 		FireDelay: 10
 		LocalOffset: 500,0,555
 		PauseOnCondition: paralyzed
-	GivesExperience:
-		Experience: 4400
-	GainsExperience:
-		ExperienceModifier: 4400
 	RenderSprites:
 		Scale: 1.1
 
@@ -85,8 +75,6 @@ dragonfly:
 	#	RequiresCondition: lack_of_bombs
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF
-	GivesExperience:
-		Experience: 25000
 
 fly:
 	Inherits: ^Bomber
@@ -105,8 +93,6 @@ fly:
 	AmmoPool:
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF
-	GivesExperience:
-		Experience: 16000
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
@@ -128,8 +114,6 @@ moth:
 	AmmoPool:
 	AmbientSound:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
-	GivesExperience:
-		Experience: 16000
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
@@ -180,8 +164,6 @@ flying_machine:
 	Explodes: #TODO It doesn't work
 		Weapon: dieFlyingMachine
 		EmptyWeapon: dieFlyingMachine
-	GivesExperience:
-		Experience: 25000
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
