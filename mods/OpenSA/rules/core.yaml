@@ -213,6 +213,9 @@
 		Prerequisites: ~disabled
 	Living:
 		RotationChance: 250
+	AttackMove:
+	Guard:
+	Guardable:
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
