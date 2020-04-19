@@ -17,6 +17,7 @@
 ^CoreCreature:
 	Inherits@1: ^CoreVisibleActor
 	Inherits@2: ^AffectsDeathLolly
+	Inherits@3: ^AffectsSeedBall
 	HitShape:
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
@@ -263,6 +264,12 @@
 		Condition: self_destruct
 		ValidStances: enemy
 		Range: 2c0
+
+^AffectsSeedBall:
+	ProximityExternalCondition@TRIGGER:
+		Condition: seed_attack
+		ValidStances: enemy
+		Range: 5c0
 
 # Creates special effect when actor is disabled
 ^Paralyzed:

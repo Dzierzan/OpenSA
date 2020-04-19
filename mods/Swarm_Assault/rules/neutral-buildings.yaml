@@ -14,48 +14,37 @@ popcorn:
 	-WithSpriteTurret:
 
 puff:
-	Inherits@1: ^AutoTargetDefault
+	#Inherits@1: ^AutoTargetDefault
 	Inherits@2: ^CoreNeutralTowerCreep
-	Inherits@3: ^CoreTurret
+	#Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Seed Ball
 	Health:
 		HP: 4500
 	Buildable:
 		BuildDuration: 50
-	AttackTurreted:
-		Armaments: primary, secondary, 3rd, 4th, 5th, 6th, seed
-	Armament@1:
-		Name: primary
-		Weapon: puff
-	Armament@2:
-		Name: secondary
-		Weapon: puff
-	Armament@3:
-		Name: 3rd
-		Weapon: puff
-	Armament@4:
-		Name: 4th
-		Weapon: puff
-	Armament@5:
-		Name: 5th
-		Weapon: puff
-	Armament@6:
-		Name: 6th
-		Weapon: puff
-		PauseOnCondition: Seed
-	Armament@seed:
-		Name: seed
-		Weapon: puff_normal_seed
-		RequiresCondition: Seed
-	-WithTurretAttackAnimation:
-	-WithSpriteTurret:
+	#-WithTurretAttackAnimation:
+	#-WithSpriteTurret:
+	-AttackTurreted:
+	-WithAttackAnimation:
 	WithMakeAnimation:
 		Sequence: grow
-	GrantConditionOnAttack:
-		Condition: Seed
-		ArmamentNames: primary
-		RequiredShotsPerInstance: 5
+	#Armament:
+	#	Weapon: puff
+	#	RequiresCondition: seed_attack
+	WithAttackOverlay:
+		Sequence: shoot
+		RequiresCondition: seed_attack
+	ExternalCondition@TRIGGER:
+		Condition: seed_attack
+	SpawnsShrapnel:
+		Weapon: puff
+		Sequence: shoot
+		Amount: 6
+		Delay: 20
+		AimChance: 0
+		LocalOffset: 0,0,0
+		RequiresCondition: seed_attack
 
 seed:
 	SpawnActorOnDeath:

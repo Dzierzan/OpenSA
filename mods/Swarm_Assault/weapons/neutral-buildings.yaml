@@ -46,7 +46,7 @@ puff:
 		Speed: 170, 220
 		Blockable: false
 		LaunchAngle: 170, 200
-		Inaccuracy: 10000
+		Inaccuracy: 100
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
