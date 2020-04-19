@@ -176,6 +176,9 @@
 		FallbackSequence: die
 	Living:
 		RotationChance: 250
+	AttackMove:
+	Guard:
+	Guardable:
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreCreature
