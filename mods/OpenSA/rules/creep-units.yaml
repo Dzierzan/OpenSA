@@ -1,0 +1,160 @@
+ant_bull_pirate:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Bull Ant
+	Health:
+		HP: 5300
+	Mobile:
+		Speed: 105
+	Buildable:
+		BuildDuration: 75
+	#RevealsShroud:
+	#	Range: 7c0
+	Voiced:
+		VoiceSet: AntsVoice
+	Armament:
+		Weapon: ant_bull_pirate
+		PauseOnCondition: paralyzed
+	RenderSprites:
+		Scale: 1.1
+
+ants_grenadier_pirate:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Pirate Grenadier
+	Health:
+		HP: 4400
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 150
+	#RevealsShroud:
+	#	Range: 7c0
+	Voiced:
+		VoiceSet: AntsVoice
+	Armament:
+		Weapon: ants_grenadier_pirate
+		FireDelay: 10
+		LocalOffset: 500,0,555
+		PauseOnCondition: paralyzed
+	RenderSprites:
+		Scale: 1.1
+
+dragonfly:
+	Inherits: ^Bomber
+	Tooltip:
+		Name: Dragonfly
+	Health:
+		HP: 25000
+	Aircraft:
+		Speed: 105
+	Voiced:
+		VoiceSet: NeutralVoice
+	SpawnsShrapnel@RIGHT_BOMB:
+		Weapon: dragonfly_right
+		Delay: 20
+		AimChance: 0
+		Amount: 1
+	SpawnsShrapnel@LEFT_RIGHT:
+		Weapon: dragonfly_left
+		Delay: 20
+		AimChance: 0
+		Amount: 1
+	AmbientSound:
+		SoundFiles: sounds|BOMBERBUZZ.SDF
+
+fly:
+	Inherits: ^Bomber
+	Tooltip:
+		Name: Desert Fly
+	Health:
+		HP: 16000
+	Aircraft:
+		Speed: 220
+	Buildable:
+		BuildDuration: 150
+	Voiced:
+		VoiceSet: NeutralVoice
+	SpawnsShrapnel:
+		Weapon: fly
+		Delay: 20
+		AimChance: 0
+		Amount: 1
+	AmbientSound:
+		SoundFiles: sounds|FLYBUZZ.SDF
+
+moth:
+	Inherits: ^Bomber
+	Tooltip:
+		Name: Spawn Moth
+	Health:
+		HP: 16000
+	Aircraft:
+		Speed: 220
+	Buildable:
+		BuildDuration: 150
+	Voiced:
+		VoiceSet: NeutralVoice
+	SpawnsShrapnel@puff:
+		Weapon: puff
+		Delay: 100
+		AimChance: 0
+		Amount: 5
+	SpawnsShrapnel@normal_seed:
+		Weapon: puff_normal_seed
+		Delay: 100
+		AimChance: 0
+		Amount: 1
+	AmbientSound:
+		SoundFiles: sounds|MOTHFLUTTER.SDF
+
+flying_machine:
+	Inherits: ^Bomber
+	Tooltip:
+		Name: Flying Machine
+	Health:
+		HP: 25000
+	Aircraft:
+		Speed: 105
+	Buildable:
+		BuildDuration: 150
+	Voiced:
+		VoiceSet: NeutralVoice
+	SpawnsShrapnel:
+		Weapon: flying_machine
+		Delay: 20
+		AimChance: 0
+		Amount: 1
+	AmbientSound@LOOP:
+		SoundFiles: sounds|FLYINGMACHINE.SDF
+	AmbientSound@STEAM:
+		SoundFiles: sounds|STEAMPUFF.SDF
+		Interval: 100
+		RequiresCondition: Puff
+	SpawnActorOnDeath: #TODO Requires some adjusting
+		Actor: ants_grenadier_pirate
+	LeavesTrails: #TODO Might require some random offsets
+		Image: smoke_trail
+		Sequences: idle
+		Type: CenterPosition
+		VisibleThroughFog: True
+		SpawnAtLastPosition: False
+		MovingInterval: 100
+		StartDelay: 100
+		Offsets: 0,0,10
+		RequiresCondition: Puff
+	GrantRandomCondition:
+		Conditions: Puff
+	Voiced:
+		VoiceSet: NeutralVoiceFlyingMachine
+	DeathSounds:
+		Voice: Die
+	Explodes: #TODO It doesn't work
+		Weapon: dieFlyingMachine
+		EmptyWeapon: dieFlyingMachine

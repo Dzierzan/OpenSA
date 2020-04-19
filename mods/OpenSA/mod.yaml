@@ -38,8 +38,8 @@ Rules:
 	OpenSA|rules/scorpions-units.yaml
 	OpenSA|rules/ai.yaml
 	OpenSA|rules/special.yaml
-	OpenSA|rules/neutral-units.yaml
-	OpenSA|rules/neutral-buildings.yaml
+	OpenSA|rules/creep-units.yaml
+	OpenSA|rules/creep-plants.yaml
 	OpenSA|rules/decorations.yaml
 
 Sequences:
@@ -57,8 +57,8 @@ Sequences:
 	OpenSA|sequences/scorpions-buildings.yaml
 	OpenSA|sequences/scorpions-units.yaml
 	OpenSA|sequences/special.yaml
-	OpenSA|sequences/neutral-units.yaml
-	OpenSA|sequences/neutral-buildings.yaml
+	OpenSA|sequences/creep-units.yaml
+	OpenSA|sequences/creep-plants.yaml
 	OpenSA|sequences/decorations.yaml
 
 Weapons:
@@ -74,8 +74,8 @@ Weapons:
 	OpenSA|weapons/scorpions-buildings.yaml
 	OpenSA|weapons/scorpions-units.yaml
 	OpenSA|weapons/special.yaml
-	OpenSA|weapons/neutral-units.yaml
-	OpenSA|weapons/neutral-buildings.yaml
+	OpenSA|weapons/creep-units.yaml
+	OpenSA|weapons/creep-plants.yaml
 
 TileSets:
 	OpenSA|tilesets/candy.yaml
