@@ -8,3 +8,7 @@ World:
 		DisableWorldSounds: true
 	LuaScript:
 		Scripts: script.lua
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:

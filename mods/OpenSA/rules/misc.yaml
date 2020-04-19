@@ -120,6 +120,22 @@ World:
 		Maximum: 4
 		SpawnInterval: 250
 		Actors: ant_bull_pirate, ants_grenadier_pirate
+	CreepFlyerSpawner@dragonfly:
+		ActorTypes: dragonfly
+		SpawnInterval: 1000
+		InitialSpawnDelay: 100
+	CreepFlyerSpawner@fly:
+		ActorTypes: fly
+		SpawnInterval: 1000
+		InitialSpawnDelay: 100
+	CreepFlyerSpawner@moth:
+		ActorTypes: moth
+		SpawnInterval: 1000
+		InitialSpawnDelay: 100
+	CreepFlyerSpawner@flyingmachine:
+		ActorTypes: flying_machine
+		SpawnInterval: 1000
+		InitialSpawnDelay: 100
 
 EditorWorld:
 	Inherits: ^CoreWorld

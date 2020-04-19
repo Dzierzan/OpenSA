@@ -56,23 +56,16 @@ dragonfly:
 		Speed: 105
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament@LEFT_BOMB: #TODO Make pattern for left -> right -> left -> right
-		Weapon: dragonfly_left
-	#	PauseOnCondition: lack_of_bombs
-	Armament@RIGHT_BOMB:
+	SpawnsShrapnel@RIGHT_BOMB:
 		Weapon: dragonfly_right
-	#	PauseOnCondition: lack_of_bombs
-	#AmmoPool:
-	#	Name: primary
-	#	Armaments: dragonfly_left, dragonfly_right
-	#	Ammo: 5
-	#	PipCount: 5 #TODO this is for debugging
-	#	AmmoCondition: lack_of_bombs
-	#ReloadAmmoPool:
-	#	AmmoPool: primary
-	#	Delay: 1000
-	#	Count: 5
-	#	RequiresCondition: lack_of_bombs
+		Delay: 20
+		AimChance: 0
+		Amount: 1
+	SpawnsShrapnel@LEFT_RIGHT:
+		Weapon: dragonfly_left
+		Delay: 20
+		AimChance: 0
+		Amount: 1
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF
 
@@ -88,14 +81,13 @@ fly:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament:
+	SpawnsShrapnel:
 		Weapon: fly
-	AmmoPool:
+		Delay: 20
+		AimChance: 0
+		Amount: 1
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF
-	WithAmmoPipsDecoration:
-		Position: BottomLeft
-		RequiresSelection: true
 
 moth:
 	Inherits: ^Bomber
@@ -109,14 +101,18 @@ moth:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament:
-		Weapon: moth
-	AmmoPool:
+	SpawnsShrapnel@puff:
+		Weapon: puff
+		Delay: 100
+		AimChance: 0
+		Amount: 5
+	SpawnsShrapnel@normal_seed:
+		Weapon: puff_normal_seed
+		Delay: 100
+		AimChance: 0
+		Amount: 1
 	AmbientSound:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
-	WithAmmoPipsDecoration:
-		Position: BottomLeft
-		RequiresSelection: true
 
 flying_machine:
 	Inherits: ^Bomber
@@ -130,13 +126,11 @@ flying_machine:
 		BuildDuration: 150
 	Voiced:
 		VoiceSet: NeutralVoice
-	Armament@LEFT_BOMB:
+	SpawnsShrapnel:
 		Weapon: flying_machine
-		LocalOffset: 100, 0, 0
-	Armament@RIGHT_BOMB:
-		Weapon: flying_machine
-		LocalOffset: -100, 0, 0
-	AmmoPool:
+		Delay: 20
+		AimChance: 0
+		Amount: 1
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:
@@ -164,6 +158,3 @@ flying_machine:
 	Explodes: #TODO It doesn't work
 		Weapon: dieFlyingMachine
 		EmptyWeapon: dieFlyingMachine
-	WithAmmoPipsDecoration:
-		Position: BottomLeft
-		RequiresSelection: true

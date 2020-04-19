@@ -74,30 +74,30 @@
 		Condition: production
 	AppearsOnRadar:
 	ProvidesRadar:
-	AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
-		UnitType: dragonfly
-		Description: Debug dragonfly
-		Icon: dragonfly_icon
-		Cursor: attack
-		OrderName: Dragonfly
-	AirstrikePower@FLY: #TODO this is temporary code for testing purposes, to be removed later
-		UnitType: fly
-		Description: Debug Desert Fly
-		Icon: fly_icon
-		Cursor: attack
-		OrderName: DesertFly
-	AirstrikePower@MOTH: #TODO this is temporary code for testing purposes, to be removed later
-		UnitType: moth
-		Description: Debug moth
-		Icon: moth_icon
-		Cursor: attack
-		OrderName: Moth
-	AirstrikePower@FLYINGMACHINE: #TODO this is temporary code for testing purposes, to be removed later
-		UnitType: flying_machine
-		Description: Debug flying machine
-		Icon: flyingmachine_icon
-		Cursor: attack
-		OrderName: Flyingmachine
+	#AirstrikePower@DRAGONFLY: #TODO this is temporary code for testing purposes, to be removed later
+	#	UnitType: dragonfly
+	#	Description: Debug dragonfly
+	#	Icon: dragonfly_icon
+	#	Cursor: attack
+	#	OrderName: Dragonfly
+	#AirstrikePower@FLY: #TODO this is temporary code for testing purposes, to be removed later
+	#	UnitType: fly
+	#	Description: Debug Desert Fly
+	#	Icon: fly_icon
+	#	Cursor: attack
+	#	OrderName: DesertFly
+	#AirstrikePower@MOTH: #TODO this is temporary code for testing purposes, to be removed later
+	#	UnitType: moth
+	#	Description: Debug moth
+	#	Icon: moth_icon
+	#	Cursor: attack
+	#	OrderName: Moth
+	#AirstrikePower@FLYINGMACHINE: #TODO this is temporary code for testing purposes, to be removed later
+	#	UnitType: flying_machine
+	#	Description: Debug flying machine
+	#	Icon: flyingmachine_icon
+	#	Cursor: attack
+	#	OrderName: Flyingmachine
 
 ^CoreTurretBuilding:
 	Inherits: ^CoreVisibleActor
@@ -311,7 +311,6 @@
 		FallbackSequence: die
 		DeathPaletteIsPlayerPalette: False
 		DeathSequencePalette: OpenSA
-	AttackBomber:
 	Aircraft:
 	RejectsOrders:
 	AppearsOnRadar:
