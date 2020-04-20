@@ -1,0 +1,8 @@
+World:
+	CreepFlyerSpawner@dragonfly:
+    ActorTypes: dragonfly
+    SpawnInterval: 3000
+    InitialSpawnDelay: 100    
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
