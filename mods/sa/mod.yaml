@@ -5,93 +5,93 @@ Metadata:
 PackageFormats: SdfPackage, DdfPackage
 
 Packages:
-	~^Content/OpenSA/
+	~^Content/sa/
 	.
-	$OpenSA: OpenSA
+	$sa: sa
 	./mods/common: common
-	OpenSA|bits/Game.SDF: sounds
-	OpenSA|bits/Game.DDF: sprites
-	OpenSA|uibits
+	sa|bits/Game.SDF: sounds
+	sa|bits/Game.DDF: sprites
+	sa|uibits
 
 MapFolders:
-	OpenSA|maps: System
-	~^maps/OpenSA/5037495acf92653db30ccdf9cbaa27b45e8786d2: User
+	sa|maps: System
+	~^maps/sa/5037495acf92653db30ccdf9cbaa27b45e8786d2: User
 
 Rules:
-	OpenSA|rules/palettes.yaml
-	OpenSA|rules/core.yaml
-	OpenSA|rules/misc.yaml
-	OpenSA|rules/ants.yaml
-	OpenSA|rules/ants-buildings.yaml
-	OpenSA|rules/ants-units.yaml
-	OpenSA|rules/beetles.yaml
-	OpenSA|rules/beetles-buildings.yaml
-	OpenSA|rules/beetles-units.yaml
-	OpenSA|rules/wasps.yaml
-	OpenSA|rules/wasps-buildings.yaml
-	OpenSA|rules/wasps-units.yaml
-	OpenSA|rules/spiders.yaml
-	OpenSA|rules/spiders-buildings.yaml
-	OpenSA|rules/spiders-units.yaml
-	OpenSA|rules/scorpions.yaml
-	OpenSA|rules/scorpions-buildings.yaml
-	OpenSA|rules/scorpions-units.yaml
-	OpenSA|rules/ai.yaml
-	OpenSA|rules/special.yaml
-	OpenSA|rules/creep-units.yaml
-	OpenSA|rules/creep-plants.yaml
-	OpenSA|rules/decorations.yaml
+	sa|rules/palettes.yaml
+	sa|rules/core.yaml
+	sa|rules/misc.yaml
+	sa|rules/ants.yaml
+	sa|rules/ants-buildings.yaml
+	sa|rules/ants-units.yaml
+	sa|rules/beetles.yaml
+	sa|rules/beetles-buildings.yaml
+	sa|rules/beetles-units.yaml
+	sa|rules/wasps.yaml
+	sa|rules/wasps-buildings.yaml
+	sa|rules/wasps-units.yaml
+	sa|rules/spiders.yaml
+	sa|rules/spiders-buildings.yaml
+	sa|rules/spiders-units.yaml
+	sa|rules/scorpions.yaml
+	sa|rules/scorpions-buildings.yaml
+	sa|rules/scorpions-units.yaml
+	sa|rules/ai.yaml
+	sa|rules/special.yaml
+	sa|rules/creep-units.yaml
+	sa|rules/creep-plants.yaml
+	sa|rules/decorations.yaml
 
 Sequences:
-	OpenSA|sequences/misc.yaml
-	OpenSA|sequences/weapons.yaml
-	OpenSA|sequences/explosions.yaml
-	OpenSA|sequences/ants-buildings.yaml
-	OpenSA|sequences/ants-units.yaml
-	OpenSA|sequences/beetles-buildings.yaml
-	OpenSA|sequences/beetles-units.yaml
-	OpenSA|sequences/wasps-buildings.yaml
-	OpenSA|sequences/wasps-units.yaml
-	OpenSA|sequences/spiders-buildings.yaml
-	OpenSA|sequences/spiders-units.yaml
-	OpenSA|sequences/scorpions-buildings.yaml
-	OpenSA|sequences/scorpions-units.yaml
-	OpenSA|sequences/special.yaml
-	OpenSA|sequences/creep-units.yaml
-	OpenSA|sequences/creep-plants.yaml
-	OpenSA|sequences/decorations.yaml
+	sa|sequences/misc.yaml
+	sa|sequences/weapons.yaml
+	sa|sequences/explosions.yaml
+	sa|sequences/ants-buildings.yaml
+	sa|sequences/ants-units.yaml
+	sa|sequences/beetles-buildings.yaml
+	sa|sequences/beetles-units.yaml
+	sa|sequences/wasps-buildings.yaml
+	sa|sequences/wasps-units.yaml
+	sa|sequences/spiders-buildings.yaml
+	sa|sequences/spiders-units.yaml
+	sa|sequences/scorpions-buildings.yaml
+	sa|sequences/scorpions-units.yaml
+	sa|sequences/special.yaml
+	sa|sequences/creep-units.yaml
+	sa|sequences/creep-plants.yaml
+	sa|sequences/decorations.yaml
 
 Weapons:
-	OpenSA|weapons/misc.yaml
-	OpenSA|weapons/ants-buildings.yaml
-	OpenSA|weapons/ants-units.yaml
-	OpenSA|weapons/beetles-buildings.yaml
-	OpenSA|weapons/beetles-units.yaml
-	OpenSA|weapons/wasps-buildings.yaml
-	OpenSA|weapons/wasps-units.yaml
-	OpenSA|weapons/spiders-buildings.yaml
-	OpenSA|weapons/spiders-units.yaml
-	OpenSA|weapons/scorpions-buildings.yaml
-	OpenSA|weapons/scorpions-units.yaml
-	OpenSA|weapons/special.yaml
-	OpenSA|weapons/creep-units.yaml
-	OpenSA|weapons/creep-plants.yaml
+	sa|weapons/misc.yaml
+	sa|weapons/ants-buildings.yaml
+	sa|weapons/ants-units.yaml
+	sa|weapons/beetles-buildings.yaml
+	sa|weapons/beetles-units.yaml
+	sa|weapons/wasps-buildings.yaml
+	sa|weapons/wasps-units.yaml
+	sa|weapons/spiders-buildings.yaml
+	sa|weapons/spiders-units.yaml
+	sa|weapons/scorpions-buildings.yaml
+	sa|weapons/scorpions-units.yaml
+	sa|weapons/special.yaml
+	sa|weapons/creep-units.yaml
+	sa|weapons/creep-plants.yaml
 
 TileSets:
-	OpenSA|tilesets/candy.yaml
-	OpenSA|tilesets/desert.yaml
-	OpenSA|tilesets/swamp.yaml
-	OpenSA|tilesets/normal.yaml
+	sa|tilesets/candy.yaml
+	sa|tilesets/desert.yaml
+	sa|tilesets/swamp.yaml
+	sa|tilesets/normal.yaml
 
 Cursors:
-	OpenSA|cursors.yaml
+	sa|cursors.yaml
 
 Chrome:
-	OpenSA|chrome.yaml
+	sa|chrome.yaml
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
-	OpenSA|OpenRA.Mods.OpenSA.dll
+	sa|OpenRA.Mods.OpenSA.dll
 
 ChromeLayout:
 	common|chrome/ingame.yaml
@@ -104,7 +104,7 @@ ChromeLayout:
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-observer.yaml
-	OpenSA|chrome/ingame-player.yaml
+	sa|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debuginfo.yaml
@@ -141,10 +141,10 @@ AssetBrowser:
 	SupportedExtensions: .ani, .ddf
 
 Voices:
-	OpenSA|audio/voices.yaml
+	sa|audio/voices.yaml
 
 Notifications:
-	OpenSA|audio/notifications.yaml
+	sa|audio/notifications.yaml
 
 Translations:
 
@@ -157,7 +157,7 @@ Hotkeys:
 	common|hotkeys/viewport.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: OpenSA|uibits/loadscreen.png
+	Image: sa|uibits/loadscreen.png
 	Text: Filling Crates..., Breeding Sandworms..., Fuelling carryalls..., Deploying harvesters..., Preparing thopters..., Summoning mentats...
 
 ServerTraits:
@@ -168,7 +168,7 @@ ServerTraits:
 
 ChromeMetrics:
 	common|metrics.yaml
-	OpenSA|metrics.yaml
+	sa|metrics.yaml
 
 Fonts:
 	Regular:
@@ -202,7 +202,7 @@ MapGrid:
 	TileSize: 24, 24
 	Type: Rectangular
 
-SupportsMapsFrom: OpenSA
+SupportsMapsFrom: sa
 
 SoundFormats: Sdf, Wav
 
