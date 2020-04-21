@@ -119,7 +119,7 @@ World:
 		Minimum: 1
 		Maximum: 4
 		SpawnInterval: 250
-		Actors: ant_bull_pirate, ants_grenadier_pirate
+		Actors: ant_bull_pirate, ants_grenadier_pirate, popcorn
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
 		SpawnInterval: 1000
@@ -136,6 +136,17 @@ World:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
+	CrateSpawner:
+		CheckboxLabel: Plants
+		CheckboxDescription: Allows spawning creep plants.
+		CheckboxEnabled: True
+		Minimum: 1
+		Maximum: 100
+		SpawnInterval: 2000
+		InitialSpawnDelay: 0
+		ValidGround: Clear, Rock, Vegetation
+		ValidWater: 
+		CrateActors: popcorn
 
 EditorWorld:
 	Inherits: ^CoreWorld
