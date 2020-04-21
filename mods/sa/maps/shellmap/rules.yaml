@@ -12,3 +12,4 @@ World:
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
 	-CreepFlyerSpawner@flyingmachine:
+	-CrateSpawner:
