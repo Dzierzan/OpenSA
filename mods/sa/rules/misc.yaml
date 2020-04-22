@@ -136,8 +136,8 @@ World:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
-	CrateSpawner:
-		CheckboxLabel: Plants
+	PlantSpawner@NORMAL: #TODO this has to be improved, so only one checkbox is in the lobby for all plants
+		CheckboxLabel: Normal
 		CheckboxDescription: Allows spawning creep plants.
 		CheckboxEnabled: True
 		Minimum: 1
@@ -145,8 +145,45 @@ World:
 		SpawnInterval: 2000
 		InitialSpawnDelay: 0
 		ValidGround: Clear, Rock, Vegetation
-		ValidWater: 
-		CrateActors: popcorn
+		PlantActors: popcorn
+		PlantActorShares: 50
+		Tileset: NORMAL
+	PlantSpawner@DESERT:
+		CheckboxLabel: Desert
+		CheckboxDescription: Allows spawning creep plants.
+		CheckboxEnabled: True
+		Minimum: 1
+		Maximum: 100
+		SpawnInterval: 2000
+		InitialSpawnDelay: 0
+		ValidGround: Clear, Rock, Vegetation
+		PlantActors: thorn
+		PlantActorShares: 50
+		Tileset: DESERT
+	PlantSpawner@SWAMP:
+		CheckboxLabel: Swamp
+		CheckboxDescription: Allows spawning creep plants.
+		CheckboxEnabled: True
+		Minimum: 1
+		Maximum: 100
+		SpawnInterval: 2000
+		InitialSpawnDelay: 0
+		ValidGround: Clear, Rock, Vegetation
+		PlantActors: puff
+		PlantActorShares: 50
+		Tileset: SWAMP
+	PlantSpawner@CANDY:
+		CheckboxLabel: Candy
+		CheckboxDescription: Allows spawning creep plants.
+		CheckboxEnabled: True
+		Minimum: 1
+		Maximum: 100
+		SpawnInterval: 2000
+		InitialSpawnDelay: 0
+		ValidGround: Clear, Rock, Vegetation
+		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
+		PlantActorShares: 50
+		Tileset: CANDY
 
 EditorWorld:
 	Inherits: ^CoreWorld
