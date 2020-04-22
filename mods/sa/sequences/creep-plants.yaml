@@ -5,7 +5,7 @@ popcorn:
 	critical-idle: sprites|OBWHIPPL_DAMAGEC.ANI
 	grow: sprites|OBWHIPPL_GROW.ANI
 		Length: 5
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBWHIPPL_ATTACK.ANI
 		Length: 6
 		Tick: 80
@@ -24,7 +24,7 @@ puff:
 	critical-idle: sprites|OBPUFFBL_DAMAGED.ANI
 	grow: sprites|OBPUFFBL_GROW.ANI
 		Length: 4
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBPUFFBL_SPAWN.ANI
 		Length: 6
 		Tick: 80
@@ -44,7 +44,7 @@ thorn:
 	critical-idle: sprites|OBTHORNB_DAMAGEB.ANI
 	grow: sprites|OBTHORNB_GROW.ANI
 		Length: 5
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBTHORNB_NORMAL.ANI
 	die: sprites|OBTHORNB_DEAD.ANI
 		Length: 2
@@ -59,7 +59,7 @@ freckle:
 	critical-idle: sprites|FRECKLE_DAMAGEB.ANI
 	grow: sprites|FRECKLE_GROW.ANI
 		Length: 5
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|FRECKLE_NORMAL.ANI
 	die: sprites|FRECKLE_DEAD.ANI
 		Length: 2
@@ -72,7 +72,7 @@ lolly_blue:
 	idle: sprites|OBLOLLYB_NORMAL.ANI
 	grow: sprites|OBLOLLYB_GROW.ANI
 		Length: 4
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBLOLLYB_NORMAL.ANI
 	die: sprites|OBLOLLYB_DEAD.ANI
 		Length: 3
@@ -85,7 +85,7 @@ lolly_orange:
 	idle: sprites|OBLOLLYO_NORMAL.ANI
 	grow: sprites|OBLOLLYO_GROW.ANI
 		Length: 4
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBLOLLYO_NORMAL.ANI
 	die: sprites|OBLOLLYO_DEAD.ANI
 		Length: 3
@@ -98,7 +98,7 @@ lolly_white:
 	idle: sprites|OBLOLLYP_NORMAL.ANI
 	grow: sprites|OBLOLLYP_GROW.ANI
 		Length: 4
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBLOLLYP_NORMAL.ANI
 	die: sprites|OBLOLLYP_DEAD.ANI
 		Length: 3
@@ -111,7 +111,7 @@ lolly_red:
 	idle: sprites|OBLOLLYS_NORMAL.ANI
 	grow: sprites|OBLOLLYS_GROW.ANI
 		Length: 4
-		Tick: 200
+		Tick: 1000
 	shoot: sprites|OBLOLLYS_NORMAL.ANI
 	die: sprites|OBLOLLYS_DEAD.ANI
 		Length: 3
@@ -122,12 +122,12 @@ lolly_red:
 
 anthole:
 	idle: sprites|NORMAL.ANI
-		ZOffset: 1000
+		ZOffset: -1000
 	close: sprites|CLOSE.ANI
 		Length: 3
-		Tick: 200
-		ZOffset: 1000
+		Tick: 500
+		ZOffset: -1000
 	open: sprites|OPEN.ANI
 		Length: 3
-		Tick: 200
-		ZOffset: 1000
+		Tick: 500
+		ZOffset: -1000
