@@ -29,7 +29,7 @@ ants_grenadier_pirate:
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
@@ -48,7 +48,7 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BRAKEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 dragonfly_right:
 	Inherits: dragonfly_left
@@ -74,7 +74,7 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
@@ -96,7 +96,7 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
@@ -118,4 +118,4 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

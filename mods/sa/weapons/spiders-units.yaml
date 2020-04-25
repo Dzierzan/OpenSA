@@ -23,7 +23,7 @@ spiders_medium:
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 spiders_heavy:
 	ValidTargets: Ground, Paralyzed
@@ -50,4 +50,4 @@ spiders_heavy:
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

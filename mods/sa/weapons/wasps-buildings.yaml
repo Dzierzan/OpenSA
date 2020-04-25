@@ -16,4 +16,4 @@ wasps_colony:
 		Image: explosions
 		Explosions: small_explosion
 		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

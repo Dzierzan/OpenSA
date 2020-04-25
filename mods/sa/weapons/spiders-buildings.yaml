@@ -12,4 +12,4 @@ spiders_colony:
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

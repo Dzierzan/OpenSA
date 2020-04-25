@@ -12,7 +12,7 @@ beetles_light:
 		Image: explosions
 		Explosions: small_explosion
 		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 beetles_medium:
 	ValidTargets: Ground, Paralyzed
@@ -34,7 +34,7 @@ beetles_medium:
 		Image: explosions
 		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
 
 beetles_heavy:
 	ValidTargets: Ground, Paralyzed
@@ -54,4 +54,4 @@ beetles_heavy:
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

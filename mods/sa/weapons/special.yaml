@@ -23,4 +23,4 @@ slapfighter:
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|SLAPFIGHTHIT.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed

@@ -17,4 +17,4 @@ beetles_colony:
 		Image: explosions
 		Explosions: big_explosion_2
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed
