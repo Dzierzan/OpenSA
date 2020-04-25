@@ -32,7 +32,7 @@ puff:
 	SpawnsShrapnel@1:
 		Weapon: puff
 		Sequence: shoot
-		Amount: 5
+		Amount: 6
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
@@ -49,7 +49,7 @@ puff:
 seed:
 	SpawnActorOnDeath:
 		Actor: puff
-		Probability: 10
+		Probability: 15
 		SkipMakeAnimations: false
 	SelfHealing:
 		Step: -1000
