@@ -80,22 +80,30 @@ thorn:
 	-WithSpriteTurret:
 
 freckle:
-	Inherits@1: ^AutoTargetDefault
-	Inherits@2: ^CoreNeutralTowerCreep
-	Inherits@3: ^CoreTurret
+	Inherits: ^CoreNeutralTowerCreep
 	Tooltip:
 		Name: Choc Freckle
 	Health:
 		HP: 50000
 	Buildable:
 		BuildDuration: 50
-	Armament:
-		Weapon: freckles
-	WithLoopedAttackSound:
+	WithLoopedAttackSound: #TODO Doesn't work anymore
 		Report: sounds|FRECKLEFIRE.SDF
 		Delay: 40
-	-WithTurretAttackAnimation:
-	-WithSpriteTurret:
+	WithSpawnsShrapnelAnimation:
+		Sequences: shoot
+	ExternalCondition@TRIGGER:
+		Condition: freckles_attack
+	SpawnsShrapnel:
+		Weapon: freckles
+		Sequence: shoot
+		Amount: 6
+		Delay: 40
+		AimChance: 0
+		LocalOffset: 0,0,0
+		PauseOnCondition: !freckles_attack || injured
+	-AttackTurreted:
+	-WithAttackAnimation:
 
 lolly_blue:
 	Inherits@1: ^AutoTargetDefault

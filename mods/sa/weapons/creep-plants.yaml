@@ -87,9 +87,9 @@ freckles: #Temporary weapon, needs to be changed!!!
 	ReloadDelay: 40 #50
 	Range: 4c0
 	Projectile: Bullet
-		Speed: 230
+		Speed: 100
 		Blockable: false
-		LaunchAngle: 100 #62
+		LaunchAngle: 150 #62
 		Image: projectiles
 		Sequences: freckles
 	Warhead@Damage: SpreadDamage
