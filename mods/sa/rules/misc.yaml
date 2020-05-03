@@ -120,6 +120,10 @@ World:
 		Maximum: 4
 		SpawnInterval: 250
 		Actors: ant_bull_pirate, ants_grenadier_pirate, popcorn
+	FlyerCreeps:
+		CheckboxLabel: Flyers
+		CheckboxDescription: Allows spawning creep flyers.
+		CheckboxEnabled: True
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
 		SpawnInterval: 1000
