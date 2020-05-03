@@ -93,8 +93,8 @@ EditorPlayer:
 
 World:
 	Inherits: ^CoreWorld
-	ChatCommands: # TODO what is this for?
-	DevCommands: # TODO what is this for?
+	ChatCommands:
+	DevCommands:
 	PlayerCommands:
 	HelpCommand:
 	ScreenShaker:
