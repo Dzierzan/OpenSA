@@ -29,12 +29,17 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Map player to use when 'InternalName' is defined on 'OwnerType'.")]
 		public readonly string InternalOwner = "Creeps";
 
+		[Desc("Only spawn on this tileset.")]
+		public string Tileset = null;
+
 		public object Create(ActorInitializer init) { return new CreepFlyerSpawner(this); }
 	}
 
-	public class CreepFlyerSpawner : ITick
+	public class CreepFlyerSpawner : ITick, INotifyCreated
 	{
 		readonly CreepFlyerSpawnerInfo info;
+
+		bool enabled;
 		int ticks;
 
 		public CreepFlyerSpawner(CreepFlyerSpawnerInfo info)
@@ -44,8 +49,19 @@ namespace OpenRA.Mods.SA.Traits
 			ticks = info.InitialSpawnDelay;
 		}
 
+		void INotifyCreated.Created(Actor self)
+		{
+			enabled = self.Trait<FlyerCreeps>().Enabled;
+		}
+
 		void ITick.Tick(Actor self)
 		{
+			if (!enabled)
+				return;
+
+			if (info.Tileset != null & self.World.Map.Tileset != info.Tileset)
+				return;
+
 			if (--ticks <= 0)
 			{
 				ticks = info.SpawnInterval;

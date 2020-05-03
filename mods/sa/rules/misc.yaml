@@ -93,8 +93,8 @@ EditorPlayer:
 
 World:
 	Inherits: ^CoreWorld
-	ChatCommands: # TODO what is this for?
-	DevCommands: # TODO what is this for?
+	ChatCommands:
+	DevCommands:
 	PlayerCommands:
 	HelpCommand:
 	ScreenShaker:
@@ -115,11 +115,16 @@ World:
 		CheckboxDescription: Allows spawning pirates on the battlefield
 		CheckboxVisible: True
 		CheckboxEnabled: True
-	ActorSpawnManager:
+	PirateSpawner:
 		Minimum: 1
 		Maximum: 4
 		SpawnInterval: 250
-		Actors: ant_bull_pirate, ants_grenadier_pirate, popcorn
+		ValidGround: Clear, Rock, Vegetation
+		Actors: ant_bull_pirate, ants_grenadier_pirate
+	FlyerCreeps:
+		CheckboxLabel: Flyers
+		CheckboxDescription: Allows spawning creep flyers.
+		CheckboxEnabled: True
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
 		SpawnInterval: 1000
@@ -136,10 +141,11 @@ World:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
-	PlantSpawner@NORMAL: #TODO this has to be improved, so only one checkbox is in the lobby for all plants
-		CheckboxLabel: Normal
+	PlantCreeps:
+		CheckboxLabel: Plants
 		CheckboxDescription: Allows spawning creep plants.
 		CheckboxEnabled: True
+	PlantSpawner@NORMAL:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -149,9 +155,6 @@ World:
 		PlantActorShares: 50
 		Tileset: NORMAL
 	PlantSpawner@DESERT:
-		CheckboxLabel: Desert
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -161,9 +164,6 @@ World:
 		PlantActorShares: 50
 		Tileset: DESERT
 	PlantSpawner@SWAMP:
-		CheckboxLabel: Swamp
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -173,9 +173,6 @@ World:
 		PlantActorShares: 50
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
-		CheckboxLabel: Candy
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -192,21 +189,6 @@ EditorWorld:
 	EditorActionManager:
 	EditorSelectionLayer:
 		Palette: OpenSA
-
-pirates_spawner: #TODO This has to be improved, so spawning points are random
-	Interactable:
-	EditorOnlyTooltip:
-		Name: (anthole spawning location)
-	AlwaysVisible:
-	Immobile:
-		OccupiesSpace: false
-	RenderSpritesEditorOnly:
-	WithSpriteBody:
-	BodyOrientation:
-		QuantizedFacings: 1
-	ActorSpawner:
-	MapEditorData:
-		Categories: System
 
 colony_bit1:
 	Inherits: ^CoreVisibleActor

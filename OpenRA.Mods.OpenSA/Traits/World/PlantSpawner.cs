@@ -7,28 +7,8 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.SA.Traits
 {
-	public class PlantSpawnerInfo : ITraitInfo, ILobbyOptions
+	public class PlantSpawnerInfo : ITraitInfo, Requires<MapCreepsInfo>
 	{
-		[Translate]
-		[Desc("Descriptive label for the plants checkbox in the lobby.")]
-		public readonly string CheckboxLabel = "Plants";
-
-		[Translate]
-		[Desc("Tooltip description for the plants checkbox in the lobby.")]
-		public readonly string CheckboxDescription = "Random plants occur and attack the player.";
-
-		[Desc("Default value of the plants checkbox in the lobby.")]
-		public readonly bool CheckboxEnabled = true;
-
-		[Desc("Prevent the plants state from being changed in the lobby.")]
-		public readonly bool CheckboxLocked = false;
-
-		[Desc("Whether to display the plants checkbox in the lobby.")]
-		public readonly bool CheckboxVisible = true;
-
-		[Desc("Display order for the plants checkbox in the lobby.")]
-		public readonly int CheckboxDisplayOrder = 0;
-
 		[Desc("Minimum number of plants on the map.")]
 		public readonly int Minimum = 1;
 
@@ -60,11 +40,6 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Map player to use when 'InternalName' is defined on 'OwnerType'.")]
 		public readonly string InternalOwner = "Creeps";
 
-		IEnumerable<LobbyOption> ILobbyOptions.LobbyOptions(Ruleset rules)
-		{
-			yield return new LobbyBooleanOption("crates", CheckboxLabel, CheckboxDescription, CheckboxVisible, CheckboxDisplayOrder, CheckboxEnabled, CheckboxLocked);
-		}
-
 		public object Create(ActorInitializer init) { return new PlantSpawner(init.Self, this); }
 	}
 
@@ -86,8 +61,7 @@ namespace OpenRA.Mods.SA.Traits
 
 		void INotifyCreated.Created(Actor self)
 		{
-			enabled = self.World.LobbyInfo.GlobalSettings
-				.OptionOrDefault("plants", info.CheckboxEnabled);
+			enabled = self.Trait<PlantCreeps>().Enabled;
 		}
 
 		void ITick.Tick(Actor self)
@@ -117,7 +91,7 @@ namespace OpenRA.Mods.SA.Traits
 				return;
 
 			var position = spawn.Value;
-			var crateActor = ChooseCrateActor();
+			var crateActor = ChoosePlantActor();
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -151,15 +125,15 @@ namespace OpenRA.Mods.SA.Traits
 			return null;
 		}
 
-		string ChooseCrateActor()
+		string ChoosePlantActor()
 		{
-			var crateShares = info.PlantActorShares;
-			var n = self.World.SharedRandom.Next(crateShares.Sum());
+			var plantShares = info.PlantActorShares;
+			var n = self.World.SharedRandom.Next(plantShares.Sum());
 
 			var cumulativeShares = 0;
-			for (var i = 0; i < crateShares.Length; i++)
+			for (var i = 0; i < plantShares.Length; i++)
 			{
-				cumulativeShares += crateShares[i];
+				cumulativeShares += plantShares[i];
 				if (n <= cumulativeShares)
 					return info.PlantActors[i];
 			}

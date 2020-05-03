@@ -1147,18 +1147,6 @@ Actors:
 	Actor335: object_16
 		Owner: Neutral
 		Location: 93,4
-	Actor336: pirates_spawner
-		Owner: Creeps
-		Location: 13,68
-	Actor337: pirates_spawner
-		Owner: Creeps
-		Location: 13,60
-	Actor338: pirates_spawner
-		Owner: Creeps
-		Location: 5,60
-	Actor339: pirates_spawner
-		Owner: Creeps
-		Location: 5,68
 	Actor340: wasps_colony
 		Owner: Creeps
 		TurretFacing: 96
