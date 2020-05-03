@@ -91,7 +91,7 @@ namespace OpenRA.Mods.SA.Traits
 				return;
 
 			var position = spawn.Value;
-			var crateActor = ChooseCrateActor();
+			var crateActor = ChoosePlantActor();
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -125,15 +125,15 @@ namespace OpenRA.Mods.SA.Traits
 			return null;
 		}
 
-		string ChooseCrateActor()
+		string ChoosePlantActor()
 		{
-			var crateShares = info.PlantActorShares;
-			var n = self.World.SharedRandom.Next(crateShares.Sum());
+			var plantShares = info.PlantActorShares;
+			var n = self.World.SharedRandom.Next(plantShares.Sum());
 
 			var cumulativeShares = 0;
-			for (var i = 0; i < crateShares.Length; i++)
+			for (var i = 0; i < plantShares.Length; i++)
 			{
-				cumulativeShares += crateShares[i];
+				cumulativeShares += plantShares[i];
 				if (n <= cumulativeShares)
 					return info.PlantActors[i];
 			}
