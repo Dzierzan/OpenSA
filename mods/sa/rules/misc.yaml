@@ -136,10 +136,11 @@ World:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
-	PlantSpawner@NORMAL: #TODO this has to be improved, so only one checkbox is in the lobby for all plants
-		CheckboxLabel: Normal
+	PlantCreeps:
+		CheckboxLabel: Plants
 		CheckboxDescription: Allows spawning creep plants.
 		CheckboxEnabled: True
+	PlantSpawner@NORMAL:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -149,9 +150,6 @@ World:
 		PlantActorShares: 50
 		Tileset: NORMAL
 	PlantSpawner@DESERT:
-		CheckboxLabel: Desert
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -161,9 +159,6 @@ World:
 		PlantActorShares: 50
 		Tileset: DESERT
 	PlantSpawner@SWAMP:
-		CheckboxLabel: Swamp
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
@@ -173,9 +168,6 @@ World:
 		PlantActorShares: 50
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
-		CheckboxLabel: Candy
-		CheckboxDescription: Allows spawning creep plants.
-		CheckboxEnabled: True
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
