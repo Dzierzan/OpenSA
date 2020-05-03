@@ -129,18 +129,22 @@ World:
 		ActorTypes: dragonfly
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
+		Tileset: NORMAL
 	CreepFlyerSpawner@fly:
 		ActorTypes: fly
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
+		Tileset: DESERT
 	CreepFlyerSpawner@moth:
 		ActorTypes: moth
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
+		Tileset: SWAMP
 	CreepFlyerSpawner@flyingmachine:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
 		InitialSpawnDelay: 100
+		Tileset: CANDY
 	PlantCreeps:
 		CheckboxLabel: Plants
 		CheckboxDescription: Allows spawning creep plants.
