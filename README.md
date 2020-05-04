@@ -2,7 +2,7 @@ This repository contains Swarm Assault remake project based on the OpenRA Mod SD
 
 # Status
 
-Currently the project/game still requires a lot of missing features which the most important one is Colony logic. There's nothing much to do with the current version apart from playing on test maps, but feel free to give any feedback or even help me to progress further the project.
+Currently the project/game still requires a lot of missing features. There's nothing much to do with the current version apart from playing on test maps, but feel free to give any feedback or even help me to progress further the project.
 
 # How to compile/play
 
