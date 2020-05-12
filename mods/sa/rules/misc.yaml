@@ -41,6 +41,7 @@ Player:
 		ArrowSequence:
 		CircleSequence: x
 		Duration: 250
+	PlayerRadarTerrain:
 
 EditorPlayer:
 	Inherits: ^CorePlayer
