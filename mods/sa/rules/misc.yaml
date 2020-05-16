@@ -11,6 +11,20 @@ mpspawn:
 	MapEditorData:
 		Categories: System
 
+anthole:
+	Interactable:
+	AlwaysVisible:
+	AntHole:
+		Actors: ant_bull_pirate, ants_grenadier_pirate
+	Immobile:
+	RejectsOrders:
+	RenderSprites:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+		Categories: System
+
 # TODO keep commenting from here on!
 ^CorePlayer:
 	AlwaysVisible: # TODO what?
@@ -121,7 +135,7 @@ World:
 		Maximum: 4
 		SpawnInterval: 250
 		ValidGround: Clear, Rock, Vegetation
-		Actors: ant_bull_pirate, ants_grenadier_pirate
+		Actors: anthole
 	FlyerCreeps:
 		CheckboxLabel: Flyers
 		CheckboxDescription: Allows spawning creep flyers.
