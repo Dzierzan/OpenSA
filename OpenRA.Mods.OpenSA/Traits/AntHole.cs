@@ -5,13 +5,13 @@ using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Animates the anthole and spawns actors.")]
 	public class AntHoleInfo : ITraitInfo, Requires<WithSpriteBodyInfo>
 	{
 		[FieldLoader.Require]
-		[ActorReference]
+		[ActorReference(typeof(PirateAnt))]
 		public readonly string[] Actors = null;
 
 		[Desc("Minimum and Maximum number of actors spawning.")]
@@ -63,12 +63,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 					self.World.Add(new DelayedAction(info.Delay * i, () =>
 					{
 						var actor = info.Actors.Random(self.World.SharedRandom);
-						ant.Trait<Mobile>().Nudge(ant);
 						var ant = self.World.CreateActor(true, actor.ToLowerInvariant(), new TypeDictionary
 						{
 							new OwnerInit(self.World.Players.First(x => x.PlayerName == info.Owner)),
 							new LocationInit(self.Location)
 						});
+						ant.Trait<PirateAnt>().AntHoleAmount = amount;
 					}));
 				}
 

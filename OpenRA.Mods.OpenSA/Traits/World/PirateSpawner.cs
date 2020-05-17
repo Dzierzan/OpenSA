@@ -38,7 +38,7 @@ namespace OpenRA.Mods.SA.Traits
 
 		bool enabled;
 		int spawnCountdown;
-		int actorsPresent;
+		float actorsPresent;
 
 		public PirateSpawner(PirateSpawnerInfo info)
 			: base(info)
@@ -110,6 +110,11 @@ namespace OpenRA.Mods.SA.Traits
 			}
 
 			return null;
+		}
+
+		public void DecreaseActorCount(float amount)
+		{
+			actorsPresent -= amount;
 		}
 	}
 }
