@@ -1,5 +1,4 @@
 Player:
-	ConditionManager:
 	ModularBot@AI:
 		Name: WIP AI
 		Type: easy

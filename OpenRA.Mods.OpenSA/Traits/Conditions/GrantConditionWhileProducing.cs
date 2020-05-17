@@ -17,13 +17,12 @@ namespace OpenRA.Mods.OpenSA.Traits.Conditions
 		}
 	}
 
-	public class GrantConditionWhileProducing : ITick, INotifyCreated
+	public class GrantConditionWhileProducing : ITick
 	{
 		private readonly GrantConditionWhileProducingInfo info;
-		private ConditionManager conditionManager;
 		private IEnumerable<ProductionQueue> productionQueues;
 
-		int token = ConditionManager.InvalidConditionToken;
+		int token = Actor.InvalidConditionToken;
 
 		public GrantConditionWhileProducing(Actor self, GrantConditionWhileProducingInfo info)
 		{
@@ -31,20 +30,15 @@ namespace OpenRA.Mods.OpenSA.Traits.Conditions
 			productionQueues = self.TraitsImplementing<ProductionQueue>();
 		}
 
-		void INotifyCreated.Created(Actor self)
-		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-		}
-
 		void ITick.Tick(Actor self)
 		{
-			var hasCondition = token != ConditionManager.InvalidConditionToken;
+			var hasCondition = token != Actor.InvalidConditionToken;
 			var isProducing = productionQueues.Any(queue => queue.AllQueued().Any());
 
 			if (!hasCondition && isProducing)
-				token = conditionManager.GrantCondition(self, info.Condition);
+				token = self.GrantCondition(info.Condition);
 			else if (hasCondition && !isProducing)
-				token = conditionManager.RevokeCondition(self, token);
+				token = self.RevokeCondition(token);
 		}
 	}
 }

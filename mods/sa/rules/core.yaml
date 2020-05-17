@@ -10,7 +10,6 @@
 	QuantizeFacingsFromSequence:
 	# Required to see debug overlays.
 	CombatDebugOverlay:
-	ConditionManager:
 
 
 # Base for all movable units.
