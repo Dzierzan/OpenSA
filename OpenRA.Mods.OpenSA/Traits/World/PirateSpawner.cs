@@ -111,10 +111,5 @@ namespace OpenRA.Mods.SA.Traits
 
 			return null;
 		}
-
-		public void DecreaseActorCount()
-		{
-			actorsPresent--;
-		}
 	}
 }
