@@ -23,8 +23,6 @@ Rules:
 		CreepFlyerSpawner:
 			ActorTypes: fly
 	fly:
-		-AttackBomber:
-		-Armament:
 		SpawnsShrapnel:
 			Weapon: fly
 			Delay: 20

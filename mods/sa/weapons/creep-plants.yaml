@@ -80,7 +80,7 @@ puff_normal_seed:
 		Actors: seed
 		ValidTargets: Ground
 		InternalOwner: Creeps
-		TerrainTypes: Clear, Rock, Vegetation	
+		TerrainTypes: Clear, Rock, Vegetation
 
 freckles: #Temporary weapon, needs to be changed!!!
 	ValidTargets: Ground, Paralyzed

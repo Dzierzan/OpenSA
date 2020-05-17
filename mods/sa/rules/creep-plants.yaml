@@ -31,7 +31,6 @@ puff:
 		Condition: seed_attack
 	SpawnsShrapnel@1:
 		Weapon: puff
-		Sequence: shoot
 		Amount: 6
 		Delay: 20
 		AimChance: 0
@@ -39,7 +38,6 @@ puff:
 		PauseOnCondition: !seed_attack || injured
 	SpawnsShrapnel@2:
 		Weapon: puff_normal_seed
-		Sequence: shoot
 		Amount: 1
 		Delay: 20
 		AimChance: 0
@@ -96,7 +94,6 @@ freckle:
 		Condition: freckles_attack
 	SpawnsShrapnel:
 		Weapon: freckles
-		Sequence: shoot
 		Amount: 6
 		Delay: 40
 		AimChance: 0

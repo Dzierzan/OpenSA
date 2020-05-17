@@ -33,16 +33,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 		readonly Actor self;
 		readonly GrantPeriodicConditionInfo info;
 
-		ConditionManager manager;
-
 		[Sync]
 		int ticks;
 
 		int cooldown, active;
 		bool isSuspended;
-		int token = ConditionManager.InvalidConditionToken;
+		int token = Actor.InvalidConditionToken;
 
-		bool IsEnabled { get { return token != ConditionManager.InvalidConditionToken; } }
+		bool IsEnabled { get { return token != Actor.InvalidConditionToken; } }
 
 		public GrantPeriodicCondition(ActorInitializer init, GrantPeriodicConditionInfo info)
 			: base(info)
@@ -77,8 +75,6 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		protected override void Created(Actor self)
 		{
-			manager = self.Trait<ConditionManager>();
-
 			if (!IsTraitDisabled)
 				SetDefaultState();
 
@@ -139,14 +135,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		void EnableCondition()
 		{
-			if (token == ConditionManager.InvalidConditionToken)
-				token = manager.GrantCondition(self, info.Condition);
+			if (token == Actor.InvalidConditionToken)
+				token = self.GrantCondition(info.Condition);
 		}
 
 		void DisableCondition()
 		{
-			if (token != ConditionManager.InvalidConditionToken)
-				token = manager.RevokeCondition(self, token);
+			if (token != Actor.InvalidConditionToken)
+				token = self.RevokeCondition(token);
 		}
 
 		float ISelectionBar.GetValue()
