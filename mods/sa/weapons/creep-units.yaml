@@ -16,7 +16,7 @@ ants_grenadier_pirate:
 	Projectile: Bullet
 		Speed: 230
 		Blockable: false
-		LaunchAngle: 100 #62 
+		LaunchAngle: 100 #62
 		Inaccuracy: 813
 		Image: projectiles
 		Sequences: grenade
@@ -107,6 +107,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		LaunchAngle: 220
 		Inaccuracy: 100
 		BounceCount: 5
+		BounceSound: BOUNCE.SDF
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
