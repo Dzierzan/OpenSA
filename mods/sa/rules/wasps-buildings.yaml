@@ -58,7 +58,6 @@ wasps_colony_turret:
 	WithLoopedAttackSound:
 		Report: sounds|CHAINGUN.SDF
 		Delay: 4
-
 	Turreted:
 		Turret: primary
 		Offset: 1100,0,0
