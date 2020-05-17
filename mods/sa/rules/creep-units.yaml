@@ -20,6 +20,7 @@ ant_bull_pirate:
 		PauseOnCondition: paralyzed
 	RenderSprites:
 		Scale: 1.1
+	PirateAnt:
 
 ants_grenadier_pirate:
 	Inherits@1: ^CoreNeutralUnit
@@ -45,6 +46,7 @@ ants_grenadier_pirate:
 		PauseOnCondition: paralyzed
 	RenderSprites:
 		Scale: 1.1
+	PirateAnt:
 
 dragonfly:
 	Inherits: ^Bomber

@@ -121,13 +121,13 @@ lolly_red:
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 anthole:
-	idle: sprites|NORMAL.ANI
+	idle: sprites|ANTHOLE_NORMAL.ANI
 		ZOffset: -1000
-	close: sprites|CLOSE.ANI
+	close: sprites|ANTHOLE_CLOSE.ANI
 		Length: 3
 		Tick: 500
 		ZOffset: -1000
-	open: sprites|OPEN.ANI
+	open: sprites|ANTHOLE_OPEN.ANI
 		Length: 3
 		Tick: 500
 		ZOffset: -1000
