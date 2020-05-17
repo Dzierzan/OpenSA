@@ -33,6 +33,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Apply to sprite bodies with these names.")]
 		public readonly string[] BodyNames = { "body" };
 
+		public readonly string Owner = "Creeps";
+
 		public object Create(ActorInitializer init) { return new AntHole(init, this); }
 	}
 
@@ -61,9 +63,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 					self.World.Add(new DelayedAction(info.Delay * i, () =>
 					{
 						var actor = info.Actors.Random(self.World.SharedRandom);
-						var ant = self.World.CreateActor(true, actor.ToLowerInvariant(),
-							new TypeDictionary { new OwnerInit(self.Owner), new LocationInit(self.Location) });
 						ant.Trait<Mobile>().Nudge(ant);
+						var ant = self.World.CreateActor(true, actor.ToLowerInvariant(), new TypeDictionary
+						{
+							new OwnerInit(self.World.Players.First(x => x.PlayerName == info.Owner)),
+							new LocationInit(self.Location)
+						});
 					}));
 				}
 
