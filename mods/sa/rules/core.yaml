@@ -51,7 +51,7 @@
 		NumberOfBits: 9 #How many colony bits are launched
 		MinRange: 5 #Min range of colony bits
 		MaxRange: 10 #Max range of colony bits
-		ResurrectHealth: 10
+		ResurrectHealth: 50000
 		Weapon: colony_bit
 		CaptureSound: sounds|POWERUP.SDF
 		LostSound: sounds|POWERDOWN.SDF
