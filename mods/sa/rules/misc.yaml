@@ -145,22 +145,22 @@ World:
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
 		SpawnInterval: 1000
-		InitialSpawnDelay: 100
+		InitialSpawnDelay: 250
 		Tileset: NORMAL
 	CreepFlyerSpawner@fly:
 		ActorTypes: fly
 		SpawnInterval: 1000
-		InitialSpawnDelay: 100
+		InitialSpawnDelay: 250
 		Tileset: DESERT
 	CreepFlyerSpawner@moth:
 		ActorTypes: moth
 		SpawnInterval: 1000
-		InitialSpawnDelay: 100
+		InitialSpawnDelay: 250
 		Tileset: SWAMP
 	CreepFlyerSpawner@flyingmachine:
 		ActorTypes: flying_machine
 		SpawnInterval: 1000
-		InitialSpawnDelay: 100
+		InitialSpawnDelay: 250
 		Tileset: CANDY
 	PlantCreeps:
 		CheckboxLabel: Plants
@@ -170,7 +170,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
-		InitialSpawnDelay: 0
+		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: popcorn
 		PlantActorShares: 50
@@ -179,7 +179,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
-		InitialSpawnDelay: 0
+		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: thorn
 		PlantActorShares: 50
@@ -188,7 +188,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
-		InitialSpawnDelay: 0
+		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: puff
 		PlantActorShares: 50
@@ -197,7 +197,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 2000
-		InitialSpawnDelay: 0
+		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
 		PlantActorShares: 50
