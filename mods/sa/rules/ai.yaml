@@ -1,25 +1,69 @@
 Player:
-	ModularBot@AI:
-		Name: WIP AI
+	ModularBot@EasyAI:
+		Name: WIP Easy AI
 		Type: easy
-	GrantConditionOnBotOwner@AI:
-		Condition: enable-WIP-ai
+	ModularBot@MediumAI:
+		Name: WIP Medium AI
+		Type: medium
+	ModularBot@HardAI:
+		Name: WIP Hard AI
+		Type: hard
+	GrantConditionOnBotOwner@EasyAI:
+		Condition: enable-WIP-easy-ai
 		Bots: easy
-	BaseBuilderBotModule@AI:
-		RequiresCondition: enable-WIP-ai
+	GrantConditionOnBotOwner@MediumAI:
+		Condition: enable-WIP-medium-ai
+		Bots: medium
+	GrantConditionOnBotOwner@HardAI:
+		Condition: enable-WIP-hard-ai
+		Bots: hard
+	BaseBuilderBotModule@easyAI:
+		RequiresCondition: enable-WIP-easy-ai
 		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-	SquadManagerBotModule@AI:
-		RequiresCondition: enable-WIP-ai
-		SquadSize: 5
-		SquadSizeRandomBonus: 0
-		RushInterval: 500
+	SquadManagerBotModule@easyAI:
+		RequiresCondition: enable-WIP-easy-ai
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+		RushInterval: 1500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
-	UnitBuilderBotModule@AI:
-		RequiresCondition: enable-WIP-ai
+	UnitBuilderBotModule@easyAI:
+		RequiresCondition: enable-WIP-easy-ai
+		UnitQueues: Unit
+		UnitsToBuild:
+			ants_light: 60
+			ants_medium: 30
+			ants_heavy: 10
+			beetles_light: 60
+			beetles_medium: 30
+			beetles_heavy: 10
+			scorpions_light: 60
+			scorpions_medium: 30
+			scorpions_heavy: 10
+			spiders_light: 60
+			spiders_medium: 30
+			spiders_heavy: 10
+			wasps_light: 60
+			wasps_medium: 30
+			wasps_heavy: 10
+	BaseBuilderBotModule@mediumAI:
+		RequiresCondition: enable-WIP-medium-ai
+		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+	SquadManagerBotModule@mediumAI:
+		RequiresCondition: enable-WIP-medium-ai
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+		RushInterval: 1000
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@mediumAI:
+		RequiresCondition: enable-WIP-medium-ai
 		UnitQueues: Unit
 		UnitsToBuild:
 			ants_light: 33
@@ -37,3 +81,35 @@ Player:
 			wasps_light: 33
 			wasps_medium: 33
 			wasps_heavy: 33
+	BaseBuilderBotModule@hardAI:
+		RequiresCondition: enable-WIP-hard-ai
+		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+	SquadManagerBotModule@hardAI:
+		RequiresCondition: enable-WIP-hard-ai
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+		RushInterval: 500
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@hardAI:
+		RequiresCondition: enable-WIP-hard-ai
+		UnitQueues: Unit
+		UnitsToBuild:
+			ants_light: 20
+			ants_medium: 20
+			ants_heavy: 60
+			beetles_light: 20
+			beetles_medium: 20
+			beetles_heavy: 60
+			scorpions_light: 20
+			scorpions_medium: 20
+			scorpions_heavy: 60
+			spiders_light: 20
+			spiders_medium: 20
+			spiders_heavy: 60
+			wasps_light: 20
+			wasps_medium: 20
+			wasps_heavy: 60
