@@ -92,7 +92,7 @@
 		NumberOfBits: 4 #How many colony bits are launched
 		MinRange: 3 #Min range of colony bits
 		MaxRange: 7 #Max range of colony bits
-		ResurrectHealth: 10
+		ResurrectHealth: 25000
 		Weapon: colony_bit
 		CaptureSound: OpenSA|bits/sounds/TurretPowerUp.wav
 		LostSound: OpenSA|bits/sounds/TurretPowerDown.wav
