@@ -12,9 +12,10 @@ Speech:
 	DefaultVariant: .SDF
 	Notifications:
 		UnitReady: sounds|PRODUCTIONCOMPLETE
-			RateLimit: 900
+			RateLimit: 2500
 		Building: sounds|PRODUCTIONCHANGE
-			RateLimit: 600
+			RateLimit: 500
+		CancelledAudio: sounds|SELECT
 		StartGame:
 		GameLoaded:
 		GameSaved:
