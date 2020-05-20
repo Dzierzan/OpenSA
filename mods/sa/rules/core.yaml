@@ -203,7 +203,7 @@
 	RenderSprites:
 		Palette: OpenSA
 	SelfHealing: #TODO might require futher adjusting
-		Step: 100
+		Step: 50
 		HealIfBelow: 100
 	AppearsOnRadar:
 	WithDeathAnimation:
