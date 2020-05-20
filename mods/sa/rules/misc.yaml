@@ -39,8 +39,6 @@ Player:
 	# Developer debug menu
 	DeveloperMode:
 		CheckboxEnabled: True
-	# Allow players to place building.
-	PlaceBuilding:
 	# Enable mission objectives, required to win or loose mission.
 	MissionObjectives:
 	# Default objective: Win by killing all enemies.
@@ -106,7 +104,6 @@ EditorPlayer:
 	DebugVisualizations:
 	# Required for warhead debug overlays.
 	WarheadDebugOverlay:
-
 
 World:
 	Inherits: ^CoreWorld
