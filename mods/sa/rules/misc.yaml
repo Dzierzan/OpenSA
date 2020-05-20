@@ -16,6 +16,8 @@ anthole:
 	AlwaysVisible:
 	AntHole:
 		Actors: ant_bull_pirate, ants_grenadier_pirate
+		Amount: 1, 6
+		Delay: 40
 	Immobile:
 	RejectsOrders:
 	RenderSprites:
@@ -132,8 +134,8 @@ World:
 		CheckboxEnabled: True
 	PirateSpawner:
 		Minimum: 1
-		Maximum: 4
-		SpawnInterval: 250
+		Maximum: 100
+		SpawnInterval: 1500
 		ValidGround: Clear, Rock, Vegetation
 		Actors: anthole
 	FlyerCreeps:
