@@ -27,9 +27,8 @@ anthole:
 	MapEditorData:
 		Categories: System
 
-# TODO keep commenting from here on!
 ^CorePlayer:
-	AlwaysVisible: # TODO what?
+	AlwaysVisible:
 	Shroud:
 		FogCheckboxDisplayOrder: 3
 		ExploredMapCheckboxEnabled: True
@@ -44,8 +43,7 @@ Player:
 	# Default objective: Win by killing all enemies.
 	ConquestVictoryConditions:
 	PlayerResources:
-	#	SelectableCash: 5000, 6000, 8000, 10000, 12500, 15000, 10000000
-	PowerManager: # TODO what?
+	PowerManager:
 	SupportPowerManager:
 	TechTree:
 	# Required for FrozenUnderFog to work
@@ -91,7 +89,7 @@ EditorPlayer:
 		RequiresCondition: candy
 		SoundFiles: sounds|DREAMSCAPE.SDF
 	MusicPlaylist:
-	TerrainGeometryOverlay: # TODO do we need this?
+	TerrainGeometryOverlay:
 	TerrainRenderer:
 	ShroudRenderer:
 		Index: 0, 15, 3, 6, 12, 9, 11, 7, 14, 13, 1, 2, 4, 8, 5, 10
@@ -136,13 +134,13 @@ World:
 	PlayerCommands:
 	HelpCommand:
 	ScreenShaker:
-	BuildingInfluence: # TODO what is this for?
-	ProductionQueueFromSelection: # TODO we can remove this one as soon as our ui works!
+	BuildingInfluence:
+	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
 	DomainIndex:
 	SpawnMapActors:
-	MapBuildRadius: # TODO do we want this?
-	MapOptions: # TODO configure this correctly.
+	MapBuildRadius:
+	MapOptions:
 	MPStartLocations:
 	CreateMPPlayers:
 	SpawnMPUnits:

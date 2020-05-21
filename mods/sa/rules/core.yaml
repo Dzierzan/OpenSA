@@ -208,7 +208,7 @@
 		Range: 10c0
 	RenderSprites:
 		Palette: OpenSA
-	SelfHealing: #TODO might require futher adjusting
+	SelfHealing:
 		Step: 50
 		HealIfBelow: 100
 	AppearsOnRadar:
@@ -245,6 +245,7 @@
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Ground, Paralyzed
 
+# Grouped traits for proximity
 ^AffectsDeathLolly:
 	ProximityExternalCondition@SELF_DESTRUCT:
 		Condition: self_destruct
@@ -322,7 +323,7 @@
 	Building:
 		Dimensions: 1,1
 		Footprint: x
-	# Put decorations in own catgegory in map editor.
+	# Put decorations in own category in map editor.
 	MapEditorData:
 		Categories: Decorations
 	RenderSprites:
