@@ -140,6 +140,10 @@ World:
 	DomainIndex:
 	SpawnMapActors:
 	MapBuildRadius:
+		AllyBuildRadiusCheckboxEnabled: False
+		AllyBuildRadiusCheckboxVisible: False
+		BuildRadiusCheckboxEnabled: False
+		BuildRadiusCheckboxVisible: False
 	MapOptions:
 	MPStartLocations:
 	CreateMPPlayers:
