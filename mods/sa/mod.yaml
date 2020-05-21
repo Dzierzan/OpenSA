@@ -148,6 +148,9 @@ Voices:
 Notifications:
 	sa|audio/notifications.yaml
 
+Music:
+	sa|audio/music.yaml
+
 Translations:
 
 Hotkeys:

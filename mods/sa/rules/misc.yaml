@@ -66,7 +66,30 @@ EditorPlayer:
 	Selection:
 	ScreenMap:
 	ActorMap:
-	MusicPlaylist:
+	GrantConditionOnTileSet@Normal:
+		TileSets: NORMAL
+		Condition: normal
+	MusicPlaylist@Normal:
+		RequiresCondition: normal
+		BackgroundMusic: frogs
+	GrantConditionOnTileSet@Desert:
+		TileSets: DESERT
+		Condition: desert
+	MusicPlaylist@Desert:
+		RequiresCondition: desert
+		BackgroundMusic: wind
+	GrantConditionOnTileSet@Swamp:
+		TileSets: SWAMP
+		Condition: swamp
+	MusicPlaylist@Swamp:
+		RequiresCondition: swamp
+		BackgroundMusic: crickets
+	GrantConditionOnTileSet@Candy:
+		TileSets: CANDY
+		Condition: candy
+	MusicPlaylist@Candy:
+		RequiresCondition: candy
+		BackgroundMusic: dreamscape
 	TerrainGeometryOverlay: # TODO do we need this?
 	TerrainRenderer:
 	ShroudRenderer:

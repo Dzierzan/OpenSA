@@ -1,2 +1,12 @@
-frogs: FROGS
-  Extension: SDF
+FROGS: frogs
+	Extension: SDF
+	Hidden: true
+WIND: wind
+	Extension: SDF
+	Hidden: true
+CRICKETS: crickets
+	Extension: SDF
+	Hidden: true
+DREAMSCAPE: dreamscape
+	Extension: SDF
+	Hidden: true
