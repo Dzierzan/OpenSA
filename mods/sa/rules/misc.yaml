@@ -66,6 +66,30 @@ EditorPlayer:
 	Selection:
 	ScreenMap:
 	ActorMap:
+	GrantConditionOnTileSet@Normal:
+		TileSets: NORMAL
+		Condition: normal
+	AmbientSound@Normal:
+		RequiresCondition: normal
+		SoundFiles: sounds|FROGS.SDF
+	GrantConditionOnTileSet@Desert:
+		TileSets: DESERT
+		Condition: desert
+	AmbientSound@Desert:
+		RequiresCondition: desert
+		SoundFiles: sounds|WIND.SDF
+	GrantConditionOnTileSet@Swamp:
+		TileSets: SWAMP
+		Condition: swamp
+	AmbientSound@Swamp:
+		RequiresCondition: swamp
+		SoundFiles: sounds|CRICKETS.SDF
+	GrantConditionOnTileSet@Candy:
+		TileSets: CANDY
+		Condition: candy
+	AmbientSound@Candy:
+		RequiresCondition: candy
+		SoundFiles: sounds|DREAMSCAPE.SDF
 	MusicPlaylist:
 	TerrainGeometryOverlay: # TODO do we need this?
 	TerrainRenderer:
