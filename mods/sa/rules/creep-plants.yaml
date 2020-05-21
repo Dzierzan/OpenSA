@@ -6,8 +6,6 @@ popcorn:
 		Name: Popcorn Plant
 	Health:
 		HP: 30000
-	Buildable:
-		BuildDuration: 50
 	Armament:
 		Weapon: popcorn
 	-WithTurretAttackAnimation:
@@ -19,8 +17,6 @@ puff:
 		Name: Seed Ball
 	Health:
 		HP: 4500
-	Buildable:
-		BuildDuration: 50
 	-AttackTurreted:
 	-WithAttackAnimation:
 	WithMakeAnimation:
@@ -70,8 +66,6 @@ thorn:
 		Name: Thorn Bush
 	Health:
 		HP: 35000
-	Buildable:
-		BuildDuration: 50
 	Armament:
 		Weapon: spike
 	-WithTurretAttackAnimation:
@@ -83,8 +77,6 @@ freckle:
 		Name: Choc Freckle
 	Health:
 		HP: 50000
-	Buildable:
-		BuildDuration: 50
 	WithLoopedAttackSound: #TODO Doesn't work anymore
 		Report: sounds|FRECKLEFIRE.SDF
 		Delay: 40
@@ -110,8 +102,6 @@ lolly_blue:
 		Name: Death Lolly
 	Health:
 		HP: 13000
-	Buildable:
-		BuildDuration: 50
 	Explodes:
 		Weapon: death_lolly
 		EmptyWeapon: death_lolly
