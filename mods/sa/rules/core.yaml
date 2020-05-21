@@ -19,7 +19,7 @@
 	Inherits@3: ^AffectsSeedBall
 	Inherits@4: ^AffectsFreckle
 	HitShape:
-	SelectionDecorations:
+	VerticalSelectionDecorations:
 	WithSpriteControlGroupDecoration:
 		Palette: OpenSA
 		GroupSequence: groups
@@ -55,7 +55,7 @@
 		Weapon: colony_bit
 		CaptureSound: sounds|POWERUP.SDF
 		LostSound: sounds|POWERDOWN.SDF
-	SelectionDecorations:
+	VerticalSelectionDecorations:
 	Selectable:
 		Priority: 10
 	WithSpriteBody:
@@ -104,7 +104,7 @@
 		LostSound: OpenSA|bits/sounds/TurretPowerDown.wav
 		ColonyExplosionSound: OpenSA|bits/sounds/TurretExplosion.wav
 		Explode: dieTurret
-	SelectionDecorations:
+	VerticalSelectionDecorations:
 	Selectable:
 		Priority: 10
 	WithSpriteBody:
