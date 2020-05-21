@@ -4,11 +4,11 @@ using OpenRA.GameRules;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.Colony
+namespace OpenRA.Mods.SA.Traits.Colony
 {
 	public enum ExplosionType { Footprint, CenterPosition }
 
-	public class ColonyInfo : ITraitInfo, Requires<HealthInfo>, IRulesetLoaded
+	public class ColonyInfo : TraitInfo, Requires<HealthInfo>, IRulesetLoaded
 	{
 		public readonly int BitFireDelay = 50;
 		public readonly int NumberOfBits = 8;
@@ -26,7 +26,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 		public readonly string LostSound = "sounds|POWERDOWN.SDF";
 		public readonly string ColonyExplosionSound = "sounds|COLONYEXPLODE.SDF";
 
-		public object Create(ActorInitializer init)
+		public override object Create(ActorInitializer init)
 		{
 			return new Colony(init, this);
 		}

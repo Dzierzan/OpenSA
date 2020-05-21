@@ -3,12 +3,12 @@ using OpenRA.Mods.Common.Widgets;
 using OpenRA.Primitives;
 using OpenRA.Widgets;
 
-namespace OpenRA.Mods.OpenSA.Widgets
+namespace OpenRA.Mods.SA.Widgets
 {
 	public class OverlayColorPreviewManagerWidget : ColorPreviewManagerWidget
 	{
 		Color cachedColor;
-		WorldRenderer worldRenderer;
+		readonly WorldRenderer worldRenderer;
 		IPalette preview;
 
 		[ObjectCreator.UseCtor]

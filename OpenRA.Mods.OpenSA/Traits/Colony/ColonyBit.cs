@@ -2,13 +2,13 @@ using System.Linq;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.OpenSA.Warheads;
+using OpenRA.Mods.SA.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.Colony
+namespace OpenRA.Mods.SA.Traits.Colony
 {
-	public class ColonyBitInfo : ITraitInfo
+	public class ColonyBitInfo : TraitInfo
 	{
 		public readonly int MinLifetime = 500;
 		public readonly int MaxLifetime = 1000;
@@ -17,7 +17,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 		public readonly string PickupSound = "sounds|COLONYPICKUP.SDF";
 		public readonly string TimeoutSound = "sounds|COLONYPICKUPTIMEOUT.SDF";
 
-		public object Create(ActorInitializer init)
+		public override object Create(ActorInitializer init)
 		{
 			return new ColonyBit(init, this);
 		}

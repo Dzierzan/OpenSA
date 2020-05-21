@@ -3,7 +3,7 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Grants a condition periodically.")]
 	public class GrantPeriodicConditionInfo : PausableConditionalTraitInfo

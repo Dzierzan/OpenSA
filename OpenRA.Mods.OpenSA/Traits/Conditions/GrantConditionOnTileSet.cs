@@ -1,10 +1,9 @@
 using System.Linq;
-using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.SA.Traits
 {
-	public class GrantConditionOnTileSetInfo : ITraitInfo
+	public class GrantConditionOnTileSetInfo : TraitInfo
 	{
 		[FieldLoader.Require]
 		[GrantedConditionReference]
@@ -15,23 +14,21 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Tile set IDs to trigger the condition.")]
 		public readonly string[] TileSets = { };
 
-		public object Create(ActorInitializer init) { return new GrantConditionOnTileSet(init, this); }
+		public override object Create(ActorInitializer init) { return new GrantConditionOnTileSet(this); }
 	}
 
 	public class GrantConditionOnTileSet : INotifyCreated
 	{
 		readonly GrantConditionOnTileSetInfo info;
-		readonly TileSet tileSet;
 
-		public GrantConditionOnTileSet(ActorInitializer init, GrantConditionOnTileSetInfo info)
+		public GrantConditionOnTileSet(GrantConditionOnTileSetInfo info)
 		{
 			this.info = info;
-			tileSet = init.World.Map.Rules.TileSet;
 		}
 
 		void INotifyCreated.Created(Actor self)
 		{
-			if (info.TileSets.Contains(tileSet.Id))
+			if (info.TileSets.Contains(self.World.Map.Rules.TileSet.Id))
 				self.GrantCondition(info.Condition);
 		}
 	}

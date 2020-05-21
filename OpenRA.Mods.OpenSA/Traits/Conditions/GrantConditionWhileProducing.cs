@@ -3,15 +3,15 @@ using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.Conditions
+namespace OpenRA.Mods.SA.Traits.Conditions
 {
-	public class GrantConditionWhileProducingInfo : ITraitInfo, Requires<ProductionQueueInfo>
+	public class GrantConditionWhileProducingInfo : TraitInfo, Requires<ProductionQueueInfo>
 	{
 		[FieldLoader.Require]
 		[GrantedConditionReference]
 		public readonly string Condition = null;
 
-		public object Create(ActorInitializer init)
+		public override object Create(ActorInitializer init)
 		{
 			return new GrantConditionWhileProducing(init.Self, this);
 		}
@@ -19,8 +19,8 @@ namespace OpenRA.Mods.OpenSA.Traits.Conditions
 
 	public class GrantConditionWhileProducing : ITick
 	{
-		private readonly GrantConditionWhileProducingInfo info;
-		private IEnumerable<ProductionQueue> productionQueues;
+		readonly GrantConditionWhileProducingInfo info;
+		readonly IEnumerable<ProductionQueue> productionQueues;
 
 		int token = Actor.InvalidConditionToken;
 
