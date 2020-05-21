@@ -8,7 +8,7 @@ popcorn:
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
 		Speed: 150 #TODO Verify!
-		RangeLimit: 40c0 #Run out of fuel after covering this distance
+		RangeLimit: 30c0 #Run out of fuel after covering this distance
 		ExplodeWhenEmpty: true #Explode when running out of fuel
 		Inaccuracy: 100
 		Image: projectiles
