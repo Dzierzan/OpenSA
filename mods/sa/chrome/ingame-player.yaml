@@ -25,8 +25,8 @@ Container@PLAYER_WIDGETS:
 			ImageName: background
 		Container@COMMAND_BAR:
 			Logic: CommandBarLogic
-			X: 24
-			Y: WINDOW_BOTTOM - HEIGHT - 9
+			X: 16 #24
+			Y: WINDOW_BOTTOM - HEIGHT - 4 #9
 			Width: 275
 			Height: 41
 			Children:
@@ -172,8 +172,8 @@ Container@PLAYER_WIDGETS:
 							ImageName: queue-orders
 		Container@STANCE_BAR:
 			Logic: StanceSelectorLogic
-			X: 316
-			Y: WINDOW_BOTTOM - HEIGHT - 11
+			X: 324 #316
+			Y: WINDOW_BOTTOM - HEIGHT - 9
 			Width: 138
 			Height: 26
 			Children:
@@ -279,62 +279,17 @@ Container@PLAYER_WIDGETS:
 			Children:
 				Container@TOP_BUTTONS:
 					Logic: MenuButtonsChromeLogic
-					X: 16
-					Y: 240
+					X: 72 #16
+					Y: 3 #240
 					Children:
-						Button@REPAIR_BUTTON:
-							Logic: RepairOrderButtonLogic
-							X: 29
-							Width: 34
-							Height: 35
-							Background:
-							Key: Repair
-							TooltipText: Repair
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 0
-									Y: 0
-									ImageCollection: order-icons
-						Button@SELL_BUTTON:
-							Logic: SellOrderButtonLogic
-							X: 54
-							Width: 34
-							Height: 35
-							Background:
-							Key: Sell
-							TooltipText: Sell
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 0
-									Y: 0
-									ImageCollection: order-icons
 						Button@BEACON_BUTTON:
 							Logic: BeaconOrderButtonLogic
-							X: 108
+							X: 115
 							Width: 36
 							Height: 35
 							Background:
 							Key: PlaceBeacon
 							TooltipText: Place Beacon
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 0
-									Y: 0
-									ImageCollection: order-icons
-						Button@POWER_BUTTON:
-							Logic: PowerdownOrderButtonLogic
-							X: 133
-							Width: 36
-							Height: 35
-							Background:
-							Key: PowerDown
-							TooltipText: Power Down
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -371,19 +326,19 @@ Container@PLAYER_WIDGETS:
 							ImageName: insignia
 						ColorBlock@RADAR_FADETOBLACK:
 							X: 12
-							Y: 38
+							Y: 50
 							Width: 202
 							Height: 202
 						Radar@RADAR_MINIMAP:
 							WorldInteractionController: INTERACTION_CONTROLLER
 							X: 12
-							Y: 38
+							Y: 50
 							Width: 202
 							Height: 202
 							Children:
 						VqaPlayer@PLAYER:
 							X: 12
-							Y: 38
+							Y: 50
 							Width: 202
 							Height: 202
 							Skippable: false
@@ -393,63 +348,46 @@ Container@PLAYER_WIDGETS:
 							Children:
 				Label@GAME_TIMER:
 					Logic: GameTimerLogic
-					X: 10
-					Y: 4
+					X: 2
+					Y: 15
 					Width: PARENT_RIGHT
 					Height: 22
 					Align: Center
 					Font: TinyBold
-				LabelWithTooltip@CASH:
-					Logic: IngameCashCounterLogic
-					X: 29
-					Y: 4
-					Width: 50
-					Height: 22
-					Font: Bold
-					Text: {0}
-					TooltipContainer: TOOLTIP_CONTAINER
-					TooltipTemplate: SIMPLE_TOOLTIP
-				LabelWithTooltip@POWER:
-					Logic: IngamePowerCounterLogic
-					X: PARENT_RIGHT - WIDTH - 30
-					Y: 4
-					Width: 50
-					Height: 22
-					Align: Right
-					Font: Bold
-					Text: {0}
-					TooltipContainer: TOOLTIP_CONTAINER
-					TooltipTemplate: SIMPLE_TOOLTIP
-					Children:
-						Image@POWER_ICON:
-							X: PARENT_RIGHT + 0
-							Y: 3
-							ImageCollection: power-icons
-							ImageName: power-normal
+				#LabelWithTooltip@CASH:
+				#	Logic: IngameCashCounterLogic
+				#	X: 29
+				#	Y: 4
+				#	Width: 50
+				#	Height: 22
+				#	Font: Bold
+				#	Text: {0}
+				#	TooltipContainer: TOOLTIP_CONTAINER
+				#	TooltipTemplate: SIMPLE_TOOLTIP
 		Container@SIDEBAR_PRODUCTION:
 			Logic: ClassicProductionLogic
-			X: WINDOW_RIGHT - 226
-			Y: 279
+			X: WINDOW_RIGHT - 226 #226
+			Y: 279 #279
 			Width: 226
-			Height: 250
+			Height: 250 #250
 			Children:
 				Container@PALETTE_BACKGROUND:
 					Children:
 						Image@ROW_TEMPLATE:
 							Width: 226
-							Height: 48
+							Height: 48 #48
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-iconrow
 						Image@BOTTOM_CAP:
 							Width: 250
-							Height: 13
+							Height: 13 #13
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
 				LogicTicker@PRODUCTION_TICKER:
 				ProductionPalette@PRODUCTION_PALETTE:
-					X: 39
+					X: 25 #39
 					Y: 1
 					TooltipContainer: TOOLTIP_CONTAINER
 					ReadyText: READY
@@ -457,7 +395,7 @@ Container@PLAYER_WIDGETS:
 					IconSize: 58, 48
 					IconMargin: 2, 0
 					IconSpriteOffset: 0, 0
-					MinimumRows: 5
+					MinimumRows: 1
 					MaximumRows: 6
 					HotkeyPrefix: Production
 					HotkeyCount: 24

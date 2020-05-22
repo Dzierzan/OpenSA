@@ -100,27 +100,6 @@ power-icons:
 production-icons:
 	Inherits: ^Glyphs
 	Regions:
-		building: 0, 68, 16, 16
-		building-disabled: 0, 85, 16, 16
-		building-alert: 0, 102, 16, 16
-		upgrade: 17, 68, 16, 16
-		upgrade-disabled: 17, 85, 16, 16
-		upgrade-alert: 17, 102, 16, 16
-		infantry: 34, 68, 16, 16
-		infantry-disabled: 34, 85, 16, 16
-		infantry-alert: 34, 102, 16, 16
-		vehicle: 51, 68, 16, 16
-		vehicle-disabled: 51, 85, 16, 16
-		vehicle-alert: 51, 102, 16, 16
-		armor: 68, 68, 16, 16
-		armor-disabled: 68, 85, 16, 16
-		armor-alert: 68, 102, 16, 16
-		aircraft: 85, 68, 16, 16
-		aircraft-disabled: 85, 85, 16, 16
-		aircraft-alert: 85, 102, 16, 16
-		starport: 102, 68, 16, 16
-		starport-disabled: 102, 85, 16, 16
-		starport-alert: 102, 102, 16, 16
 
 order-icons:
 	Inherits: ^Chrome
@@ -131,24 +110,12 @@ order-icons:
 		guard: 49, 357, 34, 35
 		guard-disabled: 49, 393, 34, 35
 		guard-active: 49, 430, 34, 35
-		repair: 88, 357, 34, 35
-		repair-disabled: 88, 393, 34, 35
-		repair-active: 88, 430, 34, 35
-		sell: 127, 357, 34, 35
-		sell-disabled: 127, 393, 34, 35
-		sell-active: 127, 430, 34, 35
 		options: 165, 357, 40, 38
 		options-disabled: 165, 393, 40, 38
 		options-active: 165, 430, 40, 38
 		beacon: 209, 357, 36, 35
 		beacon-disabled: 209, 393, 36, 35
 		beacon-active: 209, 430, 36, 35
-		power: 248, 357, 34, 35
-		power-disabled: 248, 393, 36, 35
-		power-active: 248, 430, 36, 35
-		diplomacy: 287, 357, 36, 35
-		diplomacy-disabled: 287, 393, 36, 35
-		diplomacy-active: 287, 430, 36, 35
 
 command-button:
 	Inherits: ^Chrome
