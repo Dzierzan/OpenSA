@@ -10,7 +10,7 @@ ant_bull_pirate:
 	Mobile:
 		Speed: 105
 	Buildable:
-		BuildDuration: 75
+		BuildDuration: 125
 	#RevealsShroud:
 	#	Range: 7c0
 	Voiced:
@@ -34,7 +34,7 @@ ants_grenadier_pirate:
 	Mobile:
 		Speed: 92
 	Buildable:
-		BuildDuration: 150
+		BuildDuration: 200
 	#RevealsShroud:
 	#	Range: 7c0
 	Voiced:

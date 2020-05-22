@@ -10,7 +10,7 @@ ants_light:
 	Mobile:
 		Speed: 105
 	Buildable:
-		BuildDuration: 75
+		BuildDuration: 125
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -29,7 +29,7 @@ ants_medium:
 	Mobile:
 		Speed: 92
 	Buildable:
-		BuildDuration: 150
+		BuildDuration: 200
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -50,7 +50,7 @@ ants_heavy:
 	Mobile:
 		Speed: 78
 	Buildable:
-		BuildDuration: 250
+		BuildDuration: 350
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
