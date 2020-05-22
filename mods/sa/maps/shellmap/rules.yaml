@@ -5,9 +5,11 @@ World:
 	-SpawnMPUnits:
 	-MPStartLocations:
 	MusicPlaylist:
-		DisableWorldSounds: true
+		DisableWorldSounds: False
+
 	LuaScript:
 		Scripts: script.lua
+	-PirateSpawner:
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
@@ -16,3 +18,5 @@ World:
 	-PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
 	-PlantSpawner@CANDY:
+	AmbientSound@Normal:
+		SoundFiles: sounds_MENU|STARTBACKGROUND.SDF

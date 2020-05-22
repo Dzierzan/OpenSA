@@ -15,7 +15,7 @@ Speech:
 			RateLimit: 2500
 		Building: sounds|PRODUCTIONCHANGE
 			RateLimit: 500
-		CancelledAudio: sounds|SELECT
+		CancelledAudio: sounds_MENU|SELECT
 		StartGame:
 		GameLoaded:
 		GameSaved:

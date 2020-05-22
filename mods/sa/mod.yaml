@@ -10,7 +10,7 @@ Packages:
 	$sa: sa
 	./mods/common: common
 	~Sounds/Game.SDF: sounds
-	~Sounds/Start.SDF: sounds
+	~Sounds/Start.SDF: sounds_MENU
 	~Sprites/Game.DDF: sprites
 	~Sprites/Start.DDF: sprites
 	sa|uibits
