@@ -4,8 +4,6 @@ Sounds:
 		ChatLine: sounds|COMMAND
 		ClickSound: sounds|COMMAND
 		Beacon: OpenSA|bits/notification.wav
-		RadarDown:
-		RadarUp:
 		TabClick:
 
 Speech:
