@@ -10,7 +10,11 @@ World:
 
 ^AntsUnit:
 	Inherits: ^CoreUnit
+	ProductionTimeMultiplier@AntFactionSpecialization:
+		Multiplier: 75
+		Prerequisites: ants_faction_true
 	Buildable:
+		Queue: Unit.Ants
 		Prerequisites: ~ants_colony
 	Voiced:
 		VoiceSet: AntsVoice

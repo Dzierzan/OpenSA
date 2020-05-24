@@ -10,7 +10,11 @@ World:
 
 ^SpidersUnit:
 	Inherits: ^CoreUnit
+	ProductionTimeMultiplier@SpiderFactionSpecialization:
+		Multiplier: 75
+		Prerequisites: spiders_faction_true
 	Buildable:
+		Queue: Unit.Spiders
 		Prerequisites: ~spiders_colony
 	Voiced:
 		VoiceSet: SpidersVoice

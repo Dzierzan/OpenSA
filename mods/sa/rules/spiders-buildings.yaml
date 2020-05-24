@@ -14,16 +14,23 @@ spiders_colony:
 			BottomRight: 1536, 1024
 		TargetableOffsets: -819,-1024,0, -819,0,0, -819,1024,0, 819,-1024,0, 819,0,0, 819,1024,0, 2458,-1024,0, 2458,0,0, 2458,1024,0 # Y,X,Z - Y uses dark space magic. do NOT touch or kittens will die!
 	Production:
-		Produces: Unit
+		Produces: Unit.Spiders
 	ProductionQueue:
-		Type: Unit
+		Type: Unit.Spiders
 		Group: Unit
-	ProvidesPrerequisite:
+	ProvidesPrerequisite@UnitProduction:
 		Prerequisite: spiders_colony
+	ProvidesPrerequisite@FactionSpecialization:
+		Prerequisite: spiders_faction_true
+		RequiresCondition: spiders_faction
+	GrantConditionOnFaction:
+		Condition: spiders_faction
+		Factions: spiders
 	Exit:
 		SpawnOffset: 0c512,0,0
 		ExitCell: 5,5
 		Facing: 96
+		ProductionTypes: Unit, Unit.Spiders
 	RallyPoint:
 		Cursor: move
 		Image:

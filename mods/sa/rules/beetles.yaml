@@ -10,7 +10,11 @@ World:
 
 ^BeetlesUnit:
 	Inherits: ^CoreUnit
+	ProductionTimeMultiplier@BeetleFactionSpecialization:
+		Multiplier: 75
+		Prerequisites: beetles_faction_true
 	Buildable:
+		Queue: Unit.Beetles
 		Prerequisites: ~beetles_colony
 	Voiced:
 		VoiceSet: BeetlesVoice

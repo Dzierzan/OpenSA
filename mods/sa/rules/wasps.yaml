@@ -10,7 +10,11 @@ World:
 
 ^WaspsUnit:
 	Inherits: ^CoreUnit
+	ProductionTimeMultiplier@WaspFactionSpecialization:
+		Multiplier: 75
+		Prerequisites: wasps_faction_true
 	Buildable:
+		Queue: Unit.Wasps
 		Prerequisites: ~wasps_colony
 	Voiced:
 		VoiceSet: WaspsVoice

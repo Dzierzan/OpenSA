@@ -15,16 +15,23 @@ wasps_colony:
 			BottomRight: 1536, 1024
 		TargetableOffsets: -819,-1024,0, -819,0,0, -819,1024,0, 819,-1024,0, 819,0,0, 819,1024,0, 2458,-1024,0, 2458,0,0, 2458,1024,0 # Y,X,Z - Y uses dark space magic. do NOT touch or kittens will die!
 	Production:
-		Produces: Unit
+		Produces: Unit.Wasps
 	ProductionQueue:
-		Type: Unit
+		Type: Unit.Wasps
 		Group: Unit
-	ProvidesPrerequisite:
+	ProvidesPrerequisite@UnitProduction:
 		Prerequisite: wasps_colony
+	ProvidesPrerequisite@FactionSpecialization:
+		Prerequisite: wasps_faction_true
+		RequiresCondition: wasps_faction
+	GrantConditionOnFaction:
+		Condition: wasps_faction
+		Factions: wasps
 	Exit:
 		SpawnOffset: 0c612,0c-256,0
 		ExitCell: 6,5
 		Facing: 96
+		ProductionTypes: Unit, Unit.Wasps
 	RallyPoint:
 		Cursor: move
 		Image:

@@ -10,7 +10,11 @@ World:
 
 ^ScorpionsUnit:
 	Inherits: ^CoreUnit
+	ProductionTimeMultiplier@ScorpionFactionSpecialization:
+		Multiplier: 75
+		Prerequisites: scorpions_faction_true
 	Buildable:
+		Queue: Unit.Scorpions
 		Prerequisites: ~scorpions_colony
 	Voiced:
 		VoiceSet: ScorpionsVoice
