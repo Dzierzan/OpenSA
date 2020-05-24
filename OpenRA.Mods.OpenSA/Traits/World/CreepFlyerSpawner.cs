@@ -7,7 +7,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.SA.Traits
 {
-	public class CreepFlyerSpawnerInfo : ITraitInfo
+	public class CreepFlyerSpawnerInfo : TraitInfo
 	{
 		[Desc("Average time (ticks) between creep spawn.")]
 		public readonly int SpawnInterval = 10 * 25;
@@ -32,7 +32,7 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Only spawn on this tileset.")]
 		public string Tileset = null;
 
-		public object Create(ActorInitializer init) { return new CreepFlyerSpawner(this); }
+		public override object Create(ActorInitializer init) { return new CreepFlyerSpawner(this); }
 	}
 
 	public class CreepFlyerSpawner : ITick, INotifyCreated

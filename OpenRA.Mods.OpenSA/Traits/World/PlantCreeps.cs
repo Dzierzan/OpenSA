@@ -4,7 +4,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Controls the 'Plants' checkbox in the lobby options.")]
-	public class PlantCreepsInfo : ITraitInfo, ILobbyOptions
+	public class PlantCreepsInfo : TraitInfo, ILobbyOptions
 	{
 		[Translate]
 		[Desc("Descriptive label for the plants checkbox in the lobby.")]
@@ -31,7 +31,7 @@ namespace OpenRA.Mods.SA.Traits
 			yield return new LobbyBooleanOption("plants", CheckboxLabel, CheckboxDescription, CheckboxVisible, CheckboxDisplayOrder, CheckboxEnabled, CheckboxLocked);
 		}
 
-		public object Create(ActorInitializer init) { return new PlantCreeps(this); }
+		public override object Create(ActorInitializer init) { return new PlantCreeps(this); }
 	}
 
 	public class PlantCreeps : INotifyCreated

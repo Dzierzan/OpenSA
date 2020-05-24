@@ -1,10 +1,10 @@
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Play together with an attack.")]
-	public class WithLoopedAttackSoundInfo : ITraitInfo
+	public class WithLoopedAttackSoundInfo : TraitInfo
 	{
 		[FieldLoader.Require]
 		[Desc("Sound filename to use")]
@@ -12,7 +12,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		public readonly int Delay = 10;
 
-		public object Create(ActorInitializer init) { return new WithLoopedAttackSound(this); }
+		public override object Create(ActorInitializer init) { return new WithLoopedAttackSound(this); }
 	}
 
 	public class WithLoopedAttackSound : INotifyAttack, ITick, INotifyRemovedFromWorld

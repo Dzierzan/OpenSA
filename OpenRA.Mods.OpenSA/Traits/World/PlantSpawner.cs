@@ -7,7 +7,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.SA.Traits
 {
-	public class PlantSpawnerInfo : ITraitInfo, Requires<MapCreepsInfo>
+	public class PlantSpawnerInfo : TraitInfo, Requires<MapCreepsInfo>
 	{
 		[Desc("Minimum number of plants on the map.")]
 		public readonly int Minimum = 1;
@@ -40,7 +40,7 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Map player to use when 'InternalName' is defined on 'OwnerType'.")]
 		public readonly string InternalOwner = "Creeps";
 
-		public object Create(ActorInitializer init) { return new PlantSpawner(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new PlantSpawner(init.Self, this); }
 	}
 
 	public class PlantSpawner : ITick, INotifyCreated

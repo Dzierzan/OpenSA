@@ -8,7 +8,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Animates the anthole and spawns actors.")]
-	public class AntHoleInfo : ITraitInfo, Requires<WithSpriteBodyInfo>
+	public class AntHoleInfo : TraitInfo, Requires<WithSpriteBodyInfo>
 	{
 		[FieldLoader.Require]
 		[ActorReference(typeof(PirateAnt))]
@@ -35,7 +35,7 @@ namespace OpenRA.Mods.SA.Traits
 
 		public readonly string Owner = "Creeps";
 
-		public object Create(ActorInitializer init) { return new AntHole(init, this); }
+		public override object Create(ActorInitializer init) { return new AntHole(init, this); }
 	}
 
 	public class AntHole : INotifyCreated

@@ -1,5 +1,5 @@
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common.Effects;
 using OpenRA.Mods.Common.Traits;
@@ -7,7 +7,7 @@ using OpenRA.Mods.Common.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Warheads
+namespace OpenRA.Mods.SA.Warheads
 {
 	[Desc("Spawn actors upon explosion. Don't use this with buildings.")]
 	public class SpawnActorWarhead : Warhead, IRulesetLoaded<WeaponInfo>

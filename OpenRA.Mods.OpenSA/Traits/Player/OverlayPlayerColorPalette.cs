@@ -2,10 +2,10 @@ using OpenRA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.Player
+namespace OpenRA.Mods.SA.Traits.Player
 {
 	[Desc("More beautiful variant of the PlayerColorPalette by using the overlay blend mode.")]
-	public class OverlayPlayerColorPaletteInfo : ITraitInfo
+	public class OverlayPlayerColorPaletteInfo : TraitInfo
 	{
 		[Desc("The name of the palette to base off.")]
 		[PaletteReference]
@@ -21,7 +21,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Player
 		[Desc("Allow palette modifiers to change the palette.")]
 		public readonly bool AllowModifiers = true;
 
-		public object Create(ActorInitializer init) { return new OverlayPlayerColorPalette(this); }
+		public override object Create(ActorInitializer init) { return new OverlayPlayerColorPalette(this); }
 	}
 
 	public class OverlayPlayerColorPalette : ILoadsPlayerPalettes

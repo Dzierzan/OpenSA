@@ -14,9 +14,9 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.SA.Traits
 {
-	class PirateAntInfo : ITraitInfo, Requires<MobileInfo>
+	class PirateAntInfo : TraitInfo, Requires<MobileInfo>
 	{
-		public object Create(ActorInitializer init) { return new PirateAnt(init.Self); }
+		public override object Create(ActorInitializer init) { return new PirateAnt(init.Self); }
 	}
 
 	class PirateAnt : INotifyCreated, INotifyActorDisposing
