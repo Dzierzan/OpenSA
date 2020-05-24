@@ -5,9 +5,9 @@ using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.World
+namespace OpenRA.Mods.SA.Traits.World
 {
-	class PaletteFromDdfInfo : ITraitInfo, IProvidesCursorPaletteInfo
+	class PaletteFromDdfInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
 		[FieldLoader.Require]
 		[PaletteDefinition]
@@ -23,7 +23,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 		[Desc("Whether this palette is available for cursors.")]
 		public readonly bool CursorPalette = false;
 
-		public object Create(ActorInitializer init) { return new PaletteFromDdf(init.World, this); }
+		public override object Create(ActorInitializer init) { return new PaletteFromDdf(init.World, this); }
 
 		string IProvidesCursorPaletteInfo.Palette { get { return CursorPalette ? Name : null; } }
 

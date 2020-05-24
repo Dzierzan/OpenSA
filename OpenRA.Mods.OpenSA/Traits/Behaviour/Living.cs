@@ -1,16 +1,15 @@
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits.Behaviour
+namespace OpenRA.Mods.SA.Traits.Behaviour
 {
 	[Desc("Makes infantry feel more alive by randomly rotating or playing an animation when idle.")]
-	class LivingInfo : ITraitInfo, Requires<MobileInfo>
+	class LivingInfo : TraitInfo, Requires<MobileInfo>
 	{
 		[Desc("Chance per tick the actor rotates to a random direction.")]
 		public readonly int RotationChance = 1000;
 
-		public object Create(ActorInitializer init) { return new Living(init, this); }
+		public override object Create(ActorInitializer init) { return new Living(init, this); }
 	}
 
 	class Living : ITick

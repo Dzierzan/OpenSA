@@ -4,7 +4,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.SA.Traits
 {
 	[Desc("Controls the 'Flyer' checkbox in the lobby options.")]
-	public class FlyerCreepsInfo : ITraitInfo, ILobbyOptions
+	public class FlyerCreepsInfo : TraitInfo, ILobbyOptions
 	{
 		[Translate]
 		[Desc("Descriptive label for the plants checkbox in the lobby.")]
@@ -31,7 +31,7 @@ namespace OpenRA.Mods.SA.Traits
 			yield return new LobbyBooleanOption("flyers", CheckboxLabel, CheckboxDescription, CheckboxVisible, CheckboxDisplayOrder, CheckboxEnabled, CheckboxLocked);
 		}
 
-		public object Create(ActorInitializer init) { return new FlyerCreeps(this); }
+		public override object Create(ActorInitializer init) { return new FlyerCreeps(this); }
 	}
 
 	public class FlyerCreeps : INotifyCreated
