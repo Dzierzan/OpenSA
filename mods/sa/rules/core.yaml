@@ -178,9 +178,6 @@
 	AppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
-	SelfHealing:
-		Step: 100
-		HealIfBelow: 100
 	Wanders:
 		WanderMoveRadius: 2
 		ReduceMoveRadiusDelay: 50
