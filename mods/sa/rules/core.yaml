@@ -184,7 +184,8 @@
 		MinMoveDelay: 250
 		MaxMoveDelay: 450
 	Buildable:
-		Queue: Unit
+		Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		BuildDurationModifier: 100
 		Prerequisites: ~disabled
 	Living:
 		RotationChance: 250

@@ -3,6 +3,8 @@
 	Voiced:
 		VoiceSet: SlapfighterVoice
 	Buildable:
+		Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		BuildDurationModifier: 100
 		Prerequisites: ~disabled
 
 slapfighter:
