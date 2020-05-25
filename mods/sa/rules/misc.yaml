@@ -30,6 +30,7 @@ anthole:
 ^CorePlayer:
 	AlwaysVisible:
 	Shroud:
+		FogCheckboxEnabled: False
 		FogCheckboxDisplayOrder: 3
 		ExploredMapCheckboxEnabled: True
 
