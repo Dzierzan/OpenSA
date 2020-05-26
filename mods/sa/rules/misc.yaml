@@ -211,11 +211,11 @@ World:
 	PlantSpawner@SWAMP:
 		Minimum: 1
 		Maximum: 100
-		SpawnInterval: 2000
+		SpawnInterval: 1000
 		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: puff
-		PlantActorShares: 50
+		PlantActorShares: 1
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
 		Minimum: 1
