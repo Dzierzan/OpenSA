@@ -8,19 +8,19 @@ Terrain:
 	TerrainType@Clear:
 		Type: Clear
 		TargetTypes: Ground
-		Color: 865F45
+		Color: 61674A
 	TerrainType@Water:
 		Type: Water
 		TargetTypes: Ground
-		Color: 455F86
+		Color: 3C5740
 	TerrainType@Rock:
 		Type: Rock
 		TargetTypes: Ground
-		Color: 767676
+		Color: 334C22
 	TerrainType@Vegetation:
 		Type: Vegetation
 		TargetTypes: Ground
-		Color: 45864B
+		Color: 303658
 
 Templates:
 	#CLEAR
