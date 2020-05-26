@@ -32,7 +32,7 @@ Player:
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@easyAI:
 		RequiresCondition: enable-WIP-easy-ai
-		UnitQueues: Unit
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 60
 			ants_medium: 30
@@ -64,7 +64,7 @@ Player:
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@mediumAI:
 		RequiresCondition: enable-WIP-medium-ai
-		UnitQueues: Unit
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 33
 			ants_medium: 33
@@ -96,7 +96,7 @@ Player:
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@hardAI:
 		RequiresCondition: enable-WIP-hard-ai
-		UnitQueues: Unit
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 20
 			ants_medium: 20
