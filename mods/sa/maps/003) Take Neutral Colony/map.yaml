@@ -1,0 +1,238 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 003) Take Neutral Colony
+
+Author: Mountain King Studios
+
+Tileset: NORMAL
+
+MapSize: 68,68
+
+Bounds: 2,2,64,64
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+		Enemies: Beetles
+	PlayerReference@Creeps:
+		Name: Creeps
+		Faction: Random
+		Enemies: Beetles
+	PlayerReference@Beetles:
+		Name: Beetles
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: beetles
+		LockColor: True
+		Color: 565EC7
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Creeps, Neutral
+
+Actors:
+	Actor0: ants_colony
+		Owner: Beetles
+		Location: 28,11
+		TurretFacing: 127
+	Actor1: ants_medium
+		Owner: Beetles
+		Location: 23,18
+		Facing: 0
+	Actor2: ants_heavy
+		Owner: Beetles
+		Location: 20,18
+		Facing: 0
+	Actor3: ants_heavy
+		Owner: Beetles
+		Location: 22,15
+		Facing: 0
+	Actor4: ants_heavy
+		Owner: Beetles
+		Location: 24,12
+		Facing: 0
+	Actor5: ants_light
+		Owner: Beetles
+		Location: 32,8
+		Facing: 0
+	Actor6: ants_light
+		Owner: Beetles
+		Location: 35,10
+		Facing: 0
+	Actor7: ants_medium
+		Owner: Beetles
+		Location: 35,19
+		Facing: 0
+	Actor8: ants_medium
+		Owner: Beetles
+		Location: 38,18
+		Facing: 0
+	Actor9: beetles_heavy
+		Owner: Beetles
+		Location: 26,17
+		Facing: 0
+	Actor10: object_16
+		Owner: Neutral
+		Location: 37,13
+	Actor11: object_15
+		Owner: Neutral
+		Location: 43,18
+	Actor12: object_17
+		Owner: Neutral
+		Location: 32,22
+	Actor13: object_16
+		Owner: Neutral
+		Location: 36,26
+	Actor14: object_19
+		Owner: Neutral
+		Location: 27,19
+	Actor15: object_19
+		Owner: Neutral
+		Location: 37,6
+	Actor16: object_16
+		Owner: Neutral
+		Location: 40,4
+	Actor17: object_17
+		Owner: Neutral
+		Location: 27,8
+	Actor18: object_20
+		Owner: Neutral
+		Location: 23,6
+	Actor19: object_16
+		Owner: Neutral
+		Location: 18,13
+	Actor20: object_19
+		Owner: Neutral
+		Location: 18,4
+	Actor21: object_20
+		Owner: Neutral
+		Location: 5,4
+	Actor22: object_19
+		Owner: Neutral
+		Location: 51,23
+	Actor23: object_16
+		Owner: Neutral
+		Location: 50,31
+	Actor24: object_17
+		Owner: Neutral
+		Location: 41,32
+	Actor25: object_19
+		Owner: Neutral
+		Location: 33,29
+	Actor26: object_16
+		Owner: Neutral
+		Location: 26,31
+	Actor27: object_17
+		Owner: Neutral
+		Location: 63,37
+	Actor28: object_2
+		Owner: Neutral
+		Location: 62,40
+	Actor29: object_15
+		Owner: Neutral
+		Location: 64,43
+	Actor30: object_19
+		Owner: Neutral
+		Location: 52,41
+	Actor31: object_20
+		Owner: Neutral
+		Location: 51,48
+	Actor35: object_46
+		Owner: Neutral
+		Location: 64,53
+	Actor36: object_2
+		Owner: Neutral
+		Location: 64,51
+	Actor37: object_19
+		Owner: Neutral
+		Location: 60,55
+	Actor38: object_18
+		Owner: Neutral
+		Location: 57,51
+	Actor39: object_16
+		Owner: Neutral
+		Location: 58,49
+	Actor40: object_20
+		Owner: Neutral
+		Location: 57,46
+	Actor41: object_46
+		Owner: Neutral
+		Location: 56,57
+	Actor42: object_47
+		Owner: Neutral
+		Location: 57,60
+	Actor43: object_16
+		Owner: Neutral
+		Location: 52,60
+	Actor44: object_2
+		Owner: Neutral
+		Location: 50,56
+	Actor45: object_19
+		Owner: Neutral
+		Location: 48,57
+	Actor46: object_19
+		Owner: Neutral
+		Location: 43,60
+	Actor47: object_19
+		Owner: Neutral
+		Location: 41,53
+	Actor48: object_15
+		Owner: Neutral
+		Location: 42,51
+	Actor49: object_18
+		Owner: Neutral
+		Location: 45,46
+	Actor50: object_20
+		Owner: Neutral
+		Location: 49,45
+	Actor51: object_19
+		Owner: Neutral
+		Location: 47,42
+	Actor52: object_16
+		Owner: Neutral
+		Location: 31,62
+	Actor53: object_20
+		Owner: Neutral
+		Location: 35,64
+	Actor54: object_17
+		Owner: Neutral
+		Location: 25,61
+	Actor55: object_19
+		Owner: Neutral
+		Location: 25,57
+	Actor56: object_18
+		Owner: Neutral
+		Location: 26,54
+	Actor57: object_16
+		Owner: Neutral
+		Location: 28,56
+	Actor58: object_17
+		Owner: Neutral
+		Location: 32,57
+	Actor59: object_18
+		Owner: Neutral
+		Location: 34,53
+	Actor60: object_20
+		Owner: Neutral
+		Location: 35,56
+	Actor61: object_15
+		Owner: Neutral
+		Location: 25,48
+	Actor62: ants_colony
+		Owner: Creeps
+		Location: 33,40
+		TurretFacing: 131
+	Actor63: object_19
+		Owner: Neutral
+		Location: 32,38
+
+Rules: rules.yaml

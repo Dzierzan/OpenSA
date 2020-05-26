@@ -1,0 +1,12 @@
+Player:
+	ConquestVictoryConditions:
+
+World:
+	MapOptions:
+		ShortGameCheckboxEnabled: False
+	-SpawnMPUnits:
+	-MPStartLocations:
+	-PirateSpawner:
+	CreepFlyerSpawner@dragonfly:
+	PlantSpawner@NORMAL:
+		Maximum: 2
