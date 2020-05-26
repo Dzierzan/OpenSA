@@ -1,0 +1,277 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 002) Defend Your Colony
+
+Author: Mountain King Studios
+
+Tileset: NORMAL
+
+MapSize: 68,100
+
+Bounds: 2,2,64,96
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Ants:
+		Name: Ants
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: ants
+		LockColor: True
+		Color: 57AC49
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Wasps
+	PlayerReference@Wasps:
+		Name: Wasps
+		Bot: medium
+		Faction: sasps
+		Color: F5D378
+		Enemies: Ants
+
+Actors:
+	Actor0: ants_colony
+		Owner: Ants
+		Location: 54,79
+		TurretFacing: 131
+	Actor1: ants_heavy
+		Owner: Ants
+		Location: 63,76
+		Facing: 0
+	Actor2: ants_light
+		Owner: Ants
+		Location: 53,76
+		Facing: 0
+	Actor3: ants_light
+		Owner: Ants
+		Location: 49,78
+		Facing: 0
+	Actor4: object_18
+		Owner: Neutral
+		Location: 63,90
+	Actor5: object_17
+		Owner: Neutral
+		Location: 64,94
+	Actor6: object_18
+		Owner: Neutral
+		Location: 56,92
+	Actor7: object_18
+		Owner: Neutral
+		Location: 50,80
+	Actor8: object_15
+		Owner: Neutral
+		Location: 48,85
+	Actor9: object_17
+		Owner: Neutral
+		Location: 37,89
+	Actor10: object_19
+		Owner: Neutral
+		Location: 45,72
+	Actor11: object_15
+		Owner: Neutral
+		Location: 50,62
+	Actor12: object_19
+		Owner: Neutral
+		Location: 55,53
+	Actor13: object_17
+		Owner: Neutral
+		Location: 37,61
+	Actor14: object_18
+		Owner: Neutral
+		Location: 38,51
+	Actor15: object_20
+		Owner: Neutral
+		Location: 27,63
+	Actor16: object_17
+		Owner: Neutral
+		Location: 51,44
+	Actor17: object_18
+		Owner: Neutral
+		Location: 55,38
+	Actor18: object_20
+		Owner: Neutral
+		Location: 56,44
+	Actor19: object_20
+		Owner: Neutral
+		Location: 43,37
+	Actor20: object_18
+		Owner: Neutral
+		Location: 45,40
+	Actor21: object_17
+		Owner: Neutral
+		Location: 22,59
+	Actor22: object_15
+		Owner: Neutral
+		Location: 9,64
+	Actor23: object_18
+		Owner: Neutral
+		Location: 13,56
+	Actor24: object_2
+		Owner: Neutral
+		Location: 20,55
+	Actor25: object_46
+		Owner: Neutral
+		Location: 5,52
+	Actor26: object_45
+		Owner: Neutral
+		Location: 6,47
+	Actor27: object_1
+		Owner: Neutral
+		Location: 5,30
+	Actor28: object_17
+		Owner: Neutral
+		Location: 13,21
+	Actor29: object_19
+		Owner: Neutral
+		Location: 20,30
+	Actor30: object_2
+		Owner: Neutral
+		Location: 22,37
+	Actor31: object_16
+		Owner: Neutral
+		Location: 24,30
+	Actor32: object_19
+		Owner: Neutral
+		Location: 16,17
+	Actor33: object_20
+		Owner: Neutral
+		Location: 4,13
+	Actor34: object_16
+		Owner: Neutral
+		Location: 12,8
+	Actor35: object_19
+		Owner: Neutral
+		Location: 15,4
+	Actor36: object_18
+		Owner: Neutral
+		Location: 19,6
+	Actor37: object_1
+		Owner: Neutral
+		Location: 29,3
+	Actor38: object_16
+		Owner: Neutral
+		Location: 33,3
+	Actor39: object_15
+		Owner: Neutral
+		Location: 30,9
+	Actor40: object_17
+		Owner: Neutral
+		Location: 40,6
+	Actor41: object_20
+		Owner: Neutral
+		Location: 44,11
+	Actor42: object_19
+		Owner: Neutral
+		Location: 41,16
+	Actor43: object_16
+		Owner: Neutral
+		Location: 45,22
+	Actor44: beetles_light
+		Owner: Wasps
+		Location: 45,14
+		Facing: 0
+	Actor45: beetles_light
+		Owner: Wasps
+		Location: 40,12
+		Facing: 0
+	Actor46: ants_medium
+		Owner: Wasps
+		Location: 42,15
+		Facing: 0
+	Actor47: ants_medium
+		Owner: Wasps
+		Location: 44,17
+		Facing: 0
+	Actor48: ants_medium
+		Owner: Wasps
+		Location: 48,20
+		Facing: 0
+	Actor49: beetles_light
+		Owner: Wasps
+		Location: 41,19
+		Facing: 0
+	Actor50: beetles_light
+		Owner: Wasps
+		Location: 35,16
+		Facing: 0
+	Actor51: beetles_heavy
+		Owner: Wasps
+		Location: 37,22
+		Facing: 0
+	Actor52: ants_medium
+		Owner: Wasps
+		Location: 40,25
+		Facing: 0
+	Actor53: ants_heavy
+		Owner: Wasps
+		Location: 23,28
+		Facing: 0
+	Actor54: ants_heavy
+		Owner: Wasps
+		Location: 25,25
+		Facing: 0
+	Actor55: beetles_light
+		Owner: Wasps
+		Location: 28,23
+		Facing: 0
+	Actor56: ants_medium
+		Owner: Wasps
+		Location: 34,28
+		Facing: 0
+	Actor57: ants_medium
+		Owner: Wasps
+		Location: 28,32
+		Facing: 0
+	Actor58: beetles_light
+		Owner: Wasps
+		Location: 31,33
+		Facing: 0
+	Actor59: ants_medium
+		Owner: Wasps
+		Location: 26,36
+		Facing: 0
+	Actor60: beetles_light
+		Owner: Wasps
+		Location: 18,38
+		Facing: 0
+	Actor61: beetles_light
+		Owner: Wasps
+		Location: 16,42
+		Facing: 0
+	Actor62: ants_medium
+		Owner: Wasps
+		Location: 22,41
+		Facing: 0
+	Actor63: beetles_light
+		Owner: Wasps
+		Location: 30,18
+		Facing: 0
+	Actor64: ants_medium
+		Owner: Wasps
+		Location: 21,44
+		Facing: 0
+	Actor65: ants_medium
+		Owner: Wasps
+		Location: 24,43
+		Facing: 0
+	Actor66: beetles_heavy
+		Owner: Wasps
+		Location: 17,47
+		Facing: 0
+
+Rules: rules.yaml
