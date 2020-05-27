@@ -63,6 +63,9 @@ wasps_heavy:
 		Weapon: wasps_heavy
 		LocalOffset: 1000,0,0
 		PauseOnCondition: paralyzed
+	WithLoopedAttackSound:
+		Report: sounds|SONIC.SDF
+		Delay: 4
 
 wasps.colorpicker:
 	Inherits: wasps_heavy

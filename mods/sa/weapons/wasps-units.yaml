@@ -47,7 +47,6 @@ wasps_heavy:
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 4
 	Range: 6c0
-	Report: sounds|SONIC.SDF
 	Projectile: Bullet
 		Speed: 200
 		Inaccuracy: 100
