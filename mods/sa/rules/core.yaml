@@ -27,8 +27,6 @@
 	# In general all units can be selected.
 	Selectable:
 		# The default priority for all units.
-	# Units must be destroyed to win a standard game.
-	MustBeDestroyed:
 	# Units have frames for different directions.
 	WithFacingSpriteBody:
 
@@ -157,6 +155,9 @@
 	AttackMove:
 	Guard:
 	Guardable:
+	# Units must be destroyed to win a standard game.
+	MustBeDestroyed:
+		RequiredForShortGame: false
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreCreature
