@@ -22,7 +22,6 @@ Players:
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: Random
-		Enemies: Beetles
 	PlayerReference@Creeps:
 		Name: Creeps
 		Faction: Random
