@@ -1,0 +1,267 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 004) Expand Your Empire
+
+Author: Mountain King Studios
+
+Tileset: DESERT
+
+MapSize: 100,68
+
+Bounds: 2,2,96,64
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		Faction: Random
+		Enemies: Beetles
+	PlayerReference@Beetles:
+		Name: Beetles
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: beetles
+		LockColor: True
+		Color: 565EC7
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Creeps, Neutral
+
+Actors:
+	Actor0: object_41
+		Owner: Neutral
+		Location: 29,33
+	Actor1: object_40
+		Owner: Neutral
+		Location: 21,28
+	Actor2: object_22
+		Owner: Neutral
+		Location: 13,26
+	Actor3: object_23
+		Owner: Neutral
+		Location: 9,25
+	Actor4: object_21
+		Owner: Neutral
+		Location: 6,22
+	Actor5: ants_colony
+		Owner: Creeps
+		Location: 12,18
+		TurretFacing: 126
+	Actor6: object_24
+		Owner: Neutral
+		Location: 25,13
+	Actor7: object_39
+		Owner: Neutral
+		Location: 26,10
+	Actor8: object_41
+		Owner: Neutral
+		Location: 4,5
+	Actor9: object_12
+		Owner: Neutral
+		Location: 13,9
+	Actor10: object_13
+		Owner: Neutral
+		Location: 16,7
+	Actor11: object_25
+		Owner: Neutral
+		Location: 12,5
+	Actor12: object_14
+		Owner: Neutral
+		Location: 13,15
+	Actor13: object_26
+		Owner: Neutral
+		Location: 38,4
+	Actor14: object_23
+		Owner: Neutral
+		Location: 52,8
+	Actor15: object_41
+		Owner: Neutral
+		Location: 51,13
+	Actor16: object_40
+		Owner: Neutral
+		Location: 57,11
+	Actor17: object_24
+		Owner: Neutral
+		Location: 62,3
+	Actor18: object_25
+		Owner: Neutral
+		Location: 74,5
+	Actor19: object_23
+		Owner: Neutral
+		Location: 71,14
+	Actor20: object_22
+		Owner: Neutral
+		Location: 69,16
+	Actor21: object_41
+		Owner: Neutral
+		Location: 77,18
+	Actor22: object_24
+		Owner: Neutral
+		Location: 83,21
+	Actor23: object_12
+		Owner: Neutral
+		Location: 83,17
+	Actor24: object_24
+		Owner: Neutral
+		Location: 94,17
+	Actor25: object_25
+		Owner: Neutral
+		Location: 96,18
+	Actor26: object_21
+		Owner: Neutral
+		Location: 86,19
+	Actor27: object_22
+		Owner: Neutral
+		Location: 88,24
+	Actor28: object_41
+		Owner: Neutral
+		Location: 90,16
+	Actor29: object_12
+		Owner: Neutral
+		Location: 95,12
+	Actor30: object_13
+		Owner: Neutral
+		Location: 90,7
+	Actor31: object_14
+		Owner: Neutral
+		Location: 87,5
+	Actor32: beetles_colony
+		Owner: Creeps
+		Location: 69,20
+		TurretFacing: 127
+	Actor33: object_21
+		Owner: Neutral
+		Location: 78,34
+	Actor34: object_41
+		Owner: Neutral
+		Location: 75,36
+	Actor35: object_22
+		Owner: Neutral
+		Location: 73,39
+	Actor36: object_40
+		Owner: Neutral
+		Location: 78,46
+	Actor37: object_23
+		Owner: Neutral
+		Location: 62,37
+	Actor38: object_22
+		Owner: Neutral
+		Location: 60,36
+	Actor39: object_21
+		Owner: Neutral
+		Location: 92,54
+	Actor40: object_14
+		Owner: Neutral
+		Location: 82,61
+	Actor41: object_21
+		Owner: Neutral
+		Location: 66,58
+	Actor42: object_21
+		Owner: Neutral
+		Location: 46,45
+	Actor43: object_41
+		Owner: Neutral
+		Location: 50,64
+	Actor44: object_23
+		Owner: Neutral
+		Location: 43,64
+	Actor45: object_39
+		Owner: Neutral
+		Location: 46,59
+	Actor46: object_23
+		Owner: Neutral
+		Location: 32,62
+	Actor47: object_41
+		Owner: Neutral
+		Location: 20,57
+	Actor48: object_40
+		Owner: Neutral
+		Location: 6,59
+	Actor49: object_13
+		Owner: Neutral
+		Location: 14,55
+	Actor50: object_14
+		Owner: Neutral
+		Location: 9,52
+	Actor51: object_13
+		Owner: Neutral
+		Location: 17,47
+	Actor52: object_14
+		Owner: Neutral
+		Location: 19,43
+	Actor53: object_12
+		Owner: Neutral
+		Location: 18,36
+	Actor54: object_13
+		Owner: Neutral
+		Location: 5,46
+	Actor55: object_39
+		Owner: Neutral
+		Location: 6,34
+	Actor56: object_21
+		Owner: Neutral
+		Location: 26,55
+	Actor57: object_24
+		Owner: Neutral
+		Location: 29,53
+	Actor58: object_40
+		Owner: Neutral
+		Location: 32,49
+	Actor59: object_21
+		Owner: Neutral
+		Location: 36,48
+	Actor61: object_25
+		Owner: Neutral
+		Location: 35,45
+	Actor62: beetles_colony
+		Owner: Beetles
+		Location: 32,51
+		TurretFacing: 127
+	Actor63: object_41
+		Owner: Neutral
+		Location: 32,60
+	Actor64: ants_light
+		Owner: Beetles
+		Location: 30,57
+		Facing: 0
+	Actor65: ants_light
+		Owner: Beetles
+		Location: 27,51
+		Facing: 0
+	Actor66: ants_medium
+		Owner: Beetles
+		Location: 41,60
+		Facing: 0
+	Actor67: ants_medium
+		Owner: Beetles
+		Location: 42,56
+		Facing: 0
+	Actor68: ants_heavy
+		Owner: Beetles
+		Location: 50,52
+		Facing: 0
+	Actor69: ants_heavy
+		Owner: Beetles
+		Location: 47,50
+		Facing: 13
+	Actor72: ants_medium
+		Owner: Beetles
+		Location: 49,55
+		Facing: 0
+	Actor73: ants_heavy
+		Owner: Beetles
+		Location: 46,53
+		Facing: 12
+
+Rules: rules.yaml
