@@ -78,6 +78,12 @@
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
+	GrantConditionOnHealth:
+		Condition: HoldFire
+		MinHP: 0
+		MaxHP: 1
+	AttackTurreted:
+		RequiresCondition: !HoldFire
 
 ^CoreTurretBuilding:
 	Inherits: ^CoreVisibleActor
@@ -127,8 +133,13 @@
 	Turreted:
 	WithSpriteTurret:
 	AttackTurreted:
+		RequiresCondition: !HoldFire
 	WithTurretAttackAnimation:
 		Sequence: shoot
+	GrantConditionOnHealth:
+		Condition: HoldFire
+		MinHP: 0
+		MaxHP: 1
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
