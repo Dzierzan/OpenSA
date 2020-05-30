@@ -1,3 +1,29 @@
+#NORMAL Tileset
+
+object_15:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_16:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_17:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_18:
+	Inherits: ^CoreDecoration
+
+object_20:
+	Inherits: ^CoreDecoration
+
+object_19:
+	Inherits: ^CoreDecoration
+
 object_0:
 	Inherits: ^CoreDecoration
 
@@ -7,18 +33,145 @@ object_1:
 object_2:
 	Inherits: ^CoreDecoration
 
-object_3:
+object_47:
+	Inherits: ^CoreDecoration
+
+object_45:
+	Inherits: ^CoreDecoration
+
+object_46:
+	Inherits: ^CoreDecoration
+
+#DESERT Tileset
+
+object_23:
+	Inherits: ^CoreDecoration
+
+object_21:
+	Inherits: ^CoreDecoration
+
+object_22:
+	Inherits: ^CoreDecoration
+
+object_39:
+	Inherits: ^CoreDecoration
+
+object_40:
+	Inherits: ^CoreDecoration
+
+object_41:
+	Inherits: ^CoreDecoration
+
+object_14:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-object_4:
+
+object_12:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
+
+object_13:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_24:
+	Inherits: ^CoreDecoration
+
+object_25:
+	Inherits: ^CoreDecoration
+
+object_26:
+	Inherits: ^CoreDecoration
+
+#SWAMP Tileset
+
+
+object_11:
+	Inherits: ^CoreDecoration
+
+object_10:
+	Inherits: ^CoreDecoration
+
+object_9:
+	Inherits: ^CoreDecoration
+
+object_38:
+	Inherits: ^CoreDecoration
+
+object_36:
+	Inherits: ^CoreDecoration
+
+object_37:
+	Inherits: ^CoreDecoration
+
 object_5:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
+
+object_3:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_4:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_35:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_33:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_34:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+#CANDYLAND Tileset
+
+object_44:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_42:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_43:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+object_32:
+	Inherits: ^CoreDecoration
+
+object_30:
+	Inherits: ^CoreDecoration
+
+object_31:
+	Inherits: ^CoreDecoration
+
+object_28:
+	Inherits: ^CoreDecoration
+
+object_27:
+	Inherits: ^CoreDecoration
+
+object_29:
+	Inherits: ^CoreDecoration
+
 object_6:
 	Inherits: ^CoreDecoration
 	Building:
@@ -31,136 +184,8 @@ object_8:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-object_9:
-	Inherits: ^CoreDecoration
 
-object_10:
-	Inherits: ^CoreDecoration
-
-object_11:
-	Inherits: ^CoreDecoration
-
-object_12:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_13:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_14:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_15:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_16:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_17:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_18:
-	Inherits: ^CoreDecoration
-
-object_19:
-	Inherits: ^CoreDecoration
-
-object_20:
-	Inherits: ^CoreDecoration
-
-object_21:
-	Inherits: ^CoreDecoration
-
-object_22:
-	Inherits: ^CoreDecoration
-
-object_23:
-	Inherits: ^CoreDecoration
-
-object_24:
-	Inherits: ^CoreDecoration
-
-object_25:
-	Inherits: ^CoreDecoration
-
-object_26:
-	Inherits: ^CoreDecoration
-
-object_27:
-	Inherits: ^CoreDecoration
-
-object_28:
-	Inherits: ^CoreDecoration
-
-object_29:
-	Inherits: ^CoreDecoration
-
-object_30:
-	Inherits: ^CoreDecoration
-
-object_31:
-	Inherits: ^CoreDecoration
-
-object_32:
-	Inherits: ^CoreDecoration
-
-object_33:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_34:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_35:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_36:
-	Inherits: ^CoreDecoration
-
-object_37:
-	Inherits: ^CoreDecoration
-
-object_38:
-	Inherits: ^CoreDecoration
-
-object_39:
-	Inherits: ^CoreDecoration
-
-object_40:
-	Inherits: ^CoreDecoration
-
-object_41:
-	Inherits: ^CoreDecoration
-
-object_42:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_43:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_44:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-object_45:
-	Inherits: ^CoreDecoration
-
-object_46:
-	Inherits: ^CoreDecoration
-
-object_47:
-	Inherits: ^CoreDecoration
-
-object_48:
-	Inherits: ^CoreDecoration
-	#WithIdleOverlay:
-	#	Sequence: close
+#object_48:
+#Inherits: ^CoreDecoration
+#WithIdleOverlay:
+#	Sequence: close
