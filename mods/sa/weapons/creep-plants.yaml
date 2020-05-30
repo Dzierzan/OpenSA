@@ -1,20 +1,20 @@
 popcorn:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40 #TODO Verify!
+	ReloadDelay: 40
 	Range: 6c0
-	Burst: 8
+	Burst: 1
 	BurstDelays: 0
 	StartBurstReport: sounds|WHIPFIRE.SDF
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
-		Speed: 150 #TODO Verify!
-		RangeLimit: 30c0 #Run out of fuel after covering this distance
+		Speed: 150
+		RangeLimit: 20c0 #Run out of fuel after covering this distance
 		ExplodeWhenEmpty: true #Explode when running out of fuel
 		Inaccuracy: 100
 		Image: projectiles
 		Sequences: popcorn
 	Warhead@Damage: SpreadDamage
-		Spread: 256
+		Spread: 125
 		Damage: 253
 		ValidTargets: Ground, Paralyzed
 

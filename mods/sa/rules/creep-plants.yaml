@@ -6,8 +6,40 @@ popcorn:
 		Name: Popcorn Plant
 	Health:
 		HP: 30000
-	Armament:
+	AttackTurreted:
+		Armaments: primary, secondary, 3rd, 4th, 5th, 6th, 7th, 8th
+	Armament@1:
+		Name: primary
 		Weapon: popcorn
+		LocalOffset: 400,0,400
+	Armament@2:
+		Name: secondary
+		Weapon: popcorn
+		LocalOffset: 150,150,400
+	Armament@3:
+		Name: 3rd
+		Weapon: popcorn
+		LocalOffset: 0,400,400
+	Armament@4:
+		Name: 4th
+		Weapon: popcorn
+		LocalOffset: 150,-150,400
+	Armament@5:
+		Name: 5th
+		Weapon: popcorn
+		LocalOffset: -400,0,400
+	Armament@6:
+		Name: 6th
+		Weapon: popcorn
+		LocalOffset: -150,-150,400
+	Armament@7:
+		Name: 7th
+		Weapon: popcorn
+		LocalOffset: 0,-400,400
+	Armament@8:
+		Name: 8th
+		Weapon: popcorn
+		LocalOffset: -150,150,400
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 

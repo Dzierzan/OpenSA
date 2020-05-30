@@ -8,7 +8,7 @@ popcorn:
 		Tick: 1000
 	shoot: sprites|OBWHIPPL_ATTACK.ANI
 		Length: 6
-		Tick: 80
+		Tick: 100
 	die: sprites|OBWHIPPL_DEAD.ANI
 		Length: 2
 		Tick: 9000
