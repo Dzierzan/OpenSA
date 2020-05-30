@@ -1,0 +1,270 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 006) Expand And Destroy
+
+Author: Mountain King Studios
+
+Tileset: NORMAL
+
+MapSize: 68,100
+
+Bounds: 2,2,64,96
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Spiders, Wasps
+	PlayerReference@Wasps:
+		Name: Wasps
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: wasps
+		LockColor: True
+		Color: F5D378
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Spiders, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Bot: medium
+		Faction: spiders
+		Color: CA3131
+		Enemies: Wasps, Creeps
+
+Actors:
+	Actor0: spiders_colony
+		Owner: Spiders
+		Location: 14,13
+		TurretFacing: 126
+	Actor1: object_46
+		Owner: Neutral
+		Location: 49,96
+	Actor2: object_45
+		Owner: Neutral
+		Location: 39,95
+	Actor3: object_47
+		Owner: Neutral
+		Location: 37,93
+	Actor4: object_45
+		Owner: Neutral
+		Location: 46,89
+	Actor5: object_46
+		Owner: Neutral
+		Location: 53,87
+	Actor6: object_2
+		Owner: Neutral
+		Location: 45,92
+	Actor7: object_1
+		Owner: Neutral
+		Location: 63,89
+	Actor8: object_20
+		Owner: Neutral
+		Location: 64,79
+	Actor10: object_15
+		Owner: Neutral
+		Location: 57,72
+	Actor11: object_16
+		Owner: Neutral
+		Location: 57,70
+	Actor12: object_17
+		Owner: Neutral
+		Location: 58,67
+	Actor13: object_15
+		Owner: Neutral
+		Location: 64,70
+	Actor14: object_20
+		Owner: Neutral
+		Location: 31,91
+	Actor15: object_19
+		Owner: Neutral
+		Location: 23,72
+	Actor16: object_18
+		Owner: Neutral
+		Location: 19,74
+	Actor17: object_16
+		Owner: Neutral
+		Location: 26,76
+	Actor18: ants_colony
+		Owner: Creeps
+		Location: 18,78
+		TurretFacing: 132
+	Actor19: object_18
+		Owner: Neutral
+		Location: 7,76
+	Actor20: object_19
+		Owner: Neutral
+		Location: 11,80
+	Actor21: object_20
+		Owner: Neutral
+		Location: 9,83
+	Actor22: object_16
+		Owner: Neutral
+		Location: 17,89
+	Actor23: object_17
+		Owner: Neutral
+		Location: 6,94
+	Actor24: object_19
+		Owner: Neutral
+		Location: 9,95
+	Actor25: object_18
+		Owner: Neutral
+		Location: 4,69
+	Actor26: object_16
+		Owner: Neutral
+		Location: 28,66
+	Actor27: object_19
+		Owner: Neutral
+		Location: 23,63
+	Actor28: object_20
+		Owner: Neutral
+		Location: 4,57
+	Actor29: object_2
+		Owner: Neutral
+		Location: 13,51
+	Actor30: object_1
+		Owner: Neutral
+		Location: 16,49
+	Actor31: object_0
+		Owner: Neutral
+		Location: 16,40
+	Actor32: object_18
+		Owner: Neutral
+		Location: 22,32
+	Actor33: object_19
+		Owner: Neutral
+		Location: 40,47
+	Actor34: object_17
+		Owner: Neutral
+		Location: 34,47
+	Actor35: object_18
+		Owner: Neutral
+		Location: 62,38
+	Actor36: object_16
+		Owner: Neutral
+		Location: 54,44
+	Actor37: object_18
+		Owner: Neutral
+		Location: 48,53
+	Actor38: object_19
+		Owner: Neutral
+		Location: 48,56
+	Actor39: object_20
+		Owner: Neutral
+		Location: 61,57
+	Actor40: beetles_colony
+		Owner: Wasps
+		Location: 51,58
+		TurretFacing: 126
+	Actor41: ants_light
+		Owner: Wasps
+		Location: 50,55
+		Facing: 0
+	Actor42: ants_light
+		Owner: Wasps
+		Location: 44,56
+		Facing: 8
+	Actor43: ants_light
+		Owner: Wasps
+		Location: 45,60
+		Facing: 0
+	Actor44: ants_light
+		Owner: Wasps
+		Location: 41,60
+		Facing: 0
+	Actor45: ants_light
+		Owner: Wasps
+		Location: 44,64
+		Facing: 0
+	Actor46: object_16
+		Owner: Neutral
+		Location: 26,28
+	Actor47: object_15
+		Owner: Neutral
+		Location: 30,24
+	Actor48: object_19
+		Owner: Neutral
+		Location: 36,24
+	Actor49: object_20
+		Owner: Neutral
+		Location: 27,21
+	Actor50: object_15
+		Owner: Neutral
+		Location: 25,17
+	Actor51: object_16
+		Owner: Neutral
+		Location: 9,22
+	Actor52: object_19
+		Owner: Neutral
+		Location: 11,14
+	Actor53: object_20
+		Owner: Neutral
+		Location: 13,5
+	Actor54: object_20
+		Owner: Neutral
+		Location: 22,7
+	Actor55: object_18
+		Owner: Neutral
+		Location: 30,9
+	Actor57: object_17
+		Owner: Neutral
+		Location: 31,5
+	Actor56: spiders_light
+		Owner: Spiders
+		Location: 16,10
+		Facing: 0
+	Actor58: spiders_light
+		Owner: Spiders
+		Location: 22,13
+		Facing: 0
+	Actor59: spiders_heavy
+		Owner: Spiders
+		Location: 21,16
+		Facing: 0
+	Actor60: spiders_light
+		Owner: Spiders
+		Location: 24,19
+		Facing: 0
+	Actor61: spiders_medium
+		Owner: Spiders
+		Location: 29,17
+		Facing: 0
+	Actor62: spiders_light
+		Owner: Spiders
+		Location: 18,22
+		Facing: 0
+	Actor63: spiders_light
+		Owner: Spiders
+		Location: 14,21
+		Facing: 0
+	Actor64: spiders_light
+		Owner: Spiders
+		Location: 11,11
+		Facing: 5
+	Actor65: spiders_light
+		Owner: Spiders
+		Location: 11,17
+		Facing: 1
+	Actor66: spiders_medium
+		Owner: Spiders
+		Location: 8,19
+		Facing: 0
+	Actor67: spiders_heavy
+		Owner: Spiders
+		Location: 7,26
+		Facing: 2
+
+Rules: rules.yaml
