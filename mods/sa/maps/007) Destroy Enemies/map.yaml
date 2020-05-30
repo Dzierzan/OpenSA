@@ -24,14 +24,14 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: True
 		Faction: Random
-	PlayerReference@Spider:
-		Name: Spider
+		Enemies: Spiders, Ants, Beetles
+	PlayerReference@Spiders:
+		Name: Spiders
 		Playable: True
 		Required: True
 		LockFaction: True
-		Faction: spider
+		Faction: spiders
 		LockColor: True
 		Color: CA3131
 		LockSpawn: True

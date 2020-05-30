@@ -24,8 +24,8 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: True
 		Faction: Random
+		Enemies: Ants, Wasps
 	PlayerReference@Ants:
 		Name: Ants
 		Playable: True
