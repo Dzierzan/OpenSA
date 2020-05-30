@@ -1,0 +1,18 @@
+Player:
+	ConquestVictoryConditions:
+
+World:
+	MapOptions:
+		ShortGameCheckboxEnabled: False
+	-SpawnMPUnits:
+	-MPStartLocations:
+	-PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	PlantSpawner@DESERT:
+		Maximum: 4
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
