@@ -38,16 +38,17 @@ ants_heavy:
 	Report: sounds|ROCKETLAUNCH.SDF
 	Projectile: Missile
 		MinimumLaunchSpeed: 25
-		MaximumLaunchSpeed: 100
+		MaximumLaunchSpeed: 250
 		Speed: 260
 		Acceleration: 25
 		Inaccuracy: 300
 		Image: projectiles
 		Sequences: bazooka
 		TrailImage: smoke_trail
+		LockOnProbability: 0
 	Warhead@Damage: SpreadDamage
 		Damage: 1950
-		Spread: 1c0
+		Spread: 100
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
