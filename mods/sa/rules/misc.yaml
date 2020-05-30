@@ -24,8 +24,6 @@ anthole:
 	WithSpriteBody:
 	BodyOrientation:
 		QuantizedFacings: 1
-	MapEditorData:
-		Categories: System
 
 ^CorePlayer:
 	AlwaysVisible:
