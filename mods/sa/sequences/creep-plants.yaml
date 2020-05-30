@@ -16,6 +16,33 @@ popcorn:
 	name: sprites|NAMENEUTRALPOPCORN.ANI
 	portrait: sprites|COLONYNEUTRALPOPCORN3D.ANI
 
+venus:
+	idle: sprites|OBVENUSNORMAL.ANI
+	scratched-idle: bits/VenusFlytrap.png
+		Start: 9
+	damaged-idle: bits/VenusFlytrap.png
+		Start: 10
+	critical-idle: bits/VenusFlytrap.png
+		Start: 11
+	grow: bits/VenusFlytrap.png
+		Start: 0
+		Length: 5
+		Tick: 1000
+	shoot: sprites|OBVENUSCLOSE.ANI
+		Length: 4
+		Tick: 100
+	damaged-shoot: bits/VenusFlytrap.png
+		Start: 5
+		Length: 4
+		Tick: 100	
+	die: bits/VenusFlytrap.png
+		Start: 12
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+	#name: bits/empty.png
+	#portrait: bits/empty.png
+
 puff:
 	idle: sprites|OBPUFFBL_NORMAL.ANI
 	scuffed-idle: sprites|OBPUFFBL_DAMAGEA.ANI

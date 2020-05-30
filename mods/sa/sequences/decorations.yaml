@@ -189,12 +189,3 @@ object_46:
 object_47:
 	idle: sprites|OBTOADST02.ANI
 		ZOffset: 2000
-
-object_48:
-	idle: sprites|OBVENUSNORMAL.ANI
-		ZOffset: 2000
-	close: sprites|OBVENUSCLOSE.ANI
-		ZOffset: 2000
-		Length: 3
-		Tick: 200
-

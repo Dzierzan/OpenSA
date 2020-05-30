@@ -1250,3 +1250,23 @@ Actors:
 		Facing: 96
 		TurretFacing: 96
 		Location: 10,54
+	Actor336: venus
+		Facing: 96
+		TurretFacing: 96
+		Location: 89,51
+		Owner: Creeps
+	Actor337: venus
+		Facing: 96
+		TurretFacing: 96
+		Location: 85,51
+		Owner: Creeps
+	Actor338: venus
+		Facing: 96
+		TurretFacing: 96
+		Location: 85,47
+		Owner: Creeps
+	Actor339: venus
+		Facing: 96
+		TurretFacing: 96
+		Location: 89,47
+		Owner: Creeps

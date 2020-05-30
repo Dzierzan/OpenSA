@@ -43,6 +43,20 @@ popcorn:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 
+venus:
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Venus Flytrap
+	Health:
+		HP: 30000
+	Armament:
+		Name: primary
+		Weapon: popcorn
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
 puff:
 	Inherits: ^CoreNeutralTowerCreep
 	Tooltip:
