@@ -6,7 +6,7 @@ ants_colony:
 		Inaccuracy: 0c512
 	Warhead@Damage: SpreadDamage
 		Damage: 690
-		Spread: 512
+		Spread: 125
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions

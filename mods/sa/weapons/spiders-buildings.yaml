@@ -7,7 +7,7 @@ spiders_colony:
 		Inaccuracy: 0c256
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
-		Spread: 1
+		Spread: 125
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions

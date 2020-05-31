@@ -47,7 +47,7 @@ beetles_heavy:
 		Image: projectiles
 		Sequences: cannon
 	Warhead@Damage: SpreadDamage
-		Spread: 400
+		Spread: 300
 		Damage: 1950
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect

@@ -9,8 +9,8 @@ beetles_colony:
 		Image: projectiles
 		Sequences: cannon
 	Warhead@Damage: SpreadDamage
-		Spread: 256
-		Falloff: 100, 50, 25, 0
+		Speed: 562
+		Spread: 300
 		Damage: 1950
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
