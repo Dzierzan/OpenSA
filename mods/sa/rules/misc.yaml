@@ -194,7 +194,7 @@ World:
 		SpawnInterval: 2000
 		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
-		PlantActors: popcorn
+		PlantActors: popcorn, venus
 		PlantActorShares: 50
 		Tileset: NORMAL
 	PlantSpawner@DESERT:
