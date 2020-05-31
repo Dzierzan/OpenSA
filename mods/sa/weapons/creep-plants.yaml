@@ -18,6 +18,17 @@ popcorn:
 		Damage: 253
 		ValidTargets: Ground, Paralyzed
 
+venus:
+	ValidTargets: Ground, Paralyzed
+	Range: 1c0
+	ReloadDelay: 15
+	Report: sounds|ANTCRUNCH.SDF
+	Projectile: InstantHit
+	Warhead@Damage: SpreadDamage
+		Damage: 5000
+		Spread: 1
+		ValidTargets: Ground, Paralyzed
+
 spike:
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 30

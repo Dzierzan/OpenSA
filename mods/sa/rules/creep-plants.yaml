@@ -52,8 +52,17 @@ venus:
 	Health:
 		HP: 30000
 	Armament:
-		Name: primary
-		Weapon: popcorn
+		Weapon: venus
+	#WithAttackAnimation@normal:
+	#	Sequence: shoot
+	#	RequiresCondition: !injured
+	#WithAttackAnimation@injured: 
+	#	Sequence: damaged-shoot
+	#	RequiresCondition: scratched
+	#GrantConditionOnDamageState: #TODO lack of support lightly damaged state
+	#	Condition: scratched
+	#	ValidDamageStates: Injured
+	#	GrantPermanently: False		
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 
