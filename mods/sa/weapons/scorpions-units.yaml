@@ -20,7 +20,7 @@ scorpions_medium:
 		Image: projectiles
 		Sequences: spear
 	Warhead@Damage: SpreadDamage
-		Spread: 512
+		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
 		ValidTargets: Ground, Paralyzed

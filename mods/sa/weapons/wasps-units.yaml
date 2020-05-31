@@ -8,7 +8,7 @@ wasps_light:
 		Image: projectiles
 		Sequences: small_bullet
 	Warhead@Damage: SpreadDamage
-		Spread: 256
+		Spread: 125
 		Falloff: 100, 50, 25, 0
 		Damage: 782
 		ValidTargets: Ground, Paralyzed

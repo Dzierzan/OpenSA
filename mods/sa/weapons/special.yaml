@@ -6,7 +6,7 @@ slapfighter:
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
 		MinimumLaunchSpeed: 50
-		MaximumLaunchSpeed: 50
+		MaximumLaunchSpeed: 125
 		Speed: 350
 		Acceleration: 30
 		RangeLimit: 40c0 #Run out of fuel after covering this distance
@@ -17,7 +17,7 @@ slapfighter:
 		TrailImage: smoke_trail
 	Warhead@Damage: SpreadDamage
 		Damage: 3000
-		Spread: 100
+		Spread: 256
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions

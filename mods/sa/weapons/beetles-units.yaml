@@ -6,7 +6,7 @@ beetles_light:
 		Inaccuracy: 0c300
 	Warhead@Damage: SpreadDamage
 		Damage: 782
-		Spread: 100
+		Spread: 125
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -47,7 +47,7 @@ beetles_heavy:
 		Image: projectiles
 		Sequences: cannon
 	Warhead@Damage: SpreadDamage
-		Spread: 1c0
+		Spread: 400
 		Damage: 1950
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect

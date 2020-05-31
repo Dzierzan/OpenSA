@@ -18,7 +18,7 @@ spiders_medium:
 		Inaccuracy: 0c256
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
-		Spread: 1
+		Spread: 125
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions
@@ -44,7 +44,7 @@ spiders_heavy:
 		TrailImage: smoke_trail
 	Warhead@Damage: SpreadDamage
 		Damage: 3000
-		Spread: 100
+		Spread: 256
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
 		Image: explosions

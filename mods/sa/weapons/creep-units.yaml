@@ -41,7 +41,7 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: projectiles
 		Sequences: brakebomb
 	Warhead@Damage: SpreadDamage
-		Spread: 512
+		Spread: 300
 		Damage: 8500
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
@@ -67,7 +67,7 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
-		Spread: 256
+		Spread: 300
 		Damage: 4200
 		ValidTargets: Ground, Paralyzed
 	Warhead@Effect: CreateEffect
@@ -88,7 +88,7 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
-		Spread: 512
+		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 500
 		ValidTargets: Ground, Paralyzed
@@ -111,7 +111,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
-		Spread: 256
+		Spread: 300
 		Falloff: 100, 50, 25, 0
 		Damage: 3000
 		ValidTargets: Ground, Paralyzed
