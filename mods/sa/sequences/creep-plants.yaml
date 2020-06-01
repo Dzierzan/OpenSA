@@ -80,6 +80,29 @@ thorn:
 	name: sprites|NAMENEUTRALTHORNBUSH.ANI
 	portrait: sprites|COLONYNEUTRALTHORNBUSH3D.ANI
 
+gumnut:
+	idle: bits/Gumnut.png
+		Start: 4
+	damaged-idle: bits/Gumnut.png
+		Start: 14
+	critical-idle: bits/Gumnut.png
+		Start: 15
+	grow: bits/Gumnut.png
+		Start: 0
+		Length: 4
+		Tick: 1000
+	shoot: bits/Gumnut.png
+		Start: 5
+		Length: 9
+		Tick: 100
+	die: bits/Gumnut.png
+		Start: 16
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+	#name: bits/empty.png
+	#portrait: bits/empty.png
+
 freckle:
 	idle: sprites|FRECKLE_NORMAL.ANI
 	damaged-idle: sprites|FRECKLE_DAMAGEA.ANI

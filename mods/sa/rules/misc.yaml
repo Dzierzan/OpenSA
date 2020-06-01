@@ -203,7 +203,7 @@ World:
 		SpawnInterval: 2000
 		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
-		PlantActors: thorn
+		PlantActors: thorn, gumnut
 		PlantActorShares: 50
 		Tileset: DESERT
 	PlantSpawner@SWAMP:

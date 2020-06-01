@@ -126,6 +126,21 @@ thorn:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 
+Gumnut:
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Gumnut
+	Health:
+		HP: 35000
+	Armament:
+		Weapon: gumnut
+		FireDelay: 8
+		LocalOffset: 0,0,200
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
 freckle:
 	Inherits: ^CoreNeutralTowerCreep
 	Tooltip:

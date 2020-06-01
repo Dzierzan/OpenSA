@@ -48,6 +48,35 @@ spike:
 		ImpactSounds: sounds|SNIPERHIT.SDF
 		ValidTargets: Ground, Paralyzed
 
+gumnut:
+	ValidTargets: Ground, Paralyzed
+	Range: 10c0
+	ReloadDelay: 100
+	Report: sounds|MISSILELAUNCH.SDF
+	Projectile: Missile
+		LockOnProbability: 100 #Homing probability
+		MinimumLaunchSpeed: 25
+		MaximumLaunchSpeed: 100
+		MinimumLaunchAngle: 1000
+		MaximumLaunchAngle: 100
+		Speed: 350
+		Acceleration: 12
+		RangeLimit: 15c0 #Run out of fuel after covering this distance
+		ExplodeWhenEmpty: true #Explode when running out of fuel
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: missile
+		TrailImage: smoke_trail
+	Warhead@Damage: SpreadDamage
+		Damage: 1500
+		Spread: 256
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|EXPLOSION2.SDF
+		ValidTargets: Ground, Air, Paralyzed
+
 puff:
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 20
