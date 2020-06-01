@@ -57,6 +57,7 @@ scorpions_light:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONA00.ANI
+	icon-clicked: sprites|COLONYSCORPIONA01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -123,6 +124,7 @@ scorpions_medium:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONB00.ANI
+	icon-clicked: sprites|COLONYSCORPIONB01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -189,6 +191,7 @@ scorpions_heavy:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSCORPIONC00.ANI
+	icon-clicked: sprites|COLONYSCORPIONC01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4

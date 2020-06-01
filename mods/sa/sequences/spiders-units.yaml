@@ -57,6 +57,7 @@ spiders_light:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSPIDERA00.ANI
+	icon-clicked: sprites|COLONYSPIDERA01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -123,6 +124,7 @@ spiders_medium:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSPIDERB00.ANI
+	icon-clicked: sprites|COLONYSPIDERB01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -189,6 +191,7 @@ spiders_heavy:
 		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYSPIDERC00.ANI
+	icon-clicked: sprites|COLONYSPIDERC01.ANI
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
