@@ -88,12 +88,3 @@ icon:
 
 pirates_spawner:
 	idle: bits/pirates.png
-
-rank:
-	rank-veteran-1: bits/rank.png
-		Start: 0
-	rank-veteran-2: bits/rank.png
-		Start: 1
-	rank-veteran-3: bits/rank.png
-		Start: 2
-
