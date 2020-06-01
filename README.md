@@ -2,7 +2,7 @@ This repository contains Swarm Assault remake project based on the OpenRA Mod SD
 
 # Status
 
-Currently the project/game still requires a lot of polishing. There's nothing much to do with the current version apart from playing on skirmish mapr or missions, but feel free to give any feedback or even help me to progress further the project.
+Currently the project/game still requires a lot of polishing. There's nothing much to do with the current version apart from playing on skirmish maps or missions, but feel free to give any feedback or even help me to progress further the project.
 
 Currently there are 10 out of 100 missions recreated, they are playable, but AI doesn't really understand that it needs to capture colonies.
 
