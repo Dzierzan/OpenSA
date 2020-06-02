@@ -113,6 +113,19 @@ seed:
 	RenderSprites:
 	WithSpriteBody:
 
+mushroom:
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Posion Mushroom
+	Health:
+		HP: 35000
+	Armament:
+		Weapon: gas
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
+
 thorn:
 	Inherits@1: ^AutoTargetDefault
 	Inherits@2: ^CoreNeutralTowerCreep

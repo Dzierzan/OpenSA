@@ -65,6 +65,29 @@ puff:
 seed:
 	idle: sprites|WEAPON_PUFFBALL.ANI
 
+mushroom:
+	idle: bits/mushroom.png
+		Start: 4
+	damaged-idle: bits/mushroom.png
+		Start: 14
+	critical-idle: bits/mushroom.png
+		Start: 15
+	grow: bits/mushroom.png
+		Start: 0
+		Length: 4
+		Tick: 1000
+	shoot: bits/mushroom.png
+		Start: 6
+		Length: 8
+		Tick: 50
+	die: bits/mushroom.png
+		Start: 16
+		Length: 2
+		Tick: 9000
+		ZOffset: -2000
+	#name: bits/empty.png
+	#portrait: bits/empty.png
+
 thorn:
 	idle: sprites|OBTHORNB_NORMAL.ANI
 	damaged-idle: sprites|OBTHORNB_DAMAGEA.ANI
