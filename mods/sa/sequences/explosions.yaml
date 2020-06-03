@@ -28,3 +28,8 @@ explosions:
 		Length: 6
 		Tick: 60
 		ZOffset: 5000
+	gas_end: bits/gas.png
+		Start: 6
+		Length: 6
+		Tick: 40
+		ZOffset: 5000

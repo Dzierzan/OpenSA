@@ -124,22 +124,21 @@ puff_normal_seed:
 
 gas:
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 40
+	ReloadDelay: 50
 	Range: 6c0
-	Burst: 1
-	BurstDelays: 0
-	StartBurstReport: sa|bits/sounds/gas.wav
-	Projectile: Missile
-		LockOnProbability: 100 #Homing probability
-		Speed: 150
-		RangeLimit: 20c0 #Run out of fuel after covering this distance
-		ExplodeWhenEmpty: true #Explode when running out of fuel
+	Report: sa|bits/sounds/gas.wav
+	Projectile: Bullet
+		Speed: 125
 		Inaccuracy: 100
 		Image: projectiles
-		Sequences: popcorn
+		Sequences: gas
 	Warhead@Damage: SpreadDamage
-		Spread: 125
-		Damage: 253
+		Spread: 256
+		Damage: 500
+		ValidTargets: Ground, Paralyzed
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: gas_end
 		ValidTargets: Ground, Paralyzed
 
 freckles: #Temporary weapon, needs to be changed!!!

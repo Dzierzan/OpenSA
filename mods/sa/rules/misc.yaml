@@ -212,8 +212,8 @@ World:
 		SpawnInterval: 1000
 		InitialSpawnDelay: 250
 		ValidGround: Clear, Rock, Vegetation
-		PlantActors: puff
-		PlantActorShares: 1
+		PlantActors: puff, mushroom
+		PlantActorShares: 50
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
 		Minimum: 1
