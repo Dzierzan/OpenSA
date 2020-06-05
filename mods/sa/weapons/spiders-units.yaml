@@ -29,6 +29,8 @@ spiders_heavy:
 	ValidTargets: Ground, Paralyzed
 	Range: 16c0
 	ReloadDelay: 40
+	AfterFireSound: sounds|MISSILELOCK.SDF
+	AfterFireSoundDelay: 20
 	Report: sounds|MISSILELAUNCH.SDF
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
