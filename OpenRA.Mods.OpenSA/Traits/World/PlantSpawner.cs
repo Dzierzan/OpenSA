@@ -30,7 +30,7 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Plant actors to spawn.")]
 		public readonly string[] PlantActors = null;
 
-		[Desc("Chance of each crate actor spawning.")]
+		[Desc("Chance of each actor spawning.")]
 		[FieldLoader.Require]
 		public readonly int[] PlantActorShares = null;
 
