@@ -88,6 +88,9 @@ namespace OpenRA.Mods.SA.Traits.Colony
 					.FindTilesInAnnulus(cell, info.MinRange, info.MaxRange + i)
 					.Where(tilePosition =>
 					{
+						if (!self.World.Map.Contains(tilePosition))
+							return false;
+
 						if (self.World.Map.GetTerrainInfo(tilePosition).Type == "Water")
 							return false;
 
