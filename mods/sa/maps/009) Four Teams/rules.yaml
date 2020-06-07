@@ -11,7 +11,7 @@ World:
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
 	-CreepFlyerSpawner@flyingmachine:
-	-PlantSpawner@NORMAL:
+	PlantSpawner@NORMAL:
 		Maximum: 3
 	-PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
