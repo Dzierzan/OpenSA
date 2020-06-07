@@ -16,7 +16,6 @@ colony_bit: #TODO Keep improving that so it might reach original behavior
 	Projectile: Bullet
 		Speed: 125
 		LaunchAngle: 200
-		Inaccuracy: 900
 		Image: projectiles
 		Sequences: colonybit
 		TrailImage: smoke_trail
