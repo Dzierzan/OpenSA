@@ -9,8 +9,8 @@ Sounds:
 Speech:
 	DefaultVariant: .SDF
 	Notifications:
-		UnitReady: sounds|PRODUCTIONCOMPLETE
-			RateLimit: 2500
+		UnitReady: OpenSA|bits/empty.wav
+			RateLimit: 10000
 		Building: sounds|PRODUCTIONCHANGE
 			RateLimit: 500
 		CancelledAudio: sounds_MENU|SELECT
