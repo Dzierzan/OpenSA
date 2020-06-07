@@ -238,8 +238,8 @@ colony_bit1:
 	WithSpriteBody:
 	Immobile:
 	ColonyBit:
-		MinLifetime: 750
-		MaxLifetime: 1000
+		MinLifetime: 500
+		MaxLifetime: 750
 		AutoPickupRadius: 10
 
 colony_bit2:
