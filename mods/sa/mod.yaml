@@ -1,6 +1,6 @@
 Metadata:
 	Title: Swarm Assault
-	Version: 5037495acf92653db30ccdf9cbaa27b45e8786d2
+	Version: dev_version
 
 PackageFormats: SdfPackage, DdfPackage
 
@@ -17,7 +17,7 @@ Packages:
 
 MapFolders:
 	sa|maps: System
-	~^maps/sa/5037495acf92653db30ccdf9cbaa27b45e8786d2: User
+	~^maps/sa/dev_version: User
 
 Rules:
 	sa|rules/palettes.yaml
