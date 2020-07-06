@@ -200,7 +200,7 @@ ants_heavy:
 		ZOffset: 100
 	die: sprites|UNANTBZB_DEAD.ANI
 		Length: 2
-		Tick: 9000	
+		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYANTC00.ANI
 	icon-clicked: sprites|COLONYANTC01.ANI
