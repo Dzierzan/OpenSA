@@ -223,12 +223,6 @@ Actors:
 		Owner: Multi1
 		Location: 10,7
 		TurretFacing: 92
-	Actor65: object_48
-		Owner: Neutral
-		Location: 30,33
-	Actor66: object_48
-		Owner: Neutral
-		Location: 31,29
 	Actor67: object_33
 		Owner: Neutral
 		Location: 26,57

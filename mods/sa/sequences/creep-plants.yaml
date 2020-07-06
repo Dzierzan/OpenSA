@@ -34,7 +34,7 @@ venus:
 	damaged-shoot: bits/VenusFlytrap.png
 		Start: 5
 		Length: 4
-		Tick: 100	
+		Tick: 100
 	die: bits/VenusFlytrap.png
 		Start: 12
 		Length: 2
