@@ -9,7 +9,6 @@ beetles_colony:
 		Image: projectiles
 		Sequences: cannon
 	Warhead@Damage: SpreadDamage
-		Speed: 562
 		Spread: 300
 		Damage: 1950
 		ValidTargets: Ground, Paralyzed
