@@ -3,7 +3,7 @@ Sounds:
 	Notifications:
 		ChatLine: sounds|COMMAND.SDF
 		ClickSound: sounds|COMMAND.SDF
-		Beacon: notification.wav
+		Beacon: beacon.wav
 		TabClick:
 
 Speech:
