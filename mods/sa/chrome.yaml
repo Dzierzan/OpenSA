@@ -191,7 +191,7 @@ flags:
 dialog:
 	Inherits: ^Dialog
 	Regions:
-		background: 1, 1, 478, 478
+		background: 0, 0, 334, 412
 		border-r: 490, 1, 9, 190
 		border-l: 481, 1, 9, 190
 		border-b: 1, 490, 189, 9
@@ -201,11 +201,23 @@ dialog:
 		corner-bl: 192, 490, 9, 9
 		corner-br: 201, 490, 9, 9
 
+# Secondary menu like that one which shows you're logged in.
 dialog2:
-	Inherits: button
+	Inherits: dialog
 
+# Background for lobby menu, music menu...
 dialog3:
-	Inherits: button-pressed
+	Inherits: ^Dialog
+	Regions:
+		background: 616, 474, 109,14
+		border-r: 726, 474, 7, 14
+		border-l: 608, 474, 7, 14
+		border-b: 616, 489, 109, 7
+		border-t: 616, 466, 109, 7
+		corner-tl: 608, 466, 7, 7
+		corner-tr: 726, 466, 7, 7
+		corner-bl: 608, 489, 7, 7
+		corner-br: 726, 489, 7, 7	
 
 # Same as the half transparent frame used in the Asset Browser
 dialog4:
@@ -273,26 +285,71 @@ progressbar-thumb:
 
 button:
 	Inherits: ^Dialog
-	PanelRegion: 513, 1, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 616,410,109,14
+		border-r: 726, 410, 7, 14
+		border-l: 608, 410, 7, 14
+		border-b: 616, 425, 109, 7
+		border-t: 616, 402, 109, 7
+		corner-tl: 608, 402, 7, 7
+		corner-tr: 726, 402, 7, 7
+		corner-bl: 608, 425, 7, 7
+		corner-br: 726, 425, 7, 7
 
 # 5% lighter than a normal button
 button-hover:
 	Inherits: ^Dialog
-	PanelRegion: 513, 129, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 744, 410, 109, 14
+		border-r: 854, 410, 7, 14
+		border-l: 736, 410, 7, 14
+		border-b: 744, 425, 109, 7
+		border-t: 744, 402, 109, 7
+		corner-tl: 736, 402, 7, 7
+		corner-tr: 854, 402, 7, 7
+		corner-bl: 736, 425, 7, 7
+		corner-br: 854, 425, 7, 7
 
 button-pressed:
 	Inherits: ^Dialog
-	PanelRegion: 641, 1, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 616, 442, 109,14
+		border-r: 726, 442, 7, 14
+		border-l: 608, 442, 7, 14
+		border-b: 616, 457, 109, 7
+		border-t: 616, 434, 109, 7
+		corner-tl: 608, 434, 7, 7
+		corner-tr: 726, 434, 7, 7
+		corner-bl: 608, 457, 7, 7
+		corner-br: 726, 457, 7, 7	
 
 # 10% darker than a normal button
 button-disabled:
 	Inherits: ^Dialog
-	PanelRegion: 513, 257, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 744,442,109,14
+		border-r: 854, 442, 7, 14
+		border-l: 736, 442, 7, 14
+		border-b: 744, 457, 109, 7
+		border-t: 744, 434, 109, 7
+		corner-tl: 736, 434, 7, 7
+		corner-tr: 854, 434, 7, 7
+		corner-bl: 736, 457, 7, 7
+		corner-br: 854, 457, 7, 7
 
 # A yellow (normal) button
 button-highlighted:
 	Inherits: ^Dialog
-	PanelRegion: 769, 1, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 744, 410, 109, 14
+		border-r: 854, 410, 7, 14
+		border-l: 736, 410, 7, 14
+		border-b: 744, 425, 109, 7
+		border-t: 744, 402, 109, 7
+		corner-tl: 736, 402, 7, 7
+		corner-tr: 854, 402, 7, 7
+		corner-bl: 736, 425, 7, 7
+		corner-br: 854, 425, 7, 7
 
 button-highlighted-hover:
 	Inherits: button-highlighted
@@ -305,19 +362,19 @@ button-highlighted-disabled:
 	Inherits: button-highlighted
 
 textfield:
-	Inherits: button-pressed
+	Inherits: dialog3
 
 textfield-hover:
-	Inherits: checkbox-hover
+	Inherits: dialog3
 
 textfield-disabled:
-	Inherits: button-pressed
+	Inherits: dialog3
 
 textfield-focused:
-	Inherits: button-pressed
+	Inherits: dialog3
 
 scrollpanel-bg:
-	Inherits: button-pressed
+	Inherits: dialog3
 
 scrollpanel-button:
 	Inherits: button
