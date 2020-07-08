@@ -1,15 +1,15 @@
 Sounds:
-	DefaultVariant: .SDF
+	DefaultVariant:
 	Notifications:
-		ChatLine: sounds|COMMAND
-		ClickSound: sounds|COMMAND
-		Beacon: OpenSA|bits/notification.wav
+		ChatLine: sounds|COMMAND.SDF
+		ClickSound: sounds|COMMAND.SDF
+		Beacon: notification.wav
 		TabClick:
 
 Speech:
-	DefaultVariant: .SDF
+	DefaultVariant:
 	Notifications:
-		UnitReady: OpenSA|bits/empty.wav
+		UnitReady: empty.wav
 			RateLimit: 10000
 		Building: sounds|PRODUCTIONCHANGE
 			RateLimit: 500
@@ -17,3 +17,4 @@ Speech:
 		StartGame:
 		GameLoaded:
 		GameSaved:
+		BaseAttack: warning.wav

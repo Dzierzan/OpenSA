@@ -53,6 +53,8 @@ Player:
 		CircleSequence: x
 		Duration: 250
 	PlayerRadarTerrain:
+	BaseAttackNotifier:
+		Notification: BaseAttack
 
 EditorPlayer:
 	Inherits: ^CorePlayer
