@@ -355,8 +355,7 @@ button-highlighted-hover:
 	Inherits: button-highlighted
 
 button-highlighted-pressed:
-	Inherits: ^Dialog
-	PanelRegion: 897, 1, 2, 2, 122, 122, 2, 2
+	Inherits: button-pressed
 
 button-highlighted-disabled:
 	Inherits: button-highlighted
@@ -377,16 +376,36 @@ scrollpanel-bg:
 	Inherits: dialog3
 
 scrollpanel-button:
-	Inherits: button
+	Inherits: ^Dialog
+	Regions:
+		background: 789, 364, 8, 14
+		border-r: 798, 364, 4, 14
+		border-l: 784, 364, 4, 14
+		border-b: 789, 379, 8, 5
+		border-t: 789, 358, 8, 5
+		corner-tl: 784, 358, 4, 5
+		corner-tr: 798, 358, 4, 5
+		corner-bl: 784, 379, 4, 5
+		corner-br: 798, 379, 4, 5
 
 scrollpanel-button-hover:
-	Inherits: button-hover
+	Inherits: ^Dialog
+	Regions:
+		background: 811, 364, 8, 14
+		border-r: 820, 364, 4, 14
+		border-l: 806, 364, 4, 14
+		border-b: 811, 379, 8, 5
+		border-t: 811, 358, 8, 5
+		corner-tl: 806, 358, 4, 5
+		corner-tr: 820, 358, 4, 5
+		corner-bl: 806, 379, 4, 5
+		corner-br: 820, 379, 4, 5
 
 scrollpanel-button-pressed:
-	Inherits: button-pressed
+	Inherits: scrollpanel-button-hover
 
 scrollpanel-button-disabled:
-	Inherits: button
+	Inherits: scrollpanel-button
 
 slider:
 	Inherits: ^Dialog
@@ -394,22 +413,22 @@ slider:
 		tick: 513, 1, 2, 4
 
 slider-track:
-	Inherits: button
+	Inherits: scrollpanel-button
 
 slider-thumb:
-	Inherits: button
+	Inherits: scrollpanel-button
 
 slider-thumb-hover:
-	Inherits: button-hover
+	Inherits: scrollpanel-button-hover
 
 slider-thumb-pressed:
-	Inherits: button-pressed
+	Inherits: scrollpanel-button-hover
 
 slider-thumb-disabled:
-	Inherits: button
+	Inherits: scrollpanel-button
 
 checkbox:
-	Inherits: button-pressed
+	Inherits: dialog3
 
 checkbox-bits:
 	Inherits: ^Glyphs
@@ -421,7 +440,16 @@ checkbox-bits:
 
 checkbox-hover:
 	Inherits: ^Dialog
-	PanelRegion: 641, 129, 2, 2, 122, 122, 2, 2
+	Regions:
+		background: 744, 474, 109,14
+		border-r: 854, 474, 7, 14
+		border-l: 736, 474, 7, 14
+		border-b: 744, 489, 109, 7
+		border-t: 744, 466, 109, 7
+		corner-tl: 736, 466, 7, 7
+		corner-tr: 854, 466, 7, 7
+		corner-bl: 736, 489, 7, 7
+		corner-br: 854, 489, 7, 7	
 
 # Same as a button-disabled-pressed
 checkbox-disabled:
@@ -432,10 +460,30 @@ checkbox-highlighted:
 	Inherits: button-highlighted-pressed
 
 scrollitem-selected:
-	Inherits: button-pressed
+	Inherits: ^Dialog
+	Regions:
+		background: 818, 322, 12, 12
+		border-r: 830, 322, 2, 12
+		border-l: 816, 322, 2, 12
+		border-b: 818, 334, 12, 2
+		border-t: 818, 320, 12, 2
+		corner-tl: 816, 320, 2, 2
+		corner-tr: 830, 320, 2, 2
+		corner-bl: 816, 334, 2, 2
+		corner-br: 830, 334, 2, 2
 
 scrollitem-hover:
-	Inherits: button
+	Inherits: ^Dialog
+	Regions:
+		background: 786, 322, 12, 12
+		border-r: 798, 322, 2, 12
+		border-l: 784, 322, 2, 12
+		border-b: 786, 334, 12, 2
+		border-t: 786, 320, 12, 2
+		corner-tl: 784, 320, 2, 2
+		corner-tr: 798, 320, 2, 2
+		corner-bl: 784, 334, 2, 2
+		corner-br: 798, 334, 2, 2
 
 scrollheader-selected:
 	Inherits: button
