@@ -69,27 +69,27 @@ minimap-overlay:
 radar-ants:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 226,25,100,100
+		insignia: 315, 43, 70, 70
 
 radar-beetles:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 226,25,100,100
+		insignia: 238, 41, 72, 73
 
 radar-wasps:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 226,25,100,100
+		insignia: 314, 124, 79, 69
 
 radar-scorpions:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 226,25,100,100
+		insignia: 252, 213, 36, 37
 
 radar-spiders:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 226,25,100,100
+		insignia: 236, 117, 74, 75
 
 power-icons:
 	Inherits: ^Glyphs
@@ -179,11 +179,11 @@ stance-icons:
 flags:
 	Inherits: ^Glyphs
 	Regions:
-		ants: 0, 114, 22, 21
-		beetles: 0, 114, 22, 21
-		wasps: 0, 114, 22, 21
-		scorpions: 0, 114, 22, 21
-		spiders: 0, 114, 22, 21
+		ants: 234, 58, 22, 22
+		beetles: 233, 80, 23, 22
+		wasps: 231, 125, 25, 21
+		scorpions: 234, 147, 20, 21
+		spiders: 234, 102, 23, 23
 		spectator: 234, 235, 22, 21
 		Random: 234, 235, 22, 21
 
@@ -453,11 +453,10 @@ checkbox-hover:
 
 # Same as a button-disabled-pressed
 checkbox-disabled:
-	Inherits: ^Dialog
-	PanelRegion: 641, 257, 2, 2, 122, 122, 2, 2
+	Inherits: dialog3
 
 checkbox-highlighted:
-	Inherits: button-highlighted-pressed
+	Inherits: checkbox-hover
 
 scrollitem-selected:
 	Inherits: ^Dialog
@@ -491,6 +490,7 @@ scrollheader-selected:
 scrollitem-nohover:
 	Inherits: ^Dialog
 
+#Seperator
 dropdown:
 	Inherits: ^Dialog
 	Regions:
