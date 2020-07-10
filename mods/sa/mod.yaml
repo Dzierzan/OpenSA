@@ -114,9 +114,9 @@ ChromeLayout:
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
 	common|chrome/mainmenu-prompts.yaml
-	common|chrome/settings.yaml
+	sa|chrome/settings.yaml
 	common|chrome/credits.yaml
-	common|chrome/lobby.yaml
+	sa|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
 	common|chrome/playerprofile.yaml
 	common|chrome/lobby-players.yaml
@@ -134,7 +134,7 @@ ChromeLayout:
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
-	common|chrome/assetbrowser.yaml
+	sa|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/editor.yaml
