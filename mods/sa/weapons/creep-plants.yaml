@@ -22,7 +22,7 @@ venus:
 	ValidTargets: Ground, Paralyzed
 	Range: 1c0
 	ReloadDelay: 15
-	Report: sounds|ANTCRUNCH.SDF
+	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
 	Projectile: InstantHit
 	Warhead@Damage: SpreadDamage
 		Damage: 5000
