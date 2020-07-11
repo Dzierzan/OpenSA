@@ -1,5 +1,5 @@
 Player:
-	-ConquestVictoryConditions:
+	-ColonyConquestVictoryConditions:
 
 World:
 	-SpawnMPUnits:

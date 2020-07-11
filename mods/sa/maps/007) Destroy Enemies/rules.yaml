@@ -1,4 +1,5 @@
 Player:
+	-ColonyConquestVictoryConditions:
 	ConquestVictoryConditions:
 
 World:

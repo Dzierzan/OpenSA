@@ -1,6 +1,3 @@
-Player:
-	ConquestVictoryConditions:
-
 World:
 	MapOptions:
 		ShortGameCheckboxEnabled: False

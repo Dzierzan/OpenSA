@@ -39,8 +39,8 @@ Player:
 		CheckboxEnabled: True
 	# Enable mission objectives, required to win or loose mission.
 	MissionObjectives:
-	# Default objective: Win by killing all enemies.
-	ConquestVictoryConditions:
+	# SA objective: Win by capturing all colonies.
+	ColonyConquestVictoryConditions:
 	PlayerResources:
 	PowerManager:
 	SupportPowerManager:
@@ -146,6 +146,8 @@ World:
 		BuildRadiusCheckboxEnabled: False
 		BuildRadiusCheckboxVisible: False
 	MapOptions:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
 	MPStartLocations:
 	CreateMPPlayers:
 	SpawnMPUnits:

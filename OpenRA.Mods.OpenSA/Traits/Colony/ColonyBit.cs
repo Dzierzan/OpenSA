@@ -6,7 +6,7 @@ using OpenRA.Mods.SA.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.Colony
+namespace OpenRA.Mods.SA.Traits
 {
 	public class ColonyBitInfo : TraitInfo
 	{
