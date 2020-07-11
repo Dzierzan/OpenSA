@@ -146,6 +146,8 @@ World:
 		BuildRadiusCheckboxEnabled: False
 		BuildRadiusCheckboxVisible: False
 	MapOptions:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
 	MPStartLocations:
 	CreateMPPlayers:
 	SpawnMPUnits:
