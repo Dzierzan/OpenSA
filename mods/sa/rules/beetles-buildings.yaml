@@ -32,10 +32,6 @@ beetles_colony:
 		ExitCell: 5,5
 		Facing: 96
 		ProductionTypes: Unit, Unit.Beetles
-	RallyPoint:
-		Cursor: move
-		Image:
-		Path: 5,5
 	WithIdleOverlay:
 	Armament:
 		Weapon: beetles_colony

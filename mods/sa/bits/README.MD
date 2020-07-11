@@ -127,3 +127,8 @@ Description: Custom turret.
 Author: Dzierzan, Mountain King Studios
 Source: Swarm Assault
 Description: Additional facings.
+
+**flag.png**
+Author: Daniel Cook, Dzierzan
+Source: Hard Vacuum (https://lostgarden.home.blog/2005/03/27/game-post-mortem-hard-vacuum/)
+Description: Rally point flag.

@@ -84,6 +84,9 @@
 		MaxHP: 1
 	AttackTurreted:
 		RequiresCondition: !HoldFire
+	RallyPoint:
+		Cursor: move
+		Path: 5,5
 
 ^CoreTurretBuilding:
 	Inherits: ^CoreVisibleActor

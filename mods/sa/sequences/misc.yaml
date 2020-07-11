@@ -124,3 +124,12 @@ progressbar:
 		sprites|COLONYPROGRESS30.ANI:
 		sprites|COLONYPROGRESS31.ANI:
 	Length: 32
+
+rallypoint:
+	flag: bits/flag.png
+		Length: 5
+		ZOffset: 3072
+		Tick: 150
+		Reverses: true
+		Offset: -6,-6
+	circles: bits/empty.png

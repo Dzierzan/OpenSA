@@ -32,10 +32,6 @@ scorpions_colony:
 		ExitCell: 5,5
 		Facing: 96
 		ProductionTypes: Unit, Unit.Scorpions
-	RallyPoint:
-		Cursor: move
-		Image:
-		Path: 5,5
 	WithIdleOverlay:
 	Armament@primary:
 		Name: primary

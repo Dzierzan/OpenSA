@@ -33,8 +33,6 @@ wasps_colony:
 		Facing: 96
 		ProductionTypes: Unit, Unit.Wasps
 	RallyPoint:
-		Cursor: move
-		Image:
 		Path: 6,5
 	WithIdleOverlay:
 	WithLoopedAttackSound:

@@ -31,10 +31,6 @@ ants_colony:
 		ExitCell: 5,5
 		Facing: 96
 		ProductionTypes: Unit, Unit.Ants
-	RallyPoint:
-		Cursor: move
-		Image:
-		Path: 5,5
 	WithIdleOverlay:
 	# Turret 1
 	Turreted@primary:
