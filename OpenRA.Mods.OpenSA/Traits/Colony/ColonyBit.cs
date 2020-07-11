@@ -75,7 +75,7 @@ namespace OpenRA.Mods.SA.Traits.Colony
 		void INotifyCrushed.OnCrush(Actor self, Actor crusher, BitSet<CrushClass> crushClasses)
 		{
 			colony.PickBit(crusher.Owner);
-			Game.Sound.PlayToPlayer(SoundType.World, crusher.Owner, info.PickupSound, self.CenterPosition);
+			Game.Sound.Play(SoundType.World, info.PickupSound, self.CenterPosition);
 			self.Dispose();
 		}
 	}
