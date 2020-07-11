@@ -5,7 +5,7 @@
 		Filename: OpenSA.PAL
 		CursorPalette: true
 		#Filename: BW.PAL
-	OverlayPlayerColorPalette:
+	OverlayPlayerColorPalette@player:
 		BasePalette: OpenSA
 		RemapIndex: 8, 9, 22, 28, 29, 30, 31, 32, 47, 49, 50, 51, 95, 105, 110, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 147, 236, 241
 	PaletteFromDdf@colorpicker:
