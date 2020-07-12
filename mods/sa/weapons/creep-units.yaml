@@ -107,7 +107,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		LaunchAngle: 220
 		Inaccuracy: 100
 		BounceCount: 4
-		BounceSound: BOUNCE.SDF
+		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage

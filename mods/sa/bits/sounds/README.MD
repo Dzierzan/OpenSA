@@ -22,3 +22,8 @@ Description: Colony being attack warning sound.
 Author: Mountain King Studios
 Source: Swarm Assault
 Description: For some reason this sound is heard across the whole map, so it was recorded and exported to wav to fix this problem.
+
+**BOUNCE.wav**
+Author: Mountain King Studios
+Source: Swarm Assault
+Description: For some reason this sound is different when loaded directly from GAME.SDF, so it was exported from .SDF.
