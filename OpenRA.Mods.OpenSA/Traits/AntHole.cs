@@ -11,7 +11,7 @@ namespace OpenRA.Mods.SA.Traits
 	public class AntHoleInfo : TraitInfo, Requires<WithSpriteBodyInfo>
 	{
 		[FieldLoader.Require]
-		[ActorReference(typeof(PirateAnt))]
+		[ActorReference(typeof(PirateAntInfo))]
 		public readonly string[] Actors = null;
 
 		[Desc("Minimum and Maximum number of actors spawning.")]
