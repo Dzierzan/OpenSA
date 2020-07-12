@@ -11,6 +11,7 @@ scorpions_light:
 		Speed: 98
 	Buildable:
 		BuildDuration: 250
+		Description: Stings with a sting.\nMelee unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -30,6 +31,7 @@ scorpions_medium:
 		Speed: 82
 	Buildable:
 		BuildDuration: 500
+		Description: Long range harpoon attack.\nLong range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -51,6 +53,7 @@ scorpions_heavy:
 		Speed: 105
 	Buildable:
 		BuildDuration: 750
+		Description: Fires long range ninja stars at target.\nLong range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

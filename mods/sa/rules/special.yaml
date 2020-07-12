@@ -20,6 +20,7 @@ slapfighter:
 		Speed: 200
 	Buildable:
 		BuildDuration: 75
+		Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
 	#RevealsShroud:
 	#	Range: 7c0
 	WithShadow:

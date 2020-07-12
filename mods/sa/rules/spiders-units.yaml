@@ -11,6 +11,7 @@ spiders_light:
 		Speed: 147
 	Buildable:
 		BuildDuration: 200
+		Description: Body crunching bite attack.\nMelee unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -30,6 +31,7 @@ spiders_medium:
 		Speed: 92
 	Buildable:
 		BuildDuration: 450
+		Description: Long range deadly sniper attack.\nLong range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -49,6 +51,7 @@ spiders_heavy:
 		Speed: 92
 	Buildable:
 		BuildDuration: 550
+		Description: Fires long range cruise missiles.\nLong range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

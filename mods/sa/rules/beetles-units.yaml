@@ -11,6 +11,7 @@ beetles_light:
 		Speed: 92
 	Buildable:
 		BuildDuration: 200
+		Description: Attacks with heavy machine gun.\nMedium range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
@@ -33,6 +34,7 @@ beetles_medium:
 		Speed: 87
 	Buildable:
 		BuildDuration: 450
+		Description: Shoots shranpel around itself.\nMedium range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	AttackFrontal:
@@ -91,6 +93,7 @@ beetles_heavy:
 		Speed: 53
 	Buildable:
 		BuildDuration: 700
+		Description: Long range heavy artillery attack.\nLong range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
