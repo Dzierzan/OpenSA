@@ -15,17 +15,17 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Maximum number of plants on the map.")]
 		public readonly int Maximum = 255;
 
-		[Desc("Average time (ticks) between crate spawn.")]
+		[Desc("Average time (ticks) between plant spawn.")]
 		public readonly int SpawnInterval = 180 * 25;
 
-		[Desc("Delay (in ticks) before the first crate spawns.")]
+		[Desc("Delay (in ticks) before the first plant spawns.")]
 		public readonly int InitialSpawnDelay = 0;
 
 		[Desc("Which terrain types can we drop on?")]
 		[FieldLoader.Require]
 		public readonly HashSet<string> ValidGround = null;
 
-		[ActorReference]
+		[ActorReference(typeof(PlantInfo))]
 		[FieldLoader.Require]
 		[Desc("Plant actors to spawn.")]
 		public readonly string[] PlantActors = null;
@@ -48,7 +48,7 @@ namespace OpenRA.Mods.SA.Traits
 		readonly Actor self;
 		readonly PlantSpawnerInfo info;
 		bool enabled;
-		int crates;
+		int plants;
 		int ticks;
 
 		public PlantSpawner(Actor self, PlantSpawnerInfo info)
@@ -72,12 +72,16 @@ namespace OpenRA.Mods.SA.Traits
 			if (info.Tileset != null & self.World.Map.Tileset != info.Tileset)
 				return;
 
+			if (plants > info.Maximum)
+					return;
+
 			if (--ticks <= 0)
 			{
 				ticks = info.SpawnInterval;
 
-				var toSpawn = Math.Max(0, info.Minimum - crates)
-					+ (crates < info.Maximum && info.Maximum > info.Minimum ? 1 : 0);
+				var toSpawn = info.Minimum - plants;
+				if (toSpawn <= 0)
+					toSpawn = 1;
 
 				for (var n = 0; n < toSpawn; n++)
 					SpawnPlant(self);
@@ -91,11 +95,11 @@ namespace OpenRA.Mods.SA.Traits
 				return;
 
 			var position = spawn.Value;
-			var crateActor = ChoosePlantActor();
+			var plantActor = ChoosePlantActor();
 
 			self.World.AddFrameEndTask(w =>
 			{
-				w.CreateActor(crateActor, new TypeDictionary
+				w.CreateActor(plantActor, new TypeDictionary
 				{
 					new OwnerInit(w.Players.First(p => p.InternalName == info.InternalOwner)),
 					new LocationInit(position)
@@ -143,12 +147,12 @@ namespace OpenRA.Mods.SA.Traits
 
 		public void IncrementPlants()
 		{
-			crates++;
+			plants++;
 		}
 
 		public void DecrementPlants()
 		{
-			crates--;
+			plants--;
 		}
 	}
 }
