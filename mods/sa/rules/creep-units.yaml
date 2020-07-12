@@ -83,7 +83,7 @@ fly:
 		VoiceSet: NeutralVoice
 	SpawnsShrapnel:
 		Weapon: fly
-		Delay: 20
+		Delay: 25
 		AimChance: 0
 		Amount: 1
 	AmbientSound:

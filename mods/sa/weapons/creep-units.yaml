@@ -61,9 +61,12 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
 	ReloadDelay: 15
 	Range: 5c0
-	Projectile: GravityBomb
-		Velocity: 0, 0, -64
-		Acceleration: 0, 0, 0
+	Projectile: Bullet
+		Speed: 70
+		LaunchAngle: 220
+		Inaccuracy: 100
+		BounceCount: 3
+		BounceSound: sounds|BOUNCE.SDF
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
