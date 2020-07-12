@@ -42,6 +42,7 @@ popcorn:
 		LocalOffset: -150,150,400
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	Plant:
 
 venus:
 	Inherits@1: ^AutoTargetDefault
@@ -56,15 +57,16 @@ venus:
 	#WithAttackAnimation@normal:
 	#	Sequence: shoot
 	#	RequiresCondition: !injured
-	#WithAttackAnimation@injured: 
+	#WithAttackAnimation@injured:
 	#	Sequence: damaged-shoot
 	#	RequiresCondition: scratched
 	#GrantConditionOnDamageState: #TODO lack of support lightly damaged state
 	#	Condition: scratched
 	#	ValidDamageStates: Injured
-	#	GrantPermanently: False		
+	#	GrantPermanently: False
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	Plant:
 
 puff:
 	Inherits: ^CoreNeutralTowerCreep
@@ -94,6 +96,7 @@ puff:
 		AimChance: 0
 		LocalOffset: 0,0,0
 		PauseOnCondition: !seed_attack || injured
+	Plant:
 
 seed:
 	SpawnActorOnDeath:
@@ -112,6 +115,7 @@ seed:
 	Immobile:
 	RenderSprites:
 	WithSpriteBody:
+	Plant:
 
 mushroom:
 	Inherits@1: ^AutoTargetDefault
@@ -125,6 +129,7 @@ mushroom:
 		Weapon: gas
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	Plant:
 
 thorn:
 	Inherits@1: ^AutoTargetDefault
@@ -138,6 +143,7 @@ thorn:
 		Weapon: spike
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	Plant:
 
 Gumnut:
 	Inherits@1: ^AutoTargetDefault
@@ -153,6 +159,7 @@ Gumnut:
 		LocalOffset: 0,0,200
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	Plant:
 
 freckle:
 	Inherits: ^CoreNeutralTowerCreep
@@ -176,6 +183,7 @@ freckle:
 		PauseOnCondition: !freckles_attack || injured
 	-AttackTurreted:
 	-WithAttackAnimation:
+	Plant:
 
 lolly_blue:
 	Inherits@1: ^AutoTargetDefault
@@ -199,6 +207,7 @@ lolly_blue:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	-Husk:
+	Plant:
 
 lolly_orange:
 	Inherits: lolly_blue

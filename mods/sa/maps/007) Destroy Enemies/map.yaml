@@ -245,7 +245,7 @@ Actors:
 		Owner: Neutral
 		Location: 68,57
 	Actor62: beetles_colony
-		Owner: Spider
+		Owner: Spiders
 		Location: 63,22
 		TurretFacing: 130
 	Actor63: object_18
@@ -261,31 +261,31 @@ Actors:
 		Owner: Neutral
 		Location: 72,32
 	Actor67: ants_light
-		Owner: Spider
+		Owner: Spiders
 		Location: 69,34
 		Facing: 0
 	Actor68: ants_light
-		Owner: Spider
+		Owner: Spiders
 		Location: 67,37
 		Facing: 0
 	Actor69: ants_heavy
-		Owner: Spider
+		Owner: Spiders
 		Location: 75,36
 		Facing: 0
 	Actor70: ants_light
-		Owner: Spider
+		Owner: Spiders
 		Location: 72,38
 		Facing: 4
 	Actor71: ants_medium
-		Owner: Spider
+		Owner: Spiders
 		Location: 73,28
 		Facing: 0
 	Actor72: ants_medium
-		Owner: Spider
+		Owner: Spiders
 		Location: 76,30
 		Facing: 0
 	Actor73: ants_colony
-		Owner: Spider
+		Owner: Spiders
 		Location: 62,44
 		TurretFacing: 135
 	Actor74: object_16
