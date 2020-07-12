@@ -124,7 +124,7 @@ flying_machine:
 		VoiceSet: NeutralVoice
 	SpawnsShrapnel:
 		Weapon: flying_machine
-		Delay: 20
+		Delay: 25
 		AimChance: 0
 		Amount: 1
 	AmbientSound@LOOP:
@@ -135,7 +135,7 @@ flying_machine:
 		RequiresCondition: Puff
 	SpawnActorOnDeath: #TODO Requires some adjusting
 		Actor: ants_grenadier_pirate
-	LeavesTrails: #TODO Might require some random offsets
+	LeavesTrails:
 		Image: smoke_trail
 		Sequences: idle
 		Type: CenterPosition

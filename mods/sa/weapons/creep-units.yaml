@@ -106,7 +106,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Speed: 100
 		LaunchAngle: 220
 		Inaccuracy: 100
-		BounceCount: 5
+		BounceCount: 4
 		BounceSound: BOUNCE.SDF
 		Image: projectiles
 		Sequences: gobstopper
