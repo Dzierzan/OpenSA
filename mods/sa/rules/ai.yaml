@@ -17,6 +17,10 @@ Player:
 	GrantConditionOnBotOwner@HardAI:
 		Condition: enable-WIP-hard-ai
 		Bots: hard
+	ColonyBitPickupBotModule@allAI:
+		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
+	HealColonyBotModule@allAI:
+		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
 	BaseBuilderBotModule@easyAI:
 		RequiresCondition: enable-WIP-easy-ai
 		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony

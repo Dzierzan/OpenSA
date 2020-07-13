@@ -43,6 +43,7 @@ Player:
 	# SA objective: Win by capturing all colonies.
 	ColonyConquestVictoryConditions:
 	PlayerResources:
+		DefaultCashDropdownVisible: false
 	PowerManager:
 	SupportPowerManager:
 	TechTree:
