@@ -132,7 +132,7 @@ namespace OpenRA.Mods.SA.Traits
 			{
 				while (true)
 				{
-					var producing = productionQueue.AllQueued();
+					var producing = productionQueue.AllQueued().ToArray();
 
 					if (!producing.Any())
 						break;
