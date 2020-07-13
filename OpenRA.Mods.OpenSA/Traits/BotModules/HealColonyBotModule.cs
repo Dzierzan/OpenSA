@@ -28,7 +28,7 @@ namespace OpenRA.Mods.SA.Traits
 
 		void IBotTick.BotTick(IBot bot)
 		{
-			var colonies = AIUtils.GetActorsWithTrait<Colony>(world).Where(c => c.Owner == player);
+			var colonies = AIUtils.GetActorsWithTrait<Colony>(world).Where(c => c.Owner == player).ToArray();
 			foreach (var colony in colonies)
 			{
 				var health = colony.Trait<IHealth>();
