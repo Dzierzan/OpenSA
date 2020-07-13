@@ -126,7 +126,7 @@ namespace OpenRA.Mods.SA.Traits
 			Game.Sound.Play(SoundType.World, info.ColonyExplosionSound, self.CenterPosition);
 		}
 
-		void CancelProductions(Actor self)
+		public void CancelProductions(Actor self)
 		{
 			foreach (var productionQueue in self.TraitsImplementing<ProductionQueue>())
 			{
