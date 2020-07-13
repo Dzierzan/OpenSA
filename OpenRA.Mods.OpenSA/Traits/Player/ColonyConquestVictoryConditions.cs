@@ -50,7 +50,7 @@ namespace OpenRA.Mods.SA.Traits
 			if (otherPlayers == null)
 				otherPlayers = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
 
-			if (colonies.All(c => c.Owner == self.Owner))
+			if (colonies.All(c => c.Owner == self.Owner || c.Owner.IsAlliedWith(self.Owner)))
 			{
 				missionObjectives.MarkCompleted(self.Owner, objectiveID);
 
