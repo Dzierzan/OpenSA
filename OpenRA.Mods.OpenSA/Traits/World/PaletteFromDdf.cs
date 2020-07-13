@@ -5,7 +5,7 @@ using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.World
+namespace OpenRA.Mods.SA.Traits
 {
 	class PaletteFromDdfInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
