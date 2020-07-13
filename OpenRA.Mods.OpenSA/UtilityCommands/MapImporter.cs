@@ -74,7 +74,7 @@ namespace OpenRA.Mods.SA.UtilityCommands
 			map = new Map(Game.ModData, tileSet, mapSize.Width + 2 * MapCordonWidth, mapSize.Height + 2 * MapCordonWidth)
 			{
 				Title = Path.GetFileNameWithoutExtension(mapFile),
-				Author = "Mountain King Studios"
+				Author = "Gate 5 Creations"
 			};
 
 			var tl = new PPos(MapCordonWidth, MapCordonWidth);
