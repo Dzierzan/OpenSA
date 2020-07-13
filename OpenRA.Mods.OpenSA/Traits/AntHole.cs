@@ -1,6 +1,5 @@
 using System.Linq;
 using OpenRA.Effects;
-using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -13,6 +12,10 @@ namespace OpenRA.Mods.SA.Traits
 		[FieldLoader.Require]
 		[ActorReference(typeof(PirateAntInfo))]
 		public readonly string[] Actors = null;
+
+		[Desc("Chance of each actor spawning.")]
+		[FieldLoader.Require]
+		public readonly int[] ActorShares = null;
 
 		[Desc("Minimum and Maximum number of actors spawning.")]
 		public readonly int2 Amount = new int2(1, 5);
@@ -50,6 +53,22 @@ namespace OpenRA.Mods.SA.Traits
 			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => info.BodyNames.Contains(w.Info.Name)).ToArray();
 		}
 
+		string ChooseActor(Actor self)
+		{
+			var shares = info.ActorShares;
+			var n = self.World.SharedRandom.Next(shares.Sum());
+
+			var cumulativeShares = 0;
+			for (var i = 0; i < shares.Length; i++)
+			{
+				cumulativeShares += shares[i];
+				if (n <= cumulativeShares)
+					return info.Actors[i];
+			}
+
+			return null;
+		}
+
 		void INotifyCreated.Created(Actor self)
 		{
 			Game.Sound.Play(SoundType.World, info.OpenSound, self.CenterPosition);
@@ -62,7 +81,7 @@ namespace OpenRA.Mods.SA.Traits
 				{
 					self.World.Add(new DelayedAction(info.Delay * i, () =>
 					{
-						var actor = info.Actors.Random(self.World.SharedRandom);
+						var actor = ChooseActor(self);
 						var ant = self.World.CreateActor(true, actor.ToLowerInvariant(), new TypeDictionary
 						{
 							new OwnerInit(self.World.Players.First(x => x.PlayerName == info.Owner)),
