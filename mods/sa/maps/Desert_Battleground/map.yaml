@@ -109,603 +109,603 @@ Actors:
 		Owner: Creeps
 		Location: 119,38
 		TurretFacing: 130
-	Actor22: object_41
+	Actor22: plant_serata_3
 		Owner: Neutral
 		Location: 104,51
-	Actor23: object_41
+	Actor23: plant_serata_3
 		Owner: Neutral
 		Location: 115,76
-	Actor24: object_40
+	Actor24: plant_serata_2
 		Owner: Neutral
 		Location: 109,62
-	Actor25: object_40
+	Actor25: plant_serata_2
 		Owner: Neutral
 		Location: 114,49
-	Actor26: object_39
+	Actor26: plant_serata_1
 		Owner: Neutral
 		Location: 106,55
-	Actor27: object_39
+	Actor27: plant_serata_1
 		Owner: Neutral
 		Location: 110,48
-	Actor28: object_39
+	Actor28: plant_serata_1
 		Owner: Neutral
 		Location: 108,78
-	Actor29: object_39
+	Actor29: plant_serata_1
 		Owner: Neutral
 		Location: 108,67
-	Actor30: object_41
+	Actor30: plant_serata_3
 		Owner: Neutral
 		Location: 68,108
-	Actor31: object_41
+	Actor31: plant_serata_3
 		Owner: Neutral
 		Location: 90,119
-	Actor32: object_41
+	Actor32: plant_serata_3
 		Owner: Neutral
 		Location: 75,111
-	Actor33: object_40
+	Actor33: plant_serata_2
 		Owner: Neutral
 		Location: 65,113
-	Actor34: object_40
+	Actor34: plant_serata_2
 		Owner: Neutral
 		Location: 85,114
-	Actor35: object_40
+	Actor35: plant_serata_2
 		Owner: Neutral
 		Location: 53,117
-	Actor36: object_40
+	Actor36: plant_serata_2
 		Owner: Neutral
 		Location: 59,123
-	Actor37: object_41
+	Actor37: plant_serata_3
 		Owner: Neutral
 		Location: 56,121
-	Actor38: object_41
+	Actor38: plant_serata_3
 		Owner: Neutral
 		Location: 54,126
-	Actor39: object_39
+	Actor39: plant_serata_1
 		Owner: Neutral
 		Location: 60,128
-	Actor40: object_40
+	Actor40: plant_serata_2
 		Owner: Neutral
 		Location: 20,118
-	Actor41: object_40
+	Actor41: plant_serata_2
 		Owner: Neutral
 		Location: 32,120
-	Actor42: object_39
+	Actor42: plant_serata_1
 		Owner: Neutral
 		Location: 27,117
-	Actor43: object_39
+	Actor43: plant_serata_1
 		Owner: Neutral
 		Location: 17,125
-	Actor44: object_41
+	Actor44: plant_serata_3
 		Owner: Neutral
 		Location: 13,115
-	Actor45: object_41
+	Actor45: plant_serata_3
 		Owner: Neutral
 		Location: 3,122
-	Actor46: object_40
+	Actor46: plant_serata_2
 		Owner: Neutral
 		Location: 8,119
-	Actor47: object_40
+	Actor47: plant_serata_2
 		Owner: Neutral
 		Location: 13,125
-	Actor48: object_40
+	Actor48: plant_serata_2
 		Owner: Neutral
 		Location: 29,10
-	Actor49: object_41
+	Actor49: plant_serata_3
 		Owner: Neutral
 		Location: 34,10
-	Actor50: object_39
+	Actor50: plant_serata_1
 		Owner: Neutral
 		Location: 30,4
-	Actor51: object_39
+	Actor51: plant_serata_1
 		Owner: Neutral
 		Location: 120,4
-	Actor52: object_41
+	Actor52: plant_serata_3
 		Owner: Neutral
 		Location: 126,4
-	Actor53: object_40
+	Actor53: plant_serata_2
 		Owner: Neutral
 		Location: 125,10
-	Actor54: object_39
+	Actor54: plant_serata_1
 		Owner: Neutral
 		Location: 121,9
-	Actor55: object_39
+	Actor55: plant_serata_1
 		Owner: Neutral
 		Location: 113,66
-	Actor56: object_39
+	Actor56: plant_serata_1
 		Owner: Neutral
 		Location: 113,108
-	Actor57: object_41
+	Actor57: plant_serata_3
 		Owner: Neutral
 		Location: 109,108
-	Actor58: object_40
+	Actor58: plant_serata_2
 		Owner: Neutral
 		Location: 111,112
-	Actor59: object_21
+	Actor59: plant_desert_grass_1
 		Owner: Neutral
 		Location: 46,85
-	Actor60: object_22
+	Actor60: plant_desert_grass_2
 		Owner: Neutral
 		Location: 16,89
-	Actor61: object_21
+	Actor61: plant_desert_grass_1
 		Owner: Neutral
 		Location: 28,100
-	Actor62: object_23
+	Actor62: plant_desert_grass_3
 		Owner: Neutral
 		Location: 7,87
-	Actor63: object_23
+	Actor63: plant_desert_grass_3
 		Owner: Neutral
 		Location: 18,81
-	Actor64: object_22
+	Actor64: plant_desert_grass_2
 		Owner: Neutral
 		Location: 10,62
-	Actor65: object_23
+	Actor65: plant_desert_grass_3
 		Owner: Neutral
 		Location: 20,52
-	Actor66: object_23
+	Actor66: plant_desert_grass_3
 		Owner: Neutral
 		Location: 23,60
-	Actor67: object_21
+	Actor67: plant_desert_grass_1
 		Owner: Neutral
 		Location: 29,51
-	Actor68: object_23
+	Actor68: plant_desert_grass_3
 		Owner: Neutral
 		Location: 28,35
-	Actor69: object_23
+	Actor69: plant_desert_grass_3
 		Owner: Neutral
 		Location: 14,26
-	Actor70: object_21
+	Actor70: plant_desert_grass_1
 		Owner: Neutral
 		Location: 48,43
-	Actor71: object_22
+	Actor71: plant_desert_grass_2
 		Owner: Neutral
 		Location: 65,34
-	Actor72: object_22
+	Actor72: plant_desert_grass_2
 		Owner: Neutral
 		Location: 62,44
-	Actor73: object_23
+	Actor73: plant_desert_grass_3
 		Owner: Neutral
 		Location: 83,34
-	Actor74: object_23
+	Actor74: plant_desert_grass_3
 		Owner: Neutral
 		Location: 84,51
-	Actor75: object_21
+	Actor75: plant_desert_grass_1
 		Owner: Neutral
 		Location: 68,61
-	Actor76: object_21
+	Actor76: plant_desert_grass_1
 		Owner: Neutral
 		Location: 59,62
-	Actor77: object_21
+	Actor77: plant_desert_grass_1
 		Owner: Neutral
 		Location: 89,28
-	Actor78: object_21
+	Actor78: plant_desert_grass_1
 		Owner: Neutral
 		Location: 76,21
-	Actor79: object_21
+	Actor79: plant_desert_grass_1
 		Owner: Neutral
 		Location: 97,12
-	Actor80: object_23
+	Actor80: plant_desert_grass_3
 		Owner: Neutral
 		Location: 104,36
-	Actor81: object_22
+	Actor81: plant_desert_grass_2
 		Owner: Neutral
 		Location: 116,34
-	Actor82: object_22
+	Actor82: plant_desert_grass_2
 		Owner: Neutral
 		Location: 125,20
-	Actor83: object_22
+	Actor83: plant_desert_grass_2
 		Owner: Neutral
 		Location: 107,6
-	Actor84: object_21
+	Actor84: plant_desert_grass_1
 		Owner: Neutral
 		Location: 108,99
-	Actor85: object_21
+	Actor85: plant_desert_grass_1
 		Owner: Neutral
 		Location: 94,92
-	Actor86: object_22
+	Actor86: plant_desert_grass_2
 		Owner: Neutral
 		Location: 97,103
-	Actor87: object_23
+	Actor87: plant_desert_grass_3
 		Owner: Neutral
 		Location: 126,90
-	Actor88: object_23
+	Actor88: plant_desert_grass_3
 		Owner: Neutral
 		Location: 96,85
-	Actor89: object_23
+	Actor89: plant_desert_grass_3
 		Owner: Neutral
 		Location: 83,97
-	Actor90: object_23
+	Actor90: plant_desert_grass_3
 		Owner: Neutral
 		Location: 101,125
-	Actor91: object_23
+	Actor91: plant_desert_grass_3
 		Owner: Neutral
 		Location: 118,117
-	Actor92: object_23
+	Actor92: plant_desert_grass_3
 		Owner: Neutral
 		Location: 125,126
-	Actor93: object_22
+	Actor93: plant_desert_grass_2
 		Owner: Neutral
 		Location: 105,117
-	Actor94: object_22
+	Actor94: plant_desert_grass_2
 		Owner: Neutral
 		Location: 82,127
-	Actor95: object_22
+	Actor95: plant_desert_grass_2
 		Owner: Neutral
 		Location: 70,123
-	Actor96: object_21
+	Actor96: plant_desert_grass_1
 		Owner: Neutral
 		Location: 41,123
-	Actor97: object_21
+	Actor97: plant_desert_grass_1
 		Owner: Neutral
 		Location: 44,115
-	Actor98: object_22
+	Actor98: plant_desert_grass_2
 		Owner: Neutral
 		Location: 8,111
-	Actor99: object_22
+	Actor99: plant_desert_grass_2
 		Owner: Neutral
 		Location: 23,95
-	Actor100: object_22
+	Actor100: plant_desert_grass_2
 		Owner: Neutral
 		Location: 19,20
-	Actor101: object_22
+	Actor101: plant_desert_grass_2
 		Owner: Neutral
 		Location: 5,24
-	Actor102: object_21
+	Actor102: plant_desert_grass_1
 		Owner: Neutral
 		Location: 21,4
-	Actor103: object_23
+	Actor103: plant_desert_grass_3
 		Owner: Neutral
 		Location: 5,9
-	Actor104: object_13
+	Actor104: plant_desert_flower_2
 		Owner: Neutral
 		Location: 89,51
-	Actor105: object_14
+	Actor105: plant_desert_flower_3
 		Owner: Neutral
 		Location: 95,44
-	Actor106: object_14
+	Actor106: plant_desert_flower_3
 		Owner: Neutral
 		Location: 106,42
-	Actor107: object_14
+	Actor107: plant_desert_flower_3
 		Owner: Neutral
 		Location: 104,75
-	Actor108: object_14
+	Actor108: plant_desert_flower_3
 		Owner: Neutral
 		Location: 100,58
-	Actor109: object_12
+	Actor109: plant_desert_flower_1
 		Owner: Neutral
 		Location: 119,84
-	Actor110: object_12
+	Actor110: plant_desert_flower_1
 		Owner: Neutral
 		Location: 106,87
-	Actor111: object_12
+	Actor111: plant_desert_flower_1
 		Owner: Neutral
 		Location: 124,72
-	Actor112: object_12
+	Actor112: plant_desert_flower_1
 		Owner: Neutral
 		Location: 118,99
-	Actor113: object_12
+	Actor113: plant_desert_flower_1
 		Owner: Neutral
 		Location: 126,95
-	Actor114: object_14
+	Actor114: plant_desert_flower_3
 		Owner: Neutral
 		Location: 129,113
-	Actor115: object_14
+	Actor115: plant_desert_flower_3
 		Owner: Neutral
 		Location: 124,103
-	Actor116: object_13
+	Actor116: plant_desert_flower_2
 		Owner: Neutral
 		Location: 119,111
-	Actor117: object_13
+	Actor117: plant_desert_flower_2
 		Owner: Neutral
 		Location: 126,117
-	Actor118: object_13
+	Actor118: plant_desert_flower_2
 		Owner: Neutral
 		Location: 101,115
-	Actor119: object_13
+	Actor119: plant_desert_flower_2
 		Owner: Neutral
 		Location: 87,124
-	Actor120: object_12
+	Actor120: plant_desert_flower_1
 		Owner: Neutral
 		Location: 75,116
-	Actor121: object_12
+	Actor121: plant_desert_flower_1
 		Owner: Neutral
 		Location: 63,124
-	Actor122: object_13
+	Actor122: plant_desert_flower_2
 		Owner: Neutral
 		Location: 62,108
-	Actor123: object_13
+	Actor123: plant_desert_flower_2
 		Owner: Neutral
 		Location: 49,125
-	Actor124: object_14
+	Actor124: plant_desert_flower_3
 		Owner: Neutral
 		Location: 54,99
-	Actor125: object_14
+	Actor125: plant_desert_flower_3
 		Owner: Neutral
 		Location: 47,105
-	Actor126: object_13
+	Actor126: plant_desert_flower_2
 		Owner: Neutral
 		Location: 38,113
-	Actor127: object_13
+	Actor127: plant_desert_flower_2
 		Owner: Neutral
 		Location: 39,127
-	Actor128: object_13
+	Actor128: plant_desert_flower_2
 		Owner: Neutral
 		Location: 20,111
-	Actor129: object_13
+	Actor129: plant_desert_flower_2
 		Owner: Neutral
 		Location: 24,124
-	Actor130: object_14
+	Actor130: plant_desert_flower_3
 		Owner: Neutral
 		Location: 6,126
-	Actor131: object_14
+	Actor131: plant_desert_flower_3
 		Owner: Neutral
 		Location: 4,116
-	Actor132: object_14
+	Actor132: plant_desert_flower_3
 		Owner: Neutral
 		Location: 26,79
-	Actor133: object_14
+	Actor133: plant_desert_flower_3
 		Owner: Neutral
 		Location: 35,78
-	Actor134: object_13
+	Actor134: plant_desert_flower_2
 		Owner: Neutral
 		Location: 43,67
-	Actor135: object_13
+	Actor135: plant_desert_flower_2
 		Owner: Neutral
 		Location: 33,62
-	Actor136: object_12
+	Actor136: plant_desert_flower_1
 		Owner: Neutral
 		Location: 27,66
-	Actor137: object_12
+	Actor137: plant_desert_flower_1
 		Owner: Neutral
 		Location: 22,65
-	Actor138: object_14
+	Actor138: plant_desert_flower_3
 		Owner: Neutral
 		Location: 31,85
-	Actor139: object_39
+	Actor139: plant_serata_1
 		Owner: Neutral
 		Location: 32,72
-	Actor140: object_39
+	Actor140: plant_serata_1
 		Owner: Neutral
 		Location: 37,68
-	Actor141: object_41
+	Actor141: plant_serata_3
 		Owner: Neutral
 		Location: 29,68
-	Actor142: object_41
+	Actor142: plant_serata_3
 		Owner: Neutral
 		Location: 26,72
-	Actor143: object_13
+	Actor143: plant_desert_flower_2
 		Owner: Neutral
 		Location: 20,14
-	Actor144: object_13
+	Actor144: plant_desert_flower_2
 		Owner: Neutral
 		Location: 43,17
-	Actor145: object_13
+	Actor145: plant_desert_flower_2
 		Owner: Neutral
 		Location: 24,22
-	Actor146: object_14
+	Actor146: plant_desert_flower_3
 		Owner: Neutral
 		Location: 43,24
-	Actor147: object_14
+	Actor147: plant_desert_flower_3
 		Owner: Neutral
 		Location: 58,29
-	Actor148: object_14
+	Actor148: plant_desert_flower_3
 		Owner: Neutral
 		Location: 52,12
-	Actor149: object_12
+	Actor149: plant_desert_flower_1
 		Owner: Neutral
 		Location: 64,25
-	Actor150: object_12
+	Actor150: plant_desert_flower_1
 		Owner: Neutral
 		Location: 54,14
-	Actor151: object_12
+	Actor151: plant_desert_flower_1
 		Owner: Neutral
 		Location: 45,21
-	Actor152: object_12
+	Actor152: plant_desert_flower_1
 		Owner: Neutral
 		Location: 41,9
-	Actor153: object_13
+	Actor153: plant_desert_flower_2
 		Owner: Neutral
 		Location: 76,29
-	Actor154: object_13
+	Actor154: plant_desert_flower_2
 		Owner: Neutral
 		Location: 78,18
-	Actor155: object_13
+	Actor155: plant_desert_flower_2
 		Owner: Neutral
 		Location: 74,8
-	Actor156: object_12
+	Actor156: plant_desert_flower_1
 		Owner: Neutral
 		Location: 59,23
-	Actor157: object_12
+	Actor157: plant_desert_flower_1
 		Owner: Neutral
 		Location: 52,29
-	Actor158: object_21
+	Actor158: plant_desert_grass_1
 		Owner: Neutral
 		Location: 54,18
-	Actor159: object_21
+	Actor159: plant_desert_grass_1
 		Owner: Neutral
 		Location: 48,25
-	Actor160: object_39
+	Actor160: plant_serata_1
 		Owner: Neutral
 		Location: 70,17
-	Actor161: object_39
+	Actor161: plant_serata_1
 		Owner: Neutral
 		Location: 61,9
-	Actor162: object_39
+	Actor162: plant_serata_1
 		Owner: Neutral
 		Location: 69,5
-	Actor163: object_41
+	Actor163: plant_serata_3
 		Owner: Neutral
 		Location: 65,16
-	Actor164: object_41
+	Actor164: plant_serata_3
 		Owner: Neutral
 		Location: 70,10
-	Actor165: object_40
+	Actor165: plant_serata_2
 		Owner: Neutral
 		Location: 74,25
-	Actor166: object_40
+	Actor166: plant_serata_2
 		Owner: Neutral
 		Location: 63,5
-	Actor167: object_40
+	Actor167: plant_serata_2
 		Owner: Neutral
 		Location: 25,11
-	Actor168: object_22
+	Actor168: plant_desert_grass_2
 		Owner: Neutral
 		Location: 30,78
-	Actor169: object_25
+	Actor169: plant_gumnut_2
 		Owner: Neutral
 		Location: 38,93
-	Actor170: object_25
+	Actor170: plant_gumnut_2
 		Owner: Neutral
 		Location: 7,82
-	Actor171: object_24
+	Actor171: plant_gumnut_1
 		Owner: Neutral
 		Location: 65,100
-	Actor172: object_24
+	Actor172: plant_gumnut_1
 		Owner: Neutral
 		Location: 64,66
-	Actor173: object_25
+	Actor173: plant_gumnut_2
 		Owner: Neutral
 		Location: 76,53
-	Actor174: object_25
+	Actor174: plant_gumnut_2
 		Owner: Neutral
 		Location: 48,49
-	Actor175: object_26
+	Actor175: plant_gumnut_3
 		Owner: Neutral
 		Location: 126,66
-	Actor176: object_26
+	Actor176: plant_gumnut_3
 		Owner: Neutral
 		Location: 116,56
-	Actor177: object_25
+	Actor177: plant_gumnut_2
 		Owner: Neutral
 		Location: 128,47
-	Actor178: object_25
+	Actor178: plant_gumnut_2
 		Owner: Neutral
 		Location: 99,22
-	Actor179: object_24
+	Actor179: plant_gumnut_1
 		Owner: Neutral
 		Location: 83,24
-	Actor180: object_26
+	Actor180: plant_gumnut_3
 		Owner: Neutral
 		Location: 80,79
-	Actor181: object_26
+	Actor181: plant_gumnut_3
 		Owner: Neutral
 		Location: 60,88
-	Actor182: object_24
+	Actor182: plant_gumnut_1
 		Owner: Neutral
 		Location: 60,110
-	Actor183: object_24
+	Actor183: plant_gumnut_1
 		Owner: Neutral
 		Location: 32,112
-	Actor184: object_24
+	Actor184: plant_gumnut_1
 		Owner: Neutral
 		Location: 19,106
-	Actor185: object_25
+	Actor185: plant_gumnut_2
 		Owner: Neutral
 		Location: 7,94
-	Actor186: object_25
+	Actor186: plant_gumnut_2
 		Owner: Neutral
 		Location: 25,87
-	Actor187: object_24
+	Actor187: plant_gumnut_1
 		Owner: Neutral
 		Location: 3,76
-	Actor188: object_24
+	Actor188: plant_gumnut_1
 		Owner: Neutral
 		Location: 5,61
-	Actor189: object_26
+	Actor189: plant_gumnut_3
 		Owner: Neutral
 		Location: 17,56
-	Actor190: object_26
+	Actor190: plant_gumnut_3
 		Owner: Neutral
 		Location: 4,43
-	Actor191: object_26
+	Actor191: plant_gumnut_3
 		Owner: Neutral
 		Location: 28,40
-	Actor192: object_25
+	Actor192: plant_gumnut_2
 		Owner: Neutral
 		Location: 57,80
-	Actor193: object_25
+	Actor193: plant_gumnut_2
 		Owner: Neutral
 		Location: 38,79
-	Actor194: object_25
+	Actor194: plant_gumnut_2
 		Owner: Neutral
 		Location: 125,121
-	Actor195: object_24
+	Actor195: plant_gumnut_1
 		Owner: Neutral
 		Location: 98,123
-	Actor196: object_25
+	Actor196: plant_gumnut_2
 		Owner: Neutral
 		Location: 128,110
-	Actor197: object_25
+	Actor197: plant_gumnut_2
 		Owner: Neutral
 		Location: 123,100
-	Actor198: object_24
+	Actor198: plant_gumnut_1
 		Owner: Neutral
 		Location: 122,81
-	Actor199: object_24
+	Actor199: plant_gumnut_1
 		Owner: Neutral
 		Location: 116,67
-	Actor200: object_24
+	Actor200: plant_gumnut_1
 		Owner: Neutral
 		Location: 101,69
-	Actor201: object_24
+	Actor201: plant_gumnut_1
 		Owner: Neutral
 		Location: 84,60
-	Actor202: object_25
+	Actor202: plant_gumnut_2
 		Owner: Neutral
 		Location: 77,30
-	Actor203: object_25
+	Actor203: plant_gumnut_2
 		Owner: Neutral
 		Location: 67,29
-	Actor204: object_25
+	Actor204: plant_gumnut_2
 		Owner: Neutral
 		Location: 72,13
-	Actor205: object_25
+	Actor205: plant_gumnut_2
 		Owner: Neutral
 		Location: 61,14
-	Actor206: object_24
+	Actor206: plant_gumnut_1
 		Owner: Neutral
 		Location: 80,6
-	Actor207: object_24
+	Actor207: plant_gumnut_1
 		Owner: Neutral
 		Location: 42,3
-	Actor208: object_25
+	Actor208: plant_gumnut_2
 		Owner: Neutral
 		Location: 50,8
-	Actor209: object_22
+	Actor209: plant_desert_grass_2
 		Owner: Neutral
 		Location: 48,5
-	Actor210: object_22
+	Actor210: plant_desert_grass_2
 		Owner: Neutral
 		Location: 45,15
-	Actor211: object_25
+	Actor211: plant_gumnut_2
 		Owner: Neutral
 		Location: 20,37
-	Actor212: object_26
+	Actor212: plant_gumnut_3
 		Owner: Neutral
 		Location: 9,6
-	Actor213: object_26
+	Actor213: plant_gumnut_3
 		Owner: Neutral
 		Location: 56,104
-	Actor214: object_25
+	Actor214: plant_gumnut_2
 		Owner: Neutral
 		Location: 47,119
-	Actor215: object_25
+	Actor215: plant_gumnut_2
 		Owner: Neutral
 		Location: 33,125
-	Actor216: object_24
+	Actor216: plant_gumnut_1
 		Owner: Neutral
 		Location: 27,123
-	Actor217: object_23
+	Actor217: plant_desert_grass_3
 		Owner: Neutral
 		Location: 28,126
-	Actor218: object_39
+	Actor218: plant_serata_1
 		Owner: Neutral
 		Location: 92,127
-	Actor219: object_40
+	Actor219: plant_serata_2
 		Owner: Neutral
 		Location: 94,122
-	Actor220: object_40
+	Actor220: plant_serata_2
 		Owner: Neutral
 		Location: 74,106
-	Actor221: object_39
+	Actor221: plant_serata_1
 		Owner: Neutral
 		Location: 105,112

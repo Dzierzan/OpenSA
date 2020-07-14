@@ -288,250 +288,250 @@ Actors:
 		Location: 85,12
 		Facing: 92
 		TurretFacing: 92
-	Actor56: object_18
+	Actor56: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 54,91
-	Actor57: object_18
+	Actor57: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 59,94
-	Actor58: object_19
+	Actor58: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 54,98
-	Actor59: object_19
+	Actor59: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 59,92
-	Actor60: object_19
+	Actor60: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 61,95
-	Actor61: object_20
+	Actor61: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 54,95
-	Actor62: object_20
+	Actor62: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 48,98
-	Actor63: object_20
+	Actor63: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 49,94
-	Actor64: object_19
+	Actor64: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 97,75
-	Actor65: object_19
+	Actor65: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 102,73
-	Actor66: object_20
+	Actor66: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 106,79
-	Actor67: object_20
+	Actor67: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 101,75
-	Actor68: object_20
+	Actor68: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 96,79
-	Actor69: object_18
+	Actor69: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 100,81
-	Actor70: object_18
+	Actor70: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 94,76
-	Actor74: object_2
+	Actor74: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 49,74
-	Actor77: object_15
+	Actor77: plant_flower_1
 		Owner: Neutral
 		Location: 68,59
-	Actor78: object_16
+	Actor78: plant_flower_2
 		Owner: Neutral
 		Location: 77,65
-	Actor79: object_18
+	Actor79: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 67,64
-	Actor107: object_18
+	Actor107: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 18,71
-	Actor108: object_18
+	Actor108: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 7,79
-	Actor109: object_19
+	Actor109: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 22,83
-	Actor110: object_19
+	Actor110: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 25,66
-	Actor111: object_19
+	Actor111: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 13,64
-	Actor112: object_16
+	Actor112: plant_flower_2
 		Owner: Neutral
 		Location: 14,79
-	Actor113: object_16
+	Actor113: plant_flower_2
 		Owner: Neutral
 		Location: 7,98
-	Actor114: object_16
+	Actor114: plant_flower_2
 		Owner: Neutral
 		Location: 25,109
-	Actor115: object_16
+	Actor115: plant_flower_2
 		Owner: Neutral
 		Location: 33,90
-	Actor116: object_16
+	Actor116: plant_flower_2
 		Owner: Neutral
 		Location: 40,104
-	Actor117: object_16
+	Actor117: plant_flower_2
 		Owner: Neutral
 		Location: 15,109
-	Actor118: object_16
+	Actor118: plant_flower_2
 		Owner: Neutral
 		Location: 30,100
-	Actor119: object_16
+	Actor119: plant_flower_2
 		Owner: Neutral
 		Location: 86,100
-	Actor120: object_16
+	Actor120: plant_flower_2
 		Owner: Neutral
 		Location: 95,89
-	Actor121: object_17
+	Actor121: plant_flower_3
 		Owner: Neutral
 		Location: 75,99
-	Actor122: object_17
+	Actor122: plant_flower_3
 		Owner: Neutral
 		Location: 83,107
-	Actor123: object_17
+	Actor123: plant_flower_3
 		Owner: Neutral
 		Location: 95,94
-	Actor124: object_17
+	Actor124: plant_flower_3
 		Owner: Neutral
 		Location: 117,89
-	Actor125: object_17
+	Actor125: plant_flower_3
 		Owner: Neutral
 		Location: 106,93
-	Actor126: object_17
+	Actor126: plant_flower_3
 		Owner: Neutral
 		Location: 107,87
-	Actor127: object_17
+	Actor127: plant_flower_3
 		Owner: Neutral
 		Location: 88,93
-	Actor128: object_17
+	Actor128: plant_flower_3
 		Owner: Neutral
 		Location: 101,86
-	Actor129: object_16
+	Actor129: plant_flower_2
 		Owner: Neutral
 		Location: 111,70
-	Actor130: object_17
+	Actor130: plant_flower_3
 		Owner: Neutral
 		Location: 116,81
-	Actor131: object_17
+	Actor131: plant_flower_3
 		Owner: Neutral
 		Location: 34,27
-	Actor132: object_17
+	Actor132: plant_flower_3
 		Owner: Neutral
 		Location: 43,15
-	Actor133: object_17
+	Actor133: plant_flower_3
 		Owner: Neutral
 		Location: 47,21
-	Actor134: object_16
+	Actor134: plant_flower_2
 		Owner: Neutral
 		Location: 40,24
-	Actor135: object_16
+	Actor135: plant_flower_2
 		Owner: Neutral
 		Location: 31,33
-	Actor136: object_16
+	Actor136: plant_flower_2
 		Owner: Neutral
 		Location: 37,19
-	Actor137: object_16
+	Actor137: plant_flower_2
 		Owner: Neutral
 		Location: 52,8
-	Actor138: object_16
+	Actor138: plant_flower_2
 		Owner: Neutral
 		Location: 52,15
-	Actor139: object_19
+	Actor139: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 69,5
-	Actor140: object_19
+	Actor140: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 74,11
-	Actor141: object_19
+	Actor141: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 64,11
-	Actor142: object_18
+	Actor142: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 34,9
-	Actor143: object_18
+	Actor143: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 32,16
-	Actor144: object_18
+	Actor144: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 46,6
-	Actor145: object_20
+	Actor145: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 40,32
-	Actor146: object_20
+	Actor146: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 27,35
-	Actor147: object_20
+	Actor147: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 8,37
-	Actor148: object_20
+	Actor148: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 13,42
-	Actor149: object_20
+	Actor149: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 5,47
-	Actor150: object_19
+	Actor150: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 7,45
-	Actor151: object_19
+	Actor151: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 3,40
-	Actor152: object_19
+	Actor152: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 15,37
-	Actor153: object_19
+	Actor153: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 11,47
-	Actor154: object_19
+	Actor154: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 7,51
-	Actor155: object_19
+	Actor155: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 8,58
-	Actor157: object_4
+	Actor157: plant_cherry_flower_2
 		Owner: Neutral
 		Location: 42,89
-	Actor161: object_12
+	Actor161: plant_desert_flower_1
 		Owner: Neutral
 		Location: 48,87
-	Actor166: object_12
+	Actor166: plant_desert_flower_1
 		Owner: Neutral
 		Location: 33,52
-	Actor167: object_18
+	Actor167: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 41,54
-	Actor168: object_18
+	Actor168: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 52,47
-	Actor169: object_18
+	Actor169: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 35,45
-	Actor170: object_19
+	Actor170: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 60,43
-	Actor171: object_19
+	Actor171: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 68,48
-	Actor172: object_19
+	Actor172: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 41,41
-	Actor173: object_19
+	Actor173: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 37,48
-	Actor174: object_19
+	Actor174: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 31,58
-	Actor175: object_19
+	Actor175: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 33,62
-	Actor176: object_19
+	Actor176: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 26,58
-	Actor177: object_19
+	Actor177: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 32,54
 	Actor178: scorpions_colony
@@ -687,559 +687,559 @@ Actors:
 		Owner: Ants
 		Location: 35,68
 		Facing: 153
-	Actor180: object_46
+	Actor180: plant_toad_stool_2
 		Owner: Neutral
 		Location: 47,76
-	Actor217: object_45
+	Actor217: plant_toad_stool_1
 		Owner: Neutral
 		Location: 50,78
-	Actor218: object_47
+	Actor218: plant_toad_stool_3
 		Owner: Neutral
 		Location: 56,79
-	Actor219: object_2
+	Actor219: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 60,78
-	Actor220: object_2
+	Actor220: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 53,72
-	Actor221: object_1
+	Actor221: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 51,84
-	Actor222: object_2
+	Actor222: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 59,83
-	Actor223: object_2
+	Actor223: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 72,64
-	Actor224: object_20
+	Actor224: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 63,57
-	Actor225: object_18
+	Actor225: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 45,45
-	Actor226: object_16
+	Actor226: plant_flower_2
 		Owner: Neutral
 		Location: 50,44
-	Actor227: object_17
+	Actor227: plant_flower_3
 		Owner: Neutral
 		Location: 49,56
-	Actor228: object_18
+	Actor228: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 55,47
-	Actor229: object_18
+	Actor229: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 49,65
-	Actor230: object_18
+	Actor230: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 42,69
-	Actor231: object_17
+	Actor231: plant_flower_3
 		Owner: Neutral
 		Location: 67,77
-	Actor232: object_15
+	Actor232: plant_flower_1
 		Owner: Neutral
 		Location: 84,80
-	Actor233: object_15
+	Actor233: plant_flower_1
 		Owner: Neutral
 		Location: 84,71
-	Actor234: object_15
+	Actor234: plant_flower_1
 		Owner: Neutral
 		Location: 83,65
-	Actor235: object_20
+	Actor235: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 89,72
-	Actor237: object_20
+	Actor237: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 73,69
-	Actor236: object_18
+	Actor236: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 71,80
-	Actor238: object_18
+	Actor238: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 63,83
-	Actor239: object_17
+	Actor239: plant_flower_3
 		Owner: Neutral
 		Location: 48,70
-	Actor240: object_17
+	Actor240: plant_flower_3
 		Owner: Neutral
 		Location: 41,74
-	Actor241: object_19
+	Actor241: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 44,83
-	Actor242: object_46
+	Actor242: plant_toad_stool_2
 		Owner: Neutral
 		Location: 50,35
-	Actor243: object_46
+	Actor243: plant_toad_stool_2
 		Owner: Neutral
 		Location: 53,37
-	Actor244: object_46
+	Actor244: plant_toad_stool_2
 		Owner: Neutral
 		Location: 60,29
-	Actor245: object_45
+	Actor245: plant_toad_stool_1
 		Owner: Neutral
 		Location: 54,33
-	Actor246: object_45
+	Actor246: plant_toad_stool_1
 		Owner: Neutral
 		Location: 57,25
-	Actor247: object_47
+	Actor247: plant_toad_stool_3
 		Owner: Neutral
 		Location: 58,31
-	Actor248: object_47
+	Actor248: plant_toad_stool_3
 		Owner: Neutral
 		Location: 65,36
-	Actor249: object_45
+	Actor249: plant_toad_stool_1
 		Owner: Neutral
 		Location: 62,32
-	Actor250: object_45
+	Actor250: plant_toad_stool_1
 		Owner: Neutral
 		Location: 67,33
-	Actor251: object_46
+	Actor251: plant_toad_stool_2
 		Owner: Neutral
 		Location: 67,30
-	Actor252: object_46
+	Actor252: plant_toad_stool_2
 		Owner: Neutral
 		Location: 64,26
-	Actor253: object_47
+	Actor253: plant_toad_stool_3
 		Owner: Neutral
 		Location: 59,22
-	Actor254: object_2
+	Actor254: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 52,30
-	Actor255: object_2
+	Actor255: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 55,29
-	Actor256: object_1
+	Actor256: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 62,34
-	Actor257: object_1
+	Actor257: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 61,37
-	Actor258: object_0
+	Actor258: plant_brown_mushroom_1
 		Owner: Neutral
 		Location: 69,27
-	Actor259: object_0
+	Actor259: plant_brown_mushroom_1
 		Owner: Neutral
 		Location: 63,22
-	Actor260: object_1
+	Actor260: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 60,19
-	Actor261: object_1
+	Actor261: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 47,33
-	Actor262: object_1
+	Actor262: plant_brown_mushroom_2
 		Owner: Neutral
 		Location: 49,39
-	Actor263: object_2
+	Actor263: plant_brown_mushroom_3
 		Owner: Neutral
 		Location: 57,38
-	Actor264: object_0
+	Actor264: plant_brown_mushroom_1
 		Owner: Neutral
 		Location: 68,37
-	Actor265: object_0
+	Actor265: plant_brown_mushroom_1
 		Owner: Neutral
 		Location: 71,33
-	Actor266: object_16
+	Actor266: plant_flower_2
 		Owner: Neutral
 		Location: 80,30
-	Actor267: object_16
+	Actor267: plant_flower_2
 		Owner: Neutral
 		Location: 86,23
-	Actor268: object_17
+	Actor268: plant_flower_3
 		Owner: Neutral
 		Location: 70,14
-	Actor269: object_17
+	Actor269: plant_flower_3
 		Owner: Neutral
 		Location: 82,18
-	Actor270: object_17
+	Actor270: plant_flower_3
 		Owner: Neutral
 		Location: 74,21
-	Actor271: object_15
+	Actor271: plant_flower_1
 		Owner: Neutral
 		Location: 59,16
-	Actor272: object_15
+	Actor272: plant_flower_1
 		Owner: Neutral
 		Location: 51,23
-	Actor273: object_19
+	Actor273: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 49,26
-	Actor274: object_19
+	Actor274: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 49,16
-	Actor275: object_19
+	Actor275: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 43,10
-	Actor276: object_19
+	Actor276: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 32,24
-	Actor277: object_19
+	Actor277: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 42,20
-	Actor278: object_19
+	Actor278: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 39,38
-	Actor279: object_19
+	Actor279: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 30,37
-	Actor280: object_19
+	Actor280: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 80,35
-	Actor281: object_19
+	Actor281: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 91,28
-	Actor282: object_19
+	Actor282: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 102,19
-	Actor283: object_20
+	Actor283: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 98,21
-	Actor284: object_20
+	Actor284: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 105,26
-	Actor285: object_20
+	Actor285: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 114,12
-	Actor286: object_19
+	Actor286: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 112,5
-	Actor287: object_19
+	Actor287: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 108,17
-	Actor288: object_17
+	Actor288: plant_flower_3
 		Owner: Neutral
 		Location: 107,11
-	Actor289: object_17
+	Actor289: plant_flower_3
 		Owner: Neutral
 		Location: 99,3
-	Actor290: object_17
+	Actor290: plant_flower_3
 		Owner: Neutral
 		Location: 87,13
-	Actor291: object_15
+	Actor291: plant_flower_1
 		Owner: Neutral
 		Location: 86,5
-	Actor292: object_15
+	Actor292: plant_flower_1
 		Owner: Neutral
 		Location: 80,7
-	Actor293: object_15
+	Actor293: plant_flower_1
 		Owner: Neutral
 		Location: 79,14
-	Actor294: object_16
+	Actor294: plant_flower_2
 		Owner: Neutral
 		Location: 76,5
-	Actor295: object_16
+	Actor295: plant_flower_2
 		Owner: Neutral
 		Location: 67,11
-	Actor296: object_16
+	Actor296: plant_flower_2
 		Owner: Neutral
 		Location: 115,104
-	Actor297: object_16
+	Actor297: plant_flower_2
 		Owner: Neutral
 		Location: 121,94
-	Actor298: object_16
+	Actor298: plant_flower_2
 		Owner: Neutral
 		Location: 126,107
-	Actor299: object_20
+	Actor299: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 114,97
-	Actor300: object_20
+	Actor300: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 108,107
-	Actor301: object_20
+	Actor301: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 120,102
-	Actor302: object_20
+	Actor302: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 119,108
-	Actor303: object_19
+	Actor303: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 117,114
-	Actor304: object_19
+	Actor304: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 108,100
-	Actor305: object_19
+	Actor305: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 109,112
-	Actor306: object_19
+	Actor306: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 126,95
-	Actor307: object_19
+	Actor307: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 123,86
-	Actor308: object_19
+	Actor308: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 123,81
-	Actor309: object_19
+	Actor309: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 112,76
-	Actor310: object_19
+	Actor310: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 108,84
-	Actor311: object_20
+	Actor311: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 114,87
-	Actor312: object_20
+	Actor312: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 110,93
-	Actor313: object_20
+	Actor313: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 106,103
-	Actor314: object_20
+	Actor314: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 98,113
-	Actor315: object_20
+	Actor315: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 102,100
-	Actor316: object_20
+	Actor316: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 86,108
-	Actor317: object_20
+	Actor317: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 93,117
-	Actor318: object_20
+	Actor318: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 99,105
-	Actor319: object_20
+	Actor319: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 96,99
-	Actor320: object_20
+	Actor320: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 80,104
-	Actor321: object_20
+	Actor321: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 84,96
-	Actor322: object_20
+	Actor322: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 103,97
-	Actor323: object_20
+	Actor323: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 98,92
-	Actor324: object_20
+	Actor324: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 31,80
-	Actor325: object_20
+	Actor325: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 22,72
-	Actor326: object_20
+	Actor326: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 18,79
-	Actor327: object_20
+	Actor327: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 24,83
-	Actor328: object_16
+	Actor328: plant_flower_2
 		Owner: Neutral
 		Location: 18,103
-	Actor329: object_16
+	Actor329: plant_flower_2
 		Owner: Neutral
 		Location: 3,97
-	Actor330: object_16
+	Actor330: plant_flower_2
 		Owner: Neutral
 		Location: 8,90
-	Actor331: object_16
+	Actor331: plant_flower_2
 		Owner: Neutral
 		Location: 16,88
-	Actor332: object_16
+	Actor332: plant_flower_2
 		Owner: Neutral
 		Location: 8,103
-	Actor333: object_17
+	Actor333: plant_flower_3
 		Owner: Neutral
 		Location: 15,98
-	Actor334: object_17
+	Actor334: plant_flower_3
 		Owner: Neutral
 		Location: 11,94
-	Actor335: object_17
+	Actor335: plant_flower_3
 		Owner: Neutral
 		Location: 4,110
-	Actor336: object_19
+	Actor336: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 30,114
-	Actor337: object_19
+	Actor337: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 31,106
-	Actor338: object_19
+	Actor338: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 21,102
-	Actor339: object_20
+	Actor339: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 27,106
-	Actor340: object_20
+	Actor340: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 20,114
-	Actor341: object_20
+	Actor341: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 7,112
-	Actor342: object_20
+	Actor342: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 8,105
-	Actor343: object_18
+	Actor343: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 10,118
-	Actor344: object_18
+	Actor344: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 18,123
-	Actor345: object_18
+	Actor345: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 24,116
-	Actor346: object_18
+	Actor346: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 13,112
-	Actor347: object_18
+	Actor347: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 13,100
-	Actor348: object_20
+	Actor348: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 18,108
-	Actor349: object_20
+	Actor349: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 15,93
-	Actor350: object_20
+	Actor350: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 11,85
-	Actor351: object_20
+	Actor351: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 19,64
-	Actor352: object_20
+	Actor352: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 9,70
-	Actor353: object_20
+	Actor353: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 4,69
-	Actor354: object_20
+	Actor354: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 3,61
-	Actor355: object_20
+	Actor355: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 14,73
-	Actor356: object_20
+	Actor356: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 16,60
-	Actor357: object_20
+	Actor357: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 7,25
-	Actor358: object_20
+	Actor358: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 20,34
-	Actor359: object_20
+	Actor359: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 21,15
-	Actor360: object_20
+	Actor360: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 14,21
-	Actor361: object_19
+	Actor361: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 24,20
-	Actor362: object_19
+	Actor362: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 20,26
-	Actor363: object_19
+	Actor363: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 16,15
-	Actor364: object_19
+	Actor364: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 9,12
-	Actor365: object_19
+	Actor365: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 30,8
-	Actor366: object_19
+	Actor366: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 29,13
-	Actor367: object_19
+	Actor367: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 21,7
-	Actor368: object_19
+	Actor368: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 20,3
-	Actor369: object_19
+	Actor369: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 6,20
-	Actor370: object_19
+	Actor370: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 3,6
-	Actor371: object_19
+	Actor371: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 2,31
-	Actor372: object_19
+	Actor372: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 9,35
-	Actor373: object_19
+	Actor373: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 26,33
-	Actor374: object_19
+	Actor374: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 16,35
-	Actor375: object_19
+	Actor375: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 31,75
-	Actor376: object_19
+	Actor376: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 36,81
-	Actor377: object_19
+	Actor377: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 23,75
-	Actor378: object_19
+	Actor378: plant_broad_leaf_grass_2
 		Owner: Neutral
 		Location: 28,69
-	Actor379: object_15
+	Actor379: plant_flower_1
 		Owner: Neutral
 		Location: 36,85
-	Actor380: object_15
+	Actor380: plant_flower_1
 		Owner: Neutral
 		Location: 39,76
-	Actor381: object_15
+	Actor381: plant_flower_1
 		Owner: Neutral
 		Location: 30,72
-	Actor382: object_15
+	Actor382: plant_flower_1
 		Owner: Neutral
 		Location: 27,80
-	Actor383: object_15
+	Actor383: plant_flower_1
 		Owner: Neutral
 		Location: 31,85
-	Actor384: object_16
+	Actor384: plant_flower_2
 		Owner: Neutral
 		Location: 66,96
-	Actor385: object_16
+	Actor385: plant_flower_2
 		Owner: Neutral
 		Location: 60,102
-	Actor386: object_16
+	Actor386: plant_flower_2
 		Owner: Neutral
 		Location: 70,100
-	Actor387: object_17
+	Actor387: plant_flower_3
 		Owner: Neutral
 		Location: 75,96
-	Actor388: object_17
+	Actor388: plant_flower_3
 		Owner: Neutral
 		Location: 51,103
-	Actor389: object_17
+	Actor389: plant_flower_3
 		Owner: Neutral
 		Location: 61,99
-	Actor390: object_17
+	Actor390: plant_flower_3
 		Owner: Neutral
 		Location: 37,94
-	Actor391: object_17
+	Actor391: plant_flower_3
 		Owner: Neutral
 		Location: 45,102
-	Actor392: object_17
+	Actor392: plant_flower_3
 		Owner: Neutral
 		Location: 34,100
-	Actor393: object_17
+	Actor393: plant_flower_3
 		Owner: Neutral
 		Location: 4,120
-	Actor394: object_17
+	Actor394: plant_flower_3
 		Owner: Neutral
 		Location: 9,125
-	Actor395: object_17
+	Actor395: plant_flower_3
 		Owner: Neutral
 		Location: 4,127
-	Actor396: object_16
+	Actor396: plant_flower_2
 		Owner: Neutral
 		Location: 8,120
-	Actor397: object_16
+	Actor397: plant_flower_2
 		Owner: Neutral
 		Location: 4,115
-	Actor398: object_16
+	Actor398: plant_flower_2
 		Owner: Neutral
 		Location: 15,3
-	Actor399: object_16
+	Actor399: plant_flower_2
 		Owner: Neutral
 		Location: 8,5
-	Actor400: object_16
+	Actor400: plant_flower_2
 		Owner: Neutral
 		Location: 4,12
 

@@ -1,186 +1,186 @@
 #NORMAL Tileset
 
-object_15:
+plant_flower_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_16:
+plant_flower_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_17:
+plant_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_18:
+plant_broad_leaf_grass_1:
 	Inherits: ^CoreDecoration
 
-object_20:
+plant_broad_leaf_grass_3:
 	Inherits: ^CoreDecoration
 
-object_19:
+plant_broad_leaf_grass_2:
 	Inherits: ^CoreDecoration
 
-object_0:
+plant_brown_mushroom_1:
 	Inherits: ^CoreDecoration
 
-object_1:
+plant_brown_mushroom_2:
 	Inherits: ^CoreDecoration
 
-object_2:
+plant_brown_mushroom_3:
 	Inherits: ^CoreDecoration
 
-object_47:
+plant_toad_stool_3:
 	Inherits: ^CoreDecoration
 
-object_45:
+plant_toad_stool_1:
 	Inherits: ^CoreDecoration
 
-object_46:
+plant_toad_stool_2:
 	Inherits: ^CoreDecoration
 
 #DESERT Tileset
 
-object_23:
+plant_desert_grass_3:
 	Inherits: ^CoreDecoration
 
-object_21:
+plant_desert_grass_1:
 	Inherits: ^CoreDecoration
 
-object_22:
+plant_desert_grass_2:
 	Inherits: ^CoreDecoration
 
-object_39:
+plant_serata_1:
 	Inherits: ^CoreDecoration
 
-object_40:
+plant_serata_2:
 	Inherits: ^CoreDecoration
 
-object_41:
+plant_serata_3:
 	Inherits: ^CoreDecoration
 
-object_14:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-object_12:
+plant_desert_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_13:
+plant_desert_flower_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_24:
+plant_desert_flower_2:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+plant_gumnut_1:
 	Inherits: ^CoreDecoration
 
-object_25:
+plant_gumnut_2:
 	Inherits: ^CoreDecoration
 
-object_26:
+plant_gumnut_3:
 	Inherits: ^CoreDecoration
 
 #SWAMP Tileset
 
 
-object_11:
+plant_clover_3:
 	Inherits: ^CoreDecoration
 
-object_10:
+plant_clover_2:
 	Inherits: ^CoreDecoration
 
-object_9:
+plant_clover_1:
 	Inherits: ^CoreDecoration
 
-object_38:
+plant_moon_mushroom_3:
 	Inherits: ^CoreDecoration
 
-object_36:
+plant_moon_mushroom_1:
 	Inherits: ^CoreDecoration
 
-object_37:
+plant_moon_mushroom_2:
 	Inherits: ^CoreDecoration
 
-object_5:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-object_3:
+plant_cherry_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_4:
+plant_cherry_flower_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_35:
+plant_cherry_flower_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_33:
+plant_moon_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_34:
+plant_moon_flower_1:
+	Inherits: ^CoreDecoration
+	Building:
+		Footprint: _
+
+plant_moon_flower_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
 #CANDYLAND Tileset
 
-object_44:
+plant_smarty_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_42:
+plant_smarty_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_43:
+plant_smarty_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
 
-object_32:
+plant_jelly_bean_3:
 	Inherits: ^CoreDecoration
 
-object_30:
+plant_jelly_bean_1:
 	Inherits: ^CoreDecoration
 
-object_31:
+plant_jelly_bean_2:
 	Inherits: ^CoreDecoration
 
-object_28:
+plant_jaffa_2:
 	Inherits: ^CoreDecoration
 
-object_27:
+plant_jaffa_1:
 	Inherits: ^CoreDecoration
 
-object_29:
+plant_jaffa_3:
 	Inherits: ^CoreDecoration
 
-object_6:
+plant_choc_chip_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-object_7:
+plant_choc_chip_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-object_8:
+plant_choc_chip_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
