@@ -133,3 +133,8 @@ rallypoint:
 		Reverses: true
 		Offset: -6,-6
 	circles: bits/empty.png
+
+minimapproduce:
+	idle: sprites|MiniMapProduce.ANI
+		Length: 6
+		Tick: 100
