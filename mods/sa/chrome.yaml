@@ -84,7 +84,7 @@ radar-wasps:
 radar-scorpions:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 252, 213, 36, 37
+		insignia: 236, 195, 77, 79
 
 radar-spiders:
 	Inherits: ^Chrome
