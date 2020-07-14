@@ -162,27 +162,29 @@ Gumnut:
 	Plant:
 
 freckle:
-	Inherits: ^CoreNeutralTowerCreep
+	Inherits@1: ^AutoTargetDefault
+	Inherits@2: ^CoreNeutralTowerCreep
+	Inherits@3: ^CoreTurret
 	Tooltip:
 		Name: Choc Freckle
 	Health:
 		HP: 50000
-	WithLoopedAttackSound: #TODO Doesn't work anymore
+	WithLoopedAttackSound:
 		Report: sounds|FRECKLEFIRE.SDF
 		Delay: 40
-	WithSpawnsShrapnelAnimation:
-		Sequences: shoot
-	ExternalCondition@TRIGGER:
-		Condition: freckles_attack
-	SpawnsShrapnel:
+	AttackTurreted:
+		Armaments: primary, secondary, 3rd
+	Armament@1:
+		Name: primary
 		Weapon: freckles
-		Amount: 6
-		Delay: 40
-		AimChance: 0
-		LocalOffset: 0,0,0
-		PauseOnCondition: !freckles_attack || injured
-	-AttackTurreted:
-	-WithAttackAnimation:
+	Armament@2:
+		Name: secondary
+		Weapon: freckles
+	Armament@3:
+		Name: 3rd
+		Weapon: freckles
+	-WithTurretAttackAnimation:
+	-WithSpriteTurret:
 	Plant:
 
 lolly_blue:

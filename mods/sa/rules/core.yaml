@@ -17,7 +17,6 @@
 	Inherits@1: ^CoreVisibleActor
 	Inherits@2: ^AffectsDeathLolly
 	Inherits@3: ^AffectsSeedBall
-	Inherits@4: ^AffectsFreckle
 	HitShape:
 	VerticalSelectionDecorations:
 	WithSpriteControlGroupDecoration:
@@ -266,12 +265,6 @@
 		Condition: seed_attack
 		ValidStances: enemy
 		Range: 5c0
-
-^AffectsFreckle:
-	ProximityExternalCondition@TRIGGER:
-		Condition: freckles_attack
-		ValidStances: enemy
-		Range: 4c0
 
 # Creates special effect when actor is disabled
 ^Paralyzed:
