@@ -11,9 +11,9 @@ Speech:
 	Notifications:
 		UnitReady: empty.wav
 			RateLimit: 10000
-		Building: sounds|PRODUCTIONCHANGE
+		Building: sounds|PRODUCTIONCHANGE.SDF
 			RateLimit: 500
-		CancelledAudio: sounds_MENU|SELECT
+		CancelledAudio: sounds_MENU|SELECT.SDF
 		StartGame:
 		GameLoaded:
 		GameSaved:
