@@ -16,7 +16,7 @@ beetles_light:
 
 beetles_medium:
 	ValidTargets: Ground, Paralyzed
-	Range: 2c0
+	Range: 3c0
 	ReloadDelay: 25
 	Report: sounds|SHRAPNELFIRE.SDF
 	Projectile: Bullet
