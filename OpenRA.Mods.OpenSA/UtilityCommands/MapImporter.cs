@@ -156,8 +156,8 @@ namespace OpenRA.Mods.SA.UtilityCommands
 			{
 				var id = stream.ReadInt32();
 				var type = stream.ReadInt32();
-				var x = stream.ReadInt32() / map.Grid.TileSize.Width;
-				var y = stream.ReadInt32() / map.Grid.TileSize.Height;
+				var x = (int)Math.Round((float)stream.ReadInt32() / map.Grid.TileSize.Width);
+				var y = (int)Math.Round((float)stream.ReadInt32() / map.Grid.TileSize.Height);
 
 				var invalidLocation = false;
 				if (x < 0 || x > mapSize.Width || y < 0 || y > mapSize.Height)
