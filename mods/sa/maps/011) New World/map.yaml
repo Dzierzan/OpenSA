@@ -1,0 +1,277 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 011) New World
+
+Author: Gate 5 Creations
+
+Tileset: SWAMP
+
+MapSize: 100,68
+
+Bounds: 2,2,96,64
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Spiders, Ants, Wasps
+	PlayerReference@Ants:
+		Name: Ants
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: ants
+		LockColor: True
+		Color: 57AC49
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Spiders, Wasps, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Bot: medium
+		Faction: spiders
+		Color: CA3131
+		Enemies: Ants, Wasps, Creeps
+	PlayerReference@Wasps:
+		Name: Wasps
+		Bot: medium
+		Faction: wasps
+		Color: F5D378
+		Enemies: Ants, Spiders, Creeps
+
+Actors:
+	Actor0: plant_clover
+		Location: 59,62
+		Owner: Neutral
+	Actor1: plant_moon_flower
+		Location: 2,22
+		Owner: Neutral
+	Actor2: plant_moon_mushroom
+		Location: 58,41
+		Owner: Neutral
+	Actor3: plant_clover
+		Location: 12,4
+		Owner: Neutral
+	Actor4: plant_clover
+		Location: 75,10
+		Owner: Neutral
+	Actor5: plant_moon_flower
+		Location: 4,26
+		Owner: Neutral
+	Actor6: plant_clover
+		Location: 80,40
+		Owner: Neutral
+	Actor7: plant_clover
+		Location: 86,34
+		Owner: Neutral
+	Actor8: plant_clover
+		Location: 50,34
+		Owner: Neutral
+	Actor9: plant_clover
+		Location: 71,61
+		Owner: Neutral
+	Actor10: plant_clover
+		Location: 25,25
+		Owner: Neutral
+	Actor11: plant_clover
+		Location: 76,38
+		Owner: Neutral
+	Actor12: plant_clover
+		Location: 28,46
+		Owner: Neutral
+	Actor13: plant_moon_mushroom
+		Location: 40,62
+		Owner: Neutral
+	Actor14: plant_clover
+		Location: 78,41
+		Owner: Neutral
+	Actor15: plant_clover
+		Location: 12,52
+		Owner: Neutral
+	Actor16: plant_clover
+		Location: 25,45
+		Owner: Neutral
+	Actor17: plant_moon_mushroom
+		Location: 8,20
+		Owner: Neutral
+	Actor18: plant_moon_mushroom
+		Location: 10,60
+		Owner: Neutral
+	Actor19: plant_clover
+		Location: 72,24
+		Owner: Neutral
+	Actor20: plant_moon_mushroom
+		Location: 72,29
+		Owner: Neutral
+	Actor21: plant_moon_flower
+		Location: 90,34
+		Owner: Neutral
+	Actor22: plant_moon_mushroom
+		Location: 44,60
+		Owner: Neutral
+	Actor23: plant_clover
+		Location: 77,32
+		Owner: Neutral
+	Actor24: plant_clover
+		Location: 72,44
+		Owner: Neutral
+	Actor25: plant_moon_mushroom
+		Location: 72,59
+		Owner: Neutral
+	Actor26: plant_clover
+		Location: 49,30
+		Owner: Neutral
+	Actor27: plant_moon_mushroom
+		Location: 58,14
+		Owner: Neutral
+	Actor28: plant_clover
+		Location: 16,50
+		Owner: Neutral
+	Actor29: plant_moon_mushroom
+		Location: 36,27
+		Owner: Neutral
+	Actor30: plant_clover
+		Location: 70,58
+		Owner: Neutral
+	Actor31: plant_clover
+		Location: 54,53
+		Owner: Neutral
+	Actor32: plant_moon_mushroom
+		Location: 50,54
+		Owner: Neutral
+	Actor33: plant_moon_mushroom
+		Location: 18,46
+		Owner: Neutral
+	Actor34: plant_clover
+		Location: 33,28
+		Owner: Neutral
+	Actor35: plant_clover
+		Location: 29,43
+		Owner: Neutral
+	Actor36: plant_clover
+		Location: 60,39
+		Owner: Neutral
+	Actor37: plant_moon_flower
+		Location: 14,32
+		Owner: Neutral
+	Actor38: plant_clover
+		Location: 70,26
+		Owner: Neutral
+	Actor39: plant_moon_mushroom
+		Location: 16,28
+		Owner: Neutral
+	Actor40: plant_clover
+		Location: 53,51
+		Owner: Neutral
+	Actor41: plant_clover
+		Location: 62,60
+		Owner: Neutral
+	Actor42: beetles_colony
+		Location: 9,8
+		Owner: Ants
+		TurretFacing: 122
+	Actor43: ants_colony
+		Location: 85,44
+		Owner: Ants
+		TurretFacing: 127
+	Actor44: ants_colony
+		Location: 59,50
+		TurretFacing: 124
+		Owner: Creeps
+	Actor45: ants_colony
+		Location: 27,32
+		TurretFacing: 122
+		Owner: Creeps
+	Actor46: beetles_colony
+		Location: 85,3
+		Owner: Spiders
+		TurretFacing: 130
+	Actor47: plant_moon_mushroom
+		Location: 96,2
+		Owner: Neutral
+	Actor48: plant_clover
+		Location: 95,4
+		Owner: Neutral
+	Actor49: ants_colony
+		Location: 49,6
+		TurretFacing: 131
+		Owner: Creeps
+	Actor50: ants_colony
+		Location: 62,31
+		TurretFacing: 130
+		Owner: Creeps
+	Actor51: ants_light
+		Location: 86,41
+		Owner: Ants
+	Actor52: ants_light
+		Location: 80,45
+		Owner: Ants
+	Actor53: ants_light
+		Location: 93,44
+		Owner: Ants
+	Actor54: ants_light
+		Location: 82,39
+		Owner: Ants
+	Actor55: plant_clover
+		Location: 58,2
+		Owner: Neutral
+	Actor56: plant_clover
+		Location: 55,3
+		Owner: Neutral
+	Actor57: plant_clover
+		Location: 47,5
+		Owner: Neutral
+	Actor58: plant_clover
+		Location: 68,10
+		Owner: Neutral
+	Actor59: plant_moon_mushroom
+		Location: 71,10
+		Owner: Neutral
+	Actor60: plant_cherry_flower
+		Location: 9,36
+		Owner: Neutral
+	Actor61: plant_cherry_flower
+		Location: 4,41
+		Owner: Neutral
+	Actor62: plant_cherry_flower
+		Location: 7,33
+		Owner: Neutral
+	Actor63: plant_cherry_flower
+		Location: 13,49
+		Owner: Neutral
+	Actor64: plant_cherry_flower
+		Location: 3,56
+		Owner: Neutral
+	Actor65: plant_moon_flower
+		Location: 8,58
+		Owner: Neutral
+	Actor66: plant_cherry_flower
+		Location: 92,38
+		Owner: Neutral
+	Actor67: plant_moon_mushroom
+		Location: 94,38
+		Owner: Neutral
+	Actor68: plant_cherry_flower
+		Location: 96,36
+		Owner: Neutral
+	Actor69: plant_moon_mushroom
+		Location: 4,10
+		Owner: Neutral
+	Actor70: ants_colony
+		Location: 22,56
+		Owner: Wasps
+		TurretFacing: 126
+
+Rules: rules.yaml
