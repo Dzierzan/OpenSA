@@ -32,11 +32,10 @@ namespace OpenRA.Mods.SA.UtilityCommands
 				if (stream.Length == 0)
 					throw new InvalidDataException("File is empty.");
 
-				var magic = stream.ReadASCII(80);
-				stream.Seek(2, SeekOrigin.Current);
-				var type = stream.ReadASCII(80);
+				var magic = stream.ReadASCII(82);
+				var type = stream.ReadASCII(82);
 
-				if (!(magic.Contains("GameA.DDF") || magic.Contains("Game.DDF")) || !type.Contains("Landscape")) // TODO: WAT?!
+				if (!(magic.Contains("GameA.DDF") || magic.Contains("Game.DDF")) || !type.Contains("Landscape"))
 					throw new ArgumentException("The map is in an unrecognized format!", "filename");
 
 				Initialize(filename);
