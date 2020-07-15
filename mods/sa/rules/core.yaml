@@ -320,7 +320,6 @@
 	-HiddenUnderFog:
 	FrozenUnderFog:
 	# Decorations  have sprites but do not use facing for them.
-	WithSpriteBody:
 	# Default setting makes decorations take 1x1 tiles.
 	Building:
 		Dimensions: 1,1

@@ -1,284 +1,156 @@
-#NORMAL Tileset
-
 plant_flower:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_flower_1, plant_flower_2, plant_flower_3
-
-plant_flower_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-
-plant_flower_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_flower_3:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
+	RenderSprites:
+		Image: plant_flower_1
+	WithRandomSpriteBody:
+		Images: plant_flower_1, plant_flower_2, plant_flower_3
+	MapEditorData:
+		RequireTilesets: NORMAL
 
 plant_broad_leaf_grass:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_broad_leaf_grass_1, plant_broad_leaf_grass_2, plant_broad_leaf_grass_3
-
-plant_broad_leaf_grass_1:
 	Inherits: ^CoreDecoration
-
-plant_broad_leaf_grass_3:
-	Inherits: ^CoreDecoration
-
-plant_broad_leaf_grass_2:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_broad_leaf_grass_1
+	WithRandomSpriteBody:
+		Images: plant_broad_leaf_grass_1, plant_broad_leaf_grass_2, plant_broad_leaf_grass_3
+	MapEditorData:
+		RequireTilesets: NORMAL
 
 plant_brown_mushroom:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_brown_mushroom_1, plant_brown_mushroom_2, plant_brown_mushroom_3
-
-plant_brown_mushroom_1:
 	Inherits: ^CoreDecoration
-
-plant_brown_mushroom_2:
-	Inherits: ^CoreDecoration
-
-plant_brown_mushroom_3:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_brown_mushroom_1
+	WithRandomSpriteBody:
+		Images: plant_brown_mushroom_1, plant_brown_mushroom_2, plant_brown_mushroom_3
+	MapEditorData:
+		RequireTilesets: NORMAL
 
 plant_toad_stool:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_toad_stool_1, plant_toad_stool_2, plant_toad_stool_3
-
-plant_toad_stool_3:
 	Inherits: ^CoreDecoration
-
-plant_toad_stool_1:
-	Inherits: ^CoreDecoration
-
-plant_toad_stool_2:
-	Inherits: ^CoreDecoration
-
-#DESERT Tileset
+	RenderSprites:
+		Image: plant_toad_stool_1
+	WithRandomSpriteBody:
+		Images: plant_toad_stool_1, plant_toad_stool_2, plant_toad_stool_3
+	MapEditorData:
+		RequireTilesets: NORMAL
 
 plant_desert_grass:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_desert_grass_1, plant_desert_grass_2, plant_desert_grass_3
-
-plant_desert_grass_3:
 	Inherits: ^CoreDecoration
-
-plant_desert_grass_1:
-	Inherits: ^CoreDecoration
-
-plant_desert_grass_2:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_desert_grass_1
+	WithRandomSpriteBody:
+		Images: plant_desert_grass_1, plant_desert_grass_2, plant_desert_grass_3
+	MapEditorData:
+		RequireTilesets: DESERT
 
 plant_serata:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_serata_1, plant_serata_2, plant_serata_3
-
-plant_serata_1:
 	Inherits: ^CoreDecoration
-
-plant_serata_2:
-	Inherits: ^CoreDecoration
-
-plant_serata_3:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_serata_1
+	WithRandomSpriteBody:
+		Images: plant_serata_1, plant_serata_2, plant_serata_3
+	MapEditorData:
+		RequireTilesets: DESERT
 
 plant_desert_flower:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_desert_flower_1, plant_desert_flower_2, plant_desert_flower_3
-
-plant_desert_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-
-plant_desert_flower_1:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_desert_flower_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
+	RenderSprites:
+		Image: plant_desert_flower_1
+	WithRandomSpriteBody:
+		Images: plant_desert_flower_1, plant_desert_flower_2, plant_desert_flower_3
+	MapEditorData:
+		RequireTilesets: DESERT
 
 plant_gumnut:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_gumnut_1, plant_gumnut_2, plant_gumnut_3
-
-plant_gumnut_1:
 	Inherits: ^CoreDecoration
-
-plant_gumnut_2:
-	Inherits: ^CoreDecoration
-
-plant_gumnut_3:
-	Inherits: ^CoreDecoration
-
-#SWAMP Tileset
+	RenderSprites:
+		Image: plant_gumnut_1
+	WithRandomSpriteBody:
+		Images: plant_gumnut_1, plant_gumnut_2, plant_gumnut_3
+	MapEditorData:
+		RequireTilesets: DESERT
 
 plant_clover:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_clover_1, plant_clover_2, plant_clover_3
-
-plant_clover_3:
 	Inherits: ^CoreDecoration
-
-plant_clover_2:
-	Inherits: ^CoreDecoration
-
-plant_clover_1:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_clover_1
+	WithRandomSpriteBody:
+		Images: plant_clover_1, plant_clover_2, plant_clover_3
+	MapEditorData:
+		RequireTilesets: SWAMP
 
 plant_moon_mushroom:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_moon_mushroom_1, plant_moon_mushroom_2, plant_moon_mushroom_3
-
-plant_moon_mushroom_3:
 	Inherits: ^CoreDecoration
-
-plant_moon_mushroom_1:
-	Inherits: ^CoreDecoration
-
-plant_moon_mushroom_2:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_moon_mushroom_1
+	WithRandomSpriteBody:
+		Images: plant_moon_mushroom_1, plant_moon_mushroom_2, plant_moon_mushroom_3
+	MapEditorData:
+		RequireTilesets: SWAMP
 
 plant_cherry_flower:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_cherry_flower_1, plant_cherry_flower_2, plant_cherry_flower_3
-
-plant_cherry_flower_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-
-plant_cherry_flower_1:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_cherry_flower_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
+	RenderSprites:
+		Image: plant_cherry_flower_1
+	WithRandomSpriteBody:
+		Images: plant_cherry_flower_1, plant_cherry_flower_2, plant_cherry_flower_3
+	MapEditorData:
+		RequireTilesets: SWAMP
 
 plant_moon_flower:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_moon_flower_1, plant_moon_flower_2, plant_moon_flower_3
-
-plant_moon_flower_3:
 	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_moon_flower_1:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_moon_flower_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-#CANDYLAND Tileset
+	RenderSprites:
+		Image: plant_moon_flower_1
+	WithRandomSpriteBody:
+		Images: plant_moon_flower_1, plant_moon_flower_2, plant_moon_flower_3
+	MapEditorData:
+		RequireTilesets: SWAMP
 
 plant_smarty:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_smarty_1, plant_smarty_2, plant_smarty_3
-
-plant_smarty_3:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-
-plant_smarty_1:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-
-plant_smarty_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
+	RenderSprites:
+		Image: plant_smarty_1
+	WithRandomSpriteBody:
+		Images: plant_smarty_1, plant_smarty_2, plant_smarty_3
+	MapEditorData:
+		RequireTilesets: CANDYLAND
 
 plant_jelly_bean:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_jelly_bean_1, plant_jelly_bean_2, plant_jelly_bean_3
-
-plant_jelly_bean_3:
 	Inherits: ^CoreDecoration
-
-plant_jelly_bean_1:
-	Inherits: ^CoreDecoration
-
-plant_jelly_bean_2:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_jelly_bean_1
+	WithRandomSpriteBody:
+		Images: plant_jelly_bean_1, plant_jelly_bean_2, plant_jelly_bean_3
+	MapEditorData:
+		RequireTilesets: CANDYLAND
 
 plant_jaffa:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_jaffa_1, plant_jaffa_2, plant_jaffa_3
-
-plant_jaffa_2:
 	Inherits: ^CoreDecoration
-
-plant_jaffa_1:
-	Inherits: ^CoreDecoration
-
-plant_jaffa_3:
-	Inherits: ^CoreDecoration
+	RenderSprites:
+		Image: plant_jaffa_1
+	WithRandomSpriteBody:
+		Images: plant_jaffa_1, plant_jaffa_2, plant_jaffa_3
+	MapEditorData:
+		RequireTilesets: CANDYLAND
 
 plant_choc_chip:
-	AlwaysVisible:
-	KillsSelf:
-	SpawnRandomActorOnDeath:
-		Actor: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
-
-plant_choc_chip_1:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
-plant_choc_chip_2:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
-plant_choc_chip_3:
-	Inherits: ^CoreDecoration
-	Building:
-		Footprint: _
+	RenderSprites:
+		Image: plant_choc_chip_1
+	WithRandomSpriteBody:
+		Images: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
+	MapEditorData:
+		RequireTilesets: CANDYLAND
 
 #object_48:
 #Inherits: ^CoreDecoration
