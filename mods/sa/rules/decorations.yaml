@@ -1,5 +1,11 @@
 #NORMAL Tileset
 
+plant_flower:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_flower_1, plant_flower_2, plant_flower_3
+
 plant_flower_1:
 	Inherits: ^CoreDecoration
 	Building:
@@ -15,6 +21,12 @@ plant_flower_3:
 	Building:
 		Footprint: _
 
+plant_broad_leaf_grass:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_broad_leaf_grass_1, plant_broad_leaf_grass_2, plant_broad_leaf_grass_3
+
 plant_broad_leaf_grass_1:
 	Inherits: ^CoreDecoration
 
@@ -24,6 +36,12 @@ plant_broad_leaf_grass_3:
 plant_broad_leaf_grass_2:
 	Inherits: ^CoreDecoration
 
+plant_brown_mushroom:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_brown_mushroom_1, plant_brown_mushroom_2, plant_brown_mushroom_3
+
 plant_brown_mushroom_1:
 	Inherits: ^CoreDecoration
 
@@ -32,6 +50,12 @@ plant_brown_mushroom_2:
 
 plant_brown_mushroom_3:
 	Inherits: ^CoreDecoration
+
+plant_toad_stool:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_toad_stool_1, plant_toad_stool_2, plant_toad_stool_3
 
 plant_toad_stool_3:
 	Inherits: ^CoreDecoration
@@ -44,6 +68,12 @@ plant_toad_stool_2:
 
 #DESERT Tileset
 
+plant_desert_grass:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_desert_grass_1, plant_desert_grass_2, plant_desert_grass_3
+
 plant_desert_grass_3:
 	Inherits: ^CoreDecoration
 
@@ -53,6 +83,12 @@ plant_desert_grass_1:
 plant_desert_grass_2:
 	Inherits: ^CoreDecoration
 
+plant_serata:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_serata_1, plant_serata_2, plant_serata_3
+
 plant_serata_1:
 	Inherits: ^CoreDecoration
 
@@ -61,6 +97,12 @@ plant_serata_2:
 
 plant_serata_3:
 	Inherits: ^CoreDecoration
+
+plant_desert_flower:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_desert_flower_1, plant_desert_flower_2, plant_desert_flower_3
 
 plant_desert_flower_3:
 	Inherits: ^CoreDecoration
@@ -77,6 +119,12 @@ plant_desert_flower_2:
 	Building:
 		Footprint: _
 
+plant_gumnut:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_gumnut_1, plant_gumnut_2, plant_gumnut_3
+
 plant_gumnut_1:
 	Inherits: ^CoreDecoration
 
@@ -88,6 +136,11 @@ plant_gumnut_3:
 
 #SWAMP Tileset
 
+plant_clover:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_clover_1, plant_clover_2, plant_clover_3
 
 plant_clover_3:
 	Inherits: ^CoreDecoration
@@ -98,6 +151,12 @@ plant_clover_2:
 plant_clover_1:
 	Inherits: ^CoreDecoration
 
+plant_moon_mushroom:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_moon_mushroom_1, plant_moon_mushroom_2, plant_moon_mushroom_3
+
 plant_moon_mushroom_3:
 	Inherits: ^CoreDecoration
 
@@ -106,6 +165,12 @@ plant_moon_mushroom_1:
 
 plant_moon_mushroom_2:
 	Inherits: ^CoreDecoration
+
+plant_cherry_flower:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_cherry_flower_1, plant_cherry_flower_2, plant_cherry_flower_3
 
 plant_cherry_flower_3:
 	Inherits: ^CoreDecoration
@@ -121,6 +186,12 @@ plant_cherry_flower_2:
 	Inherits: ^CoreDecoration
 	Building:
 		Footprint: _
+
+plant_moon_flower:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_moon_flower_1, plant_moon_flower_2, plant_moon_flower_3
 
 plant_moon_flower_3:
 	Inherits: ^CoreDecoration
@@ -139,6 +210,12 @@ plant_moon_flower_2:
 
 #CANDYLAND Tileset
 
+plant_smarty:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_smarty_1, plant_smarty_2, plant_smarty_3
+
 plant_smarty_3:
 	Inherits: ^CoreDecoration
 	Building:
@@ -154,6 +231,12 @@ plant_smarty_2:
 	Building:
 		Footprint: _
 
+plant_jelly_bean:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_jelly_bean_1, plant_jelly_bean_2, plant_jelly_bean_3
+
 plant_jelly_bean_3:
 	Inherits: ^CoreDecoration
 
@@ -163,6 +246,12 @@ plant_jelly_bean_1:
 plant_jelly_bean_2:
 	Inherits: ^CoreDecoration
 
+plant_jaffa:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_jaffa_1, plant_jaffa_2, plant_jaffa_3
+
 plant_jaffa_2:
 	Inherits: ^CoreDecoration
 
@@ -171,6 +260,12 @@ plant_jaffa_1:
 
 plant_jaffa_3:
 	Inherits: ^CoreDecoration
+
+plant_choc_chip:
+	AlwaysVisible:
+	KillsSelf:
+	SpawnRandomActorOnDeath:
+		Actor: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
 
 plant_choc_chip_1:
 	Inherits: ^CoreDecoration
