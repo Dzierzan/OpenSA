@@ -518,61 +518,61 @@ Actors:
 		Location: 67,23
 		Owner: Multi0
 	Actor162: ants_colony_turret
-		TurretFacing: 96
 		Location: 69,27
 		Owner: Multi0
+		TurretFacing: 126
 	Actor163: beetles_colony_turret
-		TurretFacing: 96
 		Location: 47,27
 		Owner: Multi0
+		TurretFacing: 127
 	Actor164: wasps_colony_turret
-		TurretFacing: 96
 		Location: 34,27
 		Owner: Multi0
+		TurretFacing: 130
 	Actor165: spiders_colony_turret
-		TurretFacing: 96
 		Location: 80,26
 		Owner: Multi0
+		TurretFacing: 128
 	Actor166: scorpions_colony_turret
-		TurretFacing: 96
 		Location: 90,26
 		Owner: Multi0
+		TurretFacing: 134
 	Actor167: beetles_colony_turret
 		Owner: Multi1
-		TurretFacing: 96
 		Location: 42,100
+		TurretFacing: 124
 	Actor168: wasps_colony_turret
 		Owner: Multi1
-		TurretFacing: 96
 		Location: 81,102
+		TurretFacing: 132
 	Actor169: spiders_colony_turret
 		Owner: Multi1
-		TurretFacing: 96
 		Location: 34,101
+		TurretFacing: 132
 	Actor170: scorpions_colony_turret
 		Owner: Multi1
-		TurretFacing: 96
 		Location: 71,101
+		TurretFacing: 120
 	Actor171: ants_colony_turret
 		Owner: Multi1
-		TurretFacing: 96
 		Location: 53,101
+		TurretFacing: 130
 	Actor172: ants_colony
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 18,62
+		TurretFacing: 134
 	Actor173: ants_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 20,58
+		TurretFacing: 124
 	Actor174: ants_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 27,64
+		TurretFacing: 130
 	Actor175: ants_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 20,71
+		TurretFacing: 131
 	Actor140: popcorn
 		Owner: Creeps
 		Facing: 96
@@ -739,9 +739,6 @@ Actors:
 	Actor198: plant_cherry_flower_3
 		Owner: Neutral
 		Location: 99,86
-	Actor199: plant_desert_flower_2
-		Owner: Neutral
-		Location: 106,78
 	Actor200: plant_desert_flower_2
 		Owner: Neutral
 		Location: 93,50
@@ -760,24 +757,6 @@ Actors:
 	Actor205: plant_desert_flower_2
 		Owner: Neutral
 		Location: 43,42
-	Actor206: plant_choc_chip_1
-		Owner: Neutral
-		Location: 59,42
-	Actor207: plant_choc_chip_1
-		Owner: Neutral
-		Location: 50,35
-	Actor208: plant_choc_chip_1
-		Owner: Neutral
-		Location: 36,54
-	Actor209: plant_choc_chip_1
-		Owner: Neutral
-		Location: 30,41
-	Actor210: plant_choc_chip_2
-		Owner: Neutral
-		Location: 19,50
-	Actor211: plant_choc_chip_2
-		Owner: Neutral
-		Location: 36,50
 	Actor213: plant_cherry_flower_1
 		Owner: Neutral
 		Location: 23,44
@@ -814,9 +793,6 @@ Actors:
 	Actor224: plant_broad_leaf_grass_3
 		Owner: Neutral
 		Location: 85,74
-	Actor225: plant_broad_leaf_grass_1
-		Owner: Neutral
-		Location: 99,77
 	Actor226: plant_broad_leaf_grass_1
 		Owner: Neutral
 		Location: 103,85
@@ -934,9 +910,6 @@ Actors:
 	Actor264: plant_cherry_flower_2
 		Owner: Neutral
 		Location: 86,69
-	Actor265: plant_clover_2
-		Owner: Neutral
-		Location: 106,72
 	Actor266: plant_clover_2
 		Owner: Neutral
 		Location: 121,54
@@ -1081,12 +1054,6 @@ Actors:
 	Actor313: plant_desert_flower_1
 		Owner: Neutral
 		Location: 4,16
-	Actor314: plant_choc_chip_1
-		Owner: Neutral
-		Location: 16,27
-	Actor315: plant_choc_chip_1
-		Owner: Neutral
-		Location: 12,16
 	Actor316: plant_cherry_flower_3
 		Owner: Neutral
 		Location: 19,36
@@ -1149,32 +1116,32 @@ Actors:
 		Location: 93,4
 	Actor340: wasps_colony
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 32,62
+		TurretFacing: 126
 	Actor341: wasps_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 35,71
+		TurretFacing: 123
 	Actor342: wasps_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 42,65
+		TurretFacing: 120
 	Actor343: beetles_colony
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 25,51
+		TurretFacing: 131
 	Actor344: beetles_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 36,52
+		TurretFacing: 127
 	Actor345: beetles_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 27,46
+		TurretFacing: 123
 	Actor346: beetles_colony_turret
 		Owner: Creeps
-		TurretFacing: 96
 		Location: 14,52
+		TurretFacing: 128
 	Actor347: wasps_light
 		Owner: Creeps
 		Facing: 96
@@ -1270,3 +1237,157 @@ Actors:
 		TurretFacing: 96
 		Location: 89,47
 		Owner: Creeps
+	Actor364: mushroom
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 113,51
+	Actor365: mushroom
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 113,46
+	Actor366: mushroom
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 118,46
+	Actor367: mushroom
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 118,51
+	Actor368: gumnut
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 99,74
+	Actor369: gumnut
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 104,74
+	Actor370: gumnut
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 99,80
+	Actor371: gumnut
+		Owner: Creeps
+		Facing: 96
+		TurretFacing: 96
+		Location: 104,80
+	Actor372: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 56,42
+	Actor373: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 50,36
+	Actor374: plant_flower_2
+		Owner: Neutral
+		Location: 49,41
+	Actor375: plant_flower_2
+		Owner: Neutral
+		Location: 31,39
+	Actor376: plant_flower_2
+		Owner: Neutral
+		Location: 34,42
+	Actor377: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 21,49
+	Actor378: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 38,55
+	Actor379: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 41,50
+	Actor380: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 3,68
+	Actor381: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 13,70
+	Actor382: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 7,77
+	Actor383: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 4,59
+	Actor384: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 14,56
+	Actor385: plant_flower_3
+		Owner: Neutral
+		Location: 5,53
+	Actor386: plant_flower_3
+		Owner: Neutral
+		Location: 5,49
+	Actor387: plant_flower_2
+		Owner: Neutral
+		Location: 16,25
+	Actor388: plant_flower_2
+		Owner: Neutral
+		Location: 12,17
+	Actor389: plant_flower_2
+		Owner: Neutral
+		Location: 41,4
+	Actor390: plant_flower_2
+		Owner: Neutral
+		Location: 59,6
+	Actor391: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 70,8
+	Actor392: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 81,3
+	Actor393: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 84,8
+	Actor394: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 45,3
+	Actor395: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 43,8
+	Actor396: plant_broad_leaf_grass_3
+		Owner: Neutral
+		Location: 100,9
+	Actor397: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 105,12
+	Actor398: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 124,18
+	Actor399: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 113,8
+	Actor400: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 115,24
+	Actor401: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 113,15
+	Actor402: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 120,9
+	Actor403: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 103,92
+	Actor404: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 106,98
+	Actor405: plant_broad_leaf_grass_2
+		Owner: Neutral
+		Location: 116,89
+	Actor406: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 113,94
+	Actor407: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 100,101
+	Actor408: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 112,90
+	Actor409: plant_broad_leaf_grass_1
+		Owner: Neutral
+		Location: 110,101
