@@ -101,639 +101,639 @@ Actors:
 		Owner: Creeps
 		Location: 100,112
 		TurretFacing: 128
-	Actor16: plant_jelly_bean_2
+	Actor16: plant_jelly_bean
 		Owner: Neutral
 		Location: 111,118
-	Actor17: plant_jelly_bean_1
+	Actor17: plant_jelly_bean
 		Owner: Neutral
 		Location: 116,111
-	Actor18: plant_jelly_bean_3
+	Actor18: plant_jelly_bean
 		Owner: Neutral
 		Location: 111,113
-	Actor19: plant_jelly_bean_3
+	Actor19: plant_jelly_bean
 		Owner: Neutral
 		Location: 113,109
-	Actor20: plant_jelly_bean_3
+	Actor20: plant_jelly_bean
 		Owner: Neutral
 		Location: 108,123
-	Actor21: plant_jelly_bean_2
+	Actor21: plant_jelly_bean
 		Owner: Neutral
 		Location: 116,115
-	Actor22: plant_jelly_bean_2
+	Actor22: plant_jelly_bean
 		Owner: Neutral
 		Location: 119,107
-	Actor23: plant_jelly_bean_2
+	Actor23: plant_jelly_bean
 		Owner: Neutral
 		Location: 99,126
-	Actor24: plant_smarty_2
+	Actor24: plant_smarty
 		Owner: Neutral
 		Location: 114,124
-	Actor25: plant_smarty_2
+	Actor25: plant_smarty
 		Owner: Neutral
 		Location: 104,121
-	Actor26: plant_smarty_2
+	Actor26: plant_smarty
 		Owner: Neutral
 		Location: 97,121
-	Actor27: plant_smarty_3
+	Actor27: plant_smarty
 		Owner: Neutral
 		Location: 90,116
-	Actor28: plant_smarty_3
+	Actor28: plant_smarty
 		Owner: Neutral
 		Location: 90,110
-	Actor29: plant_smarty_3
+	Actor29: plant_smarty
 		Owner: Neutral
 		Location: 93,118
-	Actor30: plant_smarty_1
+	Actor30: plant_smarty
 		Owner: Neutral
 		Location: 87,114
-	Actor31: plant_jaffa_3
+	Actor31: plant_jaffa
 		Owner: Neutral
 		Location: 76,126
-	Actor32: plant_jaffa_3
+	Actor32: plant_jaffa
 		Owner: Neutral
 		Location: 84,123
-	Actor33: plant_jaffa_1
+	Actor33: plant_jaffa
 		Owner: Neutral
 		Location: 86,126
-	Actor34: plant_jaffa_1
+	Actor34: plant_jaffa
 		Owner: Neutral
 		Location: 69,124
-	Actor35: plant_jaffa_2
+	Actor35: plant_jaffa
 		Owner: Neutral
 		Location: 84,102
-	Actor36: plant_jaffa_3
+	Actor36: plant_jaffa
 		Owner: Neutral
 		Location: 86,107
-	Actor37: plant_jaffa_3
+	Actor37: plant_jaffa
 		Owner: Neutral
 		Location: 82,105
-	Actor38: plant_jaffa_2
+	Actor38: plant_jaffa
 		Owner: Neutral
 		Location: 36,116
-	Actor39: plant_jaffa_2
+	Actor39: plant_jaffa
 		Owner: Neutral
 		Location: 37,120
-	Actor40: plant_jaffa_1
+	Actor40: plant_jaffa
 		Owner: Neutral
 		Location: 31,118
-	Actor41: plant_jaffa_1
+	Actor41: plant_jaffa
 		Owner: Neutral
 		Location: 30,123
-	Actor42: plant_jaffa_3
+	Actor42: plant_jaffa
 		Owner: Neutral
 		Location: 25,120
-	Actor43: plant_jaffa_3
+	Actor43: plant_jaffa
 		Owner: Neutral
 		Location: 19,123
-	Actor44: plant_jaffa_1
+	Actor44: plant_jaffa
 		Owner: Neutral
 		Location: 30,126
-	Actor45: plant_jaffa_1
+	Actor45: plant_jaffa
 		Owner: Neutral
 		Location: 21,123
-	Actor46: plant_jaffa_1
+	Actor46: plant_jaffa
 		Owner: Neutral
 		Location: 9,126
-	Actor47: plant_jaffa_1
+	Actor47: plant_jaffa
 		Owner: Neutral
 		Location: 17,128
-	Actor48: plant_jaffa_2
+	Actor48: plant_jaffa
 		Owner: Neutral
 		Location: 16,121
-	Actor49: plant_jaffa_2
+	Actor49: plant_jaffa
 		Owner: Neutral
 		Location: 5,82
-	Actor50: plant_jaffa_2
+	Actor50: plant_jaffa
 		Owner: Neutral
 		Location: 9,86
-	Actor51: plant_jaffa_1
+	Actor51: plant_jaffa
 		Owner: Neutral
 		Location: 4,87
-	Actor52: plant_jaffa_3
+	Actor52: plant_jaffa
 		Owner: Neutral
 		Location: 7,89
-	Actor53: plant_jaffa_3
+	Actor53: plant_jaffa
 		Owner: Neutral
 		Location: 8,54
-	Actor54: plant_jaffa_3
+	Actor54: plant_jaffa
 		Owner: Neutral
 		Location: 14,46
-	Actor55: plant_jaffa_2
+	Actor55: plant_jaffa
 		Owner: Neutral
 		Location: 18,51
-	Actor56: plant_jaffa_2
+	Actor56: plant_jaffa
 		Owner: Neutral
 		Location: 20,47
-	Actor57: plant_jaffa_1
+	Actor57: plant_jaffa
 		Owner: Neutral
 		Location: 11,51
-	Actor58: plant_jaffa_1
+	Actor58: plant_jaffa
 		Owner: Neutral
 		Location: 7,46
-	Actor59: plant_jaffa_2
+	Actor59: plant_jaffa
 		Owner: Neutral
 		Location: 5,51
-	Actor60: plant_jaffa_2
+	Actor60: plant_jaffa
 		Owner: Neutral
 		Location: 3,59
-	Actor61: plant_jaffa_3
+	Actor61: plant_jaffa
 		Owner: Neutral
 		Location: 25,50
-	Actor62: plant_jaffa_3
+	Actor62: plant_jaffa
 		Owner: Neutral
 		Location: 29,47
-	Actor63: plant_jaffa_2
+	Actor63: plant_jaffa
 		Owner: Neutral
 		Location: 24,46
-	Actor64: plant_jaffa_2
+	Actor64: plant_jaffa
 		Owner: Neutral
 		Location: 17,43
-	Actor65: plant_jaffa_2
+	Actor65: plant_jaffa
 		Owner: Neutral
 		Location: 62,45
-	Actor66: plant_jaffa_3
+	Actor66: plant_jaffa
 		Owner: Neutral
 		Location: 58,46
-	Actor67: plant_jaffa_3
+	Actor67: plant_jaffa
 		Owner: Neutral
 		Location: 112,22
-	Actor68: plant_jaffa_1
+	Actor68: plant_jaffa
 		Owner: Neutral
 		Location: 106,25
-	Actor69: plant_jaffa_2
+	Actor69: plant_jaffa
 		Owner: Neutral
 		Location: 110,26
-	Actor70: plant_jaffa_1
+	Actor70: plant_jaffa
 		Owner: Neutral
 		Location: 88,5
-	Actor71: plant_jaffa_1
+	Actor71: plant_jaffa
 		Owner: Neutral
 		Location: 96,11
-	Actor72: plant_jaffa_1
+	Actor72: plant_jaffa
 		Owner: Neutral
 		Location: 100,6
-	Actor73: plant_jaffa_3
+	Actor73: plant_jaffa
 		Owner: Neutral
 		Location: 95,7
-	Actor74: plant_jaffa_3
+	Actor74: plant_jaffa
 		Owner: Neutral
 		Location: 88,11
-	Actor75: plant_jaffa_3
+	Actor75: plant_jaffa
 		Owner: Neutral
 		Location: 83,6
-	Actor76: plant_jaffa_1
+	Actor76: plant_jaffa
 		Owner: Neutral
 		Location: 116,7
-	Actor77: plant_jaffa_1
+	Actor77: plant_jaffa
 		Owner: Neutral
 		Location: 124,15
-	Actor78: plant_jaffa_1
+	Actor78: plant_jaffa
 		Owner: Neutral
 		Location: 130,5
-	Actor79: plant_jaffa_1
+	Actor79: plant_jaffa
 		Owner: Neutral
 		Location: 123,7
-	Actor80: plant_jaffa_2
+	Actor80: plant_jaffa
 		Owner: Neutral
 		Location: 125,11
-	Actor81: plant_jaffa_2
+	Actor81: plant_jaffa
 		Owner: Neutral
 		Location: 126,5
-	Actor82: plant_jaffa_2
+	Actor82: plant_jaffa
 		Owner: Neutral
 		Location: 119,10
-	Actor83: plant_jaffa_2
+	Actor83: plant_jaffa
 		Owner: Neutral
 		Location: 106,7
-	Actor84: plant_jaffa_2
+	Actor84: plant_jaffa
 		Owner: Neutral
 		Location: 111,12
-	Actor85: plant_jaffa_1
+	Actor85: plant_jaffa
 		Owner: Neutral
 		Location: 126,18
-	Actor86: plant_jelly_bean_2
+	Actor86: plant_jelly_bean
 		Owner: Neutral
 		Location: 103,18
-	Actor87: plant_jelly_bean_2
+	Actor87: plant_jelly_bean
 		Owner: Neutral
 		Location: 118,23
-	Actor88: plant_jelly_bean_1
+	Actor88: plant_jelly_bean
 		Owner: Neutral
 		Location: 115,18
-	Actor89: plant_jelly_bean_1
+	Actor89: plant_jelly_bean
 		Owner: Neutral
 		Location: 101,24
-	Actor90: plant_jelly_bean_3
+	Actor90: plant_jelly_bean
 		Owner: Neutral
 		Location: 106,14
-	Actor91: plant_jelly_bean_3
+	Actor91: plant_jelly_bean
 		Owner: Neutral
 		Location: 99,18
-	Actor92: plant_jelly_bean_3
+	Actor92: plant_jelly_bean
 		Owner: Neutral
 		Location: 107,21
-	Actor93: plant_smarty_2
+	Actor93: plant_smarty
 		Owner: Neutral
 		Location: 124,22
-	Actor94: plant_smarty_2
+	Actor94: plant_smarty
 		Owner: Neutral
 		Location: 125,28
-	Actor95: plant_smarty_2
+	Actor95: plant_smarty
 		Owner: Neutral
 		Location: 118,30
-	Actor96: plant_smarty_2
+	Actor96: plant_smarty
 		Owner: Neutral
 		Location: 125,36
-	Actor97: plant_smarty_2
+	Actor97: plant_smarty
 		Owner: Neutral
 		Location: 82,58
-	Actor98: plant_smarty_2
+	Actor98: plant_smarty
 		Owner: Neutral
 		Location: 97,52
-	Actor99: plant_smarty_1
+	Actor99: plant_smarty
 		Owner: Neutral
 		Location: 92,61
-	Actor100: plant_smarty_1
+	Actor100: plant_smarty
 		Owner: Neutral
 		Location: 81,47
-	Actor101: plant_smarty_1
+	Actor101: plant_smarty
 		Owner: Neutral
 		Location: 73,57
-	Actor102: plant_smarty_2
+	Actor102: plant_smarty
 		Owner: Neutral
 		Location: 39,79
-	Actor103: plant_smarty_2
+	Actor103: plant_smarty
 		Owner: Neutral
 		Location: 45,71
-	Actor104: plant_smarty_1
+	Actor104: plant_smarty
 		Owner: Neutral
 		Location: 47,86
-	Actor105: plant_smarty_1
+	Actor105: plant_smarty
 		Owner: Neutral
 		Location: 34,94
-	Actor106: plant_smarty_1
+	Actor106: plant_smarty
 		Owner: Neutral
 		Location: 39,98
-	Actor107: plant_smarty_3
+	Actor107: plant_smarty
 		Owner: Neutral
 		Location: 29,79
-	Actor108: plant_smarty_3
+	Actor108: plant_smarty
 		Owner: Neutral
 		Location: 31,74
-	Actor109: plant_smarty_3
+	Actor109: plant_smarty
 		Owner: Neutral
 		Location: 19,80
-	Actor110: plant_smarty_2
+	Actor110: plant_smarty
 		Owner: Neutral
 		Location: 24,78
-	Actor111: plant_smarty_2
+	Actor111: plant_smarty
 		Owner: Neutral
 		Location: 13,99
-	Actor112: plant_smarty_2
+	Actor112: plant_smarty
 		Owner: Neutral
 		Location: 6,97
-	Actor113: plant_smarty_2
+	Actor113: plant_smarty
 		Owner: Neutral
 		Location: 4,104
-	Actor114: plant_smarty_1
+	Actor114: plant_smarty
 		Owner: Neutral
 		Location: 6,100
-	Actor115: plant_smarty_1
+	Actor115: plant_smarty
 		Owner: Neutral
 		Location: 3,98
-	Actor116: plant_smarty_3
+	Actor116: plant_smarty
 		Owner: Neutral
 		Location: 3,95
-	Actor117: plant_smarty_3
+	Actor117: plant_smarty
 		Owner: Neutral
 		Location: 9,97
-	Actor118: plant_smarty_3
+	Actor118: plant_smarty
 		Owner: Neutral
 		Location: 4,100
-	Actor119: plant_smarty_3
+	Actor119: plant_smarty
 		Owner: Neutral
 		Location: 6,116
-	Actor120: plant_smarty_1
+	Actor120: plant_smarty
 		Owner: Neutral
 		Location: 5,109
-	Actor121: plant_smarty_1
+	Actor121: plant_smarty
 		Owner: Neutral
 		Location: 29,111
-	Actor122: plant_smarty_1
+	Actor122: plant_smarty
 		Owner: Neutral
 		Location: 19,91
-	Actor123: plant_smarty_1
+	Actor123: plant_smarty
 		Owner: Neutral
 		Location: 6,69
-	Actor124: plant_smarty_3
+	Actor124: plant_smarty
 		Owner: Neutral
 		Location: 13,61
-	Actor125: plant_smarty_3
+	Actor125: plant_smarty
 		Owner: Neutral
 		Location: 22,64
-	Actor126: plant_smarty_2
+	Actor126: plant_smarty
 		Owner: Neutral
 		Location: 27,65
-	Actor127: plant_smarty_1
+	Actor127: plant_smarty
 		Owner: Neutral
 		Location: 75,18
-	Actor128: plant_smarty_1
+	Actor128: plant_smarty
 		Owner: Neutral
 		Location: 77,30
-	Actor129: plant_smarty_2
+	Actor129: plant_smarty
 		Owner: Neutral
 		Location: 57,16
-	Actor130: plant_smarty_2
+	Actor130: plant_smarty
 		Owner: Neutral
 		Location: 65,21
-	Actor131: plant_smarty_2
+	Actor131: plant_smarty
 		Owner: Neutral
 		Location: 74,13
-	Actor132: plant_smarty_3
+	Actor132: plant_smarty
 		Owner: Neutral
 		Location: 52,5
-	Actor133: plant_smarty_3
+	Actor133: plant_smarty
 		Owner: Neutral
 		Location: 50,16
-	Actor134: plant_smarty_3
+	Actor134: plant_smarty
 		Owner: Neutral
 		Location: 34,10
-	Actor135: plant_smarty_2
+	Actor135: plant_smarty
 		Owner: Neutral
 		Location: 40,17
-	Actor136: plant_smarty_2
+	Actor136: plant_smarty
 		Owner: Neutral
 		Location: 31,21
-	Actor137: plant_jelly_bean_2
+	Actor137: plant_jelly_bean
 		Owner: Neutral
 		Location: 37,24
-	Actor138: plant_jelly_bean_2
+	Actor138: plant_jelly_bean
 		Owner: Neutral
 		Location: 43,20
-	Actor139: plant_jelly_bean_1
+	Actor139: plant_jelly_bean
 		Owner: Neutral
 		Location: 8,31
-	Actor140: plant_jelly_bean_1
+	Actor140: plant_jelly_bean
 		Owner: Neutral
 		Location: 9,26
-	Actor141: plant_jelly_bean_3
+	Actor141: plant_jelly_bean
 		Owner: Neutral
 		Location: 14,34
-	Actor142: plant_jelly_bean_3
+	Actor142: plant_jelly_bean
 		Owner: Neutral
 		Location: 9,37
-	Actor143: plant_jelly_bean_3
+	Actor143: plant_jelly_bean
 		Owner: Neutral
 		Location: 22,40
-	Actor144: plant_jelly_bean_3
+	Actor144: plant_jelly_bean
 		Owner: Neutral
 		Location: 47,36
-	Actor145: plant_jelly_bean_3
+	Actor145: plant_jelly_bean
 		Owner: Neutral
 		Location: 57,23
-	Actor146: plant_jelly_bean_3
+	Actor146: plant_jelly_bean
 		Owner: Neutral
 		Location: 69,10
-	Actor147: plant_jelly_bean_3
+	Actor147: plant_jelly_bean
 		Owner: Neutral
 		Location: 84,18
-	Actor148: plant_jelly_bean_3
+	Actor148: plant_jelly_bean
 		Owner: Neutral
 		Location: 56,7
-	Actor149: plant_jelly_bean_3
+	Actor149: plant_jelly_bean
 		Owner: Neutral
 		Location: 98,30
-	Actor150: plant_jelly_bean_2
+	Actor150: plant_jelly_bean
 		Owner: Neutral
 		Location: 110,37
-	Actor151: plant_jelly_bean_2
+	Actor151: plant_jelly_bean
 		Owner: Neutral
 		Location: 81,26
-	Actor152: plant_smarty_2
+	Actor152: plant_smarty
 		Owner: Neutral
 		Location: 108,42
-	Actor153: plant_smarty_2
+	Actor153: plant_smarty
 		Owner: Neutral
 		Location: 90,30
-	Actor154: plant_smarty_1
+	Actor154: plant_smarty
 		Owner: Neutral
 		Location: 124,40
-	Actor155: plant_smarty_1
+	Actor155: plant_smarty
 		Owner: Neutral
 		Location: 112,58
-	Actor156: plant_smarty_1
+	Actor156: plant_smarty
 		Owner: Neutral
 		Location: 118,65
-	Actor157: plant_jaffa_1
+	Actor157: plant_jaffa
 		Owner: Neutral
 		Location: 123,59
-	Actor158: plant_jaffa_1
+	Actor158: plant_jaffa
 		Owner: Neutral
 		Location: 125,65
-	Actor159: plant_jaffa_1
+	Actor159: plant_jaffa
 		Owner: Neutral
 		Location: 127,58
-	Actor160: plant_jaffa_3
+	Actor160: plant_jaffa
 		Owner: Neutral
 		Location: 127,63
-	Actor161: plant_jaffa_3
+	Actor161: plant_jaffa
 		Owner: Neutral
 		Location: 121,80
-	Actor162: plant_jaffa_3
+	Actor162: plant_jaffa
 		Owner: Neutral
 		Location: 124,84
-	Actor163: plant_jaffa_3
+	Actor163: plant_jaffa
 		Owner: Neutral
 		Location: 119,90
-	Actor164: plant_jaffa_3
+	Actor164: plant_jaffa
 		Owner: Neutral
 		Location: 125,95
-	Actor165: plant_jaffa_2
+	Actor165: plant_jaffa
 		Owner: Neutral
 		Location: 127,89
-	Actor166: plant_jaffa_2
+	Actor166: plant_jaffa
 		Owner: Neutral
 		Location: 115,95
-	Actor167: plant_jaffa_1
+	Actor167: plant_jaffa
 		Owner: Neutral
 		Location: 119,85
-	Actor168: plant_jaffa_2
+	Actor168: plant_jaffa
 		Owner: Neutral
 		Location: 120,119
-	Actor169: plant_jaffa_2
+	Actor169: plant_jaffa
 		Owner: Neutral
 		Location: 126,114
-	Actor170: plant_jaffa_3
+	Actor170: plant_jaffa
 		Owner: Neutral
 		Location: 126,121
-	Actor171: plant_jaffa_3
+	Actor171: plant_jaffa
 		Owner: Neutral
 		Location: 125,119
-	Actor172: plant_jaffa_2
+	Actor172: plant_jaffa
 		Owner: Neutral
 		Location: 126,126
-	Actor173: plant_jaffa_2
+	Actor173: plant_jaffa
 		Owner: Neutral
 		Location: 121,123
-	Actor174: plant_jaffa_1
+	Actor174: plant_jaffa
 		Owner: Neutral
 		Location: 118,123
-	Actor175: plant_jaffa_1
+	Actor175: plant_jaffa
 		Owner: Neutral
 		Location: 111,127
-	Actor176: plant_jaffa_3
+	Actor176: plant_jaffa
 		Owner: Neutral
 		Location: 104,128
-	Actor177: plant_jaffa_3
+	Actor177: plant_jaffa
 		Owner: Neutral
 		Location: 71,128
-	Actor178: plant_jelly_bean_2
+	Actor178: plant_jelly_bean
 		Owner: Neutral
 		Location: 82,114
-	Actor179: plant_jelly_bean_2
+	Actor179: plant_jelly_bean
 		Owner: Neutral
 		Location: 79,116
-	Actor180: plant_jelly_bean_3
+	Actor180: plant_jelly_bean
 		Owner: Neutral
 		Location: 79,113
-	Actor181: plant_jelly_bean_3
+	Actor181: plant_jelly_bean
 		Owner: Neutral
 		Location: 82,117
-	Actor182: plant_jelly_bean_3
+	Actor182: plant_jelly_bean
 		Owner: Neutral
 		Location: 84,113
-	Actor183: plant_smarty_2
+	Actor183: plant_smarty
 		Owner: Neutral
 		Location: 46,121
-	Actor184: plant_smarty_2
+	Actor184: plant_smarty
 		Owner: Neutral
 		Location: 54,126
-	Actor185: plant_smarty_2
+	Actor185: plant_smarty
 		Owner: Neutral
 		Location: 56,119
-	Actor186: plant_smarty_1
+	Actor186: plant_smarty
 		Owner: Neutral
 		Location: 49,124
-	Actor187: plant_smarty_1
+	Actor187: plant_smarty
 		Owner: Neutral
 		Location: 43,127
-	Actor188: plant_smarty_1
+	Actor188: plant_smarty
 		Owner: Neutral
 		Location: 46,118
-	Actor189: plant_smarty_1
+	Actor189: plant_smarty
 		Owner: Neutral
 		Location: 53,123
-	Actor190: plant_smarty_2
+	Actor190: plant_smarty
 		Owner: Neutral
 		Location: 52,117
-	Actor191: plant_jelly_bean_3
+	Actor191: plant_jelly_bean
 		Owner: Neutral
 		Location: 61,122
-	Actor192: plant_jelly_bean_3
+	Actor192: plant_jelly_bean
 		Owner: Neutral
 		Location: 63,118
-	Actor193: plant_jelly_bean_3
+	Actor193: plant_jelly_bean
 		Owner: Neutral
 		Location: 62,103
-	Actor194: plant_jelly_bean_3
+	Actor194: plant_jelly_bean
 		Owner: Neutral
 		Location: 67,91
-	Actor195: plant_jelly_bean_3
+	Actor195: plant_jelly_bean
 		Owner: Neutral
 		Location: 72,85
-	Actor196: plant_jelly_bean_2
+	Actor196: plant_jelly_bean
 		Owner: Neutral
 		Location: 73,98
-	Actor197: plant_jelly_bean_2
+	Actor197: plant_jelly_bean
 		Owner: Neutral
 		Location: 82,92
-	Actor198: plant_jelly_bean_2
+	Actor198: plant_jelly_bean
 		Owner: Neutral
 		Location: 79,82
-	Actor199: plant_jelly_bean_2
+	Actor199: plant_jelly_bean
 		Owner: Neutral
 		Location: 66,83
-	Actor200: plant_jelly_bean_2
+	Actor200: plant_jelly_bean
 		Owner: Neutral
 		Location: 62,96
-	Actor201: plant_jelly_bean_1
+	Actor201: plant_jelly_bean
 		Owner: Neutral
 		Location: 89,96
-	Actor202: plant_jelly_bean_1
+	Actor202: plant_jelly_bean
 		Owner: Neutral
 		Location: 99,73
-	Actor203: plant_jelly_bean_1
+	Actor203: plant_jelly_bean
 		Owner: Neutral
 		Location: 111,81
-	Actor204: plant_jelly_bean_1
+	Actor204: plant_jelly_bean
 		Owner: Neutral
 		Location: 91,81
-	Actor205: plant_jelly_bean_1
+	Actor205: plant_jelly_bean
 		Owner: Neutral
 		Location: 116,67
-	Actor206: plant_smarty_2
+	Actor206: plant_smarty
 		Owner: Neutral
 		Location: 106,52
-	Actor207: plant_smarty_2
+	Actor207: plant_smarty
 		Owner: Neutral
 		Location: 100,38
-	Actor208: plant_smarty_2
+	Actor208: plant_smarty
 		Owner: Neutral
 		Location: 77,38
-	Actor209: plant_jaffa_2
+	Actor209: plant_jaffa
 		Owner: Neutral
 		Location: 67,47
-	Actor210: plant_jaffa_2
+	Actor210: plant_jaffa
 		Owner: Neutral
 		Location: 68,42
-	Actor211: plant_smarty_3
+	Actor211: plant_smarty
 		Owner: Neutral
 		Location: 68,52
-	Actor212: plant_smarty_3
+	Actor212: plant_smarty
 		Owner: Neutral
 		Location: 71,48
-	Actor213: plant_smarty_3
+	Actor213: plant_smarty
 		Owner: Neutral
 		Location: 71,39
-	Actor214: plant_smarty_3
+	Actor214: plant_smarty
 		Owner: Neutral
 		Location: 60,40
-	Actor215: plant_smarty_3
+	Actor215: plant_smarty
 		Owner: Neutral
 		Location: 53,44
-	Actor216: plant_smarty_2
+	Actor216: plant_smarty
 		Owner: Neutral
 		Location: 60,59
-	Actor217: plant_smarty_2
+	Actor217: plant_smarty
 		Owner: Neutral
 		Location: 70,81
-	Actor218: plant_smarty_2
+	Actor218: plant_smarty
 		Owner: Neutral
 		Location: 38,89
-	Actor219: plant_smarty_2
+	Actor219: plant_smarty
 		Owner: Neutral
 		Location: 38,52
-	Actor220: plant_smarty_2
+	Actor220: plant_smarty
 		Owner: Neutral
 		Location: 47,48
-	Actor221: plant_smarty_2
+	Actor221: plant_smarty
 		Owner: Neutral
 		Location: 39,11
-	Actor222: plant_smarty_1
+	Actor222: plant_smarty
 		Owner: Neutral
 		Location: 34,18
-	Actor223: plant_smarty_1
+	Actor223: plant_smarty
 		Owner: Neutral
 		Location: 11,19
-	Actor224: plant_smarty_1
+	Actor224: plant_smarty
 		Owner: Neutral
 		Location: 4,32
-	Actor225: plant_smarty_1
+	Actor225: plant_smarty
 		Owner: Neutral
 		Location: 110,18
-	Actor226: plant_smarty_2
+	Actor226: plant_smarty
 		Owner: Neutral
 		Location: 97,102
-	Actor227: plant_smarty_2
+	Actor227: plant_smarty
 		Owner: Neutral
 		Location: 106,97

@@ -113,630 +113,630 @@ Actors:
 	Actor21: mpspawn
 		Owner: Creeps
 		Location: 87,107
-	Actor29: plant_clover_2
+	Actor29: plant_clover
 		Owner: Neutral
 		Location: 66,95
-	Actor30: plant_clover_2
+	Actor30: plant_clover
 		Owner: Neutral
 		Location: 79,77
-	Actor31: plant_clover_2
+	Actor31: plant_clover
 		Owner: Neutral
 		Location: 78,107
-	Actor32: plant_clover_3
+	Actor32: plant_clover
 		Owner: Neutral
 		Location: 80,90
-	Actor33: plant_clover_3
+	Actor33: plant_clover
 		Owner: Neutral
 		Location: 47,76
-	Actor34: plant_clover_3
+	Actor34: plant_clover
 		Owner: Neutral
 		Location: 34,89
-	Actor35: plant_clover_3
+	Actor35: plant_clover
 		Owner: Neutral
 		Location: 46,83
-	Actor36: plant_clover_1
+	Actor36: plant_clover
 		Owner: Neutral
 		Location: 58,63
-	Actor37: plant_clover_1
+	Actor37: plant_clover
 		Owner: Neutral
 		Location: 58,44
-	Actor38: plant_clover_1
+	Actor38: plant_clover
 		Owner: Neutral
 		Location: 46,40
-	Actor39: plant_clover_1
+	Actor39: plant_clover
 		Owner: Neutral
 		Location: 35,53
-	Actor40: plant_clover_3
+	Actor40: plant_clover
 		Owner: Neutral
 		Location: 26,61
-	Actor41: plant_clover_3
+	Actor41: plant_clover
 		Owner: Neutral
 		Location: 11,77
-	Actor42: plant_clover_3
+	Actor42: plant_clover
 		Owner: Neutral
 		Location: 11,88
-	Actor43: plant_clover_3
+	Actor43: plant_clover
 		Owner: Neutral
 		Location: 21,82
-	Actor44: plant_clover_1
+	Actor44: plant_clover
 		Owner: Neutral
 		Location: 8,55
-	Actor45: plant_clover_1
+	Actor45: plant_clover
 		Owner: Neutral
 		Location: 24,51
-	Actor46: plant_clover_1
+	Actor46: plant_clover
 		Owner: Neutral
 		Location: 10,29
-	Actor47: plant_clover_1
+	Actor47: plant_clover
 		Owner: Neutral
 		Location: 27,18
-	Actor48: plant_clover_2
+	Actor48: plant_clover
 		Owner: Neutral
 		Location: 21,31
-	Actor49: plant_clover_2
+	Actor49: plant_clover
 		Owner: Neutral
 		Location: 39,21
-	Actor50: plant_clover_2
+	Actor50: plant_clover
 		Owner: Neutral
 		Location: 34,10
-	Actor51: plant_clover_2
+	Actor51: plant_clover
 		Owner: Neutral
 		Location: 12,4
-	Actor52: plant_clover_2
+	Actor52: plant_clover
 		Owner: Neutral
 		Location: 5,13
-	Actor53: plant_clover_3
+	Actor53: plant_clover
 		Owner: Neutral
 		Location: 75,15
-	Actor54: plant_clover_3
+	Actor54: plant_clover
 		Owner: Neutral
 		Location: 59,7
-	Actor55: plant_clover_3
+	Actor55: plant_clover
 		Owner: Neutral
 		Location: 81,10
-	Actor56: plant_clover_1
+	Actor56: plant_clover
 		Owner: Neutral
 		Location: 83,19
-	Actor57: plant_clover_1
+	Actor57: plant_clover
 		Owner: Neutral
 		Location: 75,10
-	Actor58: plant_clover_1
+	Actor58: plant_clover
 		Owner: Neutral
 		Location: 68,15
-	Actor59: plant_clover_1
+	Actor59: plant_clover
 		Owner: Neutral
 		Location: 124,87
-	Actor60: plant_clover_1
+	Actor60: plant_clover
 		Owner: Neutral
 		Location: 104,73
-	Actor61: plant_clover_1
+	Actor61: plant_clover
 		Owner: Neutral
 		Location: 115,64
-	Actor62: plant_clover_1
+	Actor62: plant_clover
 		Owner: Neutral
 		Location: 110,79
-	Actor63: plant_clover_2
+	Actor63: plant_clover
 		Owner: Neutral
 		Location: 108,100
-	Actor64: plant_clover_2
+	Actor64: plant_clover
 		Owner: Neutral
 		Location: 118,107
-	Actor65: plant_clover_2
+	Actor65: plant_clover
 		Owner: Neutral
 		Location: 107,125
-	Actor66: plant_clover_2
+	Actor66: plant_clover
 		Owner: Neutral
 		Location: 98,116
-	Actor67: plant_clover_2
+	Actor67: plant_clover
 		Owner: Neutral
 		Location: 81,117
-	Actor68: plant_clover_1
+	Actor68: plant_clover
 		Owner: Neutral
 		Location: 117,127
-	Actor69: plant_clover_1
+	Actor69: plant_clover
 		Owner: Neutral
 		Location: 126,113
-	Actor70: plant_clover_1
+	Actor70: plant_clover
 		Owner: Neutral
 		Location: 102,68
-	Actor71: plant_clover_1
+	Actor71: plant_clover
 		Owner: Neutral
 		Location: 91,52
-	Actor72: plant_clover_1
+	Actor72: plant_clover
 		Owner: Neutral
 		Location: 80,62
-	Actor73: plant_clover_2
+	Actor73: plant_clover
 		Owner: Neutral
 		Location: 125,52
-	Actor74: plant_clover_2
+	Actor74: plant_clover
 		Owner: Neutral
 		Location: 126,44
-	Actor75: plant_clover_2
+	Actor75: plant_clover
 		Owner: Neutral
 		Location: 116,39
-	Actor76: plant_clover_2
+	Actor76: plant_clover
 		Owner: Neutral
 		Location: 118,52
-	Actor77: plant_clover_1
+	Actor77: plant_clover
 		Owner: Neutral
 		Location: 120,45
-	Actor78: plant_clover_1
+	Actor78: plant_clover
 		Owner: Neutral
 		Location: 124,40
-	Actor79: plant_clover_3
+	Actor79: plant_clover
 		Owner: Neutral
 		Location: 71,46
-	Actor80: plant_clover_3
+	Actor80: plant_clover
 		Owner: Neutral
 		Location: 63,51
-	Actor81: plant_clover_1
+	Actor81: plant_clover
 		Owner: Neutral
 		Location: 67,44
-	Actor82: plant_clover_2
+	Actor82: plant_clover
 		Owner: Neutral
 		Location: 66,39
-	Actor83: plant_clover_2
+	Actor83: plant_clover
 		Owner: Neutral
 		Location: 42,95
-	Actor84: plant_clover_2
+	Actor84: plant_clover
 		Owner: Neutral
 		Location: 39,86
-	Actor85: plant_clover_2
+	Actor85: plant_clover
 		Owner: Neutral
 		Location: 23,69
-	Actor86: plant_clover_2
+	Actor86: plant_clover
 		Owner: Neutral
 		Location: 5,43
-	Actor87: plant_moon_flower_2
+	Actor87: plant_moon_flower
 		Owner: Neutral
 		Location: 26,106
-	Actor88: plant_moon_flower_2
+	Actor88: plant_moon_flower
 		Owner: Neutral
 		Location: 50,124
-	Actor89: plant_moon_flower_1
+	Actor89: plant_moon_flower
 		Owner: Neutral
 		Location: 40,110
-	Actor90: plant_moon_flower_1
+	Actor90: plant_moon_flower
 		Owner: Neutral
 		Location: 28,120
-	Actor91: plant_moon_flower_1
+	Actor91: plant_moon_flower
 		Owner: Neutral
 		Location: 8,108
-	Actor92: plant_moon_flower_1
+	Actor92: plant_moon_flower
 		Owner: Neutral
 		Location: 40,122
-	Actor93: plant_moon_flower_3
+	Actor93: plant_moon_flower
 		Owner: Neutral
 		Location: 20,118
-	Actor94: plant_moon_flower_3
+	Actor94: plant_moon_flower
 		Owner: Neutral
 		Location: 17,108
-	Actor95: plant_moon_flower_3
+	Actor95: plant_moon_flower
 		Owner: Neutral
 		Location: 16,123
-	Actor96: plant_moon_flower_2
+	Actor96: plant_moon_flower
 		Owner: Neutral
 		Location: 25,126
-	Actor97: plant_moon_flower_2
+	Actor97: plant_moon_flower
 		Owner: Neutral
 		Location: 31,117
-	Actor98: plant_moon_flower_2
+	Actor98: plant_moon_flower
 		Owner: Neutral
 		Location: 28,113
-	Actor99: plant_moon_flower_2
+	Actor99: plant_moon_flower
 		Owner: Neutral
 		Location: 7,120
-	Actor100: plant_moon_flower_2
+	Actor100: plant_moon_flower
 		Owner: Neutral
 		Location: 10,102
-	Actor101: plant_moon_flower_1
+	Actor101: plant_moon_flower
 		Owner: Neutral
 		Location: 35,106
-	Actor102: plant_moon_flower_1
+	Actor102: plant_moon_flower
 		Owner: Neutral
 		Location: 45,110
-	Actor103: plant_moon_flower_1
+	Actor103: plant_moon_flower
 		Owner: Neutral
 		Location: 38,102
-	Actor104: plant_cherry_flower_2
+	Actor104: plant_cherry_flower
 		Owner: Neutral
 		Location: 45,99
-	Actor105: plant_cherry_flower_2
+	Actor105: plant_cherry_flower
 		Owner: Neutral
 		Location: 57,106
-	Actor106: plant_cherry_flower_2
+	Actor106: plant_cherry_flower
 		Owner: Neutral
 		Location: 56,112
-	Actor107: plant_cherry_flower_3
+	Actor107: plant_cherry_flower
 		Owner: Neutral
 		Location: 48,107
-	Actor108: plant_cherry_flower_3
+	Actor108: plant_cherry_flower
 		Owner: Neutral
 		Location: 58,118
-	Actor109: plant_cherry_flower_3
+	Actor109: plant_cherry_flower
 		Owner: Neutral
 		Location: 65,124
-	Actor110: plant_cherry_flower_3
+	Actor110: plant_cherry_flower
 		Owner: Neutral
 		Location: 54,121
-	Actor111: plant_cherry_flower_1
+	Actor111: plant_cherry_flower
 		Owner: Neutral
 		Location: 52,113
-	Actor112: plant_cherry_flower_1
+	Actor112: plant_cherry_flower
 		Owner: Neutral
 		Location: 41,101
-	Actor113: plant_cherry_flower_1
+	Actor113: plant_cherry_flower
 		Owner: Neutral
 		Location: 35,97
-	Actor114: plant_cherry_flower_1
+	Actor114: plant_cherry_flower
 		Owner: Neutral
 		Location: 30,101
-	Actor115: plant_cherry_flower_2
+	Actor115: plant_cherry_flower
 		Owner: Neutral
 		Location: 28,94
-	Actor116: plant_cherry_flower_2
+	Actor116: plant_cherry_flower
 		Owner: Neutral
 		Location: 24,99
-	Actor117: plant_cherry_flower_2
+	Actor117: plant_cherry_flower
 		Owner: Neutral
 		Location: 13,97
-	Actor118: plant_cherry_flower_3
+	Actor118: plant_cherry_flower
 		Owner: Neutral
 		Location: 19,101
-	Actor119: plant_cherry_flower_3
+	Actor119: plant_cherry_flower
 		Owner: Neutral
 		Location: 12,96
-	Actor120: plant_cherry_flower_1
+	Actor120: plant_cherry_flower
 		Owner: Neutral
 		Location: 8,98
-	Actor121: plant_cherry_flower_1
+	Actor121: plant_cherry_flower
 		Owner: Neutral
 		Location: 5,94
-	Actor122: plant_cherry_flower_1
+	Actor122: plant_cherry_flower
 		Owner: Neutral
 		Location: 3,101
-	Actor123: plant_cherry_flower_2
+	Actor123: plant_cherry_flower
 		Owner: Neutral
 		Location: 21,96
-	Actor124: plant_moon_flower_2
+	Actor124: plant_moon_flower
 		Owner: Neutral
 		Location: 14,118
-	Actor125: plant_moon_flower_2
+	Actor125: plant_moon_flower
 		Owner: Neutral
 		Location: 21,112
-	Actor126: plant_moon_flower_1
+	Actor126: plant_moon_flower
 		Owner: Neutral
 		Location: 37,126
-	Actor127: plant_moon_flower_1
+	Actor127: plant_moon_flower
 		Owner: Neutral
 		Location: 8,126
-	Actor128: plant_moon_flower_1
+	Actor128: plant_moon_flower
 		Owner: Neutral
 		Location: 3,113
-	Actor129: plant_moon_mushroom_2
+	Actor129: plant_moon_mushroom
 		Owner: Neutral
 		Location: 73,100
-	Actor130: plant_moon_mushroom_1
+	Actor130: plant_moon_mushroom
 		Owner: Neutral
 		Location: 91,99
-	Actor131: plant_moon_mushroom_1
+	Actor131: plant_moon_mushroom
 		Owner: Neutral
 		Location: 86,78
-	Actor132: plant_moon_mushroom_3
+	Actor132: plant_moon_mushroom
 		Owner: Neutral
 		Location: 72,119
-	Actor133: plant_moon_mushroom_3
+	Actor133: plant_moon_mushroom
 		Owner: Neutral
 		Location: 99,124
-	Actor134: plant_moon_mushroom_1
+	Actor134: plant_moon_mushroom
 		Owner: Neutral
 		Location: 115,115
-	Actor135: plant_moon_mushroom_1
+	Actor135: plant_moon_mushroom
 		Owner: Neutral
 		Location: 125,103
-	Actor136: plant_moon_mushroom_1
+	Actor136: plant_moon_mushroom
 		Owner: Neutral
 		Location: 111,97
-	Actor137: plant_moon_mushroom_1
+	Actor137: plant_moon_mushroom
 		Owner: Neutral
 		Location: 48,22
-	Actor138: plant_moon_mushroom_1
+	Actor138: plant_moon_mushroom
 		Owner: Neutral
 		Location: 42,10
-	Actor139: plant_moon_mushroom_2
+	Actor139: plant_moon_mushroom
 		Owner: Neutral
 		Location: 58,35
-	Actor140: plant_moon_mushroom_2
+	Actor140: plant_moon_mushroom
 		Owner: Neutral
 		Location: 71,28
-	Actor141: plant_moon_mushroom_2
+	Actor141: plant_moon_mushroom
 		Owner: Neutral
 		Location: 63,12
-	Actor142: plant_moon_mushroom_2
+	Actor142: plant_moon_mushroom
 		Owner: Neutral
 		Location: 54,7
-	Actor143: plant_moon_mushroom_2
+	Actor143: plant_moon_mushroom
 		Owner: Neutral
 		Location: 82,11
-	Actor144: plant_moon_mushroom_2
+	Actor144: plant_moon_mushroom
 		Owner: Neutral
 		Location: 78,23
-	Actor145: plant_moon_mushroom_1
+	Actor145: plant_moon_mushroom
 		Owner: Neutral
 		Location: 98,10
-	Actor146: plant_moon_mushroom_1
+	Actor146: plant_moon_mushroom
 		Owner: Neutral
 		Location: 101,8
-	Actor147: plant_moon_mushroom_1
+	Actor147: plant_moon_mushroom
 		Owner: Neutral
 		Location: 96,4
-	Actor148: plant_moon_mushroom_2
+	Actor148: plant_moon_mushroom
 		Owner: Neutral
 		Location: 100,7
-	Actor149: plant_moon_mushroom_2
+	Actor149: plant_moon_mushroom
 		Owner: Neutral
 		Location: 103,5
-	Actor150: plant_moon_mushroom_3
+	Actor150: plant_moon_mushroom
 		Owner: Neutral
 		Location: 128,38
-	Actor151: plant_moon_mushroom_3
+	Actor151: plant_moon_mushroom
 		Owner: Neutral
 		Location: 113,36
-	Actor152: plant_moon_mushroom_1
+	Actor152: plant_moon_mushroom
 		Owner: Neutral
 		Location: 35,48
-	Actor153: plant_moon_mushroom_1
+	Actor153: plant_moon_mushroom
 		Owner: Neutral
 		Location: 10,35
-	Actor154: plant_moon_mushroom_1
+	Actor154: plant_moon_mushroom
 		Owner: Neutral
 		Location: 3,55
-	Actor155: plant_moon_mushroom_3
+	Actor155: plant_moon_mushroom
 		Owner: Neutral
 		Location: 29,65
-	Actor156: plant_moon_mushroom_3
+	Actor156: plant_moon_mushroom
 		Owner: Neutral
 		Location: 16,76
-	Actor157: plant_moon_mushroom_1
+	Actor157: plant_moon_mushroom
 		Owner: Neutral
 		Location: 3,81
-	Actor158: plant_moon_mushroom_1
+	Actor158: plant_moon_mushroom
 		Owner: Neutral
 		Location: 11,92
-	Actor159: plant_moon_mushroom_2
+	Actor159: plant_moon_mushroom
 		Owner: Neutral
 		Location: 59,83
-	Actor160: plant_moon_mushroom_2
+	Actor160: plant_moon_mushroom
 		Owner: Neutral
 		Location: 48,72
-	Actor161: plant_moon_mushroom_2
+	Actor161: plant_moon_mushroom
 		Owner: Neutral
 		Location: 41,79
-	Actor162: plant_moon_mushroom_1
+	Actor162: plant_moon_mushroom
 		Owner: Neutral
 		Location: 59,102
-	Actor163: plant_moon_mushroom_1
+	Actor163: plant_moon_mushroom
 		Owner: Neutral
 		Location: 73,57
-	Actor164: plant_moon_mushroom_3
+	Actor164: plant_moon_mushroom
 		Owner: Neutral
 		Location: 87,55
-	Actor165: plant_moon_mushroom_3
+	Actor165: plant_moon_mushroom
 		Owner: Neutral
 		Location: 102,56
-	Actor166: plant_moon_mushroom_2
+	Actor166: plant_moon_mushroom
 		Owner: Neutral
 		Location: 96,59
-	Actor167: plant_moon_mushroom_2
+	Actor167: plant_moon_mushroom
 		Owner: Neutral
 		Location: 112,70
-	Actor168: plant_moon_mushroom_2
+	Actor168: plant_moon_mushroom
 		Owner: Neutral
 		Location: 102,79
-	Actor169: plant_moon_mushroom_2
+	Actor169: plant_moon_mushroom
 		Owner: Neutral
 		Location: 53,46
-	Actor170: plant_moon_mushroom_3
+	Actor170: plant_moon_mushroom
 		Owner: Neutral
 		Location: 31,23
-	Actor171: plant_moon_mushroom_3
+	Actor171: plant_moon_mushroom
 		Owner: Neutral
 		Location: 24,10
-	Actor172: plant_moon_mushroom_3
+	Actor172: plant_moon_mushroom
 		Owner: Neutral
 		Location: 128,63
-	Actor173: plant_cherry_flower_2
+	Actor173: plant_cherry_flower
 		Owner: Neutral
 		Location: 95,33
-	Actor174: plant_cherry_flower_2
+	Actor174: plant_cherry_flower
 		Owner: Neutral
 		Location: 95,22
-	Actor175: plant_cherry_flower_2
+	Actor175: plant_cherry_flower
 		Owner: Neutral
 		Location: 88,37
-	Actor176: plant_cherry_flower_3
+	Actor176: plant_cherry_flower
 		Owner: Neutral
 		Location: 108,44
-	Actor177: plant_cherry_flower_3
+	Actor177: plant_cherry_flower
 		Owner: Neutral
 		Location: 103,36
-	Actor178: plant_cherry_flower_3
+	Actor178: plant_cherry_flower
 		Owner: Neutral
 		Location: 87,44
-	Actor179: plant_cherry_flower_3
+	Actor179: plant_cherry_flower
 		Owner: Neutral
 		Location: 89,21
-	Actor180: plant_cherry_flower_3
+	Actor180: plant_cherry_flower
 		Owner: Neutral
 		Location: 78,47
-	Actor181: plant_cherry_flower_2
+	Actor181: plant_cherry_flower
 		Owner: Neutral
 		Location: 125,31
-	Actor182: plant_cherry_flower_2
+	Actor182: plant_cherry_flower
 		Owner: Neutral
 		Location: 126,28
-	Actor183: plant_cherry_flower_2
+	Actor183: plant_cherry_flower
 		Owner: Neutral
 		Location: 97,15
-	Actor184: plant_cherry_flower_2
+	Actor184: plant_cherry_flower
 		Owner: Neutral
 		Location: 90,7
-	Actor185: plant_cherry_flower_3
+	Actor185: plant_cherry_flower
 		Owner: Neutral
 		Location: 85,48
-	Actor186: plant_cherry_flower_3
+	Actor186: plant_cherry_flower
 		Owner: Neutral
 		Location: 73,52
-	Actor187: plant_cherry_flower_1
+	Actor187: plant_cherry_flower
 		Owner: Neutral
 		Location: 78,43
-	Actor188: plant_cherry_flower_1
+	Actor188: plant_cherry_flower
 		Owner: Neutral
 		Location: 89,32
-	Actor189: plant_cherry_flower_1
+	Actor189: plant_cherry_flower
 		Owner: Neutral
 		Location: 88,24
-	Actor190: plant_cherry_flower_2
+	Actor190: plant_cherry_flower
 		Owner: Neutral
 		Location: 107,44
-	Actor191: plant_cherry_flower_2
+	Actor191: plant_cherry_flower
 		Owner: Neutral
 		Location: 96,37
-	Actor192: plant_cherry_flower_2
+	Actor192: plant_cherry_flower
 		Owner: Neutral
 		Location: 92,45
-	Actor193: plant_cherry_flower_2
+	Actor193: plant_cherry_flower
 		Owner: Neutral
 		Location: 103,50
-	Actor194: plant_moon_flower_2
+	Actor194: plant_moon_flower
 		Owner: Neutral
 		Location: 118,25
-	Actor195: plant_moon_flower_2
+	Actor195: plant_moon_flower
 		Owner: Neutral
 		Location: 123,17
-	Actor196: plant_moon_flower_2
+	Actor196: plant_moon_flower
 		Owner: Neutral
 		Location: 112,22
-	Actor197: plant_moon_flower_1
+	Actor197: plant_moon_flower
 		Owner: Neutral
 		Location: 108,21
-	Actor198: plant_moon_flower_1
+	Actor198: plant_moon_flower
 		Owner: Neutral
 		Location: 104,25
-	Actor199: plant_moon_flower_1
+	Actor199: plant_moon_flower
 		Owner: Neutral
 		Location: 110,14
-	Actor200: plant_moon_flower_3
+	Actor200: plant_moon_flower
 		Owner: Neutral
 		Location: 127,19
-	Actor201: plant_moon_flower_3
+	Actor201: plant_moon_flower
 		Owner: Neutral
 		Location: 129,13
-	Actor202: plant_moon_flower_3
+	Actor202: plant_moon_flower
 		Owner: Neutral
 		Location: 122,6
-	Actor203: plant_moon_flower_2
+	Actor203: plant_moon_flower
 		Owner: Neutral
 		Location: 124,14
-	Actor204: plant_moon_flower_2
+	Actor204: plant_moon_flower
 		Owner: Neutral
 		Location: 125,6
-	Actor205: plant_moon_flower_2
+	Actor205: plant_moon_flower
 		Owner: Neutral
 		Location: 120,5
-	Actor206: plant_moon_flower_2
+	Actor206: plant_moon_flower
 		Owner: Neutral
 		Location: 114,15
-	Actor207: plant_moon_flower_2
+	Actor207: plant_moon_flower
 		Owner: Neutral
 		Location: 109,3
-	Actor208: plant_moon_flower_2
+	Actor208: plant_moon_flower
 		Owner: Neutral
 		Location: 102,17
-	Actor209: plant_moon_flower_2
+	Actor209: plant_moon_flower
 		Owner: Neutral
 		Location: 100,22
-	Actor210: plant_moon_flower_2
+	Actor210: plant_moon_flower
 		Owner: Neutral
 		Location: 115,7
-	Actor211: plant_moon_flower_1
+	Actor211: plant_moon_flower
 		Owner: Neutral
 		Location: 114,29
-	Actor212: plant_moon_flower_1
+	Actor212: plant_moon_flower
 		Owner: Neutral
 		Location: 114,10
-	Actor213: plant_moon_flower_1
+	Actor213: plant_moon_flower
 		Owner: Neutral
 		Location: 123,24
-	Actor214: plant_moon_mushroom_1
+	Actor214: plant_moon_mushroom
 		Owner: Neutral
 		Location: 103,40
-	Actor215: plant_moon_mushroom_1
+	Actor215: plant_moon_mushroom
 		Owner: Neutral
 		Location: 100,32
-	Actor216: plant_moon_mushroom_1
+	Actor216: plant_moon_mushroom
 		Owner: Neutral
 		Location: 90,41
-	Actor217: plant_moon_mushroom_2
+	Actor217: plant_moon_mushroom
 		Owner: Neutral
 		Location: 92,27
-	Actor218: plant_moon_mushroom_2
+	Actor218: plant_moon_mushroom
 		Owner: Neutral
 		Location: 106,32
-	Actor219: plant_moon_mushroom_2
+	Actor219: plant_moon_mushroom
 		Owner: Neutral
 		Location: 84,44
-	Actor220: plant_moon_mushroom_2
+	Actor220: plant_moon_mushroom
 		Owner: Neutral
 		Location: 89,16
-	Actor221: plant_moon_mushroom_1
+	Actor221: plant_moon_mushroom
 		Owner: Neutral
 		Location: 120,31
-	Actor222: plant_moon_mushroom_2
+	Actor222: plant_moon_mushroom
 		Owner: Neutral
 		Location: 114,46
-	Actor223: plant_cherry_flower_2
+	Actor223: plant_cherry_flower
 		Owner: Neutral
 		Location: 86,125
-	Actor224: plant_cherry_flower_2
+	Actor224: plant_cherry_flower
 		Owner: Neutral
 		Location: 89,128
-	Actor225: plant_cherry_flower_3
+	Actor225: plant_cherry_flower
 		Owner: Neutral
 		Location: 84,128
-	Actor226: plant_cherry_flower_3
+	Actor226: plant_cherry_flower
 		Owner: Neutral
 		Location: 88,122
-	Actor227: plant_moon_flower_2
+	Actor227: plant_moon_flower
 		Owner: Neutral
 		Location: 94,125
-	Actor228: plant_moon_flower_2
+	Actor228: plant_moon_flower
 		Owner: Neutral
 		Location: 87,119
-	Actor229: plant_moon_flower_3
+	Actor229: plant_moon_flower
 		Owner: Neutral
 		Location: 82,120
-	Actor230: plant_moon_flower_3
+	Actor230: plant_moon_flower
 		Owner: Neutral
 		Location: 79,125
-	Actor231: plant_moon_flower_1
+	Actor231: plant_moon_flower
 		Owner: Neutral
 		Location: 79,122
-	Actor232: plant_moon_flower_1
+	Actor232: plant_moon_flower
 		Owner: Neutral
 		Location: 70,126
-	Actor233: plant_moon_flower_1
+	Actor233: plant_moon_flower
 		Owner: Neutral
 		Location: 104,110
-	Actor234: plant_moon_flower_1
+	Actor234: plant_moon_flower
 		Owner: Neutral
 		Location: 107,115
-	Actor235: plant_moon_flower_2
+	Actor235: plant_moon_flower
 		Owner: Neutral
 		Location: 108,112
-	Actor236: plant_moon_flower_1
+	Actor236: plant_moon_flower
 		Owner: Neutral
 		Location: 126,106
-	Actor237: plant_moon_flower_3
+	Actor237: plant_moon_flower
 		Owner: Neutral
 		Location: 27,4

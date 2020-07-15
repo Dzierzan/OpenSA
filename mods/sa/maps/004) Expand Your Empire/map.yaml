@@ -40,196 +40,196 @@ Players:
 		Enemies: Creeps, Neutral
 
 Actors:
-	Actor0: plant_serata_3
+	Actor0: plant_serata
 		Owner: Neutral
 		Location: 29,33
-	Actor1: plant_serata_2
+	Actor1: plant_serata
 		Owner: Neutral
 		Location: 21,28
-	Actor2: plant_desert_grass_2
+	Actor2: plant_desert_grass
 		Owner: Neutral
 		Location: 13,26
-	Actor3: plant_desert_grass_3
+	Actor3: plant_desert_grass
 		Owner: Neutral
 		Location: 9,25
-	Actor4: plant_desert_grass_1
+	Actor4: plant_desert_grass
 		Owner: Neutral
 		Location: 6,22
 	Actor5: ants_colony
 		Owner: Creeps
 		Location: 12,18
 		TurretFacing: 126
-	Actor6: plant_gumnut_1
+	Actor6: plant_gumnut
 		Owner: Neutral
 		Location: 25,13
-	Actor7: plant_serata_1
+	Actor7: plant_serata
 		Owner: Neutral
 		Location: 26,10
-	Actor8: plant_serata_3
+	Actor8: plant_serata
 		Owner: Neutral
 		Location: 4,5
-	Actor9: plant_desert_flower_1
+	Actor9: plant_desert_flower
 		Owner: Neutral
 		Location: 13,9
-	Actor10: plant_desert_flower_2
+	Actor10: plant_desert_flower
 		Owner: Neutral
 		Location: 16,7
-	Actor11: plant_gumnut_2
+	Actor11: plant_gumnut
 		Owner: Neutral
 		Location: 12,5
-	Actor12: plant_desert_flower_3
+	Actor12: plant_desert_flower
 		Owner: Neutral
 		Location: 13,15
-	Actor13: plant_gumnut_3
+	Actor13: plant_gumnut
 		Owner: Neutral
 		Location: 38,4
-	Actor14: plant_desert_grass_3
+	Actor14: plant_desert_grass
 		Owner: Neutral
 		Location: 52,8
-	Actor15: plant_serata_3
+	Actor15: plant_serata
 		Owner: Neutral
 		Location: 51,13
-	Actor16: plant_serata_2
+	Actor16: plant_serata
 		Owner: Neutral
 		Location: 57,11
-	Actor17: plant_gumnut_1
+	Actor17: plant_gumnut
 		Owner: Neutral
 		Location: 62,3
-	Actor18: plant_gumnut_2
+	Actor18: plant_gumnut
 		Owner: Neutral
 		Location: 74,5
-	Actor19: plant_desert_grass_3
+	Actor19: plant_desert_grass
 		Owner: Neutral
 		Location: 71,14
-	Actor20: plant_desert_grass_2
+	Actor20: plant_desert_grass
 		Owner: Neutral
 		Location: 69,16
-	Actor21: plant_serata_3
+	Actor21: plant_serata
 		Owner: Neutral
 		Location: 77,18
-	Actor22: plant_gumnut_1
+	Actor22: plant_gumnut
 		Owner: Neutral
 		Location: 83,21
-	Actor23: plant_desert_flower_1
+	Actor23: plant_desert_flower
 		Owner: Neutral
 		Location: 83,17
-	Actor24: plant_gumnut_1
+	Actor24: plant_gumnut
 		Owner: Neutral
 		Location: 94,17
-	Actor25: plant_gumnut_2
+	Actor25: plant_gumnut
 		Owner: Neutral
 		Location: 96,18
-	Actor26: plant_desert_grass_1
+	Actor26: plant_desert_grass
 		Owner: Neutral
 		Location: 86,19
-	Actor27: plant_desert_grass_2
+	Actor27: plant_desert_grass
 		Owner: Neutral
 		Location: 88,24
-	Actor28: plant_serata_3
+	Actor28: plant_serata
 		Owner: Neutral
 		Location: 90,16
-	Actor29: plant_desert_flower_1
+	Actor29: plant_desert_flower
 		Owner: Neutral
 		Location: 95,12
-	Actor30: plant_desert_flower_2
+	Actor30: plant_desert_flower
 		Owner: Neutral
 		Location: 90,7
-	Actor31: plant_desert_flower_3
+	Actor31: plant_desert_flower
 		Owner: Neutral
 		Location: 87,5
 	Actor32: beetles_colony
 		Owner: Creeps
 		Location: 69,20
 		TurretFacing: 127
-	Actor33: plant_desert_grass_1
+	Actor33: plant_desert_grass
 		Owner: Neutral
 		Location: 78,34
-	Actor34: plant_serata_3
+	Actor34: plant_serata
 		Owner: Neutral
 		Location: 75,36
-	Actor35: plant_desert_grass_2
+	Actor35: plant_desert_grass
 		Owner: Neutral
 		Location: 73,39
-	Actor36: plant_serata_2
+	Actor36: plant_serata
 		Owner: Neutral
 		Location: 78,46
-	Actor37: plant_desert_grass_3
+	Actor37: plant_desert_grass
 		Owner: Neutral
 		Location: 62,37
-	Actor38: plant_desert_grass_2
+	Actor38: plant_desert_grass
 		Owner: Neutral
 		Location: 60,36
-	Actor39: plant_desert_grass_1
+	Actor39: plant_desert_grass
 		Owner: Neutral
 		Location: 92,54
-	Actor40: plant_desert_flower_3
+	Actor40: plant_desert_flower
 		Owner: Neutral
 		Location: 82,61
-	Actor41: plant_desert_grass_1
+	Actor41: plant_desert_grass
 		Owner: Neutral
 		Location: 66,58
-	Actor42: plant_desert_grass_1
+	Actor42: plant_desert_grass
 		Owner: Neutral
 		Location: 46,45
-	Actor43: plant_serata_3
+	Actor43: plant_serata
 		Owner: Neutral
 		Location: 50,64
-	Actor44: plant_desert_grass_3
+	Actor44: plant_desert_grass
 		Owner: Neutral
 		Location: 43,64
-	Actor45: plant_serata_1
+	Actor45: plant_serata
 		Owner: Neutral
 		Location: 46,59
-	Actor46: plant_desert_grass_3
+	Actor46: plant_desert_grass
 		Owner: Neutral
 		Location: 32,62
-	Actor47: plant_serata_3
+	Actor47: plant_serata
 		Owner: Neutral
 		Location: 20,57
-	Actor48: plant_serata_2
+	Actor48: plant_serata
 		Owner: Neutral
 		Location: 6,59
-	Actor49: plant_desert_flower_2
+	Actor49: plant_desert_flower
 		Owner: Neutral
 		Location: 14,55
-	Actor50: plant_desert_flower_3
+	Actor50: plant_desert_flower
 		Owner: Neutral
 		Location: 9,52
-	Actor51: plant_desert_flower_2
+	Actor51: plant_desert_flower
 		Owner: Neutral
 		Location: 17,47
-	Actor52: plant_desert_flower_3
+	Actor52: plant_desert_flower
 		Owner: Neutral
 		Location: 19,43
-	Actor53: plant_desert_flower_1
+	Actor53: plant_desert_flower
 		Owner: Neutral
 		Location: 18,36
-	Actor54: plant_desert_flower_2
+	Actor54: plant_desert_flower
 		Owner: Neutral
 		Location: 5,46
-	Actor55: plant_serata_1
+	Actor55: plant_serata
 		Owner: Neutral
 		Location: 6,34
-	Actor56: plant_desert_grass_1
+	Actor56: plant_desert_grass
 		Owner: Neutral
 		Location: 26,55
-	Actor57: plant_gumnut_1
+	Actor57: plant_gumnut
 		Owner: Neutral
 		Location: 29,53
-	Actor58: plant_serata_2
+	Actor58: plant_serata
 		Owner: Neutral
 		Location: 32,49
-	Actor59: plant_desert_grass_1
+	Actor59: plant_desert_grass
 		Owner: Neutral
 		Location: 36,48
-	Actor61: plant_gumnut_2
+	Actor61: plant_gumnut
 		Owner: Neutral
 		Location: 35,45
 	Actor62: beetles_colony
 		Owner: Beetles
 		Location: 32,51
 		TurretFacing: 127
-	Actor63: plant_serata_3
+	Actor63: plant_serata
 		Owner: Neutral
 		Location: 32,60
 	Actor64: ants_light
