@@ -13,7 +13,7 @@ slapfighter:
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
 	Tooltip:
-		Name: Slapfighter
+		Name: Slapfight Fighter
 	Health:
 		HP: 20000
 	Mobile:
@@ -21,8 +21,8 @@ slapfighter:
 	Buildable:
 		BuildDuration: 75
 		Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 16c0
 	WithShadow:
 		Offset: 200, 400, 0
 		ZOffset: -600
