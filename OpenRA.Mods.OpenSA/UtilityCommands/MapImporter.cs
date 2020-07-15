@@ -70,9 +70,8 @@ namespace OpenRA.Mods.SA.UtilityCommands
 		void Initialize(string mapFile)
 		{
 			stream.Seek(400, SeekOrigin.Begin);
-			var x = stream.ReadUInt16();
-			stream.Seek(404, SeekOrigin.Begin);
-			var y = stream.ReadUInt16();
+			var x = stream.ReadInt32();
+			var y = stream.ReadInt32();
 			mapSize = new Size(x * 2, y * 2);
 
 			tileSet = Game.ModData.DefaultTileSets[tilesetName];
