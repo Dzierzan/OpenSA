@@ -1,6 +1,6 @@
 basefiles: Base game files
 	SHA1: e3f2e9231752a42581f15d52f090f7d96d716876
-	URL: https://downloader.disk.yandex.ru/disk/e9c4193dcf8ee016a751e14735051b0de7962cf1fb14529248f10220e48874b8/5f10ccee/FzjBDojBhkilZZCLgSwhgaiMua6QgExZoRIMuM8FsIeI44A7yB0U-6daFP-IWbwo-WqptorAI_PSExN8qE7e3Q%3D%3D?uid=0&filename=SwarmAssault.zip&disposition=attachment&hash=ayb8ifmeBzNXJxUXMZikWtnF4uFxCkF8EX9N9pultw8nnkF2At3ZU2szgYgsVCABq/J6bpmRyOJonT3VoXnDag%3D%3D%3A&limit=0&content_type=application%2Fzip&owner_uid=1102004488&fsize=20636014&hid=0ef4188da6d567ec9204442fddee4a29&media_type=compressed&tknv=v2
+	MirrorList: https://pastebin.com/dMiVR3jD
 	Extract:
 		^Content/sa/Sprites/Game.ANI: Game/Game.ANI
 		^Content/sa/Sprites/Game.DDF: Game/Game.DDF
