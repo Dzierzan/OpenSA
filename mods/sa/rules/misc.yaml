@@ -164,6 +164,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 1500
+		#InitialSpawnDelay: 1500
 		ValidGround: Clear, Rock, Vegetation
 		Actors: anthole
 	FlyerCreeps:
@@ -172,22 +173,22 @@ World:
 		CheckboxEnabled: True
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
-		SpawnInterval: 25
-		InitialSpawnDelay: 1275
+		SpawnInterval: 1300
+		InitialSpawnDelay: 1300
 		Tileset: NORMAL
 	CreepFlyerSpawner@fly:
 		ActorTypes: fly
-		SpawnInterval: 25
-		InitialSpawnDelay: 775
+		SpawnInterval: 800
+		InitialSpawnDelay: 800
 		Tileset: DESERT
 	CreepFlyerSpawner@moth:
 		ActorTypes: moth
-		SpawnInterval: 25
-		InitialSpawnDelay: 625
+		SpawnInterval: 650
+		InitialSpawnDelay: 650
 		Tileset: SWAMP
 	CreepFlyerSpawner@flyingmachine:
 		ActorTypes: flying_machine
-		SpawnInterval: 25
+		SpawnInterval: 650
 		InitialSpawnDelay: 650
 		Tileset: CANDY
 	PlantCreeps:
@@ -196,36 +197,36 @@ World:
 		CheckboxEnabled: True
 	PlantSpawner@NORMAL:
 		Minimum: 1
-		Maximum: 20
-		SpawnInterval: 25
-		InitialSpawnDelay: 500
+		Maximum: 15
+		SpawnInterval: 525
+		InitialSpawnDelay: 525
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: popcorn, venus
 		PlantActorShares: 75, 25
 		Tileset: NORMAL
 	PlantSpawner@DESERT:
 		Minimum: 1
-		Maximum: 20
-		SpawnInterval: 25
-		InitialSpawnDelay: 350
+		Maximum: 15
+		SpawnInterval: 375
+		InitialSpawnDelay: 375
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: thorn, gumnut
 		PlantActorShares: 75, 25
 		Tileset: DESERT
 	PlantSpawner@SWAMP:
 		Minimum: 1
-		Maximum: 30
-		SpawnInterval: 25
-		InitialSpawnDelay: 400
+		Maximum: 20
+		SpawnInterval: 425
+		InitialSpawnDelay: 425
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: puff, mushroom
 		PlantActorShares: 75, 25
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
 		Minimum: 1
-		Maximum: 20
-		SpawnInterval: 25
-		InitialSpawnDelay: 600
+		Maximum: 15
+		SpawnInterval: 625
+		InitialSpawnDelay: 625
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
 		PlantActorShares: 50, 12, 12, 12, 12
