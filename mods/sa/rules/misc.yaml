@@ -172,23 +172,23 @@ World:
 		CheckboxEnabled: True
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
-		SpawnInterval: 1000
-		InitialSpawnDelay: 250
+		SpawnInterval: 25
+		InitialSpawnDelay: 1275
 		Tileset: NORMAL
 	CreepFlyerSpawner@fly:
 		ActorTypes: fly
-		SpawnInterval: 1000
-		InitialSpawnDelay: 250
+		SpawnInterval: 25
+		InitialSpawnDelay: 775
 		Tileset: DESERT
 	CreepFlyerSpawner@moth:
 		ActorTypes: moth
-		SpawnInterval: 1000
-		InitialSpawnDelay: 250
+		SpawnInterval: 25
+		InitialSpawnDelay: 625
 		Tileset: SWAMP
 	CreepFlyerSpawner@flyingmachine:
 		ActorTypes: flying_machine
-		SpawnInterval: 1000
-		InitialSpawnDelay: 250
+		SpawnInterval: 25
+		InitialSpawnDelay: 650
 		Tileset: CANDY
 	PlantCreeps:
 		CheckboxLabel: Plants
@@ -196,36 +196,36 @@ World:
 		CheckboxEnabled: True
 	PlantSpawner@NORMAL:
 		Minimum: 1
-		Maximum: 100
-		SpawnInterval: 2000
-		InitialSpawnDelay: 250
+		Maximum: 20
+		SpawnInterval: 25
+		InitialSpawnDelay: 500
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: popcorn, venus
-		PlantActorShares: 50, 50
+		PlantActorShares: 75, 25
 		Tileset: NORMAL
 	PlantSpawner@DESERT:
 		Minimum: 1
-		Maximum: 100
-		SpawnInterval: 2000
-		InitialSpawnDelay: 250
+		Maximum: 20
+		SpawnInterval: 25
+		InitialSpawnDelay: 350
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: thorn, gumnut
-		PlantActorShares: 50, 50
+		PlantActorShares: 75, 25
 		Tileset: DESERT
 	PlantSpawner@SWAMP:
 		Minimum: 1
-		Maximum: 100
-		SpawnInterval: 1000
-		InitialSpawnDelay: 250
+		Maximum: 30
+		SpawnInterval: 25
+		InitialSpawnDelay: 400
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: puff, mushroom
-		PlantActorShares: 50, 50
+		PlantActorShares: 75, 25
 		Tileset: SWAMP
 	PlantSpawner@CANDY:
 		Minimum: 1
-		Maximum: 100
-		SpawnInterval: 2000
-		InitialSpawnDelay: 250
+		Maximum: 20
+		SpawnInterval: 25
+		InitialSpawnDelay: 600
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
 		PlantActorShares: 50, 12, 12, 12, 12
