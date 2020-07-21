@@ -138,6 +138,37 @@ ants_grenadier_pirate:
 	name: sprites|NAMENEUTRALGRENADIER.ANI
 	portrait: sprites|COLONYNEUTRALGRENADIER.ANI
 
+ants_bazooka_pirate:
+	idle: bits/PirateBazooka.png
+		Start: 0
+		Facings: 8
+		ZOffset: 1000
+	shoot: bits/PirateBazooka.png
+		Start: 32
+		Length: 2
+		Facings: 8
+		Tick: 267
+		ZOffset: 100
+	move: bits/PirateBazooka.png
+		Start: 8
+		Length: 3
+		Tick: 80
+		Facings: 8
+		ZOffset: 100
+	die: bits/PirateBazooka.png
+		Start: 48
+		Length: 2
+		Tick: 9000
+		ZOffset: -1000
+	icon: sprites|COLONYANTC00.ANI
+	icon-clicked: sprites|COLONYANTC01.ANI
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1000
+	name: sprites|NAMEANTBAZOOKA.ANI
+	portrait: bits/empty.png
+
 moth:
 	idle:
 		Combine:

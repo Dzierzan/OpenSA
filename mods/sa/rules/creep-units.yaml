@@ -48,6 +48,30 @@ ants_grenadier_pirate:
 		Scale: 1.1
 	PirateAnt:
 
+ants_bazooka_pirate:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Pirate Bazooka
+	Health:
+		HP: 7350
+	Mobile:
+		Speed: 78
+	Buildable:
+		BuildDuration: 350
+	#RevealsShroud:
+	#	Range: 7c0
+	Armament:
+		Weapon: ants_heavy
+		FireDelay: 9
+		LocalOffset: 550,0,0
+		PauseOnCondition: paralyzed
+	RenderSprites:
+		Scale: 1.1
+	PirateAnt:
+
 dragonfly:
 	Inherits: ^Bomber
 	Tooltip:
