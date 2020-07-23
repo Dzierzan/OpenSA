@@ -19,6 +19,9 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Time (in ticks) between actor spawn.")]
 		public readonly int[] SpawnInterval = { 6000 };
 
+		[Desc("Delay (in ticks) before the first actor spawns.")]
+		public readonly int[] InitialSpawnDelay = { 0 };
+
 		[FieldLoader.Require]
 		[ActorReference]
 		[Desc("Name of the actor that will be randomly picked to spawn.")]
@@ -30,7 +33,7 @@ namespace OpenRA.Mods.SA.Traits
 
 		public readonly string Owner = "Creeps";
 
-		public override object Create(ActorInitializer init) { return new PirateSpawner(this); }
+		public override object Create(ActorInitializer init) { return new PirateSpawner(init.Self, this); }
 	}
 
 	public class PirateSpawner : ConditionalTrait<PirateSpawnerInfo>, ITick
@@ -41,10 +44,12 @@ namespace OpenRA.Mods.SA.Traits
 		int spawnCountdown;
 		float actorsPresent;
 
-		public PirateSpawner(PirateSpawnerInfo info)
+		public PirateSpawner(Actor self, PirateSpawnerInfo info)
 			: base(info)
 		{
 			this.info = info;
+
+			spawnCountdown = Util.RandomDelay(self.World, info.InitialSpawnDelay);
 		}
 
 		protected override void Created(Actor self)
@@ -61,7 +66,7 @@ namespace OpenRA.Mods.SA.Traits
 			if (info.Maximum < 1 || actorsPresent >= info.Maximum)
 				return;
 
-			if (--spawnCountdown > 0 && actorsPresent >= info.Minimum)
+			if (--spawnCountdown > 0)
 				return;
 
 			var spawnPoint = ChooseSpawnCell(self, 100);

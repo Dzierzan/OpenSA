@@ -19,7 +19,7 @@ namespace OpenRA.Mods.SA.Traits
 		public readonly int[] SpawnInterval = { 180 * 25 };
 
 		[Desc("Delay (in ticks) before the first plant spawns.")]
-		public readonly int InitialSpawnDelay = 0;
+		public readonly int[] InitialSpawnDelay = { 0 };
 
 		[Desc("Which terrain types can we drop on?")]
 		[FieldLoader.Require]
@@ -56,7 +56,7 @@ namespace OpenRA.Mods.SA.Traits
 			this.self = self;
 			this.info = info;
 
-			ticks = info.InitialSpawnDelay;
+			ticks = Util.RandomDelay(self.World, info.InitialSpawnDelay);
 		}
 
 		void INotifyCreated.Created(Actor self)
