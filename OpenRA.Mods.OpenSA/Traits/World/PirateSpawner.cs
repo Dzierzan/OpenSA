@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -16,7 +17,7 @@ namespace OpenRA.Mods.SA.Traits
 		public readonly int Maximum = 4;
 
 		[Desc("Time (in ticks) between actor spawn.")]
-		public readonly int SpawnInterval = 6000;
+		public readonly int[] SpawnInterval = { 6000 };
 
 		[FieldLoader.Require]
 		[ActorReference]
@@ -68,7 +69,7 @@ namespace OpenRA.Mods.SA.Traits
 			if (spawnPoint == null)
 				return;
 
-			spawnCountdown = info.SpawnInterval;
+			spawnCountdown = Util.RandomDelay(self.World, info.SpawnInterval);
 
 			do
 			{

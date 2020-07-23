@@ -10,7 +10,7 @@ namespace OpenRA.Mods.SA.Traits
 	public class CreepFlyerSpawnerInfo : TraitInfo
 	{
 		[Desc("Average time (ticks) between creep spawn.")]
-		public readonly int SpawnInterval = 10 * 25;
+		public readonly int[] SpawnInterval = { 10 * 25 };
 
 		[Desc("Delay (in ticks) before the first creep spawns.")]
 		public readonly int InitialSpawnDelay = 0;
@@ -64,7 +64,7 @@ namespace OpenRA.Mods.SA.Traits
 
 			if (--ticks <= 0)
 			{
-				ticks = info.SpawnInterval;
+				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
 
 				SpawnCreeps(self);
 			}
