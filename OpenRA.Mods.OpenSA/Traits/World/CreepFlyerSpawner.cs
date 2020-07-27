@@ -10,10 +10,10 @@ namespace OpenRA.Mods.SA.Traits
 	public class CreepFlyerSpawnerInfo : TraitInfo
 	{
 		[Desc("Average time (ticks) between creep spawn.")]
-		public readonly int SpawnInterval = 10 * 25;
+		public readonly int[] SpawnInterval = { 10 * 25 };
 
 		[Desc("Delay (in ticks) before the first creep spawns.")]
-		public readonly int InitialSpawnDelay = 0;
+		public readonly int[] InitialSpawnDelay = { 0 };
 
 		[ActorReference(typeof(AircraftInfo))]
 		[FieldLoader.Require]
@@ -32,7 +32,7 @@ namespace OpenRA.Mods.SA.Traits
 		[Desc("Only spawn on this tileset.")]
 		public string Tileset = null;
 
-		public override object Create(ActorInitializer init) { return new CreepFlyerSpawner(this); }
+		public override object Create(ActorInitializer init) { return new CreepFlyerSpawner(init.Self, this); }
 	}
 
 	public class CreepFlyerSpawner : ITick, INotifyCreated
@@ -42,11 +42,11 @@ namespace OpenRA.Mods.SA.Traits
 		bool enabled;
 		int ticks;
 
-		public CreepFlyerSpawner(CreepFlyerSpawnerInfo info)
+		public CreepFlyerSpawner(Actor self, CreepFlyerSpawnerInfo info)
 		{
 			this.info = info;
 
-			ticks = info.InitialSpawnDelay;
+			ticks = Util.RandomDelay(self.World, info.InitialSpawnDelay);
 		}
 
 		void INotifyCreated.Created(Actor self)
@@ -64,7 +64,7 @@ namespace OpenRA.Mods.SA.Traits
 
 			if (--ticks <= 0)
 			{
-				ticks = info.SpawnInterval;
+				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
 
 				SpawnCreeps(self);
 			}

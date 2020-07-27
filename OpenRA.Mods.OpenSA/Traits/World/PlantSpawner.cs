@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -16,10 +16,10 @@ namespace OpenRA.Mods.SA.Traits
 		public readonly int Maximum = 255;
 
 		[Desc("Average time (ticks) between plant spawn.")]
-		public readonly int SpawnInterval = 180 * 25;
+		public readonly int[] SpawnInterval = { 180 * 25 };
 
 		[Desc("Delay (in ticks) before the first plant spawns.")]
-		public readonly int InitialSpawnDelay = 0;
+		public readonly int[] InitialSpawnDelay = { 0 };
 
 		[Desc("Which terrain types can we drop on?")]
 		[FieldLoader.Require]
@@ -56,7 +56,7 @@ namespace OpenRA.Mods.SA.Traits
 			this.self = self;
 			this.info = info;
 
-			ticks = info.InitialSpawnDelay;
+			ticks = Util.RandomDelay(self.World, info.InitialSpawnDelay);
 		}
 
 		void INotifyCreated.Created(Actor self)
@@ -77,7 +77,7 @@ namespace OpenRA.Mods.SA.Traits
 
 			if (--ticks <= 0)
 			{
-				ticks = info.SpawnInterval;
+				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
 
 				var toSpawn = info.Minimum - plants;
 				if (toSpawn <= 0)

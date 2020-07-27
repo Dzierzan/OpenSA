@@ -164,7 +164,7 @@ World:
 		Minimum: 1
 		Maximum: 100
 		SpawnInterval: 1500
-		#InitialSpawnDelay: 1500
+		InitialSpawnDelay: 1500
 		ValidGround: Clear, Rock, Vegetation
 		Actors: anthole
 	FlyerCreeps:
