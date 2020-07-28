@@ -163,8 +163,8 @@ World:
 	PirateSpawner:
 		Minimum: 1
 		Maximum: 100
-		SpawnInterval: 1500
-		InitialSpawnDelay: 1500
+		SpawnInterval: 1000, 1500
+		InitialSpawnDelay: 1000, 1500
 		ValidGround: Clear, Rock, Vegetation
 		Actors: anthole
 	FlyerCreeps:
@@ -173,23 +173,23 @@ World:
 		CheckboxEnabled: True
 	CreepFlyerSpawner@dragonfly:
 		ActorTypes: dragonfly
-		SpawnInterval: 1300
-		InitialSpawnDelay: 1300
+		SpawnInterval: 1000, 1500
+		InitialSpawnDelay: 1000, 1500
 		Tileset: NORMAL
 	CreepFlyerSpawner@fly:
 		ActorTypes: fly
-		SpawnInterval: 800
-		InitialSpawnDelay: 800
+		SpawnInterval: 625, 875
+		InitialSpawnDelay: 625, 875
 		Tileset: DESERT
 	CreepFlyerSpawner@moth:
 		ActorTypes: moth
-		SpawnInterval: 650
-		InitialSpawnDelay: 650
+		SpawnInterval: 625, 750
+		InitialSpawnDelay: 625, 750
 		Tileset: SWAMP
 	CreepFlyerSpawner@flyingmachine:
 		ActorTypes: flying_machine
-		SpawnInterval: 650
-		InitialSpawnDelay: 650
+		SpawnInterval: 625, 1000
+		InitialSpawnDelay: 625, 1000
 		Tileset: CANDY
 	PlantCreeps:
 		CheckboxLabel: Plants
@@ -198,8 +198,8 @@ World:
 	PlantSpawner@NORMAL:
 		Minimum: 1
 		Maximum: 15
-		SpawnInterval: 525
-		InitialSpawnDelay: 525
+		SpawnInterval: 375, 750
+		InitialSpawnDelay: 375, 750
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: popcorn, venus
 		PlantActorShares: 75, 25
@@ -207,8 +207,8 @@ World:
 	PlantSpawner@DESERT:
 		Minimum: 1
 		Maximum: 15
-		SpawnInterval: 375
-		InitialSpawnDelay: 375
+		SpawnInterval: 300, 500
+		InitialSpawnDelay: 300, 500
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: thorn, gumnut
 		PlantActorShares: 75, 25
@@ -216,8 +216,8 @@ World:
 	PlantSpawner@SWAMP:
 		Minimum: 1
 		Maximum: 20
-		SpawnInterval: 425
-		InitialSpawnDelay: 425
+		SpawnInterval: 325, 525
+		InitialSpawnDelay: 325, 525
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: puff, mushroom
 		PlantActorShares: 75, 25
@@ -225,8 +225,8 @@ World:
 	PlantSpawner@CANDY:
 		Minimum: 1
 		Maximum: 15
-		SpawnInterval: 625
-		InitialSpawnDelay: 625
+		SpawnInterval: 375, 875
+		InitialSpawnDelay: 375, 875
 		ValidGround: Clear, Rock, Vegetation
 		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
 		PlantActorShares: 50, 12, 12, 12, 12
