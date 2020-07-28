@@ -230,9 +230,10 @@
 		ValidDamageStates: Heavy, Critical
 		GrantPermanently: False
 	AttackTurreted:
-		RequiresCondition: !injured
-	WithFacingSpriteBody:
-		StartSequence: grow
+		RequiresCondition: !injured && grown
+	-WithFacingSpriteBody:
+	WithSpriteBody:
+	WithGrowAnimation:
 
 # Grouped traits for standard turret behavior.
 ^CoreTurret:

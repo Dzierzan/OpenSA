@@ -88,14 +88,14 @@ puff:
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		PauseOnCondition: !seed_attack || injured
+		PauseOnCondition: !seed_attack || injured || !grown
 	SpawnsShrapnel@2:
 		Weapon: puff_normal_seed
 		Amount: 1
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		PauseOnCondition: !seed_attack || injured
+		PauseOnCondition: !seed_attack || injured || !grown
 	Plant:
 
 seed:
