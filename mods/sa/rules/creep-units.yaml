@@ -125,12 +125,12 @@ moth:
 		VoiceSet: NeutralVoice
 	SpawnsShrapnel@puff:
 		Weapon: moth
-		Delay: 100
+		Delay: 50
 		AimChance: 0
 		Amount: 5
 	SpawnsShrapnel@normal_seed:
 		Weapon: puff_normal_seed
-		Delay: 100
+		Delay: 50
 		AimChance: 0
 		Amount: 1
 	AmbientSound:
