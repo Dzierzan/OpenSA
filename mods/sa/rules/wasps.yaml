@@ -20,3 +20,10 @@ World:
 		VoiceSet: WaspsVoice
 	Mobile:
 		Locomotor: wasp
+	GrantConditionOnMovement:
+		Condition: moving
+	GrantConditionOnWaspLayer:
+		Condition: flying
+	-WithMoveAnimation:
+	WithFlyAnimation:
+		RequiresCondition: flying || moving

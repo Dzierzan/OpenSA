@@ -52,6 +52,7 @@ wasps_light:
 		Length: 3
 		Tick: 55
 		Facings: 8
+		ZOffset: 1000
 	die: sprites|UNWASPLB_DEAD.ANI
 		Length: 2
 		Tick: 9000
@@ -119,6 +120,7 @@ wasps_medium:
 		Length: 3
 		Tick: 55
 		Facings: 8
+		ZOffset: 1000
 	die: sprites|UNWASPAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
@@ -186,6 +188,7 @@ wasps_heavy:
 		Length: 3
 		Tick: 55
 		Facings: 8
+		ZOffset: 1000
 	die: sprites|UNWASSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
