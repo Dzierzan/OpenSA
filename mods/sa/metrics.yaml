@@ -10,3 +10,8 @@ Metrics:
 	ClickSound: ClickSound
 	ClickDisabledSound: ClickSound
 	ChatLineSound: ChatLine
+	WidgetDefaultCursor: default
+	WidgetSelectCursor: select
+	DefaultCursor: default
+	IngameSelectCursor: ingame-select
+	IngameDefaultCursor: ingame-default
