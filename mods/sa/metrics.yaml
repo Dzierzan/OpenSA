@@ -10,6 +10,8 @@ Metrics:
 	ClickSound: ClickSound
 	ClickDisabledSound: ClickSound
 	ChatLineSound: ChatLine
+	ChatMessageColor: FFFFFF
+	SystemMessageColor: FFFF00
 	WidgetDefaultCursor: default
 	WidgetSelectCursor: select
 	DefaultCursor: default
