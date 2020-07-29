@@ -176,7 +176,7 @@ Cursors:
 	#			Start: 0
 	#			X: 24
 	#			Y: 24
-	
+
 	#		generic-blocked:
 	#			Start: 24
 	#			X: 24
@@ -185,19 +185,19 @@ Cursors:
 	#			Start: 24
 	#			X: 24
 	#			Y: 24
-	bits/cursors.png: OpenSA	
+	bits/cursors.png: OpenSA
 		guard:
 			Start: 33
 			Length: 4
 			X: 0
 			Y: 0
-	bits/cursors.png: OpenSA	
+	bits/cursors.png: OpenSA
 		guard-minimap:
 			Start: 33
 			Length: 4
 			X: 0
 			Y: 0
-	
+
 	#		ability:
 	#			Start: 72
 	#			Length: 8
@@ -269,7 +269,7 @@ Cursors:
 	#			Length: 8
 	#			X: 24
 	#			Y: 24
-	
+
 	#	attackmove.shp: mouse
 	#		attackmove-minimap:
 	#			Start: 0
