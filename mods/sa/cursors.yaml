@@ -1,29 +1,25 @@
-#Cursors:
-#	sprites|MouseNormalB.ANI: OpenSA
-#		default:
-#			Start: 0
-#			X: 0
-#			Y: 0
-#	sprites|MouseSelectB.ANI: OpenSA
-#		select:
-#			Start: 0
-#			X: 0
-#			Y: 0
-
-
 Cursors:
 	sprites|MouseNormal.ANI: OpenSA
-		default:
+		ingame-default:
 			Start: 0
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
-		select:
+		ingame-select:
 			Start: 25
 			Length: 4
 			X: 0
 			Y: 0
-
+	sprites|MouseNormalB.ANI: OpenSA
+		default:
+			Start: 0
+			X: 0
+			Y: 0
+	sprites|MouseSelectB.ANI: OpenSA
+		select:
+			Start: 0
+			X: 0
+			Y: 0
 	bits/cursors.png: OpenSA
 		attack:
 			Start: 37
