@@ -174,6 +174,10 @@ ChromeMetrics:
 	sa|metrics.yaml
 
 Fonts:
+	Symbols:
+		Font: common|FreeSans.ttf
+		Size: 15
+		Ascender: 12
 	Tiny:
 		Font: common|FreeSans.ttf
 		Size: 10
