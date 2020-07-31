@@ -73,7 +73,7 @@
 	ProvidesRadar:
 	Production:
 	ProductionQueue:
-		#InfiniteBuildLimit: 1 #TODO it crashes the game
+		InfiniteBuildLimit: 10
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
