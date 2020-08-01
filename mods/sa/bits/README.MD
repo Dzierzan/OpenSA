@@ -38,11 +38,6 @@ Author: Dzierzan, Gate 5 Creations
 Source: Exported cursors, some of them are made by Dzierzan.
 Description: Cursors.
 
-**custom_icons.png**
-Author: Dzierzan, Gate 5 Creations
-Source: Self-made based on original assets.
-Description: Additional icons.
-
 **gas.png**
 Author: Dzierzan
 Source: Self-made
@@ -132,3 +127,8 @@ Description: Additional facings.
 Author: Daniel Cook, Dzierzan
 Source: Hard Vacuum (https://lostgarden.home.blog/2005/03/27/game-post-mortem-hard-vacuum/)
 Description: Rally point flag.
+
+**spaceshipicons.png**
+Author: Dzierzan, Gate 5 Creations
+Source: Swarm Assault
+Description: Icons for Slapfight fighter.
