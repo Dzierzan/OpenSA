@@ -66,7 +66,7 @@ ant_bull_pirate:
 		Length: 4
 		ZOffset: 1000
 	name: sprites|NAMENEUTRALANTBULL.ANI
-	portrait: sprites|COLONYNEUTRALANTBULL.ANI
+	portrait: sprites|COLONYNEUTRALANTBULL3D.ANI
 
 ants_grenadier_pirate:
 	idle:
@@ -135,8 +135,8 @@ ants_grenadier_pirate:
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
-	name: sprites|NAMENEUTRALGRENADIER.ANI
-	portrait: sprites|COLONYNEUTRALGRENADIER.ANI
+	name: sprites|NAMENEUTRALANTGRENADIER.ANI
+	portrait: sprites|COLONYNEUTRALANTGRENADIER3D.ANI
 
 ants_bazooka_pirate:
 	idle: bits/PirateBazooka.png
@@ -202,7 +202,7 @@ moth:
 				Length: 3
 			sprites|UNDEMOTH_WABL.ANI:
 				Length: 3
-			sprites|UNDEMOTH_WAB.ANII:
+			sprites|UNDEMOTH_WAB.ANI:
 				Length: 3
 			sprites|UNDEMOTH_WABR.ANI:
 				Length: 3
@@ -243,7 +243,7 @@ moth:
 	icon: bits/custom_icons.png
 		Start: 3
 	name: sprites|NAMENEUTRALMOTH.ANI
-	portrait: sprites|COLONYNEUTRALMOTH.ANI
+	portrait: sprites|COLONYNEUTRALMOTH3D.ANI
 
 dragonfly:
 	idle:
@@ -278,7 +278,7 @@ dragonfly:
 				Length: 3
 			sprites|UNDRABOB_WABL.ANI:
 				Length: 3
-			sprites|UNDRABOB_WAB.ANII:
+			sprites|UNDRABOB_WAB.ANI:
 				Length: 3
 			sprites|UNDRABOB_WABR.ANI:
 				Length: 3
@@ -354,7 +354,7 @@ fly:
 				Length: 3
 			sprites|UNFLYBIG_WABL.ANI:
 				Length: 3
-			sprites|UNFLYBIG_WAB.ANII:
+			sprites|UNFLYBIG_WAB.ANI:
 				Length: 3
 			sprites|UNFLYBIG_WABR.ANI:
 				Length: 3
@@ -430,7 +430,7 @@ flying_machine:
 				Length: 3
 			sprites|UNFLYMCH_WABL.ANI:
 				Length: 3
-			sprites|UNFLYMCH_WAB.ANII:
+			sprites|UNFLYMCH_WAB.ANI:
 				Length: 3
 			sprites|UNFLYMCH_WABR.ANI:
 				Length: 3
