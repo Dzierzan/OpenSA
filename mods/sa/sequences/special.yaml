@@ -17,10 +17,10 @@ slapfighter:
 		Length: 2
 		Tick: 9000
 		ZOffset: -511
-	icon: bits/custom_icons.png
+	icon: bits/spaceshipicons.png
 		Start: 0
-	icon-clicked: bits/custom_icons.png
-		Start: 0
+	icon-clicked: bits/spaceshipicons.png
+		Start: 1
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
