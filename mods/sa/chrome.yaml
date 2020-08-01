@@ -6,8 +6,6 @@
 
 ^Glyphs:
 	Image: glyphs.png
-	Image2x: glyphs-2x.png
-	Image3x: glyphs-3x.png
 
 ^LoadScreen:
 	Image: loadscreen.png
@@ -217,7 +215,7 @@ dialog3:
 		corner-tl: 608, 466, 7, 7
 		corner-tr: 726, 466, 7, 7
 		corner-bl: 608, 489, 7, 7
-		corner-br: 726, 489, 7, 7	
+		corner-br: 726, 489, 7, 7
 
 # Same as the half transparent frame used in the Asset Browser
 dialog4:
@@ -321,7 +319,7 @@ button-pressed:
 		corner-tl: 608, 434, 7, 7
 		corner-tr: 726, 434, 7, 7
 		corner-bl: 608, 457, 7, 7
-		corner-br: 726, 457, 7, 7	
+		corner-br: 726, 457, 7, 7
 
 # 10% darker than a normal button
 button-disabled:
@@ -449,7 +447,7 @@ checkbox-hover:
 		corner-tl: 736, 466, 7, 7
 		corner-tr: 854, 466, 7, 7
 		corner-bl: 736, 489, 7, 7
-		corner-br: 854, 489, 7, 7	
+		corner-br: 854, 489, 7, 7
 
 # Same as a button-disabled-pressed
 checkbox-disabled:
