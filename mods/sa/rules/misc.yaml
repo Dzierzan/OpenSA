@@ -231,6 +231,7 @@ World:
 		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
 		PlantActorShares: 50, 12, 12, 12, 12
 		Tileset: CANDY
+	TimeLimitManager:
 
 EditorWorld:
 	Inherits: ^CoreWorld
