@@ -21,11 +21,6 @@ Player:
 		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
 	HealColonyBotModule@allAI:
 		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
-	BaseBuilderBotModule@easyAI:
-		RequiresCondition: enable-WIP-easy-ai
-		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 	SquadManagerBotModule@easyAI:
 		RequiresCondition: enable-WIP-easy-ai
 		SquadSize: 10
@@ -53,11 +48,6 @@ Player:
 			wasps_light: 60
 			wasps_medium: 30
 			wasps_heavy: 10
-	BaseBuilderBotModule@mediumAI:
-		RequiresCondition: enable-WIP-medium-ai
-		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 	SquadManagerBotModule@mediumAI:
 		RequiresCondition: enable-WIP-medium-ai
 		SquadSize: 10
@@ -85,11 +75,6 @@ Player:
 			wasps_light: 33
 			wasps_medium: 33
 			wasps_heavy: 33
-	BaseBuilderBotModule@hardAI:
-		RequiresCondition: enable-WIP-hard-ai
-		ConstructionYardTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		BarracksTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
-		ProductionTypes: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 	SquadManagerBotModule@hardAI:
 		RequiresCondition: enable-WIP-hard-ai
 		SquadSize: 10
