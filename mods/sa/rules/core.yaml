@@ -171,6 +171,7 @@
 	# Units must be destroyed to win a standard game.
 	MustBeDestroyed:
 		RequiredForShortGame: false
+	UpdatesPlayerStatistics:
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreCreature
