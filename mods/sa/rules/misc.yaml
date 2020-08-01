@@ -57,6 +57,7 @@ Player:
 	PlayerRadarTerrain:
 	BaseAttackNotifier:
 		Notification: BaseAttack
+	PlayerStatistics:
 
 EditorPlayer:
 	Inherits: ^CorePlayer
