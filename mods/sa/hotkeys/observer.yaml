@@ -37,11 +37,3 @@ StatisticsProduction: F3
 StatisticsCombat: F4
 	Description: Combat statistics
 	Types: Observer, Replay
-
-StatisticsGraph: F5
-	Description: Statistics graph
-	Types: Observer, Replay
-
-StatisticsArmyGraph: F6
-	Description: Army value graph
-	Types: Observer, Replay
