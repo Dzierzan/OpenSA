@@ -31,9 +31,11 @@ namespace OpenRA.Mods.SA.Traits
 	{
 		readonly World world;
 		readonly Player player;
+
 		readonly int maxProximity;
 
 		int scanForBitsTicks;
+		SquadManagerBotModule squadManagerBotModule;
 
 		public ColonyBitPickupBotModule(Actor self, ColonyBitPickupBotModuleInfo info)
 			: base(info)
@@ -79,6 +81,17 @@ namespace OpenRA.Mods.SA.Traits
 					continue;
 
 				units.Remove(bitCollector);
+
+				if (squadManagerBotModule == null)
+					squadManagerBotModule = bot.Player.PlayerActor.TraitsImplementing<SquadManagerBotModule>().FirstEnabledTraitOrDefault();
+
+				if (squadManagerBotModule != null)
+				{
+					// You got ONE job!
+					var squad = squadManagerBotModule.Squads.FirstOrDefault(s => s.Units.Contains(bitCollector));
+					if (squad != null)
+						squad.Units.Remove(bitCollector);
+				}
 
 				var target = Target.FromCell(world, bit.Location);
 				AIUtils.BotDebug("AI: Ordering unit {0} to {1} for colony bit pick up.".F(bitCollector, target));
