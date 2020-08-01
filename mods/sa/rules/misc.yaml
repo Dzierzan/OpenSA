@@ -44,7 +44,6 @@ Player:
 	ColonyConquestVictoryConditions:
 	PlayerResources:
 		DefaultCashDropdownVisible: false
-	SupportPowerManager:
 	TechTree:
 	# Required for FrozenUnderFog to work
 	FrozenActorLayer:
