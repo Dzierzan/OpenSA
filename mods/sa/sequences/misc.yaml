@@ -63,13 +63,6 @@ pips:
 			sprites|NUMBER8.ANI:
 			sprites|NUMBER9.ANI:
 		Length: 10
-	pip-empty: sprites|NUMBER0.ANI #TODO check these pips later, do I need that?
-	pip-green: sprites|NUMBER0.ANI
-	pip-yellow: sprites|NUMBER0.ANI
-	pip-gray: sprites|NUMBER0.ANI
-	pip-red: sprites|NUMBER0.ANI
-	pip-blue: sprites|NUMBER0.ANI
-	pip-disguise: sprites|NUMBER0.ANI
 
 beacon:
 	x: bits/beacon.png
