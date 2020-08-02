@@ -34,7 +34,7 @@ Players:
 		LockFaction: True
 		Faction: beetles
 		LockColor: True
-		Color: 565EC7
+		Color: 606EA5
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Creeps, Neutral

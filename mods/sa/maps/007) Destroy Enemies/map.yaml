@@ -48,7 +48,7 @@ Players:
 		Name: Beetles
 		Bot: medium
 		Faction: beetles
-		Color: 565EC7
+		Color: 606EA5
 		Enemies: Creeps, Ants, Spiders
 
 Actors:

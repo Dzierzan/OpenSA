@@ -346,7 +346,7 @@ namespace OpenRA.Mods.SA.UtilityCommands
 			if (color == Color.Red)
 				color = Color.FromArgb(202, 49, 49);
 			if (color == Color.Blue)
-				color = Color.FromArgb(86, 94, 199);
+				color = Color.FromArgb(96, 110, 165);
 			if (color == Color.Yellow)
 				color = Color.FromArgb(245, 211, 120);
 
