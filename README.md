@@ -42,7 +42,7 @@ I would love to thank:
 
 * Matthias Mailänder (Mailaender) for helping me out with writing a lot of custom traits which pushed this project forward.
 
-* Zimmermann Gyula (Graion Dilach) for his traits written for his Attacque Superior project (https://github.com/AttacqueSuperior/Engine).
+* Zimmermann Gyula (Graion Dilach) for using his traits written for his Attacque Superior project (https://github.com/AttacqueSuperior/Engine).
 
 * OpenRA community for creating this wonderful open source engine.
 
