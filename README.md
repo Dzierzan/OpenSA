@@ -26,6 +26,8 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 
 To launch your project from the development environment you must first compile the project by running `make.cmd` (Windows), or opening a terminal in the SDK directory and running `make` (Linux / macOS).  You can then run `launch-game.cmd` (Windows) or `launch-game.sh` (Linux / macOS) to run your game.
 
+For more detailed instructions, I recommend reading this: https://github.com/OpenRA/OpenRA/blob/bleed/INSTALL.md
+
 # Legal disclaimers
 
 * This project is not affiliated with or endorsed by Mountain King Studios in any way.
