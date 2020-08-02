@@ -1,6 +1,6 @@
 # About
 
-This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material
+This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material.
 
 # Status
 
@@ -10,7 +10,7 @@ Currently the project still requires a lot of polishing. However you can freely 
 
 Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of quality life improvements plus additional stuff has been added to the project. Here are the key features:
 
-- Open source!
+- Open source,
 - Multiplayer,
 - Support of HD resolutions,
 - Seamless zooming in and out,
@@ -26,7 +26,7 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 
 To launch your project from the development environment you must first compile the project by running `make.cmd` (Windows), or opening a terminal in the SDK directory and running `make` (Linux / macOS).  You can then run `launch-game.cmd` (Windows) or `launch-game.sh` (Linux / macOS) to run your game.
 
-## Legal disclaimers
+# Legal disclaimers
 
 * This project is not affiliated with or endorsed by Mountain King Studios in any way.
 * This project is non-commercial. The source code is available for free and always will be.
@@ -34,11 +34,11 @@ To launch your project from the development environment you must first compile t
   clear acknowledgement of its origin.
 * This repository includes no original assets.
 
-## Special thanks
+# Special thanks
 
 I would love to thank:
 
-* IceReaper, his expertise in reverse engineering game asset formats was very helpful. Without this knowledge, this project wouldn't be possible.
+* Andre Mohren (IceReaper), his expertise in reverse engineering game asset formats was very helpful. Without this knowledge, this project wouldn't be possible.
 
 * Matthias Mailänder (Mailaender) for helping me out with writing a lot of custom traits which pushed this project forward.
 
