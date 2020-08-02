@@ -1,14 +1,50 @@
-This repository contains Swarm Assault remake project based on the OpenRA Mod SDK.
+# About
+
+This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material
 
 # Status
 
-Currently the project/game still requires a lot of polishing. There's nothing much to do with the current version apart from playing on skirmish maps or missions, but feel free to give any feedback or even help me to progress further the project.
+Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 11/100), feel free to give any feedback or even help to progress further the project.
 
-Currently there are 10 out of 100 missions recreated, they are playable, but AI doesn't really understand that it needs to capture colonies.
+# Swarm Assault vs OpenSA
+
+Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of quality life improvements plus additional stuff has been added to the project. Here are the key features:
+
+- Open source!
+- Multiplayer,
+- Support of HD resolutions,
+- Seamless zooming in and out,
+- Ability to queue units,
+- Rally points,
+- Units no longer wander around (creep units still can do it),
+- Superior AI,
+- More advanced map editor with the ability of creating own missions with objectives
+- Ability of adding own units to the game
+- There's no random map generator in OpenSA, however the project is able to convert legacy maps to ORA format, so nothing is lost.
 
 # How to compile/play
 
 To launch your project from the development environment you must first compile the project by running `make.cmd` (Windows), or opening a terminal in the SDK directory and running `make` (Linux / macOS).  You can then run `launch-game.cmd` (Windows) or `launch-game.sh` (Linux / macOS) to run your game.
+
+## Legal disclaimers
+
+* This project is not affiliated with or endorsed by Mountain King Studios in any way.
+* This project is non-commercial. The source code is available for free and always will be.
+* You are free contribute to this repository, however your contribution must be either your own original code, or open source code with a
+  clear acknowledgement of its origin.
+* This repository includes no original assets.
+
+## Special thanks
+
+I would love to thank:
+
+* IceReaper, his expertise in reverse engineering game asset formats was very helpful. Without this knowledge, this project wouldn't be possible.
+
+* Matthias Mailänder (Mailaender) for helping me out with writing a lot of custom traits which pushed this project forward.
+
+* Zimmermann Gyula (Graion Dilach) for his traits written for his Attacque Superior project (https://github.com/AttacqueSuperior/Engine).
+
+* OpenRA community for creating this wonderful open source engine.
 
 # Screenshots
 
