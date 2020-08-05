@@ -3,7 +3,7 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.Render
+namespace OpenRA.Mods.OpenSA.Traits.Render
 {
 	[Desc("Periodically plays an idle animation, replacing the default body animation.")]
 	public class WithSpawnsShrapnelAnimationInfo : ConditionalTraitInfo, Requires<WithSpriteBodyInfo>

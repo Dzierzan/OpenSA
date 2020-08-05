@@ -2,7 +2,7 @@ using OpenRA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Graphics
+namespace OpenRA.Mods.OpenSA.Graphics
 {
 	public struct VerticalSelectionBarsAnnotationRenderable : IRenderable, IFinalizedRenderable
 	{

@@ -7,7 +7,7 @@ using OpenRA.Mods.Common.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Warheads
+namespace OpenRA.Mods.OpenSA.Warheads
 {
 	[Desc("Spawn actors upon explosion. Don't use this with buildings.")]
 	public class SpawnActorWarhead : Warhead, IRulesetLoaded<WeaponInfo>

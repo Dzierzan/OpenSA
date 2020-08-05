@@ -2,7 +2,7 @@ using OpenRA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("More beautiful variant of the PlayerColorPalette by using the overlay blend mode.")]
 	public class OverlayPlayerColorPaletteInfo : TraitInfo

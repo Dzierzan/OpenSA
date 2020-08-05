@@ -4,7 +4,7 @@ using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Animates the anthole and spawns actors.")]
 	public class AntHoleInfo : TraitInfo, Requires<WithSpriteBodyInfo>

@@ -1,7 +1,7 @@
 using System.Linq;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class GrantConditionOnTileSetInfo : TraitInfo
 	{

@@ -3,11 +3,11 @@ using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Traits.Render;
-using OpenRA.Mods.SA.Graphics;
+using OpenRA.Mods.OpenSA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.Render
+namespace OpenRA.Mods.OpenSA.Traits.Render
 {
 	public class VerticalSelectionDecorationsInfo : SelectionDecorationsBaseInfo, Requires<InteractableInfo>
 	{

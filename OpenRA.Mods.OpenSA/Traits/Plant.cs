@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class PlantInfo : TraitInfo
 	{

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using OpenRA.Primitives;
 
-namespace OpenRA.Mods.SA.UtilityCommands
+namespace OpenRA.Mods.OpenSA.UtilityCommands
 {
 	public class MapImporter
 	{

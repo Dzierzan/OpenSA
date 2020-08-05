@@ -2,10 +2,10 @@
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.SA.Traits.Render;
+using OpenRA.Mods.OpenSA.Traits.Render;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Spawns shrapnel weapons after a periodic interval.")]
 	public class SpawnsShrapnelInfo : PausableConditionalTraitInfo

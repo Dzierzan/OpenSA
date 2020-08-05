@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Controls the 'Flyer' checkbox in the lobby options.")]
 	public class FlyerCreepsInfo : TraitInfo, ILobbyOptions

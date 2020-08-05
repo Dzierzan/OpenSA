@@ -3,7 +3,7 @@ using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.Conditions
+namespace OpenRA.Mods.OpenSA.Traits.Conditions
 {
 	public class GrantConditionWhileProducingInfo : TraitInfo, Requires<ProductionQueueInfo>
 	{

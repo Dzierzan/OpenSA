@@ -1,6 +1,6 @@
 using OpenRA.Mods.Common.Traits.Render;
 
-namespace OpenRA.Mods.SA.Traits.Render
+namespace OpenRA.Mods.OpenSA.Traits.Render
 {
 	[Desc("Picks sprites from a random actor.")]
 	class WithRandomSpriteBodyInfo : WithSpriteBodyInfo

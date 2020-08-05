@@ -1,7 +1,7 @@
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits.Behaviour
+namespace OpenRA.Mods.OpenSA.Traits.Behaviour
 {
 	[Desc("Makes infantry feel more alive by randomly rotating or playing an animation when idle.")]
 	class LivingInfo : TraitInfo, Requires<MobileInfo>

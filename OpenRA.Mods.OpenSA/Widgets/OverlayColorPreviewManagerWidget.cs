@@ -3,7 +3,7 @@ using OpenRA.Mods.Common.Widgets;
 using OpenRA.Primitives;
 using OpenRA.Widgets;
 
-namespace OpenRA.Mods.SA.Widgets
+namespace OpenRA.Mods.OpenSA.Widgets
 {
 	public class OverlayColorPreviewManagerWidget : ColorPreviewManagerWidget
 	{

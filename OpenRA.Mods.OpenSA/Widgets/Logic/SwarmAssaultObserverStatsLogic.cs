@@ -5,7 +5,7 @@ using OpenRA.Graphics;
 using OpenRA.Mods.Common.Lint;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Widgets;
-using OpenRA.Mods.SA.Traits;
+using OpenRA.Mods.OpenSA.Traits;
 using OpenRA.Network;
 using OpenRA.Primitives;
 using OpenRA.Widgets;

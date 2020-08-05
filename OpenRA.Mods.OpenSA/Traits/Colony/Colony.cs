@@ -4,7 +4,7 @@ using OpenRA.GameRules;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	public enum ExplosionType { Footprint, CenterPosition }
 

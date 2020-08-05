@@ -2,11 +2,11 @@ using System.Linq;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.SA.Warheads;
+using OpenRA.Mods.OpenSA.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class ColonyBitInfo : TraitInfo
 	{

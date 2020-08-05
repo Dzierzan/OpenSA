@@ -3,7 +3,7 @@ using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Put this on the Player actor. Manages colony healing by halting production.")]
 	public class HealColonyBotModuleInfo : ConditionalTraitInfo

@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using OpenRA.FileSystem;
 
-namespace OpenRA.Mods.SA.UtilityCommands
+namespace OpenRA.Mods.OpenSA.UtilityCommands
 {
 	class ImportMapCommand : IUtilityCommand
 	{

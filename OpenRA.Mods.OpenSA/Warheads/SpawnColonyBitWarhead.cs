@@ -4,7 +4,7 @@ using OpenRA.Mods.Common.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Warheads
+namespace OpenRA.Mods.OpenSA.Warheads
 {
 	public class ColonyBitInit : IActorInit
 	{
