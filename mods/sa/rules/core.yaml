@@ -69,7 +69,7 @@
 		RequiresCondition: !production
 	GrantConditionWhileProducing:
 		Condition: production
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 	ProvidesRadar:
 	Production:
 	ProductionQueue:
@@ -125,7 +125,6 @@
 		Step: 50 #TODO Might require further adjusting
 		HealIfBelow: 100
 		DamageCooldown: 125
-	AppearsOnRadar:
 	Explodes:
 		Weapon: dieTurret
 		EmptyWeapon: dieTurret
@@ -160,7 +159,7 @@
 		BuildDurationModifier: 100
 	RevealsShroud:
 		Range: 10c0
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Living:
@@ -190,7 +189,7 @@
 	RenderSprites:
 		Palette: OpenSA
 		Scale: 1.1
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Wanders:
@@ -220,7 +219,7 @@
 	SelfHealing:
 		Step: 50
 		HealIfBelow: 100
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Husk:
@@ -301,15 +300,13 @@
 		Range: 10c0
 	RenderSprites:
 		Palette: OpenSA
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die
 		DeathPaletteIsPlayerPalette: False
 		DeathSequencePalette: OpenSA
 	Aircraft:
 	RejectsOrders:
-	AppearsOnRadar:
-		UseLocation: true
 	HiddenUnderFog:
 		Type: CenterPosition
 	RevealsShroud:
