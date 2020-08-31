@@ -141,6 +141,7 @@
 		Condition: HoldFire
 		MinHP: 0
 		MaxHP: 1
+	AppearsOnRadar:
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
