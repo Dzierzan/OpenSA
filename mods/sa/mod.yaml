@@ -143,6 +143,11 @@ ChromeLayout:
 AssetBrowser:
 	SupportedExtensions: .ani, .ddf
 
+WebServices:
+	GameNews: https://localhost/gamenews # TODO
+	VersionCheck: https://localhost/versioncheck # TODO
+	GameNewsFileName: sa-news.yaml
+
 Voices:
 	sa|audio/voices.yaml
 

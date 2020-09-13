@@ -6,7 +6,6 @@ World:
 	-MPStartLocations:
 	MusicPlaylist:
 		DisableWorldSounds: False
-
 	LuaScript:
 		Scripts: script.lua
 	-PirateSpawner:

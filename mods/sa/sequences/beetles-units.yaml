@@ -121,7 +121,7 @@ beetles_medium:
 		Facings: 8
 	die: sprites|UNBETSHB_DEAD.ANI
 		Length: 2
-		Tick:  9000
+		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYBEETLEB00.ANI
 	icon-clicked: sprites|COLONYBEETLEB01.ANI
@@ -188,7 +188,7 @@ beetles_heavy:
 		Facings: 8
 	die: sprites|UNBETCAB_DEAD.ANI
 		Length: 2
-		Tick:  9000
+		Tick: 9000
 		ZOffset: -1000
 	icon: sprites|COLONYBEETLEC00.ANI
 	icon-clicked: sprites|COLONYBEETLEC01.ANI
