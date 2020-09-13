@@ -1,7 +1,7 @@
 ants_colony:
 	idle-overlay: sprites|STCLYANB_COLONY.ANI
 		ZOffset: 2000
-	idle: sprites|STCLYANX_COLONYBASE.ANI	
+	idle: sprites|STCLYANX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
 		Combine:

@@ -63,9 +63,9 @@
 		Categories: Building
 	RevealsShroud:
 		Range: 10c0
-	SelfHealing:
+	ChangesHealth:
 		Step: 100 #TODO Might require further adjusting
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !production
 	GrantConditionWhileProducing:
 		Condition: production
@@ -121,9 +121,9 @@
 		Categories: Building
 	RevealsShroud:
 		Range: 10c0
-	SelfHealing:
+	ChangesHealth:
 		Step: 50 #TODO Might require further adjusting
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 	Explodes:
 		Weapon: dieTurret
@@ -217,9 +217,9 @@
 		Range: 10c0
 	RenderSprites:
 		Palette: OpenSA
-	SelfHealing:
+	ChangesHealth:
 		Step: 50
-		HealIfBelow: 100
+		StartIfBelow: 100
 	CustomAppearsOnRadar:
 	WithDeathAnimation:
 		FallbackSequence: die

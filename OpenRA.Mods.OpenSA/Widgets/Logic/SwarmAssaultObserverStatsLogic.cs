@@ -393,8 +393,8 @@ namespace OpenRA.Mods.Common.SA.Widgets.Logic
 			var playerName = template.Get<LabelWidget>("PLAYER");
 			var playerNameFont = Game.Renderer.Fonts[playerName.Font];
 			var suffixLength = new CachedTransform<string, int>(s => playerNameFont.Measure(s).X);
-			var name = new CachedTransform<Pair<string, int>, string>(c =>
-				WidgetUtils.TruncateText(c.First, playerName.Bounds.Width - c.Second, playerNameFont));
+			var name = new CachedTransform<(string Name, int Width), string>(c =>
+				WidgetUtils.TruncateText(c.Name, playerName.Bounds.Width - c.Width, playerNameFont));
 
 			playerName.GetText = () =>
 			{
@@ -403,7 +403,7 @@ namespace OpenRA.Mods.Common.SA.Widgets.Logic
 					suffix = " (Gone)";
 
 				var sl = suffixLength.Update(suffix);
-				return name.Update(Pair.New(player.PlayerName, sl)) + suffix;
+				return name.Update((player.PlayerName, sl)) + suffix;
 			};
 
 			playerName.GetColor = () => player.Color;

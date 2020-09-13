@@ -70,12 +70,10 @@ projectiles:
 		Length: 6
 		Tick: 80
 		ZOffset: 4900
-
 	colonybit: COLONYBIT.ANI
 		Length: 4
 		Tick: 60
 		ZOffset: 4900
-
 
 smoke_trail:
 	idle: SMOKEPUFF.ANI

@@ -103,9 +103,9 @@ seed:
 		Actor: puff
 		Probability: 15
 		SkipMakeAnimations: false
-	SelfHealing:
+	ChangesHealth:
 		Step: -1000
-		HealIfBelow: 101
+		StartIfBelow: 101
 	HitShape:
 	BodyOrientation:
 		QuantizedFacings: 1

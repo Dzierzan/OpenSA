@@ -24,7 +24,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
             this.info = info;
         }
 
-        void IRadarSignature.PopulateRadarSignatureCells(Actor self, List<Pair<CPos, Color>> destinationBuffer)
+        void IRadarSignature.PopulateRadarSignatureCells(Actor self, List<(CPos, Color)> destinationBuffer)
         {
             var color = self.Owner.Color;
 
@@ -35,10 +35,10 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
             {
                 for (var y = 0; y < 6; y++)
                 for (var x = 0; x < 6; x++)
-                    destinationBuffer.Add(Pair.New(self.Location + new CVec(x, y) + info.Offset, color));
+                    destinationBuffer.Add((self.Location + new CVec(x, y) + info.Offset, color));
             }
             else
-                destinationBuffer.Add(Pair.New(self.Location, color));
+                destinationBuffer.Add((self.Location, color));
         }
     }
 }
