@@ -9,6 +9,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class CreepFlyerSpawnerInfo : TraitInfo
 	{
+		[Desc("Minimum number of flyers on the map.")]
+		public readonly int Minimum = 2;
+
+		[Desc("Maximum number of flyers on the map.")]
+		public readonly int Maximum = 5;
+
 		[Desc("Average time (ticks) between creep spawn.")]
 		public readonly int[] SpawnInterval = { 10 * 25 };
 
@@ -41,6 +47,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		bool enabled;
 		int ticks;
+		int flyers;
 
 		public CreepFlyerSpawner(Actor self, CreepFlyerSpawnerInfo info)
 		{
@@ -62,11 +69,23 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (info.Tileset != null & self.World.Map.Tileset != info.Tileset)
 				return;
 
+			if (flyers > info.Maximum)
+				return;
+
 			if (--ticks <= 0)
 			{
 				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
 
-				SpawnCreeps(self);
+				flyers = self.World.Actors.Count(a => info.ActorTypes.Contains(a.Info.Name)
+					&& a.Owner.InternalName == info.InternalOwner
+					&& !a.IsDead && a.IsInWorld);
+
+				var toSpawn = info.Minimum - flyers;
+				if (toSpawn <= 0)
+					toSpawn = 1;
+
+				for (var n = 0; n < toSpawn; n++)
+					SpawnCreeps(self);
 			}
 		}
 
