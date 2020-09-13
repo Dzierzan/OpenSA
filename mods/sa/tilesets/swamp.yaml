@@ -11,7 +11,7 @@ Terrain:
 		Color: 61674A
 	TerrainType@Water:
 		Type: Water
-		TargetTypes: Ground
+		TargetTypes: Water
 		Color: 3C5740
 	TerrainType@Rock:
 		Type: Rock
@@ -21,6 +21,9 @@ Terrain:
 		Type: Vegetation
 		TargetTypes: Ground
 		Color: 303658
+	TerrainType@Air:
+		Type: Air
+		Color: FFFFFF
 
 Templates:
 	#CLEAR

@@ -108,13 +108,15 @@ EditorPlayer:
 			Clear: 100
 			Rock: 75
 			Vegetation: 50
-	Locomotor@Wasp:
+	WaspActorLayer:
+	WaspLocomotor:
 		Name: wasp
 		Crushes: colony_bit
 		TerrainSpeeds:
 			Clear: 100
 			Rock: 100
 			Vegetation: 100
+			Air: 100
 	Locomotor@Special:
 		Name: slapfighter
 		Crushes: colony_bit
