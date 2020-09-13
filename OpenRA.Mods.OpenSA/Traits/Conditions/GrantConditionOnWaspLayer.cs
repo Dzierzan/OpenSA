@@ -1,6 +1,6 @@
 using OpenRA.Mods.Common.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class GrantConditionOnWaspLayerInfo : GrantConditionOnLayerInfo
 	{
