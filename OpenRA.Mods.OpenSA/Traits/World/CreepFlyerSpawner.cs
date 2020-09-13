@@ -90,7 +90,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				{
 					new CenterPositionInit(startEdge),
 					new OwnerInit(self.World.Players.First(p => p.InternalName == info.InternalOwner)),
-					new FacingInit(facing),
+					new FacingInit(WAngle.FromFacing(facing)),
 				});
 
 				flyer.QueueActivity(false, new Fly(flyer, Target.FromPos(finishEdge)));

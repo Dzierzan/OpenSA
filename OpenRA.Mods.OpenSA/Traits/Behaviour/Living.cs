@@ -29,7 +29,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Behaviour
 				return;
 
 			if (info.RotationChance > 0 && self.World.SharedRandom.Next(1, info.RotationChance) == 1)
-				mobile.Facing = self.World.SharedRandom.Next(0x00, 0xff);
+				mobile.Facing = new WAngle(self.World.SharedRandom.Next(1024));
 		}
 	}
 }
