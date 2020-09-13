@@ -1,19 +1,17 @@
 using System.Linq;
+using OpenRA;
 using OpenRA.GameRules;
+using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Warheads
 {
-	public class ColonyBitInit : IActorInit
+	public class ColonyBitInit : ValueActorInit<ActorInitActorReference>
 	{
-		public readonly Actor ColonyActor;
-
-		public ColonyBitInit(Actor colonyActor)
-		{
-			ColonyActor = colonyActor;
-		}
+		public ColonyBitInit(Actor value)
+			: base(value) { }
 	}
 
 	public class SpawnColonyBitWarhead : Warhead

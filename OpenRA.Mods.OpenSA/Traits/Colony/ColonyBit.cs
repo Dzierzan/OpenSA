@@ -32,7 +32,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public ColonyBit(ActorInitializer init, ColonyBitInfo info)
 		{
 			this.info = info;
-			colony = init.Get<ColonyBitInit>().ColonyActor.Trait<Colony>();
+
+			var colonyBitInit = init.Get<ColonyBitInit>(info);
+			colony = colonyBitInit.Value.Actor(init.World).Value.Trait<Colony>();
+
 			lifetime = init.World.WorldTick + init.World.SharedRandom.Next(info.MinLifetime, info.MaxLifetime);
 		}
 

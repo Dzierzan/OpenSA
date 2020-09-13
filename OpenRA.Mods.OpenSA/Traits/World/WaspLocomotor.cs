@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using OpenRA.Mods.Common.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Used by Mobile. Required for wasp actors. Attach these to the world actor. You can have multiple variants by adding @suffixes.")]
 	public class WaspLocomotorInfo : LocomotorInfo

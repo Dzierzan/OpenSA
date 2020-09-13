@@ -1,6 +1,6 @@
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.SA.Traits
+namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Grants a condition above a certain altitude.")]
 	public class GrantConditionAtGroundLevelInfo : TraitInfo

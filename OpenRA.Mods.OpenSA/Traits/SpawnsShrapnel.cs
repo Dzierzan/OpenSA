@@ -142,7 +142,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				var args = new ProjectileArgs
 				{
 					Weapon = Info.WeaponInfo,
-					Facing = (shrapnelTarget.CenterPosition - position).Yaw.Facing,
+					Facing = (shrapnelTarget.CenterPosition - position).Yaw,
 
 					DamageModifiers = !self.IsDead ? self.TraitsImplementing<IFirepowerModifier>()
 						.Select(a => a.GetFirepowerModifier()).ToArray() : new int[0],
