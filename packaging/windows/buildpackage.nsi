@@ -1,4 +1,4 @@
-; Copyright 2007-2015 OpenRA developers (see AUTHORS)
+; Copyright 2007-2019 OpenRA developers (see AUTHORS)
 ; This file is part of OpenRA.
 ;
 ;  OpenRA is free software: you can redistribute it and/or modify
@@ -63,6 +63,11 @@ Section "-Reg" Reg
 	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
 	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
 
+	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "" "URL:Run game ${DISCORD_APP_ID} protocol"
+	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "URL Protocol" ""
+	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
+	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe"
+
 SectionEnd
 
 Section "Game" GAME
@@ -83,18 +88,15 @@ Section "Game" GAME
 	File "${SRCDIR}\AUTHORS"
 	File "${SRCDIR}\COPYING"
 	File "${SRCDIR}\${MOD_ID}.ico"
-	File "${SRCDIR}\SharpFont.dll"
 	File "${SRCDIR}\SDL2-CS.dll"
-	File "${SRCDIR}\OpenAL-CS.dll"
-	File "${SRCDIR}\global mix database.dat"
-	File "${SRCDIR}\MaxMind.Db.dll"
-	File "${SRCDIR}\GeoLite2-Country.mmdb.gz"
+	File "${SRCDIR}\OpenAL-CS.Core.dll"
+	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File "${SRCDIR}\eluant.dll"
-	File "${SRCDIR}\rix0rrr.BeaconLib.dll"
-	File "${DEPSDIR}\soft_oal.dll"
-	File "${DEPSDIR}\SDL2.dll"
-	File "${DEPSDIR}\freetype6.dll"
-	File "${DEPSDIR}\lua51.dll"
+	File "${SRCDIR}\BeaconLib.dll"
+	File "${SRCDIR}\soft_oal.dll"
+	File "${SRCDIR}\SDL2.dll"
+	File "${SRCDIR}\freetype6.dll"
+	File "${SRCDIR}\lua51.dll"
 
 	!insertmacro MUI_STARTMENU_WRITE_BEGIN Application
 		CreateDirectory "$SMPROGRAMS\$StartMenuFolder"
@@ -133,15 +135,12 @@ SectionEnd
 ;***************************
 Section "-DotNet" DotNet
 	ClearErrors
-	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client" "Install"
+	; https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
+	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Release"
 	IfErrors error 0
-	IntCmp $0 1 0 error 0
-	ClearErrors
-	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Install"
-	IfErrors error 0
-	IntCmp $0 1 done error done
+	IntCmp $0 394254 done error done
 	error:
-		MessageBox MB_OK ".NET Framework v4.5 or later is required to run OpenRA."
+		MessageBox MB_OK ".NET Framework v4.6.1 or later is required to run OpenRA."
 		Abort
 	done:
 SectionEnd
@@ -180,27 +179,24 @@ Function ${UN}Clean
 	Delete $INSTDIR\ICSharpCode.SharpZipLib.dll
 	Delete $INSTDIR\FuzzyLogicLibrary.dll
 	Delete $INSTDIR\Open.Nat.dll
-	Delete $INSTDIR\SharpFont.dll
 	Delete $INSTDIR\VERSION
 	Delete $INSTDIR\AUTHORS
 	Delete $INSTDIR\COPYING
 	Delete $INSTDIR\${MOD_ID}.ico
-	Delete "$INSTDIR\global mix database.dat"
-	Delete $INSTDIR\MaxMind.Db.dll
-	Delete $INSTDIR\GeoLite2-Country.mmdb.gz
-	Delete $INSTDIR\KopiLua.dll
+	Delete $INSTDIR\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
 	Delete $INSTDIR\soft_oal.dll
 	Delete $INSTDIR\SDL2.dll
 	Delete $INSTDIR\lua51.dll
 	Delete $INSTDIR\eluant.dll
 	Delete $INSTDIR\freetype6.dll
 	Delete $INSTDIR\SDL2-CS.dll
-	Delete $INSTDIR\OpenAL-CS.dll
-	Delete $INSTDIR\rix0rrr.BeaconLib.dll
+	Delete $INSTDIR\OpenAL-CS.Core.dll
+	Delete $INSTDIR\BeaconLib.dll
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 	DeleteRegKey HKLM "Software\Classes\openra-${MOD_ID}-${TAG}"
+	DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
 
 	Delete $INSTDIR\uninstaller.exe
 	RMDir $INSTDIR
