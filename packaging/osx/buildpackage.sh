@@ -34,7 +34,7 @@ if [ -f "${TEMPLATE_ROOT}/user.config" ]; then
 	. "${TEMPLATE_ROOT}/user.config"
 fi
 
-require_variables "MOD_ID" "ENGINE_DIRECTORY" "PACKAGING_DISPLAY_NAME" "PACKAGING_INSTALLER_NAME" \
+require_variables "MOD_ID" "DISCORD_APP_ID" "ENGINE_DIRECTORY" "PACKAGING_DISPLAY_NAME" "PACKAGING_INSTALLER_NAME" \
 	"PACKAGING_OSX_LAUNCHER_TAG" "PACKAGING_OSX_LAUNCHER_SOURCE" "PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME" \
 	"PACKAGING_FAQ_URL" "PACKAGING_OVERWRITE_MOD_VERSION"
 
@@ -68,7 +68,6 @@ rm "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}"
 
 modify_plist "{DEV_VERSION}" "${TAG}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
 modify_plist "{FAQ_URL}" "${PACKAGING_FAQ_URL}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
-echo "Building core files"
 
 pushd ${TEMPLATE_ROOT} > /dev/null
 
@@ -92,10 +91,12 @@ else
 fi
 
 pushd ${ENGINE_DIRECTORY} > /dev/null
-make osx-dependencies
-make core SDK="-sdk:4.5"
+echo "Building core files"
+
+make clean
+make core TARGETPLATFORM=osx-x64
 make install-engine gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
-make install-common-mod-files gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
+make install-dependencies TARGETPLATFORM=osx-x64 gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
 
 for f in ${PACKAGING_COPY_ENGINE_FILES}; do
   mkdir -p "${BUILTDIR}/OpenRA.app/Contents/Resources/$(dirname "${f}")"
@@ -103,10 +104,13 @@ for f in ${PACKAGING_COPY_ENGINE_FILES}; do
 done
 
 popd > /dev/null
+
+echo "Building mod files"
+make core
+cp -Lr mods/* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
+
 popd > /dev/null
 
-# Add mod files
-cp -Lr "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
 cp "mod.icns" "${BUILTDIR}/OpenRA.app/Contents/Resources/${MOD_ID}.icns"
 
 pushd "${BUILTDIR}" > /dev/null
@@ -116,6 +120,7 @@ mv "OpenRA.app" "${PACKAGING_OSX_APP_NAME}"
 modify_plist "{MOD_ID}" "${MOD_ID}" "${PACKAGING_OSX_APP_NAME}/Contents/Info.plist"
 modify_plist "{MOD_NAME}" "${PACKAGING_DISPLAY_NAME}" "${PACKAGING_OSX_APP_NAME}/Contents/Info.plist"
 modify_plist "{JOIN_SERVER_URL_SCHEME}" "openra-${MOD_ID}-${TAG}" "${PACKAGING_OSX_APP_NAME}/Contents/Info.plist"
+modify_plist "{ADDITIONAL_URL_SCHEMES}" "<string>discord-${DISCORD_APP_ID}</string>" "${PACKAGING_OSX_APP_NAME}/Contents/Info.plist"
 
 echo "Packaging zip archive"
 
