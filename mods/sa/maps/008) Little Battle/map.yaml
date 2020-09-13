@@ -76,7 +76,7 @@ Actors:
 	Actor7: beetles_colony
 		Owner: Creeps
 		Location: 24,40
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor8: plant_gumnut
 		Owner: Neutral
 		Location: 11,15
@@ -200,7 +200,7 @@ Actors:
 	Actor50: beetles_colony
 		Owner: Wasps
 		Location: 107,11
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor51: ants_light
 		Owner: Wasps
 		Location: 104,12
@@ -272,7 +272,7 @@ Actors:
 	Actor71: ants_colony
 		Owner: Creeps
 		Location: 102,27
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor72: plant_desert_grass
 		Owner: Neutral
 		Location: 102,35
@@ -339,7 +339,7 @@ Actors:
 	Actor93: ants_colony
 		Owner: Creeps
 		Location: 86,46
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor94: plant_serata
 		Owner: Neutral
 		Location: 92,64
@@ -442,7 +442,7 @@ Actors:
 	Actor129: spiders_colony
 		Owner: Spiders
 		Location: 12,28
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor130: spiders_light
 		Owner: Spiders
 		Location: 11,27
@@ -454,7 +454,7 @@ Actors:
 	Actor132: spiders_light
 		Owner: Spiders
 		Location: 19,27
-		Facing: 10
+		Facing: 40
 	Actor133: spiders_light
 		Owner: Spiders
 		Location: 11,35
@@ -474,7 +474,7 @@ Actors:
 	Actor137: spiders_medium
 		Owner: Spiders
 		Location: 26,28
-		Facing: 6
+		Facing: 24
 	Actor138: plant_serata
 		Owner: Neutral
 		Location: 27,30
@@ -490,7 +490,7 @@ Actors:
 	Actor142: spiders_colony
 		Owner: Ants
 		Location: 64,33
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor143: beetles_light
 		Owner: Ants
 		Location: 67,31

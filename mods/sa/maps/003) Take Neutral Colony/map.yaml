@@ -43,7 +43,7 @@ Actors:
 	Actor0: ants_colony
 		Owner: Beetles
 		Location: 28,11
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor1: ants_medium
 		Owner: Beetles
 		Location: 23,18
@@ -230,7 +230,7 @@ Actors:
 	Actor62: ants_colony
 		Owner: Creeps
 		Location: 33,40
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor63: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 32,38

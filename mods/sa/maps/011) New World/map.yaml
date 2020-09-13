@@ -181,23 +181,23 @@ Actors:
 	Actor42: beetles_colony
 		Location: 9,8
 		Owner: Ants
-		TurretFacing: 122
+		TurretFacing: 488
 	Actor43: ants_colony
 		Location: 85,44
 		Owner: Ants
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor44: ants_colony
 		Location: 59,50
-		TurretFacing: 124
+		TurretFacing: 496
 		Owner: Creeps
 	Actor45: ants_colony
 		Location: 27,32
-		TurretFacing: 122
+		TurretFacing: 488
 		Owner: Creeps
 	Actor46: beetles_colony
 		Location: 85,3
 		Owner: Spiders
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor47: plant_moon_mushroom
 		Location: 96,2
 		Owner: Neutral
@@ -206,11 +206,11 @@ Actors:
 		Owner: Neutral
 	Actor49: ants_colony
 		Location: 49,6
-		TurretFacing: 131
+		TurretFacing: 524
 		Owner: Creeps
 	Actor50: ants_colony
 		Location: 62,31
-		TurretFacing: 130
+		TurretFacing: 520
 		Owner: Creeps
 	Actor51: ants_light
 		Location: 86,41
@@ -272,6 +272,6 @@ Actors:
 	Actor70: ants_colony
 		Location: 22,56
 		Owner: Wasps
-		TurretFacing: 126
+		TurretFacing: 504
 
 Rules: rules.yaml

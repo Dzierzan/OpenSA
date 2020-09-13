@@ -49,7 +49,7 @@ Actors:
 	Actor0: spiders_colony
 		Owner: Spiders
 		Location: 14,13
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor1: plant_toad_stool
 		Owner: Neutral
 		Location: 49,96
@@ -101,7 +101,7 @@ Actors:
 	Actor18: ants_colony
 		Owner: Creeps
 		Location: 18,78
-		TurretFacing: 132
+		TurretFacing: 528
 	Actor19: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 7,76
@@ -168,7 +168,7 @@ Actors:
 	Actor40: beetles_colony
 		Owner: Wasps
 		Location: 51,58
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor41: ants_light
 		Owner: Wasps
 		Location: 50,55
@@ -176,7 +176,7 @@ Actors:
 	Actor42: ants_light
 		Owner: Wasps
 		Location: 44,56
-		Facing: 8
+		Facing: 32
 	Actor43: ants_light
 		Owner: Wasps
 		Location: 45,60
@@ -253,11 +253,11 @@ Actors:
 	Actor64: spiders_light
 		Owner: Spiders
 		Location: 11,11
-		Facing: 5
+		Facing: 20
 	Actor65: spiders_light
 		Owner: Spiders
 		Location: 11,17
-		Facing: 1
+		Facing: 4
 	Actor66: spiders_medium
 		Owner: Spiders
 		Location: 8,19
@@ -265,6 +265,6 @@ Actors:
 	Actor67: spiders_heavy
 		Owner: Spiders
 		Location: 7,26
-		Facing: 2
+		Facing: 8
 
 Rules: rules.yaml

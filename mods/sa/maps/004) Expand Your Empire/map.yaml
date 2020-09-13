@@ -58,7 +58,7 @@ Actors:
 	Actor5: ants_colony
 		Owner: Creeps
 		Location: 12,18
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor6: plant_gumnut
 		Owner: Neutral
 		Location: 25,13
@@ -140,7 +140,7 @@ Actors:
 	Actor32: beetles_colony
 		Owner: Creeps
 		Location: 69,20
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor33: plant_desert_grass
 		Owner: Neutral
 		Location: 78,34
@@ -228,7 +228,7 @@ Actors:
 	Actor62: beetles_colony
 		Owner: Beetles
 		Location: 32,51
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor63: plant_serata
 		Owner: Neutral
 		Location: 32,60
@@ -255,7 +255,7 @@ Actors:
 	Actor69: ants_heavy
 		Owner: Beetles
 		Location: 47,50
-		Facing: 13
+		Facing: 52
 	Actor72: ants_medium
 		Owner: Beetles
 		Location: 49,55
@@ -263,6 +263,6 @@ Actors:
 	Actor73: ants_heavy
 		Owner: Beetles
 		Location: 46,53
-		Facing: 12
+		Facing: 48
 
 Rules: rules.yaml

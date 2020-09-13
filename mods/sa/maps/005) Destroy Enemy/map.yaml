@@ -103,11 +103,11 @@ Actors:
 	Actor18: beetles_colony
 		Owner: Ants
 		Location: 35,50
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor19: ants_colony
 		Owner: Ants
 		Location: 16,20
-		TurretFacing: 132
+		TurretFacing: 528
 	Actor20: plant_gumnut
 		Owner: Neutral
 		Location: 46,53
@@ -177,7 +177,7 @@ Actors:
 	Actor42: ants_colony
 		Owner: Beetles
 		Location: 56,19
-		TurretFacing: 134
+		TurretFacing: 536
 	Actor43: plant_gumnut
 		Owner: Neutral
 		Location: 52,21
@@ -239,7 +239,7 @@ Actors:
 	Actor59: beetles_light
 		Owner: Beetles
 		Location: 53,18
-		Facing: 9
+		Facing: 36
 	Actor60: beetles_light
 		Owner: Beetles
 		Location: 54,15

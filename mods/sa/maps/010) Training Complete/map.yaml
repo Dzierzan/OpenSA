@@ -61,11 +61,11 @@ Actors:
 	Actor0: beetles_colony
 		Owner: Beetles
 		Location: 33,15
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor1: beetles_colony
 		Owner: Beetles
 		Location: 15,5
-		TurretFacing: 134
+		TurretFacing: 536
 	Actor2: plant_desert_grass
 		Owner: Neutral
 		Location: 22,17
@@ -204,11 +204,11 @@ Actors:
 	Actor48: wasps_colony
 		Owner: Creeps
 		Location: 33,33
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor49: spiders_colony
 		Owner: Creeps
 		Location: 16,47
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor50: plant_desert_grass
 		Owner: Neutral
 		Location: 31,38
@@ -254,7 +254,7 @@ Actors:
 	Actor67: ants_colony
 		Owner: Creeps
 		Location: 46,44
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor68: plant_gumnut
 		Owner: Neutral
 		Location: 31,61
@@ -270,11 +270,11 @@ Actors:
 	Actor72: ants_colony
 		Owner: Ants
 		Location: 34,62
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor73: ants_colony
 		Owner: Ants
 		Location: 53,70
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor74: plant_desert_grass
 		Owner: Neutral
 		Location: 43,70
@@ -287,7 +287,7 @@ Actors:
 	Actor77: spiders_colony
 		Owner: Spiders
 		Location: 21,86
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor79: plant_gumnut
 		Owner: Neutral
 		Location: 21,82
@@ -306,11 +306,11 @@ Actors:
 	Actor85: ants_colony
 		Owner: Creeps
 		Location: 6,97
-		TurretFacing: 122
+		TurretFacing: 488
 	Actor83: wasps_colony
 		Owner: Wasps
 		Location: 15,114
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor84: plant_desert_grass
 		Owner: Neutral
 		Location: 14,111
@@ -353,7 +353,7 @@ Actors:
 	Actor98: ants_colony
 		Owner: Creeps
 		Location: 28,103
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor99: plant_gumnut
 		Owner: Neutral
 		Location: 21,106
@@ -384,7 +384,7 @@ Actors:
 	Actor109: beetles_colony
 		Owner: Creeps
 		Location: 48,112
-		TurretFacing: 120
+		TurretFacing: 480
 	Actor110: plant_desert_grass
 		Owner: Neutral
 		Location: 46,110
@@ -406,7 +406,7 @@ Actors:
 	Actor116: wasps_colony
 		Owner: Creeps
 		Location: 47,89
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor117: plant_desert_grass
 		Owner: Neutral
 		Location: 42,90

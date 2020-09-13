@@ -48,35 +48,35 @@ Actors:
 	Actor2: ants_colony
 		Owner: Ants
 		Location: 51,60
-		TurretFacing: 155
+		TurretFacing: 620
 	Actor3: ants_colony
 		Owner: Wasps
 		Location: 73,74
-		TurretFacing: 29
+		TurretFacing: 116
 	Actor4: ants_light
 		Owner: Wasps
 		Location: 70,78
-		Facing: 37
+		Facing: 148
 	Actor5: ants_light
 		Owner: Wasps
 		Location: 71,75
-		Facing: 17
+		Facing: 68
 	Actor6: ants_light
 		Owner: Wasps
 		Location: 74,72
-		Facing: 24
+		Facing: 96
 	Actor7: ants_medium
 		Owner: Wasps
 		Location: 78,71
-		Facing: 92
+		Facing: 368
 	Actor8: ants_medium
 		Owner: Wasps
 		Location: 76,69
-		Facing: 26
+		Facing: 104
 	Actor9: ants_medium
 		Owner: Wasps
 		Location: 68,82
-		Facing: 51
+		Facing: 204
 		Health: 100
 	Actor10: ants_medium
 		Owner: Wasps
@@ -85,72 +85,72 @@ Actors:
 	Actor11: ants_heavy
 		Owner: Wasps
 		Location: 73,80
-		Facing: 36
+		Facing: 144
 	Actor12: ants_heavy
 		Owner: Wasps
 		Location: 67,79
-		Facing: 36
+		Facing: 144
 	Actor13: ants_heavy
 		Owner: Wasps
 		Location: 76,72
-		Facing: 92
+		Facing: 368
 	Actor14: ants_heavy
 		Location: 53,67
-		Facing: 166
+		Facing: 664
 		Faction: wasps
 		Owner: Ants
 	Actor15: ants_heavy
 		Location: 56,65
-		Facing: 170
+		Facing: 680
 		Faction: wasps
 		Owner: Ants
 	Actor16: ants_heavy
 		Location: 58,61
-		Facing: 171
+		Facing: 684
 		Faction: wasps
 		Owner: Ants
 	Actor17: ants_heavy
 		Location: 50,66
-		Facing: 191
+		Facing: 764
 		Faction: wasps
 		Owner: Ants
 	Actor18: ants_heavy
 		Location: 59,63
-		Facing: 158
+		Facing: 632
 		Faction: wasps
 		Owner: Ants
 	Actor19: ants_light
 		Owner: Ants
 		Location: 59,59
-		Facing: 153
+		Facing: 612
 	Actor20: ants_light
 		Owner: Ants
 		Location: 54,59
-		Facing: 159
+		Facing: 636
 	Actor21: ants_light
 		Owner: Ants
 		Location: 62,62
-		Facing: 182
+		Facing: 728
 	Actor22: ants_light
 		Owner: Ants
 		Location: 49,68
-		Facing: 127
+		Facing: 508
 	Actor23: ants_light
 		Owner: Ants
 		Location: 56,68
-		Facing: 165
+		Facing: 660
 	Actor24: scorpions_heavy
 		Owner: Ants
 		Location: 49,62
-		Facing: 139
+		Facing: 556
 	Actor25: spiders_heavy
 		Owner: Ants
 		Location: 55,57
-		Facing: 151
+		Facing: 604
 	Actor26: wasps_light
 		Owner: Ants
 		Location: 50,58
-		Facing: 177
+		Facing: 708
 	Actor27: beetles_heavy
 		Owner: Wasps
 		Location: 80,74
@@ -158,136 +158,115 @@ Actors:
 	Actor28: wasps_light
 		Owner: Wasps
 		Location: 72,82
-		Facing: 44
+		Facing: 176
 	Actor29: spiders_medium
 		Owner: Wasps
 		Location: 80,79
-		Facing: 42
+		Facing: 168
 	Actor30: spiders_heavy
 		Owner: Wasps
 		Location: 77,81
-		Facing: 37
+		Facing: 148
 	Actor31: wasps_colony
 		Owner: Ants
 		Location: 39,58
-		TurretFacing: 167
+		TurretFacing: 668
 	Actor32: beetles_colony
 		Owner: Ants
 		Location: 50,48
-		TurretFacing: 159
+		TurretFacing: 636
 	Actor33: scorpions_colony
 		Owner: Wasps
 		Location: 84,73
-		TurretFacing: 40
+		TurretFacing: 160
 	Actor34: spiders_colony
 		Owner: Wasps
 		Location: 73,84
-		TurretFacing: 37
+		TurretFacing: 148
 	Actor35: popcorn
 		Owner: Creeps
 		Location: 20,92
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor36: popcorn
 		Owner: Creeps
 		Location: 25,96
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor37: popcorn
 		Owner: Creeps
 		Location: 17,98
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor38: popcorn
 		Owner: Creeps
 		Location: 23,89
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor39: popcorn
 		Owner: Creeps
 		Location: 11,88
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor40: popcorn
 		Owner: Creeps
 		Location: 94,110
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor41: popcorn
 		Owner: Creeps
 		Location: 100,103
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor42: popcorn
 		Owner: Creeps
 		Location: 103,114
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor43: popcorn
 		Owner: Creeps
 		Location: 92,105
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor44: popcorn
 		Owner: Creeps
 		Location: 86,113
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor45: popcorn
 		Owner: Creeps
 		Location: 13,18
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor46: popcorn
 		Owner: Creeps
 		Location: 19,22
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor47: popcorn
 		Owner: Creeps
 		Location: 25,15
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor48: popcorn
 		Owner: Creeps
 		Location: 15,27
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor49: popcorn
 		Owner: Creeps
 		Location: 26,25
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor50: popcorn
 		Owner: Creeps
 		Location: 93,17
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor51: popcorn
 		Owner: Creeps
 		Location: 101,11
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor52: popcorn
 		Owner: Creeps
 		Location: 94,9
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor53: popcorn
 		Owner: Creeps
 		Location: 79,21
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor54: popcorn
 		Owner: Creeps
 		Location: 94,26
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor55: popcorn
 		Owner: Creeps
 		Location: 85,12
-		Facing: 92
-		TurretFacing: 92
+		Facing: 368
 	Actor56: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 54,91
@@ -537,156 +516,156 @@ Actors:
 	Actor178: scorpions_colony
 		Owner: Ants
 		Location: 57,45
-		TurretFacing: 162
+		TurretFacing: 648
 	Actor179: spiders_colony
 		Owner: Ants
 		Location: 39,48
-		TurretFacing: 158
+		TurretFacing: 632
 	Actor181: beetles_colony
 		Owner: Wasps
 		Location: 84,81
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor182: wasps_colony
 		Owner: Wasps
 		Location: 64,83
-		TurretFacing: 10
+		TurretFacing: 40
 	Actor183: spiders_light
 		Owner: Wasps
 		Location: 60,87
-		Facing: 1
+		Facing: 4
 	Actor184: spiders_light
 		Owner: Wasps
 		Location: 81,83
-		Facing: 30
+		Facing: 120
 	Actor185: spiders_medium
 		Owner: Wasps
 		Location: 87,71
-		Facing: 48
+		Facing: 192
 	Actor186: spiders_medium
 		Owner: Wasps
 		Location: 84,68
-		Facing: 28
+		Facing: 112
 	Actor187: scorpions_medium
 		Owner: Wasps
 		Location: 83,87
-		Facing: 42
+		Facing: 168
 	Actor188: scorpions_medium
 		Owner: Wasps
 		Location: 71,91
-		Facing: 44
+		Facing: 176
 	Actor189: scorpions_heavy
 		Owner: Wasps
 		Location: 92,80
-		Facing: 32
+		Facing: 128
 	Actor190: scorpions_heavy
 		Owner: Wasps
 		Location: 80,90
-		Facing: 60
+		Facing: 240
 	Actor191: wasps_light
 		Owner: Wasps
 		Location: 64,81
-		Facing: 53
+		Facing: 212
 	Actor192: wasps_light
 		Owner: Wasps
 		Location: 81,77
-		Facing: 45
+		Facing: 180
 	Actor193: wasps_heavy
 		Owner: Wasps
 		Location: 82,72
-		Facing: 92
+		Facing: 368
 	Actor194: wasps_heavy
 		Owner: Wasps
 		Location: 80,70
-		Facing: 92
+		Facing: 368
 	Actor195: beetles_light
 		Owner: Wasps
 		Location: 85,66
-		Facing: 92
+		Facing: 368
 	Actor196: beetles_light
 		Owner: Wasps
 		Location: 80,67
-		Facing: 34
+		Facing: 136
 	Actor197: beetles_light
 		Owner: Wasps
 		Location: 71,85
-		Facing: 41
+		Facing: 164
 	Actor198: beetles_light
 		Owner: Wasps
 		Location: 63,90
-		Facing: 44
+		Facing: 176
 	Actor199: beetles_heavy
 		Owner: Ants
 		Location: 64,53
-		Facing: 92
+		Facing: 368
 	Actor200: beetles_heavy
 		Owner: Ants
 		Location: 60,55
-		Facing: 194
+		Facing: 776
 	Actor201: wasps_light
 		Owner: Ants
 		Location: 46,57
-		Facing: 151
+		Facing: 604
 	Actor202: wasps_light
 		Owner: Ants
 		Location: 41,65
-		Facing: 144
+		Facing: 576
 	Actor203: wasps_medium
 		Owner: Ants
 		Location: 37,65
-		Facing: 140
+		Facing: 560
 	Actor204: wasps_medium
 		Owner: Ants
 		Location: 67,51
-		Facing: 155
+		Facing: 620
 	Actor205: spiders_light
 		Owner: Ants
 		Location: 45,53
-		Facing: 171
+		Facing: 684
 	Actor206: spiders_light
 		Owner: Ants
 		Location: 48,47
-		Facing: 138
+		Facing: 552
 	Actor207: spiders_light
 		Owner: Ants
 		Location: 39,56
-		Facing: 179
+		Facing: 716
 		Health: 100
 	Actor208: spiders_medium
 		Owner: Ants
 		Location: 57,53
-		Facing: 139
+		Facing: 556
 	Actor209: spiders_medium
 		Owner: Ants
 		Location: 66,46
-		Facing: 158
+		Facing: 632
 	Actor210: spiders_heavy
 		Owner: Ants
 		Location: 52,55
-		Facing: 138
+		Facing: 552
 	Actor211: spiders_heavy
 		Owner: Ants
 		Location: 46,64
-		Facing: 92
+		Facing: 368
 	Actor212: scorpions_medium
 		Owner: Ants
 		Location: 70,51
-		Facing: 159
+		Facing: 636
 	Actor213: scorpions_medium
 		Owner: Ants
 		Location: 54,45
-		Facing: 151
+		Facing: 604
 	Actor214: scorpions_heavy
 		Owner: Ants
 		Location: 48,53
-		Facing: 136
+		Facing: 544
 	Actor215: scorpions_heavy
 		Owner: Ants
 		Location: 38,60
-		Facing: 167
+		Facing: 668
 	Actor216: scorpions_heavy
 		Owner: Ants
 		Location: 35,68
-		Facing: 153
+		Facing: 612
 	Actor180: plant_toad_stool
 		Owner: Neutral
 		Location: 47,76

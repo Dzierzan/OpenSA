@@ -194,35 +194,35 @@ Actors:
 	Actor57: ants_colony
 		Owner: Multi0
 		Location: 20,48
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor58: beetles_colony
 		Owner: Multi0
 		Location: 36,48
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor59: wasps_colony
 		Owner: Multi0
 		Location: 10,48
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor60: spiders_colony
 		Owner: Multi0
 		Location: 46,48
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor61: ants_colony
 		Owner: Multi1
 		Location: 36,7
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor62: beetles_colony
 		Owner: Multi1
 		Location: 20,7
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor63: wasps_colony
 		Owner: Multi1
 		Location: 46,7
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor64: spiders_colony
 		Owner: Multi1
 		Location: 10,7
-		TurretFacing: 92
+		TurretFacing: 368
 	Actor67: plant_moon_flower
 		Owner: Neutral
 		Location: 26,57

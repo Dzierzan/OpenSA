@@ -38,4 +38,4 @@ Actors:
 	Actor2: ants_colony
 		Owner: Neutral
 		Location: 27,21
-		TurretFacing: 92
+		TurretFacing: 368

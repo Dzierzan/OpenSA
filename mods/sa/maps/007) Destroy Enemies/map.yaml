@@ -55,7 +55,7 @@ Actors:
 	Actor0: spiders_colony
 		Owner: Creeps
 		Location: 22,15
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor1: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 33,14
@@ -152,7 +152,7 @@ Actors:
 	Actor32: ants_colony
 		Owner: Ants
 		Location: 86,6
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor33: ants_heavy
 		Owner: Ants
 		Location: 85,5
@@ -184,11 +184,11 @@ Actors:
 	Actor41: ants_light
 		Owner: Ants
 		Location: 91,15
-		Facing: 2
+		Facing: 8
 	Actor43: beetles_heavy
 		Owner: Ants
 		Location: 90,17
-		Facing: 6
+		Facing: 24
 	Actor44: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 80,18
@@ -198,7 +198,7 @@ Actors:
 	Actor46: beetles_medium
 		Owner: Ants
 		Location: 80,13
-		Facing: 14
+		Facing: 56
 	Actor47: plant_flower
 		Owner: Neutral
 		Location: 83,3
@@ -247,7 +247,7 @@ Actors:
 	Actor62: beetles_colony
 		Owner: Spiders
 		Location: 63,22
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor63: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 69,19
@@ -275,7 +275,7 @@ Actors:
 	Actor70: ants_light
 		Owner: Spiders
 		Location: 72,38
-		Facing: 4
+		Facing: 16
 	Actor71: ants_medium
 		Owner: Spiders
 		Location: 73,28
@@ -287,7 +287,7 @@ Actors:
 	Actor73: ants_colony
 		Owner: Spiders
 		Location: 62,44
-		TurretFacing: 135
+		TurretFacing: 540
 	Actor74: plant_flower
 		Owner: Neutral
 		Location: 57,46
@@ -302,7 +302,7 @@ Actors:
 		Location: 52,45
 	Actor78: beetles_colony
 		Owner: Beetles
-		TurretFacing: 96
+		TurretFacing: 384
 		Location: 37,55
 	Actor79: spiders_light
 		Owner: Beetles
@@ -331,11 +331,11 @@ Actors:
 	Actor85: ants_heavy
 		Owner: Beetles
 		Location: 38,53
-		Facing: 13
+		Facing: 52
 	Actor87: ants_light
 		Owner: Beetles
 		Location: 32,58
-		Facing: 8
+		Facing: 32
 	Actor88: ants_light
 		Owner: Beetles
 		Location: 35,55

@@ -48,630 +48,610 @@ Actors:
 	Actor2: ants_colony
 		Owner: Multi0
 		Location: 67,12
-		TurretFacing: 120
+		TurretFacing: 480
 	Actor3: beetles_colony
 		Owner: Multi0
 		Location: 45,12
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor4: wasps_colony
 		Owner: Multi0
 		Location: 32,12
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor5: spiders_colony
 		Owner: Multi0
 		Location: 78,12
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor6: scorpions_colony
 		Owner: Multi0
 		Location: 88,12
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor7: scorpions_colony
 		Location: 68,112
 		Owner: Multi1
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor8: ants_colony
 		Owner: Multi1
 		Location: 50,112
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor9: beetles_colony
 		Owner: Multi1
 		Location: 40,112
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor10: wasps_colony
 		Owner: Multi1
 		Location: 78,112
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor11: spiders_colony
 		Owner: Multi1
 		Location: 31,112
-		TurretFacing: 116
+		TurretFacing: 464
 	Actor12: ants_light
 		Owner: Multi1
 		Location: 51,108
-		Facing: 92
+		Facing: 368
 	Actor13: ants_light
 		Owner: Multi1
 		Location: 53,108
-		Facing: 92
+		Facing: 368
 	Actor14: ants_light
 		Owner: Multi1
 		Location: 55,108
-		Facing: 92
+		Facing: 368
 	Actor15: ants_medium
 		Owner: Multi1
 		Location: 51,106
-		Facing: 92
+		Facing: 368
 	Actor16: ants_medium
 		Owner: Multi1
 		Location: 53,106
-		Facing: 92
+		Facing: 368
 	Actor17: ants_medium
 		Owner: Multi1
 		Location: 55,106
-		Facing: 92
+		Facing: 368
 	Actor18: ants_heavy
 		Owner: Multi1
 		Location: 51,104
-		Facing: 92
+		Facing: 368
 	Actor19: ants_heavy
 		Owner: Multi1
 		Location: 53,104
-		Facing: 92
+		Facing: 368
 	Actor20: ants_heavy
 		Owner: Multi1
 		Location: 55,104
-		Facing: 92
+		Facing: 368
 	Actor21: beetles_light
 		Owner: Multi1
 		Location: 41,108
-		Facing: 92
+		Facing: 368
 	Actor22: beetles_light
 		Owner: Multi1
 		Location: 43,108
-		Facing: 92
+		Facing: 368
 	Actor23: beetles_light
 		Owner: Multi1
 		Location: 45,108
-		Facing: 92
+		Facing: 368
 	Actor24: beetles_medium
 		Owner: Multi1
 		Location: 41,106
-		Facing: 92
+		Facing: 368
 	Actor25: beetles_medium
 		Owner: Multi1
 		Location: 43,106
-		Facing: 92
+		Facing: 368
 	Actor26: beetles_medium
 		Owner: Multi1
 		Location: 45,106
-		Facing: 92
+		Facing: 368
 	Actor27: beetles_heavy
 		Owner: Multi1
 		Location: 45,104
-		Facing: 92
+		Facing: 368
 	Actor28: beetles_heavy
 		Owner: Multi1
 		Location: 43,104
-		Facing: 92
+		Facing: 368
 	Actor29: beetles_heavy
 		Owner: Multi1
 		Location: 41,104
-		Facing: 92
+		Facing: 368
 	Actor30: wasps_light
 		Owner: Multi1
 		Location: 79,109
-		Facing: 92
+		Facing: 368
 	Actor31: wasps_light
 		Owner: Multi1
 		Location: 81,109
-		Facing: 92
+		Facing: 368
 	Actor32: wasps_light
 		Owner: Multi1
 		Location: 83,109
-		Facing: 92
+		Facing: 368
 	Actor33: wasps_medium
 		Owner: Multi1
 		Location: 79,107
-		Facing: 92
+		Facing: 368
 	Actor34: wasps_medium
 		Owner: Multi1
 		Location: 81,107
-		Facing: 92
+		Facing: 368
 	Actor35: wasps_medium
 		Owner: Multi1
 		Location: 83,107
-		Facing: 92
+		Facing: 368
 	Actor36: wasps_heavy
 		Owner: Multi1
 		Location: 83,105
-		Facing: 92
+		Facing: 368
 	Actor37: wasps_heavy
 		Owner: Multi1
 		Location: 81,105
-		Facing: 92
+		Facing: 368
 	Actor38: wasps_heavy
 		Owner: Multi1
 		Location: 79,105
-		Facing: 92
+		Facing: 368
 	Actor39: spiders_light
 		Owner: Multi1
 		Location: 36,108
-		Facing: 92
+		Facing: 368
 	Actor40: spiders_light
 		Owner: Multi1
 		Location: 34,108
-		Facing: 92
+		Facing: 368
 	Actor41: spiders_light
 		Owner: Multi1
 		Location: 32,108
-		Facing: 92
+		Facing: 368
 	Actor42: spiders_heavy
 		Owner: Multi1
 		Location: 36,104
-		Facing: 92
+		Facing: 368
 	Actor43: spiders_heavy
 		Owner: Multi1
 		Location: 34,104
-		Facing: 92
+		Facing: 368
 	Actor44: spiders_heavy
 		Owner: Multi1
 		Location: 32,104
-		Facing: 92
+		Facing: 368
 	Actor45: spiders_medium
 		Owner: Multi1
 		Location: 36,106
-		Facing: 92
+		Facing: 368
 	Actor46: spiders_medium
 		Owner: Multi1
 		Location: 34,106
-		Facing: 92
+		Facing: 368
 	Actor47: spiders_medium
 		Owner: Multi1
 		Location: 32,106
-		Facing: 92
+		Facing: 368
 	Actor48: scorpions_light
 		Owner: Multi1
 		Location: 69,109
-		Facing: 92
+		Facing: 368
 	Actor49: scorpions_light
 		Owner: Multi1
 		Location: 71,109
-		Facing: 92
+		Facing: 368
 	Actor50: scorpions_light
 		Owner: Multi1
 		Location: 73,109
-		Facing: 92
+		Facing: 368
 	Actor51: scorpions_medium
 		Owner: Multi1
 		Location: 73,107
-		Facing: 92
+		Facing: 368
 	Actor52: scorpions_medium
 		Owner: Multi1
 		Location: 71,107
-		Facing: 92
+		Facing: 368
 	Actor53: scorpions_medium
 		Owner: Multi1
 		Location: 69,107
-		Facing: 92
+		Facing: 368
 	Actor54: scorpions_heavy
 		Owner: Multi1
 		Location: 73,105
-		Facing: 92
+		Facing: 368
 	Actor55: scorpions_heavy
 		Owner: Multi1
 		Location: 71,105
-		Facing: 92
+		Facing: 368
 	Actor56: scorpions_heavy
 		Owner: Multi1
 		Location: 69,105
-		Facing: 92
+		Facing: 368
 	Actor60: ants_light
 		Owner: Multi0
 		Location: 67,19
-		Facing: 92
+		Facing: 368
 	Actor61: ants_light
 		Owner: Multi0
 		Location: 69,19
-		Facing: 92
+		Facing: 368
 	Actor62: ants_light
 		Owner: Multi0
 		Location: 71,19
-		Facing: 92
+		Facing: 368
 	Actor63: ants_medium
 		Owner: Multi0
 		Location: 71,21
-		Facing: 92
+		Facing: 368
 	Actor64: ants_medium
 		Owner: Multi0
 		Location: 69,21
-		Facing: 92
+		Facing: 368
 	Actor65: ants_medium
 		Owner: Multi0
 		Location: 67,21
-		Facing: 92
+		Facing: 368
 	Actor69: beetles_light
 		Owner: Multi0
 		Location: 45,19
-		Facing: 92
+		Facing: 368
 	Actor70: beetles_light
 		Owner: Multi0
 		Location: 47,19
-		Facing: 92
+		Facing: 368
 	Actor71: beetles_light
 		Owner: Multi0
 		Location: 49,19
-		Facing: 92
+		Facing: 368
 	Actor72: beetles_medium
 		Owner: Multi0
 		Location: 49,21
-		Facing: 92
+		Facing: 368
 	Actor73: beetles_medium
 		Owner: Multi0
 		Location: 47,21
-		Facing: 92
+		Facing: 368
 	Actor74: beetles_medium
 		Owner: Multi0
 		Location: 45,21
-		Facing: 92
+		Facing: 368
 	Actor75: beetles_heavy
 		Owner: Multi0
 		Location: 49,23
-		Facing: 92
+		Facing: 368
 	Actor76: beetles_heavy
 		Owner: Multi0
 		Location: 47,23
-		Facing: 92
+		Facing: 368
 	Actor77: beetles_heavy
 		Owner: Multi0
 		Location: 45,23
-		Facing: 92
+		Facing: 368
 	Actor78: wasps_light
 		Owner: Multi0
 		Location: 36,20
-		Facing: 92
+		Facing: 368
 	Actor79: wasps_light
 		Owner: Multi0
 		Location: 34,20
-		Facing: 92
+		Facing: 368
 	Actor80: wasps_light
 		Owner: Multi0
 		Location: 32,20
-		Facing: 92
+		Facing: 368
 	Actor81: wasps_medium
 		Owner: Multi0
 		Location: 36,22
-		Facing: 92
+		Facing: 368
 	Actor82: wasps_medium
 		Owner: Multi0
 		Location: 34,22
-		Facing: 92
+		Facing: 368
 	Actor83: wasps_medium
 		Owner: Multi0
 		Location: 32,22
-		Facing: 92
+		Facing: 368
 	Actor85: wasps_heavy
 		Owner: Multi0
 		Location: 36,24
-		Facing: 92
+		Facing: 368
 	Actor86: wasps_heavy
 		Owner: Multi0
 		Location: 34,24
-		Facing: 92
+		Facing: 368
 	Actor87: wasps_heavy
 		Owner: Multi0
 		Location: 32,24
-		Facing: 92
+		Facing: 368
 	Actor88: spiders_light
 		Owner: Multi0
 		Location: 78,19
-		Facing: 92
+		Facing: 368
 	Actor89: spiders_light
 		Owner: Multi0
 		Location: 80,19
-		Facing: 92
+		Facing: 368
 	Actor90: spiders_light
 		Owner: Multi0
 		Location: 82,19
-		Facing: 92
+		Facing: 368
 	Actor91: spiders_medium
 		Owner: Multi0
 		Location: 82,21
-		Facing: 92
+		Facing: 368
 	Actor92: spiders_medium
 		Owner: Multi0
 		Location: 80,21
-		Facing: 92
+		Facing: 368
 	Actor94: spiders_medium
 		Owner: Multi0
 		Location: 78,21
-		Facing: 92
+		Facing: 368
 	Actor93: spiders_heavy
 		Owner: Multi0
 		Location: 82,23
-		Facing: 92
+		Facing: 368
 	Actor95: spiders_heavy
 		Owner: Multi0
 		Location: 80,23
-		Facing: 92
+		Facing: 368
 	Actor96: spiders_heavy
 		Owner: Multi0
 		Location: 78,23
-		Facing: 92
+		Facing: 368
 	Actor97: scorpions_light
 		Owner: Multi0
 		Location: 89,19
-		Facing: 92
+		Facing: 368
 	Actor98: scorpions_light
 		Owner: Multi0
 		Location: 91,19
-		Facing: 92
+		Facing: 368
 	Actor99: scorpions_light
 		Owner: Multi0
 		Location: 93,19
-		Facing: 92
+		Facing: 368
 	Actor100: scorpions_medium
 		Owner: Multi0
 		Location: 93,21
-		Facing: 92
+		Facing: 368
 	Actor101: scorpions_medium
 		Owner: Multi0
 		Location: 91,21
-		Facing: 92
+		Facing: 368
 	Actor102: scorpions_medium
 		Owner: Multi0
 		Location: 89,21
-		Facing: 92
+		Facing: 368
 	Actor103: scorpions_heavy
 		Owner: Multi0
 		Location: 93,23
-		Facing: 92
+		Facing: 368
 	Actor104: scorpions_heavy
 		Owner: Multi0
 		Location: 91,23
-		Facing: 92
+		Facing: 368
 	Actor105: scorpions_heavy
 		Owner: Multi0
 		Location: 89,23
-		Facing: 92
+		Facing: 368
 	Actor109: ant_bull_pirate
 		Location: 9,58
-		Facing: 92
+		Facing: 368
 		Owner: Creeps
 	Actor110: ant_bull_pirate
 		Owner: Creeps
 		Location: 12,58
-		Facing: 92
+		Facing: 368
 	Actor111: ant_bull_pirate
 		Owner: Creeps
 		Location: 15,58
-		Facing: 92
+		Facing: 368
 	Actor112: ant_bull_pirate
 		Owner: Creeps
 		Location: 8,61
-		Facing: 92
+		Facing: 368
 	Actor113: ant_bull_pirate
 		Owner: Creeps
 		Location: 11,61
-		Facing: 92
+		Facing: 368
 	Actor114: ant_bull_pirate
 		Owner: Creeps
 		Location: 15,61
-		Facing: 92
+		Facing: 368
 	Actor115: ant_bull_pirate
 		Owner: Creeps
 		Location: 8,64
-		Facing: 92
+		Facing: 368
 	Actor116: ant_bull_pirate
 		Owner: Creeps
 		Location: 11,64
-		Facing: 92
+		Facing: 368
 	Actor117: ant_bull_pirate
 		Owner: Creeps
 		Location: 15,64
-		Facing: 92
+		Facing: 368
 	Actor118: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 8,67
-		Facing: 92
+		Facing: 368
 	Actor119: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 11,67
-		Facing: 92
+		Facing: 368
 	Actor120: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 15,67
-		Facing: 92
+		Facing: 368
 	Actor121: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 7,70
-		Facing: 92
+		Facing: 368
 	Actor122: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 11,70
-		Facing: 92
+		Facing: 368
 	Actor123: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 16,69
-		Facing: 92
+		Facing: 368
 	Actor124: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 7,73
-		Facing: 92
+		Facing: 368
 	Actor125: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 11,73
-		Facing: 92
+		Facing: 368
 	Actor126: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 16,73
-		Facing: 92
+		Facing: 368
 	Actor159: ants_heavy
-		Facing: 96
+		Facing: 384
 		Location: 71,23
 		Owner: Multi0
 	Actor160: ants_heavy
-		Facing: 96
+		Facing: 384
 		Location: 69,23
 		Owner: Multi0
 	Actor161: ants_heavy
-		Facing: 96
+		Facing: 384
 		Location: 67,23
 		Owner: Multi0
 	Actor162: ants_colony_turret
 		Location: 69,27
 		Owner: Multi0
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor163: beetles_colony_turret
 		Location: 47,27
 		Owner: Multi0
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor164: wasps_colony_turret
 		Location: 34,27
 		Owner: Multi0
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor165: spiders_colony_turret
 		Location: 80,26
 		Owner: Multi0
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor166: scorpions_colony_turret
 		Location: 90,26
 		Owner: Multi0
-		TurretFacing: 134
+		TurretFacing: 536
 	Actor167: beetles_colony_turret
 		Owner: Multi1
 		Location: 42,100
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor168: wasps_colony_turret
 		Owner: Multi1
 		Location: 81,102
-		TurretFacing: 132
+		TurretFacing: 528
 	Actor169: spiders_colony_turret
 		Owner: Multi1
 		Location: 34,101
-		TurretFacing: 132
+		TurretFacing: 528
 	Actor170: scorpions_colony_turret
 		Owner: Multi1
 		Location: 71,101
-		TurretFacing: 120
+		TurretFacing: 480
 	Actor171: ants_colony_turret
 		Owner: Multi1
 		Location: 53,101
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor172: ants_colony
 		Owner: Creeps
 		Location: 18,62
-		TurretFacing: 134
+		TurretFacing: 536
 	Actor173: ants_colony_turret
 		Owner: Creeps
 		Location: 20,58
-		TurretFacing: 124
+		TurretFacing: 496
 	Actor174: ants_colony_turret
 		Owner: Creeps
 		Location: 27,64
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor175: ants_colony_turret
 		Owner: Creeps
 		Location: 20,71
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor140: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 85,61
 	Actor141: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 89,61
 	Actor142: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 85,65
 	Actor143: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 89,65
 	Actor144: thorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,61
 	Actor145: thorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,61
 	Actor146: thorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,65
 	Actor147: thorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,65
 	Actor148: freckle
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 113,61
 	Actor149: freckle
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 118,61
 	Actor150: freckle
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 113,65
 	Actor151: freckle
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 118,65
 	Actor152: lolly_red
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,51
 	Actor153: lolly_white
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,51
 	Actor154: lolly_orange
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,46
 	Actor155: lolly_blue
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,46
 	Actor156: puff
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 116,35
 	Actor157: puff
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 123,35
 	Actor158: puff
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 123,29
 	Actor176: puff
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 116,29
 	Actor177: plant_brown_mushroom
 		Owner: Neutral
@@ -1117,165 +1097,146 @@ Actors:
 	Actor340: wasps_colony
 		Owner: Creeps
 		Location: 32,62
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor341: wasps_colony_turret
 		Owner: Creeps
 		Location: 35,71
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor342: wasps_colony_turret
 		Owner: Creeps
 		Location: 42,65
-		TurretFacing: 120
+		TurretFacing: 480
 	Actor343: beetles_colony
 		Owner: Creeps
 		Location: 25,51
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor344: beetles_colony_turret
 		Owner: Creeps
 		Location: 36,52
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor345: beetles_colony_turret
 		Owner: Creeps
 		Location: 27,46
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor346: beetles_colony_turret
 		Owner: Creeps
 		Location: 14,52
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor347: wasps_light
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 30,67
 	Actor348: wasps_light
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 32,60
 	Actor349: wasps_light
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 38,68
 	Actor350: wasps_light
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 39,63
 	Actor351: wasps_light
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 37,59
 	Actor352: beetles_heavy
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 28,59
 	Actor353: beetles_heavy
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 23,55
 	Actor354: beetles_heavy
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 26,49
 	Actor355: beetles_heavy
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 33,55
 	Actor356: beetles_heavy
 		Owner: Creeps
-		Facing: 96
+		Facing: 384
 		Location: 33,50
 	Actor357: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 25,68
 	Actor358: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 23,61
 	Actor359: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 5,63
 	Actor360: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 35,57
 	Actor361: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 47,60
 	Actor362: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 18,51
 	Actor363: popcorn
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 10,54
 	Actor336: venus
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 89,51
 		Owner: Creeps
 	Actor337: venus
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 85,51
 		Owner: Creeps
 	Actor338: venus
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 85,47
 		Owner: Creeps
 	Actor339: venus
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 89,47
 		Owner: Creeps
 	Actor364: mushroom
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 113,51
 	Actor365: mushroom
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 113,46
 	Actor366: mushroom
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 118,46
 	Actor367: mushroom
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 118,51
 	Actor368: gumnut
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,74
 	Actor369: gumnut
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,74
 	Actor370: gumnut
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 99,80
 	Actor371: gumnut
 		Owner: Creeps
-		Facing: 96
-		TurretFacing: 96
+		Facing: 384
 		Location: 104,80
 	Actor372: plant_broad_leaf_grass
 		Owner: Neutral

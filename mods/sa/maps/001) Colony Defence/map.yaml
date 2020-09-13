@@ -97,7 +97,7 @@ Actors:
 	Actor12: ants_colony
 		Owner: Ants
 		Location: 20,50
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor13: ants_light
 		Owner: Ants
 		Location: 17,52
@@ -121,7 +121,7 @@ Actors:
 	Actor18: ants_light
 		Owner: Spiders
 		Location: 18,44
-		Facing: 2
+		Facing: 8
 	Actor19: ants_light
 		Owner: Spiders
 		Location: 13,47
@@ -209,7 +209,7 @@ Actors:
 	Actor40: ants_light
 		Owner: Ants
 		Location: 49,48
-		Facing: 9
+		Facing: 36
 	Actor41: ants_light
 		Owner: Ants
 		Location: 48,47

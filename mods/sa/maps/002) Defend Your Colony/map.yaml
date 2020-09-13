@@ -49,7 +49,7 @@ Actors:
 	Actor0: ants_colony
 		Owner: Ants
 		Location: 54,79
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor1: ants_heavy
 		Owner: Ants
 		Location: 63,76

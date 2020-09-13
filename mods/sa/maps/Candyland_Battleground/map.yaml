@@ -48,59 +48,59 @@ Actors:
 	Actor2: beetles_colony
 		Owner: Creeps
 		Location: 78,69
-		TurretFacing: 123
+		TurretFacing: 492
 	Actor3: beetles_colony
 		Owner: Creeps
 		Location: 98,65
-		TurretFacing: 120
+		TurretFacing: 480
 	Actor4: spiders_colony
 		Owner: Creeps
 		Location: 53,81
-		TurretFacing: 132
+		TurretFacing: 528
 	Actor5: wasps_colony
 		Owner: Creeps
 		Location: 49,100
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor6: ants_colony
 		Owner: Creeps
 		Location: 67,111
-		TurretFacing: 126
+		TurretFacing: 504
 	Actor7: beetles_colony
 		Owner: Creeps
 		Location: 15,106
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor8: ants_colony
 		Owner: Creeps
 		Location: 13,66
-		TurretFacing: 138
+		TurretFacing: 552
 	Actor9: ants_colony
 		Owner: Creeps
 		Location: 40,62
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor10: wasps_colony
 		Owner: Creeps
 		Location: 15,18
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor11: beetles_colony
 		Owner: Creeps
 		Location: 27,33
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor12: scorpions_colony
 		Owner: Creeps
 		Location: 60,4
-		TurretFacing: 131
+		TurretFacing: 524
 	Actor13: ants_colony
 		Owner: Creeps
 		Location: 88,39
-		TurretFacing: 130
+		TurretFacing: 520
 	Actor14: wasps_colony
 		Owner: Creeps
 		Location: 116,42
-		TurretFacing: 127
+		TurretFacing: 508
 	Actor15: scorpions_colony
 		Owner: Creeps
 		Location: 100,112
-		TurretFacing: 128
+		TurretFacing: 512
 	Actor16: plant_jelly_bean
 		Owner: Neutral
 		Location: 111,118
