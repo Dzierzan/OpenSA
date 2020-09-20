@@ -270,4 +270,4 @@ ModContent:
 		sa|installer/downloads.yaml
 
 DiscordService:
-		ApplicationId: 754764145668128848
+	ApplicationId: 754764145668128848
