@@ -268,3 +268,6 @@ ModContent:
 			Download: basefiles
 	Downloads:
 		sa|installer/downloads.yaml
+
+DiscordService:
+		ApplicationId: 754764145668128848
