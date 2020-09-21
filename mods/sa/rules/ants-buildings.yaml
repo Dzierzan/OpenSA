@@ -36,8 +36,9 @@ ants_colony:
 	Turreted@primary:
 		Turret: primary
 		Offset: 170,-140,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret@primary:
 		Turret: primary
 	Armament@primary:
@@ -52,8 +53,9 @@ ants_colony:
 	Turreted@secondary:
 		Turret: secondary
 		Offset: 3850,500,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret@secondary:
 		Turret: secondary
 	Armament@secondary:
@@ -87,8 +89,9 @@ ants_colony_turret:
 	Turreted:
 		Turret: primary
 		Offset: 1100,10,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret:
 		Turret: primary
 	Armament:

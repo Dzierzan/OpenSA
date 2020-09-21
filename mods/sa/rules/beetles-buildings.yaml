@@ -38,8 +38,9 @@ beetles_colony:
 		LocalOffset: 750,0,0
 	Turreted:
 		Offset: 1400,0,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 
 beetles_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
@@ -58,8 +59,9 @@ beetles_colony_turret:
 	Turreted:
 		Turret: primary
 		Offset: 100,100,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret:
 		Turret: primary
 	Armament:

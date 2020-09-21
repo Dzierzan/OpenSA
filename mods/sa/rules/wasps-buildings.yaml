@@ -43,8 +43,9 @@ wasps_colony:
 		LocalOffset: 750,0,0
 	Turreted:
 		Offset: 2150,-950,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 
 wasps_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
@@ -66,8 +67,9 @@ wasps_colony_turret:
 	Turreted:
 		Turret: primary
 		Offset: 1100,0,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret:
 		Turret: primary
 	Armament:

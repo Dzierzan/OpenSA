@@ -36,8 +36,9 @@ spiders_colony:
 	Turreted@primary:
 		Turret: primary
 		Offset: 800,950,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret@primary:
 		Turret: primary
 	Armament@primary:
@@ -52,8 +53,9 @@ spiders_colony:
 	Turreted@secondary:
 		Turret: secondary
 		Offset: 3200,-850,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret@secondary:
 		Turret: secondary
 	Armament@secondary:
@@ -67,8 +69,6 @@ spiders_colony:
 	
 	AttackTurreted:
 		Turrets: primary, secondary
-
-
 
 spiders_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
@@ -87,8 +87,9 @@ spiders_colony_turret:
 	Turreted:
 		Turret: primary
 		Offset: 1000,0,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	WithSpriteTurret:
 		Turret: primary
 	Armament:

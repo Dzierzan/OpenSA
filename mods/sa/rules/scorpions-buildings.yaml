@@ -43,8 +43,9 @@ scorpions_colony:
 		LocalOffset: 0,-256,0
 	Turreted:
 		Offset: 3450,440,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 
 scorpions_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
@@ -62,8 +63,9 @@ scorpions_colony_turret:
 	WithIdleOverlay:
 	Turreted:
 		Offset: 800,-50,0
-		TurnSpeed: 30
-		InitialFacing: 90
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
 	Armament@primary:
 		Name: primary
 		Weapon: scorpions_colony
