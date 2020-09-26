@@ -5,7 +5,7 @@ World:
 	-MPStartLocations:
 	-PirateSpawner:
 	CreepFlyerSpawner@dragonfly:
-		Maximum: 2
+		#Maximum: 2
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
 	-CreepFlyerSpawner@flyingmachine:
