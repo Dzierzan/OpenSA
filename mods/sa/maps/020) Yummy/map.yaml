@@ -42,13 +42,13 @@ Players:
 		Name: Beetles
 		Faction: beetles
 		Color: 606EA5
-		Bot: medium
+		Bot: beetles-ai
 		Enemies: Wasps, Spiders, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
 		Faction: spiders
 		Color: CA3131
-		Bot: medium
+		Bot: spiders-ai
 		Enemies: Wasps, Beetles, Creeps
 
 Actors:

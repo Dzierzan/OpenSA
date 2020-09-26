@@ -40,7 +40,7 @@ Players:
 		Enemies: Beetles, Creeps
 	PlayerReference@Beetles:
 		Name: Beetles
-		Bot: campaign
+		Bot: beetles-ai
 		Faction: beetles
 		Color: 606EA5
 		Enemies: Ants, Creeps

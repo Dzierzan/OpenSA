@@ -40,13 +40,13 @@ Players:
 		Enemies: Ants, Wasps, Creeps
 	PlayerReference@Ants:
 		Name: Ants
-		Bot: medium
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
 		Enemies: Wasps, Spiders, Creeps
 	PlayerReference@Wasps:
 		Name: Wasps
-		Bot: medium
+		Bot: wasps-ai
 		Faction: wasps
 		Color: F5D378
 		Enemies: Ants, Spiders, Creeps

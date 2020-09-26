@@ -40,7 +40,7 @@ Players:
 		Enemies: Wasps
 	PlayerReference@Wasps:
 		Name: Wasps
-		Bot: medium
+		Bot: wasps-ai
 		Faction: wasps
 		Color: F5D378
 		Enemies: Ants

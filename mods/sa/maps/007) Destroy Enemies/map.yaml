@@ -40,13 +40,13 @@ Players:
 		Enemies: Ants, Beetles, Creeps
 	PlayerReference@Ants:
 		Name: Ants
-		Bot: medium
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
 		Enemies: Beetles, Spiders, Creeps
 	PlayerReference@Beetles:
 		Name: Beetles
-		Bot: medium
+		Bot: beetles-ai
 		Faction: beetles
 		Color: 606EA5
 		Enemies: Creeps, Ants, Spiders

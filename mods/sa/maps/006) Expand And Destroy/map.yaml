@@ -40,7 +40,7 @@ Players:
 		Enemies: Spiders, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
-		Bot: medium
+		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
 		Enemies: Wasps, Creeps
