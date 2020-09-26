@@ -16,5 +16,5 @@ World:
 	-PlantSpawner@NORMAL:
 	-PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
+	PlantSpawner@CANDY:
 		Maximum: 11
