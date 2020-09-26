@@ -73,7 +73,7 @@
 	ProvidesRadar:
 	Production:
 	ProductionQueue:
-		InfiniteBuildLimit: 10
+		InfiniteBuildLimit: 100
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
