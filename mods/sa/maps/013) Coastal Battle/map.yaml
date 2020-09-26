@@ -1,0 +1,227 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 013) Coastal Battle
+
+Author: Gate 5 Creations
+
+Tileset: NORMAL
+
+MapSize: 68,100
+
+Bounds: 2,2,64,96
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Ants, Spiders, Beetles
+	PlayerReference@Ants:
+		Name: Ants
+		Bot: medium
+		Faction: ants
+		Color: 57AC49
+		Enemies: Beetles, Spiders, Creeps
+	PlayerReference@Beetles:
+		Name: Beetles
+		Bot: medium
+		Faction: beetles
+		Color: 606EA5
+		Enemies: Ants, Spiders, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: spiders
+		LockColor: True
+		Color: CA3131
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Ants, Beetles, Creeps
+
+Actors:
+	Actor0: beetles_colony
+		Location: 29,86
+		Owner: Ants
+	Actor1: spiders_colony
+		Location: 20,39
+		Owner: Beetles
+	Actor2: wasps_colony
+		Location: 20,57
+		Owner: Creeps
+	Actor3: beetles_colony
+		Location: 35,71
+		Owner: Creeps
+	Actor4: plant_broad_leaf_grass
+		Location: 16,4
+		Owner: Neutral
+	Actor5: plant_broad_leaf_grass
+		Location: 27,79
+		Owner: Neutral
+	Actor6: plant_brown_mushroom
+		Location: 12,60
+		Owner: Neutral
+	Actor7: plant_flower
+		Location: 12,38
+		Owner: Neutral
+	Actor8: plant_flower
+		Location: 30,78
+		Owner: Neutral
+	Actor9: plant_toad_stool
+		Location: 8,90
+		Owner: Neutral
+	Actor10: plant_broad_leaf_grass
+		Location: 24,70
+		Owner: Neutral
+	Actor11: plant_toad_stool
+		Location: 6,72
+		Owner: Neutral
+	Actor12: plant_flower
+		Location: 4,30
+		Owner: Neutral
+	Actor13: plant_broad_leaf_grass
+		Location: 26,90
+		Owner: Neutral
+	Actor14: plant_flower
+		Location: 28,64
+		Owner: Neutral
+	Actor15: plant_broad_leaf_grass
+		Location: 2,28
+		Owner: Neutral
+	Actor16: plant_flower
+		Location: 26,20
+		Owner: Neutral
+	Actor17: plant_toad_stool
+		Location: 4,52
+		Owner: Neutral
+	Actor18: plant_flower
+		Location: 15,36
+		Owner: Neutral
+	Actor19: plant_flower
+		Location: 12,72
+		Owner: Neutral
+	Actor20: plant_flower
+		Location: 8,12
+		Owner: Neutral
+	Actor21: plant_flower
+		Location: 14,58
+		Owner: Neutral
+	Actor22: plant_flower
+		Location: 8,64
+		Owner: Neutral
+	Actor23: plant_broad_leaf_grass
+		Location: 36,60
+		Owner: Neutral
+	Actor24: plant_brown_mushroom
+		Location: 8,54
+		Owner: Neutral
+	Actor25: plant_toad_stool
+		Location: 4,94
+		Owner: Neutral
+	Actor26: plant_broad_leaf_grass
+		Location: 30,6
+		Owner: Neutral
+	Actor27: plant_flower
+		Location: 42,94
+		Owner: Neutral
+	Actor28: plant_flower
+		Location: 32,30
+		Owner: Neutral
+	Actor29: plant_toad_stool
+		Location: 8,88
+		Owner: Neutral
+	Actor30: plant_broad_leaf_grass
+		Location: 16,12
+		Owner: Neutral
+	Actor31: plant_brown_mushroom
+		Location: 10,52
+		Owner: Neutral
+	Actor32: plant_toad_stool
+		Location: 2,70
+		Owner: Neutral
+	Actor33: plant_toad_stool
+		Location: 12,72
+		Owner: Neutral
+	Actor34: plant_brown_mushroom
+		Location: 18,76
+		Owner: Neutral
+	Actor35: plant_broad_leaf_grass
+		Location: 18,48
+		Owner: Neutral
+	Actor36: plant_broad_leaf_grass
+		Location: 14,86
+		Owner: Neutral
+	Actor37: plant_broad_leaf_grass
+		Location: 28,77
+		Owner: Neutral
+	Actor38: plant_flower
+		Location: 34,4
+		Owner: Neutral
+	Actor39: plant_flower
+		Location: 30,36
+		Owner: Neutral
+	Actor40: plant_flower
+		Location: 18,82
+		Owner: Neutral
+	Actor41: plant_flower
+		Location: 20,54
+		Owner: Neutral
+	Actor42: plant_flower
+		Location: 6,58
+		Owner: Neutral
+	Actor43: plant_brown_mushroom
+		Location: 16,68
+		Owner: Neutral
+	Actor44: plant_flower
+		Location: 28,72
+		Owner: Neutral
+	Actor45: plant_broad_leaf_grass
+		Location: 22,66
+		Owner: Neutral
+	Actor46: plant_toad_stool
+		Location: 2,6
+		Owner: Neutral
+	Actor47: wasps_colony
+		Location: 4,15
+		Owner: Spiders
+	Actor48: wasps_heavy
+		Location: 11,14
+		Owner: Spiders
+	Actor49: wasps_medium
+		Location: 13,17
+		Owner: Spiders
+	Actor50: wasps_medium
+		Location: 6,22
+		Owner: Spiders
+	Actor51: wasps_medium
+		Location: 11,21
+		Owner: Spiders
+	Actor52: wasps_heavy
+		Location: 5,12
+		Owner: Spiders
+	Actor53: beetles_heavy
+		Location: 39,90
+		Owner: Ants
+	Actor54: ants_light
+		Location: 27,85
+		Owner: Ants
+	Actor55: ants_light
+		Location: 25,87
+		Owner: Ants
+	Actor56: ants_light
+		Location: 28,94
+		Owner: Ants
+
+Rules: rules.yaml
