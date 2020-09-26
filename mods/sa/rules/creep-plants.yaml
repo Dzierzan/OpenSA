@@ -56,13 +56,13 @@ venus:
 		Weapon: venus
 	#WithAttackAnimation@normal:
 	#	Sequence: shoot
-	#	RequiresCondition: !injured
-	#WithAttackAnimation@injured:
+	#	RequiresCondition: !lightly-damaged
+	#WithAttackAnimation@scratched:
 	#	Sequence: damaged-shoot
-	#	RequiresCondition: scratched
-	#GrantConditionOnDamageState: #TODO lack of support lightly damaged state
-	#	Condition: scratched
-	#	ValidDamageStates: Injured
+	#	RequiresCondition: lightly-damaged
+	#GrantConditionOnDamageState@scratched:
+	#	Condition: lightly-damaged
+	#	ValidDamageStates: Light, Medium
 	#	GrantPermanently: False
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:

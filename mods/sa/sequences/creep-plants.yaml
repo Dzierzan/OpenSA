@@ -18,8 +18,8 @@ popcorn:
 
 venus:
 	idle: sprites|OBVENUSNORMAL.ANI
-	scratched-idle: bits/VenusFlytrap.png
-		Start: 9
+	#scratched-idle: bits/VenusFlytrap.png
+	#	Start: 9
 	damaged-idle: bits/VenusFlytrap.png
 		Start: 10
 	critical-idle: bits/VenusFlytrap.png
