@@ -139,6 +139,7 @@ ChromeLayout:
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml
+	sa|chrome/mainmenu-prerelease-notification.yaml
 
 AssetBrowser:
 	SupportedExtensions: .ani, .ddf

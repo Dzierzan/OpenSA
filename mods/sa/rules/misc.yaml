@@ -101,6 +101,7 @@ EditorPlayer:
 		Side: Random
 		RandomFactionMembers: ants, beetles, scorpions, spiders, wasps
 	LoadWidgetAtGameStart:
+		ShellmapRoot: MAINMENU_PRERELEASE_NOTIFICATION
 	Locomotor@Unit:
 		Name: unit
 		Crushes: colony_bit
