@@ -1,0 +1,218 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 012) Desert Foray
+
+Author: Gate 5 Creations
+
+Tileset: DESERT
+
+MapSize: 100,68
+
+Bounds: 2,2,96,64
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Ants, Wasps, Spiders, Beetles
+	PlayerReference@Wasps:
+		Name: Wasps
+		Faction: wasps
+		Color: F5D378
+		Bot: medium
+		Enemies: Ants, Wasps, Spiders, Creeps
+	PlayerReference@Ants:
+		Name: Ants
+		Faction: ants
+		Color: 57AC49
+		Bot: medium
+		Enemies: Beetles, Wasps, Spiders, Creeps
+	PlayerReference@Beetles:
+		Name: Beetles
+		Faction: beetles
+		Color: 606EA5
+		Bot: medium
+		Enemies: Ants, Wasps, Spiders, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Faction: spiders 
+		Color: CA3131
+		Playable: True
+		Required: True
+		LockFaction: True
+		LockColor: True
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Ants, Wasps, Beetles, Creeps
+
+Actors:
+	Actor0: beetles_colony
+		Location: 5,31
+		Owner: Wasps
+	Actor1: wasps_colony
+		Location: 87,17
+		Owner: Ants
+	Actor2: wasps_colony
+		Location: 71,33
+		Owner: Beetles
+	Actor3: ants_colony
+		Location: 51,37
+		Owner: Wasps
+	Actor4: spiders_colony
+		Location: 27,15
+		Owner: Spiders
+	Actor5: ants_colony
+		Location: 16,53
+		Owner: Ants
+	Actor6: plant_desert_grass
+		Location: 46,10
+		Owner: Neutral
+	Actor7: plant_serata
+		Location: 68,34
+		Owner: Neutral
+	Actor8: plant_desert_grass
+		Location: 84,3
+		Owner: Neutral
+	Actor9: plant_desert_grass
+		Location: 54,46
+		Owner: Neutral
+	Actor10: plant_desert_grass
+		Location: 86,16
+		Owner: Neutral
+	Actor11: plant_gumnut
+		Location: 42,62
+		Owner: Neutral
+	Actor12: plant_gumnut
+		Location: 42,48
+		Owner: Neutral
+	Actor13: plant_desert_grass
+		Location: 62,16
+		Owner: Neutral
+	Actor14: plant_gumnut
+		Location: 6,44
+		Owner: Neutral
+	Actor15: plant_desert_grass
+		Location: 40,4
+		Owner: Neutral
+	Actor16: plant_desert_grass
+		Location: 62,58
+		Owner: Neutral
+	Actor17: plant_gumnut
+		Location: 24,44
+		Owner: Neutral
+	Actor18: plant_gumnut
+		Location: 22,40
+		Owner: Neutral
+	Actor19: plant_desert_flower
+		Location: 32,44
+		Owner: Neutral
+	Actor20: plant_serata
+		Location: 62,60
+		Owner: Neutral
+	Actor21: plant_desert_grass
+		Location: 4,28
+		Owner: Neutral
+	Actor22: plant_desert_grass
+		Location: 16,20
+		Owner: Neutral
+	Actor23: plant_gumnut
+		Location: 90,14
+		Owner: Neutral
+	Actor24: plant_desert_flower
+		Location: 90,6
+		Owner: Neutral
+	Actor25: plant_serata
+		Location: 24,34
+		Owner: Neutral
+	Actor26: plant_desert_flower
+		Location: 90,4
+		Owner: Neutral
+	Actor27: plant_gumnut
+		Location: 48,64
+		Owner: Neutral
+	Actor28: plant_desert_grass
+		Location: 58,20
+		Owner: Neutral
+	Actor29: plant_desert_flower
+		Location: 26,30
+		Owner: Neutral
+	Actor30: plant_gumnut
+		Location: 56,30
+		Owner: Neutral
+	Actor31: plant_desert_flower
+		Location: 44,40
+		Owner: Neutral
+	Actor32: plant_serata
+		Location: 86,6
+		Owner: Neutral
+	Actor33: plant_desert_grass
+		Location: 38,10
+		Owner: Neutral
+	Actor34: plant_serata
+		Location: 50,46
+		Owner: Neutral
+	Actor35: plant_gumnut
+		Location: 56,50
+		Owner: Neutral
+	Actor36: plant_gumnut
+		Location: 62,48
+		Owner: Neutral
+	Actor37: plant_gumnut
+		Location: 90,26
+		Owner: Neutral
+	Actor38: plant_desert_grass
+		Location: 80,12
+		Owner: Neutral
+	Actor39: plant_desert_flower
+		Location: 18,38
+		Owner: Neutral
+	Actor40: plant_serata
+		Location: 4,42
+		Owner: Neutral
+	Actor41: plant_serata
+		Location: 7,44
+		Owner: Neutral
+	Actor42: plant_serata
+		Location: 48,2
+		Owner: Neutral
+	Actor43: plant_serata
+		Location: 44,5
+		Owner: Neutral
+	Actor44: beetles_colony
+		Location: 44,20
+		Owner: Spiders
+	Actor45: beetles_heavy
+		Location: 24,51
+		Owner: Ants
+	Actor46: beetles_heavy
+		Location: 12,55
+		Owner: Ants
+	Actor47: spiders_heavy
+		Location: 58,40
+		Owner: Wasps
+	Actor48: ants_light
+		Location: 56,43
+		Owner: Wasps
+	Actor49: ants_light
+		Location: 56,35
+		Owner: Wasps
+	Actor50: ants_light
+		Location: 49,40
+		Owner: Wasps
+	Actor51: ants_light
+		Location: 51,44
+		Owner: Wasps
+
+Rules: rules.yaml
