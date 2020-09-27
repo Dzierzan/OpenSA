@@ -10,7 +10,7 @@
 	QuantizeFacingsFromSequence:
 	# Required to see debug overlays.
 	CombatDebugOverlay:
-
+	ProvidesRadar:
 
 # Base for all movable units.
 ^CoreCreature:
@@ -28,7 +28,6 @@
 		# The default priority for all units.
 	# Units have frames for different directions.
 	WithFacingSpriteBody:
-
 
 # Base for all stationary buildings.
 ^CoreBuilding:
@@ -70,7 +69,6 @@
 	GrantConditionWhileProducing:
 		Condition: production
 	CustomAppearsOnRadar:
-	ProvidesRadar:
 	Production:
 	ProductionQueue:
 		InfiniteBuildLimit: 100
