@@ -25,7 +25,7 @@ Players:
 	PlayerReference@Creeps:
 		Name: Creeps
 		Faction: Random
-		NonCombatant: True
+		NonCombatant: False
 		Enemies: Spiders, Ants, Beetles
 	PlayerReference@Spiders:
 		Name: Spiders

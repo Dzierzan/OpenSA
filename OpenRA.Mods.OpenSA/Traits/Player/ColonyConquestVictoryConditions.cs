@@ -51,7 +51,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				otherPlayers = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
 
 			// Don't win the game on enemy colony defeat, but on re-capture.
-			if (colonies.All(c => c.Owner == self.Owner || (c.Owner.IsAlliedWith(self.Owner) && c.Owner.InternalName != "Neutral")))
+			if (colonies.All(c => c.Owner == self.Owner || (c.Owner.IsAlliedWith(self.Owner) && c.Owner.InternalName != "Creeps")))
 			{
 				missionObjectives.MarkCompleted(self.Owner, objectiveID);
 

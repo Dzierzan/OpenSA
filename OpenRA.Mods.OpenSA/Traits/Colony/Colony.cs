@@ -73,7 +73,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
 		{
 			Game.Sound.Play(SoundType.World, info.LostSound, self.CenterPosition);
-			self.ChangeOwner(self.World.Players.First(player => player.InternalName == "Neutral"));
+			self.ChangeOwner(self.World.Players.First(player => player.InternalName == "Creeps"));
 			CancelProductions(self);
 			fireBitTimer = info.BitFireDelay;
 		}

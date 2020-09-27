@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: True
+		NonCombatant: False
 		Faction: Random
 		Enemies: Multi0, Multi1, Multi2, Multi3
 	PlayerReference@Multi0:
