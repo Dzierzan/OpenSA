@@ -3,6 +3,7 @@ scorpions_light:
 	Range: 1c0
 	ReloadDelay: 8
 	Report: sounds|SAVAGEATTACK.SDF
+	InvalidTargets: Colony
 	Projectile: InstantHit
 	Warhead@Damage: SpreadDamage
 		Damage: 715

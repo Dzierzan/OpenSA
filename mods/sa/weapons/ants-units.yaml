@@ -3,6 +3,7 @@ ants_light:
 	Range: 1c0
 	ReloadDelay: 8 #8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
+	InvalidTargets: Colony
 	Projectile: InstantHit
 	Warhead@Damage: SpreadDamage
 		Damage: 200
