@@ -167,7 +167,7 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: sa|uibits/loadscreen.png
-	Text: Filling Crates..., Breeding Sandworms..., Fuelling carryalls..., Deploying harvesters..., Preparing thopters..., Summoning mentats...
+	Text: Loading...
 
 ServerTraits:
 	LobbyCommands
