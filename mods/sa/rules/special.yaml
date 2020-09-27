@@ -36,3 +36,12 @@ slapfighter:
 		Weapon: slapfighter
 		LocalOffset: 150,-450,0
 		PauseOnCondition: paralyzed
+	Mobile:
+		Locomotor: wasp
+	GrantConditionOnMovement:
+		Condition: moving
+	GrantConditionOnWaspLayer:
+		Condition: flying
+	-WithMoveAnimation:
+	WithFlyAnimation:
+		RequiresCondition: flying || moving
