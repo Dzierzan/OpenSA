@@ -4,7 +4,7 @@ This repository contains a recreated Swarm Assault game in OpenRA engine. The go
 
 # Status
 
-Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 11/100), feel free to give any feedback or even help to progress further the project.
+Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 25/100), feel free to give any feedback or even help to progress further the project.
 
 # Swarm Assault vs OpenSA
 
@@ -30,7 +30,7 @@ For more detailed instructions, I recommend reading this: https://github.com/Ope
 
 # Legal disclaimers
 
-* This project is not affiliated with or endorsed by Mountain King Studios in any way.
+* This project is not affiliated with or endorsed by Gate 5 Software or Mountain King Studios in any way.
 * This project is non-commercial. The source code is available for free and always will be.
 * You are free contribute to this repository, however your contribution must be either your own original code, or open source code with a
   clear acknowledgement of its origin.
