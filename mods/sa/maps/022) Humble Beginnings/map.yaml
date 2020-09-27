@@ -29,24 +29,24 @@ Players:
 		Enemies: Ants, Beetles, Spiders
 	PlayerReference@Beetles:
 		Name: Beetles
+		Bot: beetles-ai
 		Faction: beetles
 		Color: 606EA5
-		Bot: beetles-ai
-		Enemies: Spiders, Ants, Creeps	
+		Enemies: Spiders, Ants, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
+		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
-		Bot: spiders-ai
-		Enemies: Beetles, Ants, Creeps		
+		Enemies: Beetles, Ants, Creeps
 	PlayerReference@Ants:
 		Name: Ants
-		Faction: ants
-		Color: 57AC49
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: ants
 		LockColor: True
+		Color: 57AC49
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Spiders, Beetles, Creeps
@@ -244,9 +244,6 @@ Actors:
 	Actor63: ants_medium
 		Location: 10,17
 		Owner: Ants
-	Actor64: ants_light
-		Location: 11,11
-		Owner: Ants
 	Actor65: ants_light
 		Location: 16,10
 		Owner: Ants
@@ -262,5 +259,9 @@ Actors:
 	Actor69: ants_light
 		Location: 9,19
 		Owner: Ants
+	Actor70: ants_light
+		Owner: Ants
+		Location: 11,12
+		Facing: 5
 
 Rules: rules.yaml
