@@ -1,3 +1,6 @@
+Player:
+	ColonyConquestVictoryConditions:
+
 World:
 	MapOptions:
 		ShortGameCheckboxEnabled: False
