@@ -71,7 +71,7 @@
 	CustomAppearsOnRadar:
 	Production:
 	ProductionQueue:
-		InfiniteBuildLimit: 100
+		InfiniteBuildLimit: 50
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
