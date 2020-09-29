@@ -17,6 +17,9 @@ spiders_light:
 	Armament:
 		Weapon: spiders_light
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 6
+		InitialStance: AttackAnything
 
 spiders_medium:
 	Inherits@1: ^SpidersUnit

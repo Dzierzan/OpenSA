@@ -21,6 +21,9 @@ ant_bull_pirate:
 	RenderSprites:
 		Scale: 1.1
 	PirateAnt:
+	AutoTarget:
+		ScanRadius: 6
+		InitialStance: AttackAnything
 
 ants_grenadier_pirate:
 	Inherits@1: ^CoreNeutralUnit

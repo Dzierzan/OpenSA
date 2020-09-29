@@ -17,6 +17,9 @@ ants_light:
 	Armament:
 		Weapon: ants_light
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 6
+		InitialStance: AttackAnything
 
 ants_medium:
 	Inherits@1: ^AntsUnit

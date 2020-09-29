@@ -79,6 +79,8 @@ beetles_medium:
 		Name: 10th
 		Weapon: beetles_medium
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 6
 
 beetles_heavy:
 	Inherits@1: ^BeetlesUnit

@@ -17,6 +17,9 @@ scorpions_light:
 	Armament:
 		Weapon: scorpions_light
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 6
+		InitialStance: AttackAnything
 
 scorpions_medium:
 	Inherits@1: ^ScorpionsUnit
