@@ -125,14 +125,8 @@
 		Condition: dead
 	Turreted:
 	WithSpriteTurret:
-	AttackTurreted:
-		RequiresCondition: !HoldFire
 	WithTurretAttackAnimation:
 		Sequence: shoot
-	GrantConditionOnHealth:
-		Condition: HoldFire
-		MinHP: 0
-		MaxHP: 1
 	AppearsOnRadar:
 
 ^CoreUnit:
