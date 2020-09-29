@@ -124,6 +124,7 @@
 	ExternalCondition:
 		Condition: dead
 	Turreted:
+	AttackTurreted:
 	WithSpriteTurret:
 	WithTurretAttackAnimation:
 		Sequence: shoot
@@ -193,7 +194,7 @@
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
 	Targetable:
-		TargetTypes: Ground
+		TargetTypes: Ground, Plant
 	Selectable:
 		Bounds: 24,24
 		Priority: 20
