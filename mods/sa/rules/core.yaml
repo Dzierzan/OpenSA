@@ -75,12 +75,6 @@
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
-	GrantConditionOnHealth:
-		Condition: HoldFire
-		MinHP: 0
-		MaxHP: 1
-	AttackTurreted:
-		RequiresCondition: !HoldFire
 	RallyPoint:
 		Cursor: move
 		Path: 5,5
