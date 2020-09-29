@@ -17,7 +17,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public readonly string Objective = "Conquer all colonies!";
 
 		[Desc("Disable the win/loss messages and audio notifications?")]
-		public readonly bool SuppressNotifications = false;
+		public readonly bool SuppressNotifications = true;
 
 		public override object Create(ActorInitializer init) { return new ColonyConquestVictoryConditions(init.Self, this); }
 	}
@@ -89,7 +89,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (info.SuppressNotifications)
 				return;
 
-			Game.AddSystemLine(player.PlayerName + " is defeated.");
+			Game.AddSystemLine(player.PlayerName + " are defeated.");
 			Game.RunAfterDelay(info.NotificationDelay, () =>
 			{
 				if (Game.IsCurrentWorld(player.World) && player == player.World.LocalPlayer)
@@ -102,7 +102,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (info.SuppressNotifications)
 				return;
 
-			Game.AddSystemLine(player.PlayerName + " is victorious.");
+			Game.AddSystemLine(player.PlayerName + " are victorious.");
 			Game.RunAfterDelay(info.NotificationDelay, () =>
 			{
 				if (Game.IsCurrentWorld(player.World) && player == player.World.LocalPlayer)
