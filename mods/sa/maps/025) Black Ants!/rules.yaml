@@ -1,5 +1,6 @@
 Player:
-	ColonyConquestVictoryConditions:
+	-ColonyConquestVictoryConditions:
+	ConquestVictoryConditions:
 
 World:
 	MapOptions:

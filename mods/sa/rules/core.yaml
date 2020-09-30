@@ -78,6 +78,12 @@
 	RallyPoint:
 		Cursor: move
 		Path: 5,5
+	GrantConditionOnHealth:
+		Condition: HoldFire
+		MinHP: 0
+		MaxHP: 1
+	AttackTurreted:
+		RequiresCondition: !HoldFire
 
 ^CoreTurretBuilding:
 	Inherits: ^CoreVisibleActor

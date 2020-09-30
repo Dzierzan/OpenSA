@@ -73,7 +73,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
 		{
 			Game.Sound.Play(SoundType.World, info.LostSound, self.CenterPosition);
-			self.ChangeOwner(self.World.Players.First(player => player.InternalName == "Neutral"));
+			self.ChangeOwner(self.World.Players.First(player => player.InternalName == "Creeps"));
 			self.CancelActivity(); // Stop shooting, we are friends now.
 			CancelProductions(self);
 			fireBitTimer = info.BitFireDelay;
@@ -182,11 +182,15 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (bitPickers.Values.Count(value => value == bits) > 1)
 				newOwner = self.World.Players.First(player => player.InternalName == "Creeps");
 
+			self.CancelActivity();
 			self.ChangeOwner(newOwner);
 			Game.Sound.Play(SoundType.World, info.CaptureSound, self.CenterPosition);
 			bitPickers.Clear();
-			health.Resurrect(self, self);
-			health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
+
+			self.World.AddFrameEndTask(_ => {
+				health.Resurrect(self, self);
+				health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
+				});
 		}
 	}
 }
