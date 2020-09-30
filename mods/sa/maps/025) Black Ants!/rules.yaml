@@ -7,7 +7,6 @@ World:
 	-SpawnMPUnits:
 	-MPStartLocations:
 	PirateSpawner:
-		Maximum: 8
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
