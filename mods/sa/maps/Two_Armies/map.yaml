@@ -46,13 +46,13 @@ Actors:
 		Owner: Neutral
 		Location: 86,100
 	Actor2: beetles_colony
-		Owner: Neutral
 		Location: 83,118
 		TurretFacing: 512
+		Owner: Creeps
 	Actor3: beetles_colony
-		Owner: Neutral
 		Location: 8,25
 		TurretFacing: 508
+		Owner: Creeps
 	Actor4: ants_colony
 		Owner: Creeps
 		Location: 82,76
