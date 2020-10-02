@@ -87,13 +87,7 @@ dragonfly:
 		VoiceSet: NeutralVoice
 	SpawnsShrapnel@RIGHT_BOMB:
 		Weapon: dragonfly_right
-		Delay: 20
-		AimChance: 0
-		Amount: 1
-	SpawnsShrapnel@LEFT_RIGHT:
-		Weapon: dragonfly_left
-		Delay: 20
-		AimChance: 0
+		Delay: 10
 		Amount: 1
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF

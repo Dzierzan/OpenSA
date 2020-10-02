@@ -33,7 +33,7 @@ ants_grenadier_pirate:
 
 dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed
-	ReloadDelay: 15
+	ReloadDelay: 20
 	Range: 5c0
 	Projectile: GravityBomb
 		Velocity: 0, 50, -70
@@ -52,7 +52,7 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 
 dragonfly_right:
 	Inherits: dragonfly_left
-	ReloadDelay: 15
+	ReloadDelay: 40
 	Projectile: GravityBomb
 		Velocity: 0, -50, -70
 		Acceleration: 0, 0, 0
