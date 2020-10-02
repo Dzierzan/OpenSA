@@ -145,9 +145,8 @@ flying_machine:
 		VoiceSet: NeutralVoice
 	SpawnsShrapnel:
 		Weapon: flying_machine
-		Delay: 25
-		AimChance: 0
-		Amount: 1
+		Delay: 35
+		Amount: 2
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:
