@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Wasps, Beetles
 	PlayerReference@Beetles:
@@ -573,4 +573,4 @@ Actors:
 		Owner: Creeps
 		Location: 117,112
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

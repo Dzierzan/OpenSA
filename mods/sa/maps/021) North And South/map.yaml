@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Beetles, Spiders
 	PlayerReference@Spiders:
@@ -566,4 +566,4 @@ Actors:
 		Location: 71,64
 		Owner: Spiders
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

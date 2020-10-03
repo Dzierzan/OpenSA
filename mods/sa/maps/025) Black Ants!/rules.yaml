@@ -1,12 +1,4 @@
-Player:
-	-ColonyConquestVictoryConditions:
-	ConquestVictoryConditions:
-
 World:
-	MapOptions:
-		ShortGameCheckboxEnabled: False
-	-SpawnMPUnits:
-	-MPStartLocations:
 	PirateSpawner:
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:

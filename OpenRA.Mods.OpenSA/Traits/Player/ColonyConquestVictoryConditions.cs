@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Network;
-using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
@@ -14,10 +14,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		[Translate]
 		[Desc("Description of the objective.")]
-		public readonly string Objective = "Conquer all colonies!";
+		public readonly string ColonyObjective = "Conquer all colonies!";
+
+		[Translate]
+		[Desc("Description of the objective.")]
+		public readonly string ConquestObjective = "Destroy all opposition!";
 
 		[Desc("Disable the win/loss messages and audio notifications?")]
-		public readonly bool SuppressNotifications = true;
+		public readonly bool SuppressNotifications = false;
 
 		public override object Create(ActorInitializer init) { return new ColonyConquestVictoryConditions(init.Self, this); }
 	}
@@ -26,15 +30,18 @@ namespace OpenRA.Mods.OpenSA.Traits
 	{
 		readonly ColonyConquestVictoryConditionsInfo info;
 		readonly MissionObjectives missionObjectives;
+		readonly bool shortGame;
 		readonly IEnumerable<Actor> colonies;
 
-		OpenRA.Player[] otherPlayers;
-		int objectiveID = -1;
+		Player[] otherPlayers;
+		int colonyObjectiveID = -1;
+		int conquestObjectiveID = -1;
 
 		public ColonyConquestVictoryConditions(Actor self, ColonyConquestVictoryConditionsInfo info)
 		{
 			this.info = info;
 			missionObjectives = self.Trait<MissionObjectives>();
+			shortGame = self.Owner.World.WorldActor.Trait<MapOptions>().ShortGame;
 			colonies = self.World.ActorsHavingTrait<Colony>();
 		}
 
@@ -43,8 +50,11 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (self.Owner.WinState != WinState.Undefined || self.Owner.NonCombatant)
 				return;
 
-			if (objectiveID < 0)
-				objectiveID = missionObjectives.Add(self.Owner, info.Objective, "Primary", inhibitAnnouncement: true);
+			if (conquestObjectiveID < 0)
+				conquestObjectiveID = missionObjectives.Add(self.Owner, info.ConquestObjective, "Primary", inhibitAnnouncement: true);
+
+			if (colonyObjectiveID < 0)
+				colonyObjectiveID = missionObjectives.Add(self.Owner, info.ColonyObjective, "Primary", inhibitAnnouncement: true);
 
 			// Players, NonCombatants, and IsAlliedWith are all fixed once the game starts, so we can cache the result.
 			if (otherPlayers == null)
@@ -52,17 +62,16 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			// Don't win the game on enemy colony defeat, but on re-capture.
 			if (colonies.All(c => c.Owner == self.Owner || c.Owner.IsAlliedWith(self.Owner)))
-			{
-				missionObjectives.MarkCompleted(self.Owner, objectiveID);
+				missionObjectives.MarkCompleted(self.Owner, colonyObjectiveID);
 
-				foreach (var enemy in otherPlayers)
-					missionObjectives.MarkFailed(enemy, objectiveID);
-			}
+			// Also require all units to be killed.
+			if (otherPlayers.All(o => o.HasNoRequiredUnits(shortGame)))
+				missionObjectives.MarkCompleted(self.Owner, conquestObjectiveID);
 		}
 
 		void INotifyTimeLimit.NotifyTimerExpired(Actor self)
 		{
-			if (objectiveID < 0)
+			if (colonyObjectiveID < 0 || conquestObjectiveID < 0)
 				return;
 
 			var myTeam = self.World.LobbyInfo.ClientWithIndex(self.Owner.ClientIndex).Team;
@@ -74,14 +83,16 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			if (teams.First().Key == myTeam && (myTeam != 0 || teams.First().First().Player == self.Owner))
 			{
-				missionObjectives.MarkCompleted(self.Owner, objectiveID);
+				missionObjectives.MarkCompleted(self.Owner, colonyObjectiveID);
+				missionObjectives.MarkCompleted(self.Owner, conquestObjectiveID);
 				return;
 			}
 
-			missionObjectives.MarkFailed(self.Owner, objectiveID);
+			missionObjectives.MarkFailed(self.Owner, colonyObjectiveID);
+			missionObjectives.MarkFailed(self.Owner, conquestObjectiveID);
 		}
 
-		void INotifyWinStateChanged.OnPlayerLost(OpenRA.Player player)
+		void INotifyWinStateChanged.OnPlayerLost(Player player)
 		{
 			foreach (var a in player.World.ActorsWithTrait<INotifyOwnerLost>().Where(a => a.Actor.Owner == player))
 				a.Trait.OnOwnerLost(a.Actor);
@@ -97,7 +108,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			});
 		}
 
-		void INotifyWinStateChanged.OnPlayerWon(OpenRA.Player player)
+		void INotifyWinStateChanged.OnPlayerWon(Player player)
 		{
 			if (info.SuppressNotifications)
 				return;

@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Ants, Beetles, Spiders
 	PlayerReference@Beetles:
@@ -264,4 +264,4 @@ Actors:
 		Location: 11,12
 		Facing: 5
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml
