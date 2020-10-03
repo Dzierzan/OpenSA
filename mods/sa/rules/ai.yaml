@@ -1,36 +1,36 @@
 Player:
 	ModularBot@EasyAI:
-		Name: WIP Easy AI
+		Name: Easy AI
 		Type: easy
 	ModularBot@MediumAI:
-		Name: WIP Medium AI
+		Name: Medium AI
 		Type: medium
 	ModularBot@HardAI:
-		Name: WIP Hard AI
+		Name: Hard AI
 		Type: hard
 	GrantConditionOnBotOwner@EasyAI:
-		Condition: enable-WIP-easy-ai
+		Condition: enable-easy-ai
 		Bots: easy
 	GrantConditionOnBotOwner@MediumAI:
-		Condition: enable-WIP-medium-ai
+		Condition: enable-medium-ai
 		Bots: medium
 	GrantConditionOnBotOwner@HardAI:
-		Condition: enable-WIP-hard-ai
+		Condition: enable-hard-ai
 		Bots: hard
 	ColonyBitPickupBotModule@allAI:
-		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
+		RequiresCondition: enable-easy-ai || enable-medium-ai || enable-hard-ai
 	HealColonyBotModule@allAI:
-		RequiresCondition: enable-WIP-easy-ai || enable-WIP-medium-ai || enable-WIP-hard-ai
+		RequiresCondition: enable-easy-ai || enable-medium-ai || enable-hard-ai
 	SquadManagerBotModule@easyAI:
-		RequiresCondition: enable-WIP-easy-ai
-		SquadSize: 10
+		RequiresCondition: enable-easy-ai
+		SquadSize: 20
 		SquadSizeRandomBonus: 5
-		RushInterval: 1500
+		RushInterval: 1000
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@easyAI:
-		RequiresCondition: enable-WIP-easy-ai
+		RequiresCondition: enable-easy-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 60
@@ -49,15 +49,15 @@ Player:
 			wasps_medium: 30
 			wasps_heavy: 10
 	SquadManagerBotModule@mediumAI:
-		RequiresCondition: enable-WIP-medium-ai
-		SquadSize: 10
+		RequiresCondition: enable-medium-ai
+		SquadSize: 20
 		SquadSizeRandomBonus: 5
-		RushInterval: 1000
+		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@mediumAI:
-		RequiresCondition: enable-WIP-medium-ai
+		RequiresCondition: enable-medium-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 33
@@ -76,15 +76,15 @@ Player:
 			wasps_medium: 33
 			wasps_heavy: 33
 	SquadManagerBotModule@hardAI:
-		RequiresCondition: enable-WIP-hard-ai
-		SquadSize: 10
+		RequiresCondition: enable-hard-ai
+		SquadSize: 20
 		SquadSizeRandomBonus: 5
-		RushInterval: 500
+		RushInterval: 250
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 	UnitBuilderBotModule@hardAI:
-		RequiresCondition: enable-WIP-hard-ai
+		RequiresCondition: enable-hard-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 20
