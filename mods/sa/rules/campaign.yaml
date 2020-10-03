@@ -5,6 +5,7 @@ Player:
 	ColonyConquestVictoryConditions:
 		SuppressNotifications: True
 	Shroud:
+		FogCheckboxEnabled: False
 		ExploredMapCheckboxEnabled: True
 
 World:
