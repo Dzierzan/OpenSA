@@ -18,7 +18,7 @@ Background@MAINMENU_PRERELEASE_NOTIFICATION:
 			Width: PARENT_RIGHT - 30
 			Height: 16
 			Align: Center
-			Text: This is the pre-alpha build of the Swarm Assault mod.
+			Text: This is the pre-alpha build of the OpenSA mod.
 		Label@PROMPT_TEXT_B:
 			X: 15
 			Y: 68
