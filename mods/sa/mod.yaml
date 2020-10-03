@@ -113,7 +113,6 @@ ChromeLayout:
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
-	common|chrome/mainmenu.yaml
 	common|chrome/mainmenu-prompts.yaml
 	sa|chrome/settings.yaml
 	common|chrome/credits.yaml
@@ -141,6 +140,7 @@ ChromeLayout:
 	common|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml
 	sa|chrome/mainmenu-prerelease-notification.yaml
+	sa|chrome/mainmenu.yaml
 
 AssetBrowser:
 	SupportedExtensions: .ani, .ddf
