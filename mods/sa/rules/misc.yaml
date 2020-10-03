@@ -42,6 +42,7 @@ Player:
 	MissionObjectives:
 	# SA objective: Win by capturing all colonies.
 	ColonyConquestVictoryConditions:
+		SuppressNotifications: True
 	PlayerResources:
 		DefaultCashDropdownVisible: false
 	TechTree:

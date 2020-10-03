@@ -3,6 +3,7 @@ Player:
 		EarlyGameOver: true
 		GameOverDelay: 3000
 	ColonyConquestVictoryConditions:
+		SuppressNotifications: True
 
 World:
 	MapOptions:
