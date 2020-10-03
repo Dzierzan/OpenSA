@@ -227,4 +227,4 @@ Actors:
 		Location: 51,40
 		Owner: Beetles
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

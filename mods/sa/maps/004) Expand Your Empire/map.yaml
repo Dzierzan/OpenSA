@@ -265,4 +265,4 @@ Actors:
 		Location: 46,53
 		Facing: 48
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

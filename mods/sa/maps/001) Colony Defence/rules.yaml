@@ -11,45 +11,7 @@ World:
 	-PlantSpawner@CANDY:
 
 Player:
-	ModularBot@AntsAI:
-		Name: Ants AI
-		Type: ants-ai
-	ModularBot@BeetlesAI:
-		Name: Beetles AI
-		Type: beetles-ai
-	ModularBot@WaspsAI:
-		Name: Wasps AI
-		Type: wasps-ai
-	ModularBot@SpidersAI:
-		Name: Spiders AI
-		Type: spiders-ai
-	GrantConditionOnBotOwner@AntsAI:
-		Condition: enable-ants-ai
-		Bots: ants-ai
-	GrantConditionOnBotOwner@BeetlesAI:
-		Condition: enable-beetles-ai
-		Bots: beetles-ai
-	GrantConditionOnBotOwner@WaspsAI:
-		Condition: enable-wasps-ai
-		Bots: wasps-ai
-	GrantConditionOnBotOwner@SpidersAI:
-		Condition: enable-spiders-ai
-		Bots: spiders-ai
-	ColonyBitPickupBotModule@allAI:
-		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
-	HealColonyBotModule@allAI:
-		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
-	SquadManagerBotModule@AntsAI:
-		RequiresCondition: enable-ants-ai
-		SquadSize: 10
-		SquadSizeRandomBonus: 5
-		RushInterval: 1000
-		AssignRolesInterval: 25
-		AttackForceInterval: 40
-		RushAttackScanRadius: 25
 	UnitBuilderBotModule@AntsAI:
-		RequiresCondition: enable-ants-ai
-		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 60
 			ants_medium: 30
@@ -66,17 +28,7 @@ Player:
 			wasps_light: 60
 			wasps_medium: 30
 			wasps_heavy: 10
-	SquadManagerBotModule@BeetlesAI:
-		RequiresCondition: enable-beetles-ai
-		SquadSize: 10
-		SquadSizeRandomBonus: 5
-		RushInterval: 1000
-		AssignRolesInterval: 25
-		AttackForceInterval: 40
-		RushAttackScanRadius: 25
 	UnitBuilderBotModule@BeetlesAI:
-		RequiresCondition: enable-beetles-ai
-		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			#ants_light: 0
 			ants_medium: 75
@@ -93,17 +45,7 @@ Player:
 			#wasps_light: 0
 			wasps_medium: 75
 			wasps_heavy: 100
-	SquadManagerBotModule@WaspsAI:
-		RequiresCondition: enable-wasps-ai
-		SquadSize: 10
-		SquadSizeRandomBonus: 5
-		RushInterval: 1000
-		AssignRolesInterval: 25
-		AttackForceInterval: 40
-		RushAttackScanRadius: 25
 	UnitBuilderBotModule@WaspsAI:
-		RequiresCondition: enable-wasps-ai
-		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 20
 			ants_medium: 20
@@ -120,17 +62,7 @@ Player:
 			wasps_light: 20
 			wasps_medium: 20
 			wasps_heavy: 60
-	SquadManagerBotModule@SpidersAI:
-		RequiresCondition: enable-spiders-ai
-		SquadSize: 10
-		SquadSizeRandomBonus: 5
-		RushInterval: 500
-		AssignRolesInterval: 25
-		AttackForceInterval: 40
-		RushAttackScanRadius: 25
 	UnitBuilderBotModule@SpidersAI:
-		RequiresCondition: enable-spiders-ai
-		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 			ants_light: 100
 			#ants_medium: 20

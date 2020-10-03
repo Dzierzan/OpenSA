@@ -351,4 +351,4 @@ Actors:
 		Owner: Neutral
 		Location: 4,63
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -267,4 +267,4 @@ Actors:
 		Location: 7,26
 		Facing: 8
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

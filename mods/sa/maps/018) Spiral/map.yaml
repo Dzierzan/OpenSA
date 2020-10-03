@@ -635,4 +635,4 @@ Actors:
 		Location: 87,47
 		Owner: Creeps
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

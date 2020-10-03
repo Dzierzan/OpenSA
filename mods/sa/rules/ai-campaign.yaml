@@ -1,0 +1,137 @@
+Player:
+	ModularBot@AntsAI:
+		Name: Ants AI
+		Type: ants-ai
+	ModularBot@BeetlesAI:
+		Name: Beetles AI
+		Type: beetles-ai
+	ModularBot@WaspsAI:
+		Name: Wasps AI
+		Type: wasps-ai
+	ModularBot@SpidersAI:
+		Name: Spiders AI
+		Type: spiders-ai
+	GrantConditionOnBotOwner@AntsAI:
+		Condition: enable-ants-ai
+		Bots: ants-ai
+	GrantConditionOnBotOwner@BeetlesAI:
+		Condition: enable-beetles-ai
+		Bots: beetles-ai
+	GrantConditionOnBotOwner@WaspsAI:
+		Condition: enable-wasps-ai
+		Bots: wasps-ai
+	GrantConditionOnBotOwner@SpidersAI:
+		Condition: enable-spiders-ai
+		Bots: spiders-ai
+	ColonyBitPickupBotModule@allAI:
+		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
+	HealColonyBotModule@allAI:
+		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
+	SquadManagerBotModule@AntsAI:
+		RequiresCondition: enable-ants-ai
+		SquadSize: 20
+		SquadSizeRandomBonus: 5
+		RushInterval: 250
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@AntsAI:
+		RequiresCondition: enable-ants-ai
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		UnitsToBuild:
+			ants_light: 33
+			ants_medium: 33
+			ants_heavy: 33
+			beetles_light: 33
+			beetles_medium: 33
+			beetles_heavy: 33
+			scorpions_light: 33
+			scorpions_medium: 33
+			scorpions_heavy: 33
+			spiders_light: 33
+			spiders_medium: 33
+			spiders_heavy: 33
+			wasps_light: 33
+			wasps_medium: 33
+			wasps_heavy: 33
+	SquadManagerBotModule@BeetlesAI:
+		RequiresCondition: enable-beetles-ai
+		SquadSize: 20
+		SquadSizeRandomBonus: 5
+		RushInterval: 250
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@BeetlesAI:
+		RequiresCondition: enable-beetles-ai
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		UnitsToBuild:
+			ants_light: 33
+			ants_medium: 33
+			ants_heavy: 33
+			beetles_light: 33
+			beetles_medium: 33
+			beetles_heavy: 33
+			scorpions_light: 33
+			scorpions_medium: 33
+			scorpions_heavy: 33
+			spiders_light: 33
+			spiders_medium: 33
+			spiders_heavy: 33
+			wasps_light: 33
+			wasps_medium: 33
+			wasps_heavy: 33
+	SquadManagerBotModule@WaspsAI:
+		RequiresCondition: enable-wasps-ai
+		SquadSize: 20
+		SquadSizeRandomBonus: 5
+		RushInterval: 250
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@WaspsAI:
+		RequiresCondition: enable-wasps-ai
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		UnitsToBuild:
+			ants_light: 33
+			ants_medium: 33
+			ants_heavy: 33
+			beetles_light: 33
+			beetles_medium: 33
+			beetles_heavy: 33
+			scorpions_light: 33
+			scorpions_medium: 33
+			scorpions_heavy: 33
+			spiders_light: 33
+			spiders_medium: 33
+			spiders_heavy: 33
+			wasps_light: 33
+			wasps_medium: 33
+			wasps_heavy: 33
+	SquadManagerBotModule@SpidersAI:
+		RequiresCondition: enable-spiders-ai
+		SquadSize: 20
+		SquadSizeRandomBonus: 5
+		RushInterval: 250
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+	UnitBuilderBotModule@SpidersAI:
+		RequiresCondition: enable-spiders-ai
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		UnitsToBuild:
+			ants_light: 33
+			ants_medium: 33
+			ants_heavy: 33
+			beetles_light: 33
+			beetles_medium: 33
+			beetles_heavy: 33
+			scorpions_light: 33
+			scorpions_medium: 33
+			scorpions_heavy: 33
+			spiders_light: 33
+			spiders_medium: 33
+			spiders_heavy: 33
+			wasps_light: 33
+			wasps_medium: 33
+			wasps_heavy: 33

@@ -215,4 +215,4 @@ Actors:
 		Location: 51,44
 		Owner: Wasps
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

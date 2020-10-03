@@ -449,4 +449,4 @@ Actors:
 		Location: 31,119
 		Owner: Ants
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

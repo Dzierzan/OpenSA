@@ -566,4 +566,4 @@ Actors:
 		Location: 71,64
 		Owner: Spiders
 
-Rules: sa|rules/campaign.yaml, rules.yaml
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
