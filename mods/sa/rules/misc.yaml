@@ -38,9 +38,9 @@ Player:
 	# Developer debug menu
 	DeveloperMode:
 		CheckboxEnabled: True
-	# Enable mission objectives, required to win or loose mission.
+	# Enable mission objectives, required to win or lose mission.
 	MissionObjectives:
-	# SA objective: Win by capturing all colonies.
+	# SA objective: Win by capturing all colonies and destroying all enemy units.
 	ColonyConquestVictoryConditions:
 		SuppressNotifications: True
 	PlayerResources:
