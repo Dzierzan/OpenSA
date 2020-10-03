@@ -9,9 +9,6 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Terrain type of the airborne layer.")]
 		public readonly string TerrainType = "Air";
 
-		[Desc("Height offset relative to the terrain for movement.")]
-		public readonly WDist HeightOffset = new WDist(1);
-
 		public override object Create(ActorInitializer init) { return new WaspActorLayer(init.Self, this); }
 	}
 
@@ -37,15 +34,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		WPos ICustomMovementLayer.CenterOfCell(CPos cell)
 		{
-			var pos = world.Map.CenterOfCell(cell);
-			return pos + new WVec(0, 0, info.HeightOffset.Length - pos.Z);
+			return world.Map.CenterOfCell(cell); // height is only fake
 		}
 
 		bool ValidTransitionCell(CPos cell, LocomotorInfo li)
 		{
 			var terrainType = world.Map.GetTerrainInfo(cell).Type;
-			var jli = (WaspLocomotorInfo)li;
-			if (!jli.TransitionTerrainTypes.Contains(terrainType) && jli.TransitionTerrainTypes.Any())
+			var wli = (WaspLocomotorInfo)li;
+			if (!wli.TransitionTerrainTypes.Contains(terrainType) && wli.TransitionTerrainTypes.Any())
 				return false;
 
 			return true;
@@ -53,14 +49,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		int ICustomMovementLayer.EntryMovementCost(ActorInfo a, LocomotorInfo li, CPos cell)
 		{
-			var jli = (WaspLocomotorInfo)li;
-			return ValidTransitionCell(cell, jli) ? jli.TransitionCost : int.MaxValue;
+			var wli = (WaspLocomotorInfo)li;
+			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : int.MaxValue;
 		}
 
 		int ICustomMovementLayer.ExitMovementCost(ActorInfo a, LocomotorInfo li, CPos cell)
 		{
-			var jli = (WaspLocomotorInfo)li;
-			return ValidTransitionCell(cell, jli) ? jli.TransitionCost : int.MaxValue;
+			var wli = (WaspLocomotorInfo)li;
+			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : int.MaxValue;
 		}
 
 		byte ICustomMovementLayer.GetTerrainIndex(CPos cell)
