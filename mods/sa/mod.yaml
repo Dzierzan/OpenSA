@@ -1,6 +1,7 @@
 Metadata:
 	Title: Swarm Assault
 	Version: {DEV_VERSION}
+	WebIcon32: https://raw.githubusercontent.com/Dzierzan/OpenSA/master/packaging/artwork/icon_32x32.png
 
 PackageFormats: SdfPackage, DdfPackage
 
