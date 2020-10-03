@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Spiders, Ants, Wasps
 	PlayerReference@Ants:
@@ -274,4 +274,4 @@ Actors:
 		Owner: Wasps
 		TurretFacing: 504
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

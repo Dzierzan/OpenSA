@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Spiders, Ants
 	PlayerReference@Ants:
@@ -296,4 +296,4 @@ Actors:
 		Location: 20,20
 		Owner: Ants
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

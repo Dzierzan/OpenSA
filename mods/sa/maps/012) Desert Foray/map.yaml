@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Ants, Wasps, Spiders, Beetles
 	PlayerReference@Wasps:
@@ -47,7 +47,7 @@ Players:
 		Enemies: Ants, Wasps, Spiders, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
-		Faction: spiders 
+		Faction: spiders
 		Color: CA3131
 		Playable: True
 		Required: True
@@ -215,4 +215,4 @@ Actors:
 		Location: 51,44
 		Owner: Wasps
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

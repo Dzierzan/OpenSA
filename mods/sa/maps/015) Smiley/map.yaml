@@ -24,7 +24,7 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		NonCombatant: False
+		NonCombatant: True
 		Faction: Random
 		Enemies: Ants, Wasps
 	PlayerReference@Ants:
@@ -32,7 +32,7 @@ Players:
 		Faction: ants
 		Color: 57AC49
 		Bot: ants-ai
-		Enemies: Wasps, Creeps		
+		Enemies: Wasps, Creeps
 	PlayerReference@Wasps:
 		Name: Wasps
 		Faction: wasps
@@ -425,4 +425,4 @@ Actors:
 		Location: 64,32
 		Owner: Wasps
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

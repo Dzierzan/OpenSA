@@ -26,7 +26,7 @@ Players:
 		Name: Creeps
 		Faction: Random
 		Enemies: Beetles
-		NonCombatant: False
+		NonCombatant: True
 	PlayerReference@Beetles:
 		Name: Beetles
 		Playable: True
@@ -265,4 +265,4 @@ Actors:
 		Location: 46,53
 		Facing: 48
 
-Rules: rules.yaml
+Rules: sa|rules/campaign.yaml, rules.yaml

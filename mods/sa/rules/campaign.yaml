@@ -1,0 +1,13 @@
+Player:
+	MissionObjectives:
+		EarlyGameOver: true
+		GameOverDelay: 3000
+	ColonyConquestVictoryConditions:
+
+World:
+	MapOptions:
+		ShortGameCheckboxEnabled: False
+	-SpawnMPUnits:
+	-MPStartLocations:
+	ObjectivesPanel:
+		PanelName: MISSION_OBJECTIVES
