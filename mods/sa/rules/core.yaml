@@ -135,6 +135,12 @@
 	WithTurretAttackAnimation:
 		Sequence: shoot
 	AppearsOnRadar:
+	GrantConditionOnHealth:
+		Condition: HoldFire
+		MinHP: 0
+		MaxHP: 1
+	AttackTurreted:
+		RequiresCondition: !HoldFire
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
