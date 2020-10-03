@@ -1,6 +1,6 @@
 Metadata:
 	Title: Swarm Assault
-	Version: dev_version
+	Version: {DEV_VERSION}
 
 PackageFormats: SdfPackage, DdfPackage
 
