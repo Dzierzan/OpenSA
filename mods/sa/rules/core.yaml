@@ -141,6 +141,9 @@
 		MaxHP: 1
 	AttackTurreted:
 		RequiresCondition: !HoldFire
+	RallyPoint:
+		Cursor: move
+		Path: 5,5
 
 ^CoreUnit:
 	Inherits: ^CoreCreature
