@@ -29,48 +29,52 @@ Player:
 		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
 	SquadManagerBotModule@AntsAI:
 		RequiresCondition: enable-ants-ai
-		SquadSize: 20
-		SquadSizeRandomBonus: 5
-		RushInterval: 250
+		SquadSize: 10
+		SquadSizeRandomBonus: 15
+		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
 	UnitBuilderBotModule@AntsAI:
 		RequiresCondition: enable-ants-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 	SquadManagerBotModule@BeetlesAI:
 		RequiresCondition: enable-beetles-ai
-		SquadSize: 20
-		SquadSizeRandomBonus: 5
-		RushInterval: 250
+		SquadSize: 10
+		SquadSizeRandomBonus: 15
+		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
 	UnitBuilderBotModule@BeetlesAI:
 		RequiresCondition: enable-beetles-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 	SquadManagerBotModule@WaspsAI:
 		RequiresCondition: enable-wasps-ai
-		SquadSize: 20
-		SquadSizeRandomBonus: 5
-		RushInterval: 250
+		SquadSize: 10
+		SquadSizeRandomBonus: 15
+		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
 	UnitBuilderBotModule@WaspsAI:
 		RequiresCondition: enable-wasps-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
 	SquadManagerBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
-		SquadSize: 20
-		SquadSizeRandomBonus: 5
-		RushInterval: 250
+		SquadSize: 10
+		SquadSizeRandomBonus: 15
+		RushInterval: 500
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
 	UnitBuilderBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
