@@ -58,14 +58,16 @@ namespace OpenRA.Mods.OpenSA.Traits
 	{
 		readonly ColonyInfo info;
 		readonly Health health;
-		readonly Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
+		readonly Dictionary<Player, int> bitPickers = new Dictionary<Player, int>();
+		readonly RallyPoint rallyPoint;
 		int fireBitTimer;
 
 		public Colony(ActorInitializer init, ColonyInfo info)
 		{
 			this.info = info;
 			health = init.Self.Trait<Health>();
-			health.RemoveOnDeath = false;
+			health.RemoveOnDeath = false; // TODO: Replace this hack.
+			rallyPoint = init.Self.Trait<RallyPoint>();
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -142,7 +144,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			}
 		}
 
-		public void PickBit(OpenRA.Player player)
+		public void PickBit(Player player)
 		{
 			if (!bitPickers.ContainsKey(player))
 				bitPickers.Add(player, 0);
@@ -191,6 +193,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 				health.Resurrect(self, self);
 				health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
+
+				rallyPoint.AddIndicator(self); // HACK: Workaround due to killing the colony
 			});
 		}
 	}
