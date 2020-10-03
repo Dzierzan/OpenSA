@@ -61,7 +61,7 @@ scorpions_light:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESCORPIONSAVAGE.ANI
 	portrait: sprites|COLONYSCORPIONA3DB.ANI
 
@@ -128,7 +128,7 @@ scorpions_medium:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESCORPIONSAVAGE.ANI
 	portrait: sprites|COLONYSCORPIONB3DB.ANI
 
@@ -195,6 +195,6 @@ scorpions_heavy:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESCORPIONNINJA.ANI
 	portrait: sprites|COLONYSCORPIONC3DB.ANI

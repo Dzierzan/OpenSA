@@ -67,7 +67,7 @@ ants_light:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEANTSOLDIER.ANI
 	portrait: sprites|COLONYANTA3DB.ANI
 
@@ -137,7 +137,7 @@ ants_medium:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEANTGRENADIER.ANI
 	portrait: sprites|COLONYANTB3DB.ANI
 
@@ -207,6 +207,6 @@ ants_heavy:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEANTBAZOOKA.ANI
 	portrait: sprites|COLONYANTC3DB.ANI

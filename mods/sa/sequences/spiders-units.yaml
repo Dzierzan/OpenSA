@@ -61,7 +61,7 @@ spiders_light:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESPIDERBLACKWIDOW.ANI
 	portrait: sprites|COLONYSPIDERA3DB.ANI
 
@@ -128,7 +128,7 @@ spiders_medium:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESPIDERSNIPER.ANI
 	portrait: sprites|COLONYSPIDERA3DB.ANI
 
@@ -195,6 +195,6 @@ spiders_heavy:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMESPIDERROCKET.ANI
 	portrait: sprites|COLONYSPIDERA3DB.ANI

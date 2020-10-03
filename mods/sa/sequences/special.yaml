@@ -2,16 +2,16 @@ slapfighter:
 	idle: bits/spaceship.png
 		Start: 0
 		Facings: -16
-		ZOffset: 100
+		ZOffset: 1600
 	shoot: bits/spaceship.png
 		Start: 0
 		Facings: -16
-		ZOffset: 100
+		ZOffset: 1600
 	move: bits/spaceship.png
 		Start: 16
 		Length: 4
 		Facings: -16
-		ZOffset: 100
+		ZOffset: 1600
 	die: bits/spaceship.png
 		Start: 80
 		Length: 2
@@ -24,4 +24,4 @@ slapfighter:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700

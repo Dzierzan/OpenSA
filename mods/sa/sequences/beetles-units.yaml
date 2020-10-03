@@ -61,7 +61,7 @@ beetles_light:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEBEETLELADYBUG.ANI
 	portrait: sprites|COLONYBEETLEA3DB.ANI
 
@@ -128,7 +128,7 @@ beetles_medium:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEBEETLESHRAPNEL.ANI
 	portrait: sprites|COLONYBEETLEB3DB.ANI
 
@@ -195,6 +195,6 @@ beetles_heavy:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEBEETLECANNON.ANI
 	portrait: sprites|COLONYBEETLEC3DB.ANI

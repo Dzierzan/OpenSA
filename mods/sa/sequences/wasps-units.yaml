@@ -52,7 +52,7 @@ wasps_light:
 		Length: 3
 		Tick: 55
 		Facings: 8
-		ZOffset: 1000
+		ZOffset: 1600
 	die: sprites|UNWASPLB_DEAD.ANI
 		Length: 2
 		Tick: 9000
@@ -62,7 +62,7 @@ wasps_light:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEWASPASSAULT.ANI
 	portrait: sprites|COLONYWASPA3DB.ANI
 
@@ -120,7 +120,7 @@ wasps_medium:
 		Length: 3
 		Tick: 55
 		Facings: 8
-		ZOffset: 1000
+		ZOffset: 1600
 	die: sprites|UNWASPAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
@@ -130,7 +130,7 @@ wasps_medium:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEWASPPARALYSIS.ANI
 	portrait: sprites|COLONYWASPB3DB.ANI
 
@@ -188,7 +188,7 @@ wasps_heavy:
 		Length: 3
 		Tick: 55
 		Facings: 8
-		ZOffset: 1000
+		ZOffset: 1600
 	die: sprites|UNWASSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
@@ -198,6 +198,6 @@ wasps_heavy:
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
-		ZOffset: 1000
+		ZOffset: 1700
 	name: sprites|NAMEWASPSONIC.ANI
 	portrait: sprites|COLONYWASPC3DB.ANI
