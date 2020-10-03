@@ -182,15 +182,17 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (bitPickers.Values.Count(value => value == bits) > 1)
 				newOwner = self.World.Players.First(player => player.InternalName == "Creeps");
 
-			self.CancelActivity();
+			self.CancelActivity(); // Stop shooting!
 			self.ChangeOwner(newOwner);
 			Game.Sound.Play(SoundType.World, info.CaptureSound, self.CenterPosition);
 			bitPickers.Clear();
 
-			self.World.AddFrameEndTask(_ => {
+			// Get the timing right as owner change is also done at the end of the frame.
+			self.World.AddFrameEndTask(_ =>
+			{
 				health.Resurrect(self, self);
 				health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
-				});
+			});
 		}
 	}
 }
