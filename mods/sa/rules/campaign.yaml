@@ -6,6 +6,8 @@ Player:
 		SuppressNotifications: True
 
 World:
+	DeveloperMode:
+		CheckboxEnabled: False
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	-SpawnMPUnits:
