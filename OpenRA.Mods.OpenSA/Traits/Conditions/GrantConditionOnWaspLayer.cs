@@ -10,7 +10,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			var mobileInfo = ai.TraitInfoOrDefault<MobileInfo>();
 			if (mobileInfo == null || !(mobileInfo.LocomotorInfo is WaspLocomotorInfo))
-				throw new YamlException("GrantConditionOnJumpjetLayer requires Mobile to be linked to a JumpjetLocomotor!");
+				throw new YamlException("GrantConditionOnWaspLayer requires Mobile to be linked to a WaspLocomotor!");
 
 			base.RulesetLoaded(rules, ai);
 		}
