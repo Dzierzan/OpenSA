@@ -1,5 +1,5 @@
 spiders_light:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c0
 	ReloadDelay: 8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
@@ -8,10 +8,10 @@ spiders_light:
 	Warhead@Damage: SpreadDamage
 		Damage: 550
 		Spread: 1
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 spiders_medium:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 12c0
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
@@ -20,14 +20,14 @@ spiders_medium:
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
 		Spread: 125
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 spiders_heavy:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 16c0
 	ReloadDelay: 40
 	AfterFireSound: sounds|MISSILELOCK.SDF
@@ -48,9 +48,9 @@ spiders_heavy:
 	Warhead@Damage: SpreadDamage
 		Damage: 3000
 		Spread: 256
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water

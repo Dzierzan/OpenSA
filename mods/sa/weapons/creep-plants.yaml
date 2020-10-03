@@ -1,5 +1,5 @@
 popcorn:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 40
 	Range: 6c0
 	Burst: 1
@@ -16,10 +16,10 @@ popcorn:
 	Warhead@Damage: SpreadDamage
 		Spread: 125
 		Damage: 253
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 venus:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c0
 	ReloadDelay: 15
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
@@ -27,10 +27,10 @@ venus:
 	Warhead@Damage: SpreadDamage
 		Damage: 5000
 		Spread: 1
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 spike:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 30
 	Range: 6c0
 	Projectile: Bullet
@@ -42,13 +42,13 @@ spike:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 900
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		ImpactSounds: sounds|SNIPERHIT.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 gumnut:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 10c0
 	ReloadDelay: 100
 	Report: sa|bits/sounds/Missle_Launch.wav
@@ -69,15 +69,15 @@ gumnut:
 	Warhead@Damage: SpreadDamage
 		Damage: 1500
 		Spread: 256
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 puff:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 20
 	Range: 5c0
 	Report: sounds|PUFFBALLSPAWN.SDF
@@ -92,12 +92,12 @@ puff:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 500
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 puff_normal_seed:
 	ValidTargets: Ground, Paralyzed
@@ -122,7 +122,7 @@ puff_normal_seed:
 		TerrainTypes: Clear, Rock, Vegetation
 
 gas:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 50
 	Range: 6c0
 	Report: sa|bits/sounds/gas.wav
@@ -134,14 +134,14 @@ gas:
 	Warhead@Damage: SpreadDamage
 		Spread: 256
 		Damage: 500
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: gas_end
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 freckles: #Temporary weapon, needs to be changed!!!
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 40 #50
 	Range: 4c0
 	Projectile: Bullet
@@ -155,23 +155,23 @@ freckles: #Temporary weapon, needs to be changed!!!
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 600 #Might require further verifing
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 death_lolly:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 5c0
 	Warhead@Damage: SpreadDamage
 		Damage: 4500
 		Spread: 3c0
 		Falloff: 100, 100
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water

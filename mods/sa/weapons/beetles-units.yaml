@@ -1,5 +1,5 @@
 beetles_light:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 4c0
 	ReloadDelay: 6
 	Projectile: InstantHit
@@ -7,15 +7,15 @@ beetles_light:
 	Warhead@Damage: SpreadDamage
 		Damage: 782
 		Spread: 125
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
 		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 beetles_medium:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 3c0
 	ReloadDelay: 25
 	Report: sounds|SHRAPNELFIRE.SDF
@@ -29,15 +29,15 @@ beetles_medium:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 850
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 beetles_heavy:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 40
 	Range: 12c0
 	Report: sounds|CANNON.SDF
@@ -49,9 +49,9 @@ beetles_heavy:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 1950
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water

@@ -1,5 +1,5 @@
 scorpions_light:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c0
 	ReloadDelay: 8
 	Report: sounds|SAVAGEATTACK.SDF
@@ -8,10 +8,10 @@ scorpions_light:
 	Warhead@Damage: SpreadDamage
 		Damage: 715
 		Spread: 1
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 scorpions_medium:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 30
 	Range: 16c0
 	Report: sounds|SPEAR.SDF
@@ -24,13 +24,13 @@ scorpions_medium:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		ImpactSounds: sounds|SNIPERHIT.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 scorpions_heavy:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 18
 	Range: 10c0
 	Report: sounds|STARLAUNCH.SDF
@@ -44,7 +44,7 @@ scorpions_heavy:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 2200
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		ImpactSounds: sounds|STARHIT.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water

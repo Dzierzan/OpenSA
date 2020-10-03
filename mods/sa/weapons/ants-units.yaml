@@ -1,5 +1,5 @@
 ants_light:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c0
 	ReloadDelay: 8 #8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
@@ -8,10 +8,10 @@ ants_light:
 	Warhead@Damage: SpreadDamage
 		Damage: 200
 		Spread: 1
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 ants_medium:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 40 #50
 	Range: 4c0
 	Projectile: Bullet
@@ -25,15 +25,15 @@ ants_medium:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 ants_heavy:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 8c0
 	ReloadDelay: 55 #50
 	Report: sounds|ROCKETLAUNCH.SDF
@@ -50,9 +50,9 @@ ants_heavy:
 	Warhead@Damage: SpreadDamage
 		Damage: 1950
 		Spread: 256
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_2
 		ImpactSounds: sounds|EXPLOSION3.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water

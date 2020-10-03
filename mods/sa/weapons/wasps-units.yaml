@@ -1,5 +1,5 @@
 wasps_light:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 5
 	Range: 6c0
 	Projectile: Bullet
@@ -11,12 +11,12 @@ wasps_light:
 		Spread: 125
 		Falloff: 100, 50, 25, 0
 		Damage: 782
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
 		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 wasps_medium:
 	ReloadDelay: 45
@@ -32,19 +32,19 @@ wasps_medium:
 		Spread: 512
 		Falloff: 100, 50, 25, 0
 		Damage: 0
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: paralyze_explosion
 		ImpactSounds: sounds|PARALYSIS.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 	Warhead@Paralyze: GrantExternalCondition
 		Range: 2c0
 		Duration: 200
 		Condition: paralyzed
 
 wasps_heavy:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 4
 	Range: 6c0
 	Projectile: Bullet
@@ -55,4 +55,4 @@ wasps_heavy:
 	Warhead@Damage: SpreadDamage
 		Spread: 256
 		Damage: 1000
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water

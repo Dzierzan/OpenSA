@@ -1,5 +1,5 @@
 ant_bull_pirate:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c0
 	ReloadDelay: 8 #8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
@@ -7,10 +7,10 @@ ant_bull_pirate:
 	Warhead@Damage: SpreadDamage
 		Damage: 200
 		Spread: 1
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 
 ants_grenadier_pirate:
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 40 #50
 	Range: 4c0
 	Projectile: Bullet
@@ -24,15 +24,15 @@ ants_grenadier_pirate:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 20
 	Range: 5c0
 	Projectile: GravityBomb
@@ -43,12 +43,12 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 8500
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BRAKEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 dragonfly_right:
 	Inherits: dragonfly_left
@@ -58,7 +58,7 @@ dragonfly_right:
 		Acceleration: 0, 0, 0
 
 fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 15
 	Range: 5c0
 	Projectile: Bullet
@@ -72,15 +72,15 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 4200
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 50
 	Range: 6c0
 	Projectile: Bullet
@@ -94,15 +94,15 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 500
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water 
 
 flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
-	ValidTargets: Ground, Paralyzed
+	ValidTargets: Ground, Paralyzed, Water
 	ReloadDelay: 100 #50
 	Range: 10c0
 	Projectile: Bullet
@@ -117,9 +117,9 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Spread: 300
 		Falloff: 100, 50, 25, 0
 		Damage: 3000
-		ValidTargets: Ground, Paralyzed
+		ValidTargets: Ground, Paralyzed, Water
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed
+		ValidTargets: Ground, Air, Paralyzed, Water
