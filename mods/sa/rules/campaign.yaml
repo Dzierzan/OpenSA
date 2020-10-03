@@ -4,6 +4,8 @@ Player:
 		GameOverDelay: 3000
 	ColonyConquestVictoryConditions:
 		SuppressNotifications: True
+	Shroud:
+		ExploredMapCheckboxEnabled: True
 
 World:
 	DeveloperMode:
