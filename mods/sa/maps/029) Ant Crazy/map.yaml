@@ -220,11 +220,11 @@ Actors:
 	Actor53: ants_colony
 		Location: 7,54
 		Owner: Spiders
-	Actor54: ants_colony
-		Location: 10,40
+	Actor58: ants_colony
 		Owner: Beetles
-	Actor55: ants_colony
-		Location: 51,40
+		Location: 50,39
+	Actor59: ants_colony
 		Owner: Beetles
+		Location: 11,39
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
