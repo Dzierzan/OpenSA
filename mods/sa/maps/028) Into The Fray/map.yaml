@@ -29,26 +29,26 @@ Players:
 		Enemies: Wasps, Spiders, Ants
 	PlayerReference@Wasps:
 		Name: Wasps
-		Faction: wasps
-		Color: F5D378
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: wasps
 		LockColor: True
+		Color: F5D378
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Spiders, Ants, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
+		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
-		Bot: spiders-ai
 		Enemies: Wasps, Ants, Creeps
 	PlayerReference@Ants:
 		Name: Ants
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
-		Bot: ants-ai
 		Enemies: Spiders, Wasps, Creeps
 
 Actors:
@@ -60,10 +60,10 @@ Actors:
 		Owner: Spiders
 	Actor2: beetles_colony
 		Location: 29,11
-		Owner: Neutral
+		Owner: Creeps
 	Actor3: spiders_colony
 		Location: 52,76
-		Owner: Neutral
+		Owner: Creeps
 	Actor4: plant_broad_leaf_grass
 		Location: 38,18
 		Owner: Neutral
@@ -111,9 +111,6 @@ Actors:
 		Owner: Neutral
 	Actor19: plant_broad_leaf_grass
 		Location: 4,78
-		Owner: Neutral
-	Actor20: plant_toad_stool
-		Location: 36,72
 		Owner: Neutral
 	Actor21: plant_flower
 		Location: 88,64
@@ -207,9 +204,6 @@ Actors:
 		Owner: Neutral
 	Actor51: plant_broad_leaf_grass
 		Location: 29,44
-		Owner: Neutral
-	Actor52: plant_toad_stool
-		Location: 36,72
 		Owner: Neutral
 	Actor53: plant_flower
 		Location: 85,55
@@ -438,7 +432,7 @@ Actors:
 		Owner: Neutral
 	Actor128: beetles_colony
 		Location: 87,77
-		Owner: Neutral
+		Owner: Creeps
 	Actor129: wasps_colony
 		Location: 35,28
 		Owner: Ants
@@ -475,5 +469,11 @@ Actors:
 	Actor140: ants_light
 		Location: 26,65
 		Owner: Ants
+	Actor141: plant_toad_stool
+		Owner: Neutral
+		Location: 37,73
+	Actor142: plant_toad_stool
+		Owner: Neutral
+		Location: 36,72
 
 Rules: sa|rules/campaign.yaml, rules.yaml
