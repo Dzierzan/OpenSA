@@ -30,12 +30,12 @@ Players:
 	PlayerReference@Ants:
 		Name: Ants
 		Faction: ants
-		Color: F5D378
+		Color: 57AC49
 		Enemies: Creeps
 	PlayerReference@Wasps:
 		Name: Wasps
 		Faction: wasps
-		Color: BC6DBF
+		Color: CA3131
 		Enemies: Creeps
 
 Actors:
