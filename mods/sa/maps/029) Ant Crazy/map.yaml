@@ -1,0 +1,230 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 029) Ant Crazy
+
+Author: Gate 5 Creations
+
+Tileset: NORMAL
+
+MapSize: 68,100
+
+Bounds: 2,2,64,96
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Spiders, Wasps, Beetles, Ants
+	PlayerReference@Ants:
+		Name: Ants
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: ants
+		LockColor: True
+		Color: 57AC49
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Spiders, Wasps, Beetles, Creeps
+	PlayerReference@Wasps:
+		Name: Wasps
+		Bot: wasps-ai
+		Faction: wasps
+		Color: F5D378
+		Enemies: Beetles, Ants, Spiders, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Bot: spiders-ai
+		Faction: spiders
+		Color: CA3131
+		Enemies: Wasps, Ants, Beetles, Creeps
+	PlayerReference@Beetles:
+		Name: Beetles
+		Bot: beetles-ai
+		Faction: beetles
+		Color: 606EA5
+		Enemies: Wasps, Ants, Spiders, Creeps
+
+Actors:
+	Actor0: plant_flower
+		Location: 29,78
+		Owner: Neutral
+	Actor1: plant_flower
+		Location: 41,36
+		Owner: Neutral
+	Actor2: plant_flower
+		Location: 32,59
+		Owner: Neutral
+	Actor3: plant_flower
+		Location: 16,72
+		Owner: Neutral
+	Actor4: plant_flower
+		Location: 34,55
+		Owner: Neutral
+	Actor5: plant_flower
+		Location: 22,48
+		Owner: Neutral
+	Actor6: plant_flower
+		Location: 26,48
+		Owner: Neutral
+	Actor7: plant_broad_leaf_grass
+		Location: 42,11
+		Owner: Neutral
+	Actor8: plant_flower
+		Location: 38,63
+		Owner: Neutral
+	Actor9: plant_broad_leaf_grass
+		Location: 48,70
+		Owner: Neutral
+	Actor10: plant_broad_leaf_grass
+		Location: 22,30
+		Owner: Neutral
+	Actor11: plant_broad_leaf_grass
+		Location: 32,23
+		Owner: Neutral
+	Actor12: plant_flower
+		Location: 22,13
+		Owner: Neutral
+	Actor13: plant_broad_leaf_grass
+		Location: 48,64
+		Owner: Neutral
+	Actor14: plant_broad_leaf_grass
+		Location: 15,66
+		Owner: Neutral
+	Actor15: plant_broad_leaf_grass
+		Location: 48,44
+		Owner: Neutral
+	Actor16: plant_flower
+		Location: 30,44
+		Owner: Neutral
+	Actor17: plant_broad_leaf_grass
+		Location: 45,15
+		Owner: Neutral
+	Actor18: plant_broad_leaf_grass
+		Location: 43,45
+		Owner: Neutral
+	Actor19: plant_broad_leaf_grass
+		Location: 20,14
+		Owner: Neutral
+	Actor20: plant_broad_leaf_grass
+		Location: 8,71
+		Owner: Neutral
+	Actor21: plant_flower
+		Location: 40,72
+		Owner: Neutral
+	Actor22: plant_flower
+		Location: 51,66
+		Owner: Neutral
+	Actor23: plant_broad_leaf_grass
+		Location: 30,57
+		Owner: Neutral
+	Actor24: plant_broad_leaf_grass
+		Location: 26,74
+		Owner: Neutral
+	Actor25: plant_flower
+		Location: 28,63
+		Owner: Neutral
+	Actor26: plant_flower
+		Location: 16,52
+		Owner: Neutral
+	Actor27: plant_broad_leaf_grass
+		Location: 28,48
+		Owner: Neutral
+	Actor28: plant_broad_leaf_grass
+		Location: 42,27
+		Owner: Neutral
+	Actor29: plant_flower
+		Location: 48,54
+		Owner: Neutral
+	Actor30: plant_brown_mushroom
+		Location: 28,37
+		Owner: Neutral
+	Actor31: plant_flower
+		Location: 26,72
+		Owner: Neutral
+	Actor32: plant_broad_leaf_grass
+		Location: 26,23
+		Owner: Neutral
+	Actor33: plant_broad_leaf_grass
+		Location: 38,38
+		Owner: Neutral
+	Actor34: plant_flower
+		Location: 17,66
+		Owner: Neutral
+	Actor35: plant_broad_leaf_grass
+		Location: 30,74
+		Owner: Neutral
+	Actor36: plant_brown_mushroom
+		Location: 20,10
+		Owner: Neutral
+	Actor37: plant_broad_leaf_grass
+		Location: 34,76
+		Owner: Neutral
+	Actor38: plant_flower
+		Location: 24,60
+		Owner: Neutral
+	Actor39: ants_colony
+		Location: 24,29
+		Owner: Ants
+	Actor40: ants_colony
+		Location: 36,29
+		Owner: Ants
+	Actor41: plant_broad_leaf_grass
+		Location: 40,19
+		Owner: Neutral
+	Actor42: plant_broad_leaf_grass
+		Location: 28,25
+		Owner: Neutral
+	Actor43: plant_broad_leaf_grass
+		Location: 26,18
+		Owner: Neutral
+	Actor44: ants_colony
+		Location: 31,46
+		Owner: Creeps
+	Actor45: ants_colony
+		Location: 31,65
+		Owner: Creeps
+	Actor46: plant_broad_leaf_grass
+		Location: 36,59
+		Owner: Neutral
+	Actor47: plant_broad_leaf_grass
+		Location: 31,56
+		Owner: Neutral
+	Actor48: plant_broad_leaf_grass
+		Location: 24,53
+		Owner: Neutral
+	Actor49: plant_broad_leaf_grass
+		Location: 23,67
+		Owner: Neutral
+	Actor50: ants_colony
+		Location: 9,71
+		Owner: Wasps
+	Actor51: ants_colony
+		Location: 51,71
+		Owner: Wasps
+	Actor52: ants_colony
+		Location: 53,54
+		Owner: Spiders
+	Actor53: ants_colony
+		Location: 7,54
+		Owner: Spiders
+	Actor54: ants_colony
+		Location: 10,40
+		Owner: Beetles
+	Actor55: ants_colony
+		Location: 51,40
+		Owner: Beetles
+
+Rules: sa|rules/campaign.yaml, rules.yaml
