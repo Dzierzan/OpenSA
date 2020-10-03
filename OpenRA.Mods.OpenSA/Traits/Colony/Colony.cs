@@ -38,18 +38,16 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			if (!string.IsNullOrEmpty(Weapon))
 			{
-				WeaponInfo weapon;
 				var weaponToLower = Weapon.ToLowerInvariant();
-				if (!rules.Weapons.TryGetValue(weaponToLower, out weapon))
+				if (!rules.Weapons.TryGetValue(weaponToLower, out var weapon))
 					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
 				WeaponInfo = weapon;
 			}
 
 			if (!string.IsNullOrEmpty(Explode))
 			{
-				WeaponInfo explodesInfo;
 				var explodesWeaponToLower = Explode.ToLowerInvariant();
-				if (!rules.Weapons.TryGetValue(explodesWeaponToLower, out explodesInfo))
+				if (!rules.Weapons.TryGetValue(explodesWeaponToLower, out var explodesInfo))
 					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(explodesWeaponToLower));
 				ExplodeWeaponInfo = explodesInfo;
 			}
