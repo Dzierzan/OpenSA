@@ -39,21 +39,6 @@ Player:
 		RequiresCondition: enable-ants-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
-			ants_light: 33
-			ants_medium: 33
-			ants_heavy: 33
-			beetles_light: 33
-			beetles_medium: 33
-			beetles_heavy: 33
-			scorpions_light: 33
-			scorpions_medium: 33
-			scorpions_heavy: 33
-			spiders_light: 33
-			spiders_medium: 33
-			spiders_heavy: 33
-			wasps_light: 33
-			wasps_medium: 33
-			wasps_heavy: 33
 	SquadManagerBotModule@BeetlesAI:
 		RequiresCondition: enable-beetles-ai
 		SquadSize: 20
@@ -66,21 +51,6 @@ Player:
 		RequiresCondition: enable-beetles-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
-			ants_light: 33
-			ants_medium: 33
-			ants_heavy: 33
-			beetles_light: 33
-			beetles_medium: 33
-			beetles_heavy: 33
-			scorpions_light: 33
-			scorpions_medium: 33
-			scorpions_heavy: 33
-			spiders_light: 33
-			spiders_medium: 33
-			spiders_heavy: 33
-			wasps_light: 33
-			wasps_medium: 33
-			wasps_heavy: 33
 	SquadManagerBotModule@WaspsAI:
 		RequiresCondition: enable-wasps-ai
 		SquadSize: 20
@@ -93,21 +63,6 @@ Player:
 		RequiresCondition: enable-wasps-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
-			ants_light: 33
-			ants_medium: 33
-			ants_heavy: 33
-			beetles_light: 33
-			beetles_medium: 33
-			beetles_heavy: 33
-			scorpions_light: 33
-			scorpions_medium: 33
-			scorpions_heavy: 33
-			spiders_light: 33
-			spiders_medium: 33
-			spiders_heavy: 33
-			wasps_light: 33
-			wasps_medium: 33
-			wasps_heavy: 33
 	SquadManagerBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
 		SquadSize: 20
@@ -120,18 +75,3 @@ Player:
 		RequiresCondition: enable-spiders-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:
-			ants_light: 33
-			ants_medium: 33
-			ants_heavy: 33
-			beetles_light: 33
-			beetles_medium: 33
-			beetles_heavy: 33
-			scorpions_light: 33
-			scorpions_medium: 33
-			scorpions_heavy: 33
-			spiders_light: 33
-			spiders_medium: 33
-			spiders_heavy: 33
-			wasps_light: 33
-			wasps_medium: 33
-			wasps_heavy: 33
