@@ -194,16 +194,18 @@ Cursors:
 			X: 0
 			Y: 0
 
-	#		ability:
-	#			Start: 72
-	#			Length: 8
-	#			X: 24
-	#			Y: 24
-	#		ability-minimap:
-	#			Start: 72
-	#			Length: 8
-	#			X: 24
-	#			Y: 24
+	bits/cursors.png: OpenSA
+		ability:
+			Start: 45
+			Length: 4
+			X: 0
+			Y: 0
+	bits/cursors.png: OpenSA
+		ability-minimap:
+			Start: 45
+			Length: 4
+			X: 0
+			Y: 0
 
 	bits/cursors.png: OpenSA
 		joystick-all:
