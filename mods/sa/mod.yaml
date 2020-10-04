@@ -141,6 +141,8 @@ ChromeLayout:
 	common|chrome/replaybrowser.yaml
 	sa|chrome/mainmenu-prerelease-notification.yaml
 	sa|chrome/mainmenu.yaml
+	common|chrome/gamesave-browser.yaml
+	common|chrome/gamesave-loading.yaml
 
 AssetBrowser:
 	SupportedExtensions: .ani, .ddf
