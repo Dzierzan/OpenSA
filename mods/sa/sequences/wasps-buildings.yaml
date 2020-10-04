@@ -1,6 +1,6 @@
 wasps_colony:
 	idle-overlay: sprites|STCLYWAB_COLONY.ANI
-		ZOffset: 2000
+		ZOffset: 2500
 	idle: sprites|STCLYWAB_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
@@ -22,7 +22,7 @@ wasps_colony:
 			sprites|STCLYWAY_WNORMALTR.ANI:
 			sprites|STCLYWAY_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYWAY_WFIRET.ANI:
@@ -60,7 +60,7 @@ wasps_colony:
 		Length: 2
 		Facings: 16
 		Tick: 80
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMEWASPCOLONY.ANI
 
 wasps_colony_turret:
@@ -89,7 +89,7 @@ wasps_colony_turret:
 			sprites|STCLYWAY_WNORMALTR.ANI:
 			sprites|STCLYWAY_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYWAY_WFIRET.ANI:
@@ -127,5 +127,5 @@ wasps_colony_turret:
 		Length: 2
 		Facings: 16
 		Tick: 80
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMEWASPASSAULT.ANI #TODO PLACEHOLDER

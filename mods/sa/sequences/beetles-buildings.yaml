@@ -1,6 +1,6 @@
 beetles_colony:
 	idle-overlay: sprites|STCLYBTB_COLONY.ANI
-		ZOffset: 2000
+		ZOffset: 2500
 	idle: sprites|STCLYBTX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
@@ -22,7 +22,7 @@ beetles_colony:
 			sprites|STCLYBTG_WNORMALTR.ANI:
 			sprites|STCLYBTG_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYBTG_WFIRET.ANI:
@@ -70,7 +70,7 @@ beetles_colony:
 		Length: 2
 		Facings: 16
 		Tick: 40
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMEBEETLECOLONY.ANI
 
 beetles_colony_turret:
@@ -99,7 +99,7 @@ beetles_colony_turret:
 			sprites|STCLYBTG_WNORMALTR.ANI:
 			sprites|STCLYBTG_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYBTG_WFIRET.ANI:
@@ -147,5 +147,5 @@ beetles_colony_turret:
 		Length: 2
 		Facings: 16
 		Tick: 40
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMEBEETLECOLONY.ANI #TODO PLACEHOLDER

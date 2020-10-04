@@ -1,6 +1,6 @@
 spiders_colony:
 	idle-overlay: sprites|STCLYSPB_COLONY.ANI
-		ZOffset: 2000
+		ZOffset: 2500
 	idle: sprites|STCLYSPX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
@@ -30,7 +30,7 @@ spiders_colony:
 			bits/STCLYSPB.png:
 				Start: 7
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYSPB_WFIRET.ANI:
@@ -76,7 +76,7 @@ spiders_colony:
 		Length: 2
 		Facings: 16
 		Tick: 80
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMESPIDERCOLONY.ANI
 
 spiders_colony_turret:
@@ -113,7 +113,7 @@ spiders_colony_turret:
 			bits/STCLYSPB.png:
 				Start: 7
 		Facings: 16
-		ZOffset: 2100
+		ZOffset: 2600
 	shoot:
 		Combine:
 			sprites|STCLYSPB_WFIRET.ANI:
@@ -159,5 +159,5 @@ spiders_colony_turret:
 		Length: 2
 		Facings: 16
 		Tick: 80
-		ZOffset: 2100
+		ZOffset: 2600
 	name: sprites|NAMESPIDERBLACKWIDOW.ANI #TODO PLACEHOLDER
