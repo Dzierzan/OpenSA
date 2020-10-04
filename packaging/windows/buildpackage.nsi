@@ -93,6 +93,8 @@ Section "Game" GAME
 	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File "${SRCDIR}\eluant.dll"
 	File "${SRCDIR}\BeaconLib.dll"
+	File "${SRCDIR}\DiscordRPC.dll"
+	File "${SRCDIR}\Newtonsoft.Json.dll"
 	File "${SRCDIR}\soft_oal.dll"
 	File "${SRCDIR}\SDL2.dll"
 	File "${SRCDIR}\freetype6.dll"
@@ -192,6 +194,8 @@ Function ${UN}Clean
 	Delete $INSTDIR\SDL2-CS.dll
 	Delete $INSTDIR\OpenAL-CS.Core.dll
 	Delete $INSTDIR\BeaconLib.dll
+	Delete $INSTDIR\DiscordRPC.dll
+	Delete $INSTDIR\Newtonsoft.Json.dll
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
