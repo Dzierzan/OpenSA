@@ -35,7 +35,7 @@ RequestExecutionLevel admin
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT "HKLM"
 !define MUI_STARTMENUPAGE_REGISTRY_KEY "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "Start Menu Folder"
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenRA"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenSA"
 
 Var StartMenuFolder
 !insertmacro MUI_PAGE_STARTMENU Application $StartMenuFolder
@@ -58,10 +58,10 @@ Section "-Reg" Reg
 	WriteRegStr HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}" "InstallDir" $INSTDIR
 
 	; Join server URL Scheme
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "" "URL:Join OpenRA server"
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "URL Protocol" ""
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "" "URL:Join OpenSA server"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "URL Protocol" ""
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
 
 	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "" "URL:Run game ${DISCORD_APP_ID} protocol"
 	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "URL Protocol" ""
@@ -93,6 +93,8 @@ Section "Game" GAME
 	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File "${SRCDIR}\eluant.dll"
 	File "${SRCDIR}\BeaconLib.dll"
+	File "${SRCDIR}\DiscordRPC.dll"
+	File "${SRCDIR}\Newtonsoft.Json.dll"
 	File "${SRCDIR}\soft_oal.dll"
 	File "${SRCDIR}\SDL2.dll"
 	File "${SRCDIR}\freetype6.dll"
@@ -126,7 +128,7 @@ SectionEnd
 
 Section "Desktop Shortcut" DESKTOPSHORTCUT
 	SetOutPath "$INSTDIR"
-	CreateShortCut "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
+	CreateShortCut "$DESKTOP\${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
 		"$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" "" "" ""
 SectionEnd
 
@@ -138,9 +140,9 @@ Section "-DotNet" DotNet
 	; https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
 	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Release"
 	IfErrors error 0
-	IntCmp $0 394254 done error done
+	IntCmp $0 461808 done error done
 	error:
-		MessageBox MB_OK ".NET Framework v4.6.1 or later is required to run OpenRA."
+		MessageBox MB_OK ".NET Framework v4.7.2 or later is required to run OpenSA."
 		Abort
 	done:
 SectionEnd
@@ -192,10 +194,12 @@ Function ${UN}Clean
 	Delete $INSTDIR\SDL2-CS.dll
 	Delete $INSTDIR\OpenAL-CS.Core.dll
 	Delete $INSTDIR\BeaconLib.dll
+	Delete $INSTDIR\DiscordRPC.dll
+	Delete $INSTDIR\Newtonsoft.Json.dll
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
-	DeleteRegKey HKLM "Software\Classes\openra-${MOD_ID}-${TAG}"
+	DeleteRegKey HKLM "Software\Classes\opensa-${TAG}"
 	DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
 
 	Delete $INSTDIR\uninstaller.exe
