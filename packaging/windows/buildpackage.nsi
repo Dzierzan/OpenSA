@@ -35,7 +35,7 @@ RequestExecutionLevel admin
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT "HKLM"
 !define MUI_STARTMENUPAGE_REGISTRY_KEY "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "Start Menu Folder"
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenRA"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenSA"
 
 Var StartMenuFolder
 !insertmacro MUI_PAGE_STARTMENU Application $StartMenuFolder
@@ -58,10 +58,10 @@ Section "-Reg" Reg
 	WriteRegStr HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}" "InstallDir" $INSTDIR
 
 	; Join server URL Scheme
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "" "URL:Join OpenRA server"
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "URL Protocol" ""
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
-	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "" "URL:Join OpenSA server"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "URL Protocol" ""
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
+	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
 
 	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "" "URL:Run game ${DISCORD_APP_ID} protocol"
 	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "URL Protocol" ""
@@ -128,7 +128,7 @@ SectionEnd
 
 Section "Desktop Shortcut" DESKTOPSHORTCUT
 	SetOutPath "$INSTDIR"
-	CreateShortCut "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
+	CreateShortCut "$DESKTOP\${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
 		"$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" "" "" ""
 SectionEnd
 
@@ -199,7 +199,7 @@ Function ${UN}Clean
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
-	DeleteRegKey HKLM "Software\Classes\openra-${MOD_ID}-${TAG}"
+	DeleteRegKey HKLM "Software\Classes\opensa-${TAG}"
 	DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
 
 	Delete $INSTDIR\uninstaller.exe
