@@ -67,7 +67,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			this.info = info;
 			health = init.Self.Trait<Health>();
 			health.RemoveOnDeath = false; // TODO: Replace this hack.
-			rallyPoint = init.Self.Trait<RallyPoint>();
+			rallyPoint = init.Self.TraitOrDefault<RallyPoint>();
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -194,7 +194,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 				health.Resurrect(self, self);
 				health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
 
-				rallyPoint.AddIndicator(self); // HACK: Workaround due to killing the colony
+				if (rallyPoint != null)
+					rallyPoint.AddIndicator(self); // HACK: Workaround due to killing the colony
 			});
 		}
 	}
