@@ -273,3 +273,7 @@ ModContent:
 
 DiscordService:
 	ApplicationId: 754764145668128848
+
+ModCredits:
+	ModCreditsFile: sa|CREDITS
+	ModTabTitle: OpenSA
