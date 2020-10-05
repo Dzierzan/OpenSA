@@ -22,7 +22,7 @@ Cursors:
 			Y: 0
 	bits/cursors.png: OpenSA
 		attack:
-			Start: 37
+			Start: 53
 			Length: 4
 			X: 0
 			Y: 0
@@ -40,20 +40,18 @@ Cursors:
 			Y: 0
 	bits/cursors.png: OpenSA
 		attackmove-blocked:
-			Start: 41
-			Length: 4
+			Start: 0
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		assaultmove:
-			Start: 41
+			Start: 49
 			Length: 4
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
 		assaultmove-blocked:
-			Start: 41
-			Length: 4
+			Start: 0
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
