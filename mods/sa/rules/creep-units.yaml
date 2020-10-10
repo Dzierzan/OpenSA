@@ -51,6 +51,32 @@ ants_grenadier_pirate:
 		Scale: 1.1
 	PirateAnt:
 
+ants_flying_machine_pilot:
+	Inherits@1: ^CoreNeutralUnit
+	Inherits@2: ^CoreArmedSelf
+	Inherits@3: ^AutoTargetDefault
+	Inherits@4: ^Paralyzed
+	Tooltip:
+		Name: Pirate Grenadier
+	Health:
+		HP: 4400
+	Mobile:
+		Speed: 92
+	Buildable:
+		BuildDuration: 200
+	#RevealsShroud:
+	#	Range: 7c0
+	Voiced:
+		VoiceSet: AntsVoice
+	Armament:
+		Weapon: ants_grenadier_pirate
+		FireDelay: 10
+		LocalOffset: 500,0,555
+		PauseOnCondition: paralyzed
+	RenderSprites:
+		Image: ants_grenadier_pirate
+		Scale: 1.1
+
 ants_bazooka_pirate:
 	Inherits@1: ^CoreNeutralUnit
 	Inherits@2: ^CoreArmedSelf
@@ -153,8 +179,8 @@ flying_machine:
 		SoundFiles: sounds|STEAMPUFF.SDF
 		Interval: 100
 		RequiresCondition: Puff
-	SpawnActorOnDeath: #TODO Requires some adjusting
-		Actor: ants_grenadier_pirate
+	SpawnActorOnDeath:
+		Actor: ants_flying_machine_pilot
 	LeavesTrails:
 		Image: smoke_trail
 		Sequences: idle
