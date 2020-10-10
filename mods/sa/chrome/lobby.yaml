@@ -48,6 +48,7 @@ Background@SERVER_LOBBY:
 					Height: 31
 					Font: Bold
 					Text: Music
+					Disabled: true
 		Container@MULTIPLAYER_TABS:
 			Visible: False
 			Children:
@@ -72,6 +73,7 @@ Background@SERVER_LOBBY:
 					Height: 31
 					Font: Bold
 					Text: Music
+					Disabled: true
 				Button@SERVERS_TAB:
 					X: 503
 					Y: 285
