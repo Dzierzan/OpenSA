@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
+using OpenRA.Mods.Common.Effects;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
@@ -194,8 +195,17 @@ namespace OpenRA.Mods.OpenSA.Traits
 				health.Resurrect(self, self);
 				health.InflictDamage(self, self, new Damage(health.MaxHP - info.ResurrectHealth), true);
 
+				// HACK: Workaround due to killing the colony
 				if (rallyPoint != null)
-					rallyPoint.AddIndicator(self); // HACK: Workaround due to killing the colony
+				{
+					// Display only the first level of priority
+					var priorityExits = self.Info.TraitInfos<ExitInfo>()
+						.GroupBy(e => e.Priority)
+						.FirstOrDefault();
+
+					var exits = priorityExits != null ? priorityExits.ToArray() : new ExitInfo[0];
+					self.World.Add(new RallyPointIndicator(self, rallyPoint, exits));
+				}
 			});
 		}
 	}
