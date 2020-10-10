@@ -252,8 +252,9 @@ Container@MAINMENU:
 					Y: 15
 					Width: 400
 					Height: 25
-					Text: Battlefield News
+					Text: Insect News
 					Font: Bold
+					Disabled: true
 		Container@UPDATE_NOTICE:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: 95
