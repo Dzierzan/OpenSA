@@ -78,8 +78,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 			{
 				var actorType = info.ActorTypes.Random(self.World.SharedRandom);
 				var actor = self.World.Map.Rules.Actors[actorType];
-				var facing = new WAngle(self.World.SharedRandom.Next(info.QuantizedFacings) / info.QuantizedFacings);
-				var delta = new WVec(0, -1024, 0).Rotate(WRot.FromYaw(facing));
+				var facing = 256 * self.World.SharedRandom.Next(info.QuantizedFacings) / info.QuantizedFacings;
+				var delta = new WVec(0, -1024, 0).Rotate(WRot.FromFacing(facing));
 
 				var altitude = actor.TraitInfo<AircraftInfo>().CruiseAltitude.Length;
 				var target = self.World.Map.CenterOfCell(position) + new WVec(0, 0, altitude);
@@ -90,7 +90,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				{
 					new CenterPositionInit(startEdge),
 					new OwnerInit(self.World.Players.First(p => p.InternalName == info.InternalOwner)),
-					new FacingInit(facing),
+					new FacingInit(WAngle.FromFacing(facing)),
 				});
 
 				flyer.QueueActivity(false, new Fly(flyer, Target.FromPos(finishEdge)));
