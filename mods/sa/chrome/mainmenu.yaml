@@ -155,6 +155,7 @@ Container@MAINMENU:
 							Height: 30
 							Text: Music
 							Font: Bold
+							Disabled: true
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 140
@@ -252,8 +253,9 @@ Container@MAINMENU:
 					Y: 15
 					Width: 400
 					Height: 25
-					Text: Battlefield News
+					Text: Insect News
 					Font: Bold
+					Disabled: true
 		Container@UPDATE_NOTICE:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: 95
