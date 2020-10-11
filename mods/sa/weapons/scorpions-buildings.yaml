@@ -1,5 +1,5 @@
 scorpions_colony:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 40
 	Range: 18c0
 	Report: sounds|SPEAR.SDF
@@ -12,7 +12,7 @@ scorpions_colony:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		ImpactSounds: sounds|SNIPERHIT.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water

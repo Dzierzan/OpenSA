@@ -1,5 +1,5 @@
 ants_colony:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	Range: 10c0
 	ReloadDelay: 6
 	Projectile: InstantHit
@@ -7,7 +7,7 @@ ants_colony:
 	Warhead@Damage: SpreadDamage
 		Damage: 690
 		Spread: 125
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion

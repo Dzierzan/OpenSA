@@ -1,5 +1,5 @@
 wasps_light:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 5
 	Range: 6c0
 	Projectile: Bullet
@@ -11,7 +11,7 @@ wasps_light:
 		Spread: 125
 		Falloff: 100, 50, 25, 0
 		Damage: 782
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
@@ -44,7 +44,7 @@ wasps_medium:
 		Condition: paralyzed
 
 wasps_heavy:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 4
 	Range: 6c0
 	Projectile: Bullet

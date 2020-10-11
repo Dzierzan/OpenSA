@@ -11,7 +11,7 @@ spiders_light:
 		ValidTargets: Ground, Paralyzed, Water
 
 spiders_medium:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	Range: 12c0
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
@@ -20,14 +20,14 @@ spiders_medium:
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
 		Spread: 125
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
 		ValidTargets: Ground, Air, Paralyzed, Water
 
 spiders_heavy:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	Range: 16c0
 	ReloadDelay: 40
 	AfterFireSound: sounds|MISSILELOCK.SDF
@@ -48,7 +48,7 @@ spiders_heavy:
 	Warhead@Damage: SpreadDamage
 		Damage: 3000
 		Spread: 256
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1

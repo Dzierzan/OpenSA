@@ -1,5 +1,5 @@
 wasps_colony:
-	ValidTargets: Ground, Paralyzed, Water
+	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 4
 	Range: 10c0
 	Projectile: Bullet
@@ -11,7 +11,7 @@ wasps_colony:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 782
-		ValidTargets: Ground, Paralyzed, Water
+		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
