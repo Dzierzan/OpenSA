@@ -104,9 +104,9 @@
 		MaxRange: 7 #Max range of colony bits
 		ResurrectHealth: 25000
 		Weapon: colony_bit
-		CaptureSound: OpenSA|bits/sounds/TurretPowerUp.wav
-		LostSound: OpenSA|bits/sounds/TurretPowerDown.wav
-		ColonyExplosionSound: OpenSA|bits/sounds/TurretExplosion.wav
+		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
+		LostSound: sa|bits/sounds/TurretPowerDown.wav
+		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
 		Explode: dieTurret
 	VerticalSelectionDecorations:
 	Selectable:
