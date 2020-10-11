@@ -78,6 +78,7 @@
 	RallyPoint:
 		Cursor: move
 		Path: 5,5
+		LineWidth: 3
 	GrantConditionOnHealth:
 		Condition: HoldFire
 		MinHP: 0
