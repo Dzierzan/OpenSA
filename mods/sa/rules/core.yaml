@@ -248,6 +248,7 @@
 # Grouped traits for standard non-turreted behavior.
 ^CoreArmedSelf:
 	AttackFrontal:
+		FacingTolerance: 15
 	WithAttackAnimation:
 		Sequence: shoot
 
