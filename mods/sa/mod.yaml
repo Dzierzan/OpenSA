@@ -263,6 +263,7 @@ DefaultPlayer:
 
 ModContent:
 	InstallPromptMessage: OpenSA requires artwork and audio from the original game.
+	ContentInstallerMod: sacontent
 	QuickDownload: basefiles
 	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install.
 	Packages:

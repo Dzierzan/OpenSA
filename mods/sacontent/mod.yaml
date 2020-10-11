@@ -1,0 +1,68 @@
+Metadata:
+	Title: OpenSA Content Manager
+	Version: {DEV_VERSION}
+	Hidden: true
+
+Packages:
+	.
+	$sacontent: sacontent
+	./mods/common: common
+
+Rules:
+	sacontent|rules.yaml
+
+Cursors:
+	sacontent|cursors.yaml
+
+Chrome:
+	sacontent|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+
+ChromeLayout:
+	sacontent|content.yaml
+
+Notifications:
+	sacontent|notifications.yaml
+
+LoadScreen: ModContentLoadScreen
+	Image: sacontent|chrome.png
+
+ChromeMetrics:
+	common|metrics.yaml
+	sacontent|metrics.yaml
+
+Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+
+SoundFormats:
+
+SpriteFormats: PngSheet
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
