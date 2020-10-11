@@ -11,6 +11,7 @@
 	# Required to see debug overlays.
 	CombatDebugOverlay:
 	ProvidesRadar:
+	DrawLineToTarget:
 
 # Base for all movable units.
 ^CoreCreature:
