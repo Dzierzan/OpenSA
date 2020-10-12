@@ -109,8 +109,6 @@ dragonfly:
 		HP: 25000
 	Aircraft:
 		Speed: 105
-	Voiced:
-		VoiceSet: NeutralVoice
 	SpawnsShrapnel@RIGHT_BOMB:
 		Weapon: dragonfly_right
 		Delay: 10
@@ -126,8 +124,6 @@ fly:
 		HP: 16000
 	Aircraft:
 		Speed: 220
-	Voiced:
-		VoiceSet: NeutralVoice
 	SpawnsShrapnel:
 		Weapon: fly
 		Delay: 25
@@ -144,8 +140,6 @@ moth:
 		HP: 16000
 	Aircraft:
 		Speed: 220
-	Voiced:
-		VoiceSet: NeutralVoice
 	SpawnsShrapnel@puff:
 		Weapon: moth
 		Delay: 50
@@ -167,8 +161,6 @@ flying_machine:
 		HP: 25000
 	Aircraft:
 		Speed: 105
-	Voiced:
-		VoiceSet: NeutralVoice
 	SpawnsShrapnel:
 		Weapon: flying_machine
 		Delay: 35

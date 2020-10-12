@@ -298,6 +298,8 @@
 	Selectable:
 		Bounds: 24,24
 		Priority: 20
+	Voiced:
+		VoiceSet: NeutralVoice
 	WithMoveAnimation:
 	RevealsShroud:
 		Range: 10c0
