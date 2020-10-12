@@ -294,7 +294,7 @@
 ^Bomber:
 	Inherits: ^CoreCreature
 	Targetable:
-		TargetTypes: Air
+		TargetTypes: Ground, Air
 	Selectable:
 		Bounds: 24,24
 		Priority: 20

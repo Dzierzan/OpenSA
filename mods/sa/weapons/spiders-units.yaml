@@ -9,6 +9,7 @@ spiders_light:
 		Damage: 550
 		Spread: 1
 		ValidTargets: Ground, Paralyzed, Water
+		InvalidTargets: Air
 
 spiders_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air

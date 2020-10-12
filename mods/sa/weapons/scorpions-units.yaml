@@ -9,6 +9,7 @@ scorpions_light:
 		Damage: 715
 		Spread: 1
 		ValidTargets: Ground, Paralyzed, Water
+		InvalidTargets: Air
 
 scorpions_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air

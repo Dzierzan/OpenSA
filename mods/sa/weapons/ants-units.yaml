@@ -9,6 +9,7 @@ ants_light:
 		Damage: 200
 		Spread: 1
 		ValidTargets: Ground, Paralyzed, Water
+		InvalidTargets: Air
 
 ants_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air
