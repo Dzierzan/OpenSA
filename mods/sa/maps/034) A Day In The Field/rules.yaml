@@ -1,7 +1,7 @@
 World:
-	PirateSpawner:
+	-PirateSpawner:
 	CreepFlyerSpawner@dragonfly:
-		#Maximum: 2
+		#Maximum: 3
 	-CreepFlyerSpawner@fly:
 	-CreepFlyerSpawner@moth:
 	-CreepFlyerSpawner@flyingmachine:
