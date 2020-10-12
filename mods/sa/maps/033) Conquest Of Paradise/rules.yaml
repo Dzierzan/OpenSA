@@ -1,0 +1,82 @@
+World:
+	PirateSpawner:
+	CreepFlyerSpawner@dragonfly:
+		#Maximum: 2
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	PlantSpawner@NORMAL:
+		Maximum: 7
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+Player:
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 50
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 50
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 50
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 50
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 50
+			wasps_heavy: 100
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 50
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 50
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 50
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 50
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 50
+			wasps_heavy: 10
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			#ants_light: 0
+			#ants_medium: 0
+			ants_heavy: 100
+			#beetles_light: 0
+			#beetles_medium: 0
+			beetles_heavy: 100
+			#scorpions_light: 0
+			#scorpions_medium: 0
+			scorpions_heavy: 100
+			#spiders_light: 0
+			#spiders_medium: 0
+			spiders_heavy: 100
+			#wasps_light: 0
+			#wasps_medium: 0
+			wasps_heavy: 100
+	UnitBuilderBotModule@SpidersAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 100
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 100
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 100
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 100
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 100
+			wasps_heavy: 100
