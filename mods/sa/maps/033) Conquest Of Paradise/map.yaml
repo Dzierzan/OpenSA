@@ -28,6 +28,7 @@ Players:
 		Faction: Random
 		Enemies: Wasps, Ants
 	PlayerReference@Wasps:
+		Name: Wasps
 		Playable: True
 		Required: True
 		LockFaction: True
