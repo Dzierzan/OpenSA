@@ -240,6 +240,10 @@ moth:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 3500
 	name: sprites|NAMENEUTRALMOTH.ANI
 	portrait: sprites|COLONYNEUTRALMOTH3D.ANI
 
@@ -314,6 +318,10 @@ dragonfly:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 3500
 	name: sprites|NAMENEUTRALDRAGONFLY.ANI
 	portrait: sprites|COLONYNEUTRALDRAGONFLY3D.ANI
 
@@ -388,6 +396,10 @@ fly:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 3500
 	name: sprites|NAMENEUTRALFLY.ANI
 	portrait: sprites|COLONYNEUTRALFLY3D.ANI
 
@@ -462,5 +474,9 @@ flying_machine:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 3500
 	name: sprites|NAMENEUTRALFLYINGMACHINE.ANI
 	portrait: sprites|COLONYNEUTRALFLYINGMACHINE3D.ANI

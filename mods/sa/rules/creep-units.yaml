@@ -113,6 +113,7 @@ dragonfly:
 		Weapon: dragonfly_right
 		Delay: 10
 		Amount: 1
+		PauseOnCondition: paralyzed
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF
 
@@ -129,6 +130,7 @@ fly:
 		Delay: 25
 		AimChance: 0
 		Amount: 1
+		PauseOnCondition: paralyzed
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF
 
@@ -145,11 +147,13 @@ moth:
 		Delay: 50
 		AimChance: 0
 		Amount: 5
+		PauseOnCondition: paralyzed
 	SpawnsShrapnel@normal_seed:
 		Weapon: puff_normal_seed
 		Delay: 50
 		AimChance: 0
 		Amount: 1
+		PauseOnCondition: paralyzed
 	AmbientSound:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
 
@@ -165,6 +169,7 @@ flying_machine:
 		Weapon: flying_machine
 		Delay: 35
 		Amount: 2
+		PauseOnCondition: paralyzed
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:

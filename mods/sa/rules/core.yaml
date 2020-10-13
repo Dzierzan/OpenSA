@@ -272,9 +272,6 @@
 
 # Creates special effect when actor is disabled
 ^Paralyzed:
-	TimedConditionBar@PARALYZED: #TODO for debug purposes, remove that later
-		Condition: paralyzed
-		Color: FFFFFF
 	WithIdleOverlay@PARALYZED:
 		Sequence: paralysis
 		Palette: OpenSA
@@ -291,8 +288,23 @@
 		TargetTypes: Paralyzed
 		RequiresCondition: paralyzed
 
+# Creates special effect when actor is disabled for creep flyers
+^Paralyzed_Flyer:
+	WithIdleOverlay@PARALYZED:
+		Sequence: paralysis
+		Palette: OpenSA
+		RequiresCondition: paralyzed
+	ExternalCondition@PARALYZED:
+		Condition: paralyzed
+	Targetable:
+		RequiresCondition: !paralyzed
+	Targetable@PARALYZED:
+		TargetTypes: Paralyzed
+		RequiresCondition: paralyzed
+
 ^Bomber:
 	Inherits: ^CoreCreature
+	Inherits: ^Paralyzed_Flyer
 	Targetable:
 		TargetTypes: Ground, Air
 	Selectable:
