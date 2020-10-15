@@ -27,3 +27,13 @@ Description: For some reason this sound is heard across the whole map, so it was
 Author: Gate 5 Creations
 Source: Swarm Assault
 Description: For some reason this sound is different when loaded directly from GAME.SDF, so it was exported from .SDF.
+
+**TurretPowerDown.wav**
+Author: Gate 5 Creations, Dzierzan
+Source: Swarm Assault
+Description: Speeded up PowerDown sound for custom turrets.
+
+**TurretPowerUp.wav**
+Author: Gate 5 Creations, Dzierzan
+Source: Swarm Assault
+Description: Speeded up PowerUp sound for custom turrets.
