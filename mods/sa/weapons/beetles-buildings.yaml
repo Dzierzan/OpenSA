@@ -1,6 +1,6 @@
 beetles_colony:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 50
+	ReloadDelay: 30
 	Range: 10c0
 	Report: sounds|CANNON.SDF
 	Projectile: Bullet

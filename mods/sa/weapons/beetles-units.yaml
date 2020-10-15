@@ -38,7 +38,7 @@ beetles_medium:
 
 beetles_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 40
+	ReloadDelay: 30
 	Range: 12c0
 	Report: sounds|CANNON.SDF
 	Projectile: Bullet
