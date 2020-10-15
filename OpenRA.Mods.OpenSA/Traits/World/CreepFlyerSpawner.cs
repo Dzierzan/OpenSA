@@ -78,7 +78,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			{
 				var actorType = info.ActorTypes.Random(self.World.SharedRandom);
 				var actor = self.World.Map.Rules.Actors[actorType];
-				var facing = new WAngle(self.World.SharedRandom.Next(info.QuantizedFacings) / info.QuantizedFacings);
+				var facing = new WAngle(self.World.SharedRandom.Next(info.QuantizedFacings) * 1024 / info.QuantizedFacings);
 				var delta = new WVec(0, -1024, 0).Rotate(WRot.FromYaw(facing));
 
 				var altitude = actor.TraitInfo<AircraftInfo>().CruiseAltitude.Length;
