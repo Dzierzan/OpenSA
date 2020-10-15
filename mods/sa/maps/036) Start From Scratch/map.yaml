@@ -54,32 +54,32 @@ Players:
 Actors:
 	Actor0: beetles_colony
 		Location: 40,87
+		Owner: Creeps
 		Health: 100
 		TurretFacing: 500
-		Owner: Creeps
 	Actor1: spiders_colony
 		Location: 26,99
+		Owner: Creeps
 		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
-		Owner: Creeps
 	Actor2: beetles_colony
 		Location: 40,112
+		Owner: Creeps
 		Health: 100
 		TurretFacing: 500
-		Owner: Creeps
 	Actor3: ants_colony
 		Location: 55,30
+		Owner: Creeps
 		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
-		Owner: Creeps
 	Actor4: ants_colony
 		Location: 8,44
+		Owner: Creeps
 		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
-		Owner: Creeps
 	Actor5: plant_moon_mushroom
 		Location: 58,6
 		Owner: Neutral
@@ -457,9 +457,9 @@ Actors:
 		Owner: Neutral
 	Actor130: beetles_colony
 		Location: 37,10
+		Owner: Creeps
 		Health: 100
 		TurretFacing: 500
-		Owner: Creeps
 	Actor131: beetles_heavy
 		Location: 55,7
 		Owner: Beetles
@@ -471,9 +471,9 @@ Actors:
 		Owner: Beetles
 	Actor134: wasps_colony
 		Location: 39,59
+		Owner: Creeps
 		Health: 100
 		TurretFacing: 500
-		Owner: Creeps
 	Actor135: beetles_light
 		Location: 61,3
 		Owner: Beetles
@@ -485,13 +485,19 @@ Actors:
 		Owner: Beetles
 	Actor138: beetles_medium
 		Location: 61,8
-		Owner: Ants
+		Faction: ants
+		Health: 100
+		Owner: Beetles
 	Actor139: beetles_medium
 		Location: 56,4
-		Owner: Ants
+		Faction: ants
+		Health: 100
+		Owner: Beetles
 	Actor140: beetles_medium
 		Location: 63,11
-		Owner: Ants
+		Faction: ants
+		Health: 100
+		Owner: Beetles
 	Actor141: wasps_light
 		Location: 57,61
 		Owner: Wasps
@@ -521,16 +527,16 @@ Actors:
 		Owner: Wasps
 	Actor150: spiders_colony
 		Location: 31,39
+		Owner: Creeps
 		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
-		Owner: Creeps
 	Actor151: ants_colony
 		Location: 17,114
+		Owner: Creeps
 		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
-		Owner: Creeps
 	Actor152: ants_heavy
 		Location: 55,124
 		Owner: Ants
