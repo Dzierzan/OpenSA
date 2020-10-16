@@ -89,14 +89,8 @@ Actors:
 	Actor7: plant_clover
 		Location: 4,114
 		Owner: Neutral
-	Actor8: plant_moon_mushroom
-		Location: 54,38
-		Owner: Neutral
 	Actor9: plant_moon_mushroom
 		Location: 49,70
-		Owner: Neutral
-	Actor10: plant_clover
-		Location: 6,54
 		Owner: Neutral
 	Actor11: plant_clover
 		Location: 40,44
@@ -188,9 +182,6 @@ Actors:
 	Actor40: plant_cherry_flower
 		Location: 12,32
 		Owner: Neutral
-	Actor41: plant_moon_mushroom
-		Location: 46,122
-		Owner: Neutral
 	Actor42: plant_cherry_flower
 		Location: 6,20
 		Owner: Neutral
@@ -277,9 +268,6 @@ Actors:
 		Owner: Neutral
 	Actor70: plant_clover
 		Location: 38,94
-		Owner: Neutral
-	Actor71: plant_clover
-		Location: 54,38
 		Owner: Neutral
 	Actor72: plant_cherry_flower
 		Location: 20,32
@@ -398,9 +386,6 @@ Actors:
 	Actor110: plant_clover
 		Location: 16,112
 		Owner: Neutral
-	Actor111: plant_clover
-		Location: 46,122
-		Owner: Neutral
 	Actor112: plant_clover
 		Location: 25,79
 		Owner: Neutral
@@ -422,9 +407,6 @@ Actors:
 	Actor118: plant_cherry_flower
 		Location: 14,22
 		Owner: Neutral
-	Actor119: plant_moon_mushroom
-		Location: 24,66
-		Owner: Neutral
 	Actor120: plant_clover
 		Location: 5,50
 		Owner: Neutral
@@ -433,9 +415,6 @@ Actors:
 		Owner: Neutral
 	Actor122: plant_moon_flower
 		Location: 20,20
-		Owner: Neutral
-	Actor123: plant_moon_mushroom
-		Location: 52,82
 		Owner: Neutral
 	Actor124: plant_clover
 		Location: 24,112
@@ -585,5 +564,26 @@ Actors:
 	Actor167: ants_light
 		Location: 58,117
 		Owner: Ants
+	Actor168: plant_clover
+		Owner: Neutral
+		Location: 45,123
+	Actor169: plant_moon_mushroom
+		Owner: Neutral
+		Location: 46,122
+	Actor170: plant_moon_mushroom
+		Owner: Neutral
+		Location: 51,82
+	Actor171: plant_moon_mushroom
+		Owner: Neutral
+		Location: 25,66
+	Actor173: plant_clover
+		Owner: Neutral
+		Location: 53,39
+	Actor172: plant_moon_mushroom
+		Owner: Neutral
+		Location: 54,38
+	Actor174: plant_clover
+		Owner: Neutral
+		Location: 5,54
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

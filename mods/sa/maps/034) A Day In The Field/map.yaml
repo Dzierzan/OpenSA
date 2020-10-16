@@ -168,9 +168,6 @@ Actors:
 	Actor36: plant_flower
 		Location: 3,59
 		Owner: Neutral
-	Actor37: plant_broad_leaf_grass
-		Location: 32,22
-		Owner: Neutral
 	Actor38: plant_brown_mushroom
 		Location: 48,40
 		Owner: Neutral
@@ -486,9 +483,6 @@ Actors:
 	Actor144: plant_broad_leaf_grass
 		Location: 16,36
 		Owner: Neutral
-	Actor145: plant_broad_leaf_grass
-		Location: 88,46
-		Owner: Neutral
 	Actor146: plant_broad_leaf_grass
 		Location: 6,54
 		Owner: Neutral
@@ -562,5 +556,11 @@ Actors:
 		Location: 15,83
 		Health: 100
 		Facing: 0
+	Actor169: plant_broad_leaf_grass
+		Owner: Neutral
+		Location: 87,46
+	Actor170: plant_broad_leaf_grass
+		Owner: Neutral
+		Location: 31,22
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

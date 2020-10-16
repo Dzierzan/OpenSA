@@ -29,18 +29,18 @@ Players:
 		Enemies: Ants, Wasps
 	PlayerReference@Ants:
 		Name: Ants
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
-		Bot: ants-ai
 		Enemies: Wasps, Creeps
 	PlayerReference@Wasps:
 		Name: Wasps
-		Faction: wasps
-		Color: F5D378
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: wasps
 		LockColor: True
+		Color: F5D378
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Ants, Creeps
@@ -130,12 +130,6 @@ Actors:
 	Actor27: plant_brown_mushroom
 		Location: 52,58
 		Owner: Neutral
-	Actor28: plant_flower
-		Location: 50,68
-		Owner: Neutral
-	Actor29: plant_flower
-		Location: 8,60
-		Owner: Neutral
 	Actor30: plant_brown_mushroom
 		Location: 22,26
 		Owner: Neutral
@@ -205,9 +199,6 @@ Actors:
 	Actor52: plant_flower
 		Location: 55,18
 		Owner: Neutral
-	Actor53: plant_flower
-		Location: 56,82
-		Owner: Neutral
 	Actor54: plant_broad_leaf_grass
 		Location: 62,60
 		Owner: Neutral
@@ -216,12 +207,6 @@ Actors:
 		Owner: Neutral
 	Actor56: plant_broad_leaf_grass
 		Location: 92,40
-		Owner: Neutral
-	Actor57: plant_broad_leaf_grass
-		Location: 42,88
-		Owner: Neutral
-	Actor58: plant_flower
-		Location: 36,92
 		Owner: Neutral
 	Actor59: plant_broad_leaf_grass
 		Location: 38,86
@@ -237,9 +222,6 @@ Actors:
 		Owner: Neutral
 	Actor63: plant_brown_mushroom
 		Location: 56,42
-		Owner: Neutral
-	Actor64: plant_broad_leaf_grass
-		Location: 62,66
 		Owner: Neutral
 	Actor65: plant_broad_leaf_grass
 		Location: 90,48
@@ -270,9 +252,6 @@ Actors:
 		Owner: Neutral
 	Actor74: plant_brown_mushroom
 		Location: 36,20
-		Owner: Neutral
-	Actor75: plant_flower
-		Location: 74,62
 		Owner: Neutral
 	Actor76: plant_broad_leaf_grass
 		Location: 26,20
@@ -312,9 +291,6 @@ Actors:
 		Owner: Neutral
 	Actor88: plant_flower
 		Location: 42,90
-		Owner: Neutral
-	Actor89: plant_flower
-		Location: 80,42
 		Owner: Neutral
 	Actor90: plant_flower
 		Location: 54,4
@@ -424,5 +400,29 @@ Actors:
 	Actor125: spiders_colony
 		Location: 64,32
 		Owner: Wasps
+	Actor126: plant_broad_leaf_grass
+		Owner: Neutral
+		Location: 62,65
+	Actor127: plant_flower
+		Owner: Neutral
+		Location: 50,67
+	Actor128: plant_flower
+		Owner: Neutral
+		Location: 74,61
+	Actor129: plant_flower
+		Owner: Neutral
+		Location: 36,91
+	Actor130: plant_flower
+		Owner: Neutral
+		Location: 7,60
+	Actor131: plant_flower
+		Owner: Neutral
+		Location: 80,41
+	Actor133: plant_flower
+		Owner: Neutral
+		Location: 56,83
+	Actor134: plant_broad_leaf_grass
+		Owner: Neutral
+		Location: 43,88
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

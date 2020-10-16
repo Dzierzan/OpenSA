@@ -109,9 +109,6 @@ Actors:
 	Actor18: plant_flower
 		Location: 15,36
 		Owner: Neutral
-	Actor19: plant_flower
-		Location: 12,72
-		Owner: Neutral
 	Actor20: plant_flower
 		Location: 8,12
 		Owner: Neutral
@@ -150,9 +147,6 @@ Actors:
 		Owner: Neutral
 	Actor32: plant_toad_stool
 		Location: 2,70
-		Owner: Neutral
-	Actor33: plant_toad_stool
-		Location: 12,72
 		Owner: Neutral
 	Actor34: plant_brown_mushroom
 		Location: 18,76
@@ -223,5 +217,11 @@ Actors:
 	Actor56: ants_light
 		Location: 28,94
 		Owner: Ants
+	Actor57: plant_toad_stool
+		Owner: Neutral
+		Location: 11,73
+	Actor58: plant_flower
+		Owner: Neutral
+		Location: 12,72
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
