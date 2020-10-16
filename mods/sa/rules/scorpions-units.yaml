@@ -20,6 +20,7 @@ scorpions_light:
 	AutoTarget:
 		ScanRadius: 6
 		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 scorpions_medium:
 	Inherits@1: ^ScorpionsUnit

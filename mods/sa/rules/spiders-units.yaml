@@ -20,6 +20,7 @@ spiders_light:
 	AutoTarget:
 		ScanRadius: 6
 		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 spiders_medium:
 	Inherits@1: ^SpidersUnit

@@ -254,6 +254,7 @@
 
 ^AutoTargetDefault:
 	AutoTarget:
+		InitialStanceAI: Defend
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Ground, Paralyzed
 
