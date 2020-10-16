@@ -11,7 +11,7 @@ ants_light:
 		Speed: 105
 	Buildable:
 		BuildDuration: 125
-		Description: Body crunching bite attack.\nMelee unit.
+		Description: Body crunching bite attack.\nMelee unit.\nCannot harm colonies or creep flyers.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

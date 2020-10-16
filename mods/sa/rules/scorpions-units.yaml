@@ -11,7 +11,7 @@ scorpions_light:
 		Speed: 98
 	Buildable:
 		BuildDuration: 250
-		Description: Stings with a sting.\nMelee unit.
+		Description: Stings with a sting.\nMelee unit.\nCannot harm colonies or creep flyers.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
