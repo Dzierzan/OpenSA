@@ -1,6 +1,6 @@
 scorpions_colony:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 40
+	ReloadDelay: 30
 	Range: 18c0
 	Report: sounds|SPEAR.SDF
 	Projectile: Bullet
