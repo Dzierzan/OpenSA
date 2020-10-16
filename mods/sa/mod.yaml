@@ -19,7 +19,6 @@ Packages:
 
 MapFolders:
 	sa|maps: System
-	sa|maps/Missions: System
 	~^maps/sa/dev_version: User
 
 Rules:
