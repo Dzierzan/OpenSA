@@ -1,6 +1,5 @@
 World:
 	-PirateSpawner:
 	CreepFlyerSpawner@dragonfly:
-		#Maximum: 1
 	PlantSpawner@NORMAL:
 		Maximum: 2

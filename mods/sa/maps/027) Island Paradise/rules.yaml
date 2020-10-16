@@ -3,14 +3,16 @@ World:
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:
 	CreepFlyerSpawner@moth:
-		#Maximum: 2
+		SpawnInterval: 575, 675
+		InitialSpawnDelay: 575, 675
 	-CreepFlyerSpawner@flyingmachine:
 	-PlantSpawner@NORMAL:
 	-PlantSpawner@DESERT:
 	PlantSpawner@SWAMP:
-		Maximum: 4
+		Maximum: 6
+		SpawnInterval: 200, 400
+		InitialSpawnDelay: 200, 400
 	-PlantSpawner@CANDY:
-
 
 Player:
 	UnitBuilderBotModule@AntsAI:

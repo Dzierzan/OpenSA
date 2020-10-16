@@ -3,12 +3,11 @@ World:
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:
 	CreepFlyerSpawner@moth:
-		#Maximum: 1
 	-CreepFlyerSpawner@flyingmachine:
 	-PlantSpawner@NORMAL:
 	-PlantSpawner@DESERT:
 	PlantSpawner@SWAMP:
-		Maximum: 3
+		Maximum: 5
 	-PlantSpawner@CANDY:
 
 Player:

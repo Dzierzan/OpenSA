@@ -525,12 +525,6 @@ Actors:
 	Actor157: scorpions_medium
 		Location: 17,79
 		Owner: Wasps
-	Actor158: scorpions_medium
-		Location: 8,85
-		Owner: Wasps
-	Actor159: scorpions_medium
-		Location: 15,83
-		Owner: Wasps
 	Actor160: wasps_colony
 		Location: 47,20
 		Health: 100
@@ -558,5 +552,15 @@ Actors:
 	Actor166: plant_toad_stool
 		Owner: Neutral
 		Location: 48,52
+	Actor167: scorpions_heavy
+		Owner: Wasps
+		Location: 8,85
+		Health: 100
+		Facing: 0
+	Actor168: scorpions_heavy
+		Owner: Wasps
+		Location: 15,83
+		Health: 100
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
