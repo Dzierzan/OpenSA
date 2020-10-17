@@ -29,7 +29,7 @@ Player:
 		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
 	SquadManagerBotModule@AntsAI:
 		RequiresCondition: enable-ants-ai
-		SquadSize: 10
+		SquadSize: 6
 		SquadSizeRandomBonus: 15
 		RushInterval: 500
 		AssignRolesInterval: 25
@@ -42,7 +42,7 @@ Player:
 		UnitsToBuild:
 	SquadManagerBotModule@BeetlesAI:
 		RequiresCondition: enable-beetles-ai
-		SquadSize: 10
+		SquadSize: 6
 		SquadSizeRandomBonus: 15
 		RushInterval: 500
 		AssignRolesInterval: 25
@@ -55,7 +55,7 @@ Player:
 		UnitsToBuild:
 	SquadManagerBotModule@WaspsAI:
 		RequiresCondition: enable-wasps-ai
-		SquadSize: 10
+		SquadSize: 6
 		SquadSizeRandomBonus: 15
 		RushInterval: 500
 		AssignRolesInterval: 25
@@ -68,7 +68,7 @@ Player:
 		UnitsToBuild:
 	SquadManagerBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
-		SquadSize: 10
+		SquadSize: 6
 		SquadSizeRandomBonus: 15
 		RushInterval: 500
 		AssignRolesInterval: 25
