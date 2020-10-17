@@ -260,3 +260,14 @@ colony_bit3:
 
 colony_bit4:
 	Inherits: colony_bit1
+
+CAMERA:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+	MapEditorData:
+		Categories: System

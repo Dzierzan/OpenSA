@@ -132,3 +132,7 @@ minimapproduce:
 	idle: sprites|MiniMapProduce.ANI
 		Length: 6
 		Tick: 100
+
+camera:
+	idle: bits/camera.png
+		ZOffset: 10000

@@ -132,3 +132,8 @@ Description: Rally point flag.
 Author: Dzierzan, Gate 5 Creations
 Source: Swarm Assault
 Description: Icons for Slapfight fighter.
+
+**camera.png**
+Author: Dzierzan
+Source: Dzierzan
+Description: Camera image for Camera.Position for lua scripts.
