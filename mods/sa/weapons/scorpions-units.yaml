@@ -33,7 +33,7 @@ scorpions_medium:
 scorpions_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 18
-	Range: 10c0
+	Range: 12c0
 	Report: sounds|STARLAUNCH.SDF
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
