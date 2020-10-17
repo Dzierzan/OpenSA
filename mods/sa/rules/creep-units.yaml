@@ -144,13 +144,13 @@ moth:
 		Speed: 220
 	SpawnsShrapnel@puff:
 		Weapon: moth
-		Delay: 50
+		Delay: 25
 		AimChance: 0
 		Amount: 5
 		PauseOnCondition: paralyzed
 	SpawnsShrapnel@normal_seed:
 		Weapon: puff_normal_seed
-		Delay: 50
+		Delay: 25
 		AimChance: 0
 		Amount: 1
 		PauseOnCondition: paralyzed
