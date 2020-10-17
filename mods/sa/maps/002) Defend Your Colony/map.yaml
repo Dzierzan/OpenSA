@@ -24,9 +24,9 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
+		NonCombatant: True
 		Faction: Random
 		Enemies: Ants, Wasps
-		NonCombatant: True
 	PlayerReference@Ants:
 		Name: Ants
 		Playable: True
@@ -274,5 +274,8 @@ Actors:
 		Owner: Wasps
 		Location: 17,47
 		Facing: 0
+	Actor67: startcamera
+		Owner: Neutral
+		Location: 52,79
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -261,7 +261,7 @@ colony_bit3:
 colony_bit4:
 	Inherits: colony_bit1
 
-CAMERA:
+STARTCAMERA:
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false

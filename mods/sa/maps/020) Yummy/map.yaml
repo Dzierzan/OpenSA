@@ -29,26 +29,26 @@ Players:
 		Enemies: Beetles, Spiders, Wasps
 	PlayerReference@Wasps:
 		Name: Wasps
-		Faction: wasps
-		Color: F5D378
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: wasps
 		LockColor: True
+		Color: F5D378
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Beetles, Spiders, Creeps
 	PlayerReference@Beetles:
 		Name: Beetles
+		Bot: beetles-ai
 		Faction: beetles
 		Color: 606EA5
-		Bot: beetles-ai
 		Enemies: Wasps, Spiders, Creeps
 	PlayerReference@Spiders:
 		Name: Spiders
+		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
-		Bot: spiders-ai
 		Enemies: Wasps, Beetles, Creeps
 
 Actors:
@@ -442,5 +442,8 @@ Actors:
 	Actor129: ants_colony
 		Location: 89,45
 		Owner: Beetles
+	Actor130: startcamera
+		Owner: Neutral
+		Location: 46,12
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

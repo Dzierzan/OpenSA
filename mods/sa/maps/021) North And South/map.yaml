@@ -29,18 +29,18 @@ Players:
 		Enemies: Beetles, Spiders
 	PlayerReference@Spiders:
 		Name: Spiders
+		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
-		Bot: spiders-ai
 		Enemies: Beetles, Creeps
 	PlayerReference@Beetles:
 		Name: Beetles
-		Faction: beetles
-		Color: 606EA5
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: beetles
 		LockColor: True
+		Color: 606EA5
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Spiders, Creeps
@@ -565,5 +565,8 @@ Actors:
 	Actor172: spiders_colony
 		Location: 71,64
 		Owner: Spiders
+	Actor173: startcamera
+		Owner: Neutral
+		Location: 80,32
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

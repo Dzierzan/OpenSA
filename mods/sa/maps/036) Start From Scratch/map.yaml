@@ -585,5 +585,8 @@ Actors:
 	Actor174: plant_clover
 		Owner: Neutral
 		Location: 5,54
+	Actor175: startcamera
+		Owner: Neutral
+		Location: 53,117
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

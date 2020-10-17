@@ -234,5 +234,8 @@ Actors:
 	Actor60: spiders_colony
 		Owner: Spiders
 		Location: 43,33
+	Actor61: startcamera
+		Owner: Neutral
+		Location: 33,55
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -24,9 +24,9 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
+		NonCombatant: True
 		Faction: Random
 		Enemies: Ants, Spiders
-		NonCombatant: True
 	PlayerReference@Ants:
 		Name: Ants
 		Playable: True
@@ -355,5 +355,8 @@ Actors:
 	Actor87: plant_flower
 		Owner: Neutral
 		Location: 49,25
+	Actor88: startcamera
+		Owner: Neutral
+		Location: 22,52
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

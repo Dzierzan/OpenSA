@@ -263,5 +263,8 @@ Actors:
 		Owner: Ants
 		Location: 11,12
 		Facing: 5
+	Actor71: startcamera
+		Owner: Neutral
+		Location: 15,17
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

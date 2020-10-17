@@ -273,5 +273,8 @@ Actors:
 		Location: 22,56
 		Owner: Wasps
 		TurretFacing: 504
+	Actor71: startcamera
+		Owner: Neutral
+		Location: 18,15
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

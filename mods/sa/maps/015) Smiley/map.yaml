@@ -400,6 +400,9 @@ Actors:
 	Actor125: spiders_colony
 		Location: 64,32
 		Owner: Wasps
+		Health: 100
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor126: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 62,65
@@ -424,5 +427,8 @@ Actors:
 	Actor134: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 43,88
+	Actor132: startcamera
+		Owner: Neutral
+		Location: 66,34
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

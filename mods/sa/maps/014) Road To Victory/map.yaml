@@ -478,5 +478,8 @@ Actors:
 	Actor139: wasps_medium
 		Location: 58,16
 		Owner: Wasps
+	Actor140: startcamera
+		Owner: Neutral
+		Location: 49,110
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

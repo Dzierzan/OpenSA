@@ -223,5 +223,8 @@ Actors:
 	Actor58: plant_flower
 		Owner: Neutral
 		Location: 12,72
+	Actor59: startcamera
+		Owner: Neutral
+		Location: 18,17
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

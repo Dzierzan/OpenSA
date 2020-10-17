@@ -448,5 +448,8 @@ Actors:
 	Actor129: ants_colony
 		Location: 31,119
 		Owner: Ants
+	Actor130: startcamera
+		Owner: Neutral
+		Location: 47,32
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -24,8 +24,8 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		Faction: Random
 		NonCombatant: True
+		Faction: Random
 		Enemies: Spiders, Wasps, Beetles, Ants
 	PlayerReference@Beetles:
 		Name: Beetles
@@ -511,5 +511,8 @@ Actors:
 	Actor150: wasps_colony
 		Location: 55,26
 		Owner: Spiders
+	Actor151: startcamera
+		Owner: Neutral
+		Location: 52,108
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

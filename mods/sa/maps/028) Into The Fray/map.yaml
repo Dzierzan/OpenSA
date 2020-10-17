@@ -475,5 +475,8 @@ Actors:
 	Actor142: plant_toad_stool
 		Owner: Neutral
 		Location: 36,72
+	Actor143: startcamera
+		Owner: Neutral
+		Location: 80,48
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

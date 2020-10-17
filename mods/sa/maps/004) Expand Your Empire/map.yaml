@@ -24,9 +24,9 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
+		NonCombatant: True
 		Faction: Random
 		Enemies: Beetles
-		NonCombatant: True
 	PlayerReference@Beetles:
 		Name: Beetles
 		Playable: True
@@ -264,5 +264,8 @@ Actors:
 		Owner: Beetles
 		Location: 46,53
 		Facing: 48
+	Actor71: startcamera
+		Owner: Creeps
+		Location: 34,53
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -24,8 +24,8 @@ Players:
 		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
-		Faction: Random
 		NonCombatant: True
+		Faction: Random
 		Enemies: Spiders, Beetles
 	PlayerReference@Beetles:
 		Name: Beetles
@@ -406,5 +406,8 @@ Actors:
 	Actor119: plant_broad_leaf_grass
 		Location: 41,33
 		Owner: Neutral
+	Actor120: startcamera
+		Owner: Neutral
+		Location: 16,28
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

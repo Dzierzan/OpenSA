@@ -517,5 +517,8 @@ Actors:
 	Actor156: plant_serata
 		Owner: Neutral
 		Location: 59,38
+	Actor157: startcamera
+		Owner: Neutral
+		Location: 15,112
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

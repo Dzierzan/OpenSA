@@ -9,6 +9,8 @@ Player:
 		ExploredMapCheckboxEnabled: True
 
 World:
+	LuaScript:
+		Scripts: script.lua
 	DeveloperMode:
 		CheckboxEnabled: False
 	MapOptions:

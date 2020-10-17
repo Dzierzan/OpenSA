@@ -562,5 +562,8 @@ Actors:
 	Actor170: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 31,22
+	Actor171: startcamera
+		Owner: Neutral
+		Location: 17,17
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

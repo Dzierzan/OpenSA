@@ -295,5 +295,8 @@ Actors:
 	Actor82: ants_light
 		Location: 20,20
 		Owner: Ants
+	Actor83: startcamera
+		Owner: Neutral
+		Location: 16,52
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

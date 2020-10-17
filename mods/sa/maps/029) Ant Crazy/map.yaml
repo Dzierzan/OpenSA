@@ -226,5 +226,8 @@ Actors:
 	Actor59: ants_colony
 		Owner: Beetles
 		Location: 11,39
+	Actor56: startcamera
+		Owner: Neutral
+		Location: 32,30
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

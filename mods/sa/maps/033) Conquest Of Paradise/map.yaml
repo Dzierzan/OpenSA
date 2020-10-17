@@ -40,9 +40,9 @@ Players:
 		Enemies: Ants, Creeps
 	PlayerReference@Ants:
 		Name: Ants
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
-		Bot: ants-ai
 		Enemies: Wasps, Creeps
 
 Actors:
@@ -295,9 +295,6 @@ Actors:
 	Actor82: wasps_colony
 		Location: 121,19
 		Owner: Wasps
-	Actor83: wasps_heavy
-		Location: 117,23
-		Owner: Wasps
 	Actor84: wasps_heavy
 		Location: 120,21
 		Owner: Wasps
@@ -331,12 +328,6 @@ Actors:
 	Actor94: wasps_heavy
 		Location: 122,26
 		Owner: Wasps
-	Actor95: wasps_heavy
-		Location: 117,26
-		Owner: Wasps
-	Actor96: wasps_heavy
-		Location: 119,26
-		Owner: Wasps
 	Actor97: wasps_heavy
 		Location: 126,26
 		Owner: Wasps
@@ -358,9 +349,6 @@ Actors:
 	Actor103: wasps_medium
 		Location: 124,26
 		Owner: Wasps
-	Actor104: wasps_medium
-		Location: 117,21
-		Owner: Wasps
 	Actor105: wasps_medium
 		Location: 124,16
 		Owner: Wasps
@@ -370,5 +358,28 @@ Actors:
 	Actor107: wasps_heavy
 		Location: 128,26
 		Owner: Wasps
+	Actor108: wasps_medium
+		Owner: Wasps
+		Location: 118,21
+		Health: 100
+		Facing: 0
+	Actor109: wasps_heavy
+		Owner: Wasps
+		Location: 118,23
+		Health: 100
+		Facing: 0
+	Actor110: wasps_heavy
+		Owner: Wasps
+		Location: 118,26
+		Health: 100
+		Facing: 0
+	Actor111: wasps_heavy
+		Owner: Wasps
+		Location: 120,26
+		Health: 100
+		Facing: 0
+	Actor112: startcamera
+		Owner: Neutral
+		Location: 119,21
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

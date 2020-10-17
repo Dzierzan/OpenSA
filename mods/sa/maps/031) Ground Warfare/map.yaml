@@ -669,5 +669,8 @@ Actors:
 	Actor205: plant_gumnut
 		Owner: Neutral
 		Location: 14,21
+	Actor206: startcamera
+		Owner: Neutral
+		Location: 73,101
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

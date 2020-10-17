@@ -887,5 +887,8 @@ Actors:
 		Location: 48,53
 		Health: 100
 		Facing: 0
+	Actor287: startcamera
+		Owner: Neutral
+		Location: 50,111
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

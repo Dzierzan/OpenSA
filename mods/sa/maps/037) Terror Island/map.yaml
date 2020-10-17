@@ -353,5 +353,8 @@ Actors:
 	Actor100: plant_clover
 		Owner: Neutral
 		Location: 28,37
+	Actor101: startcamera
+		Owner: Neutral
+		Location: 34,36
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

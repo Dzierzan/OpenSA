@@ -133,6 +133,6 @@ minimapproduce:
 		Length: 6
 		Tick: 100
 
-camera:
+startcamera:
 	idle: bits/camera.png
 		ZOffset: 10000

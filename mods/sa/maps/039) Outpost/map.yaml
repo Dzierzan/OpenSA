@@ -29,20 +29,20 @@ Players:
 		Enemies: Wasps, Ants
 	PlayerReference@Wasps:
 		Name: Wasps
-		Faction: wasps
-		Color: F5D378
 		Playable: True
 		Required: True
 		LockFaction: True
+		Faction: wasps
 		LockColor: True
+		Color: F5D378
 		LockSpawn: True
 		LockTeam: True
 		Enemies: Ants, Creeps
 	PlayerReference@Ants:
 		Name: Ants
+		Bot: ants-ai
 		Faction: ants
 		Color: 57AC49
-		Bot: ants-ai
 		Enemies: Wasps, Creeps
 
 Actors:
@@ -565,5 +565,8 @@ Actors:
 	Actor172: ants_colony
 		Location: 16,40
 		Owner: Ants
+	Actor173: startcamera
+		Owner: Neutral
+		Location: 107,46
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

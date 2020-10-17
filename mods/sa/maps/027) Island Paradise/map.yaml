@@ -572,5 +572,8 @@ Actors:
 	Actor179: plant_clover
 		Owner: Creeps
 		Location: 117,112
+	Actor180: startcamera
+		Owner: Neutral
+		Location: 110,52
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
