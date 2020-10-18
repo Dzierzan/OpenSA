@@ -4,7 +4,7 @@ This repository contains a recreated Swarm Assault game in OpenRA engine. The go
 
 # Status
 
-Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 30/100), feel free to give any feedback or even help to progress further the project.
+Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 50/100), feel free to give any feedback or even help to progress further the project.
 
 # Swarm Assault vs OpenSA
 
