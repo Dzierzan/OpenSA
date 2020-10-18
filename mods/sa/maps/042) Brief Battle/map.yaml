@@ -376,9 +376,6 @@ Actors:
 	Actor107: plant_smarty
 		Location: 124,56
 		Owner: Neutral
-	Actor108: plant_jaffa
-		Location: 46,46
-		Owner: Neutral
 	Actor109: plant_smarty
 		Location: 96,58
 		Owner: Neutral
@@ -535,5 +532,8 @@ Actors:
 	Actor160: startcamera
 		Owner: Neutral
 		Location: 60,38
+	Actor161: plant_jaffa
+		Owner: Neutral
+		Location: 47,45
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

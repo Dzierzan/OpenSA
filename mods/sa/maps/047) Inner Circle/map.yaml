@@ -157,9 +157,6 @@ Actors:
 	Actor33: plant_jelly_bean
 		Location: 32,48
 		Owner: Neutral
-	Actor34: plant_jelly_bean
-		Location: 18,82
-		Owner: Neutral
 	Actor35: plant_jelly_bean
 		Location: 48,14
 		Owner: Neutral
@@ -331,9 +328,6 @@ Actors:
 	Actor93: plant_jelly_bean
 		Location: 74,50
 		Owner: Neutral
-	Actor94: plant_smarty
-		Location: 46,32
-		Owner: Neutral
 	Actor95: plant_jelly_bean
 		Location: 69,80
 		Owner: Neutral
@@ -406,5 +400,11 @@ Actors:
 	Actor118: plant_smarty
 		Owner: Neutral
 		Location: 31,49
+	Actor119: plant_smarty
+		Owner: Neutral
+		Location: 44,33
+	Actor121: plant_jelly_bean
+		Owner: Neutral
+		Location: 18,81
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
