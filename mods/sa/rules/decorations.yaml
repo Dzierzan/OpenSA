@@ -121,7 +121,7 @@ plant_smarty:
 	WithRandomSpriteBody:
 		Images: plant_smarty_1, plant_smarty_2, plant_smarty_3
 	MapEditorData:
-		RequireTilesets: CANDYLAND
+		RequireTilesets: CANDY
 
 plant_jelly_bean:
 	Inherits: ^CoreDecoration
@@ -130,7 +130,7 @@ plant_jelly_bean:
 	WithRandomSpriteBody:
 		Images: plant_jelly_bean_1, plant_jelly_bean_2, plant_jelly_bean_3
 	MapEditorData:
-		RequireTilesets: CANDYLAND
+		RequireTilesets: CANDY
 
 plant_jaffa:
 	Inherits: ^CoreDecoration
@@ -139,7 +139,7 @@ plant_jaffa:
 	WithRandomSpriteBody:
 		Images: plant_jaffa_1, plant_jaffa_2, plant_jaffa_3
 	MapEditorData:
-		RequireTilesets: CANDYLAND
+		RequireTilesets: CANDY
 
 plant_choc_chip:
 	Inherits: ^CoreDecoration
@@ -150,7 +150,7 @@ plant_choc_chip:
 	WithRandomSpriteBody:
 		Images: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
 	MapEditorData:
-		RequireTilesets: CANDYLAND
+		RequireTilesets: CANDY
 
 #object_48:
 #Inherits: ^CoreDecoration
