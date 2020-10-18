@@ -50,7 +50,7 @@ spike:
 gumnut:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	Range: 10c0
-	ReloadDelay: 100
+	ReloadDelay: 75
 	Report: sa|bits/sounds/Missle_Launch.wav
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
