@@ -1,0 +1,87 @@
+World:
+	-PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	CreepFlyerSpawner@flyingmachine:
+		SpawnInterval: 525, 825
+		InitialSpawnDelay: 525, 825
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	PlantSpawner@CANDY:
+		Maximum: 20
+		SpawnInterval: 155, 455
+		InitialSpawnDelay: 155, 455
+		PlantActors: freckle, lolly_blue, lolly_orange, lolly_white, lolly_red
+		PlantActorShares: 80, 5, 5, 5, 5
+
+Player:
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			ants_light: 100
+			#ants_medium: 0
+			#ants_heavy: 0
+			beetles_light: 100
+			#beetles_medium: 0
+			#beetles_heavy: 0
+			scorpions_light: 100
+			#scorpions_medium: 0
+			#scorpions_heavy: 0
+			spiders_light: 100
+			#spiders_medium: 0
+			#spiders_heavy: 0
+			wasps_light: 100
+			#wasps_medium: 0
+			#wasps_heavy: 0
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 50
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 50
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 50
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 50
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 50
+			wasps_heavy: 100
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 50
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 50
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 50
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 50
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 50
+			wasps_heavy: 100
+	UnitBuilderBotModule@SpidersAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 50
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 50
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 50
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 50
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 50
+			wasps_heavy: 100
