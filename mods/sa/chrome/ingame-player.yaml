@@ -388,6 +388,7 @@ Container@PLAYER_WIDGETS:
 					HotkeyCount: 24
 					SelectProductionBuildingHotkey: SelectProductionBuilding
 					ClickSound: TabClick
+					TooltipTemplate: SIMPLE_PRODUCTION_TOOLTIP
 				Container@PRODUCTION_TYPES:
 					X: 6
 					Y: 2
