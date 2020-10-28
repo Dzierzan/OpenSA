@@ -26,7 +26,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class ColonyBit : ITick, ICrushable, INotifyCrushed
 	{
 		private readonly ColonyBitInfo info;
-		private readonly Colony colony;
+		private readonly DefeatedColony colony;
 		private int lifetime;
 
 		public ColonyBit(ActorInitializer init, ColonyBitInfo info)
@@ -34,7 +34,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			this.info = info;
 
 			var colonyBitInit = init.Get<ColonyBitInit>(info);
-			colony = colonyBitInit.Value.Actor(init.World).Value.Trait<Colony>();
+			colony = colonyBitInit.Value.Actor(init.World).Value.Trait<DefeatedColony>();
 
 			lifetime = init.World.WorldTick + init.World.SharedRandom.Next(info.MinLifetime, info.MaxLifetime);
 		}
@@ -71,9 +71,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			return self.World.AllPlayersMask;
 		}
 
-		void INotifyCrushed.WarnCrush(Actor self, Actor crusher, BitSet<CrushClass> crushClasses)
-		{
-		}
+		void INotifyCrushed.WarnCrush(Actor self, Actor crusher, BitSet<CrushClass> crushClasses) { }
 
 		void INotifyCrushed.OnCrush(Actor self, Actor crusher, BitSet<CrushClass> crushClasses)
 		{

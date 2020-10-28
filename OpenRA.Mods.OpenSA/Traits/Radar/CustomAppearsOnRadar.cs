@@ -31,11 +31,11 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
             if (self.Owner.InternalName == "Neutral" || self.Owner.InternalName == "Creeps")
                 color = Color.FromArgb(227, 217, 205);
 
-            if (self.TraitOrDefault<Colony>() != null)
+            if (self.TraitOrDefault<Colony>() != null || self.TraitOrDefault<DefeatedColony>() != null)
             {
                 for (var y = 0; y < 6; y++)
-                for (var x = 0; x < 6; x++)
-                    destinationBuffer.Add((self.Location + new CVec(x, y) + info.Offset, color));
+                    for (var x = 0; x < 6; x++)
+                        destinationBuffer.Add((self.Location + new CVec(x, y) + info.Offset, color));
             }
             else
                 destinationBuffer.Add((self.Location, color));

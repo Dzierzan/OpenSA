@@ -56,6 +56,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (colonyObjectiveID < 0)
 				colonyObjectiveID = missionObjectives.Add(self.Owner, info.ColonyObjective, "Primary", inhibitAnnouncement: true);
 
+			// Require neutral colonies to get captured first.
+			if (self.World.ActorsHavingTrait<DefeatedColony>().Any())
+				return;
+
 			// Players, NonCombatants, and IsAlliedWith are all fixed once the game starts, so we can cache the result.
 			if (otherPlayers == null)
 				otherPlayers = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
