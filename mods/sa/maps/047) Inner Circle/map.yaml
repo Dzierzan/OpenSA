@@ -376,17 +376,8 @@ Actors:
 	Actor110: ants_colony
 		Location: 20,75
 		Owner: Wasps
-	Actor111: beetles_colony
-		Location: 62,33
-		Owner: Creeps
 	Actor112: beetles_colony
 		Location: 33,33
-		Owner: Creeps
-	Actor113: beetles_colony
-		Location: 33,62
-		Owner: Creeps
-	Actor114: beetles_colony
-		Location: 61,62
 		Owner: Creeps
 	Actor115: startcamera
 		Owner: Neutral
@@ -406,5 +397,20 @@ Actors:
 	Actor121: plant_jelly_bean
 		Owner: Neutral
 		Location: 18,81
+	Actor120: beetles_colony
+		Owner: Creeps
+		Location: 33,61
+		Health: 100
+		TurretFacing: 500
+	Actor123: beetles_colony
+		Owner: Creeps
+		Location: 61,61
+		Health: 100
+		TurretFacing: 500
+	Actor122: beetles_colony
+		Owner: Creeps
+		Location: 61,33
+		Health: 100
+		TurretFacing: 500
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
