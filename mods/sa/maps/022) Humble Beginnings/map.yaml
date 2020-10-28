@@ -54,13 +54,20 @@ Players:
 Actors:
 	Actor0: beetles_colony
 		Location: 54,21
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing: 500
 	Actor1: wasps_colony
 		Location: 38,33
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing: 500
 	Actor2: ants_colony
 		Location: 34,13
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor3: plant_broad_leaf_grass
 		Location: 58,72
 		Owner: Neutral
@@ -190,18 +197,31 @@ Actors:
 	Actor45: spiders_colony
 		Location: 16,85
 		Owner: Beetles
+		Health: 100
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor46: wasps_colony
 		Location: 17,39
 		Owner: Spiders
+		Health: 100
+		TurretFacing: 500
 	Actor47: ants_colony
 		Location: 20,66
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor48: beetles_colony
 		Location: 8,54
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing: 500
 	Actor49: ants_colony
 		Location: 41,63
-		Owner: Neutral
+		Owner: Creeps
+		Health: 100
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor50: plant_broad_leaf_grass
 		Location: 7,34
 		Owner: Neutral
