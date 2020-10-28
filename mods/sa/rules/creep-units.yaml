@@ -22,8 +22,9 @@ ant_bull_pirate:
 		Scale: 1.1
 	PirateAnt:
 	AutoTarget:
-		ScanRadius: 6
+		ScanRadius: 8
 		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 ants_grenadier_pirate:
 	Inherits@1: ^CoreNeutralUnit
@@ -50,6 +51,10 @@ ants_grenadier_pirate:
 	RenderSprites:
 		Scale: 1.1
 	PirateAnt:
+	AutoTarget:
+		ScanRadius: 8
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 ants_flying_machine_pilot:
 	Inherits@1: ^CoreNeutralUnit
@@ -76,6 +81,10 @@ ants_flying_machine_pilot:
 	RenderSprites:
 		Image: ants_grenadier_pirate
 		Scale: 1.1
+	AutoTarget:
+		ScanRadius: 8
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 ants_bazooka_pirate:
 	Inherits@1: ^CoreNeutralUnit
@@ -100,6 +109,10 @@ ants_bazooka_pirate:
 	RenderSprites:
 		Scale: 1.1
 	PirateAnt:
+	AutoTarget:
+		ScanRadius: 8
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
 
 dragonfly:
 	Inherits: ^Bomber
