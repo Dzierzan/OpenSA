@@ -15,6 +15,9 @@ World:
 	-PlantSpawner@CANDY:
 
 Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
 	UnitBuilderBotModule@AntsAI:
 		UnitsToBuild:
 			#ants_light: 0
@@ -32,6 +35,9 @@ Player:
 			#wasps_light: 0
 			#wasps_medium: 0
 			wasps_heavy: 100
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeeltesAI:
+		Condition: enable-beetles-ai
 	UnitBuilderBotModule@BeetlesAI:
 		UnitsToBuild:
 			ants_light: 25
@@ -49,23 +55,9 @@ Player:
 			wasps_light: 25
 			wasps_medium: 100
 			wasps_heavy: 100
-	UnitBuilderBotModule@WaspsAI:
-		UnitsToBuild:
-			ants_light: 50
-			ants_medium: 100
-			ants_heavy: 50
-			beetles_light: 50
-			beetles_medium: 100
-			beetles_heavy: 50
-			scorpions_light: 50
-			scorpions_medium: 100
-			scorpions_heavy: 50
-			spiders_light: 50
-			spiders_medium: 100
-			spiders_heavy: 50
-			wasps_light: 50
-			wasps_medium: 100
-			wasps_heavy: 50
+	-GrantConditionOnBotOwner@SpidersAI:
+	ExternalCondition@SpidersAI:
+		Condition: enable-spiders-ai
 	UnitBuilderBotModule@SpidersAI:
 		UnitsToBuild:
 			ants_light: 100

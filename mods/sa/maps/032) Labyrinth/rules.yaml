@@ -17,6 +17,9 @@ World:
 		InitialSpawnDelay: 50, 100
 
 Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
 	UnitBuilderBotModule@AntsAI:
 		UnitsToBuild:
 			ants_light: 25
@@ -34,6 +37,9 @@ Player:
 			wasps_light: 25
 			wasps_medium: 100
 			wasps_heavy: 100
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeeltesAI:
+		Condition: enable-beetles-ai
 	UnitBuilderBotModule@BeetlesAI:
 		UnitsToBuild:
 			ants_light: 25
@@ -51,6 +57,9 @@ Player:
 			wasps_light: 25
 			wasps_medium: 50
 			wasps_heavy: 10
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
 	UnitBuilderBotModule@WaspsAI:
 		UnitsToBuild:
 			#ants_light: 0
@@ -67,21 +76,4 @@ Player:
 			spiders_heavy: 100
 			#wasps_light: 0
 			#wasps_medium: 0
-			wasps_heavy: 100
-	UnitBuilderBotModule@SpidersAI:
-		UnitsToBuild:
-			ants_light: 25
-			ants_medium: 100
-			ants_heavy: 100
-			beetles_light: 25
-			beetles_medium: 100
-			beetles_heavy: 100
-			scorpions_light: 25
-			scorpions_medium: 100
-			scorpions_heavy: 100
-			spiders_light: 25
-			spiders_medium: 100
-			spiders_heavy: 100
-			wasps_light: 25
-			wasps_medium: 100
 			wasps_heavy: 100
