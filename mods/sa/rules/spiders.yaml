@@ -2,6 +2,7 @@ World:
 	Faction@Spiders:
 		Name: Spiders
 		InternalName: spiders
+		Description: Specialization: -25% breeding time for spider units.
 	MPStartUnits@Spiders:
 		Class: none
 		ClassName: Colony

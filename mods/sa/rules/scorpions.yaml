@@ -2,6 +2,7 @@ World:
 	Faction@Scorpions:
 		Name: Scorpions
 		InternalName: scorpions
+		Description: Specialization: -25% breeding time for scorpion units.
 	MPStartUnits@Scorpions:
 		Class: none
 		ClassName: Colony

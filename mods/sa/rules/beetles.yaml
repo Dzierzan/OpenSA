@@ -2,6 +2,7 @@ World:
 	Faction@Beetles:
 		Name: Beetles
 		InternalName: beetles
+		Description: Specialization: -25% breeding time for beetle units.
 	MPStartUnits@Beetles:
 		Class: none
 		ClassName: Colony

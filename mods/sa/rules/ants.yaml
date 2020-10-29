@@ -2,6 +2,7 @@ World:
 	Faction@Ants:
 		Name: Ants
 		InternalName: ants
+		Description: Specialization: -25% breeding time for ant units.
 	MPStartUnits@Ants:
 		Class: none
 		ClassName: Colony
