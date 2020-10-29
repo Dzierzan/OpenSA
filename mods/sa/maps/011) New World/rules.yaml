@@ -11,6 +11,9 @@ World:
 	-PlantSpawner@CANDY:
 
 Player:
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
 	UnitBuilderBotModule@WaspsAI:
 		UnitsToBuild:
 			ants_light: 50
@@ -28,6 +31,9 @@ Player:
 			wasps_light: 50
 			wasps_medium: 100
 			wasps_heavy: 50
+	-GrantConditionOnBotOwner@SpidersAI:
+	ExternalCondition@SpidersAI:
+		Condition: enable-spiders-ai
 	UnitBuilderBotModule@SpidersAI:
 		UnitsToBuild:
 			#ants_light: 0
