@@ -33,7 +33,11 @@ namespace OpenRA.Mods.OpenSA.Traits
 			{
 				var health = colony.Trait<IHealth>();
 				if (health.DamageState == Info.DamageState)
-					colony.Trait<Colony>().CancelProductions(colony);
+				{
+					var queue = colony.Trait<ProductionQueue>();
+					foreach (var current in queue.AllQueued())
+						bot.QueueOrder(Order.CancelProduction(queue.Actor, current.Item, 1));
+				}
 			}
 		}
 	}

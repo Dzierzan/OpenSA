@@ -55,22 +55,5 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			self.World.AddFrameEndTask(w => w.CreateActor(info.SpawnsActor, td));
 		}
-
-		public void CancelProductions(Actor self)
-		{
-			foreach (var productionQueue in self.TraitsImplementing<ProductionQueue>())
-			{
-				while (true)
-				{
-					var producing = productionQueue.AllQueued().ToArray();
-
-					if (!producing.Any())
-						break;
-
-					foreach (var productionItem in producing)
-						productionQueue.EndProduction(productionItem);
-				}
-			}
-		}
 	}
 }
