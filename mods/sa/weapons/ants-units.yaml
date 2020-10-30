@@ -6,7 +6,7 @@ ants_light:
 	InvalidTargets: Colony
 	Projectile: InstantHit
 	Warhead@Damage: SpreadDamage
-		Damage: 200
+		Damage: 300
 		Spread: 1
 		ValidTargets: Ground, Paralyzed, Water
 		InvalidTargets: Air
