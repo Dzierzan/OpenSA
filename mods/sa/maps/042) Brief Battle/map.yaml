@@ -88,9 +88,6 @@ Actors:
 	Actor11: wasps_colony
 		Location: 58,36
 		Owner: Beetles
-	Actor12: plant_jelly_bean
-		Location: 64,62
-		Owner: Neutral
 	Actor13: plant_jelly_bean
 		Location: 76,54
 		Owner: Neutral
@@ -105,9 +102,6 @@ Actors:
 		Owner: Neutral
 	Actor17: plant_smarty
 		Location: 80,14
-		Owner: Neutral
-	Actor18: plant_smarty
-		Location: 100,18
 		Owner: Neutral
 	Actor19: plant_choc_chip
 		Location: 104,8
@@ -168,9 +162,6 @@ Actors:
 		Owner: Neutral
 	Actor38: plant_choc_chip
 		Location: 74,26
-		Owner: Neutral
-	Actor39: plant_choc_chip
-		Location: 94,62
 		Owner: Neutral
 	Actor40: plant_smarty
 		Location: 128,44
@@ -499,9 +490,6 @@ Actors:
 	Actor149: plant_choc_chip
 		Location: 74,48
 		Owner: Neutral
-	Actor150: plant_jelly_bean
-		Location: 128,8
-		Owner: Neutral
 	Actor151: plant_choc_chip
 		Location: 64,62
 		Owner: Neutral
@@ -535,5 +523,17 @@ Actors:
 	Actor161: plant_jaffa
 		Owner: Neutral
 		Location: 47,45
+	Actor162: plant_smarty
+		Owner: Neutral
+		Location: 100,17
+	Actor163: plant_jelly_bean
+		Owner: Neutral
+		Location: 127,8
+	Actor164: plant_choc_chip
+		Owner: Neutral
+		Location: 93,62
+	Actor165: plant_jelly_bean
+		Owner: Neutral
+		Location: 63,63
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

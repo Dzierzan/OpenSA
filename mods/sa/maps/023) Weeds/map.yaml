@@ -157,9 +157,6 @@ Actors:
 	Actor36: plant_clover
 		Location: 6,61
 		Owner: Neutral
-	Actor37: plant_clover
-		Location: 10,16
-		Owner: Neutral
 	Actor38: plant_clover
 		Location: 28,20
 		Owner: Neutral
@@ -171,9 +168,6 @@ Actors:
 		Owner: Neutral
 	Actor41: plant_clover
 		Location: 56,14
-		Owner: Neutral
-	Actor42: plant_clover
-		Location: 62,18
 		Owner: Neutral
 	Actor43: plant_moon_mushroom
 		Location: 12,22
@@ -298,5 +292,11 @@ Actors:
 	Actor83: startcamera
 		Owner: Neutral
 		Location: 16,52
+	Actor84: plant_clover
+		Owner: Neutral
+		Location: 61,17
+	Actor85: plant_clover
+		Owner: Neutral
+		Location: 9,16
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -208,9 +208,6 @@ Actors:
 	Actor53: plant_smarty
 		Location: 8,86
 		Owner: Neutral
-	Actor54: plant_jelly_bean
-		Location: 54,40
-		Owner: Neutral
 	Actor55: plant_choc_chip
 		Location: 20,26
 		Owner: Neutral
@@ -420,9 +417,6 @@ Actors:
 		Owner: Neutral
 	Actor124: plant_smarty
 		Location: 28,80
-		Owner: Neutral
-	Actor125: plant_jelly_bean
-		Location: 20,40
 		Owner: Neutral
 	Actor126: plant_jelly_bean
 		Location: 20,32
@@ -815,5 +809,11 @@ Actors:
 		Location: 29,95
 		Health: 100
 		Facing: 0
+	Actor266: plant_jelly_bean
+		Owner: Neutral
+		Location: 53,40
+	Actor267: plant_jelly_bean
+		Owner: Neutral
+		Location: 19,40
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

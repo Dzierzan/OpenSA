@@ -70,9 +70,6 @@ Actors:
 	Actor7: plant_cherry_flower
 		Location: 2,44
 		Owner: Neutral
-	Actor8: plant_clover
-		Location: 6,38
-		Owner: Neutral
 	Actor9: plant_moon_flower
 		Location: 44,4
 		Owner: Neutral
@@ -226,9 +223,6 @@ Actors:
 	Actor59: plant_clover
 		Location: 32,54
 		Owner: Neutral
-	Actor60: plant_moon_flower
-		Location: 54,38
-		Owner: Neutral
 	Actor61: plant_clover
 		Location: 26,52
 		Owner: Neutral
@@ -277,14 +271,8 @@ Actors:
 	Actor76: plant_cherry_flower
 		Location: 56,34
 		Owner: Neutral
-	Actor77: plant_moon_mushroom
-		Location: 6,38
-		Owner: Neutral
 	Actor78: plant_clover
 		Location: 62,92
-		Owner: Neutral
-	Actor79: plant_cherry_flower
-		Location: 54,38
 		Owner: Neutral
 	Actor80: plant_clover
 		Location: 32,86
@@ -598,5 +586,18 @@ Actors:
 	Actor183: startcamera
 		Owner: Neutral
 		Location: 50,56
+	Actor184: plant_moon_flower
+		Owner: Neutral
+		Location: 55,37
+	Actor185: plant_cherry_flower
+		Owner: Neutral
+		Location: 54,38
+	Actor186: plant_clover
+		Owner: Neutral
+		Location: 5,37
+	Actor187: mushroom
+		Owner: Neutral
+		Facing: 384
+		Location: 6,38
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

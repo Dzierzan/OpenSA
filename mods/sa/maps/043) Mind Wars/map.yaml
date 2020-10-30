@@ -184,9 +184,6 @@ Actors:
 	Actor42: plant_cherry_flower
 		Location: 8,60
 		Owner: Neutral
-	Actor43: plant_clover
-		Location: 92,100
-		Owner: Neutral
 	Actor44: plant_clover
 		Location: 96,122
 		Owner: Neutral
@@ -283,17 +280,11 @@ Actors:
 	Actor76: plant_clover
 		Location: 58,34
 		Owner: Neutral
-	Actor77: plant_clover
-		Location: 20,44
-		Owner: Neutral
 	Actor78: plant_moon_mushroom
 		Location: 60,46
 		Owner: Neutral
 	Actor79: plant_moon_flower
 		Location: 50,70
-		Owner: Neutral
-	Actor80: plant_clover
-		Location: 90,26
 		Owner: Neutral
 	Actor82: plant_clover
 		Location: 10,32
@@ -355,9 +346,6 @@ Actors:
 	Actor101: plant_clover
 		Location: 20,82
 		Owner: Neutral
-	Actor102: plant_clover
-		Location: 92,100
-		Owner: Neutral
 	Actor103: plant_moon_flower
 		Location: 62,64
 		Owner: Neutral
@@ -384,9 +372,6 @@ Actors:
 		Owner: Neutral
 	Actor112: plant_clover
 		Location: 103,16
-		Owner: Neutral
-	Actor113: plant_clover
-		Location: 22,44
 		Owner: Neutral
 	Actor114: plant_clover
 		Location: 106,52
@@ -613,5 +598,20 @@ Actors:
 	Actor190: plant_clover
 		Owner: Neutral
 		Location: 95,90
+	Actor191: plant_clover
+		Owner: Neutral
+		Location: 21,43
+	Actor192: plant_clover
+		Owner: Neutral
+		Location: 19,44
+	Actor193: plant_clover
+		Owner: Neutral
+		Location: 90,25
+	Actor195: plant_clover
+		Owner: Neutral
+		Location: 92,100
+	Actor196: plant_clover
+		Owner: Neutral
+		Location: 90,102
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

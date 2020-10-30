@@ -382,9 +382,6 @@ Actors:
 	Actor115: plant_cherry_flower
 		Location: 76,20
 		Owner: Neutral
-	Actor116: plant_clover
-		Location: 72,70
-		Owner: Neutral
 	Actor117: plant_clover
 		Location: 36,40
 		Owner: Neutral
@@ -575,5 +572,8 @@ Actors:
 	Actor180: startcamera
 		Owner: Neutral
 		Location: 110,52
+	Actor181: plant_clover
+		Owner: Neutral
+		Location: 71,69
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

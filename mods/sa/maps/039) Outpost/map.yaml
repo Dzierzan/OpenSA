@@ -91,9 +91,6 @@ Actors:
 	Actor14: plant_desert_grass
 		Location: 7,29
 		Owner: Neutral
-	Actor15: plant_desert_grass
-		Location: 58,8
-		Owner: Neutral
 	Actor16: plant_desert_flower
 		Location: 16,94
 		Owner: Neutral
@@ -183,9 +180,6 @@ Actors:
 		Owner: Neutral
 	Actor45: plant_desert_grass
 		Location: 36,92
-		Owner: Neutral
-	Actor46: plant_serata
-		Location: 38,94
 		Owner: Neutral
 	Actor47: plant_desert_grass
 		Location: 22,47
@@ -352,9 +346,6 @@ Actors:
 	Actor101: plant_gumnut
 		Location: 80,52
 		Owner: Neutral
-	Actor102: plant_serata
-		Location: 64,38
-		Owner: Neutral
 	Actor103: plant_desert_grass
 		Location: 110,4
 		Owner: Neutral
@@ -403,9 +394,6 @@ Actors:
 	Actor118: plant_gumnut
 		Location: 14,24
 		Owner: Neutral
-	Actor119: plant_serata
-		Location: 14,84
-		Owner: Neutral
 	Actor120: plant_desert_grass
 		Location: 24,82
 		Owner: Neutral
@@ -442,9 +430,6 @@ Actors:
 	Actor131: plant_serata
 		Location: 20,80
 		Owner: Neutral
-	Actor132: plant_gumnut
-		Location: 14,84
-		Owner: Neutral
 	Actor133: plant_serata
 		Location: 54,4
 		Owner: Neutral
@@ -462,12 +447,6 @@ Actors:
 		Owner: Neutral
 	Actor138: plant_serata
 		Location: 48,62
-		Owner: Neutral
-	Actor139: plant_desert_grass
-		Location: 80,42
-		Owner: Neutral
-	Actor140: plant_desert_grass
-		Location: 72,64
 		Owner: Neutral
 	Actor141: plant_gumnut
 		Location: 16,70
@@ -568,5 +547,26 @@ Actors:
 	Actor173: startcamera
 		Owner: Neutral
 		Location: 107,46
+	Actor175: plant_gumnut
+		Owner: Neutral
+		Location: 14,84
+	Actor176: plant_serata
+		Owner: Neutral
+		Location: 38,93
+	Actor177: plant_desert_grass
+		Owner: Neutral
+		Location: 72,63
+	Actor178: plant_serata
+		Owner: Neutral
+		Location: 63,38
+	Actor179: plant_desert_grass
+		Owner: Neutral
+		Location: 79,42
+	Actor180: plant_desert_grass
+		Owner: Neutral
+		Location: 57,8
+	Actor183: plant_serata
+		Owner: Neutral
+		Location: 12,86
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
