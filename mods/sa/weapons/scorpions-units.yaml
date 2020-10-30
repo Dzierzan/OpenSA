@@ -1,6 +1,6 @@
 scorpions_light:
 	ValidTargets: Ground, Paralyzed, Water
-	Range: 1c0
+	Range: 1c512
 	ReloadDelay: 8
 	Report: sounds|SAVAGEATTACK.SDF
 	InvalidTargets: Colony

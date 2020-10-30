@@ -1,6 +1,6 @@
 ants_light:
 	ValidTargets: Ground, Paralyzed, Water
-	Range: 1c0
+	Range: 1c512
 	ReloadDelay: 8 #8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
 	InvalidTargets: Colony

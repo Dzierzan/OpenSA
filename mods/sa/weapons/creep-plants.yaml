@@ -20,7 +20,7 @@ popcorn:
 
 venus:
 	ValidTargets: Ground, Paralyzed, Water
-	Range: 1c0
+	Range: 1c512
 	ReloadDelay: 15
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
 	Projectile: InstantHit
