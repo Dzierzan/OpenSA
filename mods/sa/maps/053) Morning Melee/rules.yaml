@@ -1,0 +1,60 @@
+World:
+	PirateSpawner:
+		SpawnInterval: 900, 1300
+		InitialSpawnDelay: 900, 1300
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	CreepFlyerSpawner@flyingmachine:
+		SpawnInterval: 525, 925
+		InitialSpawnDelay: 525, 925
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	PlantSpawner@CANDY:
+		Maximum: 25
+		SpawnInterval: 150, 250
+		InitialSpawnDelay: 150, 250
+
+Player:
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			ants_light: 75
+			ants_medium: 100
+			ants_heavy: 25
+			beetles_light: 75
+			beetles_medium: 100
+			beetles_heavy: 25
+			scorpions_light: 75
+			scorpions_medium: 100
+			scorpions_heavy: 25
+			Wasps_light: 75
+			Wasps_medium: 100
+			Wasps_heavy: 25
+			wasps_light: 75
+			wasps_medium: 100
+			wasps_heavy: 25
+
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeetlesAI:
+		Condition: enable-beetles-ai
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			#ants_light: 0
+			ants_medium: 75
+			ants_heavy: 100
+			#beetles_light: 0
+			beetles_medium: 75
+			beetles_heavy: 100
+			#scorpions_light: 0
+			scorpions_medium: 75
+			scorpions_heavy: 100
+			#spiders_light: 0
+			spiders_medium: 75
+			spiders_heavy: 100
+			#wasps_light: 0
+			wasps_medium: 75
+			wasps_heavy: 100
