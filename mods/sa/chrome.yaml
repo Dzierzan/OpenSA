@@ -189,7 +189,7 @@ flags:
 dialog:
 	Inherits: ^Dialog
 	Regions:
-		background: 0, 0, 334, 412
+		background: 0, 0, 328, 406
 		border-r: 490, 1, 9, 190
 		border-l: 481, 1, 9, 190
 		border-b: 1, 490, 189, 9
