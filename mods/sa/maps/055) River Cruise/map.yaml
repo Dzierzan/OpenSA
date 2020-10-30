@@ -12,9 +12,9 @@ MapSize: 100,132
 
 Bounds: 2,2,96,128
 
-Visibility: Lobby
+Visibility: MissionSelector
 
-Categories: Conquest
+Categories: Campaign
 
 Players:
 	PlayerReference@Neutral:
@@ -247,9 +247,6 @@ Actors:
 	Actor66: plant_desert_grass
 		Location: 80,44
 		Owner: Neutral
-	Actor67: plant_gumnut
-		Location: 8,120
-		Owner: Neutral
 	Actor68: plant_gumnut
 		Location: 8,50
 		Owner: Neutral
@@ -399,9 +396,6 @@ Actors:
 		Owner: Neutral
 	Actor120: plant_desert_grass
 		Location: 76,82
-		Owner: Neutral
-	Actor121: plant_gumnut
-		Location: 4,108
 		Owner: Neutral
 	Actor122: plant_gumnut
 		Location: 2,10
@@ -571,5 +565,11 @@ Actors:
 	Actor178: startcamera
 		Owner: Neutral
 		Location: 20,110
+	Actor180: plant_gumnut
+		Owner: Neutral
+		Location: 8,120
+	Actor179: plant_gumnut
+		Owner: Neutral
+		Location: 3,109
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

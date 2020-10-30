@@ -12,7 +12,7 @@ WorldLoaded = function()
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
 		Spiders.GrantCondition("enable-spiders-ai")
 		Ants.GrantCondition("enable-ants-ai")
-		Beetles.GrantCondition("enable-beeltes-ai")
+		Beetles.GrantCondition("enable-beetles-ai")
 
 	end)
 
