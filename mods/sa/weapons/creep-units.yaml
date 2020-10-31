@@ -67,6 +67,7 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Inaccuracy: 100
 		BounceCount: 3
 		BounceSound: sounds|BOUNCE.SDF
+		InvalidBounceTerrain: Water
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
@@ -111,6 +112,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Inaccuracy: 100
 		BounceCount: 4
 		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
+		InvalidBounceTerrain: Water
 		Image: projectiles
 		Sequences: gobstopper
 	Warhead@Damage: SpreadDamage
