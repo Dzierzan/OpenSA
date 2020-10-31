@@ -201,7 +201,7 @@ lolly_blue:
 	ExternalCondition@SELF_DESTRUCT:
 		Condition: self_destruct
 	KillsSelf:
-		RequiresCondition: self_destruct
+		RequiresCondition: self_destruct && grown
 	Mobile:
 		Locomotor: unit
 		Speed: 0
