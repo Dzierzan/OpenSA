@@ -142,19 +142,18 @@ gas:
 
 freckles: #Temporary weapon, needs to be changed!!!
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 40 #50
+	ReloadDelay: 20 #50
 	Range: 4c0
 	Projectile: Bullet
 		Speed: 80
 		Blockable: false
 		LaunchAngle: 150
-		Inaccuracy: 5000
+		Inaccuracy: 2500
 		Image: projectiles
 		Sequences: freckles
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Falloff: 100, 50, 25, 0
-		Damage: 600 #Might require further verifing
+		Damage: 600
 		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions

@@ -171,9 +171,9 @@ freckle:
 		HP: 50000
 	WithLoopedAttackSound:
 		Report: sounds|FRECKLEFIRE.SDF
-		Delay: 40
+		Delay: 20
 	AttackTurreted:
-		Armaments: primary, secondary, 3rd
+		Armaments: primary, secondary, 3rd, 4th, 5th
 	Armament@1:
 		Name: primary
 		Weapon: freckles
@@ -182,6 +182,12 @@ freckle:
 		Weapon: freckles
 	Armament@3:
 		Name: 3rd
+		Weapon: freckles
+	Armament@4:
+		Name: 4th
+		Weapon: freckles
+	Armament@5:
+		Name: 5th
 		Weapon: freckles
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
