@@ -689,36 +689,6 @@ Actors:
 	Actor248: startcamera
 		Owner: Neutral
 		Location: 32,91
-	Actor244: ants_heavy
-		Owner: Spiders
-		Location: 32,103
-		Health: 100
-		Facing: 0
-	Actor242: ants_heavy
-		Owner: Spiders
-		Location: 35,103
-		Health: 100
-		Facing: 0
-	Actor243: ants_heavy
-		Owner: Spiders
-		Location: 29,103
-		Health: 100
-		Facing: 0
-	Actor246: ants_heavy
-		Owner: Spiders
-		Location: 32,93
-		Health: 100
-		Facing: 0
-	Actor255: ants_heavy
-		Owner: Spiders
-		Location: 29,93
-		Health: 100
-		Facing: 0
-	Actor256: ants_heavy
-		Owner: Spiders
-		Location: 35,93
-		Health: 100
-		Facing: 0
 	Actor258: ants_medium
 		Owner: Spiders
 		Location: 46,90
@@ -749,51 +719,6 @@ Actors:
 		Location: 16,90
 		Health: 100
 		Facing: 0
-	Actor245: scorpions_heavy
-		Owner: Spiders
-		Location: 29,105
-		Health: 100
-		Facing: 23
-	Actor247: scorpions_heavy
-		Owner: Spiders
-		Location: 32,105
-		Health: 100
-		Facing: 0
-	Actor265: scorpions_heavy
-		Owner: Spiders
-		Location: 35,105
-		Health: 100
-		Facing: 0
-	Actor236: beetles_heavy
-		Owner: Spiders
-		Location: 48,92
-		Health: 100
-		Facing: 0
-	Actor238: beetles_heavy
-		Owner: Spiders
-		Location: 46,92
-		Health: 100
-		Facing: 0
-	Actor260: beetles_heavy
-		Owner: Spiders
-		Location: 44,92
-		Health: 100
-		Facing: 0
-	Actor237: beetles_heavy
-		Owner: Spiders
-		Location: 20,92
-		Health: 100
-		Facing: 31
-	Actor261: beetles_heavy
-		Owner: Spiders
-		Location: 18,92
-		Health: 100
-		Facing: 0
-	Actor264: beetles_heavy
-		Owner: Spiders
-		Location: 16,92
-		Health: 100
-		Facing: 0
 	Actor253: spiders_heavy
 		Owner: Spiders
 		Location: 35,95
@@ -815,5 +740,80 @@ Actors:
 	Actor267: plant_jelly_bean
 		Owner: Neutral
 		Location: 19,40
+	Actor236: ants_medium
+		Owner: Spiders
+		Location: 48,92
+		Health: 100
+		Facing: 0
+	Actor238: ants_medium
+		Owner: Spiders
+		Location: 46,92
+		Health: 100
+		Facing: 0
+	Actor260: ants_medium
+		Owner: Spiders
+		Location: 44,92
+		Health: 100
+		Facing: 0
+	Actor237: ants_medium
+		Owner: Spiders
+		Location: 20,92
+		Health: 100
+		Facing: 0
+	Actor261: ants_medium
+		Owner: Spiders
+		Location: 18,92
+		Health: 100
+		Facing: 23
+	Actor264: ants_medium
+		Owner: Spiders
+		Location: 16,92
+		Health: 100
+		Facing: 0
+	Actor246: spiders_medium
+		Owner: Spiders
+		Location: 35,93
+		Health: 100
+		Facing: 0
+	Actor255: spiders_medium
+		Owner: Spiders
+		Location: 32,93
+		Health: 100
+		Facing: 0
+	Actor256: spiders_medium
+		Owner: Spiders
+		Location: 29,93
+		Health: 100
+		Facing: 0
+	Actor245: ants_medium
+		Owner: Spiders
+		Location: 29,105
+		Health: 100
+		Facing: 0
+	Actor247: ants_medium
+		Owner: Spiders
+		Location: 32,105
+		Health: 100
+		Facing: 0
+	Actor265: ants_medium
+		Owner: Spiders
+		Location: 35,105
+		Health: 100
+		Facing: 0
+	Actor242: ants_medium
+		Owner: Spiders
+		Location: 29,103
+		Health: 100
+		Facing: 15
+	Actor243: ants_medium
+		Owner: Spiders
+		Location: 32,103
+		Health: 100
+		Facing: 0
+	Actor244: ants_medium
+		Owner: Spiders
+		Location: 35,103
+		Health: 100
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
