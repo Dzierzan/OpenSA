@@ -34,7 +34,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 				var health = colony.Trait<IHealth>();
 				if (health.DamageState == Info.DamageState)
 				{
-					var queue = colony.Trait<ProductionQueue>();
+					var queue = colony.TraitOrDefault<ProductionQueue>(); // Turrets don't produce
+					if (queue == null)
+						continue;
+
 					foreach (var current in queue.AllQueued())
 						bot.QueueOrder(Order.CancelProduction(queue.Actor, current.Item, 1));
 				}
