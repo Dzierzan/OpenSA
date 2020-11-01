@@ -4,7 +4,7 @@ scorpions_colony:
 	Range: 18c0
 	Report: sounds|SPEAR.SDF
 	Projectile: Bullet
-		Speed: 400
+		Speed: 450
 		Inaccuracy: 1000
 		Image: projectiles
 		Sequences: spear
