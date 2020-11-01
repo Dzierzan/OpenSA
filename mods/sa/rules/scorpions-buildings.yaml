@@ -115,6 +115,12 @@ defeated_scorpions_turret:
 		SpawnsActor: scorpions_colony_turret
 	RenderSprites:
 		Image: scorpions_colony_turret
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	HitShape:
+		Type: Circle
+			Radius: 512
 	Turreted:
 		Offset: 800,-50,0
 		TurnSpeed: 120

@@ -110,6 +110,12 @@ defeated_beetles_turret:
 		SpawnsActor: beetles_colony_turret
 	RenderSprites:
 		Image: beetles_colony_turret
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	HitShape:
+		Type: Circle
+			Radius: 512
 	Turreted:
 		Turret: primary
 		Offset: 100,100,0
