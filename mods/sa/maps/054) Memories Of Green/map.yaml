@@ -604,12 +604,6 @@ Actors:
 	Actor197: ants_light
 		Location: 32,90
 		Owner: Ants
-	Actor198: ants_light
-		Location: 25,82
-		Owner: Ants
-	Actor199: ants_light
-		Location: 20,78
-		Owner: Ants
 	Actor200: ants_light
 		Location: 37,78
 		Owner: Ants
@@ -631,9 +625,6 @@ Actors:
 	Actor206: ants_light
 		Location: 55,70
 		Owner: Ants
-	Actor207: ants_light
-		Location: 58,60
-		Owner: Ants
 	Actor208: ants_light
 		Location: 48,60
 		Owner: Ants
@@ -643,47 +634,17 @@ Actors:
 	Actor210: ants_light
 		Location: 45,55
 		Owner: Ants
-	Actor211: ants_light
-		Location: 67,55
-		Owner: Ants
-	Actor212: ants_light
-		Location: 45,46
-		Owner: Ants
-	Actor213: ants_light
-		Location: 31,47
-		Owner: Ants
-	Actor214: ants_light
-		Location: 39,41
-		Owner: Ants
 	Actor215: ants_light
 		Location: 42,50
 		Owner: Ants
 	Actor216: ants_light
 		Location: 20,40
 		Owner: Ants
-	Actor217: ants_light
-		Location: 11,37
-		Owner: Ants
 	Actor218: ants_light
 		Location: 38,34
 		Owner: Ants
-	Actor219: ants_light
-		Location: 58,44
-		Owner: Ants
-	Actor220: ants_light
-		Location: 64,57
-		Owner: Ants
 	Actor221: ants_light
 		Location: 73,52
-		Owner: Ants
-	Actor222: ants_light
-		Location: 67,42
-		Owner: Ants
-	Actor223: ants_light
-		Location: 63,37
-		Owner: Ants
-	Actor224: ants_light
-		Location: 54,26
 		Owner: Ants
 	Actor225: ants_light
 		Location: 33,39
@@ -697,32 +658,11 @@ Actors:
 	Actor228: ants_light
 		Location: 50,15
 		Owner: Ants
-	Actor229: ants_light
-		Location: 42,23
-		Owner: Ants
-	Actor230: ants_light
-		Location: 55,18
-		Owner: Ants
-	Actor231: ants_light
-		Location: 46,7
-		Owner: Ants
 	Actor232: ants_light
 		Location: 37,13
 		Owner: Ants
-	Actor233: ants_light
-		Location: 24,7
-		Owner: Ants
-	Actor234: ants_light
-		Location: 30,21
-		Owner: Ants
 	Actor235: ants_light
 		Location: 11,19
-		Owner: Ants
-	Actor236: ants_light
-		Location: 6,25
-		Owner: Ants
-	Actor237: ants_light
-		Location: 7,12
 		Owner: Ants
 	Actor238: ants_light
 		Location: 4,4
@@ -733,20 +673,11 @@ Actors:
 	Actor240: ants_light
 		Location: 18,24
 		Owner: Ants
-	Actor241: ants_light
-		Location: 26,17
-		Owner: Ants
-	Actor242: ants_light
-		Location: 39,8
-		Owner: Ants
 	Actor243: ants_light
 		Location: 56,6
 		Owner: Ants
 	Actor244: ants_light
 		Location: 69,11
-		Owner: Ants
-	Actor245: ants_light
-		Location: 71,21
 		Owner: Ants
 	Actor246: ants_light
 		Location: 82,9
@@ -756,9 +687,6 @@ Actors:
 		Owner: Ants
 	Actor248: ants_light
 		Location: 66,6
-		Owner: Ants
-	Actor249: ants_light
-		Location: 63,15
 		Owner: Ants
 	Actor250: ants_light
 		Location: 70,28
@@ -781,12 +709,6 @@ Actors:
 	Actor256: ants_light
 		Location: 105,33
 		Owner: Ants
-	Actor257: ants_light
-		Location: 111,18
-		Owner: Ants
-	Actor258: ants_light
-		Location: 119,20
-		Owner: Ants
 	Actor259: ants_light
 		Location: 116,30
 		Owner: Ants
@@ -796,29 +718,14 @@ Actors:
 	Actor261: ants_light
 		Location: 99,36
 		Owner: Ants
-	Actor262: ants_light
-		Location: 116,38
-		Owner: Ants
 	Actor263: ants_light
 		Location: 126,44
-		Owner: Ants
-	Actor264: ants_light
-		Location: 112,44
 		Owner: Ants
 	Actor265: ants_light
 		Location: 126,50
 		Owner: Ants
-	Actor266: ants_light
-		Location: 104,51
-		Owner: Ants
-	Actor267: ants_light
-		Location: 95,53
-		Owner: Ants
 	Actor268: ants_light
 		Location: 120,63
-		Owner: Ants
-	Actor269: ants_light
-		Location: 95,55
 		Owner: Ants
 	Actor270: ants_light
 		Location: 92,50
@@ -826,53 +733,17 @@ Actors:
 	Actor271: ants_light
 		Location: 83,56
 		Owner: Ants
-	Actor272: ants_light
-		Location: 91,60
-		Owner: Ants
 	Actor273: ants_light
 		Location: 118,69
-		Owner: Ants
-	Actor274: ants_light
-		Location: 111,67
-		Owner: Ants
-	Actor275: ants_light
-		Location: 115,72
-		Owner: Ants
-	Actor276: ants_light
-		Location: 123,76
-		Owner: Ants
-	Actor277: ants_light
-		Location: 120,82
-		Owner: Ants
-	Actor278: ants_light
-		Location: 108,80
 		Owner: Ants
 	Actor279: ants_light
 		Location: 104,73
 		Owner: Ants
-	Actor280: ants_light
-		Location: 95,73
-		Owner: Ants
-	Actor281: ants_light
-		Location: 101,66
-		Owner: Ants
-	Actor282: ants_light
-		Location: 86,72
-		Owner: Ants
 	Actor283: ants_light
 		Location: 78,67
 		Owner: Ants
-	Actor284: ants_light
-		Location: 10,42
-		Owner: Ants
 	Actor285: ants_light
 		Location: 3,48
-		Owner: Ants
-	Actor286: ants_light
-		Location: 7,73
-		Owner: Ants
-	Actor287: ants_light
-		Location: 20,84
 		Owner: Ants
 	Actor288: ants_light
 		Location: 49,2
@@ -1170,5 +1041,220 @@ Actors:
 	Actor374: plant_moon_mushroom
 		Owner: Neutral
 		Location: 108,86
+	Actor375: ants_heavy
+		Owner: Ants
+		Location: 7,73
+		Health: 100
+		Facing: 0
+	Actor376: ants_heavy
+		Owner: Ants
+		Location: 45,46
+		Health: 100
+		Facing: 0
+	Actor377: ants_heavy
+		Owner: Ants
+		Location: 39,41
+		Health: 100
+		Facing: 0
+	Actor378: ants_heavy
+		Owner: Ants
+		Location: 31,47
+		Health: 100
+		Facing: 0
+	Actor379: ants_heavy
+		Owner: Ants
+		Location: 10,42
+		Health: 100
+		Facing: 0
+	Actor380: ants_heavy
+		Owner: Ants
+		Location: 11,37
+		Health: 100
+		Facing: 0
+	Actor381: ants_heavy
+		Owner: Ants
+		Location: 6,25
+		Health: 100
+		Facing: 0
+	Actor382: ants_heavy
+		Owner: Ants
+		Location: 7,12
+		Health: 100
+		Facing: 0
+	Actor383: ants_heavy
+		Owner: Ants
+		Location: 24,7
+		Health: 100
+		Facing: 0
+	Actor384: ants_heavy
+		Owner: Ants
+		Location: 30,21
+		Health: 100
+		Facing: 0
+	Actor385: ants_heavy
+		Owner: Ants
+		Location: 26,17
+		Health: 100
+		Facing: 0
+	Actor386: ants_heavy
+		Owner: Ants
+		Location: 101,66
+		Health: 100
+		Facing: 0
+	Actor387: ants_heavy
+		Owner: Ants
+		Location: 115,72
+		Health: 100
+		Facing: 0
+	Actor388: ants_heavy
+		Owner: Ants
+		Location: 111,67
+		Health: 100
+		Facing: 7
+	Actor389: ants_heavy
+		Owner: Ants
+		Location: 120,82
+		Health: 100
+		Facing: 0
+	Actor390: ants_heavy
+		Owner: Ants
+		Location: 108,80
+		Health: 100
+		Facing: 0
+	Actor391: ants_heavy
+		Owner: Ants
+		Location: 112,44
+		Health: 100
+		Facing: 31
+	Actor392: ants_heavy
+		Owner: Ants
+		Location: 116,38
+		Health: 100
+		Facing: 0
+	Actor393: ants_heavy
+		Owner: Ants
+		Location: 104,51
+		Health: 100
+		Facing: 0
+	Actor394: ants_heavy
+		Owner: Ants
+		Location: 111,18
+		Health: 100
+		Facing: 0
+	Actor395: ants_heavy
+		Owner: Ants
+		Location: 119,20
+		Health: 100
+		Facing: 0
+	Actor396: ants_heavy
+		Owner: Ants
+		Location: 71,21
+		Health: 100
+		Facing: 0
+	Actor397: ants_heavy
+		Owner: Ants
+		Location: 55,18
+		Health: 100
+		Facing: 0
+	Actor398: ants_heavy
+		Owner: Ants
+		Location: 63,15
+		Health: 100
+		Facing: 0
+	Actor399: ants_heavy
+		Owner: Ants
+		Location: 63,37
+		Health: 100
+		Facing: 0
+	Actor400: ants_heavy
+		Owner: Ants
+		Location: 95,53
+		Health: 100
+		Facing: 0
+	Actor403: ants_heavy
+		Owner: Ants
+		Location: 91,60
+		Health: 100
+		Facing: 0
+	Actor401: ants_heavy
+		Owner: Ants
+		Location: 95,55
+		Health: 100
+		Facing: 0
+	Actor402: ants_heavy
+		Owner: Ants
+		Location: 95,73
+		Health: 100
+		Facing: 0
+	Actor404: ants_heavy
+		Owner: Ants
+		Location: 86,72
+		Health: 100
+		Facing: 0
+	Actor405: ants_heavy
+		Owner: Ants
+		Location: 67,42
+		Health: 100
+		Facing: 0
+	Actor406: ants_heavy
+		Owner: Ants
+		Location: 58,60
+		Health: 100
+		Facing: 0
+	Actor407: ants_medium
+		Owner: Ants
+		Location: 64,57
+		Health: 100
+		Facing: 0
+	Actor408: ants_heavy
+		Owner: Ants
+		Location: 67,55
+		Health: 100
+		Facing: 0
+	Actor409: ants_heavy
+		Owner: Ants
+		Location: 54,26
+		Health: 100
+		Facing: 0
+	Actor410: ants_heavy
+		Owner: Ants
+		Location: 42,23
+		Health: 100
+		Facing: 0
+	Actor411: ants_heavy
+		Owner: Ants
+		Location: 46,7
+		Health: 100
+		Facing: 0
+	Actor412: ants_heavy
+		Owner: Ants
+		Location: 39,8
+		Health: 100
+		Facing: 0
+	Actor414: ants_heavy
+		Owner: Ants
+		Location: 20,84
+		Health: 100
+		Facing: 0
+	Actor413: ants_heavy
+		Owner: Ants
+		Location: 20,78
+		Facing: 0
+		Health: 100
+	Actor415: ants_medium
+		Owner: Ants
+		Location: 25,82
+		Health: 100
+		Facing: 0
+	Actor416: ants_heavy
+		Owner: Ants
+		Location: 58,44
+		Health: 100
+		Facing: 0
+	Actor417: ants_heavy
+		Owner: Ants
+		Location: 123,76
+		Health: 100
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
