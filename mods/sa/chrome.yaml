@@ -523,7 +523,7 @@ dropdown-separators:
 logos:
 	Inherits: ^LoadScreen
 	Regions:
-		logo: 0, 0, 256, 256
+		logo: 0, 0, 256, 260
 
 loadscreen-stripe:
 	Inherits: ^LoadScreen
