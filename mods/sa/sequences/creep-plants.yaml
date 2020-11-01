@@ -195,12 +195,12 @@ lolly_red:
 
 anthole:
 	idle: sprites|ANTHOLE_NORMAL.ANI
-		ZOffset: -1000
+		ZOffset: -3000
 	close: sprites|ANTHOLE_CLOSE.ANI
 		Length: 3
 		Tick: 500
-		ZOffset: -1000
+		ZOffset: -3000
 	open: sprites|ANTHOLE_OPEN.ANI
 		Length: 3
 		Tick: 500
-		ZOffset: -1000
+		ZOffset: -3000
