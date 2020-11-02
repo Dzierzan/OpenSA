@@ -100,8 +100,6 @@
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
 		TargetTypes: Ground, Colony
-	DamageMultiplier@INVULNERABLE:
-		Modifier: 0
 
 ^CoreTurretBuilding:
 	Inherits: ^CoreVisibleActor
