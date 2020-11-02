@@ -222,6 +222,7 @@ Fonts:
 		Ascender: 24
 
 Missions:
+	sa|missions.yaml
 
 MapGrid:
 	TileSize: 24, 24
