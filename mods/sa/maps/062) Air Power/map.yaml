@@ -157,9 +157,6 @@ Actors:
 	Actor35: plant_jaffa
 		Location: 56,26
 		Owner: Neutral
-	Actor36: plant_choc_chip
-		Location: 116,104
-		Owner: Neutral
 	Actor37: plant_smarty
 		Location: 50,114
 		Owner: Neutral
@@ -220,9 +217,6 @@ Actors:
 	Actor57: plant_smarty
 		Location: 74,16
 		Owner: Neutral
-	Actor58: plant_smarty
-		Location: 66,106
-		Owner: Neutral
 	Actor59: plant_jelly_bean
 		Location: 74,122
 		Owner: Neutral
@@ -231,9 +225,6 @@ Actors:
 		Owner: Neutral
 	Actor61: plant_choc_chip
 		Location: 70,60
-		Owner: Neutral
-	Actor62: plant_jelly_bean
-		Location: 92,32
 		Owner: Neutral
 	Actor63: plant_jelly_bean
 		Location: 88,106
@@ -315,9 +306,6 @@ Actors:
 		Owner: Neutral
 	Actor92: plant_jelly_bean
 		Location: 98,36
-		Owner: Neutral
-	Actor93: plant_choc_chip
-		Location: 92,32
 		Owner: Neutral
 	Actor95: plant_smarty
 		Location: 50,116
@@ -481,12 +469,6 @@ Actors:
 	Actor152: plant_jelly_bean
 		Location: 36,82
 		Owner: Neutral
-	Actor153: plant_jelly_bean
-		Location: 66,106
-		Owner: Neutral
-	Actor154: plant_jelly_bean
-		Location: 72,22
-		Owner: Neutral
 	Actor155: plant_choc_chip
 		Location: 32,8
 		Owner: Neutral
@@ -589,9 +571,6 @@ Actors:
 	Actor191: plant_jaffa
 		Location: 126,118
 		Owner: Neutral
-	Actor192: plant_jelly_bean
-		Location: 116,104
-		Owner: Neutral
 	Actor193: plant_jelly_bean
 		Location: 18,120
 		Owner: Neutral
@@ -667,5 +646,26 @@ Actors:
 	Actor218: plant_jaffa
 		Owner: Neutral
 		Location: 48,16
+	Actor219: plant_choc_chip
+		Owner: Neutral
+		Location: 91,33
+	Actor220: plant_jelly_bean
+		Owner: Neutral
+		Location: 92,32
+	Actor221: plant_choc_chip
+		Owner: Neutral
+		Location: 115,105
+	Actor222: plant_jelly_bean
+		Owner: Neutral
+		Location: 116,104
+	Actor223: plant_jelly_bean
+		Owner: Neutral
+		Location: 72,23
+	Actor224: plant_jelly_bean
+		Owner: Neutral
+		Location: 65,106
+	Actor225: plant_smarty
+		Owner: Neutral
+		Location: 64,107
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
