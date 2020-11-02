@@ -14,9 +14,6 @@ World:
 	-PlantSpawner@SWAMP:
 	-PlantSpawner@CANDY:
 
-	MissionData:
-		Briefing: Author: Dzierzan\n\nBased on: NumberJuan77's Stick and Stones map for Swarm Assault.
-
 Player:
 	-GrantConditionOnBotOwner@AntsAI:
 	ExternalCondition@AntsAI:
