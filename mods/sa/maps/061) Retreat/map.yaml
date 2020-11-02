@@ -64,9 +64,6 @@ Actors:
 	Actor6: plant_brown_mushroom
 		Location: 78,122
 		Owner: Neutral
-	Actor7: plant_toad_stool
-		Location: 90,120
-		Owner: Neutral
 	Actor8: plant_broad_leaf_grass
 		Location: 46,12
 		Owner: Neutral
@@ -103,9 +100,6 @@ Actors:
 	Actor19: plant_brown_mushroom
 		Location: 14,28
 		Owner: Neutral
-	Actor20: plant_toad_stool
-		Location: 88,80
-		Owner: Neutral
 	Actor21: plant_flower
 		Location: 50,50
 		Owner: Neutral
@@ -114,9 +108,6 @@ Actors:
 		Owner: Neutral
 	Actor23: plant_brown_mushroom
 		Location: 84,124
-		Owner: Neutral
-	Actor24: plant_toad_stool
-		Location: 70,84
 		Owner: Neutral
 	Actor25: plant_flower
 		Location: 58,54
@@ -142,17 +133,11 @@ Actors:
 	Actor32: plant_flower
 		Location: 43,108
 		Owner: Neutral
-	Actor33: plant_toad_stool
-		Location: 82,80
-		Owner: Neutral
 	Actor34: plant_flower
 		Location: 62,80
 		Owner: Neutral
 	Actor35: plant_brown_mushroom
 		Location: 16,32
-		Owner: Neutral
-	Actor36: plant_toad_stool
-		Location: 82,80
 		Owner: Neutral
 	Actor37: plant_flower
 		Location: 60,40
@@ -238,9 +223,6 @@ Actors:
 	Actor65: plant_flower
 		Location: 84,72
 		Owner: Neutral
-	Actor66: plant_toad_stool
-		Location: 82,114
-		Owner: Neutral
 	Actor67: plant_broad_leaf_grass
 		Location: 4,92
 		Owner: Neutral
@@ -271,20 +253,11 @@ Actors:
 	Actor76: plant_broad_leaf_grass
 		Location: 44,4
 		Owner: Neutral
-	Actor77: plant_toad_stool
-		Location: 94,108
-		Owner: Neutral
-	Actor78: plant_toad_stool
-		Location: 92,88
-		Owner: Neutral
 	Actor79: plant_flower
 		Location: 58,4
 		Owner: Neutral
 	Actor80: plant_broad_leaf_grass
 		Location: 24,100
-		Owner: Neutral
-	Actor81: plant_toad_stool
-		Location: 76,86
 		Owner: Neutral
 	Actor82: plant_brown_mushroom
 		Location: 80,72
@@ -352,9 +325,6 @@ Actors:
 	Actor103: plant_flower
 		Location: 58,78
 		Owner: Neutral
-	Actor104: plant_toad_stool
-		Location: 82,100
-		Owner: Neutral
 	Actor105: plant_flower
 		Location: 8,100
 		Owner: Neutral
@@ -397,9 +367,6 @@ Actors:
 	Actor119: plant_broad_leaf_grass
 		Location: 54,60
 		Owner: Neutral
-	Actor120: plant_toad_stool
-		Location: 76,102
-		Owner: Neutral
 	Actor121: plant_broad_leaf_grass
 		Location: 60,50
 		Owner: Neutral
@@ -412,9 +379,6 @@ Actors:
 	Actor124: plant_brown_mushroom
 		Location: 20,112
 		Owner: Neutral
-	Actor125: plant_toad_stool
-		Location: 90,114
-		Owner: Neutral
 	Actor126: plant_brown_mushroom
 		Location: 70,106
 		Owner: Neutral
@@ -423,9 +387,6 @@ Actors:
 		Owner: Neutral
 	Actor128: plant_broad_leaf_grass
 		Location: 64,42
-		Owner: Neutral
-	Actor129: plant_toad_stool
-		Location: 86,112
 		Owner: Neutral
 	Actor130: plant_broad_leaf_grass
 		Location: 12,34
@@ -447,9 +408,6 @@ Actors:
 		Owner: Neutral
 	Actor136: plant_broad_leaf_grass
 		Location: 76,58
-		Owner: Neutral
-	Actor137: plant_toad_stool
-		Location: 84,78
 		Owner: Neutral
 	Actor138: plant_broad_leaf_grass
 		Location: 82,58
@@ -484,9 +442,6 @@ Actors:
 	Actor148: plant_broad_leaf_grass
 		Location: 56,106
 		Owner: Neutral
-	Actor149: plant_toad_stool
-		Location: 92,76
-		Owner: Neutral
 	Actor150: plant_broad_leaf_grass
 		Location: 20,88
 		Owner: Neutral
@@ -495,9 +450,6 @@ Actors:
 		Owner: Neutral
 	Actor152: plant_flower
 		Location: 44,104
-		Owner: Neutral
-	Actor153: plant_toad_stool
-		Location: 92,114
 		Owner: Neutral
 	Actor154: plant_flower
 		Location: 92,22
@@ -592,5 +544,53 @@ Actors:
 	Actor184: plant_flower
 		Owner: Neutral
 		Location: 17,72
+	Actor185: plant_toad_stool
+		Owner: Neutral
+		Location: 92,114
+	Actor186: plant_toad_stool
+		Owner: Neutral
+		Location: 90,114
+	Actor187: plant_toad_stool
+		Owner: Neutral
+		Location: 86,112
+	Actor188: plant_toad_stool
+		Owner: Neutral
+		Location: 82,114
+	Actor189: plant_toad_stool
+		Owner: Neutral
+		Location: 90,120
+	Actor190: plant_toad_stool
+		Owner: Neutral
+		Location: 94,108
+	Actor191: plant_toad_stool
+		Owner: Neutral
+		Location: 82,100
+	Actor192: plant_toad_stool
+		Owner: Neutral
+		Location: 76,102
+	Actor193: plant_toad_stool
+		Owner: Neutral
+		Location: 76,86
+	Actor194: plant_toad_stool
+		Owner: Neutral
+		Location: 70,84
+	Actor195: plant_toad_stool
+		Owner: Neutral
+		Location: 92,88
+	Actor196: plant_toad_stool
+		Owner: Neutral
+		Location: 88,80
+	Actor197: plant_toad_stool
+		Owner: Neutral
+		Location: 92,76
+	Actor198: plant_toad_stool
+		Owner: Neutral
+		Location: 84,78
+	Actor200: plant_toad_stool
+		Owner: Neutral
+		Location: 82,80
+	Actor201: plant_toad_stool
+		Owner: Neutral
+		Location: 83,81
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
