@@ -93,7 +93,7 @@
 		NumberOfBits: 9 #How many colony bits are launched
 		MinRange: 5 #Min range of colony bits
 		MaxRange: 10 #Max range of colony bits
-		ResurrectHealth: 50
+		ResurrectHealth: 25
 		Weapon: colony_bit
 		CaptureSound: sounds|POWERUP.SDF
 	CustomAppearsOnRadar:
@@ -163,7 +163,7 @@
 		NumberOfBits: 5 #How many colony bits are launched
 		MinRange: 3 #Min range of colony bits
 		MaxRange: 7 #Max range of colony bits
-		ResurrectHealth: 50
+		ResurrectHealth: 25
 		Weapon: colony_bit
 		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
 		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
