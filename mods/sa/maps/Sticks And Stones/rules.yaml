@@ -1,0 +1,40 @@
+World:
+	PirateSpawner:
+		SpawnInterval: 1200, 1700
+		InitialSpawnDelay: 1200, 1700
+	-CreepFlyerSpawner@dragonfly:
+	CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	PlantSpawner@DESERT:
+		Maximum: 10
+		SpawnInterval: 1200, 1600
+		InitialSpawnDelay: 1200, 1600
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+	MissionData:
+		Briefing: Author: Dzierzan\n\n Based on: NumberJuan77's Stick and Stones map for Swarm Assault.
+
+Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			#ants_light: 0
+			ants_medium: 90
+			ants_heavy: 10
+			#beetles_light: 0
+			beetles_medium: 90
+			beetles_heavy: 10
+			#scorpions_light: 0
+			scorpions_medium: 90
+			scorpions_heavy: 10
+			#spiders_light: 0
+			spiders_medium: 90
+			spiders_heavy: 10
+			#wasps_light: 0
+			wasps_medium: 90
+			wasps_heavy: 10
