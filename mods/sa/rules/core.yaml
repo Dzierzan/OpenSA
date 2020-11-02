@@ -162,7 +162,7 @@
 	WithIdleOverlay:
 	DefeatedColony:
 		BitFireDelay: 50 #Time before colony bits are launched
-		NumberOfBits: 4 #How many colony bits are launched
+		NumberOfBits: 5 #How many colony bits are launched
 		MinRange: 3 #Min range of colony bits
 		MaxRange: 7 #Max range of colony bits
 		ResurrectHealth: 50
