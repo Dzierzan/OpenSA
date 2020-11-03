@@ -50,7 +50,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 						continue;
 
 					foreach (var current in queue.AllQueued())
+					{
 						bot.QueueOrder(Order.CancelProduction(queue.Actor, current.Item, 1));
+						AIUtils.BotDebug("{0}: Stopping production of {1} at {2} to heal.".F(player.PlayerName, current.Item, colony));
+					}
 				}
 			}
 		}
