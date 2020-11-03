@@ -105,7 +105,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				}
 
 				var target = Target.FromCell(world, bit.Location);
-				AIUtils.BotDebug("AI: Ordering unit {0} to {1} for colony bit pick up.".F(bitCollector, target));
+				AIUtils.BotDebug("{0}: Ordering unit {1} to {2} for colony bit pick up.".F(player.PlayerName, bitCollector, target));
 				bot.QueueOrder(new Order("Stop", bitCollector, false));
 				bot.QueueOrder(new Order("Move", bitCollector, target, false));
 			}
