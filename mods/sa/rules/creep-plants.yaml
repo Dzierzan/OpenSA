@@ -101,7 +101,7 @@ puff:
 seed:
 	SpawnActorOnDeath:
 		Actor: puff
-		Probability: 15
+		Probability: 20
 		SkipMakeAnimations: false
 	ChangesHealth:
 		Step: -1000
@@ -110,7 +110,7 @@ seed:
 	BodyOrientation:
 		QuantizedFacings: 1
 	Health:
-		HP: 40000
+		HP: 50000
 	HiddenUnderFog:
 	Immobile:
 	RenderSprites:
