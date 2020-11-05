@@ -63,7 +63,25 @@ puff:
 	portrait: sprites|COLONYNEUTRALSEEDBALL3D.ANI
 
 seed:
-	idle: sprites|WEAPON_PUFFBALL.ANI
+	idle: bits/seed.png
+		Start: 0
+		ZOffset: -2100
+	scuffed-idle: bits/seed.png
+		Start: 1
+		ZOffset: -2100
+	scratched-idle: bits/seed.png
+		Start: 2
+		ZOffset: -2100
+	damaged-idle: bits/seed.png
+		Start: 3
+		ZOffset: -2100
+	critical-idle: bits/seed.png
+		Start: 4
+		ZOffset: -2100
+	die: bits/seed.png
+		Start: 5
+		Tick: 1000
+		ZOffset: -2100
 
 mushroom:
 	idle: bits/mushroom.png

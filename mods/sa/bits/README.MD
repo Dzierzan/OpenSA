@@ -137,3 +137,8 @@ Description: Icons for Slapfight fighter.
 Author: Dzierzan
 Source: Dzierzan
 Description: Camera image for Camera.Position for lua scripts.
+
+**seed.png**
+Author: Dzierzan, Gate 5 Creations
+Source: Swarm Assault
+Description: Additional sprites for seed going into ground.
