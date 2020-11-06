@@ -12,8 +12,6 @@ scorpions_light:
 	Buildable:
 		BuildDuration: 250
 		Description: Stings with a sting.\nMelee unit.\nCannot harm colonies or creep flyers.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: scorpions_light
 		PauseOnCondition: paralyzed
@@ -36,8 +34,8 @@ scorpions_medium:
 	Buildable:
 		BuildDuration: 500
 		Description: Long range harpoon attack.\nLong range unit.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 12c0
 	Armament:
 		Weapon: scorpions_medium
 		FireDelay: 4
@@ -58,8 +56,8 @@ scorpions_heavy:
 	Buildable:
 		BuildDuration: 750
 		Description: Fires long range ninja stars at target.\nLong range unit.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 12c0
 	Armament:
 		Weapon: scorpions_heavy
 		FireDelay: 4

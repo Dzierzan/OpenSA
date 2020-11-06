@@ -124,7 +124,7 @@
 	MapEditorData:
 		Categories: Building
 	RevealsShroud:
-		Range: 10c0
+		Range: 15c0
 	ChangesHealth:
 		Step: 50 #TODO Might require further adjusting
 		StartIfBelow: 100
@@ -259,7 +259,7 @@
 	MapEditorData:
 		Categories: NeutralUnit
 	RevealsShroud:
-		Range: 10c0
+		Range: 12c0
 	RenderSprites:
 		Palette: OpenSA
 	ChangesHealth:

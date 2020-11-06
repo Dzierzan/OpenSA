@@ -12,8 +12,6 @@ spiders_light:
 	Buildable:
 		BuildDuration: 200
 		Description: Body crunching bite attack.\nMelee unit.\nCannot harm colonies or creep flyers.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: spiders_light
 		PauseOnCondition: paralyzed
@@ -36,8 +34,8 @@ spiders_medium:
 	Buildable:
 		BuildDuration: 450
 		Description: Long range deadly sniper attack.\nLong range unit.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 12c0
 	Armament:
 		Weapon: spiders_medium
 		PauseOnCondition: paralyzed
@@ -56,8 +54,8 @@ spiders_heavy:
 	Buildable:
 		BuildDuration: 550
 		Description: Fires long range cruise missiles.\nLong range unit.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 12c0
 	Armament:
 		Weapon: spiders_heavy
 		FireDelay: 2

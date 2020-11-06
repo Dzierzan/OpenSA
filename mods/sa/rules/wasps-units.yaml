@@ -12,8 +12,6 @@ wasps_light:
 	Buildable:
 		BuildDuration: 250
 		Description: Fast moving wasp with light machine gun.\nMedium range unit.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: wasps_light
 		LocalOffset: 500,0,0
@@ -35,8 +33,8 @@ wasps_medium:
 	Buildable:
 		BuildDuration: 350
 		Description: Shoots arrows which paralyze units.\nLong range unit.\nDoesn work against colonies or plants.
-	#RevealsShroud:
-	#	Range: 7c0
+	RevealsShroud:
+		Range: 12c0
 	Armament:
 		Weapon: wasps_medium
 		FireDelay: 1
@@ -60,8 +58,6 @@ wasps_heavy:
 	Buildable:
 		BuildDuration: 550
 		Description: Shoots rapid sonic beams.\nMedium range unit.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: wasps_heavy
 		LocalOffset: 1000,0,0

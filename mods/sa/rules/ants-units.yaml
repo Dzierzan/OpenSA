@@ -12,8 +12,6 @@ ants_light:
 	Buildable:
 		BuildDuration: 125
 		Description: Body crunching bite attack.\nMelee unit.\nCannot harm colonies or creep flyers.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: ants_light
 		PauseOnCondition: paralyzed
@@ -36,8 +34,6 @@ ants_medium:
 	Buildable:
 		BuildDuration: 200
 		Description: Throws grenades.\nClose range unit.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: ants_medium
 		FireDelay: 10
@@ -58,8 +54,6 @@ ants_heavy:
 	Buildable:
 		BuildDuration: 350
 		Description: Shoots heavy rockets.\nMedium/long range unit.
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: ants_heavy
 		FireDelay: 9

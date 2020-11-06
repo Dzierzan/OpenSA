@@ -11,8 +11,6 @@ ant_bull_pirate:
 		Speed: 105
 	Buildable:
 		BuildDuration: 125
-	#RevealsShroud:
-	#	Range: 7c0
 	Voiced:
 		VoiceSet: AntsVoice
 	Armament:
@@ -39,8 +37,6 @@ ants_grenadier_pirate:
 		Speed: 92
 	Buildable:
 		BuildDuration: 200
-	#RevealsShroud:
-	#	Range: 7c0
 	Voiced:
 		VoiceSet: AntsVoice
 	Armament:
@@ -69,8 +65,6 @@ ants_flying_machine_pilot:
 		Speed: 92
 	Buildable:
 		BuildDuration: 200
-	#RevealsShroud:
-	#	Range: 7c0
 	Voiced:
 		VoiceSet: AntsVoice
 	Armament:
@@ -99,8 +93,6 @@ ants_bazooka_pirate:
 		Speed: 78
 	Buildable:
 		BuildDuration: 350
-	#RevealsShroud:
-	#	Range: 7c0
 	Armament:
 		Weapon: ants_heavy
 		FireDelay: 9
