@@ -170,11 +170,14 @@ flying_machine:
 		HP: 25000
 	Aircraft:
 		Speed: 105
-	SpawnsShrapnel:
-		Weapon: flying_machine
-		Delay: 35
-		Amount: 2
-		PauseOnCondition: paralyzed
+	PeriodicDischarge:
+		Weapon: flying_machine_discharge
+		LocalOffset: 0,0,0
+	#SpawnsShrapnel:
+	#	Weapon: flying_machine
+	#	Delay: 35
+	#	Amount: 2
+	#	PauseOnCondition: paralyzed
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:

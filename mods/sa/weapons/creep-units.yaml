@@ -110,7 +110,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Speed: 100
 		LaunchAngle: 220
 		Inaccuracy: 100
-		BounceCount: 4
+		BounceCount: 4 #In this configuration wtih FireFragment, bouncing logic should be faulty.
 		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
 		InvalidBounceTerrain: Water
 		Image: projectiles
@@ -125,3 +125,11 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Explosions: medium_explosion
 		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water
+
+flying_machine_discharge:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 50 #If there's reload, projectiles are not thrown behind actor. If there's no reload delay, projectiles are thrown behind, but they are thrown rapidly.
+	Warhead: FireFragment
+		Weapon: flying_machine
+		Offsets: 0,0,0
+		Rotate: True
