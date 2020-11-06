@@ -35,7 +35,7 @@ ants_medium:
 		Speed: 92
 	Buildable:
 		BuildDuration: 200
-		Description: Throws grenades.\nMedium range unit.
+		Description: Throws grenades.\nClose range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:

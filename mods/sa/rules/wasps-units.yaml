@@ -59,7 +59,7 @@ wasps_heavy:
 		Speed: 155
 	Buildable:
 		BuildDuration: 550
-		Description: Shoots rapid sonic beams.\nMelee unit.
+		Description: Shoots rapid sonic beams.\nMedium range unit.
 	#RevealsShroud:
 	#	Range: 7c0
 	Armament:
