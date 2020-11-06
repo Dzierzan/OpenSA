@@ -19,3 +19,7 @@ World:
 	-PlantSpawner@CANDY:
 	AmbientSound@Normal:
 		SoundFiles: sounds_MENU|STARTBACKGROUND.SDF
+
+^CoreUnit:
+	-Wanders@PLAYER:
+	-Wanders@BOT:

@@ -203,6 +203,20 @@
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	UpdatesPlayerStatistics:
+	Wanders@BOT:
+		WanderMoveRadius: 2
+		ReduceMoveRadiusDelay: 50
+		MinMoveDelay: 250
+		MaxMoveDelay: 1000
+		RequiresCondition: bot-wanders
+	Wanders@PLAYER:
+		WanderMoveRadius: 1
+		ReduceMoveRadiusDelay: 50
+		MinMoveDelay: 2000
+		MaxMoveDelay: 4000
+	GrantConditionOnBotOwner:
+		Condition: bot-wanders
+		Bots: beetles-ai, ants-ai, wasps-ai, spiders-ai, easy-ai, medium-ai, hard-ai
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreCreature
@@ -227,8 +241,8 @@
 	Wanders:
 		WanderMoveRadius: 2
 		ReduceMoveRadiusDelay: 50
-		MinMoveDelay: 250
-		MaxMoveDelay: 450
+		MinMoveDelay: 150
+		MaxMoveDelay: 500
 	Living:
 		RotationChance: 250
 	AttackMove:
