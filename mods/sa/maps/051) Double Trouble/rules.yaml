@@ -37,3 +37,6 @@ Player:
 			wasps_light: 25
 			wasps_medium: 100
 			wasps_heavy: 100
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 20
+		SquadSizeRandomBonus: 5

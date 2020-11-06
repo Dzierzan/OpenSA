@@ -150,9 +150,6 @@ Actors:
 	Actor30: plant_flower
 		Location: 52,66
 		Owner: Neutral
-	Actor31: plant_broad_leaf_grass
-		Location: 46,14
-		Owner: Neutral
 	Actor32: plant_broad_leaf_grass
 		Location: 48,82
 		Owner: Neutral
@@ -565,5 +562,8 @@ Actors:
 	Actor171: startcamera
 		Owner: Neutral
 		Location: 17,17
+	Actor172: plant_broad_leaf_grass
+		Owner: Neutral
+		Location: 45,15
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

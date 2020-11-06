@@ -35,6 +35,9 @@ Player:
 			#wasps_light: 0
 			#wasps_medium: 0
 			wasps_heavy: 100
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 8
+		SquadSizeRandomBonus: 5
 	-GrantConditionOnBotOwner@BeetlesAI:
 	ExternalCondition@BeeltesAI:
 		Condition: enable-beetles-ai

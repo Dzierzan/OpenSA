@@ -33,6 +33,9 @@ Player:
 			wasps_light: 50
 			wasps_medium: 100
 			wasps_heavy: 50
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
 	-GrantConditionOnBotOwner@WaspsAI:
 	ExternalCondition@WaspsAI:
 		Condition: enable-wasps-ai
@@ -53,6 +56,9 @@ Player:
 			#wasps_light: 0
 			wasps_medium: 75
 			wasps_heavy: 100
+	SquadManagerBotModule@WaspsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
 	-GrantConditionOnBotOwner@SpidersAI:
 	ExternalCondition@SpidersAI:
 		Condition: enable-spiders-ai
@@ -73,3 +79,6 @@ Player:
 			#wasps_light: 0
 			#wasps_medium: 0
 			wasps_heavy: 100
+	SquadManagerBotModule@SpidersAI:
+		SquadSize: 10
+		SquadSizeRandomBonus: 5

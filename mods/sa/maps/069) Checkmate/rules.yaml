@@ -35,3 +35,6 @@ Player:
 			wasps_light: 25
 			wasps_medium: 100
 			wasps_heavy: 100
+	SquadManagerBotModule@BeetlesAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5

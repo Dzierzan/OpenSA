@@ -32,6 +32,9 @@ Player:
 			wasps_light: 75
 			wasps_medium: 100
 			wasps_heavy: 25
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
 	-GrantConditionOnBotOwner@WaspsAI:
 	ExternalCondition@WaspsAI:
 		Condition: enable-wasps-ai
@@ -52,3 +55,6 @@ Player:
 			#wasps_light: 0
 			#wasps_medium: 0
 			wasps_heavy: 100
+	SquadManagerBotModule@WaspsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5

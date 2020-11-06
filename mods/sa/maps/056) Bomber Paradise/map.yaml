@@ -199,9 +199,6 @@ Actors:
 	Actor57: plant_flower
 		Location: 88,28
 		Owner: Neutral
-	Actor58: plant_flower
-		Location: 38,48
-		Owner: Neutral
 	Actor59: plant_flower
 		Location: 46,40
 		Owner: Neutral
@@ -240,9 +237,6 @@ Actors:
 		Owner: Neutral
 	Actor73: plant_flower
 		Location: 70,60
-		Owner: Neutral
-	Actor74: plant_brown_mushroom
-		Location: 88,32
 		Owner: Neutral
 	Actor75: plant_flower
 		Location: 78,34
@@ -372,9 +366,6 @@ Actors:
 		Owner: Neutral
 	Actor121: plant_flower
 		Location: 12,110
-		Owner: Neutral
-	Actor122: plant_flower
-		Location: 22,46
 		Owner: Neutral
 	Actor123: plant_flower
 		Location: 80,92
@@ -583,5 +574,14 @@ Actors:
 	Actor193: plant_flower
 		Owner: Neutral
 		Location: 70,48
+	Actor194: plant_flower
+		Owner: Neutral
+		Location: 22,45
+	Actor195: plant_flower
+		Owner: Neutral
+		Location: 37,49
+	Actor196: plant_brown_mushroom
+		Owner: Neutral
+		Location: 89,31
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

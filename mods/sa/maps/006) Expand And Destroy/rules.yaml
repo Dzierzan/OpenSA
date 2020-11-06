@@ -33,3 +33,6 @@ Player:
 			#wasps_light: 0
 			#wasps_medium: 0
 			wasps_heavy: 100
+	SquadManagerBotModule@SpidersAI:
+		SquadSize: 5
+		SquadSizeRandomBonus: 1
