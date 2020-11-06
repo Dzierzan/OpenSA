@@ -20,7 +20,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class HealColonyBotModuleInfo : ConditionalTraitInfo
 	{
 		[Desc("Act upon this damage taken.")]
-		public readonly DamageState DamageState = DamageState.Critical;
+		public readonly DamageState DamageState = DamageState.Heavy;
 
 		public override object Create(ActorInitializer init) { return new HealColonyBotModule(init.Self, this); }
 	}
