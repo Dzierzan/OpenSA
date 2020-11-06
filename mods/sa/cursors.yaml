@@ -1,7 +1,7 @@
 Cursors:
 	sprites|MouseNormal.ANI: OpenSA
 		ingame-default:
-			Start: 0
+			Start: 25
 			X: 0
 			Y: 0
 	bits/cursors.png: OpenSA
