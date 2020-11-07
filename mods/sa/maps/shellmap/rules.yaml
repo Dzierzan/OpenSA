@@ -22,4 +22,3 @@ World:
 
 ^CoreUnit:
 	-Wanders@PLAYER:
-	-Wanders@BOT:
