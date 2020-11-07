@@ -48,6 +48,7 @@ Players:
 		Color: 606EA5
 		LockSpawn: True
 		LockTeam: True
+		LockFaction: True
 		Enemies: Ants, Wasps, Creeps
 
 Actors:
