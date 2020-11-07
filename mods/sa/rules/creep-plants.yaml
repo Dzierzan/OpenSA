@@ -76,8 +76,6 @@ puff:
 		HP: 4500
 	-AttackTurreted:
 	-WithAttackAnimation:
-	#WithMakeAnimation:
-	#	Sequence: grow
 	WithSpawnsShrapnelAnimation:
 		Sequences: shoot
 	ExternalCondition@TRIGGER:
