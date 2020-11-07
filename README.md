@@ -4,7 +4,7 @@ This repository contains a recreated Swarm Assault game in OpenRA engine. The go
 
 # Status
 
-Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 50/100), feel free to give any feedback or even help to progress further the project.
+Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 80/100), feel free to give any feedback or even help to progress further the project.
 
 # Swarm Assault vs OpenSA
 
@@ -17,7 +17,6 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 - Ability to queue units,
 - Rally points,
 - Units no longer wander around (creep units still can do it),
-- Less dummy AI,
 - More advanced map editor with the ability of creating own missions with objectives
 - Ability of adding own units to the game
 - There's no random map generator in OpenSA, however the project is able to convert legacy maps to ORA format, so nothing is lost.
