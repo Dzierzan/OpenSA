@@ -1,0 +1,248 @@
+MapFormat: 11
+
+RequiresMod: sa
+
+Title: 071) Microcosm
+
+Author: Gate 5 Creations
+
+Tileset: DESERT
+
+MapSize: 68,68
+
+Bounds: 2,2,64,64
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+		Enemies: Wasps, Spiders
+	PlayerReference@Wasps:
+		Name: Wasps
+		Bot: wasps-ai
+		Faction: wasps
+		Color: F5D378
+		Enemies: Spiders, Creeps
+	PlayerReference@Spiders:
+		Name: Spiders
+		Playable: True
+		Required: True
+		LockFaction: True
+		Faction: spiders
+		LockColor: True
+		Color: CA3131
+		LockSpawn: True
+		LockTeam: True
+		Enemies: Wasps, Creeps
+
+Actors:
+	Actor0: ants_colony
+		Location: 34,52
+		Owner: Wasps
+	Actor1: spiders_colony
+		Location: 54,56
+		Owner: Spiders
+	Actor2: beetles_colony
+		Location: 25,29
+		Owner: Wasps
+	Actor3: spiders_colony
+		Location: 51,39
+		Owner: Wasps
+	Actor4: beetles_colony
+		Location: 18,42
+		Owner: Spiders
+	Actor5: wasps_colony
+		Location: 41,30
+		Owner: Wasps
+	Actor6: ants_colony
+		Location: 36,19
+		Owner: Spiders
+	Actor7: plant_gumnut
+		Location: 56,34
+		Owner: Neutral
+	Actor8: plant_desert_flower
+		Location: 18,12
+		Owner: Neutral
+	Actor9: plant_gumnut
+		Location: 8,12
+		Owner: Neutral
+	Actor11: plant_desert_grass
+		Location: 38,61
+		Owner: Neutral
+	Actor12: plant_serata
+		Location: 10,36
+		Owner: Neutral
+	Actor13: plant_gumnut
+		Location: 60,40
+		Owner: Neutral
+	Actor14: plant_serata
+		Location: 44,20
+		Owner: Neutral
+	Actor16: plant_desert_grass
+		Location: 62,48
+		Owner: Neutral
+	Actor17: plant_gumnut
+		Location: 62,24
+		Owner: Neutral
+	Actor18: plant_desert_grass
+		Location: 42,64
+		Owner: Neutral
+	Actor19: plant_gumnut
+		Location: 58,54
+		Owner: Neutral
+	Actor20: plant_desert_grass
+		Location: 4,56
+		Owner: Neutral
+	Actor22: plant_serata
+		Location: 15,46
+		Owner: Neutral
+	Actor23: plant_desert_grass
+		Location: 32,4
+		Owner: Neutral
+	Actor24: plant_serata
+		Location: 48,14
+		Owner: Neutral
+	Actor25: plant_desert_grass
+		Location: 30,14
+		Owner: Neutral
+	Actor26: plant_serata
+		Location: 8,60
+		Owner: Neutral
+	Actor27: plant_gumnut
+		Location: 50,28
+		Owner: Neutral
+	Actor28: plant_desert_flower
+		Location: 54,12
+		Owner: Neutral
+	Actor29: plant_desert_grass
+		Location: 18,28
+		Owner: Neutral
+	Actor30: plant_desert_flower
+		Location: 8,16
+		Owner: Neutral
+	Actor31: plant_desert_grass
+		Location: 20,52
+		Owner: Neutral
+	Actor32: plant_desert_flower
+		Location: 6,32
+		Owner: Neutral
+	Actor33: plant_gumnut
+		Location: 2,22
+		Owner: Neutral
+	Actor34: plant_gumnut
+		Location: 54,26
+		Owner: Neutral
+	Actor35: plant_gumnut
+		Location: 24,64
+		Owner: Neutral
+	Actor36: plant_gumnut
+		Location: 26,26
+		Owner: Neutral
+	Actor37: plant_gumnut
+		Location: 52,60
+		Owner: Neutral
+	Actor38: plant_desert_grass
+		Location: 6,49
+		Owner: Neutral
+	Actor39: plant_desert_grass
+		Location: 48,22
+		Owner: Neutral
+	Actor40: plant_desert_grass
+		Location: 18,32
+		Owner: Neutral
+	Actor41: plant_desert_grass
+		Location: 28,47
+		Owner: Neutral
+	Actor42: plant_gumnut
+		Location: 10,62
+		Owner: Neutral
+	Actor43: plant_desert_grass
+		Location: 28,22
+		Owner: Neutral
+	Actor44: plant_serata
+		Location: 3,42
+		Owner: Neutral
+	Actor45: plant_desert_grass
+		Location: 53,51
+		Owner: Neutral
+	Actor46: plant_serata
+		Location: 16,8
+		Owner: Neutral
+	Actor47: plant_serata
+		Location: 46,54
+		Owner: Neutral
+	Actor48: plant_serata
+		Location: 64,36
+		Owner: Neutral
+	Actor49: plant_serata
+		Location: 42,14
+		Owner: Neutral
+	Actor51: plant_desert_grass
+		Location: 12,40
+		Owner: Neutral
+	Actor52: plant_desert_grass
+		Location: 34,16
+		Owner: Neutral
+	Actor53: plant_desert_grass
+		Location: 24,42
+		Owner: Neutral
+	Actor56: plant_desert_flower
+		Location: 62,18
+		Owner: Neutral
+	Actor57: plant_desert_grass
+		Location: 47,47
+		Owner: Neutral
+	Actor58: plant_serata
+		Location: 38,2
+		Owner: Neutral
+	Actor59: plant_serata
+		Location: 34,26
+		Owner: Neutral
+	Actor60: plant_desert_flower
+		Location: 14,14
+		Owner: Neutral
+	Actor61: plant_serata
+		Location: 54,22
+		Owner: Neutral
+	Actor62: wasps_colony
+		Location: 22,12
+		Owner: Wasps
+	Actor63: beetles_colony
+		Location: 45,7
+		Owner: Spiders
+	Actor64: wasps_colony
+		Location: 3,34
+		Owner: Wasps
+	Actor66: plant_serata
+		Owner: Neutral
+		Location: 53,23
+	Actor67: plant_desert_flower
+		Owner: Neutral
+		Location: 14,9
+	Actor68: plant_desert_flower
+		Owner: Neutral
+		Location: 8,27
+	Actor69: plant_gumnut
+		Owner: Neutral
+		Location: 12,25
+	Actor70: plant_desert_flower
+		Owner: Neutral
+		Location: 10,26
+	Actor71: plant_desert_flower
+		Owner: Neutral
+		Location: 3,20
+	Actor65: startcamera
+		Owner: Neutral
+		Location: 43,19
+
+Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
