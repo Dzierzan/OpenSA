@@ -23,7 +23,7 @@ Player:
 		RequiresCondition: enable-easy-ai || enable-medium-ai || enable-hard-ai
 	SquadManagerBotModule@easyAI:
 		RequiresCondition: enable-easy-ai
-		SquadSize: 20
+		SquadSize: 10
 		SquadSizeRandomBonus: 5
 		RushInterval: 1000
 		AssignRolesInterval: 25
@@ -50,7 +50,7 @@ Player:
 			wasps_heavy: 10
 	SquadManagerBotModule@mediumAI:
 		RequiresCondition: enable-medium-ai
-		SquadSize: 20
+		SquadSize: 10
 		SquadSizeRandomBonus: 5
 		RushInterval: 500
 		AssignRolesInterval: 25
@@ -77,7 +77,7 @@ Player:
 			wasps_heavy: 33
 	SquadManagerBotModule@hardAI:
 		RequiresCondition: enable-hard-ai
-		SquadSize: 20
+		SquadSize: 10
 		SquadSizeRandomBonus: 5
 		RushInterval: 250
 		AssignRolesInterval: 25
