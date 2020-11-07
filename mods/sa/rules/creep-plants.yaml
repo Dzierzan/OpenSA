@@ -76,8 +76,8 @@ puff:
 		HP: 4500
 	-AttackTurreted:
 	-WithAttackAnimation:
-	WithMakeAnimation:
-		Sequence: grow
+	#WithMakeAnimation:
+	#	Sequence: grow
 	WithSpawnsShrapnelAnimation:
 		Sequences: shoot
 	ExternalCondition@TRIGGER:
@@ -88,14 +88,14 @@ puff:
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		PauseOnCondition: !seed_attack || injured #|| !grown TODO requires fixing
+		PauseOnCondition: !seed_attack || injured || !grown
 	SpawnsShrapnel@2:
 		Weapon: puff_normal_seed
 		Amount: 1
 		Delay: 20
 		AimChance: 0
 		LocalOffset: 0,0,0
-		PauseOnCondition: !seed_attack || injured #|| !grown TODO requires fixing
+		PauseOnCondition: !seed_attack || injured || !grown
 	Plant:
 
 seed:
