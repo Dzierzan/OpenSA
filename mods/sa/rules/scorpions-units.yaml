@@ -26,7 +26,7 @@ scorpions_medium:
 	Inherits@3: ^AutoTargetDefault
 	Inherits@4: ^Paralyzed
 	Tooltip:
-		Name: Spear gun
+		Name: Spear Gun
 	Health:
 		HP: 8600
 	Mobile:

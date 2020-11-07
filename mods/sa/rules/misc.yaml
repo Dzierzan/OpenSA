@@ -234,6 +234,10 @@ World:
 		PlantActorShares: 50, 12, 12, 12, 12
 		Tileset: CANDY
 	TimeLimitManager:
+	RadarPings:
+		ShrinkSpeed: 5
+		RotationSpeed: 0.15
+
 
 EditorWorld:
 	Inherits: ^CoreWorld
