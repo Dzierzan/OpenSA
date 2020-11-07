@@ -16,7 +16,7 @@ anthole:
 	AlwaysVisible:
 	AntHole:
 		Actors: ant_bull_pirate, ants_grenadier_pirate, ants_bazooka_pirate
-		ActorShares: 34, 33, 33
+		ActorShares: 45, 45, 10
 		Amount: 1, 6
 		Delay: 40
 	Immobile:
