@@ -15,10 +15,10 @@ World:
 	-PlantSpawner@CANDY:
 
 Player:
-	-GrantConditionOnBotOwner@AntsAI:
-	ExternalCondition@AntsAI:
-		Condition: enable-ants-ai
-	UnitBuilderBotModule@AntsAI:
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
+	UnitBuilderBotModule@WaspsAI:
 		UnitsToBuild:
 			#ants_light: 0
 			ants_medium: 90
