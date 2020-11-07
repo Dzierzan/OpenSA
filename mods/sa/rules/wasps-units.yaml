@@ -19,6 +19,8 @@ wasps_light:
 	WithLoopedAttackSound:
 		Report: sounds|MACHINEGUN.SDF
 		Delay: 5
+	AutoTarget:
+		ScanRadius: 8
 
 wasps_medium:
 	Inherits@1: ^WaspsUnit
@@ -43,6 +45,8 @@ wasps_medium:
 		InvalidTargets: Paralyzed
 	AutoTargetPriority@COLONY:
 		InvalidTargets: Colony
+	AutoTarget:
+		ScanRadius: 15
 
 wasps_heavy:
 	Inherits@1: ^WaspsUnit
@@ -65,6 +69,8 @@ wasps_heavy:
 	WithLoopedAttackSound:
 		Report: sounds|SONIC.SDF
 		Delay: 4
+	AutoTarget:
+		ScanRadius: 8
 
 wasps.colorpicker:
 	Inherits: wasps_heavy

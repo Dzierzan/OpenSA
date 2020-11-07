@@ -41,6 +41,8 @@ scorpions_medium:
 		FireDelay: 4
 		LocalOffset: 450,0,0
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 17
 
 scorpions_heavy:
 	Inherits@1: ^ScorpionsUnit
@@ -63,6 +65,8 @@ scorpions_heavy:
 		FireDelay: 4
 		LocalOffset: 700,0,0
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 13
 
 scorpions.colorpicker:
 	Inherits: scorpions_light

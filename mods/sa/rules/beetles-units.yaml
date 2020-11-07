@@ -18,6 +18,8 @@ beetles_light:
 	WithLoopedAttackSound:
 		Report: sounds|MINIGUN.SDF
 		Delay: 6
+	AutoTarget:
+		ScanRadius: 6
 
 beetles_medium:
 	Inherits@1: ^BeetlesUnit
@@ -98,6 +100,8 @@ beetles_heavy:
 		Weapon: beetles_heavy
 		LocalOffset: 500,0,0
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 13
 
 beetles.colorpicker:
 	Inherits: beetles_light

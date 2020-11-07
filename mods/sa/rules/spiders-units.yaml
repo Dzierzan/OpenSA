@@ -39,6 +39,8 @@ spiders_medium:
 	Armament:
 		Weapon: spiders_medium
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 13
 
 spiders_heavy:
 	Inherits@1: ^SpidersUnit
@@ -61,6 +63,8 @@ spiders_heavy:
 		FireDelay: 2
 		LocalOffset: 500,0,0
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 17
 
 spiders.colorpicker:
 	Inherits: spiders_heavy

@@ -39,6 +39,8 @@ ants_medium:
 		FireDelay: 10
 		LocalOffset: 500,0,555
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 6
 
 ants_heavy:
 	Inherits@1: ^AntsUnit
@@ -59,6 +61,8 @@ ants_heavy:
 		FireDelay: 9
 		LocalOffset: 550,0,0
 		PauseOnCondition: paralyzed
+	AutoTarget:
+		ScanRadius: 10
 
 ants.colorpicker:
 	Inherits: ants_light
