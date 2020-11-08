@@ -108,9 +108,9 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	Range: 10c0
 	Projectile: Bullet
 		Speed: 100
-		LaunchAngle: 220
+		LaunchAngle: 125, 220
 		Inaccuracy: 100
-		BounceCount: 4
+		BounceCount: 4 #In this configuration wtih FireFragment, bouncing logic should be faulty.
 		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
 		InvalidBounceTerrain: Water
 		Image: projectiles
@@ -125,3 +125,12 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Explosions: medium_explosion
 		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water
+
+flying_machine_discharge:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	Burst: 2
+	ReloadDelay: 50
+	Warhead: FireFragment
+		Weapon: flying_machine
+		Offsets: 0,8c512,0
+		Rotate: True
