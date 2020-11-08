@@ -66,15 +66,14 @@ namespace OpenRA.Mods.OpenSA.Warheads
 
 			foreach (var offset in Offsets)
 			{
-				WVec targetVector;
-				if (UseZOffsetAsAbsoluteHeight)
-					targetVector = new WPos(epicenter.X + offset.X, epicenter.Y + offset.Y,
-						map.CenterOfCell(map.CellContaining(epicenter)).Z + offset.Z) - epicenter;
-				else
-					targetVector = offset;
+				var targetVector = offset;
 
 				if (Rotate && args.ImpactOrientation != WRot.None)
-					targetVector.Rotate(args.ImpactOrientation);
+					targetVector = targetVector.Rotate(args.ImpactOrientation);
+
+				if (UseZOffsetAsAbsoluteHeight)
+					targetVector = new WVec(targetVector.X, targetVector.Y,
+						map.CenterOfCell(map.CellContaining(epicenter + targetVector)).Z + targetVector.Z);
 
 				var fragmentTarget = Target.FromPos(epicenter + targetVector);
 				var fragmentFacing = (fragmentTarget.CenterPosition - target.CenterPosition).Yaw;
