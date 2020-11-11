@@ -80,15 +80,9 @@ Actors:
 	Actor10: plant_toad_stool
 		Owner: Neutral
 		Location: 6,106
-	Actor11: plant_toad_stool
-		Owner: Neutral
-		Location: 19,120
 	Actor12: plant_toad_stool
 		Owner: Neutral
 		Location: 7,120
-	Actor13: plant_toad_stool
-		Owner: Neutral
-		Location: 13,109
 	Actor14: plant_toad_stool
 		Owner: Neutral
 		Location: 3,98
@@ -104,12 +98,6 @@ Actors:
 	Actor18: plant_toad_stool
 		Owner: Neutral
 		Location: 3,111
-	Actor19: plant_toad_stool
-		Owner: Neutral
-		Location: 12,115
-	Actor20: plant_toad_stool
-		Owner: Neutral
-		Location: 23,118
 	Actor21: plant_toad_stool
 		Owner: Neutral
 		Location: 13,123
@@ -224,24 +212,6 @@ Actors:
 	Actor58: plant_brown_mushroom
 		Owner: Neutral
 		Location: 47,122
-	Actor59: plant_brown_mushroom
-		Owner: Neutral
-		Location: 56,115
-	Actor60: plant_brown_mushroom
-		Owner: Neutral
-		Location: 56,115
-	Actor61: plant_brown_mushroom
-		Owner: Neutral
-		Location: 50,120
-	Actor62: plant_brown_mushroom
-		Owner: Neutral
-		Location: 33,107
-	Actor63: plant_brown_mushroom
-		Owner: Neutral
-		Location: 31,110
-	Actor64: plant_brown_mushroom
-		Owner: Neutral
-		Location: 29,114
 	Actor65: plant_brown_mushroom
 		Owner: Neutral
 		Location: 20,108
@@ -575,5 +545,35 @@ Actors:
 	Actor176: plant_flower
 		Owner: Neutral
 		Location: 122,89
+	Actor178: plant_brown_mushroom
+		Owner: Neutral
+		Location: 55,116
+	Actor177: plant_brown_mushroom
+		Owner: Neutral
+		Location: 56,115
+	Actor61: plant_brown_mushroom
+		Owner: Neutral
+		Location: 50,120
+	Actor62: plant_brown_mushroom
+		Owner: Neutral
+		Location: 33,107
+	Actor63: plant_brown_mushroom
+		Owner: Neutral
+		Location: 31,110
+	Actor64: plant_brown_mushroom
+		Owner: Neutral
+		Location: 29,114
+	Actor20: plant_toad_stool
+		Owner: Neutral
+		Location: 23,118
+	Actor11: plant_toad_stool
+		Owner: Neutral
+		Location: 19,120
+	Actor19: plant_toad_stool
+		Owner: Neutral
+		Location: 12,115
+	Actor13: plant_toad_stool
+		Owner: Neutral
+		Location: 13,109
 
 Rules: rules.yaml
