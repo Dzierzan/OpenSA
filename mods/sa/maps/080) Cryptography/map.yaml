@@ -29,9 +29,9 @@ Players:
 		Enemies: Wasps, Beetles, Spiders
 	PlayerReference@Wasps:
 		Name: Wasps
+		Bot: wasps-ai
 		Faction: wasps
 		Color: F5D378
-		Bot: wasps-ai
 		Enemies: Beetles, Spiders, Creeps
 	PlayerReference@Beetles:
 		Name: Beetles
@@ -202,9 +202,6 @@ Actors:
 	Actor62: plant_smarty
 		Location: 36,48
 		Owner: Neutral
-	Actor63: plant_jelly_bean
-		Location: 58,26
-		Owner: Neutral
 	Actor64: plant_jelly_bean
 		Location: 16,80
 		Owner: Neutral
@@ -352,9 +349,6 @@ Actors:
 	Actor121: plant_smarty
 		Location: 94,48
 		Owner: Neutral
-	Actor123: plant_jelly_bean
-		Location: 100,34
-		Owner: Neutral
 	Actor124: plant_smarty
 		Location: 82,38
 		Owner: Neutral
@@ -453,9 +447,6 @@ Actors:
 		Owner: Neutral
 	Actor159: plant_jelly_bean
 		Location: 32,34
-		Owner: Neutral
-	Actor160: plant_jelly_bean
-		Location: 88,40
 		Owner: Neutral
 	Actor161: plant_choc_chip
 		Location: 38,44
@@ -745,5 +736,14 @@ Actors:
 	Actor260: plant_choc_chip
 		Owner: Neutral
 		Location: 77,51
+	Actor123: plant_jelly_bean
+		Location: 100,34
+		Owner: Neutral
+	Actor261: plant_jelly_bean
+		Owner: Neutral
+		Location: 57,27
+	Actor262: plant_jelly_bean
+		Owner: Neutral
+		Location: 87,39
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

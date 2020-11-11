@@ -437,18 +437,12 @@ Actors:
 	Actor129: plant_flower
 		Owner: Neutral
 		Location: 106,118
-	Actor130: plant_flower
-		Owner: Neutral
-		Location: 123,88
 	Actor131: plant_flower
 		Owner: Neutral
 		Location: 123,88
 	Actor132: plant_flower
 		Owner: Neutral
 		Location: 111,99
-	Actor133: plant_flower
-		Owner: Neutral
-		Location: 116,78
 	Actor134: plant_flower
 		Owner: Neutral
 		Location: 120,62
@@ -575,4 +569,11 @@ Actors:
 	Actor175: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 99,100
+	Actor133: plant_flower
+		Owner: Neutral
+		Location: 116,78
+	Actor176: plant_flower
+		Owner: Neutral
+		Location: 122,89
+
 Rules: rules.yaml
