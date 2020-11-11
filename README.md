@@ -16,7 +16,7 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 - Seamless zooming in and out,
 - Ability to queue units,
 - Rally points,
-- Units no longer wander around (creep units still can do it),
+- Units controled by player are less likely to wander than units controled by AI.
 - More advanced map editor with the ability of creating own missions with objectives
 - Ability of adding own units to the game
 - There's no random map generator in OpenSA, however the project is able to convert legacy maps to ORA format, so nothing is lost.
