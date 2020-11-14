@@ -1,0 +1,43 @@
+World:
+	PirateSpawner:
+		SpawnInterval: 900, 1100
+		InitialSpawnDelay: 900, 1100
+	CreepFlyerSpawner@dragonfly:
+		SpawnInterval: 350, 550
+		InitialSpawnDelay: 350, 550
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	PlantSpawner@NORMAL:
+		Maximum: 20
+		SpawnInterval: 100, 200
+		InitialSpawnDelay: 100, 200
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+Player:
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeeltesAI:
+		Condition: enable-beetles-ai
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			ants_light: 25
+			ants_medium: 100
+			ants_heavy: 100
+			beetles_light: 25
+			beetles_medium: 100
+			beetles_heavy: 100
+			scorpions_light: 25
+			scorpions_medium: 100
+			scorpions_heavy: 100
+			spiders_light: 25
+			spiders_medium: 100
+			spiders_heavy: 100
+			wasps_light: 25
+			wasps_medium: 100
+			wasps_heavy: 100
+	SquadManagerBotModule@BeetlesAI:
+		SquadSize: 11
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@SpidersAI:

@@ -37,6 +37,3 @@ Player:
 			wasps_light: 25
 			wasps_medium: 75
 			wasps_heavy: 100
-	SquadManagerBotModule@WaspsAI:
-		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
-	-GrantConditionOnBotOwner@AntsAI:
