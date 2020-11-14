@@ -1,0 +1,33 @@
+World:
+	PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	PlantSpawner@SWAMP:
+		Maximum: 6
+	-PlantSpawner@CANDY:
+
+Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			ants_light: 50
+			ants_medium: 25
+			ants_heavy: 100
+			beetles_light: 50
+			beetles_medium: 25
+			beetles_heavy: 100
+			scorpions_light: 50
+			scorpions_medium: 25
+			scorpions_heavy: 100
+			spiders_light: 50
+			spiders_medium: 25
+			spiders_heavy: 100
+			wasps_light: 50
+			wasps_medium: 25
+			wasps_heavy: 100
