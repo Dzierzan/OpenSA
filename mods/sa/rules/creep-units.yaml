@@ -173,6 +173,7 @@ flying_machine:
 	PeriodicDischarge:
 		Weapon: flying_machine_discharge
 		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
 	AmbientSound@LOOP:
 		SoundFiles: sounds|FLYINGMACHINE.SDF
 	AmbientSound@STEAM:
@@ -197,6 +198,6 @@ flying_machine:
 		VoiceSet: NeutralVoiceFlyingMachine
 	DeathSounds:
 		Voice: Die
-	Explodes: #TODO It doesn't work
+	Explodes:
 		Weapon: dieFlyingMachine
 		EmptyWeapon: dieFlyingMachine

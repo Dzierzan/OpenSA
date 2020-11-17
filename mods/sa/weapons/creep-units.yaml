@@ -102,15 +102,15 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water 
 
-flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+flying_machine:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 100 #50
+	ReloadDelay: 100
 	Range: 10c0
 	Projectile: Bullet
-		Speed: 100
+		Speed: 150
 		LaunchAngle: 125, 220
-		Inaccuracy: 100
-		BounceCount: 4 #In this configuration wtih FireFragment, bouncing logic should be faulty.
+		Inaccuracy: 1000
+		BounceCount: 3
 		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
 		InvalidBounceTerrain: Water
 		Image: projectiles
@@ -129,7 +129,7 @@ flying_machine: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 flying_machine_discharge:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	Burst: 2
-	ReloadDelay: 50
+	ReloadDelay: 20
 	Warhead: FireFragment
 		Weapon: flying_machine
 		Offsets: 0,8c512,0
