@@ -95,7 +95,7 @@ puff:
 		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
-		Explosions: medium_explosion
+		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Paralyzed, Water, Air
 
