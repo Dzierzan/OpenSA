@@ -156,9 +156,9 @@ flying_machine:
 	Range: 10c0
 	Projectile: Bullet
 		Speed: 150
-		LaunchAngle: 125, 220
-		Inaccuracy: 1000
-		BounceCount: 3
+		LaunchAngle: 125, 200
+		Inaccuracy: 3000
+		BounceCount: 2
 		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
 		InvalidBounceTerrain: Water
 		Image: projectiles
@@ -176,7 +176,6 @@ flying_machine:
 
 flying_machine_discharge:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Burst: 2
 	ReloadDelay: 20
 	Warhead: FireFragment
 		Weapon: flying_machine

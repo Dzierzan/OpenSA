@@ -182,7 +182,11 @@ flying_machine:
 		HP: 25000
 	Aircraft:
 		Speed: 105
-	PeriodicDischarge:
+	PeriodicDischarge@1:
+		Weapon: flying_machine_discharge
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@2:
 		Weapon: flying_machine_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
