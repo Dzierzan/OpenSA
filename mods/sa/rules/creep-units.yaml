@@ -147,18 +147,30 @@ moth:
 		HP: 16000
 	Aircraft:
 		Speed: 220
-	SpawnsShrapnel@puff:
-		Weapon: moth
-		Delay: 25
-		AimChance: 0
-		Amount: 5
-		PauseOnCondition: paralyzed
-	SpawnsShrapnel@normal_seed:
-		Weapon: puff_normal_seed
-		Delay: 25
-		AimChance: 0
-		Amount: 1
-		PauseOnCondition: paralyzed
+	PeriodicDischarge@1:
+		Weapon: moth_discharge_1
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@2:
+		Weapon: moth_discharge_2
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@3:
+		Weapon: moth_discharge_3
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@4:
+		Weapon: moth_discharge_4
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@5:
+		Weapon: moth_discharge_5
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
+	PeriodicDischarge@6:
+		Weapon: moth_normal_seed_discharge
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
 	AmbientSound:
 		SoundFiles: sounds|MOTHFLUTTER.SDF
 

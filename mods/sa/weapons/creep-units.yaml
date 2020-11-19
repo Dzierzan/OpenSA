@@ -80,15 +80,15 @@ fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water
 
-moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+moth:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 50
 	Range: 6c0
 	Projectile: Bullet
 		Speed: 170, 220
 		Blockable: false
-		LaunchAngle: 170, 200
-		Inaccuracy: 100
+		LaunchAngle: 125, 175
+		Inaccuracy: 3000
 		Image: projectiles
 		Sequences: puff
 	Warhead@Damage: SpreadDamage
@@ -101,6 +101,54 @@ moth: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water 
+
+moth_discharge_1:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: moth
+		Offsets: 0,5c0,0
+		Rotate: True
+
+moth_discharge_2:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: moth
+		Offsets:  0,5c0,0
+		Rotate: True
+
+moth_discharge_3:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: moth
+		Offsets: 0,5c0,0
+		Rotate: True
+
+moth_discharge_4:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: moth
+		Offsets: 0,5c0,0
+		Rotate: True
+
+moth_discharge_5:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: moth
+		Offsets: 0,5c0,0
+		Rotate: True
+
+moth_normal_seed_discharge:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	ReloadDelay: 20
+	Warhead: FireFragment
+		Weapon: puff_normal_seed
+		Offsets: 0,5c0,0
+		Rotate: True
 
 flying_machine:
 	ValidTargets: Ground, Paralyzed, Water, Air
