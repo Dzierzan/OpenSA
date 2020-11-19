@@ -39,9 +39,6 @@ Players:
 		Enemies: Creeps
 
 Actors:
-	Actor20: plant_clover
-		Location: 60,116
-		Owner: Neutral
 	Actor21: plant_moon_flower
 		Location: 52,6
 		Owner: Neutral
@@ -162,9 +159,6 @@ Actors:
 	Actor64: plant_moon_flower
 		Location: 34,16
 		Owner: Neutral
-	Actor65: plant_clover
-		Location: 74,82
-		Owner: Neutral
 	Actor66: plant_clover
 		Location: 46,94
 		Owner: Neutral
@@ -212,9 +206,6 @@ Actors:
 		Owner: Neutral
 	Actor82: plant_moon_flower
 		Location: 28,24
-		Owner: Neutral
-	Actor83: plant_moon_mushroom
-		Location: 4,36
 		Owner: Neutral
 	Actor84: plant_clover
 		Location: 16,40
@@ -465,9 +456,6 @@ Actors:
 	Actor171: plant_clover
 		Location: 8,82
 		Owner: Neutral
-	Actor172: plant_clover
-		Location: 124,108
-		Owner: Neutral
 	Actor173: plant_clover
 		Location: 64,24
 		Owner: Neutral
@@ -584,3 +572,15 @@ Actors:
 	Actor192: mpspawn
 		Owner: Neutral
 		Location: 117,53
+	Actor211: plant_moon_mushroom
+		Owner: Neutral
+		Location: 3,37
+	Actor212: plant_clover
+		Owner: Neutral
+		Location: 74,81
+	Actor213: plant_clover
+		Owner: Neutral
+		Location: 123,107
+	Actor214: plant_clover
+		Owner: Neutral
+		Location: 59,116
