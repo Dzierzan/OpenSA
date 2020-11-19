@@ -148,23 +148,23 @@ moth:
 	Aircraft:
 		Speed: 220
 	PeriodicDischarge@1:
-		Weapon: moth_discharge_1
+		Weapon: moth_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
 	PeriodicDischarge@2:
-		Weapon: moth_discharge_2
+		Weapon: moth_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
 	PeriodicDischarge@3:
-		Weapon: moth_discharge_3
+		Weapon: moth_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
 	PeriodicDischarge@4:
-		Weapon: moth_discharge_4
+		Weapon: moth_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
 	PeriodicDischarge@5:
-		Weapon: moth_discharge_5
+		Weapon: moth_discharge
 		LocalOffset: 0,0,0
 		RequiresCondition: !paralyzed
 	PeriodicDischarge@6:

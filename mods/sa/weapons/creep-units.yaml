@@ -98,43 +98,11 @@ moth:
 		ValidTargets: Ground, Paralyzed, Water, Air
 	Warhead@Effect: CreateEffect
 		Image: explosions
-		Explosions: medium_explosion
+		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water 
 
-moth_discharge_1:
-	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20
-	Warhead: FireFragment
-		Weapon: moth
-		Offsets: 0,5c0,0
-		Rotate: True
-
-moth_discharge_2:
-	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20
-	Warhead: FireFragment
-		Weapon: moth
-		Offsets:  0,5c0,0
-		Rotate: True
-
-moth_discharge_3:
-	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20
-	Warhead: FireFragment
-		Weapon: moth
-		Offsets: 0,5c0,0
-		Rotate: True
-
-moth_discharge_4:
-	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20
-	Warhead: FireFragment
-		Weapon: moth
-		Offsets: 0,5c0,0
-		Rotate: True
-
-moth_discharge_5:
+moth_discharge:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 20
 	Warhead: FireFragment
