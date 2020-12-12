@@ -19,7 +19,7 @@ Packages:
 
 MapFolders:
 	sa|maps: System
-	~^maps/sa/dev_version: User
+	~^maps/sa/{DEV_VERSION}: User
 
 Rules:
 	sa|rules/palettes.yaml
