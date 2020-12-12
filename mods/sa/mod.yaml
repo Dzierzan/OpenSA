@@ -267,14 +267,17 @@ ModContent:
 	InstallPromptMessage: OpenSA requires artwork and audio from the original game.
 	ContentInstallerMod: sacontent
 	QuickDownload: basefiles
-	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install.
+	HeaderMessage: Game content may be extracted from an existing installation.
 	Packages:
 		base: Base Game Files
 			TestFiles: ^Content/sa/Sprites/Game.ANI, ^Content/sa/Sprites/Game.DDF, ^Content/sa/Sprites/Game.MIN, ^Content/sa/Sounds/Game.SDF, ^Content/sa/Sprites/Start.ANI, ^Content/sa/Sprites/Start.DDF, ^Content/sa/Sprites/Start.MIN, ^Content/sa/Sounds/Start.SDF
 			Required: true
 			Download: basefiles
+			Sources: gate5
 	Downloads:
 		sa|installer/downloads.yaml
+	Sources:
+		sa|installer/gate5.yaml
 
 DiscordService:
 	ApplicationId: 754764145668128848
