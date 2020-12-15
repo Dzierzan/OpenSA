@@ -31,13 +31,13 @@ ants_grenadier_pirate:
 		ImpactSounds: sounds|EXPLOSION1.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water
 
-dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+dragonfly_left:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20
+	ReloadDelay: 5
 	Range: 5c0
 	Projectile: GravityBomb
-		Velocity: 0, 50, -70
-		Acceleration: 0, 0, 0
+		Velocity: -75, 125, 0
+		Acceleration: 0, 0, -10
 		Image: projectiles
 		Sequences: brakebomb
 	Warhead@Damage: SpreadDamage
@@ -52,10 +52,8 @@ dragonfly_left: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 
 dragonfly_right:
 	Inherits: dragonfly_left
-	ReloadDelay: 40
 	Projectile: GravityBomb
-		Velocity: 0, -50, -70
-		Acceleration: 0, 0, 0
+		Velocity: 75, 125, 0
 
 fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
 	ValidTargets: Ground, Paralyzed, Water, Air

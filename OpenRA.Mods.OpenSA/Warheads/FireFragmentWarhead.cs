@@ -71,12 +71,16 @@ namespace OpenRA.Mods.OpenSA.Warheads
 				if (Rotate && args.ImpactOrientation != WRot.None)
 					targetVector = targetVector.Rotate(args.ImpactOrientation);
 
-				if (UseZOffsetAsAbsoluteHeight)
-					targetVector = new WVec(targetVector.X, targetVector.Y,
-						map.CenterOfCell(map.CellContaining(epicenter + targetVector)).Z + targetVector.Z);
+				var fragmentTargetPosition = epicenter + targetVector;
 
-				var fragmentTarget = Target.FromPos(epicenter + targetVector);
-				var fragmentFacing = (fragmentTarget.CenterPosition - target.CenterPosition).Yaw;
+				if (UseZOffsetAsAbsoluteHeight)
+				{
+					fragmentTargetPosition = new WPos(fragmentTargetPosition.X, fragmentTargetPosition.Y,
+						world.Map.CenterOfCell(world.Map.CellContaining(fragmentTargetPosition)).Z + offset.Z);
+				}
+
+				var fragmentTarget = Target.FromPos(fragmentTargetPosition);
+				var fragmentFacing = (fragmentTargetPosition - target.CenterPosition).Yaw;
 
 				var projectileArgs = new ProjectileArgs
 				{
@@ -96,7 +100,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 					CurrentSource = () => target.CenterPosition,
 					SourceActor = firedBy,
 					GuidedTarget = fragmentTarget,
-					PassiveTarget = fragmentTarget.CenterPosition
+					PassiveTarget = fragmentTargetPosition
 				};
 
 				if (projectileArgs.Weapon.Projectile != null)

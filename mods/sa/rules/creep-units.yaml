@@ -114,11 +114,30 @@ dragonfly:
 		HP: 25000
 	Aircraft:
 		Speed: 105
-	SpawnsShrapnel@RIGHT_BOMB:
-		Weapon: dragonfly_right
-		Delay: 10
-		Amount: 1
+	GrantPeriodicCondition@dragonflywave:
+		Condition: dragonflywave
+		ActiveDuration: 20
+		CooldownDuration: 80
 		PauseOnCondition: paralyzed
+	GrantPeriodicCondition@dragonflyreload:
+		Condition: dragonflyreload
+		ActiveDuration: 5
+		CooldownDuration: 5
+		PauseOnCondition: paralyzed || dragonflywave
+	SpawnsFragment@LEFT_BOMB:
+		Offsets: 0, -5, 0
+		Weapon: dragonfly_left
+		Delay: 5
+		Rotate: true
+		UseZOffsetAsAbsoluteHeight: true
+		PauseOnCondition: paralyzed || dragonflyreload || dragonflywave
+	SpawnsFragment@RIGHT_BOMB:
+		Offsets: 0, 5, 0
+		Weapon: dragonfly_right
+		Delay: 5
+		Rotate: true
+		UseZOffsetAsAbsoluteHeight: true
+		PauseOnCondition: paralyzed || !dragonflyreload || dragonflywave
 	AmbientSound:
 		SoundFiles: sounds|BOMBERBUZZ.SDF
 
