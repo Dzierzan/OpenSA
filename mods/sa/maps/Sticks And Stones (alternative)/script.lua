@@ -4,7 +4,7 @@ end
 
 WorldLoaded = function()
 
-	Camera.Position = Actor87.CenterPosition
+	Camera.Position = Actor163.CenterPosition
 
 	Wasps = Player.GetPlayer("Wasps")
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
