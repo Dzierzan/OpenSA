@@ -3,7 +3,7 @@ World:
 	-CreepFlyerSpawner@dragonfly:
 	CreepFlyerSpawner@fly:
 		SpawnInterval: 525, 625
-		InitialSpawnDelay: 525, 625 
+		InitialSpawnDelay: 525, 625
 	-CreepFlyerSpawner@moth:
 	-CreepFlyerSpawner@flyingmachine:
 	-PlantSpawner@NORMAL:

@@ -25,7 +25,7 @@ Background@MAINMENU_PRERELEASE_NOTIFICATION:
 			Width: PARENT_RIGHT - 30
 			Height: 16
 			Align: Center
-			Text: Be informed that some features or missions are either missing or incomplete. 
+			Text: Be informed that some features or missions are either missing or incomplete.
 		Label@PROMPT_TEXT_C:
 			X: 15
 			Y: 104

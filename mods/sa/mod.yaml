@@ -7,9 +7,9 @@ PackageFormats: SdfPackage, DdfPackage
 
 Packages:
 	~^Content/sa/
-	.
+	^EngineDir
 	$sa: sa
-	./mods/common: common
+	^EngineDir|mods/common: common
 	~Sounds/Game.SDF: sounds
 	~Sounds/Start.SDF: sounds_MENU
 	~Sprites/Game.DDF: sprites
@@ -19,7 +19,7 @@ Packages:
 
 MapFolders:
 	sa|maps: System
-	~^maps/sa/{DEV_VERSION}: User
+	~^SupportDir|maps/sa/{DEV_VERSION}: User
 
 Rules:
 	sa|rules/palettes.yaml
@@ -94,8 +94,8 @@ Chrome:
 	sa|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	sa|OpenRA.Mods.OpenSA.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.OpenSA.dll
 
 ChromeLayout:
 	common|chrome/ingame.yaml

@@ -98,7 +98,7 @@ moth:
 		Image: explosions
 		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water 
+		ValidTargets: Ground, Air, Paralyzed, Water
 
 moth_discharge:
 	ValidTargets: Ground, Paralyzed, Water, Air

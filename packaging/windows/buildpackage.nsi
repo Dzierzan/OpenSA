@@ -1,18 +1,18 @@
-; Copyright 2007-2019 OpenRA developers (see AUTHORS)
-; This file is part of OpenRA.
+; Copyright 2007-2019 OpenSA developers (see AUTHORS)
+; This file is part of OpenSA.
 ;
-;  OpenRA is free software: you can redistribute it and/or modify
+;  OpenSA is free software: you can redistribute it and/or modify
 ;  it under the terms of the GNU General Public License as published by
 ;  the Free Software Foundation, either version 3 of the License, or
 ;  (at your option) any later version.
 ;
-;  OpenRA is distributed in the hope that it will be useful,
+;  OpenSA is distributed in the hope that it will be useful,
 ;  but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;  GNU General Public License for more details.
 ;
 ;  You should have received a copy of the GNU General Public License
-;  along with OpenRA.  If not, see <http://www.gnu.org/licenses/>.
+;  along with OpenSA.  If not, see <http://www.gnu.org/licenses/>.
 
 
 !include "MUI2.nsh"
@@ -20,10 +20,26 @@
 !include "WordFunc.nsh"
 
 Name "${PACKAGING_DISPLAY_NAME}"
-OutFile "OpenRA.Setup.exe"
+OutFile "${OUTFILE}"
 
-InstallDir "$PROGRAMFILES\${PACKAGING_WINDOWS_INSTALL_DIR_NAME}"
-InstallDirRegKey HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}" "InstallDir"
+ManifestDPIAware true
+
+Unicode True
+
+Function .onInit
+	!ifndef USE_PROGRAMFILES32
+		SetRegView 64
+	!endif
+	ReadRegStr $INSTDIR HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}" "InstallDir"
+	StrCmp $INSTDIR "" unset done
+	unset:
+	!ifndef USE_PROGRAMFILES32
+		StrCpy $INSTDIR "$PROGRAMFILES64\${PACKAGING_WINDOWS_INSTALL_DIR_NAME}"
+	!else
+		StrCpy $INSTDIR "$PROGRAMFILES32\${PACKAGING_WINDOWS_INSTALL_DIR_NAME}"
+	!endif
+	done:
+FunctionEnd
 
 SetCompressor lzma
 RequestExecutionLevel admin
@@ -63,10 +79,12 @@ Section "-Reg" Reg
 	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
 	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
 
-	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "" "URL:Run game ${DISCORD_APP_ID} protocol"
-	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}" "URL Protocol" ""
-	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
-	WriteRegStr HKLM "Software\Classes\discord-${DISCORD_APP_ID}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe"
+	!ifdef USE_DISCORDID
+		WriteRegStr HKLM "Software\Classes\discord-${USE_DISCORDID}" "" "URL:Run game ${USE_DISCORDID} protocol"
+		WriteRegStr HKLM "Software\Classes\discord-${USE_DISCORDID}" "URL Protocol" ""
+		WriteRegStr HKLM "Software\Classes\discord-${USE_DISCORDID}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
+		WriteRegStr HKLM "Software\Classes\discord-${USE_DISCORDID}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe"
+	!endif
 
 SectionEnd
 
@@ -74,31 +92,15 @@ Section "Game" GAME
 	SectionIn RO
 
 	SetOutPath "$INSTDIR"
-	File /r "${SRCDIR}\mods"
-	File "${SRCDIR}\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe"
-	File "${SRCDIR}\OpenRA.Game.exe"
-	File "${SRCDIR}\OpenRA.Game.exe.config"
-	File "${SRCDIR}\OpenRA.Utility.exe"
-	File "${SRCDIR}\OpenRA.Server.exe"
-	File "${SRCDIR}\OpenRA.Platforms.Default.dll"
-	File "${SRCDIR}\ICSharpCode.SharpZipLib.dll"
-	File "${SRCDIR}\FuzzyLogicLibrary.dll"
-	File "${SRCDIR}\Open.Nat.dll"
+	File "${SRCDIR}\*.exe"
+	File "${SRCDIR}\*.exe.config"
+	File "${SRCDIR}\*.dll"
+	File "${SRCDIR}\*.ico"
 	File "${SRCDIR}\VERSION"
 	File "${SRCDIR}\AUTHORS"
 	File "${SRCDIR}\COPYING"
-	File "${SRCDIR}\${MOD_ID}.ico"
-	File "${SRCDIR}\SDL2-CS.dll"
-	File "${SRCDIR}\OpenAL-CS.Core.dll"
 	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
-	File "${SRCDIR}\eluant.dll"
-	File "${SRCDIR}\BeaconLib.dll"
-	File "${SRCDIR}\DiscordRPC.dll"
-	File "${SRCDIR}\Newtonsoft.Json.dll"
-	File "${SRCDIR}\soft_oal.dll"
-	File "${SRCDIR}\SDL2.dll"
-	File "${SRCDIR}\freetype6.dll"
-	File "${SRCDIR}\lua51.dll"
+	File /r "${SRCDIR}\mods"
 
 	!insertmacro MUI_STARTMENU_WRITE_BEGIN Application
 		CreateDirectory "$SMPROGRAMS\$StartMenuFolder"
@@ -119,16 +121,16 @@ Section "Game" GAME
 	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}" "EstimatedSize" "$0"
 
 	SetShellVarContext all
-	CreateDirectory "$APPDATA\OpenRA\ModMetadata"
-	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --register-mod "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" system'
-	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --clear-invalid-mod-registrations system'
+	CreateDirectory "$APPDATA\OpenSA\ModMetadata"
+	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --register-mod "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" system'
+	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --clear-invalid-mod-registrations system'
 	SetShellVarContext current
 
 SectionEnd
 
 Section "Desktop Shortcut" DESKTOPSHORTCUT
 	SetOutPath "$INSTDIR"
-	CreateShortCut "$DESKTOP\${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
+	CreateShortCut "$DESKTOP\OpenSA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
 		"$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" "" "" ""
 SectionEnd
 
@@ -166,53 +168,36 @@ SectionEnd
 
 !macro Clean UN
 Function ${UN}Clean
-	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --unregister-mod system'
+	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --unregister-mod system'
 
 	RMDir /r $INSTDIR\mods
 	RMDir /r $INSTDIR\maps
 	RMDir /r $INSTDIR\glsl
 	RMDir /r $INSTDIR\lua
-	Delete "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe"
-	Delete $INSTDIR\OpenRA.Game.exe
-	Delete $INSTDIR\OpenRA.Game.exe.config
-	Delete $INSTDIR\OpenRA.Utility.exe
-	Delete $INSTDIR\OpenRA.Server.exe
-	Delete $INSTDIR\OpenRA.Platforms.Default.dll
-	Delete $INSTDIR\ICSharpCode.SharpZipLib.dll
-	Delete $INSTDIR\FuzzyLogicLibrary.dll
-	Delete $INSTDIR\Open.Nat.dll
+	Delete $INSTDIR\*.exe
+	Delete $INSTDIR\*.exe.config
+	Delete $INSTDIR\*.dll
+	Delete $INSTDIR\*.ico
 	Delete $INSTDIR\VERSION
 	Delete $INSTDIR\AUTHORS
 	Delete $INSTDIR\COPYING
-	Delete $INSTDIR\${MOD_ID}.ico
 	Delete $INSTDIR\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
-	Delete $INSTDIR\soft_oal.dll
-	Delete $INSTDIR\SDL2.dll
-	Delete $INSTDIR\lua51.dll
-	Delete $INSTDIR\eluant.dll
-	Delete $INSTDIR\freetype6.dll
-	Delete $INSTDIR\SDL2-CS.dll
-	Delete $INSTDIR\OpenAL-CS.Core.dll
-	Delete $INSTDIR\BeaconLib.dll
-	Delete $INSTDIR\DiscordRPC.dll
-	Delete $INSTDIR\Newtonsoft.Json.dll
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 	DeleteRegKey HKLM "Software\Classes\opensa-${TAG}"
-	DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
 
 	Delete $INSTDIR\uninstaller.exe
 	RMDir $INSTDIR
 
 	!insertmacro MUI_STARTMENU_GETFOLDER Application $StartMenuFolder
 
-	; Clean up start menu: Delete all our icons, and the OpenRA folder
+	; Clean up start menu: Delete all our icons, and the OpenSA folder
 	; *only* if we were the only installed version
 	Delete "$SMPROGRAMS\$StartMenuFolder\${PACKAGING_DISPLAY_NAME}.lnk"
 	RMDir "$SMPROGRAMS\$StartMenuFolder"
 
-	Delete "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk"
+	Delete "$DESKTOP\OpenSA - ${PACKAGING_DISPLAY_NAME}.lnk"
 	DeleteRegKey HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 FunctionEnd
 !macroend

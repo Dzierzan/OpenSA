@@ -29,13 +29,14 @@ namespace OpenRA.Mods.OpenSA.Warheads
 	{
 		public readonly string[] BitActors = { "colony_bit1", "colony_bit2", "colony_bit3", "colony_bit4" };
 
-		public override void DoImpact(Target target, WarheadArgs args)
+		public override void DoImpact(in Target target, WarheadArgs args)
 		{
+			var targetPostion = target.CenterPosition;
 			args.SourceActor.World.AddFrameEndTask(world =>
 			{
 				world.CreateActor(BitActors.Random(world.SharedRandom), new TypeDictionary
 				{
-					new LocationInit(world.Map.CellContaining(target.CenterPosition)),
+					new LocationInit(world.Map.CellContaining(targetPostion)),
 					new ColonyBitInit(args.SourceActor),
 					new OwnerInit(world.Players.First(player => player.InternalName == "Neutral"))
 				});
