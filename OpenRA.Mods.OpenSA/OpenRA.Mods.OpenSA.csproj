@@ -6,7 +6,7 @@
     <LangVersion>7.3</LangVersion>
     <DebugSymbols>true</DebugSymbols>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <OutputPath>../mods/sa</OutputPath>
+    <OutputPath>../engine/bin</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -21,10 +21,6 @@
     <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Eluant">
-      <HintPath>../engine/thirdparty/download/Eluant.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <ProjectReference Include="../engine/OpenRA.Game/OpenRA.Game.csproj">
       <Private>False</Private>
     </ProjectReference>

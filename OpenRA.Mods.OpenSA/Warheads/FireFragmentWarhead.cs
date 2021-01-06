@@ -48,7 +48,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(Weapon.ToLowerInvariant()));
 		}
 
-		public override void DoImpact(Target target, WarheadArgs args)
+		public override void DoImpact(in Target target, WarheadArgs args)
 		{
 			var firedBy = args.SourceActor;
 			if (!target.IsValidFor(firedBy))
@@ -79,6 +79,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 						world.Map.CenterOfCell(world.Map.CellContaining(fragmentTargetPosition)).Z + offset.Z);
 				}
 
+				var targetPostion = target.CenterPosition;
 				var fragmentTarget = Target.FromPos(fragmentTargetPosition);
 				var fragmentFacing = (fragmentTargetPosition - target.CenterPosition).Yaw;
 
@@ -96,8 +97,8 @@ namespace OpenRA.Mods.OpenSA.Warheads
 					RangeModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IRangeModifier>()
 						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
 
-					Source = target.CenterPosition,
-					CurrentSource = () => target.CenterPosition,
+					Source = targetPostion,
+					CurrentSource = () => targetPostion,
 					SourceActor = firedBy,
 					GuidedTarget = fragmentTarget,
 					PassiveTarget = fragmentTargetPosition

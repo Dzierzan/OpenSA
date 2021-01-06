@@ -6,7 +6,7 @@ Metadata:
 Packages:
 	.
 	$sacontent: sacontent
-	./mods/common: common
+	^EngineDir|mods/common: common
 
 Rules:
 	sacontent|rules.yaml
@@ -18,7 +18,7 @@ Chrome:
 	sacontent|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Common.dll
 
 ChromeLayout:
 	sacontent|content.yaml

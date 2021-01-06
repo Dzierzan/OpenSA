@@ -38,7 +38,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			this.info = info;
 		}
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel)
 		{
 			if (sound == null)
 				sound = Game.Sound.PlayLooped(SoundType.World, info.Report.Random(self.World.SharedRandom), self.CenterPosition);
@@ -46,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			tick = self.World.WorldTick + info.Delay;
 		}
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
 		void ITick.Tick(Actor self)
 		{

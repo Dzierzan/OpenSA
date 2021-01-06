@@ -305,13 +305,13 @@
 ^AffectsDeathLolly:
 	ProximityExternalCondition@SELF_DESTRUCT:
 		Condition: self_destruct
-		ValidStances: enemy
+		ValidRelationships: enemy
 		Range: 2c0
 
 ^AffectsSeedBall:
 	ProximityExternalCondition@TRIGGER:
 		Condition: seed_attack
-		ValidStances: enemy
+		ValidRelationships: enemy
 		Range: 5c0
 
 # Creates special effect when actor is disabled

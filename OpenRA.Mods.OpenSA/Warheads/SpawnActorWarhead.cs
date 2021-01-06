@@ -65,7 +65,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 			}
 		}
 
-		public override void DoImpact(Target target, WarheadArgs args)
+		public override void DoImpact(in Target target, WarheadArgs args)
 		{
 			var firedBy = args.SourceActor;
 			if (!target.IsValidFor(firedBy))

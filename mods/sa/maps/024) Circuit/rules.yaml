@@ -7,7 +7,7 @@ World:
 	PlantSpawner@NORMAL:
 		Maximum: 8
 		SpawnInterval: 255, 655
-		InitialSpawnDelay: 255, 655	
+		InitialSpawnDelay: 255, 655
 	-PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
 	-PlantSpawner@CANDY:
