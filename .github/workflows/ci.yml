@@ -19,6 +19,7 @@ jobs:
           awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format. File must be saved using unix-style (LF, not CRLF or CR) line endings.\n"; exit 1);
       - name: Check Code
         run: |
+          dotnet nuget locals all --clear
           make check
       - name: Check Mod
         run: |
