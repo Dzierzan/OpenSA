@@ -146,7 +146,7 @@ ChromeLayout:
 	common|chrome/gamesave-loading.yaml
 
 AssetBrowser:
-	SupportedExtensions: .ani, .ddf
+	SupportedExtensions: .ddf
 
 WebServices:
 	GameNews: https://localhost/gamenews # TODO
