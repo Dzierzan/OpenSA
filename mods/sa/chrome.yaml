@@ -8,7 +8,7 @@
 	Image: glyphs.png
 
 ^LoadScreen:
-	Image: loadscreen.png
+	Image: loading0.png
 
 sidebar:
 	Inherits: ^Chrome
