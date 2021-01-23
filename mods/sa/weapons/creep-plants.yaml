@@ -140,15 +140,14 @@ gas:
 		Explosions: gas_end
 		ValidTargets: Ground, Paralyzed, Water, Air
 
-freckles: #Temporary weapon, needs to be changed!!!
+freckles:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 20 #50
-	Range: 4c0
+	ReloadDelay: 10 #50
+	Range: 2c512
 	Projectile: Bullet
 		Speed: 80
 		Blockable: false
 		LaunchAngle: 150
-		Inaccuracy: 2500
 		Image: projectiles
 		Sequences: freckles
 	Warhead@Damage: SpreadDamage

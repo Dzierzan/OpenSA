@@ -170,8 +170,10 @@ freckle:
 	WithLoopedAttackSound:
 		Report: sounds|FRECKLEFIRE.SDF
 		Delay: 20
-	AttackTurreted:
-		Armaments: primary, secondary, 3rd, 4th, 5th
+	AttackVortex@1:
+		Armaments: primary, secondary, tertiary
+		PauseOnCondition: injured || !grown
+		RotationRate: 6
 	Armament@1:
 		Name: primary
 		Weapon: freckles
@@ -179,16 +181,12 @@ freckle:
 		Name: secondary
 		Weapon: freckles
 	Armament@3:
-		Name: 3rd
+		Name: tertiary
 		Weapon: freckles
-	Armament@4:
-		Name: 4th
-		Weapon: freckles
-	Armament@5:
-		Name: 5th
-		Weapon: freckles
+	-AttackTurreted:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
+	-Turreted:
 	Plant:
 
 lolly_blue:
