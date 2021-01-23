@@ -67,6 +67,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (colonyObjectiveID < 0)
 				colonyObjectiveID = missionObjectives.Add(self.Owner, info.ColonyObjective, "Primary", inhibitAnnouncement: true);
 
+			// Nothing can be done in this case.
+			if (!colonies.Any(c => c.Owner == self.Owner) && self.Owner.HasNoRequiredUnits(shortGame))
+			{
+				missionObjectives.MarkFailed(self.Owner, conquestObjectiveID);
+				missionObjectives.MarkFailed(self.Owner, colonyObjectiveID);
+			}
+
 			// Require neutral colonies to get captured first.
 			if (self.World.ActorsHavingTrait<DefeatedColony>().Any())
 				return;
