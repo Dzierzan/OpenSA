@@ -60,6 +60,7 @@
 	GrantConditionWhileProducing:
 		Condition: production
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	Production:
 	ProductionQueue:
 		InfiniteBuildLimit: 25
@@ -97,6 +98,7 @@
 		Weapon: colony_bit
 		CaptureSound: sounds|POWERUP.SDF
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
 		TargetTypes: Ground, Colony
@@ -192,6 +194,7 @@
 	RevealsShroud:
 		Range: 10c0
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Living:
@@ -236,6 +239,7 @@
 		Palette: OpenSA
 		Scale: 1.1
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Wanders:
@@ -266,6 +270,7 @@
 		Step: 50
 		StartIfBelow: 100
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	WithDeathAnimation:
 		FallbackSequence: die
 	Husk:
@@ -362,6 +367,7 @@
 	RenderSprites:
 		Palette: OpenSA
 	CustomAppearsOnRadar:
+	RadarColorFromFaction:
 	WithDeathAnimation:
 		FallbackSequence: die
 		DeathPaletteIsPlayerPalette: False
