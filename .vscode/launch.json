@@ -11,9 +11,14 @@
                 "type": "mono"
             },
             "request": "launch",
-            "program": "${workspaceRoot}/engine/OpenRA.Game.exe",
-            "cwd": "${workspaceRoot}",
-            "args": ["Engine.LaunchPath=${workspaceRoot}", "Engine.ModSearchPaths=${workspaceRoot}/mods", "Game.Mod=sa", "Debug.DisplayDeveloperSettings=true"]
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/engine/bin/OpenRA.exe",
+            "args": [
+                "Engine.EngineDir=${workspaceRoot}/engine/",
+                "Engine.ModSearchPaths=${workspaceRoot}/mods",
+                "Game.Mod=sa",
+                "Debug.DisplayDeveloperSettings=true",
+            ]
         },
     ]
 }
