@@ -60,10 +60,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	class PaletteFromDdf : ILoadsPalettes, IProvidesAssetBrowserPalettes
 	{
-		readonly OpenRA.World world;
+		readonly World world;
 		readonly PaletteFromDdfInfo info;
 
-		public PaletteFromDdf(OpenRA.World world, PaletteFromDdfInfo info)
+		public PaletteFromDdf(World world, PaletteFromDdfInfo info)
 		{
 			this.world = world;
 			this.info = info;

@@ -56,10 +56,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			base.RulesetLoaded(rules, ai);
 
-			WeaponInfo weaponInfo;
-
 			var weaponToLower = Weapon.ToLowerInvariant();
-			if (!rules.Weapons.TryGetValue(weaponToLower, out weaponInfo))
+			if (!rules.Weapons.TryGetValue(weaponToLower, out var weaponInfo))
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
 
 			WeaponInfo = weaponInfo;
@@ -68,7 +66,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	class SpawnsShrapnel : PausableConditionalTrait<SpawnsShrapnelInfo>, ITick, ISync
 	{
-		readonly OpenRA.World world;
+		readonly World world;
 		readonly BodyOrientation body;
 
 		[Sync]
@@ -126,9 +124,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			var targetActor = availableTargetActors.GetEnumerator();
 
-			var amount = Info.Amount.Length == 2
-					? world.SharedRandom.Next(Info.Amount[0], Info.Amount[1])
-					: Info.Amount[0];
+			var amount = Util.RandomDelay(self.World, Info.Amount);
 
 			for (var i = 0; i < amount; i++)
 			{
@@ -188,9 +184,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		protected override void TraitEnabled(Actor self)
 		{
-			ticks = Info.Delay.Length == 2
-					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
-					: Info.Delay[0];
+			ticks = Util.RandomDelay(self.World, Info.Delay);
 		}
 	}
 }
