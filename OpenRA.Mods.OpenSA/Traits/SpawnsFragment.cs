@@ -11,6 +11,7 @@
 
 using System.Linq;
 using OpenRA.GameRules;
+using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.OpenSA.Traits.Render;
 using OpenRA.Traits;
@@ -51,10 +52,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			base.RulesetLoaded(rules, ai);
 
-			WeaponInfo weaponInfo;
-
 			var weaponToLower = Weapon.ToLowerInvariant();
-			if (!rules.Weapons.TryGetValue(weaponToLower, out weaponInfo))
+			if (!rules.Weapons.TryGetValue(weaponToLower, out var weaponInfo))
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
 
 			WeaponInfo = weaponInfo;
@@ -157,9 +156,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		protected override void TraitEnabled(Actor self)
 		{
-			ticks = Info.Delay.Length == 2
-					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
-					: Info.Delay[0];
+			ticks = Util.RandomDelay(self.World, Info.Delay);
 		}
 	}
 }
