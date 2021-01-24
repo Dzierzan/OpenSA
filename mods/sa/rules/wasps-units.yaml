@@ -34,7 +34,7 @@ wasps_medium:
 		Speed: 134
 	Buildable:
 		BuildDuration: 350
-		Description: Shoots arrows which paralyze units.\nLong range unit.\nDoesn work against colonies or plants.
+		Description: Shoots arrows which paralyze units.\nLong range unit.\nCannot target colonies, plants or other parasite units.
 	RevealsShroud:
 		Range: 12c0
 	Armament:
@@ -47,6 +47,8 @@ wasps_medium:
 		InvalidTargets: Colony
 	AutoTarget:
 		ScanRadius: 15
+	Targetable:
+		TargetTypes: Ground, Plant, wasps_medium
 
 wasps_heavy:
 	Inherits@1: ^WaspsUnit

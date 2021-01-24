@@ -22,7 +22,7 @@ wasps_medium:
 	ReloadDelay: 45
 	Range: 14c0
 	Report: sounds|ARROW.SDF
-	InvalidTargets: Colony, Plant
+	InvalidTargets: Colony, Plant, wasps_medium
 	Projectile: Bullet
 		Speed: 562
 		Inaccuracy: 500
