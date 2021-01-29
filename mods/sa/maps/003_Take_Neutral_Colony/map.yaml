@@ -37,7 +37,7 @@ Players:
 		Color: 606EA5
 		LockSpawn: True
 		LockTeam: True
-		Enemies: Creeps, Neutral
+		Enemies: Creeps
 
 Actors:
 	Actor0: ants_colony
