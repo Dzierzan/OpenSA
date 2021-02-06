@@ -49,7 +49,7 @@ Players:
 		Bot: spiders-ai
 		Faction: spiders
 		Color: CA3131
-		Enemies: Wasps, Spiders, Creeps
+		Enemies: Wasps, Ants, Creeps
 
 Actors:
 	Actor0: plant_desert_grass
