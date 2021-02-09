@@ -19,3 +19,11 @@ World:
 	-MPStartLocations:
 	ObjectivesPanel:
 		PanelName: MISSION_OBJECTIVES
+	ScriptLobbyDropdown@difficulty:
+		ID: difficulty
+		Label: Difficulty
+		Values:
+			easy: Easy
+			normal: Normal
+			hard: Hard
+		Default: Normal
