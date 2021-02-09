@@ -13,27 +13,35 @@ popcorn:
 	Armament@1:
 		Name: primary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@2:
 		Name: secondary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@3:
 		Name: tertiary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@4:
 		Name: quaternary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@5:
 		Name: quintary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@6:
 		Name: sextary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@7:
 		Name: septimary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	Armament@8:
 		Name: octary
 		Weapon: popcorn
+		LocalOffset: 0,0,500
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
