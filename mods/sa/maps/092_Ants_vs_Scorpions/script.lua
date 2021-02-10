@@ -1,15 +1,14 @@
-Tick = function()
-
-end
+BotDelay =
+{
+	easy = 15,
+	normal = 6,
+	hard = 3
+}
 
 WorldLoaded = function()
-
 	Camera.Position = Actor238.CenterPosition
-
 	Wasps = Player.GetPlayer("Wasps")
-	Trigger.AfterDelay(DateTime.Seconds(6), function()
+	Trigger.AfterDelay(DateTime.Seconds(BotDelay[Map.LobbyOption("difficulty")]), function()
 		Wasps.GrantCondition("enable-wasps-ai")
-
 	end)
-
 end
