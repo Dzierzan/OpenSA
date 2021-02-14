@@ -77,6 +77,7 @@ fly:
 	Warhead@Split: Split
 		InvalidBounceTerrain: Water
 		Weapon: fly1
+		ExplodeWeapon: explode
 		SplitAngles: -45, 135
 		BounceRangeModifier: 80
 
@@ -92,6 +93,7 @@ fly1:
 	Warhead@Split: Split
 		InvalidBounceTerrain: Water
 		Weapon: fly2
+		ExplodeWeapon: explode
 		SplitAngles: -45, 135
 		BounceRangeModifier: 70
 
@@ -104,6 +106,17 @@ fly2:
 		LaunchAngle: 200
 		Image: projectiles
 		Sequences: bouncebomb
+	Warhead@Damage: SpreadDamage
+		Spread: 300
+		Damage: 4200
+		ValidTargets: Ground, Paralyzed, Water, Air
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: big_explosion_1
+		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
+		ValidTargets: Ground, Air, Paralyzed, Water
+
+explode:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 4200
