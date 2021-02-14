@@ -153,7 +153,8 @@ fly:
 		Weapon: fly
 		Delay: 25
 		AimChance: 0
-		Amount: 1
+		Amount: 2
+		ThrowAngle: 220
 		PauseOnCondition: paralyzed
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF

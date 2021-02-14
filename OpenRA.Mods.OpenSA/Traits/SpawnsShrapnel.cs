@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2019-2020 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -41,6 +41,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		[Desc("Allow this shrapnel to be thrown randomly when no targets found.")]
 		public readonly bool ThrowWithoutTarget = true;
+
+		[Desc("Keep empty for a random one.")]
+		public readonly WAngle ThrowAngle = WAngle.Zero;
 
 		[Desc("Should the shrapnel hit the spawner actor?")]
 		public readonly bool AllowSelfHit = false;
@@ -93,9 +96,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (IsTraitDisabled || IsTraitPaused || !self.IsInWorld || --ticks > 0)
 				return;
 
-			ticks = Info.Delay.Length == 2
-					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
-					: Info.Delay[0];
+			ticks = Util.RandomDelay(self.World, Info.Delay);
 
 			var localoffset = body != null
 					? body.LocalToWorld(Info.LocalOffset.Rotate(body.QuantizeOrientation(self, self.Orientation)))
@@ -135,7 +136,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 				if (Info.ThrowWithoutTarget && shrapnelTarget.Type == TargetType.Invalid)
 				{
-					var rotation = WRot.FromFacing(world.SharedRandom.Next(1024));
+					var rotation = self.Orientation;
+					if (Info.ThrowAngle == WAngle.Zero)
+						rotation = WRot.FromFacing(world.SharedRandom.Next(1024));
+					else
+						rotation.Rotate(WRot.FromYaw(Info.ThrowAngle));
+
 					var range = world.SharedRandom.Next(Info.WeaponInfo.MinRange.Length, Info.WeaponInfo.Range.Length);
 					var targetpos = position + new WVec(range, 0, 0).Rotate(rotation);
 					var tpos = Target.FromPos(new WPos(targetpos.X, targetpos.Y, world.Map.CenterOfCell(world.Map.CellContaining(targetpos)).Z));
