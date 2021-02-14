@@ -55,17 +55,39 @@ dragonfly_right:
 	Projectile: GravityBomb
 		Velocity: 75, 125, 0
 
-fly: #TODO TEMPORARY, TO BE CHANGED/UPDATED LATER!!!
+fly:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 15
 	Range: 5c0
 	Projectile: Bullet
 		Speed: 70
 		LaunchAngle: 220
-		Inaccuracy: 100
-		BounceCount: 3
-		BounceSound: sounds|BOUNCE.SDF
+		Image: projectiles
+		Sequences: bouncebomb
+	Warhead@Split: Split
 		InvalidBounceTerrain: Water
+		Weapon: fly1
+
+fly1:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	Range: 5c0
+	Report: sounds|BOUNCE.SDF
+	Projectile: Bullet
+		Speed: 70
+		LaunchAngle: 220
+		Image: projectiles
+		Sequences: bouncebomb
+	Warhead@Split: Split
+		InvalidBounceTerrain: Water
+		Weapon: fly2
+
+fly2:
+	ValidTargets: Ground, Paralyzed, Water, Air
+	Range: 5c0
+	Report: sounds|BOUNCE.SDF
+	Projectile: Bullet
+		Speed: 70
+		LaunchAngle: 220
 		Image: projectiles
 		Sequences: bouncebomb
 	Warhead@Damage: SpreadDamage
