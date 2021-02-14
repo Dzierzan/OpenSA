@@ -26,6 +26,10 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		[Desc("Has to be defined in weapons.yaml as well.")]
 		public readonly string Weapon = null;
 
+		[WeaponReference]
+		[Desc("Fires when hitting invalid bounce terrain or an actor.")]
+		public readonly string ExplodeWeapon = null;
+
 		[Desc("Terrain where the projectile explodes instead of bouncing.")]
 		public readonly HashSet<string> InvalidBounceTerrain = new HashSet<string>();
 
@@ -35,12 +39,15 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		[Desc("At which angle to divide the split projectiles.")]
 		public readonly WAngle[] SplitAngles = { WAngle.FromDegrees(-45), WAngle.FromDegrees(45) };
 
-		WeaponInfo weapon;
+		WeaponInfo splitWeapon;
+		WeaponInfo explodeWeapon;
 
 		public void RulesetLoaded(Ruleset rules, WeaponInfo info)
 		{
-			if (!rules.Weapons.TryGetValue(Weapon.ToLowerInvariant(), out weapon))
+			if (!rules.Weapons.TryGetValue(Weapon.ToLowerInvariant(), out splitWeapon))
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(Weapon.ToLowerInvariant()));
+
+			rules.Weapons.TryGetValue(Weapon.ToLowerInvariant(), out explodeWeapon);
 		}
 
 		public override void DoImpact(in Target target, WarheadArgs args)
@@ -57,8 +64,14 @@ namespace OpenRA.Mods.OpenSA.Warheads
 			if (!world.Map.Contains(cell))
 				return;
 
-			if (InvalidBounceTerrain.Contains(world.Map.GetTerrainInfo(cell).Type))
+			if (InvalidBounceTerrain.Contains(world.Map.GetTerrainInfo(cell).Type)
+				|| world.ActorMap.AnyActorsAt(world.Map.CellContaining(position)))
+			{
+				if (explodeWeapon != null)
+					explodeWeapon.Impact(target, args);
+
 				return;
+			}
 
 			var targetPosition = target.CenterPosition;
 
@@ -75,7 +88,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 
 				var projectileArgs = new ProjectileArgs
 				{
-					Weapon = weapon,
+					Weapon = splitWeapon,
 					Facing = facing,
 					CurrentMuzzleFacing = () => facing,
 
