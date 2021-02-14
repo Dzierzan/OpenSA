@@ -30,7 +30,7 @@ Player:
 			spiders_medium: 50
 			spiders_heavy: 100
 			wasps_light: 50
-			wasps_medium: 50
+			#wasps_medium: 50
 			wasps_heavy: 100
 	SquadManagerBotModule@BeetlesAI:
 		SquadSize: 20
