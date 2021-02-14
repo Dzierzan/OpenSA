@@ -149,13 +149,10 @@ fly:
 		HP: 16000
 	Aircraft:
 		Speed: 220
-	SpawnsShrapnel:
-		Weapon: fly
-		Delay: 25
-		AimChance: 0
-		Amount: 2
-		ThrowAngle: 220
-		PauseOnCondition: paralyzed
+	PeriodicDischarge:
+		Weapon: fly_discharge
+		LocalOffset: 0,0,0
+		RequiresCondition: !paralyzed
 	AmbientSound:
 		SoundFiles: sounds|FLYBUZZ.SDF
 
