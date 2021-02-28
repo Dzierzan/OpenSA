@@ -169,8 +169,8 @@ Hotkeys:
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
 
-LoadScreen: LogoStripeLoadScreen
-	Image: sa|uibits/loadscreen.png
+LoadScreen: RandomImageLoadScreen
+	Image: sa|uibits/loading0.png, sa|uibits/loading1.png, sa|uibits/loading2.png, sa|uibits/loading3.png
 	Text: Loading...
 
 ServerTraits:
