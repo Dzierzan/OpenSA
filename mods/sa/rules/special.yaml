@@ -24,7 +24,7 @@ slapfighter:
 	RevealsShroud:
 		Range: 16c0
 	WithShadow:
-		Offset: 200, 400, 0
+		Offset: -200, 400, 0
 		ZOffset: -600
 	Armament@primary:
 		Name: primary
