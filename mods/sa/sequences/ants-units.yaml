@@ -62,8 +62,10 @@ ants_light:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYANTA00.ANI
-	icon-clicked: sprites|COLONYANTA01.ANI
+	icon: bits/icons.png
+		Start: 0
+	icon-clicked: bits/icons.png
+		Start: 1	
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -132,8 +134,10 @@ ants_medium:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYANTB00.ANI
-	icon-clicked: sprites|COLONYANTB01.ANI
+	icon: bits/icons.png
+		Start: 2
+	icon-clicked: bits/icons.png
+		Start: 3	
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -202,8 +206,10 @@ ants_heavy:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYANTC00.ANI
-	icon-clicked: sprites|COLONYANTC01.ANI
+	icon: bits/icons.png
+		Start: 4
+	icon-clicked: bits/icons.png
+		Start: 5	
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4

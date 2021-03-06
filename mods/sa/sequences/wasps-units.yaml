@@ -57,8 +57,10 @@ wasps_light:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYWASPA00.ANI
-	icon-clicked: sprites|COLONYWASPA01.ANI
+	icon: bits/icons.png
+		Start: 18
+	icon-clicked: bits/icons.png
+		Start: 19
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -125,8 +127,10 @@ wasps_medium:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYWASPB00.ANI
-	icon-clicked: sprites|COLONYWASPB01.ANI
+	icon: bits/icons.png
+		Start: 20
+	icon-clicked: bits/icons.png
+		Start: 21
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -193,8 +197,10 @@ wasps_heavy:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYWASPC00.ANI
-	icon-clicked: sprites|COLONYWASPC01.ANI
+	icon: bits/icons.png
+		Start: 22
+	icon-clicked: bits/icons.png
+		Start: 23
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4

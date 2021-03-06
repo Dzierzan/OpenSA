@@ -56,8 +56,10 @@ beetles_light:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYBEETLEA00.ANI
-	icon-clicked: sprites|COLONYBEETLEA01.ANI
+	icon: bits/icons.png
+		Start: 6
+	icon-clicked: bits/icons.png
+		Start: 7
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -123,8 +125,10 @@ beetles_medium:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYBEETLEB00.ANI
-	icon-clicked: sprites|COLONYBEETLEB01.ANI
+	icon: bits/icons.png
+		Start: 8
+	icon-clicked: bits/icons.png
+		Start: 9
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -190,8 +194,10 @@ beetles_heavy:
 		Length: 2
 		Tick: 9000
 		ZOffset: -1000
-	icon: sprites|COLONYBEETLEC00.ANI
-	icon-clicked: sprites|COLONYBEETLEC01.ANI
+	icon: bits/icons.png
+		Start: 10
+	icon-clicked: bits/icons.png
+		Start: 11
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
