@@ -69,19 +69,6 @@ beacon:
 		Length: 40
 		Tick: 60
 
-icon:
-	dragonfly_icon: bits/custom_icons.png
-		Start: 1
-	fly_icon: bits/custom_icons.png
-		Start: 2
-	moth_icon: bits/custom_icons.png
-		Start: 3
-	flyingmachine_icon: bits/custom_icons.png
-		Start: 4
-
-pirates_spawner:
-	idle: bits/pirates.png
-
 progressbar:
 	colony:
 		Combine:
