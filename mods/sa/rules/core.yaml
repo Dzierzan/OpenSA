@@ -373,6 +373,7 @@
 		DeathPaletteIsPlayerPalette: False
 		DeathSequencePalette: OpenSA
 	Aircraft:
+		Repulsable: False
 	RejectsOrders:
 	HiddenUnderFog:
 		Type: CenterPosition

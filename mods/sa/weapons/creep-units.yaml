@@ -36,10 +36,10 @@ dragonfly_left:
 	ReloadDelay: 5
 	Range: 5c0
 	Projectile: GravityBomb
-		Velocity: -75, 125, 0
-		Acceleration: 0, 0, -10
+		Velocity: -50, 50, 0
+		Acceleration: 0, 0, -5
 		Image: projectiles
-		Sequences: brakebomb
+		Sequences: brakebombright
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 8500
@@ -53,7 +53,8 @@ dragonfly_left:
 dragonfly_right:
 	Inherits: dragonfly_left
 	Projectile: GravityBomb
-		Velocity: 75, 125, 0
+		Velocity: 50, 50, 0
+		Sequences: brakebombleft
 
 fly_discharge:
 	ValidTargets: Ground, Paralyzed, Water, Air

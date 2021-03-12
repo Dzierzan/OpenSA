@@ -116,25 +116,25 @@ dragonfly:
 		Speed: 105
 	GrantPeriodicCondition@dragonflywave:
 		Condition: dragonflywave
-		ActiveDuration: 20
+		ActiveDuration: 30
 		CooldownDuration: 80
 		PauseOnCondition: paralyzed
 	GrantPeriodicCondition@dragonflyreload:
 		Condition: dragonflyreload
-		ActiveDuration: 5
-		CooldownDuration: 5
+		ActiveDuration: 9
+		CooldownDuration: 9
 		PauseOnCondition: paralyzed || dragonflywave
 	SpawnsFragment@LEFT_BOMB:
 		Offsets: 0, -5, 0
 		Weapon: dragonfly_left
-		Delay: 5
+		Delay: 9
 		Rotate: true
 		UseZOffsetAsAbsoluteHeight: true
 		PauseOnCondition: paralyzed || dragonflyreload || dragonflywave
 	SpawnsFragment@RIGHT_BOMB:
 		Offsets: 0, 5, 0
 		Weapon: dragonfly_right
-		Delay: 5
+		Delay: 9
 		Rotate: true
 		UseZOffsetAsAbsoluteHeight: true
 		PauseOnCondition: paralyzed || !dragonflyreload || dragonflywave

@@ -57,7 +57,12 @@ projectiles:
 		Length: 5
 		Tick: 60
 		ZOffset: 4900
-	brakebomb: bits/breakbomb.png
+	brakebombleft: bits/breakbombleft.png
+		Length: 4
+		Tick: 250
+		Facings: -16
+		ZOffset: 4900
+	brakebombright: bits/breakbombright.png
 		Length: 4
 		Tick: 250
 		Facings: -16
