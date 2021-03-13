@@ -20,7 +20,7 @@ clock: #TODO It has to be removed
 	idle: bits/empty.png
 
 mpspawn:
-	idle: sprites|ScrollPoint.ANI
+	idle: bits/mpspawn.png
 
 moveflsh:
 	idle: bits/empty.png

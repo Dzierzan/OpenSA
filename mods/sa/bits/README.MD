@@ -128,17 +128,22 @@ Author: Daniel Cook, Dzierzan
 Source: Hard Vacuum (https://lostgarden.home.blog/2005/03/27/game-post-mortem-hard-vacuum/)
 Description: Rally point flag.
 
-**spaceshipicons.png**
-Author: Dzierzan, Gate 5 Creations
-Source: Swarm Assault
-Description: Icons for Slapfight fighter.
-
 **camera.png**
 Author: Dzierzan
-Source: Dzierzan
+Source: Self-made
 Description: Camera image for Camera.Position for lua scripts.
 
 **seed.png**
 Author: Dzierzan, Gate 5 Creations
 Source: Swarm Assault
 Description: Additional sprites for seed going into ground.
+
+**mpspawn.png**
+Author: Dzierzan
+Source: Self-made
+Description: Multiplayer spawn point.
+
+**icons.png**
+Author: Dzierzan, Gate 5 Creations
+Source: Upscaled button background from 40x40 to 160x160, then downscaled to 60x60. Used actors as a part of buttons and recolored them to match classic buttons.
+Description: Bigger production tab buttons.
