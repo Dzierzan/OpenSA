@@ -1,9 +1,46 @@
-The OpenSA developers are:
-    * Paweł Dzierżanowski (Dzierzan)
+The OpenSA developers:
+____________________________________________________________________
 
-Also special thanks to:
-    * Andre Mohren (IceReaper)
-    * Matthias Mailänder (Mailaender)
-    * Zimmermann Gyula (Graion Dilach)
-    * MikillRosen (sayedmamdouh)
-    * phredreeke
+Paweł Dzierżanowski (Dzierzan)
+	* Project Lead
+	* Yaml programming
+	* Artwork
+
+Contributors:
+____________________________________________________________________
+
+Andre Mohren (IceReaper)
+	* Programming
+	* Reverse engineering
+
+Matthias Mailänder (Mailaender)
+	* Programming
+
+Zimmermann Gyula (Graion Dilach)
+	* Programming
+
+MikillRosen (sayedmamdouh)
+	* Custom cursors artwork
+
+phredreeke
+	* Upscaled logos
+
+
+######################################
+
+This project would not be possible without
+the great work of the team behind Swarm Assault.
+
+######################################
+
+Programming:
+- Eddie Retelj
+
+Sound:
+- Eddie Retelj, John Retelj
+
+Art:
+- John Retelj
+
+Game Testers:
+- Borath En, David Jankowski, Michael Pearce
