@@ -6,8 +6,6 @@ World:
 	-MPStartLocations:
 	MusicPlaylist:
 		DisableWorldSounds: False
-	LuaScript:
-		Scripts: script.lua
 	Randomizer:
 	-PirateSpawner:
 	-CreepFlyerSpawner@dragonfly:
