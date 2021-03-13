@@ -1,8 +1,8 @@
 Sounds:
 	DefaultVariant:
 	Notifications:
-		ChatLine: sounds|COMMAND.SDF
-		ClickSound: sounds|COMMAND.SDF
+		ChatLine: click.wav
+		ClickSound: click.wav
 		Beacon: beacon.wav
 		TabClick:
 

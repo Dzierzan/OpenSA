@@ -37,3 +37,8 @@ Description: Speeded up PowerDown sound for custom turrets.
 Author: Gate 5 Creations, Dzierzan
 Source: Swarm Assault
 Description: Speeded up PowerUp sound for custom turrets.
+
+**click.wav**
+Author: Sebastian
+Source: https://soundbible.com/1705-Click2.html
+Description: Click sound.
