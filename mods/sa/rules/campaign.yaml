@@ -2,6 +2,8 @@ Player:
 	MissionObjectives:
 		EarlyGameOver: true
 		GameOverDelay: 3000
+	DeveloperMode:
+		CheckboxEnabled: False
 	ColonyConquestVictoryConditions:
 		SuppressNotifications: True
 	Shroud:
@@ -11,8 +13,6 @@ Player:
 World:
 	LuaScript:
 		Scripts: script.lua
-	DeveloperMode:
-		CheckboxEnabled: False
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	-SpawnMPUnits:
