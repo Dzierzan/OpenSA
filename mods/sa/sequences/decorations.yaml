@@ -1,14 +1,14 @@
 plant_brown_mushroom_1:
 	idle: sprites|OBBROWNM00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_brown_mushroom_2:
 	idle: sprites|OBBROWNM01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_brown_mushroom_3:
 	idle: sprites|OBBROWNM02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_cherry_flower_1:
 	idle: sprites|OBCHERFL00.ANI
@@ -36,15 +36,15 @@ plant_choc_chip_3:
 
 plant_clover_1:
 	idle: sprites|OBCLOVER00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_clover_2:
 	idle: sprites|OBCLOVER01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_clover_3:
 	idle: sprites|OBCLOVER02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_desert_flower_1:
 	idle: sprites|OBDESTFL00.ANI
@@ -72,63 +72,63 @@ plant_flower_3:
 
 plant_broad_leaf_grass_1:
 	idle: sprites|OBGRASSB00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_broad_leaf_grass_2:
 	idle: sprites|OBGRASSB01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_broad_leaf_grass_3:
 	idle: sprites|OBGRASSB02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_desert_grass_1:
 	idle: sprites|OBGRASSD00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_desert_grass_2:
 	idle: sprites|OBGRASSD01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_desert_grass_3:
 	idle: sprites|OBGRASSD02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_gumnut_1:
 	idle: sprites|OBGUMNUT00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_gumnut_2:
 	idle: sprites|OBGUMNUT01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_gumnut_3:
 	idle: sprites|OBGUMNUT02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jaffa_1:
 	idle: sprites|OBJAFFA00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jaffa_2:
 	idle: sprites|OBJAFFA01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jaffa_3:
 	idle: sprites|OBJAFFA02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jelly_bean_1:
 	idle: sprites|OBJELLYB00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jelly_bean_2:
 	idle: sprites|OBJELLYB01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_jelly_bean_3:
 	idle: sprites|OBJELLYB02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_moon_flower_1:
 	idle: sprites|OBMOONFL00.ANI
@@ -144,27 +144,27 @@ plant_moon_flower_3:
 
 plant_moon_mushroom_1:
 	idle: sprites|OBMUSHWH00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_moon_mushroom_2:
 	idle: sprites|OBMUSHWH01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_moon_mushroom_3:
 	idle: sprites|OBMUSHWH02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_serata_1:
 	idle: sprites|OBSERATA00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_serata_2:
 	idle: sprites|OBSERATA01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_serata_3:
 	idle: sprites|OBSERATA02.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_smarty_1:
 	idle: sprites|OBSMARTY00.ANI
@@ -180,12 +180,12 @@ plant_smarty_3:
 
 plant_toad_stool_1:
 	idle: sprites|OBTOADST00.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_toad_stool_2:
 	idle: sprites|OBTOADST01.ANI
-		ZOffset: 1500
+		ZOffset: -500
 
 plant_toad_stool_3:
 	idle: sprites|OBTOADST02.ANI
-		ZOffset: 1500
+		ZOffset: -500
