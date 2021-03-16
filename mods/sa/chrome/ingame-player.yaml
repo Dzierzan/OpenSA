@@ -384,6 +384,8 @@ Container@PLAYER_WIDGETS:
 					IconSpriteOffset: 0, 0
 					MinimumRows: 1
 					MaximumRows: 6
+					ClockPalette: shadow
+					NotBuildablePalette: shadow
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 					SelectProductionBuildingHotkey: SelectProductionBuilding

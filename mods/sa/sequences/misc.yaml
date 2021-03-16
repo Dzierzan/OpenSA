@@ -16,8 +16,9 @@ shroud:
 	fogfull: bits/shroud.png
 		Start: 1
 
-clock: #TODO It has to be removed
-	idle: bits/empty.png
+clock:
+	idle: bits/clock.png
+		Length: 762
 
 mpspawn:
 	idle: bits/mpspawn.png

@@ -147,3 +147,8 @@ Description: Multiplayer spawn point.
 Author: Dzierzan, Gate 5 Creations
 Source: Upscaled button background from 40x40 to 160x160, then downscaled to 60x60. Used actors as a part of buttons and recolored them to match classic buttons.
 Description: Bigger production tab buttons.
+
+**clock.png**
+Author: Dzierzan
+Source: Self-made
+Description: Production clock animation.
