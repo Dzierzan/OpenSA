@@ -55,7 +55,7 @@ beetles_light:
 	die: sprites|UNBETLBB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 6
 	icon-clicked: bits/icons.png
@@ -124,7 +124,7 @@ beetles_medium:
 	die: sprites|UNBETSHB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 8
 	icon-clicked: bits/icons.png
@@ -193,7 +193,7 @@ beetles_heavy:
 	die: sprites|UNBETCAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 10
 	icon-clicked: bits/icons.png

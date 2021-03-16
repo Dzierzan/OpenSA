@@ -55,7 +55,7 @@ scorpions_light:
 	die: sprites|UNSCOSAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 24
 	icon-clicked: bits/icons.png
@@ -124,7 +124,7 @@ scorpions_medium:
 	die: sprites|UNSCOSGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 26
 	icon-clicked: bits/icons.png
@@ -193,7 +193,7 @@ scorpions_heavy:
 	die: sprites|UNSCOSTB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 28
 	icon-clicked: bits/icons.png

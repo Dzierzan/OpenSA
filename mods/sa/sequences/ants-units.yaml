@@ -61,7 +61,7 @@ ants_light:
 	die: sprites|UNANTSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 0
 	icon-clicked: bits/icons.png
@@ -133,7 +133,7 @@ ants_medium:
 	die: sprites|UNANTRGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 2
 	icon-clicked: bits/icons.png
@@ -205,7 +205,7 @@ ants_heavy:
 	die: sprites|UNANTBZB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 4
 	icon-clicked: bits/icons.png

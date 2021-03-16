@@ -55,7 +55,7 @@ spiders_light:
 	die: sprites|UNSPIBWB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 12
 	icon-clicked: bits/icons.png
@@ -124,7 +124,7 @@ spiders_medium:
 	die: sprites|UNSPISNB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 14
 	icon-clicked: bits/icons.png
@@ -193,7 +193,7 @@ spiders_heavy:
 	die: sprites|UNSPIRKB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 16
 	icon-clicked: bits/icons.png

@@ -58,7 +58,7 @@ ant_bull_pirate:
 	die: sprites|UNANTSOX_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: sprites|COLONYANTA00.ANI
 	icon-clicked: sprites|COLONYANTA01.ANI
 	paralysis: sprites|PARALYSIS.ANI
@@ -128,7 +128,7 @@ ants_grenadier_pirate:
 	die: sprites|UNANTRGX_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: sprites|COLONYANTB00.ANI
 	icon-clicked: sprites|COLONYANTB01.ANI
 	paralysis: sprites|PARALYSIS.ANI
@@ -159,7 +159,7 @@ ants_bazooka_pirate:
 		Start: 48
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: sprites|COLONYANTC00.ANI
 	icon-clicked: sprites|COLONYANTC01.ANI
 	paralysis: sprites|PARALYSIS.ANI

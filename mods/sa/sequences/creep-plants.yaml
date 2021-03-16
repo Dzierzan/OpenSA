@@ -12,7 +12,7 @@ popcorn:
 	die: sprites|OBWHIPPL_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALPOPCORN.ANI
 	portrait: sprites|COLONYNEUTRALPOPCORN3D.ANI
 
@@ -39,7 +39,7 @@ venus:
 		Start: 12
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	#name: bits/empty.png
 	#portrait: bits/empty.png
 
@@ -58,7 +58,7 @@ puff:
 	die: sprites|OBPUFFBL_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALSEEDBALL.ANI
 	portrait: sprites|COLONYNEUTRALSEEDBALL3D.ANI
 
@@ -102,7 +102,7 @@ mushroom:
 		Start: 16
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	#name: bits/empty.png
 	#portrait: bits/empty.png
 
@@ -117,7 +117,7 @@ thorn:
 	die: sprites|OBTHORNB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALTHORNBUSH.ANI
 	portrait: sprites|COLONYNEUTRALTHORNBUSH3D.ANI
 
@@ -140,7 +140,7 @@ gumnut:
 		Start: 16
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	#name: bits/empty.png
 	#portrait: bits/empty.png
 
@@ -155,7 +155,7 @@ freckle:
 	die: sprites|FRECKLE_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALFRECKLE.ANI
 	portrait: sprites|COLONYNEUTRALFRECKLE3D.ANI
 
@@ -168,7 +168,7 @@ lolly_blue:
 	die: sprites|OBLOLLYB_DEAD.ANI
 		Length: 3
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALLOLLY.ANI
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 
@@ -181,7 +181,7 @@ lolly_orange:
 	die: sprites|OBLOLLYO_DEAD.ANI
 		Length: 3
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALLOLLY.ANI
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 
@@ -194,7 +194,7 @@ lolly_white:
 	die: sprites|OBLOLLYP_DEAD.ANI
 		Length: 3
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALLOLLY.ANI
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 
@@ -207,7 +207,7 @@ lolly_red:
 	die: sprites|OBLOLLYS_DEAD.ANI
 		Length: 3
 		Tick: 9000
-		ZOffset: -2000
+		ZOffset: -5000
 	name: sprites|NAMENEUTRALLOLLY.ANI
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 

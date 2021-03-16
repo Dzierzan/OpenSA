@@ -56,7 +56,7 @@ wasps_light:
 	die: sprites|UNWASPLB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 18
 	icon-clicked: bits/icons.png
@@ -126,7 +126,7 @@ wasps_medium:
 	die: sprites|UNWASPAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 20
 	icon-clicked: bits/icons.png
@@ -196,7 +196,7 @@ wasps_heavy:
 	die: sprites|UNWASSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
-		ZOffset: -1000
+		ZOffset: -5000
 	icon: bits/icons.png
 		Start: 22
 	icon-clicked: bits/icons.png

@@ -21,6 +21,9 @@ wasps_light:
 		Delay: 5
 	AutoTarget:
 		ScanRadius: 8
+	-WithAttackAnimation:
+	-WithFacingSpriteBody:
+	-WithMoveAnimation:
 
 wasps_medium:
 	Inherits@1: ^WaspsUnit
@@ -49,6 +52,9 @@ wasps_medium:
 		ScanRadius: 15
 	Targetable:
 		TargetTypes: Ground, Plant, wasps_medium
+	-WithAttackAnimation:
+	-WithFacingSpriteBody:
+	-WithMoveAnimation:
 
 wasps_heavy:
 	Inherits@1: ^WaspsUnit
@@ -73,6 +79,9 @@ wasps_heavy:
 		Delay: 4
 	AutoTarget:
 		ScanRadius: 8
+	-WithAttackAnimation:
+	-WithFacingSpriteBody:
+	-WithMoveAnimation:
 
 wasps.colorpicker:
 	Inherits: wasps_heavy

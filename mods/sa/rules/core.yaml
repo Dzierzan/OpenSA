@@ -47,6 +47,7 @@
 	VerticalSelectionDecorations:
 	Selectable:
 		Priority: 10
+		Bounds: 96, 96, 0, 0
 	WithSpriteBody:
 	# Group all buildings in the map editor.
 	MapEditorData:

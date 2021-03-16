@@ -111,6 +111,7 @@ EditorPlayer:
 			Rock: 75
 			Vegetation: 50
 	WaspActorLayer:
+		HeightOffset: 0c0
 	WaspLocomotor:
 		Name: wasp
 		Crushes: colony_bit
@@ -118,14 +119,9 @@ EditorPlayer:
 			Clear: 100
 			Rock: 100
 			Vegetation: 100
+			Water: 100
 			Air: 100
-	Locomotor@Special:
-		Name: slapfighter
-		Crushes: colony_bit
-		TerrainSpeeds:
-			Clear: 100
-			Rock: 100
-			Vegetation: 100
+		TransitionCost: 0
 	# Required to show the map grid.
 	TerrainGeometryOverlay:
 	# Required for debug overlays:

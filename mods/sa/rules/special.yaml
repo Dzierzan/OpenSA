@@ -38,10 +38,23 @@ slapfighter:
 		PauseOnCondition: paralyzed
 	Mobile:
 		Locomotor: wasp
-	GrantConditionOnMovement:
-		Condition: moving
-	GrantConditionOnWaspLayer:
-		Condition: flying
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: airborne
+	Hovers:
+		InitialHeight: 0c10
+		RiseTicks: 10
+		RequiresCondition: airborne
+	WithInfantryBody:
+		RequiresCondition: !airborne
+		DefaultAttackSequence: shoot
+		StandSequences: idle
+		MoveSequence: move
+	WithInfantryBody@airborne:
+		RequiresCondition: airborne
+		DefaultAttackSequence: shoot
+		StandSequences: move
+		MoveSequence: move
+	-WithAttackAnimation:
+	-WithFacingSpriteBody:
 	-WithMoveAnimation:
-	WithFlyAnimation:
-		RequiresCondition: flying || moving
