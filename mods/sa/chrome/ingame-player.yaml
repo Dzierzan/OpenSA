@@ -341,16 +341,6 @@ Container@PLAYER_WIDGETS:
 					Height: 22
 					Align: Center
 					Font: TinyBold
-				#LabelWithTooltip@CASH:
-				#	Logic: IngameCashCounterLogic
-				#	X: 29
-				#	Y: 4
-				#	Width: 50
-				#	Height: 22
-				#	Font: Bold
-				#	Text: {0}
-				#	TooltipContainer: TOOLTIP_CONTAINER
-				#	TooltipTemplate: SIMPLE_TOOLTIP
 		Container@SIDEBAR_PRODUCTION:
 			Logic: ClassicProductionLogic
 			X: WINDOW_RIGHT - 226 #226
@@ -380,7 +370,7 @@ Container@PLAYER_WIDGETS:
 					ReadyText: READY
 					HoldText: ON HOLD
 					IconSize: 58, 48
-					IconMargin: 2, 0
+					IconMargin: 2, 10
 					IconSpriteOffset: 0, 0
 					MinimumRows: 1
 					MaximumRows: 6
