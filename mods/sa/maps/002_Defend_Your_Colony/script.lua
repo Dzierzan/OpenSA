@@ -7,7 +7,7 @@ BotDelay =
 
 WorldLoaded = function()
 	Camera.Position = Actor67.CenterPosition
-	Spiders = Player.GetPlayer("Wasps")
+	Wasps = Player.GetPlayer("Wasps")
 	Trigger.AfterDelay(DateTime.Seconds(BotDelay[Map.LobbyOption("difficulty")]), function()
 		Wasps.GrantCondition("enable-wasps-ai")
 	end)
