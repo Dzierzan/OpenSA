@@ -111,7 +111,6 @@ EditorPlayer:
 			Rock: 75
 			Vegetation: 50
 	WaspActorLayer:
-		HeightOffset: 0c0
 	WaspLocomotor:
 		Name: wasp
 		Crushes: colony_bit
