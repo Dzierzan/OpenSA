@@ -164,7 +164,7 @@ Gumnut:
 	Armament:
 		Weapon: gumnut
 		FireDelay: 8
-		LocalOffset: 0,0,200
+		LocalOffset: 0,0,400
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:

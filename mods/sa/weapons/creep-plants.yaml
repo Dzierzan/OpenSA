@@ -64,7 +64,7 @@ gumnut:
 		ExplodeWhenEmpty: true #Explode when running out of fuel
 		Inaccuracy: 100
 		Image: projectiles
-		Sequences: missile
+		Sequences: gumnutmissile
 		TrailImage: smoke_trail
 	Warhead@Damage: SpreadDamage
 		Damage: 1500
