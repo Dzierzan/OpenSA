@@ -117,6 +117,7 @@
 		TargetTypes: Ground, Colony
 	HitShape:
 	Colony:
+		LostSound: sa|bits/sounds/turretPowerDown.wav
 	VerticalSelectionDecorations:
 	Selectable:
 		Bounds: 36,36
