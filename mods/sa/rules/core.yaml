@@ -119,6 +119,7 @@
 	Colony:
 	VerticalSelectionDecorations:
 	Selectable:
+		Bounds: 36,36
 		Priority: 10
 	WithSpriteBody:
 	MustBeDestroyed:
