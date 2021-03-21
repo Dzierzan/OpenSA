@@ -102,7 +102,6 @@ EditorPlayer:
 		RandomFactionMembers: ants, beetles, scorpions, spiders, wasps
 		Description: Random Faction\nA random faction will be chosen when the game starts.
 	LoadWidgetAtGameStart:
-		ShellmapRoot: MAINMENU_PRERELEASE_NOTIFICATION
 	Locomotor@Unit:
 		Name: unit
 		Crushes: colony_bit
