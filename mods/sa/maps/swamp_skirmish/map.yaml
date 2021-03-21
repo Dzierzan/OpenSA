@@ -44,51 +44,57 @@ Actors:
 		Location: 109,14
 	Actor2: beetles_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 80,11
+		TurretFacing: 515
 	Actor3: wasps_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 57,60
+		TurretFacing: 531
 	Actor4: spiders_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 73,114
+		TurretFacing@secondary: 500
+		TurretFacing@primary: 507
 	Actor5: scorpions_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 12,49
+		TurretFacing: 507
 	Actor6: ants_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 118,39
+		TurretFacing@primary: 515
+		TurretFacing@secondary: 500
 	Actor7: spiders_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 22,8
+		TurretFacing@secondary: 499
+		TurretFacing@primary: 531
 	Actor9: ants_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 81,82
+		TurretFacing@secondary: 500
+		TurretFacing@primary: 499
 	Actor10: scorpions_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 112,100
+		TurretFacing: 523
 	Actor11: wasps_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 84,43
+		TurretFacing: 531
 	Actor12: mpspawn
 		Owner: Creeps
 		Location: 33,114
 	Actor13: spiders_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 17,82
+		TurretFacing@secondary: 507
+		TurretFacing@primary: 499
 	Actor14: ants_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 54,92
+		TurretFacing@secondary: 531
+		TurretFacing@primary: 499
 	Actor15: plant_clover
 		Owner: Neutral
 		Location: 29,100
@@ -517,12 +523,12 @@ Actors:
 		Location: 2,4
 	Actor157: beetles_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 47,33
+		TurretFacing: 531
 	Actor158: scorpions_colony
 		Owner: Creeps
-		TurretFacing: 384
 		Location: 110,72
+		TurretFacing: 531
 	Actor159: plant_moon_mushroom
 		Owner: Creeps
 		Location: 24,109
