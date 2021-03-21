@@ -1,8 +1,7 @@
 beetles_light:
 	Inherits@1: ^BeetlesUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Lady Bug
 	Health:
@@ -23,9 +22,8 @@ beetles_light:
 
 beetles_medium:
 	Inherits@1: ^BeetlesUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Shrapnel
 	Health:
@@ -82,9 +80,8 @@ beetles_medium:
 
 beetles_heavy:
 	Inherits@1: ^BeetlesUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Cannon
 	Health:

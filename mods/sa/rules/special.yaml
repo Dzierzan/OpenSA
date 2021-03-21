@@ -9,9 +9,8 @@
 
 slapfighter:
 	Inherits@1: ^SpecialUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Slapfight Fighter
 	Health:
@@ -51,6 +50,3 @@ slapfighter:
 		DefaultAttackSequence: shoot
 		StandSequences: move
 		MoveSequence: move
-	-WithAttackAnimation:
-	-WithFacingSpriteBody:
-	-WithMoveAnimation:

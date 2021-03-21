@@ -1,8 +1,7 @@
 ants_light:
 	Inherits@1: ^AntsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Soldier
 	Health:
@@ -22,9 +21,8 @@ ants_light:
 
 ants_medium:
 	Inherits@1: ^AntsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Grenadier
 	Health:
@@ -44,9 +42,8 @@ ants_medium:
 
 ants_heavy:
 	Inherits@1: ^AntsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Bazooka
 	Health:

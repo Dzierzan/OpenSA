@@ -1,8 +1,7 @@
 spiders_light:
 	Inherits@1: ^SpidersUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Black widow
 	Health:
@@ -22,9 +21,8 @@ spiders_light:
 
 spiders_medium:
 	Inherits@1: ^SpidersUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Sniper
 	Health:
@@ -44,9 +42,8 @@ spiders_medium:
 
 spiders_heavy:
 	Inherits@1: ^SpidersUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Missile
 	Health:

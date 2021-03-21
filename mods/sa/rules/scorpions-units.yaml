@@ -1,8 +1,7 @@
 scorpions_light:
 	Inherits@1: ^ScorpionsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Savage
 	Health:
@@ -22,9 +21,8 @@ scorpions_light:
 
 scorpions_medium:
 	Inherits@1: ^ScorpionsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Spear Gun
 	Health:
@@ -46,9 +44,8 @@ scorpions_medium:
 
 scorpions_heavy:
 	Inherits@1: ^ScorpionsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Ninja
 	Health:

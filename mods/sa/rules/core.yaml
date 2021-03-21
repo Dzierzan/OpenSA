@@ -186,7 +186,14 @@
 	Selectable:
 		Bounds: 24,24
 		Priority: 20
-	WithMoveAnimation:
+	WithInfantryBody:
+		MoveSequence: move
+		DefaultAttackSequence: shoot
+		AttackSequences: shoot
+		StandSequences: idle
+	AttackFrontal:
+		FacingTolerance: 15
+	-WithFacingSpriteBody:
 	MapEditorData:
 		Categories: Unit
 	Buildable:
@@ -223,36 +230,12 @@
 		Bots: beetles-ai, ants-ai, wasps-ai, spiders-ai, easy-ai, medium-ai, hard-ai
 
 ^CoreNeutralUnit:
-	Inherits: ^CoreCreature
-	Mobile:
-		Locomotor: unit
-	Targetable:
-		TargetTypes: Ground
-	Selectable:
-		Bounds: 24,24
-		Priority: 20
-	WithMoveAnimation:
-	MapEditorData:
-		Categories: NeutralUnit
-	RevealsShroud:
-		Range: 10c0
-	RenderSprites:
-		Palette: OpenSA
-		Scale: 1.1
-	CustomAppearsOnRadar:
-	RadarColorFromFaction:
-	WithDeathAnimation:
-		FallbackSequence: die
+	Inherits: ^CoreUnit
 	Wanders:
 		WanderMoveRadius: 2
 		ReduceMoveRadiusDelay: 50
 		MinMoveDelay: 150
 		MaxMoveDelay: 500
-	Living:
-		RotationChance: 250
-	AttackMove:
-	Guard:
-	Guardable:
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
@@ -295,13 +278,6 @@
 	WithTurretAttackAnimation:
 		Sequence: shoot
 
-# Grouped traits for standard non-turreted behavior.
-^CoreArmedSelf:
-	AttackFrontal:
-		FacingTolerance: 15
-	WithAttackAnimation:
-		Sequence: shoot
-
 ^AutoTargetDefault:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
@@ -330,8 +306,6 @@
 		Condition: paralyzed
 	Mobile:
 		PauseOnCondition: !(!paralyzed)
-	WithMoveAnimation: #TODO it doesn't work...
-		RequiresCondition: !paralyzed
 	Targetable:
 		RequiresCondition: !paralyzed
 	Targetable@PARALYZED:

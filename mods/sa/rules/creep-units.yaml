@@ -1,8 +1,7 @@
 ant_bull_pirate:
 	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Bull Ant
 	Health:
@@ -26,9 +25,8 @@ ant_bull_pirate:
 
 ants_grenadier_pirate:
 	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Pirate Grenadier
 	Health:
@@ -54,9 +52,8 @@ ants_grenadier_pirate:
 
 ants_flying_machine_pilot:
 	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Pirate Grenadier
 	Health:
@@ -82,9 +79,8 @@ ants_flying_machine_pilot:
 
 ants_bazooka_pirate:
 	Inherits@1: ^CoreNeutralUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Pirate Bazooka
 	Health:

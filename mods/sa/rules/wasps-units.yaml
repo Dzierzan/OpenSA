@@ -1,8 +1,7 @@
 wasps_light:
 	Inherits@1: ^WaspsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Assault
 	Health:
@@ -21,14 +20,10 @@ wasps_light:
 		Delay: 5
 	AutoTarget:
 		ScanRadius: 8
-	-WithAttackAnimation:
-	-WithFacingSpriteBody:
-	-WithMoveAnimation:
 
 wasps_medium:
 	Inherits@1: ^WaspsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefault
 	Tooltip:
 		Name: Parasite
 	Health:
@@ -52,15 +47,11 @@ wasps_medium:
 		ScanRadius: 15
 	Targetable:
 		TargetTypes: Ground, Plant, wasps_medium
-	-WithAttackAnimation:
-	-WithFacingSpriteBody:
-	-WithMoveAnimation:
 
 wasps_heavy:
 	Inherits@1: ^WaspsUnit
-	Inherits@2: ^CoreArmedSelf
-	Inherits@3: ^AutoTargetDefault
-	Inherits@4: ^Paralyzed
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Sonic
 	Health:
@@ -79,9 +70,6 @@ wasps_heavy:
 		Delay: 4
 	AutoTarget:
 		ScanRadius: 8
-	-WithAttackAnimation:
-	-WithFacingSpriteBody:
-	-WithMoveAnimation:
 
 wasps.colorpicker:
 	Inherits: wasps_heavy
