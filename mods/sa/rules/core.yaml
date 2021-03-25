@@ -26,7 +26,6 @@
 		Position: BottomRight
 	# In general all units can be selected.
 	Selectable:
-		# The default priority for all units.
 	# Units have frames for different directions.
 	WithFacingSpriteBody:
 
@@ -72,6 +71,9 @@
 		Cursor: move
 		Path: 5,5
 		LineWidth: 3
+	# Units should die when owner lost the game.
+	OwnerLostAction:
+		Action: Kill
 
 ^CoreUnclaimedBuilding:
 	Inherits: ^CoreVisibleActor
@@ -230,6 +232,9 @@
 	GrantConditionOnBotOwner:
 		Condition: bot-wanders
 		Bots: beetles-ai, ants-ai, wasps-ai, spiders-ai, easy-ai, medium-ai, hard-ai
+	# Units should die when owner lost the game.
+	OwnerLostAction:
+		Action: Kill
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreUnit
@@ -280,6 +285,7 @@
 	WithTurretAttackAnimation:
 		Sequence: shoot
 
+# Default auto targetting for actors.
 ^AutoTargetDefault:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
@@ -363,7 +369,6 @@
 	# Always visible, no special shroud logic here.
 	-HiddenUnderFog:
 	FrozenUnderFog:
-	# Decorations  have sprites but do not use facing for them.
 	# Default setting makes decorations take 1x1 tiles.
 	Building:
 		Dimensions: 1,1
