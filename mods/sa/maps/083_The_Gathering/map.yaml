@@ -412,9 +412,6 @@ Actors:
 	Actor118: plant_desert_grass
 		Location: 54,12
 		Owner: Neutral
-	Actor119: ants_colony
-		Location: 28,62
-		Owner: Wasps
 	Actor120: beetles_colony
 		Location: 23,72
 		Owner: Wasps
@@ -444,9 +441,6 @@ Actors:
 		Owner: Ants
 	Actor129: beetles_colony
 		Location: 54,72
-		Owner: Beetles
-	Actor130: beetles_colony
-		Location: 67,62
 		Owner: Beetles
 	Actor131: scorpions_colony
 		Location: 77,88
@@ -556,14 +550,20 @@ Actors:
 	Actor166: beetles_colony
 		Location: 41,26
 		Owner: Creeps
-	Actor167: beetles_colony
-		Location: 55,26
-		Owner: Creeps
 	Actor169: plant_desert_flower
 		Owner: Neutral
 		Location: 71,5
 	Actor168: startcamera
 		Owner: Neutral
 		Location: 35,71
+	Actor170: ants_colony
+		Owner: Wasps
+		Location: 29,62
+	Actor171: beetles_colony
+		Owner: Beetles
+		Location: 66,62
+	Actor173: beetles_colony
+		Owner: Creeps
+		Location: 53,26
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
