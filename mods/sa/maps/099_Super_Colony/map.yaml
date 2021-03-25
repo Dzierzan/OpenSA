@@ -712,32 +712,62 @@ Actors:
 	Actor233: wasps_medium
 		Owner: Spiders
 		Location: 103,68
-		Health: 100
 		Facing: 0
 	Actor234: wasps_medium
 		Owner: Spiders
 		Location: 110,63
-		Health: 100
 		Facing: 0
 	Actor235: wasps_medium
 		Owner: Spiders
 		Location: 82,88
-		Health: 100
 		Facing: 15
 	Actor236: wasps_medium
 		Owner: Spiders
 		Location: 89,83
-		Health: 100
 		Facing: 0
 	Actor237: wasps_medium
 		Owner: Spiders
 		Location: 63,106
-		Health: 100
 		Facing: 0
 	Actor238: wasps_medium
 		Owner: Spiders
 		Location: 69,103
-		Health: 100
+		Facing: 0
+	Actor239: wasps_medium
+		Owner: Spiders
+		Location: 73,100
+		Facing: 0
+	Actor240: wasps_medium
+		Owner: Spiders
+		Location: 78,92
+		Facing: 0
+	Actor241: wasps_medium
+		Owner: Spiders
+		Location: 98,73
+		Facing: 0
+	Actor242: scorpions_heavy
+		Owner: Spiders
+		Location: 86,94
+		Facing: 0
+	Actor243: scorpions_heavy
+		Owner: Spiders
+		Location: 94,87
+		Facing: 0
+	Actor244: spiders_heavy
+		Owner: Spiders
+		Location: 66,115
+		Facing: 0
+	Actor245: spiders_heavy
+		Owner: Spiders
+		Location: 75,107
+		Facing: 0
+	Actor246: spiders_heavy
+		Owner: Spiders
+		Location: 108,76
+		Facing: 0
+	Actor247: spiders_heavy
+		Owner: Spiders
+		Location: 116,68
 		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

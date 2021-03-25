@@ -577,6 +577,7 @@ Actors:
 	Actor188: beetles_colony
 		Location: 12,108
 		Owner: Beetles
+		TurretFacing: 500
 	Actor189: beetles_colony
 		Location: 75,98
 		Owner: Beetles
@@ -862,5 +863,121 @@ Actors:
 	Actor284: plant_clover
 		Owner: Neutral
 		Location: 25,42
+	Actor283: beetles_medium
+		Owner: Beetles
+		Location: 76,96
+		Facing: 0
+	Actor285: beetles_medium
+		Owner: Beetles
+		Location: 82,99
+		Facing: 0
+	Actor286: beetles_medium
+		Owner: Beetles
+		Location: 77,105
+		Facing: 0
+	Actor287: beetles_heavy
+		Owner: Beetles
+		Location: 82,103
+		Facing: 0
+	Actor288: beetles_heavy
+		Owner: Beetles
+		Location: 74,99
+		Facing: 0
+	Actor289: ants_medium
+		Owner: Beetles
+		Location: 35,89
+		Facing: 0
+	Actor290: ants_medium
+		Owner: Beetles
+		Location: 40,91
+		Facing: 0
+	Actor291: ants_heavy
+		Owner: Beetles
+		Location: 33,95
+		Facing: 0
+	Actor293: ants_medium
+		Owner: Beetles
+		Location: 14,73
+		Facing: 0
+	Actor294: ants_medium
+		Owner: Beetles
+		Location: 10,76
+		Facing: 0
+	Actor295: ants_heavy
+		Owner: Beetles
+		Location: 18,75
+		Facing: 0
+	Actor300: beetles_medium
+		Owner: Beetles
+		Location: 20,112
+		Facing: 0
+	Actor301: beetles_heavy
+		Owner: Beetles
+		Location: 17,107
+		Facing: 0
+	Actor302: beetles_heavy
+		Owner: Beetles
+		Location: 11,108
+		Facing: 0
+	Actor303: ants_medium
+		Owner: Beetles
+		Location: 76,73
+		Facing: 4
+	Actor304: ants_medium
+		Owner: Beetles
+		Location: 81,76
+		Facing: 40
+	Actor306: ants_heavy
+		Owner: Beetles
+		Location: 80,81
+		Facing: 0
+	Actor307: ants_medium
+		Owner: Beetles
+		Location: 75,81
+		Facing: 0
+	Actor308: ants_medium
+		Owner: Beetles
+		Location: 73,74
+		Facing: 0
+	Actor310: ants_heavy
+		Owner: Beetles
+		Location: 14,82
+		Facing: 0
+	Actor311: ants_medium
+		Owner: Beetles
+		Location: 32,92
+		Facing: 0
+	Actor313: beetles_medium
+		Owner: Beetles
+		Location: 10,112
+		Facing: 0
+	Actor299: ants_medium
+		Owner: Beetles
+		Location: 38,98
+		Facing: 0
+	Actor312: ants_medium
+		Owner: Beetles
+		Location: 41,95
+		Facing: 0
+	Actor305: ants_medium
+		Owner: Beetles
+		Location: 73,78
+		Facing: 0
+	Actor309: ants_medium
+		Owner: Beetles
+		Location: 81,79
+		Facing: 0
+	Actor314: ants_medium
+		Owner: Beetles
+		Location: 11,80
+		Facing: 0
+	Actor315: ants_medium
+		Owner: Beetles
+		Location: 18,80
+		Facing: 0
+	Actor316: beetles_medium
+		Owner: Beetles
+		Location: 16,115
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

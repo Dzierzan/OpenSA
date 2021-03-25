@@ -718,5 +718,13 @@ Actors:
 	Actor230: plant_smarty
 		Owner: Neutral
 		Location: 76,89
+	Actor232: wasps_heavy
+		Owner: Ants
+		Location: 44,115
+		Facing: 0
+	Actor233: wasps_light
+		Owner: Ants
+		Location: 54,113
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
