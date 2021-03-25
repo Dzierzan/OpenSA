@@ -47,7 +47,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			var colonyBitInit = init.Get<ColonyBitInit>(info);
 			colony = colonyBitInit.Value.Actor(init.World).Value.Trait<DefeatedColony>();
 
-			lifetime = init.World.WorldTick + init.World.SharedRandom.Next(info.MinLifetime, info.MaxLifetime);
+			lifetime = init.World.SharedRandom.Next(info.MinLifetime, info.MaxLifetime);
 		}
 
 		void ITick.Tick(Actor self)
