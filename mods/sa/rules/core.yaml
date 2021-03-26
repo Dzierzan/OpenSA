@@ -218,7 +218,7 @@
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	UpdatesPlayerStatistics:
-	Wanders@BOT:
+	AttackWander@BOT:
 		WanderMoveRadius: 2
 		ReduceMoveRadiusDelay: 50
 		MinMoveDelay: 250
@@ -226,7 +226,7 @@
 		RequiresCondition: bot-wanders
 	Wanders@PLAYER:
 		WanderMoveRadius: 1
-		ReduceMoveRadiusDelay: 50
+		ReduceMoveRadiusDelay: 5
 		MinMoveDelay: 2000
 		MaxMoveDelay: 4000
 	GrantConditionOnBotOwner:
@@ -238,7 +238,7 @@
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreUnit
-	Wanders:
+	AttackWander:
 		WanderMoveRadius: 2
 		ReduceMoveRadiusDelay: 50
 		MinMoveDelay: 150
