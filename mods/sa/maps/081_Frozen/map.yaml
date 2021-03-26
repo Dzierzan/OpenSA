@@ -559,5 +559,9 @@ Actors:
 	Actor188: startcamera
 		Owner: Neutral
 		Location: 18,115
+	Actor189: scorpions_heavy
+		Owner: Beetles
+		Location: 21,123
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
