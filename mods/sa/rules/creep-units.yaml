@@ -209,8 +209,12 @@ flying_machine:
 		SoundFiles: sounds|STEAMPUFF.SDF
 		Interval: 100
 		RequiresCondition: Puff
+	GrantConditionOnTerrain:
+		Condition: on_water
+		TerrainTypes: Water
 	SpawnActorOnDeath:
 		Actor: ants_flying_machine_pilot
+		RequiresCondition: !on_water
 	LeavesTrails:
 		Image: smoke_trail
 		Sequences: idle
