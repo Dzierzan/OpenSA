@@ -4,13 +4,15 @@
 	RenderSprites:
 	# At default we never see anything under shroud or fog.
 	HiddenUnderFog:
-	# TODO describe why we need this one.
+	# Calculates facings.
 	BodyOrientation:
-	# TODO describe why we need this one.
+	# Derive facings from sprite body sequence.
 	QuantizeFacingsFromSequence:
 	# Required to see debug overlays.
 	CombatDebugOverlay:
+	# This actor enables the radar minimap.
 	ProvidesRadar:
+	# Renders target lines between order waypoints.
 	DrawLineToTarget:
 
 # Base for all movable units.
@@ -243,6 +245,8 @@
 		ReduceMoveRadiusDelay: 50
 		MinMoveDelay: 150
 		MaxMoveDelay: 500
+	RequiresSpecificOwners:
+		ValidOwnerNames: Creeps
 
 ^CoreNeutralTowerCreep:
 	Inherits: ^CoreCreature
@@ -276,6 +280,8 @@
 	-WithFacingSpriteBody:
 	WithSpriteBody:
 	WithGrowAnimation:
+	RequiresSpecificOwners:
+		ValidOwnerNames: Creeps
 
 # Grouped traits for standard turret behavior.
 ^CoreTurret:
@@ -378,3 +384,6 @@
 		Categories: Decorations
 	RenderSprites:
 		Palette: OpenSA
+	# Decorations will be owned by Neutral by default.
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
