@@ -10,8 +10,6 @@
 	QuantizeFacingsFromSequence:
 	# Required to see debug overlays.
 	CombatDebugOverlay:
-	# This actor enables the radar minimap.
-	ProvidesRadar:
 	# Renders target lines between order waypoints.
 	DrawLineToTarget:
 
