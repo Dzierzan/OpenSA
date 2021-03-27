@@ -63,12 +63,10 @@
 	RadarColorFromFaction:
 	Production:
 	ProductionQueue:
-		ItemLimit: 0
-		InfiniteBuildLimit: 0
+		InfiniteBuildLimit: 25
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
-		DisallowPaused: True
 	RallyPoint:
 		Cursor: move
 		Path: 5,5
