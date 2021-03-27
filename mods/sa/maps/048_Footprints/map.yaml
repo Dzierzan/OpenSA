@@ -595,9 +595,5 @@ Actors:
 	Actor186: plant_clover
 		Owner: Neutral
 		Location: 5,37
-	Actor187: mushroom
-		Owner: Neutral
-		Facing: 384
-		Location: 6,38
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

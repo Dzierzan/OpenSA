@@ -555,19 +555,19 @@ Actors:
 		Location: 22,69
 		Owner: Beetles
 	Actor175: plant_clover
-		Owner: Creeps
+		Owner: Neutral
 		Location: 66,28
 	Actor176: plant_clover
-		Owner: Creeps
+		Owner: Neutral
 		Location: 22,43
 	Actor177: plant_clover
-		Owner: Creeps
+		Owner: Neutral
 		Location: 121,42
 	Actor178: plant_clover
-		Owner: Creeps
+		Owner: Neutral
 		Location: 121,62
 	Actor179: plant_clover
-		Owner: Creeps
+		Owner: Neutral
 		Location: 117,112
 	Actor180: startcamera
 		Owner: Neutral

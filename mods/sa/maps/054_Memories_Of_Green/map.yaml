@@ -998,10 +998,6 @@ Actors:
 	Actor361: plant_clover
 		Owner: Neutral
 		Location: 79,87
-	Actor360: mushroom
-		Owner: Neutral
-		Facing: 384
-		Location: 79,84
 	Actor363: plant_clover
 		Owner: Neutral
 		Location: 125,28
