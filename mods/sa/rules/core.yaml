@@ -209,8 +209,9 @@
 	RadarColorFromFaction:
 	WithDeathAnimation:
 		FallbackSequence: die
-	Living:
-		RotationChance: 250
+	TurnOnIdle:
+		MinDelay: 100
+		MaxDelay: 500
 	AttackMove:
 	Guard:
 	Guardable:
