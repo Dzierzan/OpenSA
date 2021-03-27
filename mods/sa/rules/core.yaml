@@ -324,6 +324,10 @@
 	Targetable@PARALYZED:
 		TargetTypes: Paralyzed
 		RequiresCondition: paralyzed
+	AttackFrontal:
+		RequiresCondition: !paralyzed
+	TurnOnIdle:
+		RequiresCondition: !paralyzed
 
 # Creates special effect when actor is disabled for creep flyers
 ^Paralyzed_Flyer:
