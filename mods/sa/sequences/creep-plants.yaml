@@ -211,7 +211,7 @@ lolly_red:
 	name: sprites|NAMENEUTRALLOLLY.ANI
 	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
 
-anthole:
+anthole_candyland:
 	idle: sprites|ANTHOLE_NORMAL.ANI
 		ZOffset: -3000
 	close: sprites|ANTHOLE_CLOSE.ANI
@@ -219,6 +219,51 @@ anthole:
 		Tick: 500
 		ZOffset: -3000
 	open: sprites|ANTHOLE_OPEN.ANI
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+
+anthole_normal:
+	idle: bits/antholes.png
+		Start: 11
+		ZOffset: -3000
+	close: bits/antholes.png
+		Start: 12
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+	open: bits/antholes.png
+		Start: 8
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+
+anthole_desert:
+	idle: bits/antholes.png
+		Start: 3
+		ZOffset: -3000
+	close: bits/antholes.png
+		Start: 4
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+	open: bits/antholes.png
+		Start: 0
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+
+anthole_swamp:
+	idle: bits/antholes.png
+		Start: 19
+		ZOffset: -3000
+	close: bits/antholes.png
+		Start: 20
+		Length: 3
+		Tick: 500
+		ZOffset: -3000
+	open: bits/antholes.png
+		Start: 16
 		Length: 3
 		Tick: 500
 		ZOffset: -3000
