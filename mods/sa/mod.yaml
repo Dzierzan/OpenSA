@@ -149,9 +149,9 @@ AssetBrowser:
 	SupportedExtensions: .ddf
 
 WebServices:
-	GameNews: https://localhost/gamenews # TODO
-	VersionCheck: https://localhost/versioncheck # TODO
-	GameNewsFileName: sa-news.yaml
+
+GitHubWebServices:
+	GameNewsFileName: sa-news.json
 
 Voices:
 	sa|audio/voices.yaml
