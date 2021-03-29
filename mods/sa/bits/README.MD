@@ -152,3 +152,8 @@ Description: Bigger production tab buttons.
 Author: Dzierzan
 Source: Self-made
 Description: Production clock animation.
+
+**antholes.png**
+Author: MikillRosen (sayedmamdouh), Gate 5 Creations
+Source: Swarm Assault
+Description: Recolored Ant Holes so they fit every tileset.
