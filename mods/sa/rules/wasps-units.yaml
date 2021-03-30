@@ -1,7 +1,6 @@
 wasps_light:
 	Inherits@1: ^WaspsUnit
 	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Assault
 	Health:
@@ -14,12 +13,13 @@ wasps_light:
 	Armament:
 		Weapon: wasps_light
 		LocalOffset: 500,0,0
-		PauseOnCondition: paralyzed
 	WithLoopedAttackSound:
 		Report: sounds|MACHINEGUN.SDF
 		Delay: 5
 	AutoTarget:
 		ScanRadius: 8
+	Targetable:
+		TargetTypes: Ground, wasp
 
 wasps_medium:
 	Inherits@1: ^WaspsUnit
@@ -32,7 +32,7 @@ wasps_medium:
 		Speed: 134
 	Buildable:
 		BuildDuration: 350
-		Description: Shoots arrows which paralyze units.\nLong range unit.\nCannot target colonies, plants or other parasite units.
+		Description: Shoots arrows which paralyze units.\nLong range unit.\nCannot target colonies, plants or other wasp units.
 	RevealsShroud:
 		Range: 12c0
 	Armament:
@@ -46,12 +46,11 @@ wasps_medium:
 	AutoTarget:
 		ScanRadius: 15
 	Targetable:
-		TargetTypes: Ground, Plant, wasps_medium
+		TargetTypes: Ground, wasp
 
 wasps_heavy:
 	Inherits@1: ^WaspsUnit
 	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Sonic
 	Health:
@@ -64,12 +63,13 @@ wasps_heavy:
 	Armament:
 		Weapon: wasps_heavy
 		LocalOffset: 1000,0,0
-		PauseOnCondition: paralyzed
 	WithLoopedAttackSound:
 		Report: sounds|SONIC.SDF
 		Delay: 4
 	AutoTarget:
 		ScanRadius: 8
+	Targetable:
+		TargetTypes: Ground, wasp
 
 wasps.colorpicker:
 	Inherits: wasps_heavy
