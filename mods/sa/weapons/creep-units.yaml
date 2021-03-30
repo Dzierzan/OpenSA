@@ -12,7 +12,7 @@ ant_bull_pirate:
 ants_grenadier_pirate:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 40 #50
-	Range: 4c0
+	Range: 6c0
 	Projectile: Bullet
 		Speed: 230
 		Blockable: false

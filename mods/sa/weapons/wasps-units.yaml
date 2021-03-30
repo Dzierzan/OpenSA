@@ -1,7 +1,7 @@
 wasps_light:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 5
-	Range: 6c0
+	Range: 10c0
 	Projectile: Bullet
 		Speed: 562
 		Inaccuracy: 600
@@ -20,7 +20,7 @@ wasps_light:
 
 wasps_medium:
 	ReloadDelay: 45
-	Range: 14c0
+	Range: 15c0
 	Report: sounds|ARROW.SDF
 	InvalidTargets: Colony, Plant, wasps_medium
 	Projectile: Bullet
@@ -46,7 +46,7 @@ wasps_medium:
 wasps_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 4
-	Range: 6c0
+	Range: 8c0
 	Projectile: Bullet
 		Speed: 200
 		Inaccuracy: 100

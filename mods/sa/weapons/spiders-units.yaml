@@ -13,7 +13,7 @@ spiders_light:
 
 spiders_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 12c0
+	Range: 14c0
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
 	Projectile: InstantHit
@@ -29,7 +29,7 @@ spiders_medium:
 
 spiders_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 16c0
+	Range: 18c0
 	ReloadDelay: 40
 	AfterFireSound: sounds|MISSILELOCK.SDF
 	AfterFireSoundDelay: 20

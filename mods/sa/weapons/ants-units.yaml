@@ -1,7 +1,7 @@
 ants_light:
 	ValidTargets: Ground, Paralyzed, Water
 	Range: 1c512
-	ReloadDelay: 8 #8
+	ReloadDelay: 8
 	Report: sa|bits/sounds/ANTCRUNCH.wav #sounds|ANTCRUNCH.SDF
 	InvalidTargets: Colony
 	Projectile: InstantHit
@@ -13,8 +13,8 @@ ants_light:
 
 ants_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	ReloadDelay: 40 #50
-	Range: 4c0
+	ReloadDelay: 40
+	Range: 6c0
 	Projectile: Bullet
 		Speed: 230
 		Blockable: false
@@ -35,8 +35,8 @@ ants_medium:
 
 ants_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 8c0
-	ReloadDelay: 55 #50
+	Range: 9c0
+	ReloadDelay: 55
 	Report: sounds|ROCKETLAUNCH.SDF
 	Projectile: Bullet
 		Speed: 350

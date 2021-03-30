@@ -14,7 +14,7 @@ scorpions_light:
 scorpions_medium:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 30
-	Range: 16c0
+	Range: 15c0
 	Report: sounds|SPEAR.SDF
 	Projectile: Bullet
 		Speed: 450

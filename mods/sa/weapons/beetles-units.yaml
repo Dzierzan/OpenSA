@@ -1,6 +1,6 @@
 beetles_light:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 4c0
+	Range: 6c0
 	ReloadDelay: 6
 	Projectile: InstantHit
 		Inaccuracy: 0c300
@@ -39,7 +39,7 @@ beetles_medium:
 beetles_heavy:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 30
-	Range: 12c0
+	Range: 14c0
 	Report: sounds|CANNON.SDF
 	Projectile: Bullet
 		Speed: 562
