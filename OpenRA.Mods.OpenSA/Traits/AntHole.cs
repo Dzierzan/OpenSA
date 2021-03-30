@@ -11,14 +11,14 @@
 
 using System.Linq;
 using OpenRA.Effects;
-using OpenRA.Mods.Common.Traits.Render;
+using OpenRA.Mods.OpenSA.Traits.Render;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
 	[Desc("Animates the anthole and spawns actors.")]
-	public class AntHoleInfo : TraitInfo, Requires<WithSpriteBodyInfo>
+	public class AntHoleInfo : TraitInfo, Requires<WithAntHoleBodyInfo>
 	{
 		[FieldLoader.Require]
 		[ActorReference(typeof(PirateAntInfo))]
@@ -34,18 +34,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Time in ticks between each ant crawling out of the hole.")]
 		public readonly int Delay = 40;
 
-		[SequenceReference]
 		public readonly string OpenSequence = "open";
 
 		public readonly string OpenSound = "ANTHOLEOPEN.SDF";
 
-		[SequenceReference]
 		public readonly string CloseSequence = "close";
 
 		public readonly string CloseSound = "ANTHOLECLOSE.SDF";
-
-		[Desc("Apply to sprite bodies with these names.")]
-		public readonly string[] BodyNames = { "body" };
 
 		public readonly string Owner = "Creeps";
 
@@ -55,13 +50,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class AntHole : INotifyCreated
 	{
 		readonly AntHoleInfo info;
-		readonly WithSpriteBody[] wsbs;
+		readonly WithAntHoleBody body;
 
 		public AntHole(ActorInitializer init, AntHoleInfo info)
 		{
 			this.info = info;
 			var self = init.Self;
-			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => info.BodyNames.Contains(w.Info.Name)).ToArray();
+			body = self.Trait<WithAntHoleBody>();
 		}
 
 		string ChooseActor(Actor self)
@@ -84,8 +79,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			Game.Sound.Play(SoundType.World, info.OpenSound, self.CenterPosition);
 
-			var wsb = wsbs.FirstEnabledTraitOrDefault();
-			wsb.PlayCustomAnimation(self, info.OpenSequence, () =>
+			body.PlayCustomAnimation(self, info.OpenSequence, () =>
 			{
 				var amount = self.World.SharedRandom.Next(info.Amount.X, info.Amount.Y);
 				for (var i = 0; i < amount; i++)
@@ -106,7 +100,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				{
 					Game.Sound.Play(SoundType.World, info.CloseSound, self.CenterPosition);
 
-					wsb.PlayCustomAnimation(self, info.CloseSequence, () => { self.Dispose(); });
+					body.PlayCustomAnimation(self, info.CloseSequence, () => { self.Dispose(); });
 				})));
 			});
 		}

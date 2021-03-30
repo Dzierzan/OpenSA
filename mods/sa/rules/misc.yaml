@@ -11,7 +11,7 @@ mpspawn:
 	MapEditorData:
 		Categories: System
 
-anthole_normal:
+anthole:
 	Interactable:
 	AlwaysVisible:
 	AntHole:
@@ -22,25 +22,9 @@ anthole_normal:
 	Immobile:
 	RejectsOrders:
 	RenderSprites:
-	WithSpriteBody:
-		#RequiresCondition: normal
+	WithAntHoleBody:
 	BodyOrientation:
 		QuantizedFacings: 1
-
-anthole_desert:
-	Inherits: anthole_normal
-	WithSpriteBody:
-		#RequiresCondition: desert
-
-anthole_swamp:
-	Inherits: anthole_normal
-	WithSpriteBody:
-		#RequiresCondition: swamp
-
-anthole_candyland:
-	Inherits: anthole_normal
-	WithSpriteBody:
-		#RequiresCondition: candy
 
 ^CorePlayer:
 	AlwaysVisible:
@@ -181,7 +165,7 @@ World:
 		SpawnInterval: 1000, 1500
 		InitialSpawnDelay: 1000, 1500
 		ValidGround: Clear, Rock, Vegetation
-		Actors: anthole_candyland
+		Actors: anthole
 	FlyerCreeps:
 		CheckboxLabel: Flyers
 		CheckboxDescription: Allows spawning creep flyers.
