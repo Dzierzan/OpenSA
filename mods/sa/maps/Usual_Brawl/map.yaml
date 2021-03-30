@@ -277,9 +277,6 @@ Actors:
 	Actor87: plant_broad_leaf_grass
 		Location: 38,80
 		Owner: Neutral
-	Actor88: plant_broad_leaf_grass
-		Location: 96,50
-		Owner: Neutral
 	Actor89: plant_broad_leaf_grass
 		Location: 98,56
 		Owner: Neutral
@@ -593,9 +590,6 @@ Actors:
 	Actor192: ants_colony
 		Owner: Ants
 		Location: 50,129
-	Actor193: beetles_colony
-		Owner: Creeps
-		Location: 82,129
 	Actor194: ants_colony
 		Owner: Ants
 		Location: 35,136
@@ -605,12 +599,6 @@ Actors:
 	Actor196: wasps_colony
 		Owner: Creeps
 		Location: 16,76
-	Actor197: wasps_colony
-		Owner: Wasps
-		Location: 29,3
-	Actor199: ants_colony
-		Owner: Wasps
-		Location: 30,23
 	Actor198: wasps_colony
 		Owner: Wasps
 		Location: 10,16
@@ -620,18 +608,12 @@ Actors:
 	Actor201: beetles_colony
 		Owner: Beetles
 		Location: 112,20
-	Actor202: ants_colony
-		Owner: Beetles
-		Location: 129,31
-	Actor203: spiders_colony
-		Owner: Creeps
-		Location: 87,46
-	Actor206: ants_colony
-		Owner: Creeps
-		Location: 48,43
+		TurretFacing: 500
 	Actor207: ants_colony
 		Owner: Creeps
 		Location: 78,27
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor208: ants_light
 		Owner: Ants
 		Location: 52,125
@@ -664,18 +646,6 @@ Actors:
 		Owner: Ants
 		Location: 39,143
 		Facing: 0
-	Actor218: spiders_light
-		Owner: Beetles
-		Location: 57,96
-		Facing: 0
-	Actor219: spiders_light
-		Owner: Beetles
-		Location: 49,92
-		Facing: 0
-	Actor221: spiders_light
-		Owner: Beetles
-		Location: 49,100
-		Facing: 0
 	Actor223: scorpions_light
 		Owner: Beetles
 		Location: 147,4
@@ -704,65 +674,10 @@ Actors:
 		Owner: Beetles
 		Location: 110,28
 		Facing: 0
-	Actor230: ants_light
-		Owner: Beetles
-		Location: 135,31
-		Facing: 0
-	Actor231: ants_light
-		Owner: Beetles
-		Location: 128,29
-		Facing: 0
-	Actor232: ants_light
-		Owner: Beetles
-		Location: 126,33
-		Facing: 0
-	Actor233: ants_light
-		Owner: Beetles
-		Location: 132,38
-		Facing: 0
-	Actor234: ants_light
-		Owner: Beetles
-		Location: 136,35
-		Facing: 0
-	Actor235: ants_light
-		Owner: Beetles
-		Location: 126,36
-		Facing: 0
 	Actor222: beetles_heavy
 		Owner: Beetles
 		Location: 113,31
 		Facing: 0
-	Actor236: ants_light
-		Owner: Wasps
-		Location: 37,22
-		Facing: 0
-	Actor237: ants_light
-		Owner: Wasps
-		Location: 32,20
-		Facing: 55
-	Actor238: ants_light
-		Owner: Wasps
-		Location: 27,24
-		Facing: 0
-	Actor239: ants_light
-		Owner: Wasps
-		Location: 24,29
-		Facing: 0
-	Actor240: ants_light
-		Owner: Wasps
-		Location: 30,34
-		Facing: 0
-	Actor241: ants_light
-		Owner: Wasps
-		Location: 36,35
-		Facing: 0
-	Actor242: ants_light
-		Owner: Wasps
-		Location: 39,27
-		Facing: 0
-	Actor244: beetles_colony
-		Owner: Creeps
-		Location: 67,7
 	Actor249: wasps_colony_turret
 		Owner: Wasps
 		Location: 14,28
@@ -1075,9 +990,6 @@ Actors:
 	Actor353: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 130,99
-	Actor243: ants_colony
-		Owner: Creeps
-		Location: 89,6
 	Actor354: plant_flower
 		Owner: Neutral
 		Location: 86,26
@@ -1122,26 +1034,14 @@ Actors:
 		Location: 48,138
 		Facing: 0
 	Actor368: ants_colony
-		Owner: Beetles
 		Location: 50,94
-	Actor369: ants_light
-		Owner: Beetles
-		Location: 47,96
-		Facing: 0
-	Actor370: ants_light
-		Owner: Beetles
-		Location: 54,93
-		Facing: 0
-	Actor371: scorpions_light
-		Owner: Beetles
-		Location: 55,101
-		Facing: 0
+		Faction: beetles
+		Owner: Creeps
+		TurretFacing@primary: 500
+		TurretFacing@secondary: 500
 	Actor372: wasps_colony
 		Owner: Creeps
 		Location: 76,66
-	Actor373: spiders_colony
-		Owner: Creeps
-		Location: 56,63
 	Actor374: ants_colony_turret
 		Owner: Spiders
 		Location: 144,110
@@ -1162,34 +1062,6 @@ Actors:
 		Owner: Beetles
 		Location: 142,15
 		Facing: 0
-	Actor380: ants_heavy
-		Owner: Wasps
-		Location: 37,28
-		Facing: 0
-	Actor381: ants_heavy
-		Owner: Wasps
-		Location: 30,22
-		Facing: 0
-	Actor382: ants_heavy
-		Owner: Wasps
-		Location: 27,32
-		Facing: 0
-	Actor383: ants_medium
-		Owner: Wasps
-		Location: 33,34
-		Facing: 0
-	Actor384: ants_medium
-		Owner: Wasps
-		Location: 38,32
-		Facing: 0
-	Actor385: ants_medium
-		Owner: Wasps
-		Location: 26,26
-		Facing: 0
-	Actor386: ants_medium
-		Owner: Wasps
-		Location: 39,20
-		Facing: 15
 	Actor387: plant_flower
 		Owner: Neutral
 		Location: 16,14
@@ -1205,5 +1077,128 @@ Actors:
 	Actor391: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 25,36
+	Actor394: beetles_colony
+		Owner: Wasps
+		Location: 28,4
+	Actor395: spiders_colony
+		Owner: Creeps
+		Location: 91,47
+	Actor396: spiders_heavy
+		Owner: Spiders
+		Location: 137,138
+		Facing: 0
+	Actor373: ants_colony
+		Owner: Creeps
+		Location: 52,63
+	Actor397: spiders_colony
+		Owner: Creeps
+		Location: 47,41
+	Actor398: wasps_colony
+		Owner: Creeps
+		Location: 82,130
+	Actor370: beetles_heavy
+		Owner: Beetles
+		Location: 117,31
+		Facing: 0
+	Actor371: beetles_medium
+		Owner: Beetles
+		Location: 114,27
+		Facing: 0
+	Actor402: beetles_heavy
+		Owner: Wasps
+		Location: 38,8
+		Facing: 0
+	Actor403: beetles_heavy
+		Owner: Wasps
+		Location: 34,11
+		Facing: 0
+	Actor404: beetles_medium
+		Owner: Wasps
+		Location: 35,8
+		Facing: 0
+	Actor405: wasps_heavy
+		Owner: Wasps
+		Location: 17,23
+		Facing: 7
+	Actor369: wasps_colony
+		Owner: Beetles
+		Location: 128,30
+	Actor392: wasps_heavy
+		Owner: Beetles
+		Location: 134,29
+		Facing: 0
+	Actor393: wasps_heavy
+		Owner: Beetles
+		Location: 125,30
+		Facing: 0
+	Actor399: wasps_light
+		Owner: Beetles
+		Location: 133,37
+		Facing: 0
+	Actor400: beetles_light
+		Owner: Beetles
+		Location: 120,30
+		Facing: 39
+	Actor401: beetles_light
+		Owner: Beetles
+		Location: 124,34
+		Facing: 0
+	Actor406: ants_colony
+		Owner: Creeps
+		Location: 83,7
+	Actor407: beetles_colony
+		Owner: Creeps
+		Location: 61,9
+	Actor386: wasps_light
+		Owner: Wasps
+		Location: 18,19
+		Facing: 0
+	Actor409: wasps_light
+		Owner: Wasps
+		Location: 12,23
+		Facing: 0
+	Actor408: scorpions_colony
+		Owner: Wasps
+		Location: 29,25
+	Actor380: scorpions_light
+		Owner: Wasps
+		Location: 36,24
+		Facing: 0
+	Actor381: scorpions_light
+		Owner: Wasps
+		Location: 31,22
+		Facing: 0
+	Actor382: scorpions_light
+		Owner: Wasps
+		Location: 26,29
+		Facing: 7
+	Actor383: scorpions_light
+		Owner: Wasps
+		Location: 30,33
+		Facing: 0
+	Actor384: scorpions_medium
+		Owner: Wasps
+		Location: 27,24
+		Facing: 0
+	Actor385: scorpions_medium
+		Owner: Wasps
+		Location: 33,19
+		Facing: 0
+	Actor410: scorpions_medium
+		Owner: Wasps
+		Location: 23,32
+		Facing: 0
+	Actor411: scorpions_medium
+		Owner: Wasps
+		Location: 34,33
+		Facing: 0
+	Actor412: scorpions_heavy
+		Owner: Wasps
+		Location: 20,27
+		Facing: 0
+	Actor413: scorpions_medium
+		Owner: Wasps
+		Location: 28,20
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
