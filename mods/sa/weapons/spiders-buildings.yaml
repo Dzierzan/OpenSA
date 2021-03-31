@@ -1,6 +1,6 @@
 spiders_colony:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 12c0
+	Range: 13c0
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
 	Projectile: InstantHit

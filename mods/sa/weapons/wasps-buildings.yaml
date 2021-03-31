@@ -1,7 +1,7 @@
 wasps_colony:
 	ValidTargets: Ground, Paralyzed, Water, Air
 	ReloadDelay: 4
-	Range: 10c0
+	Range: 12c0
 	Projectile: Bullet
 		Speed: 600 #562
 		Inaccuracy: 500

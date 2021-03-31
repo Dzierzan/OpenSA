@@ -1,6 +1,6 @@
 ants_colony:
 	ValidTargets: Ground, Paralyzed, Water, Air
-	Range: 10c0
+	Range: 12c0
 	ReloadDelay: 6
 	Projectile: InstantHit
 		Inaccuracy: 0c512
