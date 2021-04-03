@@ -2,9 +2,9 @@
 
 This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material.
 
-# Status
+# Current status
 
-Currently the project still requires a lot of polishing. However you can freely play skirmishes or recreated missions (currently 80/100), feel free to give any feedback or even help to progress further the project.
+At the moment the project is highly complete, nearly all required features are there and what's left is purely technical or cosmetical like HP bars or video support. Moreover all missions have been recreated. Feel free to give any feedback or even help to progress further this project.
 
 # Swarm Assault vs OpenSA
 
@@ -26,6 +26,12 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 To launch your project from the development environment you must first compile the project by running `make.cmd` (Windows), or opening a terminal in the SDK directory and running `make` (Linux / macOS).  You can then run `launch-game.cmd` (Windows) or `launch-game.sh` (Linux / macOS) to run your game.
 
 For more detailed instructions, I recommend reading this: https://github.com/OpenRA/OpenRA/blob/bleed/INSTALL.md
+
+Otherwise, go to releases and get the latest stable version.
+
+# Swarm Assault assets status
+
+This project does not include any libre assets. It still requires vanilla Swarm Assault. The game itself hasn't been sold for 20 years, the developers are unreachable and the last publisher Mountain King Studios confirmed they do not possess the IP nor they have any contact to the original developers. It's safe to assume the game is abandonware. For this reason, when you launch OpenSA project for the first time, the assets will be downloaded and only assets. No exe files, so the vanilla game cannot be run.
 
 # Legal disclaimers
 
