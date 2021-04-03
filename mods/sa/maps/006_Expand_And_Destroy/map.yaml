@@ -269,5 +269,25 @@ Actors:
 	Actor68: startcamera
 		Owner: Neutral
 		Location: 48,59
+	Actor69: ants_light
+		Owner: Wasps
+		Location: 48,63
+		Facing: 0
+	Actor70: ants_light
+		Owner: Wasps
+		Location: 53,56
+		Facing: 0
+	Actor71: ants_light
+		Owner: Wasps
+		Location: 50,51
+		Facing: 63
+	Actor72: ants_light
+		Owner: Wasps
+		Location: 46,52
+		Facing: 31
+	Actor73: ants_light
+		Owner: Wasps
+		Location: 40,65
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
