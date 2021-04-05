@@ -3,7 +3,7 @@ World:
 		Name: Wasps
 		InternalName: wasps
 		Description: Specialization: -25% breeding time for wasp units.
-	MPStartUnits@Wasps:
+	StartingUnits@Wasps:
 		Class: none
 		ClassName: Colony
 		BaseActor: wasps_colony

@@ -77,7 +77,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 		{
 			var isProducing = productionQueues.Any(queue => queue.AllQueued().Any());
 
-			var color = Game.Settings.Game.UsePlayerStanceColors ? self.Owner.PlayerStanceColor(self) : self.Owner.Color;
+			var color = Game.Settings.Game.UsePlayerStanceColors ? self.Owner.PlayerRelationshipColor(self) : self.Owner.Color;
 			if (modifier != null)
 				color = modifier.RadarColorOverride(self, color);
 

@@ -35,7 +35,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			world = self.World;
 			this.info = info;
 
-			terrainIndex = self.World.Map.Rules.TileSet.GetTerrainIndex(info.TerrainType);
+			terrainIndex = self.World.Map.Rules.TerrainInfo.GetTerrainIndex(info.TerrainType);
 		}
 
 		bool ICustomMovementLayer.EnabledForActor(ActorInfo a, LocomotorInfo li) { return li is WaspLocomotorInfo; }

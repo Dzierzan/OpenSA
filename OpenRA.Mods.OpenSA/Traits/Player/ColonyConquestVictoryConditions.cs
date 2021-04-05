@@ -23,11 +23,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Delay for the end game notification in milliseconds.")]
 		public readonly int NotificationDelay = 1500;
 
-		[Translate]
 		[Desc("Description of the objective.")]
 		public readonly string ColonyObjective = "Conquer all colonies!";
 
-		[Translate]
 		[Desc("Description of the objective.")]
 		public readonly string ConquestObjective = "Destroy all opposition!";
 

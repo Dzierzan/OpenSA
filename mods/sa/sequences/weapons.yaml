@@ -82,7 +82,7 @@ projectiles:
 	gumnutmissile: bits/gumnutmissile.png
 		Length: 4
 		Facings: -16
-		ZOffset: 4900	
+		ZOffset: 4900
 
 smoke_trail:
 	idle: SMOKEPUFF.ANI

@@ -2,8 +2,8 @@ Player:
 	-ColonyConquestVictoryConditions:
 
 World:
-	-SpawnMPUnits:
-	-MPStartLocations:
+	-SpawnStartingUnits:
+	-MapStartingLocations:
 	MusicPlaylist:
 		DisableWorldSounds: False
 	Randomizer:

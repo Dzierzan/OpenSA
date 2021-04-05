@@ -17,11 +17,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 	[Desc("Controls the 'Flyer' checkbox in the lobby options.")]
 	public class FlyerCreepsInfo : TraitInfo, ILobbyOptions
 	{
-		[Translate]
 		[Desc("Descriptive label for the plants checkbox in the lobby.")]
 		public readonly string CheckboxLabel = "Flyers";
 
-		[Translate]
 		[Desc("Tooltip description for the flyer checkbox in the lobby.")]
 		public readonly string CheckboxDescription = "Random flyers occur and drop bombs.";
 

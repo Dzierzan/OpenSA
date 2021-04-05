@@ -149,9 +149,9 @@ World:
 	MapOptions:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
-	MPStartLocations:
-	CreateMPPlayers:
-	SpawnMPUnits:
+	MapStartingLocations:
+	CreateMapPlayers:
+	SpawnStartingUnits:
 	PathFinder:
 	ValidateOrder:
 	MapCreeps:

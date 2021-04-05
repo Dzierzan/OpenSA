@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using OpenRA.Mods.Common.Terrain;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenSA.UtilityCommands
@@ -21,19 +22,19 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 		const int MapCordonWidth = 2;
 
 		readonly FileStream stream;
-		readonly string tilesetName;
+		readonly string tileset;
 		readonly TerrainTile clearTile;
 
 		Map map;
 		Size mapSize;
-		TileSet tileSet;
+		DefaultTerrain terrainInfo;
 		MapPlayers mapPlayers;
 
 		int numberOfActors;
 
 		MapImporter(string filename, string tileset)
 		{
-			tilesetName = tileset;
+			this.tileset = tileset;
 			clearTile = new TerrainTile(0, 0);
 
 			try
@@ -85,9 +86,12 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 			var y = stream.ReadInt32();
 			mapSize = new Size(x * 2, y * 2);
 
-			tileSet = Game.ModData.DefaultTileSets[tilesetName];
+			if (!Game.ModData.DefaultTerrainInfo.TryGetValue(tileset, out var terrainInfo))
+				throw new InvalidDataException("Unknown tileset {0}".F(tileset));
 
-			map = new Map(Game.ModData, tileSet, mapSize.Width + 2 * MapCordonWidth, mapSize.Height + 2 * MapCordonWidth)
+			this.terrainInfo = terrainInfo as DefaultTerrain;
+
+			map = new Map(Game.ModData, terrainInfo, mapSize.Width + 2 * MapCordonWidth, mapSize.Height + 2 * MapCordonWidth)
 			{
 				Title = Path.GetFileNameWithoutExtension(mapFile),
 				Author = "Gate 5 Creations"
@@ -114,7 +118,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 					var rawTile = stream.ReadUInt8();
 
 					byte offset = 0x0;
-					switch (tilesetName)
+					switch (tileset)
 					{
 						case "NORMAL":
 							offset = 47;
@@ -151,8 +155,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 
 		TerrainTile GetTile(ushort tileIndex, byte frame)
 		{
-			TerrainTemplateInfo template;
-			if (!tileSet.Templates.TryGetValue(tileIndex, out template))
+			if (!terrainInfo.Templates.TryGetValue(tileIndex, out var template))
 			{
 				Console.WriteLine("Tile with Id {0} could not be found. Defaulting to clear.".F(tileIndex));
 				return clearTile;

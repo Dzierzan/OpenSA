@@ -1,7 +1,7 @@
 World:
 	PirateSpawner:
 		SpawnInterval: 1500, 2000
-		InitialSpawnDelay: 1500, 2000	
+		InitialSpawnDelay: 1500, 2000
 	-CreepFlyerSpawner@dragonfly:
 	-CreepFlyerSpawner@fly:
 	CreepFlyerSpawner@moth:

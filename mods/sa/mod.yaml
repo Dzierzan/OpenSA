@@ -114,7 +114,12 @@ ChromeLayout:
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu-prompts.yaml
-	sa|chrome/settings.yaml
+	common|chrome/settings.yaml
+	sa|chrome/settings-display.yaml
+	sa|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	sa|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
@@ -233,6 +238,10 @@ SupportsMapsFrom: sa
 SoundFormats: Sdf, Wav
 
 SpriteFormats: Ani, Ddf, PngSheet
+
+VideoFormats:
+
+TerrainFormat: DefaultTerrain
 
 SpriteSequenceFormat: DefaultSpriteSequence
 
