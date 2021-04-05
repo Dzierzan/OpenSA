@@ -77,7 +77,6 @@ Actors:
 		Owner: Wasps
 		Location: 68,82
 		Facing: 204
-		Health: 100
 	Actor10: ants_medium
 		Owner: Wasps
 		Location: 72,72
@@ -524,7 +523,6 @@ Actors:
 	Actor181: beetles_colony
 		Owner: Wasps
 		Location: 84,81
-		Health: 100
 		TurretFacing: 126
 	Actor182: wasps_colony
 		Owner: Wasps
@@ -557,7 +555,6 @@ Actors:
 	Actor189: scorpions_heavy
 		Owner: Wasps
 		Location: 92,80
-		Health: 100
 		Facing: 128
 	Actor190: scorpions_heavy
 		Owner: Wasps
@@ -631,7 +628,6 @@ Actors:
 		Owner: Ants
 		Location: 39,56
 		Facing: 716
-		Health: 100
 	Actor208: spiders_medium
 		Owner: Ants
 		Location: 57,53
@@ -1226,57 +1222,46 @@ Actors:
 	Actor401: wasps_heavy
 		Owner: Ants
 		Location: 35,56
-		Health: 100
 		Facing: 848
 	Actor402: wasps_light
 		Owner: Ants
 		Location: 47,42
-		Health: 100
 		Facing: 586
 	Actor403: wasps_medium
 		Owner: Ants
 		Location: 41,45
-		Health: 100
 		Facing: 222
 	Actor404: spiders_heavy
 		Owner: Ants
 		Location: 67,42
-		Health: 100
 		Facing: 547
 	Actor405: spiders_light
 		Owner: Ants
 		Location: 60,40
-		Health: 100
 		Facing: 531
 	Actor406: ants_heavy
 		Owner: Wasps
 		Location: 91,70
-		Health: 100
 		Facing: 634
 	Actor407: beetles_heavy
 		Owner: Wasps
 		Location: 93,73
-		Health: 100
 		Facing: 0
 	Actor408: beetles_heavy
 		Owner: Wasps
 		Location: 90,86
-		Health: 100
 		Facing: 198
 	Actor409: beetles_medium
 		Owner: Wasps
 		Location: 86,90
-		Health: 100
 		Facing: 384
 	Actor410: beetles_light
 		Owner: Wasps
 		Location: 76,93
-		Health: 100
 		Facing: 71
 	Actor411: beetles_light
 		Owner: Wasps
 		Location: 65,92
-		Health: 100
 		Facing: 87
 
 Rules: rules.yaml

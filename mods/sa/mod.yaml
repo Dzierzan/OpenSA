@@ -143,7 +143,7 @@ ChromeLayout:
 	sa|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
-	common|chrome/editor.yaml
+	sa|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml
 	sa|chrome/mainmenu-prerelease-notification.yaml
 	sa|chrome/mainmenu.yaml
@@ -241,7 +241,7 @@ SpriteFormats: Ani, Ddf, PngSheet
 
 VideoFormats:
 
-TerrainFormat: DefaultTerrain
+TerrainFormat: CustomTerrain
 
 SpriteSequenceFormat: DefaultSpriteSequence
 

@@ -27,50 +27,6 @@ Terrain:
 
 Templates:
 	#Clear
-	Template@109:
-		Id: 109
-		Images: bits/candy/clear_144x144.png
-		Size: 2,2
-		PickAny: true
-		Palette: OpenSA
-		Categories: Terrain
-		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
-			18: Clear
-			19: Clear
-			20: Clear
-			21: Clear
-			22: Clear
-			23: Clear
-			24: Clear
-			25: Clear
-			26: Clear
-			27: Clear
-			28: Clear
-			29: Clear
-			30: Clear
-			31: Clear
-			32: Clear
-			33: Clear
-			34: Clear
-			35: Clear
 	Template@32:
 		Id: 32
 		Images: sprites|TECOLDEB00.DDF
@@ -78,6 +34,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
+		PickAny: true
 		Tiles:
 			0: Clear
 			1: Clear
@@ -90,6 +47,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
+		PickAny: true
 		Tiles:
 			0: Clear
 			1: Clear
@@ -102,6 +60,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
+		PickAny: true
 		Tiles:
 			0: Clear
 			1: Clear
@@ -114,6 +73,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
+		PickAny: true
 		Tiles:
 			0: Clear
 			1: Clear
@@ -126,6 +86,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
+		PickAny: true
 		Tiles:
 			0: Clear
 			1: Clear
@@ -138,122 +99,13 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Terrain
-		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-	Template@110:
-		Id: 110
-		Images: bits/candy/clear_144x144.png
-		Size: 6,6
-		Palette: OpenSA
-		Categories: Terrain
-		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
-			18: Clear
-			19: Clear
-			20: Clear
-			21: Clear
-			22: Clear
-			23: Clear
-			24: Clear
-			25: Clear
-			26: Clear
-			27: Clear
-			28: Clear
-			29: Clear
-			30: Clear
-			31: Clear
-			32: Clear
-			33: Clear
-			34: Clear
-			35: Clear
-	Template@111:
-		Id: 111
-		Images: bits/candy/clear_96x96.png
-		Size: 4,4
-		Palette: OpenSA
-		Categories: Terrain
-		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-	#Water TECOLDEA
-	Template@101:
-		Id: 101
-		Images: bits/candy/water_144x144.png
-		Size: 2,2
 		PickAny: true
-		Palette: OpenSA
-		Categories: Water
 		Tiles:
-			0: Water
-			1: Water
-			2: Water
-			3: Water
-			4: Water
-			5: Water
-			6: Water
-			7: Water
-			8: Water
-			9: Water
-			10: Water
-			11: Water
-			12: Water
-			13: Water
-			14: Water
-			15: Water
-			16: Water
-			17: Water
-			18: Water
-			19: Water
-			20: Water
-			21: Water
-			22: Water
-			23: Water
-			24: Water
-			25: Water
-			26: Water
-			27: Water
-			28: Water
-			29: Water
-			30: Water
-			31: Water
-			32: Water
-			33: Water
-			34: Water
-			35: Water
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+	#Water TECOLDEA
 	Template@9:
 		Id: 9
 		Images: sprites|TECOLDEA09.DDF
@@ -261,6 +113,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -273,6 +126,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -285,6 +139,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -297,6 +152,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -309,6 +165,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -321,6 +178,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Water
+		PickAny: true
 		Tiles:
 			0: Water
 			1: Water
@@ -638,72 +496,6 @@ Templates:
 			1: Water
 			2: Water
 			3: Water
-	Template@102:
-		Id: 102
-		Images: bits/candy/water_144x144.png
-		Size: 6,6
-		Palette: OpenSA
-		Categories: Water
-		Tiles:
-			0: Water
-			1: Water
-			2: Water
-			3: Water
-			4: Water
-			5: Water
-			6: Water
-			7: Water
-			8: Water
-			9: Water
-			10: Water
-			11: Water
-			12: Water
-			13: Water
-			14: Water
-			15: Water
-			16: Water
-			17: Water
-			18: Water
-			19: Water
-			20: Water
-			21: Water
-			22: Water
-			23: Water
-			24: Water
-			25: Water
-			26: Water
-			27: Water
-			28: Water
-			29: Water
-			30: Water
-			31: Water
-			32: Water
-			33: Water
-			34: Water
-			35: Water
-	Template@103:
-		Id: 103
-		Images: bits/candy/water_96x96.png
-		Size: 4,4
-		Palette: OpenSA
-		Categories: Water
-		Tiles:
-			0: Water
-			1: Water
-			2: Water
-			3: Water
-			4: Water
-			5: Water
-			6: Water
-			7: Water
-			8: Water
-			9: Water
-			10: Water
-			11: Water
-			12: Water
-			13: Water
-			14: Water
-			15: Water
 	#Rock TECOLDEC
 	Template@46:
 		Id: 46
@@ -712,6 +504,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -724,6 +517,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -736,6 +530,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -748,6 +543,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -760,6 +556,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -772,6 +569,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -1089,72 +887,6 @@ Templates:
 			1: Clear
 			2: Clear
 			3: Clear
-	Template@105:
-		Id: 105
-		Images: bits/candy/rock_144x144.png
-		Size: 6,6
-		Palette: OpenSA
-		Categories: Rock
-		Tiles:
-			0: Rock
-			1: Rock
-			2: Rock
-			3: Rock
-			4: Rock
-			5: Rock
-			6: Rock
-			7: Rock
-			8: Rock
-			9: Rock
-			10: Rock
-			11: Rock
-			12: Rock
-			13: Rock
-			14: Rock
-			15: Rock
-			16: Rock
-			17: Rock
-			18: Rock
-			19: Rock
-			20: Rock
-			21: Rock
-			22: Rock
-			23: Rock
-			24: Rock
-			25: Rock
-			26: Rock
-			27: Rock
-			28: Rock
-			29: Rock
-			30: Rock
-			31: Rock
-			32: Rock
-			33: Rock
-			34: Rock
-			35: Rock
-	Template@106:
-		Id: 106
-		Images: bits/candy/rock_96x96.png
-		Size: 4,4
-		Palette: OpenSA
-		Categories: Rock
-		Tiles:
-			0: Rock
-			1: Rock
-			2: Rock
-			3: Rock
-			4: Rock
-			5: Rock
-			6: Rock
-			7: Rock
-			8: Rock
-			9: Rock
-			10: Rock
-			11: Rock
-			12: Rock
-			13: Rock
-			14: Rock
-			15: Rock
 	#Vegetation TECOLDED
 	Template@78:
 		Id: 78
@@ -1163,6 +895,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1175,6 +908,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1187,6 +921,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1199,6 +934,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1211,6 +947,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1223,6 +960,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -1540,69 +1278,3 @@ Templates:
 			1: Rock
 			2: Rock
 			3: Rock
-	Template@107:
-		Id: 107
-		Images: bits/candy/vegetation_144x144.png
-		Size: 6,6
-		Palette: OpenSA
-		Categories: Vegetation
-		Tiles:
-			0: Vegetation
-			1: Vegetation
-			2: Vegetation
-			3: Vegetation
-			4: Vegetation
-			5: Vegetation
-			6: Vegetation
-			7: Vegetation
-			8: Vegetation
-			9: Vegetation
-			10: Vegetation
-			11: Vegetation
-			12: Vegetation
-			13: Vegetation
-			14: Vegetation
-			15: Vegetation
-			16: Vegetation
-			17: Vegetation
-			18: Vegetation
-			19: Vegetation
-			20: Vegetation
-			21: Vegetation
-			22: Vegetation
-			23: Vegetation
-			24: Vegetation
-			25: Vegetation
-			26: Vegetation
-			27: Vegetation
-			28: Vegetation
-			29: Vegetation
-			30: Vegetation
-			31: Vegetation
-			32: Vegetation
-			33: Vegetation
-			34: Vegetation
-			35: Vegetation
-	Template@108:
-		Id: 108
-		Images: bits/candy/vegetation_96x96.png
-		Size: 4,4
-		Palette: OpenSA
-		Categories: Vegetation
-		Tiles:
-			0: Vegetation
-			1: Vegetation
-			2: Vegetation
-			3: Vegetation
-			4: Vegetation
-			5: Vegetation
-			6: Vegetation
-			7: Vegetation
-			8: Vegetation
-			9: Vegetation
-			10: Vegetation
-			11: Vegetation
-			12: Vegetation
-			13: Vegetation
-			14: Vegetation
-			15: Vegetation

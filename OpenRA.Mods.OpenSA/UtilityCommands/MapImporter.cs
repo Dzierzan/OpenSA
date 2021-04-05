@@ -12,7 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using OpenRA.Mods.Common.Terrain;
+using OpenRA.Mods.OpenSA.Terrain;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenSA.UtilityCommands
@@ -27,7 +27,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 
 		Map map;
 		Size mapSize;
-		DefaultTerrain terrainInfo;
+		CustomTerrain terrainInfo;
 		MapPlayers mapPlayers;
 
 		int numberOfActors;
@@ -89,7 +89,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 			if (!Game.ModData.DefaultTerrainInfo.TryGetValue(tileset, out var terrainInfo))
 				throw new InvalidDataException("Unknown tileset {0}".F(tileset));
 
-			this.terrainInfo = terrainInfo as DefaultTerrain;
+			this.terrainInfo = terrainInfo as CustomTerrain;
 
 			map = new Map(Game.ModData, terrainInfo, mapSize.Width + 2 * MapCordonWidth, mapSize.Height + 2 * MapCordonWidth)
 			{
