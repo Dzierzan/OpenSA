@@ -71,25 +71,25 @@ EditorPlayer:
 	GrantConditionOnTileSet@Normal:
 		TileSets: NORMAL
 		Condition: normal
-	AmbientSound@Normal:
+	MuteableAmbientSound@Normal:
 		RequiresCondition: normal
 		SoundFiles: sounds|FROGS.SDF
 	GrantConditionOnTileSet@Desert:
 		TileSets: DESERT
 		Condition: desert
-	AmbientSound@Desert:
+	MuteableAmbientSound@Desert:
 		RequiresCondition: desert
 		SoundFiles: sounds|WIND.SDF
 	GrantConditionOnTileSet@Swamp:
 		TileSets: SWAMP
 		Condition: swamp
-	AmbientSound@Swamp:
+	MuteableAmbientSound@Swamp:
 		RequiresCondition: swamp
 		SoundFiles: sounds|CRICKETS.SDF
 	GrantConditionOnTileSet@Candy:
 		TileSets: CANDY
 		Condition: candy
-	AmbientSound@Candy:
+	MuteableAmbientSound@Candy:
 		RequiresCondition: candy
 		SoundFiles: sounds|DREAMSCAPE.SDF
 	MusicPlaylist:

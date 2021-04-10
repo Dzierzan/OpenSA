@@ -16,7 +16,7 @@ World:
 	-PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
 	-PlantSpawner@CANDY:
-	AmbientSound@Normal:
+	MuteableAmbientSound@Normal:
 		SoundFiles: sounds_MENU|STARTBACKGROUND.SDF
 
 ^CoreUnit:
