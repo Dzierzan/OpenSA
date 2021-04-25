@@ -1,5 +1,5 @@
 gate5: Gate 5 Swarm Assault Windows Setup
-	Type: Install
+	Type: RegistryDirectoryFromFile
 	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: Microsoft\Windows\CurrentVersion\Uninstall\Swarm Assault
 	RegistryValue: UninstallString
