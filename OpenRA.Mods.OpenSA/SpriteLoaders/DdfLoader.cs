@@ -18,7 +18,7 @@ namespace OpenRA.Mods.OpenSA.SpriteLoaders
 {
 	public class DdfSpriteFrame : ISpriteFrame
 	{
-		public SpriteFrameType Type { get { return SpriteFrameType.Indexed; } }
+		public SpriteFrameType Type { get { return SpriteFrameType.Indexed8; } }
 		public Size Size { get; private set; }
 		public Size FrameSize { get; private set; }
 		public float2 Offset { get; private set; }
@@ -75,7 +75,7 @@ namespace OpenRA.Mods.OpenSA.SpriteLoaders
 
 	public class QuarterDdfTile : ISpriteFrame
 	{
-		public SpriteFrameType Type { get { return SpriteFrameType.Indexed; } }
+		public SpriteFrameType Type { get { return SpriteFrameType.Indexed8; } }
 		public Size Size { get; private set; }
 		public Size FrameSize { get; private set; }
 		public float2 Offset { get; private set; }
@@ -104,7 +104,7 @@ namespace OpenRA.Mods.OpenSA.SpriteLoaders
 			return s is DdfPackageLoader.DdfSegmentStream;
 		}
 
-		public virtual bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public virtual bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			metadata = null;
 
@@ -145,7 +145,7 @@ namespace OpenRA.Mods.OpenSA.SpriteLoaders
 			return s is DdfPackageLoader.AniSegmentStream;
 		}
 
-		public override bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public override bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			metadata = null;
 

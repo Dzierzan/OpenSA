@@ -16,6 +16,8 @@ Visibility: MissionSelector
 
 Categories: Campaign
 
+Translations:
+
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral
@@ -49,268 +51,218 @@ Actors:
 	Actor1: beetles_colony
 		Owner: Creeps
 		Location: 21,55
-		Health: 100
 		TurretFacing: 500
 	Actor2: scorpions_colony
 		Location: 21,13
 		Faction: Random
 		Owner: Beetles
-		Health: 100
 		TurretFacing: 500
 	Actor3: ants_colony
 		Location: 8,6
 		Faction: Random
-		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
 		Owner: Wasps
 	Actor4: ants_colony
 		Location: 33,6
 		Faction: Random
-		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
 		Owner: Wasps
 	Actor5: ants_colony
 		Location: 8,21
 		Faction: Random
-		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
 		Owner: Wasps
 	Actor6: ants_colony
 		Location: 33,21
 		Faction: Random
-		Health: 100
 		TurretFacing@primary: 500
 		TurretFacing@secondary: 500
 		Owner: Wasps
 	Actor7: scorpions_light
 		Owner: Beetles
 		Location: 20,43
-		Health: 100
 		Facing: 0
 	Actor8: scorpions_light
 		Owner: Beetles
 		Location: 23,43
-		Health: 100
 		Facing: 0
 	Actor9: scorpions_light
 		Owner: Beetles
 		Location: 26,43
 		Facing: 0
-		Health: 100
 	Actor10: scorpions_light
 		Owner: Beetles
 		Location: 22,41
-		Health: 100
 		Facing: 0
 	Actor11: scorpions_light
 		Owner: Beetles
 		Location: 24,41
-		Health: 100
 		Facing: 0
 	Actor12: scorpions_medium
 		Owner: Beetles
 		Location: 19,40
-		Health: 100
 		Facing: 0
 	Actor13: scorpions_medium
 		Owner: Beetles
 		Location: 27,40
-		Health: 100
 		Facing: 0
 	Actor14: scorpions_medium
 		Owner: Beetles
 		Location: 40,73
-		Health: 100
 		Facing: 0
 	Actor15: scorpions_medium
 		Owner: Beetles
 		Location: 43,71
 		Facing: 0
-		Health: 100
 	Actor16: scorpions_medium
 		Owner: Beetles
 		Location: 7,73
-		Health: 100
 		Facing: 0
 	Actor18: scorpions_medium
 		Owner: Beetles
 		Location: 4,71
-		Health: 100
 		Facing: 0
 	Actor17: ant_bull_pirate
 		Owner: Creeps
 		Location: 22,53
-		Health: 100
 		Facing: 0
 	Actor19: ant_bull_pirate
 		Owner: Creeps
 		Location: 25,53
-		Health: 100
 		Facing: 0
 	Actor20: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 19,55
-		Health: 100
 		Facing: 0
 	Actor21: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 28,55
-		Health: 100
 		Facing: 0
 	Actor22: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 19,58
-		Health: 100
 		Facing: 0
 	Actor23: ants_grenadier_pirate
 		Owner: Creeps
 		Location: 28,58
-		Health: 100
 		Facing: 0
 	Actor33: ants_medium
 		Owner: Wasps
 		Location: 22,8
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor36: ants_medium
 		Owner: Wasps
 		Location: 26,8
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor37: ants_medium
 		Owner: Wasps
 		Location: 31,13
-		Health: 100
 		Facing: 47
 		Stance: AttackAnything
 	Actor39: ants_medium
 		Owner: Wasps
 		Location: 31,17
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor40: ants_medium
 		Owner: Wasps
 		Location: 16,13
 		Facing: 0
 		Stance: AttackAnything
-		Health: 100
 	Actor42: ants_medium
 		Owner: Wasps
 		Location: 16,17
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor43: ants_medium
 		Owner: Wasps
 		Location: 22,22
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor46: ants_light
 		Owner: Wasps
 		Location: 5,21
-		Health: 100
 		Facing: 0
 	Actor48: ants_light
 		Owner: Wasps
 		Location: 9,18
-		Health: 100
 		Facing: 0
 	Actor49: ants_light
 		Owner: Wasps
 		Location: 5,7
-		Health: 100
 		Facing: 0
 	Actor50: ants_light
 		Owner: Wasps
 		Location: 8,4
-		Health: 100
 		Facing: 0
 	Actor51: ants_light
 		Owner: Wasps
 		Location: 8,12
-		Health: 100
 		Facing: 63
 	Actor52: ants_light
 		Owner: Wasps
 		Location: 15,4
-		Health: 100
 		Facing: 0
 	Actor53: ants_light
 		Owner: Wasps
 		Location: 14,11
-		Health: 100
 		Facing: 0
 	Actor54: ants_light
 		Owner: Wasps
 		Location: 24,2
-		Health: 100
 		Facing: 0
 	Actor55: ants_light
 		Owner: Wasps
 		Location: 21,5
-		Health: 100
 		Facing: 0
 	Actor56: ants_light
 		Owner: Wasps
 		Location: 30,7
-		Health: 100
 		Facing: 0
 	Actor57: ants_light
 		Owner: Wasps
 		Location: 38,5
-		Health: 100
 		Facing: 0
 	Actor58: ants_light
 		Owner: Wasps
 		Location: 39,12
 		Facing: 0
-		Health: 100
 	Actor59: ants_light
 		Owner: Wasps
 		Location: 33,4
-		Health: 100
 		Facing: 0
 	Actor60: ants_light
 		Owner: Wasps
 		Location: 35,13
 		Facing: 0
-		Health: 100
 	Actor61: ants_light
 		Owner: Wasps
 		Location: 37,18
-		Health: 100
 		Facing: 0
 	Actor62: ants_light
 		Owner: Wasps
 		Location: 41,26
-		Health: 100
 		Facing: 0
 	Actor63: ants_light
 		Owner: Wasps
 		Location: 34,19
-		Health: 100
 		Facing: 15
 	Actor67: ants_light
 		Owner: Wasps
 		Location: 43,21
-		Health: 100
 		Facing: 0
 	Actor68: ants_light
 		Owner: Wasps
 		Location: 45,26
-		Health: 100
 		Facing: 0
 	Actor69: ants_light
 		Owner: Wasps
 		Location: 5,29
-		Health: 100
 		Facing: 0
 	Actor82: plant_gumnut
 		Owner: Neutral
@@ -561,87 +513,71 @@ Actors:
 	Actor169: scorpions_light
 		Owner: Beetles
 		Location: 7,70
-		Health: 100
 		Facing: 0
 	Actor170: scorpions_light
 		Owner: Beetles
 		Location: 40,70
-		Health: 100
 		Facing: 0
 	Actor165: ants_medium
 		Owner: Wasps
 		Location: 26,22
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor166: scorpions_medium
 		Owner: Beetles
 		Location: 5,73
-		Health: 100
 		Facing: 0
 	Actor167: scorpions_medium
 		Owner: Beetles
 		Location: 42,73
-		Health: 100
 		Facing: 0
 	Actor168: ants_heavy
 		Owner: Wasps
 		Location: 16,15
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor171: ants_heavy
 		Owner: Wasps
 		Location: 24,22
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor172: ants_heavy
 		Owner: Wasps
 		Location: 31,15
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor173: ants_heavy
 		Owner: Wasps
 		Location: 24,8
 		Facing: 0
-		Health: 100
 		Stance: AttackAnything
 	Actor174: ants_light
 		Owner: Wasps
 		Location: 40,21
-		Health: 100
 		Facing: 0
 	Actor175: ants_light
 		Owner: Wasps
 		Location: 41,7
-		Health: 100
 		Facing: 39
 	Actor176: ants_light
 		Owner: Wasps
 		Location: 44,3
-		Health: 100
 		Facing: 0
 	Actor177: ants_light
 		Owner: Wasps
 		Location: 6,15
-		Health: 100
 		Facing: 0
 	Actor178: ants_light
 		Owner: Wasps
 		Location: 15,7
-		Health: 100
 		Facing: 0
 	Actor179: ant_bull_pirate
 		Owner: Creeps
 		Location: 21,61
-		Health: 100
 		Facing: 0
 	Actor180: ant_bull_pirate
 		Owner: Creeps
 		Location: 26,61
-		Health: 100
 		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

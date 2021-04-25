@@ -94,7 +94,8 @@ EditorPlayer:
 		SoundFiles: sounds|DREAMSCAPE.SDF
 	MusicPlaylist:
 	TerrainGeometryOverlay:
-	TerrainRenderer:
+	CustomTerrainRenderer:
+	TerrainDebugOverlay:
 	ShroudRenderer:
 		Index: 0, 15, 3, 6, 12, 9, 11, 7, 14, 13, 1, 2, 4, 8, 5, 10
 	Faction@Random:
@@ -126,8 +127,6 @@ EditorPlayer:
 	TerrainGeometryOverlay:
 	# Required for debug overlays:
 	DebugVisualizations:
-	# Required for warhead debug overlays.
-	WarheadDebugOverlay:
 
 World:
 	Inherits: ^CoreWorld
@@ -149,9 +148,9 @@ World:
 	MapOptions:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
-	MPStartLocations:
-	CreateMPPlayers:
-	SpawnMPUnits:
+	MapStartingLocations:
+	CreateMapPlayers:
+	SpawnStartingUnits:
 	PathFinder:
 	ValidateOrder:
 	MapCreeps:
@@ -234,7 +233,8 @@ World:
 	RadarPings:
 		ShrinkSpeed: 5
 		RotationSpeed: 0.15
-
+	# Required for warhead debug overlays.
+	WarheadDebugOverlay:
 
 EditorWorld:
 	Inherits: ^CoreWorld

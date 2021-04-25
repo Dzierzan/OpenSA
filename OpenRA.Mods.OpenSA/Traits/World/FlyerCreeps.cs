@@ -14,14 +14,13 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	[Desc("Controls the 'Flyer' checkbox in the lobby options.")]
 	public class FlyerCreepsInfo : TraitInfo, ILobbyOptions
 	{
-		[Translate]
 		[Desc("Descriptive label for the plants checkbox in the lobby.")]
 		public readonly string CheckboxLabel = "Flyers";
 
-		[Translate]
 		[Desc("Tooltip description for the flyer checkbox in the lobby.")]
 		public readonly string CheckboxDescription = "Random flyers occur and drop bombs.";
 
@@ -37,7 +36,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Display order for the flyers checkbox in the lobby.")]
 		public readonly int CheckboxDisplayOrder = 0;
 
-		IEnumerable<LobbyOption> ILobbyOptions.LobbyOptions(Ruleset rules)
+		IEnumerable<LobbyOption> ILobbyOptions.LobbyOptions(MapPreview map)
 		{
 			yield return new LobbyBooleanOption("flyers", CheckboxLabel, CheckboxDescription, CheckboxVisible, CheckboxDisplayOrder, CheckboxEnabled, CheckboxLocked);
 		}

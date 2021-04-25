@@ -65,7 +65,7 @@ ants_light:
 	icon: bits/icons.png
 		Start: 0
 	icon-clicked: bits/icons.png
-		Start: 1	
+		Start: 1
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -137,7 +137,7 @@ ants_medium:
 	icon: bits/icons.png
 		Start: 2
 	icon-clicked: bits/icons.png
-		Start: 3	
+		Start: 3
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
@@ -209,7 +209,7 @@ ants_heavy:
 	icon: bits/icons.png
 		Start: 4
 	icon-clicked: bits/icons.png
-		Start: 5	
+		Start: 5
 	paralysis: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4

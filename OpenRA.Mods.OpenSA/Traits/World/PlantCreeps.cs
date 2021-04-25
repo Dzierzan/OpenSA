@@ -14,14 +14,13 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	[Desc("Controls the 'Plants' checkbox in the lobby options.")]
 	public class PlantCreepsInfo : TraitInfo, ILobbyOptions
 	{
-		[Translate]
 		[Desc("Descriptive label for the plants checkbox in the lobby.")]
 		public readonly string CheckboxLabel = "Plants";
 
-		[Translate]
 		[Desc("Tooltip description for the plants checkbox in the lobby.")]
 		public readonly string CheckboxDescription = "Random plants occur and attack the player.";
 
@@ -37,7 +36,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Display order for the plants checkbox in the lobby.")]
 		public readonly int CheckboxDisplayOrder = 0;
 
-		IEnumerable<LobbyOption> ILobbyOptions.LobbyOptions(Ruleset rules)
+		IEnumerable<LobbyOption> ILobbyOptions.LobbyOptions(MapPreview map)
 		{
 			yield return new LobbyBooleanOption("plants", CheckboxLabel, CheckboxDescription, CheckboxVisible, CheckboxDisplayOrder, CheckboxEnabled, CheckboxLocked);
 		}

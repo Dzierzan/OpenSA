@@ -46,7 +46,7 @@
 	VerticalSelectionDecorations:
 	Selectable:
 		Priority: 10
-		Bounds: 96, 96, 0, 0
+		Bounds: 4096, 4096, 0, 0
 	WithSpriteBody:
 	# Group all buildings in the map editor.
 	MapEditorData:
@@ -122,7 +122,7 @@
 		LostSound: sa|bits/sounds/turretPowerDown.wav
 	VerticalSelectionDecorations:
 	Selectable:
-		Bounds: 36,36
+		Bounds: 1536, 1536
 		Priority: 10
 	WithSpriteBody:
 	MustBeDestroyed:
@@ -188,7 +188,7 @@
 	Targetable:
 		TargetTypes: Ground
 	Selectable:
-		Bounds: 24,24
+		Bounds: 1024, 1024
 		Priority: 20
 	WithInfantryBody:
 		MoveSequence: move
@@ -252,7 +252,7 @@
 	Targetable:
 		TargetTypes: Ground, Plant
 	Selectable:
-		Bounds: 24,24
+		Bounds: 1024, 1024
 		Priority: 20
 	MapEditorData:
 		Categories: NeutralUnit
@@ -349,7 +349,7 @@
 	Targetable:
 		TargetTypes: Ground, Air
 	Selectable:
-		Bounds: 24,24
+		Bounds: 1024, 1024
 		Priority: 20
 	Voiced:
 		VoiceSet: NeutralVoice
@@ -366,6 +366,8 @@
 		DeathSequencePalette: OpenSA
 	Aircraft:
 		Repulsable: False
+		EnterCursor: default
+		EnterBlockedCursor: default
 	RejectsOrders:
 	HiddenUnderFog:
 		Type: CenterPosition

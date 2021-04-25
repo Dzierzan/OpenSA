@@ -48,6 +48,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 
 		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return this; }
+		public IRenderable OffsetBy(in WVec vec) { return new VerticalSelectionBarsAnnotationRenderable(pos + vec, actor, decorationBounds); }
 		public IRenderable OffsetBy(WVec vec) { return new VerticalSelectionBarsAnnotationRenderable(pos + vec, actor, decorationBounds); }
 		public IRenderable AsDecoration() { return this; }
 
@@ -90,7 +91,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 		Color GetHealthColor(IHealth health)
 		{
 			if (Game.Settings.Game.UsePlayerStanceColors)
-				return actor.Owner.PlayerStanceColor(actor);
+				return actor.Owner.PlayerRelationshipColor(actor);
 
 			return health.DamageState == DamageState.Critical ? Color.Red :
 				health.DamageState == DamageState.Heavy ? Color.Yellow : Color.LimeGreen;

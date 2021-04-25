@@ -14,6 +14,11 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v2
 
+      - name: Install .NET 5
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+
       - name: Prepare Environment
         run: echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
 
@@ -22,6 +27,7 @@ jobs:
           make engine
           mkdir -p build/linux
           ./packaging/linux/buildpackage.sh "${GIT_TAG}" "${PWD}/build/linux"
+
       - name: Upload Packages
         uses: svenstaro/upload-release-action@v2
         with:
@@ -39,6 +45,11 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v2
 
+      - name: Install .NET 5
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+
       - name: Prepare Environment
         run: echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
 
@@ -53,6 +64,7 @@ jobs:
           make engine
           mkdir -p build/macos
           ./packaging/macos/buildpackage.sh "${GIT_TAG}" "${PWD}/build/macos"
+
       - name: Upload Packages
         uses: svenstaro/upload-release-action@v2
         with:
@@ -70,15 +82,23 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v2
 
+      - name: Install .NET 5
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+
       - name: Prepare Environment
         run: |
           echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
-          sudo apt install nsis
+          sudo apt-get update
+          sudo apt-get install nsis wine64
+
       - name: Package Installers
         run: |
           make engine
           mkdir -p build/windows
           ./packaging/windows/buildpackage.sh "${GIT_TAG}" "${PWD}/build/windows"
+
       - name: Upload Packages
         uses: svenstaro/upload-release-action@v2
         with:

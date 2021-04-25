@@ -114,7 +114,12 @@ ChromeLayout:
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu-prompts.yaml
-	sa|chrome/settings.yaml
+	common|chrome/settings.yaml
+	sa|chrome/settings-display.yaml
+	sa|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	sa|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
@@ -138,7 +143,7 @@ ChromeLayout:
 	sa|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
-	common|chrome/editor.yaml
+	sa|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml
 	sa|chrome/mainmenu-prerelease-notification.yaml
 	sa|chrome/mainmenu.yaml
@@ -234,31 +239,37 @@ SoundFormats: Sdf, Wav
 
 SpriteFormats: Ani, Ddf, PngSheet
 
+VideoFormats:
+
+TerrainFormat: CustomTerrain
+
 SpriteSequenceFormat: DefaultSpriteSequence
 
 ModelSequenceFormat: PlaceholderModelSequence
 
 GameSpeeds:
-	slower:
-		Name: Slower
-		Timestep: 50
-		OrderLatency: 3
-	default:
-		Name: Normal
-		Timestep: 40
-		OrderLatency: 1
-	fast:
-		Name: Fast
-		Timestep: 35
-		OrderLatency: 4
-	faster:
-		Name: Faster
-		Timestep: 30
-		OrderLatency: 4
-	fastest:
-		Name: Fastest
-		Timestep: 20
-		OrderLatency: 6
+	DefaultSpeed: default
+	Speeds:
+		slower:
+			Name: Slower
+			Timestep: 50
+			OrderLatency: 3
+		default:
+			Name: Normal
+			Timestep: 40
+			OrderLatency: 1
+		fast:
+			Name: Fast
+			Timestep: 35
+			OrderLatency: 4
+		faster:
+			Name: Faster
+			Timestep: 30
+			OrderLatency: 4
+		fastest:
+			Name: Fastest
+			Timestep: 20
+			OrderLatency: 6
 
 DefaultPlayer:
 	Color: ada294

@@ -18,6 +18,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	public class PlantSpawnerInfo : TraitInfo, Requires<MapCreepsInfo>
 	{
 		[Desc("Minimum number of plants on the map.")]

@@ -26,11 +26,11 @@ namespace OpenRA.Mods.OpenSA.Traits.Render
 
 		public override object Create(ActorInitializer init) { return new WithAntHoleBody(init.Self, this); }
 
-		public IEnumerable<IActorPreview> RenderPreviewSprites(ActorPreviewInitializer init, RenderSpritesInfo rs, string image, int facings, PaletteReference p)
+		public IEnumerable<IActorPreview> RenderPreviewSprites(ActorPreviewInitializer init, string image, int facings, PaletteReference p)
 		{
 			var anim = new Animation(init.World, image);
 			anim.PlayRepeating(RenderSprites.NormalizeSequence(anim, init.GetDamageState(), IdleSequence));
-			yield return new SpriteActorPreview(anim, () => WVec.Zero, () => 0, p, rs.Scale);
+			yield return new SpriteActorPreview(anim, () => WVec.Zero, () => 0, p);
 		}
 	}
 
@@ -78,7 +78,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Render
 
 		Rectangle IAutoMouseBounds.AutoMouseoverBounds(Actor self, WorldRenderer wr)
 		{
-			return boundsAnimation.ScreenBounds(wr, self.CenterPosition, WVec.Zero, renderSprites.Info.Scale);
+			return boundsAnimation.ScreenBounds(wr, self.CenterPosition, WVec.Zero);
 		}
 	}
 }

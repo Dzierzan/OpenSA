@@ -4,7 +4,6 @@ set -e
 
 command -v make >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Linux packaging requires make."; exit 1; }
 command -v python3 >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Linux packaging requires python 3."; exit 1; }
-command -v tar >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Linux packaging requires tar."; exit 1; }
 command -v curl >/dev/null 2>&1 || command -v wget > /dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Linux packaging requires curl or wget."; exit 1; }
 
 require_variables() {
@@ -37,7 +36,6 @@ if [ -f "${TEMPLATE_ROOT}/user.config" ]; then
 fi
 
 require_variables "MOD_ID" "ENGINE_DIRECTORY" "PACKAGING_DISPLAY_NAME" "PACKAGING_INSTALLER_NAME" "PACKAGING_COPY_CNC_DLL" "PACKAGING_COPY_D2K_DLL" \
-	"PACKAGING_APPIMAGE_DEPENDENCIES_TAG" "PACKAGING_APPIMAGE_DEPENDENCIES_SOURCE" "PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME" \
 	"PACKAGING_FAQ_URL" "PACKAGING_OVERWRITE_MOD_VERSION"
 
 TAG="$1"
@@ -59,6 +57,7 @@ if [ ! -f "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/Makefile" ]; then
 fi
 
 . "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/functions.sh"
+. "${TEMPLATE_ROOT}/packaging/functions.sh"
 
 if [ ! -d "${OUTPUTDIR}" ]; then
 	echo "Output directory '${OUTPUTDIR}' does not exist.";
@@ -66,7 +65,7 @@ if [ ! -d "${OUTPUTDIR}" ]; then
 fi
 
 echo "Building core files"
-install_assemblies_mono "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${APPDIR}/usr/lib/openra" "linux-x64" "True" "${PACKAGING_COPY_CNC_DLL}" "${PACKAGING_COPY_D2K_DLL}"
+install_assemblies "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${APPDIR}/usr/lib/openra" "linux-x64" "True" "${PACKAGING_COPY_CNC_DLL}" "${PACKAGING_COPY_D2K_DLL}"
 install_data "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${APPDIR}/usr/lib/openra"
 
 for f in ${PACKAGING_COPY_ENGINE_FILES}; do
@@ -75,16 +74,9 @@ for f in ${PACKAGING_COPY_ENGINE_FILES}; do
 done
 
 echo "Building mod files"
-pushd "${TEMPLATE_ROOT}" > /dev/null
-make all
-popd > /dev/null
+install_mod_assemblies "${TEMPLATE_ROOT}" "${APPDIR}/usr/lib/openra" "linux-x64"
 
 cp -Lr "${TEMPLATE_ROOT}/mods/"* "${APPDIR}/usr/lib/openra/mods"
-
-for f in ${PACKAGING_COPY_MOD_BINARIES}; do
-	mkdir -p "${APPDIR}/usr/lib/openra/$(dirname "${f}")"
-	cp "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/bin/${f}" "${APPDIR}/usr/lib/openra/${f}"
-done
 
 set_engine_version "${ENGINE_VERSION}" "${APPDIR}/usr/lib/openra"
 if [ "${PACKAGING_OVERWRITE_MOD_VERSION}" == "True" ]; then
@@ -95,26 +87,14 @@ else
 fi
 
 # Add native libraries
-echo "Downloading dependencies"
+echo "Downloading appimagetool"
 if command -v curl >/dev/null 2>&1; then
-	curl -s -L -o "${PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME}" -O "${PACKAGING_APPIMAGE_DEPENDENCIES_SOURCE}" || exit 3
 	curl -s -L -O https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage || exit 3
 else
-	wget -cq "${PACKAGING_APPIMAGE_DEPENDENCIES_SOURCE}" -O "${PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME}" || exit 3
 	wget -cq https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage || exit 3
 fi
 
 echo "Building AppImage"
-
-tar xf "${PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME}" -C "${APPDIR}"
-chmod 0755 "${APPDIR}/usr/bin/mono"
-chmod 0644 "${APPDIR}/etc/mono/config"
-chmod 0644 "${APPDIR}/etc/mono/4.5/machine.config"
-chmod 0644 "${APPDIR}/usr/lib/mono/4.5/Facades/"*.dll
-chmod 0644 "${APPDIR}/usr/lib/mono/4.5/"*.dll "${APPDIR}/usr/lib/mono/4.5/"*.exe
-chmod 0755 "${APPDIR}/usr/lib/"*.so
-
-rm -rf "${PACKAGING_APPIMAGE_DEPENDENCIES_SOURCE}"
 
 # Add launcher and icons
 sed "s/{MODID}/${MOD_ID}/g" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/AppRun.in" | sed "s/{MODNAME}/${PACKAGING_DISPLAY_NAME}/g" > "${APPDIR}/AppRun"
@@ -135,7 +115,7 @@ cp "${APPDIR}/usr/share/applications/openra-${MOD_ID}.desktop" "${APPDIR}/openra
 rm temp.desktop.in
 
 mkdir -p "${APPDIR}/usr/share/mime/packages"
-chmod 0755 temp.xml.in
+chmod 0644 temp.xml.in
 sed "s/{MODID}/${MOD_ID}/g" temp.xml.in | sed "s/{TAG}/${TAG}/g" > "${APPDIR}/usr/share/mime/packages/openra-${MOD_ID}.xml"
 rm temp.xml.in
 
@@ -152,7 +132,7 @@ done
 
 install -d "${APPDIR}/usr/bin"
 
-sed "s/{MODID}/${MOD_ID}/g" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/openra.appimage.in"| sed "s/{TAG}/${TAG}/g" | sed "s/{MODNAME}/${PACKAGING_DISPLAY_NAME}/g" | sed "s/{MODINSTALLERNAME}/${PACKAGING_INSTALLER_NAME}/g" | sed "s|{MODFAQURL}|${PACKAGING_FAQ_URL}|g" > "${APPDIR}/usr/bin/openra-${MOD_ID}"
+sed "s/{MODID}/${MOD_ID}/g" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/openra.appimage.in" | sed "s/{TAG}/${TAG}/g" | sed "s/{MODNAME}/${PACKAGING_DISPLAY_NAME}/g" | sed "s/{MODINSTALLERNAME}/${PACKAGING_INSTALLER_NAME}/g" | sed "s|{MODFAQURL}|${PACKAGING_FAQ_URL}|g" > "${APPDIR}/usr/bin/openra-${MOD_ID}"
 chmod 0755 "${APPDIR}/usr/bin/openra-${MOD_ID}"
 
 sed "s/{MODID}/${MOD_ID}/g" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/openra-server.appimage.in" > "${APPDIR}/usr/bin/openra-${MOD_ID}-server"
@@ -162,12 +142,9 @@ sed "s/{MODID}/${MOD_ID}/g" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linu
 chmod 0755 "${APPDIR}/usr/bin/openra-${MOD_ID}-utility"
 
 install -m 0755 "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/gtk-dialog.py" "${APPDIR}/usr/bin/gtk-dialog.py"
-install -m 0755 "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/linux/restore-environment.sh" "${APPDIR}/usr/bin/restore-environment.sh"
 
-# travis-ci doesn't support mounting FUSE filesystems so extract and run the contents manually
 chmod a+x appimagetool-x86_64.AppImage
-./appimagetool-x86_64.AppImage --appimage-extract
-ARCH=x86_64 ./squashfs-root/AppRun "${APPDIR}" "${OUTPUTDIR}/${PACKAGING_INSTALLER_NAME}-${TAG}-x86_64.AppImage"
+ARCH=x86_64 ./appimagetool-x86_64.AppImage "${APPDIR}" "${OUTPUTDIR}/${PACKAGING_INSTALLER_NAME}-${TAG}-x86_64.AppImage"
 
 # Clean up
-rm -rf appimagetool-x86_64.AppImage squashfs-root "${PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME}" "${APPDIR}"
+rm -rf appimagetool-x86_64.AppImage "${PACKAGING_APPIMAGE_DEPENDENCIES_TEMP_ARCHIVE_NAME}" "${APPDIR}"

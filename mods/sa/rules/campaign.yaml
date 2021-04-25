@@ -15,8 +15,8 @@ World:
 		Scripts: script.lua
 	MapOptions:
 		ShortGameCheckboxEnabled: False
-	-SpawnMPUnits:
-	-MPStartLocations:
+	-SpawnStartingUnits:
+	-MapStartingLocations:
 	ObjectivesPanel:
 		PanelName: MISSION_OBJECTIVES
 	ScriptLobbyDropdown@difficulty:

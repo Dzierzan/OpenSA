@@ -16,7 +16,6 @@ ant_bull_pirate:
 		Weapon: ant_bull_pirate
 		PauseOnCondition: paralyzed
 	RenderSprites:
-		Scale: 1.1
 	PirateAnt:
 	AutoTarget:
 		ScanRadius: 8
@@ -43,7 +42,6 @@ ants_grenadier_pirate:
 		LocalOffset: 500,0,555
 		PauseOnCondition: paralyzed
 	RenderSprites:
-		Scale: 1.1
 	PirateAnt:
 	AutoTarget:
 		ScanRadius: 8
@@ -71,7 +69,6 @@ ants_flying_machine_pilot:
 		PauseOnCondition: paralyzed
 	RenderSprites:
 		Image: ants_grenadier_pirate
-		Scale: 1.1
 	AutoTarget:
 		ScanRadius: 8
 		InitialStance: AttackAnything
@@ -95,7 +92,6 @@ ants_bazooka_pirate:
 		LocalOffset: 550,0,0
 		PauseOnCondition: paralyzed
 	RenderSprites:
-		Scale: 1.1
 	PirateAnt:
 	AutoTarget:
 		ScanRadius: 8

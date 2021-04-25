@@ -16,6 +16,8 @@ Visibility: MissionSelector
 
 Categories: Campaign
 
+Translations:
+
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral

@@ -11,9 +11,11 @@
 
 using System.Collections.Generic;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	[Desc("Used by Mobile. Required for wasp actors. Attach these to the world actor. You can have multiple variants by adding @suffixes.")]
 	public class WaspLocomotorInfo : LocomotorInfo
 	{

@@ -15,6 +15,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	[Desc("More beautiful variant of the PlayerColorPalette by using the overlay blend mode.")]
 	public class OverlayPlayerColorPaletteInfo : TraitInfo
 	{

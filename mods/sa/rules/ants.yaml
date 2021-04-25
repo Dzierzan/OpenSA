@@ -3,7 +3,7 @@ World:
 		Name: Ants
 		InternalName: ants
 		Description: Specialization: -25% breeding time for ant units.
-	MPStartUnits@Ants:
+	StartingUnits@Ants:
 		Class: none
 		ClassName: Colony
 		BaseActor: ants_colony

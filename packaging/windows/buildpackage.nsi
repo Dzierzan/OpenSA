@@ -1,18 +1,18 @@
-; Copyright 2007-2019 OpenSA developers (see AUTHORS)
-; This file is part of OpenSA.
+; Copyright 2007-2021 OpenRA developers (see AUTHORS)
+; This file is part of OpenRA.
 ;
-;  OpenSA is free software: you can redistribute it and/or modify
+;  OpenRA is free software: you can redistribute it and/or modify
 ;  it under the terms of the GNU General Public License as published by
 ;  the Free Software Foundation, either version 3 of the License, or
 ;  (at your option) any later version.
 ;
-;  OpenSA is distributed in the hope that it will be useful,
+;  OpenRA is distributed in the hope that it will be useful,
 ;  but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;  GNU General Public License for more details.
 ;
 ;  You should have received a copy of the GNU General Public License
-;  along with OpenSA.  If not, see <http://www.gnu.org/licenses/>.
+;  along with OpenRA.  If not, see <http://www.gnu.org/licenses/>.
 
 
 !include "MUI2.nsh"
@@ -51,7 +51,7 @@ RequestExecutionLevel admin
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT "HKLM"
 !define MUI_STARTMENUPAGE_REGISTRY_KEY "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "Start Menu Folder"
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenSA"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "OpenRA"
 
 Var StartMenuFolder
 !insertmacro MUI_PAGE_STARTMENU Application $StartMenuFolder
@@ -74,10 +74,10 @@ Section "-Reg" Reg
 	WriteRegStr HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}" "InstallDir" $INSTDIR
 
 	; Join server URL Scheme
-	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "" "URL:Join OpenSA server"
-	WriteRegStr HKLM "Software\Classes\opensa-${TAG}" "URL Protocol" ""
-	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
-	WriteRegStr HKLM "Software\Classes\opensa-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
+	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "" "URL:Join OpenRA server"
+	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}" "URL Protocol" ""
+	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\DefaultIcon" "" "$INSTDIR\${MOD_ID}.ico,0"
+	WriteRegStr HKLM "Software\Classes\openra-${MOD_ID}-${TAG}\Shell\Open\Command" "" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe Launch.URI=%1"
 
 	!ifdef USE_DISCORDID
 		WriteRegStr HKLM "Software\Classes\discord-${USE_DISCORDID}" "" "URL:Run game ${USE_DISCORDID} protocol"
@@ -93,13 +93,16 @@ Section "Game" GAME
 
 	SetOutPath "$INSTDIR"
 	File "${SRCDIR}\*.exe"
-	File "${SRCDIR}\*.exe.config"
+	File "${SRCDIR}\*.dll.config"
 	File "${SRCDIR}\*.dll"
 	File "${SRCDIR}\*.ico"
+	File "${SRCDIR}\*.deps.json"
+	File "${SRCDIR}\*.runtimeconfig.json"
+	File "${SRCDIR}\global mix database.dat"
+	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File "${SRCDIR}\VERSION"
 	File "${SRCDIR}\AUTHORS"
 	File "${SRCDIR}\COPYING"
-	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File /r "${SRCDIR}\mods"
 
 	!insertmacro MUI_STARTMENU_WRITE_BEGIN Application
@@ -121,32 +124,18 @@ Section "Game" GAME
 	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}" "EstimatedSize" "$0"
 
 	SetShellVarContext all
-	CreateDirectory "$APPDATA\OpenSA\ModMetadata"
-	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --register-mod "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" system'
-	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --clear-invalid-mod-registrations system'
+	CreateDirectory "$APPDATA\OpenRA\ModMetadata"
+	SetOutPath "$INSTDIR"
+	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --register-mod "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" system'
+	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --clear-invalid-mod-registrations system'
 	SetShellVarContext current
 
 SectionEnd
 
 Section "Desktop Shortcut" DESKTOPSHORTCUT
 	SetOutPath "$INSTDIR"
-	CreateShortCut "$DESKTOP\OpenSA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
+	CreateShortCut "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
 		"$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" "" "" ""
-SectionEnd
-
-;***************************
-;Dependency Sections
-;***************************
-Section "-DotNet" DotNet
-	ClearErrors
-	; https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
-	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Release"
-	IfErrors error 0
-	IntCmp $0 461808 done error done
-	error:
-		MessageBox MB_OK ".NET Framework v4.7.2 or later is required to run OpenSA."
-		Abort
-	done:
 SectionEnd
 
 ;***************************
@@ -168,36 +157,43 @@ SectionEnd
 
 !macro Clean UN
 Function ${UN}Clean
-	nsExec::ExecToLog '"$INSTDIR\OpenSA.Utility.exe" ${MOD_ID} --unregister-mod system'
+	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --unregister-mod system'
 
 	RMDir /r $INSTDIR\mods
 	RMDir /r $INSTDIR\maps
 	RMDir /r $INSTDIR\glsl
 	RMDir /r $INSTDIR\lua
 	Delete $INSTDIR\*.exe
-	Delete $INSTDIR\*.exe.config
 	Delete $INSTDIR\*.dll
 	Delete $INSTDIR\*.ico
+	Delete $INSTDIR\*.dll.config
+	Delete $INSTDIR\*.deps.json
+	Delete $INSTDIR\*.runtimeconfig.json
 	Delete $INSTDIR\VERSION
 	Delete $INSTDIR\AUTHORS
 	Delete $INSTDIR\COPYING
+	Delete "$INSTDIR\global mix database.dat"
 	Delete $INSTDIR\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
-	DeleteRegKey HKLM "Software\Classes\opensa-${TAG}"
+	DeleteRegKey HKLM "Software\Classes\openra-${MOD_ID}-${TAG}"
+
+	!ifdef USE_DISCORDID
+		DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
+	!endif
 
 	Delete $INSTDIR\uninstaller.exe
 	RMDir $INSTDIR
 
 	!insertmacro MUI_STARTMENU_GETFOLDER Application $StartMenuFolder
 
-	; Clean up start menu: Delete all our icons, and the OpenSA folder
+	; Clean up start menu: Delete all our icons, and the OpenRA folder
 	; *only* if we were the only installed version
 	Delete "$SMPROGRAMS\$StartMenuFolder\${PACKAGING_DISPLAY_NAME}.lnk"
 	RMDir "$SMPROGRAMS\$StartMenuFolder"
 
-	Delete "$DESKTOP\OpenSA - ${PACKAGING_DISPLAY_NAME}.lnk"
+	Delete "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk"
 	DeleteRegKey HKLM "Software\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 FunctionEnd
 !macroend
