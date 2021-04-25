@@ -15,6 +15,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	public class WaspActorLayerInfo : TraitInfo
 	{
 		[Desc("Terrain type of the airborne layer.")]

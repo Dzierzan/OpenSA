@@ -127,8 +127,6 @@ EditorPlayer:
 	TerrainGeometryOverlay:
 	# Required for debug overlays:
 	DebugVisualizations:
-	# Required for warhead debug overlays.
-	WarheadDebugOverlay:
 
 World:
 	Inherits: ^CoreWorld
@@ -235,7 +233,8 @@ World:
 	RadarPings:
 		ShrinkSpeed: 5
 		RotationSpeed: 0.15
-
+	# Required for warhead debug overlays.
+	WarheadDebugOverlay:
 
 EditorWorld:
 	Inherits: ^CoreWorld

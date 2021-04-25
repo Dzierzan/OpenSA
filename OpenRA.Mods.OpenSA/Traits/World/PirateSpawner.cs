@@ -18,6 +18,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	[Desc("Controls the spawning of specified actor types. Attach this to the world actor.")]
 	public class PirateSpawnerInfo : ConditionalTraitInfo, Requires<MapCreepsInfo>
 	{

@@ -18,6 +18,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	[Desc("Displays terrain tile IDs colored by terrain type.")]
 	class TerrainDebugOverlayInfo : TraitInfo
 	{

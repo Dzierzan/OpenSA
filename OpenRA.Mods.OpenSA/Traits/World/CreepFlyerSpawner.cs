@@ -18,6 +18,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	public class CreepFlyerSpawnerInfo : TraitInfo
 	{
 		[Desc("Average time (ticks) between creep spawn.")]

@@ -14,6 +14,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
+	[TraitLocation(SystemActors.World)]
 	[Desc("Controls the 'Plants' checkbox in the lobby options.")]
 	public class PlantCreepsInfo : TraitInfo, ILobbyOptions
 	{
