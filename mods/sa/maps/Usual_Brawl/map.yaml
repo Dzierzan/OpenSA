@@ -90,9 +90,6 @@ Actors:
 	Actor22: plant_toad_stool
 		Location: 72,40
 		Owner: Neutral
-	Actor23: plant_toad_stool
-		Location: 52,28
-		Owner: Neutral
 	Actor24: plant_broad_leaf_grass
 		Location: 102,52
 		Owner: Neutral
@@ -524,9 +521,6 @@ Actors:
 		Owner: Neutral
 	Actor172: plant_toad_stool
 		Location: 12,98
-		Owner: Neutral
-	Actor173: plant_toad_stool
-		Location: 52,32
 		Owner: Neutral
 	Actor174: plant_flower
 		Location: 18,114
@@ -1202,5 +1196,11 @@ Actors:
 		Owner: Wasps
 		Location: 28,20
 		Facing: 0
+	Actor173: plant_toad_stool
+		Location: 52,32
+		Owner: Neutral
+	Actor414: plant_toad_stool
+		Owner: Neutral
+		Location: 53,29
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
