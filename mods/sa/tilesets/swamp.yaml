@@ -504,6 +504,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -516,6 +517,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -528,6 +530,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -540,6 +543,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -552,6 +556,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -564,6 +569,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Rock
+		PickAny: true
 		Tiles:
 			0: Rock
 			1: Rock
@@ -889,6 +895,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -901,6 +908,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -913,6 +921,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -925,6 +934,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -937,6 +947,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
@@ -949,6 +960,7 @@ Templates:
 		Size: 2,2
 		Palette: OpenSA
 		Categories: Vegetation
+		PickAny: true
 		Tiles:
 			0: Vegetation
 			1: Vegetation
