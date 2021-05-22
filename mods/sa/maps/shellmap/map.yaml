@@ -16,6 +16,8 @@ Visibility: Shellmap
 
 Categories: Shellmap
 
+Translations:
+
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral
@@ -183,89 +185,89 @@ Actors:
 		Location: 73,84
 		TurretFacing: 148
 	Actor35: popcorn
-		Owner: Creeps
 		Location: 20,92
 		Facing: 368
+		Owner: Neutral
 	Actor36: popcorn
-		Owner: Creeps
 		Location: 25,96
 		Facing: 368
+		Owner: Neutral
 	Actor37: popcorn
-		Owner: Creeps
 		Location: 17,98
 		Facing: 368
+		Owner: Neutral
 	Actor38: popcorn
-		Owner: Creeps
 		Location: 23,89
 		Facing: 368
+		Owner: Neutral
 	Actor39: popcorn
-		Owner: Creeps
 		Location: 11,88
 		Facing: 368
+		Owner: Neutral
 	Actor40: popcorn
-		Owner: Creeps
 		Location: 94,110
 		Facing: 368
+		Owner: Neutral
 	Actor41: popcorn
-		Owner: Creeps
 		Location: 100,103
 		Facing: 368
+		Owner: Neutral
 	Actor42: popcorn
-		Owner: Creeps
 		Location: 103,114
 		Facing: 368
+		Owner: Neutral
 	Actor43: popcorn
-		Owner: Creeps
 		Location: 92,105
 		Facing: 368
+		Owner: Neutral
 	Actor44: popcorn
-		Owner: Creeps
 		Location: 86,113
 		Facing: 368
+		Owner: Neutral
 	Actor45: popcorn
-		Owner: Creeps
 		Location: 13,18
 		Facing: 368
+		Owner: Neutral
 	Actor46: popcorn
-		Owner: Creeps
 		Location: 19,22
 		Facing: 368
+		Owner: Neutral
 	Actor47: popcorn
-		Owner: Creeps
 		Location: 25,15
 		Facing: 368
+		Owner: Neutral
 	Actor48: popcorn
-		Owner: Creeps
 		Location: 15,27
 		Facing: 368
+		Owner: Neutral
 	Actor49: popcorn
-		Owner: Creeps
 		Location: 26,25
 		Facing: 368
+		Owner: Neutral
 	Actor50: popcorn
-		Owner: Creeps
 		Location: 93,17
 		Facing: 368
+		Owner: Neutral
 	Actor51: popcorn
-		Owner: Creeps
 		Location: 101,11
 		Facing: 368
+		Owner: Neutral
 	Actor52: popcorn
-		Owner: Creeps
 		Location: 94,9
 		Facing: 368
+		Owner: Neutral
 	Actor53: popcorn
-		Owner: Creeps
 		Location: 79,21
 		Facing: 368
+		Owner: Neutral
 	Actor54: popcorn
-		Owner: Creeps
 		Location: 94,26
 		Facing: 368
+		Owner: Neutral
 	Actor55: popcorn
-		Owner: Creeps
 		Location: 85,12
 		Facing: 368
+		Owner: Neutral
 	Actor56: plant_broad_leaf_grass
 		Owner: Neutral
 		Location: 54,91
@@ -667,9 +669,6 @@ Actors:
 	Actor180: plant_toad_stool
 		Owner: Neutral
 		Location: 47,76
-	Actor217: plant_toad_stool
-		Owner: Neutral
-		Location: 50,78
 	Actor218: plant_toad_stool
 		Owner: Neutral
 		Location: 56,79
@@ -1263,5 +1262,165 @@ Actors:
 		Owner: Wasps
 		Location: 65,92
 		Facing: 87
+	Actor217: plant_toad_stool
+		Owner: Neutral
+		Location: 50,78
+	Actor412: beetles_heavy
+		Owner: Ants
+		Facing: 384
+		Location: 63,42
+	Actor413: beetles_heavy
+		Owner: Ants
+		Facing: 384
+		Location: 43,39
+	Actor414: beetles_medium
+		Owner: Ants
+		Facing: 384
+		Location: 36,41
+	Actor415: beetles_medium
+		Owner: Ants
+		Location: 42,36
+		Facing: 594
+	Actor416: wasps_light
+		Owner: Ants
+		Facing: 384
+		Location: 32,48
+	Actor417: wasps_light
+		Owner: Ants
+		Location: 30,39
+		Facing: 0
+	Actor418: wasps_heavy
+		Owner: Ants
+		Facing: 384
+		Location: 36,36
+	Actor419: wasps_heavy
+		Owner: Ants
+		Location: 28,55
+		Facing: 602
+	Actor420: wasps_heavy
+		Owner: Ants
+		Facing: 384
+		Location: 24,62
+	Actor421: spiders_heavy
+		Owner: Ants
+		Location: 29,61
+		Facing: 0
+	Actor422: spiders_heavy
+		Owner: Ants
+		Location: 20,60
+		Facing: 785
+	Actor423: spiders_heavy
+		Owner: Ants
+		Facing: 384
+		Location: 29,66
+	Actor424: ants_heavy
+		Owner: Wasps
+		Facing: 384
+		Location: 96,83
+	Actor425: ants_heavy
+		Owner: Wasps
+		Facing: 384
+		Location: 97,71
+	Actor426: ants_light
+		Owner: Wasps
+		Location: 91,90
+		Facing: 586
+	Actor427: ants_light
+		Owner: Wasps
+		Facing: 384
+		Location: 81,93
+	Actor428: ants_light
+		Owner: Wasps
+		Location: 70,96
+		Facing: 79
+	Actor429: beetles_heavy
+		Owner: Wasps
+		Facing: 384
+		Location: 79,98
+	Actor430: beetles_heavy
+		Owner: Wasps
+		Location: 96,87
+		Facing: 150
+	Actor431: beetles_heavy
+		Owner: Wasps
+		Location: 99,72
+		Facing: 523
+	Actor432: beetles_heavy
+		Owner: Wasps
+		Location: 64,98
+		Facing: 586
+	Actor433: wasps_heavy
+		Owner: Wasps
+		Facing: 384
+		Location: 58,97
+	Actor434: wasps_heavy
+		Owner: Wasps
+		Location: 56,90
+		Facing: 705
+	Actor435: spiders_heavy
+		Owner: Wasps
+		Location: 56,101
+		Facing: 523
+	Actor436: spiders_heavy
+		Owner: Wasps
+		Location: 51,95
+		Facing: 103
+	Actor437: scorpions_light
+		Owner: Wasps
+		Location: 104,81
+		Facing: 626
+	Actor438: scorpions_heavy
+		Owner: Wasps
+		Location: 99,78
+		Facing: 689
+	Actor439: scorpions_medium
+		Owner: Wasps
+		Location: 105,75
+		Facing: 182
+	Actor440: beetles_colony
+		Owner: Neutral
+		Location: 4,71
+	Actor441: ants_colony
+		Owner: Neutral
+		Location: 4,27
+	Actor442: ants_colony
+		Owner: Neutral
+		Location: 37,4
+	Actor443: wasps_colony
+		Owner: Neutral
+		Location: 56,6
+	Actor444: spiders_colony
+		Owner: Neutral
+		Location: 115,6
+	Actor445: scorpions_colony
+		Owner: Neutral
+		Location: 102,2
+	Actor446: scorpions_colony
+		Owner: Neutral
+		Location: 108,120
+	Actor447: spiders_colony
+		Owner: Neutral
+		Location: 120,112
+	Actor448: ants_colony
+		Owner: Neutral
+		Location: 122,87
+	Actor449: ants_colony
+		Owner: Neutral
+		Location: 100,106
+	Actor450: ants_colony
+		Owner: Neutral
+		Location: 30,107
+	Actor451: beetles_colony
+		Owner: Neutral
+		Location: 10,102
+	Actor453: wasps_colony
+		Owner: Neutral
+		Location: 12,117
+	Actor452: wasps_colony
+		Owner: Neutral
+		Location: 22,2
+	Actor454: wasps_colony
+		Owner: Neutral
+		Location: 86,5
 
 Rules: rules.yaml
