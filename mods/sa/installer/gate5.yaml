@@ -1,19 +1,19 @@
-gate5: Gate 5 Swarm Assault Windows Setup
+gate5: Gate 5 Swarm Assault Windows Installation
 	Type: RegistryDirectoryFromFile
-	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
+	RegistryPrefixes: HKEY_LOCAL_MACHINE\SOFTWARE\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
 	RegistryKey: Microsoft\Windows\CurrentVersion\Uninstall\Swarm Assault
 	RegistryValue: UninstallString
 	IDFiles:
-		GAME\Game.DDF: 7794b6bf9ca2d5a5eb5ca0ae9864781212ca3125
-		GAME\Game.SDF: 1868f9a0868c8b80aa6621cc9bf32ab1978dd25c
+		Game\Game.DDF: 7794b6bf9ca2d5a5eb5ca0ae9864781212ca3125
+		Game\Game.SDF: 1868f9a0868c8b80aa6621cc9bf32ab1978dd25c
 	Install:
 		copy: Game
-			^Content/sa/Sprites/Game.ANI: Game.ANI
-			^Content/sa/Sprites/Game.MIN: Game.MIN
-			^Content/sa/Sprites/Game.DDF: Game.DDF
-			^Content/sa/Sounds/Game.SDF: Game.SDF
+			^SupportDir|Content/sa/Sprites/Game.ANI: Game.ANI
+			^SupportDir|Content/sa/Sprites/Game.MIN: Game.MIN
+			^SupportDir|Content/sa/Sprites/Game.DDF: Game.DDF
+			^SupportDir|Content/sa/Sounds/Game.SDF: Game.SDF
 		copy: Start
-			^Content/sa/Sprites/Start.ANI: Start.ANI        
-			^Content/sa/Sprites/Start.MIN: Start.MIN
-			^Content/sa/Sprites/Start.DDF: Start.DDF
-			^Content/sa/Sounds/Start.SDF: Start.SDF
+			^SupportDir|Content/sa/Sprites/Start.ANI: Start.ANI
+			^SupportDir|Content/sa/Sprites/Start.MIN: Start.MIN
+			^SupportDir|Content/sa/Sprites/Start.DDF: Start.DDF
+			^SupportDir|Content/sa/Sounds/Start.SDF: Start.SDF
