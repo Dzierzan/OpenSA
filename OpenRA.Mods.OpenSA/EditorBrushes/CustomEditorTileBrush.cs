@@ -275,7 +275,6 @@ namespace OpenRA.Mods.OpenSA.Widgets
 					for (var x = 0; x < terrainTemplate.Size.X; x++)
 					{
 						var c = cellToCheck + new CVec(x, y);
-
 						if (!map.Contains(c) || terrainInfo.GetTerrainIndex(mapTiles[c]) != terrainIndex)
 							return false;
 					}
@@ -338,6 +337,17 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			var mapTiles = map.Tiles;
 			var mapHeight = map.Height;
 
+			if (terrainTemplate.PickAny)
+			{
+				var terrainInfo = map.Rules.TerrainInfo as CustomTerrain;
+				var terrainIndex = terrainInfo.GetTerrainIndex(new TerrainTile(terrainTemplate.Id, 0x00));
+				var similarTiles = terrainInfo.Templates.Where(t => t.Value.PickAny
+					&& terrainInfo.GetTerrainIndex(new TerrainTile(t.Key, 0x00)) == terrainIndex)
+						.Select(t => t.Value.Id);
+
+				template = similarTiles.Random(Game.CosmeticRandom);
+			}
+
 			var i = 0;
 			for (var y = 0; y < terrainTemplate.Size.Y; y++)
 			{
@@ -350,18 +360,6 @@ namespace OpenRA.Mods.OpenSA.Widgets
 							continue;
 
 						undoTiles.Enqueue(new UndoTile(c, mapTiles[c], mapHeight[c]));
-
-						if (terrainTemplate.PickAny)
-						{
-							var terrainInfo = map.Rules.TerrainInfo as CustomTerrain;
-							var terrainIndex = terrainInfo.GetTerrainIndex(new TerrainTile(terrainTemplate.Id, 0x00));
-							var similarTiles = terrainInfo.Templates.Where(t => t.Value.PickAny
-								&& terrainInfo.GetTerrainIndex(new TerrainTile(t.Key, 0x00)) == terrainIndex)
-									.Select(t => t.Value.Id);
-
-							template = similarTiles.Random(Game.CosmeticRandom);
-						}
-
 						mapTiles[c] = new TerrainTile(template, (byte)i);
 					}
 				}

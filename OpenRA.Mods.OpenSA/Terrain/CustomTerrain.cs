@@ -191,13 +191,13 @@ namespace OpenRA.Mods.OpenSA.Terrain
 					var terrainInfo = map.Rules.TerrainInfo;
 					var terrainIndex = terrainInfo.GetTerrainIndex(tile);
 					var similarTiles = Templates.Where(t => t.Value.PickAny
-						&& terrainInfo.GetTerrainIndex(new TerrainTile(t.Key, 0x00)) == terrainIndex)
-							.Select(t => t.Value.Id);
+						&& terrainInfo.GetTerrainIndex(new TerrainTile(t.Key, 0x00)) == terrainIndex);
 
+					var randomTile = similarTiles.Random(r);
 					for (var f = 0; f < 4; f++)
 					{
 						var cell = new MPos(i + (f % 2), j + (f / 2));
-						map.Tiles[cell] = new TerrainTile(similarTiles.Random(r), (byte)f);
+						map.Tiles[cell] = new TerrainTile(randomTile.Key, (byte)f);
 					}
 				}
 			}
