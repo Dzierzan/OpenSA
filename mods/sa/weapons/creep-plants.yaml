@@ -142,8 +142,8 @@ gas:
 
 freckles:
 	ValidTargets: Ground, Paralyzed, Water, Air, Colony
-	ReloadDelay: 10 #50
-	Range: 2c512
+	ReloadDelay: 10
+	Range: 3c0
 	Projectile: Bullet
 		Speed: 80
 		Blockable: false
