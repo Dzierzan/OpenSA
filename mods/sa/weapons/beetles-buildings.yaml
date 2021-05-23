@@ -1,5 +1,5 @@
 beetles_colony:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 30
 	Range: 12c0
 	Report: sounds|CANNON.SDF
@@ -11,9 +11,9 @@ beetles_colony:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 1950
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_2
 		ImpactSounds: sounds|EXPLOSION2.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony

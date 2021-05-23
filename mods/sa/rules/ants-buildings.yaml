@@ -1,6 +1,6 @@
 ants_colony:
 	Inherits@1: ^CoreBuilding
-	Inherits@2: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Ants Colony
 	Health:
@@ -126,7 +126,7 @@ defeated_ants_colony:
 
 ants_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
-	Inherits@2: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Ants Colony Turret
 	Health:

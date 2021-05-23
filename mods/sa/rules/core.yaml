@@ -40,7 +40,7 @@
 		TerrainTypes: Clear
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
-		TargetTypes: Ground, Colony
+		TargetTypes: Colony
 	HitShape:
 	Colony:
 	VerticalSelectionDecorations:
@@ -116,7 +116,7 @@
 		TerrainTypes: Clear
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
-		TargetTypes: Ground, Colony
+		TargetTypes: Colony
 	HitShape:
 	Colony:
 		LostSound: sa|bits/sounds/turretPowerDown.wav
@@ -294,7 +294,14 @@
 ^AutoTargetDefault:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
+		ValidTargets: Ground, Colony, Paralyzed
+
+# Default auto targetting for colonies.
+^AutoTargetDefaultColony:
+	AutoTarget:
+	AutoTargetPriority:
 		ValidTargets: Ground, Paralyzed
+		InvalidTargets: Colony
 
 # Grouped traits for proximity
 ^AffectsDeathLolly:

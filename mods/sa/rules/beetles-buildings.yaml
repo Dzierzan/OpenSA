@@ -1,7 +1,7 @@
 beetles_colony:
 	Inherits@1: ^CoreBuilding
 	Inherits@2: ^CoreTurret
-	Inherits@3: ^AutoTargetDefault
+	Inherits@3: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Beetles Colony
 	Health:
@@ -70,7 +70,7 @@ defeated_beetles_colony:
 
 beetles_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
-	Inherits@2: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Beetles Colony Turret
 	Health:

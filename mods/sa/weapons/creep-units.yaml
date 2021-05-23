@@ -10,7 +10,7 @@ ant_bull_pirate:
 		ValidTargets: Ground, Paralyzed, Water
 
 ants_grenadier_pirate:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 40 #50
 	Range: 6c0
 	Projectile: Bullet
@@ -24,15 +24,15 @@ ants_grenadier_pirate:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 1470
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 dragonfly_left:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 5
 	Range: 5c0
 	Projectile: GravityBomb
@@ -43,12 +43,12 @@ dragonfly_left:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 8500
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BRAKEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 dragonfly_right:
 	Inherits: dragonfly_left
@@ -57,7 +57,7 @@ dragonfly_right:
 		Sequences: brakebombleft
 
 fly_discharge:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 50
 	Burst: 2
 	BurstDelays: 10
@@ -67,7 +67,7 @@ fly_discharge:
 		Rotate: True
 
 fly:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 50
 	Range: 5c0
 	Projectile: Bullet
@@ -83,7 +83,7 @@ fly:
 		BounceRangeModifier: 80
 
 fly1:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Range: 5c0
 	Report: sounds|BOUNCE.SDF
 	Projectile: Bullet
@@ -99,7 +99,7 @@ fly1:
 		BounceRangeModifier: 70
 
 fly2:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Range: 5c0
 	Report: sounds|BOUNCE.SDF
 	Projectile: Bullet
@@ -110,26 +110,26 @@ fly2:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 4200
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 explode:
 	Warhead@Damage: SpreadDamage
 		Spread: 300
 		Damage: 4200
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|BOUNCEBOMBEXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 moth:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 50
 	Range: 6c0
 	Projectile: Bullet
@@ -143,15 +143,15 @@ moth:
 		Spread: 256
 		Falloff: 100, 50, 25, 0
 		Damage: 500
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: shrapnel_explosion
 		ImpactSounds: sounds|EXPLOSION1.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 moth_discharge:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 20
 	Warhead: FireFragment
 		Weapon: moth
@@ -159,7 +159,7 @@ moth_discharge:
 		Rotate: True
 
 moth_normal_seed_discharge:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 20
 	Warhead: FireFragment
 		Weapon: puff_normal_seed
@@ -167,7 +167,7 @@ moth_normal_seed_discharge:
 		Rotate: True
 
 flying_machine:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 100
 	Range: 10c0
 	Projectile: Bullet
@@ -183,15 +183,15 @@ flying_machine:
 		Spread: 300
 		Falloff: 100, 50, 25, 0
 		Damage: 3000
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: medium_explosion
 		ImpactSounds: sounds|GOBSTOPPEREXPLODE.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony
 
 flying_machine_discharge:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 20
 	Warhead: FireFragment
 		Weapon: flying_machine

@@ -1,5 +1,5 @@
 spiders_colony:
-	ValidTargets: Ground, Paralyzed, Water, Air
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Range: 13c0
 	ReloadDelay: 25
 	Report: sounds|SNIPERFIRE.SDF
@@ -8,8 +8,8 @@ spiders_colony:
 	Warhead@Damage: SpreadDamage
 		Damage: 1450
 		Spread: 125
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: small_explosion
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony

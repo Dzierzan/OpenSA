@@ -1,5 +1,5 @@
 slapfighter:
-	ValidTargets: Ground, Paralyzed, Air, Water
+	ValidTargets: Ground, Paralyzed, Air, Water, Colony
 	Range: 16c0
 	ReloadDelay: 40
 	Report: sounds|SLAPFIGHTFIRE.SDF
@@ -20,9 +20,9 @@ slapfighter:
 	Warhead@Damage: SpreadDamage
 		Damage: 3000
 		Spread: 256
-		ValidTargets: Ground, Paralyzed, Water, Air
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|SLAPFIGHTHIT.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony

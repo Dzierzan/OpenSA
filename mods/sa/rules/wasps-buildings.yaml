@@ -1,7 +1,7 @@
 wasps_colony:
 	Inherits@1: ^CoreBuilding
 	Inherits@2: ^CoreTurret
-	Inherits@3: ^AutoTargetDefault
+	Inherits@3: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Wasps Colony
 	Health:
@@ -75,7 +75,7 @@ defeated_wasps_colony:
 
 wasps_colony_turret:
 	Inherits@1: ^CoreTurretBuilding
-	Inherits@2: ^AutoTargetDefault
+	Inherits@2: ^AutoTargetDefaultColony
 	Tooltip:
 		Name: Wasps Colony Turret
 	Health:
