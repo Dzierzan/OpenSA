@@ -25,3 +25,27 @@ slapfighter:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
+
+spacefighter:
+	idle: bits/ship.png
+		Facings: -16
+		ZOffset: 500
+	shoot: bits/ship.png
+		Facings: -16
+		ZOffset: 500
+	move: bits/ship.png
+		Facings: -16
+		ZOffset: 500
+	die: bits/ship.png
+		Start: 16
+		Length: 2
+		Tick: 9000
+		ZOffset: -511
+	icon: bits/icons.png
+		Start: 32
+	icon-clicked: bits/icons.png
+		Start: 33
+	paralysis: sprites|PARALYSIS.ANI
+		Tick: 50
+		Length: 4
+		ZOffset: 1700

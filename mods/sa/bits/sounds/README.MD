@@ -42,3 +42,8 @@ Description: Speeded up PowerUp sound for custom turrets.
 Author: Sebastian
 Source: https://soundbible.com/1705-Click2.html
 Description: Click sound.
+
+**blaster.wav**
+Author: newlocknew
+Source: https://freesound.org/people/newlocknew/sounds/520056/
+Description: Click sound.

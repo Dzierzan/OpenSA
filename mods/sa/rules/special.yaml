@@ -2,44 +2,16 @@
 	Inherits: ^CoreUnit
 	Voiced:
 		VoiceSet: SlapfighterVoice
-	Buildable:
-		Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
-		BuildDurationModifier: 100
-		Prerequisites: ~disabled
-
-slapfighter:
-	Inherits@1: ^SpecialUnit
-	Inherits@2: ^AutoTargetDefault
-	Inherits@3: ^Paralyzed
-	Tooltip:
-		Name: Slapfight Fighter
 	Health:
 		HP: 20000
 	Mobile:
 		Speed: 200
-	Buildable:
-		BuildDuration: 75
-		Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
 	RevealsShroud:
 		Range: 16c0
-	WithShadow:
-		Offset: -200, 400, 0
-		ZOffset: -600
-	Armament@primary:
-		Name: primary
-		Weapon: slapfighter
-		LocalOffset: 150,450,0
-		PauseOnCondition: paralyzed
-	Armament@secondary:
-		Name: secondary
-		Weapon: slapfighter
-		LocalOffset: 150,-450,0
-		PauseOnCondition: paralyzed
-	Mobile:
-		Locomotor: wasp
-	GrantConditionOnTerrain:
-		TerrainTypes: Water
-		Condition: airborne
+	Buildable:
+		Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		BuildDurationModifier: 100
+		Prerequisites: ~disabled
 	WithInfantryBody:
 		RequiresCondition: !airborne
 		DefaultAttackSequence: shoot
@@ -50,3 +22,57 @@ slapfighter:
 		DefaultAttackSequence: shoot
 		StandSequences: move
 		MoveSequence: move
+	Mobile:
+		Locomotor: wasp
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: airborne
+	WithShadow:
+		Offset: -200, 400, 0
+		ZOffset: -600
+
+slapfighter:
+	Inherits@1: ^SpecialUnit
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
+	Tooltip:
+		Name: Slapfight Fighter
+	Buildable:
+		BuildDuration: 75
+		Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
+	Armament@primary:
+		Name: primary
+		Weapon: slapfighter
+		LocalOffset: 150,450,0
+		PauseOnCondition: paralyzed
+	Armament@secondary:
+		Name: secondary
+		Weapon: slapfighter
+		LocalOffset: 150,-450,0
+		PauseOnCondition: paralyzed
+
+spacefighter:
+	Inherits@1: ^SpecialUnit
+	Inherits@2: ^AutoTargetDefault
+	Inherits@3: ^Paralyzed
+	Tooltip:
+		Name: Spacefighter
+	Buildable:
+		BuildDuration: 75
+		Description: Shoots long range laser.\nSuper long range unit.\nDebug.
+	Armament:
+		Weapon: spacefigher
+		LocalOffset: 150,450,0,   150,-450,0
+		PauseOnCondition: paralyzed
+	Contrail@left:
+		Offset: -375,450,0
+		UsePlayerColor: false
+		Color: A0000060
+		TrailWidth: 0c192
+		TrailLength: 5
+	Contrail@right:
+		Offset: -375,-450,0
+		UsePlayerColor: false
+		Color: A0000060
+		TrailWidth: 0c192
+		TrailLength: 5

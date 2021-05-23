@@ -157,3 +157,8 @@ Description: Production clock animation.
 Author: MikillRosen (sayedmamdouh), Gate 5 Creations
 Source: Swarm Assault
 Description: Recolored Ant Holes so they fit every tileset.
+
+**ship.png**
+Author: Daniel Cook, Dzierzan
+Source: Iron Plague (unreleased game)
+Description: Secret debug unit.

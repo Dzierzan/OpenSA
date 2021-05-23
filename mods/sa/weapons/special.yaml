@@ -26,3 +26,23 @@ slapfighter:
 		Explosions: big_explosion_1
 		ImpactSounds: sounds|SLAPFIGHTHIT.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water, Colony
+
+spacefigher:
+	ValidTargets: Ground, Paralyzed, Air, Water, Colony
+	Range: 14c0
+	ReloadDelay: 15
+	Report: blaster.wav
+	Projectile: LaserZap
+		Width: 0c100
+		Shape: Cylindrical
+		ZOffset: 2000
+		Color: FE0303
+	Warhead@Damage: SpreadDamage
+		Damage: 1500
+		Spread: 256
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony, Colony
