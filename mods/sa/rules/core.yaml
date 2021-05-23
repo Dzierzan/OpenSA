@@ -210,7 +210,7 @@
 	WithDeathAnimation:
 		FallbackSequence: die
 	TurnOnIdle:
-		MinDelay: 100
+		MinDelay: 200
 		MaxDelay: 500
 	AttackMove:
 	Guard:
