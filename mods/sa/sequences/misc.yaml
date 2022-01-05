@@ -124,3 +124,7 @@ minimapproduce:
 startcamera:
 	idle: bits/camera.png
 		ZOffset: 10000
+
+randomcolony:
+	idle: bits/random-colony.png
+		ZOffset: 10000

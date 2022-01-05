@@ -162,3 +162,8 @@ Description: Recolored Ant Holes so they fit every tileset.
 Author: Daniel Cook, Dzierzan
 Source: Iron Plague (unreleased game)
 Description: Secret debug unit.
+
+**radom-colony.png**
+Author: Dzierzan
+Source: Self-made
+Description: Random colony marker
