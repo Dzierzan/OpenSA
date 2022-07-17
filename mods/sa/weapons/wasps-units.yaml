@@ -22,7 +22,7 @@ wasps_medium:
 	ReloadDelay: 45
 	Range: 15c0
 	Report: sounds|ARROW.SDF
-	InvalidTargets: Colony, wasp
+	InvalidTargets: Colony, wasp, Plant
 	Projectile: Bullet
 		Speed: 562
 		Inaccuracy: 500
@@ -33,11 +33,12 @@ wasps_medium:
 		Falloff: 100, 50, 25, 0
 		Damage: 0
 		ValidTargets: Ground, Paralyzed, Water, Colony
+		InvalidTargets: Plant
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: paralyze_explosion
 		ImpactSounds: sounds|PARALYSIS.SDF
-		ValidTargets: Ground, Air, Paralyzed, Water, Colony
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony, Plant
 	Warhead@Paralyze: GrantExternalCondition
 		Range: 2c0
 		Duration: 200
