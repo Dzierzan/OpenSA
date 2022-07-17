@@ -36,3 +36,5 @@ Player:
 	SquadManagerBotModule@SpidersAI:
 		SquadSize: 5
 		SquadSizeRandomBonus: 1
+		AirUnitsTypes:
+		ProtectionTypes:

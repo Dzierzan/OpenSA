@@ -40,3 +40,5 @@ Player:
 	SquadManagerBotModule@AntsAI:
 		SquadSize: 20
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

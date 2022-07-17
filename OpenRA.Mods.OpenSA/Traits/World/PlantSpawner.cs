@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -68,7 +68,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			this.self = self;
 			this.info = info;
 
-			ticks = Util.RandomDelay(self.World, info.InitialSpawnDelay);
+			ticks = Util.RandomInRange(self.World.SharedRandom, info.InitialSpawnDelay);
 		}
 
 		void INotifyCreated.Created(Actor self)
@@ -89,7 +89,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			if (--ticks <= 0)
 			{
-				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
+				ticks = Util.RandomInRange(self.World.SharedRandom, info.SpawnInterval);
 
 				var toSpawn = info.Minimum - plants;
 				if (toSpawn <= 0)

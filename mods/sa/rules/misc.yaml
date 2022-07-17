@@ -66,6 +66,7 @@ EditorPlayer:
 	Inherits: ^Palettes
 	AlwaysVisible:
 	Selection:
+	ControlGroups:
 	ScreenMap:
 	ActorMap:
 	GrantConditionOnTileSet@Normal:
@@ -112,7 +113,6 @@ EditorPlayer:
 			Clear: 100
 			Rock: 75
 			Vegetation: 50
-	WaspActorLayer:
 	WaspLocomotor:
 		Name: wasp
 		Crushes: colony_bit
@@ -235,6 +235,17 @@ World:
 		RotationSpeed: 0.15
 	# Required for warhead debug overlays.
 	WarheadDebugOverlay:
+	WaspActorLayer:
+	ColorPickerManager:
+		PreviewActor: ants.colorpicker
+		FactionPreviewActors:
+			ants: ants.colorpicker
+			scorpions: scorpions.colorpicker
+			wasps: wasps.colorpicker
+			spiders: spiders.colorpicker
+			beetles: beetles.colorpicker
+		PresetHues: 0, 0.125, 0.185, 0.4, 0.54, 0.66, 0.79, 0.875, 0, 0.14, 0.23, 0.43, 0.54, 0.625, 0.77, 0.85
+		PresetSaturations: 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5
 
 EditorWorld:
 	Inherits: ^CoreWorld

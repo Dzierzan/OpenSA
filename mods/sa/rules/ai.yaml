@@ -29,6 +29,8 @@ Player:
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@easyAI:
 		RequiresCondition: enable-easy-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
@@ -56,6 +58,8 @@ Player:
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@mediumAI:
 		RequiresCondition: enable-medium-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
@@ -83,6 +87,8 @@ Player:
 		AssignRolesInterval: 25
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@hardAI:
 		RequiresCondition: enable-hard-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps

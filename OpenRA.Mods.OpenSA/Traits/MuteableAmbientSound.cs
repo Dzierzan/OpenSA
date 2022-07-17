@@ -44,7 +44,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Sound
 		public MuteableAmbientSound(Actor self, MuteableAmbientSoundInfo info)
 			: base(info)
 		{
-			delay = Util.RandomDelay(self.World, info.Delay);
+			delay = Util.RandomInRange(self.World.LocalRandom, info.Delay);
 			loop = Info.Interval.Length == 0 || (Info.Interval.Length == 1 && Info.Interval[0] == 0);
 		}
 
@@ -62,7 +62,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Sound
 
 			if (wasMuted && !Game.Settings.Sound.MuteBackgroundMusic)
 			{
-				delay = Util.RandomDelay(self.World, Info.Delay);
+				delay = Util.RandomInRange(self.World.LocalRandom, Info.Delay);
 				wasMuted = false;
 			}
 
@@ -87,7 +87,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Sound
 			{
 				StartSound(self);
 				if (!loop)
-					delay = Util.RandomDelay(self.World, Info.Interval);
+					delay = Util.RandomInRange(self.World.LocalRandom, Info.Interval);
 			}
 		}
 
@@ -117,7 +117,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Sound
 			currentSounds.Clear();
 		}
 
-		protected override void TraitEnabled(Actor self) { delay = Util.RandomDelay(self.World, Info.Delay); }
+		protected override void TraitEnabled(Actor self) { delay = Util.RandomInRange(self.World.LocalRandom, Info.Delay); }
 		protected override void TraitDisabled(Actor self) { StopSound(); }
 
 		void INotifyRemovedFromWorld.RemovedFromWorld(Actor self) { StopSound(); }

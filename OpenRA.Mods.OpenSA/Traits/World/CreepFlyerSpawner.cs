@@ -58,7 +58,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		{
 			this.info = info;
 
-			ticks = Util.RandomDelay(self.World, info.InitialSpawnDelay);
+			ticks = Util.RandomInRange(self.World.SharedRandom, info.InitialSpawnDelay);
 		}
 
 		void INotifyCreated.Created(Actor self)
@@ -76,7 +76,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			if (--ticks <= 0)
 			{
-				ticks = Util.RandomDelay(self.World, info.SpawnInterval);
+				ticks = Util.RandomInRange(self.World.SharedRandom, info.SpawnInterval);
 
 				SpawnCreeps(self);
 			}

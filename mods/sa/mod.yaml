@@ -1,6 +1,8 @@
 Metadata:
 	Title: OpenSA
+	WindowTitle: OpenSA
 	Version: {DEV_VERSION}
+	Website: https://www.moddb.com/mods/opensa
 	WebIcon32: https://raw.githubusercontent.com/Dzierzan/OpenSA/master/packaging/artwork/icon_32x32.png
 
 PackageFormats: SdfPackage, DdfPackage
@@ -100,13 +102,15 @@ Assemblies:
 ChromeLayout:
 	common|chrome/ingame.yaml
 	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
-	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-info-lobby-options.yaml
+	common|chrome/ingame-menu.yaml
 	sa|chrome/ingame-observer.yaml
 	sa|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
@@ -115,16 +119,16 @@ ChromeLayout:
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu-prompts.yaml
 	common|chrome/settings.yaml
-	sa|chrome/settings-display.yaml
+	common|chrome/settings-display.yaml
 	sa|chrome/settings-audio.yaml
 	common|chrome/settings-input.yaml
 	common|chrome/settings-hotkeys.yaml
 	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
-	sa|chrome/lobby.yaml
+	common|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
 	common|chrome/playerprofile.yaml
-	sa|chrome/lobby-players.yaml
+	common|chrome/lobby-players.yaml
 	common|chrome/lobby-options.yaml
 	common|chrome/lobby-music.yaml
 	common|chrome/lobby-servers.yaml
@@ -140,7 +144,7 @@ ChromeLayout:
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	sa|chrome/tooltips.yaml
-	sa|chrome/assetbrowser.yaml
+	common|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	sa|chrome/editor.yaml
@@ -149,6 +153,7 @@ ChromeLayout:
 	sa|chrome/mainmenu.yaml
 	common|chrome/gamesave-browser.yaml
 	common|chrome/gamesave-loading.yaml
+	common|chrome/text-notifications.yaml
 
 AssetBrowser:
 	SupportedExtensions: .ani
@@ -165,14 +170,18 @@ Notifications:
 	sa|audio/notifications.yaml
 
 Translations:
+	common|languages/en.ftl
 
 Hotkeys:
 	common|hotkeys/game.yaml
 	common|hotkeys/observer.yaml
+	sa|hotkeys/production.yaml
 	common|hotkeys/production-common.yaml
-	common|hotkeys/production-peractor.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
+	common|hotkeys/chat.yaml
+	common|hotkeys/control-groups.yaml
+	common|hotkeys/editor.yaml
 
 LoadScreen: RandomImageLoadScreen
 	Image: sa|uibits/loading0.png, sa|uibits/loading1.png, sa|uibits/loading2.png, sa|uibits/loading3.png
@@ -296,3 +305,5 @@ DiscordService:
 ModCredits:
 	ModCreditsFile: sa|CREDITS
 	ModTabTitle: OpenSA
+
+DefaultOrderGenerator: UnitOrderGenerator

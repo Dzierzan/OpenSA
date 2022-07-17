@@ -35,6 +35,7 @@ beetles_medium:
 		Description: Shoots shranpel around itself.\nClose range unit.
 	AttackFrontal:
 		Armaments: primary, secondary, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th
+		FacingTolerance: 0
 	Armament@1:
 		Name: primary
 		Weapon: beetles_medium

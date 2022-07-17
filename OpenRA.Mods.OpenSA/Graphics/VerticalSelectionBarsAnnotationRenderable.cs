@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -42,14 +42,11 @@ namespace OpenRA.Mods.OpenSA.Graphics
 		public bool DisplayHealth { get { return displayHealth; } }
 		public bool DisplayExtra { get { return displayExtra; } }
 
-		public PaletteReference Palette { get { return null; } }
 		public int ZOffset { get { return 0; } }
 		public bool IsDecoration { get { return true; } }
 
-		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return this; }
 		public IRenderable OffsetBy(in WVec vec) { return new VerticalSelectionBarsAnnotationRenderable(pos + vec, actor, decorationBounds); }
-		public IRenderable OffsetBy(WVec vec) { return new VerticalSelectionBarsAnnotationRenderable(pos + vec, actor, decorationBounds); }
 		public IRenderable AsDecoration() { return this; }
 
 		void DrawExtraBars(float2 start, float2 end)
@@ -67,7 +64,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			}
 		}
 
-		void DrawSelectionBar(float2 start, float2 end, float value, Color barColor)
+		static void DrawSelectionBar(float2 start, float2 end, float value, Color barColor)
 		{
 			var c = Color.FromArgb(128, 30, 30, 30);
 			var c2 = Color.FromArgb(128, 10, 10, 10);
