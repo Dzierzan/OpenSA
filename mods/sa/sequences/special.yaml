@@ -1,16 +1,19 @@
 slapfighter:
 	idle: bits/spaceship.png
 		Start: 0
-		Facings: -16
+		Facings: -1
+		InterpolatedFacings: 64
 		ZOffset: 500
 	shoot: bits/spaceship.png
 		Start: 0
-		Facings: -16
+		Facings: -1
+		InterpolatedFacings: 64
 		ZOffset: 500
 	move: bits/spaceship.png
 		Start: 16
 		Length: 4
-		Facings: -16
+		Facings: -1
+		InterpolatedFacings: 64
 		ZOffset: 500
 	die: bits/spaceship.png
 		Start: 80
@@ -29,12 +32,15 @@ slapfighter:
 spacefighter:
 	idle: bits/ship.png
 		Facings: -16
+		InterpolatedFacings: 64
 		ZOffset: 500
 	shoot: bits/ship.png
 		Facings: -16
+		InterpolatedFacings: 64
 		ZOffset: 500
 	move: bits/ship.png
 		Facings: -16
+		InterpolatedFacings: 64
 		ZOffset: 500
 	die: bits/ship.png
 		Start: 16
