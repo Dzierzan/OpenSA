@@ -35,6 +35,8 @@ Player:
 	SquadManagerBotModule@AntsAI:
 		SquadSize: 15
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@WaspsAI:
 	ExternalCondition@WaspsAI:
 		Condition: enable-wasps-ai
@@ -58,3 +60,5 @@ Player:
 	SquadManagerBotModule@WaspsAI:
 		SquadSize: 15
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

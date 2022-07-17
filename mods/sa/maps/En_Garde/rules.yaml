@@ -36,3 +36,5 @@ Player:
 	SquadManagerBotModule@WaspsAI:
 		SquadSize: 20
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

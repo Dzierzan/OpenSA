@@ -58,6 +58,8 @@ Player:
 	SquadManagerBotModule@WaspsAI:
 		SquadSize: 6
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@SpidersAI:
 	ExternalCondition@SpidersAI:
 		Condition: enable-spiders-ai
@@ -81,3 +83,5 @@ Player:
 	SquadManagerBotModule@SpidersAI:
 		SquadSize: 15
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

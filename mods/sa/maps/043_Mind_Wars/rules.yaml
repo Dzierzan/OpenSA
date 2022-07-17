@@ -38,6 +38,8 @@ Player:
 	SquadManagerBotModule@AntsAI:
 		SquadSize: 10
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@BeetlesAI:
 	ExternalCondition@BeeltesAI:
 		Condition: enable-beetles-ai
@@ -62,6 +64,8 @@ Player:
 		RequiresCondition: enable-beetles-ai
 		SquadSize: 10
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@SpidersAI:
 	ExternalCondition@SpidersAI:
 		Condition: enable-spiders-ai
@@ -85,3 +89,5 @@ Player:
 	SquadManagerBotModule@SpidersAI:
 		SquadSize: 10
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

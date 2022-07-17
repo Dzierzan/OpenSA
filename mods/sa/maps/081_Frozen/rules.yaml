@@ -36,6 +36,8 @@ Player:
 			wasps_heavy: 50 #25
 	SquadManagerBotModule@WaspsAI:
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light, wasps_medium
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@AntsAI:
 	ExternalCondition@AntsAI:
 		Condition: enable-ants-ai
@@ -58,3 +60,5 @@ Player:
 			wasps_heavy: 100
 	SquadManagerBotModule@AntsAI:
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light, wasps_medium
+		AirUnitsTypes:
+		ProtectionTypes:

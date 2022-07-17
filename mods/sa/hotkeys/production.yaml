@@ -1,11 +1,3 @@
-#ProductionInfantry: T
-#	Description: Infantry
-#	Types: ProductionSlot
-#
-#ProductionVehicles: Y
-#	Description: Vehicles
-#	Types: ProductionSlot
-
 Production1: F1
 	Description: Slot 1
 	Types: ProductionSlot

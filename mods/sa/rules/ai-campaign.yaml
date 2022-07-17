@@ -36,6 +36,8 @@ Player:
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@AntsAI:
 		RequiresCondition: enable-ants-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
@@ -49,6 +51,8 @@ Player:
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@BeetlesAI:
 		RequiresCondition: enable-beetles-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
@@ -62,6 +66,8 @@ Player:
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@WaspsAI:
 		RequiresCondition: enable-wasps-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
@@ -75,6 +81,8 @@ Player:
 		AttackForceInterval: 40
 		RushAttackScanRadius: 25
 		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
+		AirUnitsTypes:
+		ProtectionTypes:
 	UnitBuilderBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps

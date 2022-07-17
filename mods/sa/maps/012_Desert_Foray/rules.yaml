@@ -39,6 +39,8 @@ Player:
 		RequiresCondition: enable-ants-ai
 		SquadSize: 15
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@BeetlesAI:
 	ExternalCondition@BeeltesAI:
 		Condition: enable-beetles-ai
@@ -62,6 +64,8 @@ Player:
 	SquadManagerBotModule@BeetlesAI:
 		SquadSize: 10
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:
 	-GrantConditionOnBotOwner@WaspsAI:
 	ExternalCondition@WaspsAI:
 		Condition: enable-wasps-ai
@@ -85,3 +89,5 @@ Player:
 	SquadManagerBotModule@WaspsAI:
 		SquadSize: 15
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

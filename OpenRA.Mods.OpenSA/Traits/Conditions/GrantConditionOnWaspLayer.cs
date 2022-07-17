@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -15,7 +15,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 {
 	public class GrantConditionOnWaspLayerInfo : GrantConditionOnLayerInfo
 	{
-		public override object Create(ActorInitializer init) { return new GrantConditionOnJumpjetLayer(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new GrantConditionOnJumpjetLayer(this); }
 
 		public override void RulesetLoaded(Ruleset rules, ActorInfo ai)
 		{
@@ -31,8 +31,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 	{
 		bool airborne;
 
-		public GrantConditionOnJumpjetLayer(Actor self, GrantConditionOnWaspLayerInfo info)
-			: base(self, info, CustomMovementLayerType.Jumpjet) { }
+		public GrantConditionOnJumpjetLayer(GrantConditionOnWaspLayerInfo info)
+			: base(info, CustomMovementLayerType.Jumpjet) { }
 
 		void INotifyFinishedMoving.FinishedMoving(Actor self, byte oldLayer, byte newLayer)
 		{

@@ -36,3 +36,5 @@ Player:
 	SquadManagerBotModule@BeetlesAI:
 		SquadSize: 20
 		SquadSizeRandomBonus: 5
+		AirUnitsTypes:
+		ProtectionTypes:

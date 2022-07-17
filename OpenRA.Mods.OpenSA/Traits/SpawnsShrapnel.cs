@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,11 +9,11 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.OpenSA.Traits.Render;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
@@ -26,7 +26,6 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Desc("Has to be defined in weapons.yaml as well.")]
 		public readonly string Weapon = null;
 
-		[FieldLoader.Require]
 		[Desc("Amount of shrapnels thrown. Two values indicate a range.")]
 		public readonly int[] Amount = { 1 };
 
@@ -41,9 +40,6 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		[Desc("Allow this shrapnel to be thrown randomly when no targets found.")]
 		public readonly bool ThrowWithoutTarget = true;
-
-		[Desc("Keep empty for a random one.")]
-		public readonly WAngle ThrowAngle = WAngle.Zero;
 
 		[Desc("Should the shrapnel hit the spawner actor?")]
 		public readonly bool AllowSelfHit = false;
@@ -60,7 +56,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			base.RulesetLoaded(rules, ai);
 
 			var weaponToLower = Weapon.ToLowerInvariant();
-			if (!rules.Weapons.TryGetValue(weaponToLower, out var weaponInfo))
+			if (!rules.Weapons.TryGetValue(weaponToLower, out WeaponInfo weaponInfo))
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
 
 			WeaponInfo = weaponInfo;
@@ -75,8 +71,6 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Sync]
 		int ticks;
 
-		WithSpawnsShrapnelAnimation[] animations;
-
 		public SpawnsShrapnel(Actor self, SpawnsShrapnelInfo info)
 			: base(info)
 		{
@@ -84,22 +78,17 @@ namespace OpenRA.Mods.OpenSA.Traits
 			body = self.TraitOrDefault<BodyOrientation>();
 		}
 
-		protected override void Created(Actor self)
-		{
-			base.Created(self);
-
-			animations = self.TraitsImplementing<WithSpawnsShrapnelAnimation>().ToArray();
-		}
-
 		void ITick.Tick(Actor self)
 		{
 			if (IsTraitDisabled || IsTraitPaused || !self.IsInWorld || --ticks > 0)
 				return;
 
-			ticks = Util.RandomDelay(self.World, Info.Delay);
+			ticks = Info.Delay.Length == 2
+					? world.SharedRandom.Next(Info.Delay[0], Info.Delay[1])
+					: Info.Delay[0];
 
 			var localoffset = body != null
-					? body.LocalToWorld(Info.LocalOffset.Rotate(body.QuantizeOrientation(self, self.Orientation)))
+					? body.LocalToWorld(Info.LocalOffset.Rotate(body.QuantizeOrientation(self.Orientation)))
 					: Info.LocalOffset;
 
 			var position = self.CenterPosition + localoffset;
@@ -125,7 +114,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 			var targetActor = availableTargetActors.GetEnumerator();
 
-			var amount = Util.RandomDelay(self.World, Info.Amount);
+			var amount = Info.Amount.Length == 2
+					? world.SharedRandom.Next(Info.Amount[0], Info.Amount[1])
+					: Info.Amount[0];
 
 			for (var i = 0; i < amount; i++)
 			{
@@ -136,12 +127,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 				if (Info.ThrowWithoutTarget && shrapnelTarget.Type == TargetType.Invalid)
 				{
-					var rotation = self.Orientation;
-					if (Info.ThrowAngle == WAngle.Zero)
-						rotation = WRot.FromFacing(world.SharedRandom.Next(1024));
-					else
-						rotation.Rotate(WRot.FromYaw(Info.ThrowAngle));
-
+					var rotation = WRot.FromFacing(world.SharedRandom.Next(1024));
 					var range = world.SharedRandom.Next(Info.WeaponInfo.MinRange.Length, Info.WeaponInfo.Range.Length);
 					var targetpos = position + new WVec(range, 0, 0).Rotate(rotation);
 					var tpos = Target.FromPos(new WPos(targetpos.X, targetpos.Y, world.Map.CenterOfCell(world.Map.CellContaining(targetpos)).Z));
@@ -158,13 +144,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 					Facing = (shrapnelTarget.CenterPosition - position).Yaw,
 
 					DamageModifiers = !self.IsDead ? self.TraitsImplementing<IFirepowerModifier>()
-						.Select(a => a.GetFirepowerModifier()).ToArray() : new int[0],
+						.Select(a => a.GetFirepowerModifier()).ToArray() : Array.Empty<int>(),
 
 					InaccuracyModifiers = !self.IsDead ? self.TraitsImplementing<IInaccuracyModifier>()
-						.Select(a => a.GetInaccuracyModifier()).ToArray() : new int[0],
+						.Select(a => a.GetInaccuracyModifier()).ToArray() : Array.Empty<int>(),
 
 					RangeModifiers = !self.IsDead ? self.TraitsImplementing<IRangeModifier>()
-						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
+						.Select(a => a.GetRangeModifier()).ToArray() : Array.Empty<int>(),
 
 					Source = position,
 					CurrentSource = () => position,
@@ -182,15 +168,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 					if (args.Weapon.Report != null && args.Weapon.Report.Any())
 						Game.Sound.Play(SoundType.World, args.Weapon.Report.Random(world.SharedRandom), position);
 				}
-
-				foreach (var animation in animations)
-					animation.Trigger(self);
 			}
 		}
 
 		protected override void TraitEnabled(Actor self)
 		{
-			ticks = Util.RandomDelay(self.World, Info.Delay);
+			ticks = 0;
 		}
 	}
 }

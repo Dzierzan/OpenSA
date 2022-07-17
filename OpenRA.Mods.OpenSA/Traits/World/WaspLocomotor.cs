@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -20,7 +20,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class WaspLocomotorInfo : LocomotorInfo
 	{
 		[Desc("Pathfinding cost for taking off or landing.")]
-		public readonly int TransitionCost = 0;
+		public readonly short TransitionCost = 0;
 
 		[Desc("The terrain types that this actor can transition on. Leave empty to allow any.")]
 		public readonly HashSet<string> TransitionTerrainTypes = new HashSet<string>();

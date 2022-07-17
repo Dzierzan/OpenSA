@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -10,13 +10,14 @@
 #endregion
 
 using System.Linq;
+using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
 {
-	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
-	public class WaspActorLayerInfo : TraitInfo
+	[TraitLocation(SystemActors.World)]
+	public class WaspActorLayerInfo : TraitInfo, ICustomMovementLayerInfo
 	{
 		[Desc("Terrain type of the airborne layer.")]
 		public readonly string TerrainType = "Air";
@@ -27,19 +28,17 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class WaspActorLayer : ICustomMovementLayer
 	{
 		readonly World world;
-		readonly WaspActorLayerInfo info;
 
 		readonly byte terrainIndex;
 
 		public WaspActorLayer(Actor self, WaspActorLayerInfo info)
 		{
 			world = self.World;
-			this.info = info;
 
 			terrainIndex = self.World.Map.Rules.TerrainInfo.GetTerrainIndex(info.TerrainType);
 		}
 
-		bool ICustomMovementLayer.EnabledForActor(ActorInfo a, LocomotorInfo li) { return li is WaspLocomotorInfo; }
+		bool ICustomMovementLayer.EnabledForLocomotor(LocomotorInfo li) { return li is WaspLocomotorInfo; }
 		byte ICustomMovementLayer.Index { get { return CustomMovementLayerType.Jumpjet; } }
 		bool ICustomMovementLayer.InteractsWithDefaultLayer { get { return false; } }
 		bool ICustomMovementLayer.ReturnToGroundLayerOnIdle { get { return true; } }
@@ -59,16 +58,16 @@ namespace OpenRA.Mods.OpenSA.Traits
 			return true;
 		}
 
-		int ICustomMovementLayer.EntryMovementCost(ActorInfo a, LocomotorInfo li, CPos cell)
+		short ICustomMovementLayer.EntryMovementCost(LocomotorInfo li, CPos cell)
 		{
 			var wli = (WaspLocomotorInfo)li;
-			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : int.MaxValue;
+			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : PathGraph.MovementCostForUnreachableCell;
 		}
 
-		int ICustomMovementLayer.ExitMovementCost(ActorInfo a, LocomotorInfo li, CPos cell)
+		short ICustomMovementLayer.ExitMovementCost(LocomotorInfo li, CPos cell)
 		{
 			var wli = (WaspLocomotorInfo)li;
-			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : int.MaxValue;
+			return ValidTransitionCell(cell, wli) ? wli.TransitionCost : PathGraph.MovementCostForUnreachableCell;
 		}
 
 		byte ICustomMovementLayer.GetTerrainIndex(CPos cell)
