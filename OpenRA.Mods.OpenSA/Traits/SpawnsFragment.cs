@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
@@ -124,13 +125,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 					CurrentMuzzleFacing = () => fragmentFacing,
 
 					DamageModifiers = !self.IsDead ? self.TraitsImplementing<IFirepowerModifier>()
-						.Select(a => a.GetFirepowerModifier()).ToArray() : new int[0],
+						.Select(a => a.GetFirepowerModifier()).ToArray() : Array.Empty<int>(),
 
 					InaccuracyModifiers = !self.IsDead ? self.TraitsImplementing<IInaccuracyModifier>()
-						.Select(a => a.GetInaccuracyModifier()).ToArray() : new int[0],
+						.Select(a => a.GetInaccuracyModifier()).ToArray() : Array.Empty<int>(),
 
 					RangeModifiers = !self.IsDead ? self.TraitsImplementing<IRangeModifier>()
-						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
+						.Select(a => a.GetRangeModifier()).ToArray() : Array.Empty<int>(),
 
 					Source = position,
 					CurrentSource = () => position,
