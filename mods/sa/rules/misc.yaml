@@ -254,6 +254,10 @@ EditorWorld:
 	EditorActionManager:
 	EditorSelectionLayer:
 		Palette: OpenSA
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Rock, Vegetation
+		Image: editor-overlay
+		Sequence: copy
 
 colony_bit1:
 	Inherits: ^CoreVisibleActor
