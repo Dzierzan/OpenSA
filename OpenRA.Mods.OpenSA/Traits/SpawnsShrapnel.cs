@@ -14,6 +14,7 @@ using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.OpenSA.Traits.Render;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Traits
@@ -71,11 +72,20 @@ namespace OpenRA.Mods.OpenSA.Traits
 		[Sync]
 		int ticks;
 
+		WithSpawnsShrapnelAnimation[] animations;
+
 		public SpawnsShrapnel(Actor self, SpawnsShrapnelInfo info)
 			: base(info)
 		{
 			world = self.World;
 			body = self.TraitOrDefault<BodyOrientation>();
+		}
+
+		protected override void Created(Actor self)
+		{
+			base.Created(self);
+
+			animations = self.TraitsImplementing<WithSpawnsShrapnelAnimation>().ToArray();
 		}
 
 		void ITick.Tick(Actor self)
@@ -168,6 +178,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 					if (args.Weapon.Report != null && args.Weapon.Report.Any())
 						Game.Sound.Play(SoundType.World, args.Weapon.Report.Random(world.SharedRandom), position);
 				}
+
+				foreach (var animation in animations)
+					animation.Trigger(self);
 			}
 		}
 
