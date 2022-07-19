@@ -1,6 +1,8 @@
 # The spawnpoint for player actors.
 mpspawn:
 	Interactable:
+	EditorOnlyTooltip:
+		Name: Multiplayer player starting point.
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
@@ -10,6 +12,8 @@ mpspawn:
 		QuantizedFacings: 1
 	MapEditorData:
 		Categories: System
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
 
 anthole:
 	Interactable:
@@ -155,7 +159,7 @@ World:
 	ValidateOrder:
 	MapCreeps:
 		CheckboxLabel: Pirates
-		CheckboxDescription: Allows spawning pirates on the battlefield
+		CheckboxDescription: Allows spawning pirates on the battlefield.
 		CheckboxVisible: True
 		CheckboxEnabled: True
 	PirateSpawner:
@@ -279,6 +283,8 @@ colony_bit4:
 
 STARTCAMERA:
 	AlwaysVisible:
+	EditorOnlyTooltip:
+		Name: Camera actor used for missions.
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
@@ -287,3 +293,5 @@ STARTCAMERA:
 	RenderSpritesEditorOnly:
 	MapEditorData:
 		Categories: System
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral

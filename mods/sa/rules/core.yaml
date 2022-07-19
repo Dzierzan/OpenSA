@@ -54,7 +54,7 @@
 	RevealsShroud:
 		Range: 10c0
 	ChangesHealth:
-		Step: 100 #TODO Might require further adjusting
+		Step: 100
 		StartIfBelow: 100
 		RequiresCondition: !production
 	GrantConditionWhileProducing:

@@ -30,6 +30,8 @@
 	WithShadow:
 		Offset: -200, 400, 0
 		ZOffset: -600
+	EditorOnlyTooltip:
+		Name: Special debug unit.
 
 slapfighter:
 	Inherits@1: ^SpecialUnit
