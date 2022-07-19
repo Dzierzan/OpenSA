@@ -1,0 +1,81 @@
+World:
+	PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	PlantSpawner@CANDY:
+
+Player:
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			#ants_light: 5
+			ants_medium: 1
+			ants_heavy: 15
+			#beetles_light: 5
+			beetles_medium: 1
+			beetles_heavy: 15
+			#scorpions_light: 5
+			scorpions_medium: 1
+			scorpions_heavy: 15
+			#spiders_light: 5
+			spiders_medium: 1
+			spiders_heavy: 15
+			#wasps_light: 5
+			wasps_medium: 1
+			wasps_heavy: 15
+	SquadManagerBotModule@WaspsAI:
+		SquadSize: 120
+		SquadSizeRandomBonus: 7
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeetlesAI:
+		Condition: enable-beetles-ai
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			#ants_light: 50
+			ants_medium: 15
+			ants_heavy: 1
+			#beetles_light: 50
+			beetles_medium: 15
+			beetles_heavy: 1
+			#scorpions_light: 50
+			scorpions_medium: 15
+			scorpions_heavy: 1
+			#spiders_light: 50
+			spiders_medium: 15
+			spiders_heavy: 1
+			#wasps_light: 50
+			wasps_medium: 15
+			wasps_heavy: 1
+	SquadManagerBotModule@BeetlesAI:
+		SquadSize: 60
+		SquadSizeRandomBonus: 6
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			ants_light: 15
+			ants_medium: 1
+			#ants_heavy: 25
+			beetles_light: 15
+			beetles_medium: 1
+			#beetles_heavy: 25
+			scorpions_light: 15
+			scorpions_medium: 1
+			#scorpions_heavy: 25
+			spiders_light: 15
+			spiders_medium: 1
+			#spiders_heavy: 25
+			wasps_light: 15
+			wasps_medium: 1
+			#wasps_heavy: 25
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 20
+		SquadSizeRandomBonus: 5
