@@ -282,6 +282,7 @@ colony_bit4:
 	Inherits: colony_bit1
 
 STARTCAMERA:
+	Interactable:
 	AlwaysVisible:
 	EditorOnlyTooltip:
 		Name: Camera actor used for missions.
