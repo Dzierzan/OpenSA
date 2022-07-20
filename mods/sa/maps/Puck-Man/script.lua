@@ -1,6 +1,6 @@
 BotDelay =
 {
-	easy = 15,
+	easy = 12,
 	normal = 6,
 	hard = 3
 }

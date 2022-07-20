@@ -145,8 +145,8 @@ Actors:
 	Actor55: scorpions_colony
 		Location: 139,130
 		Faction:
-		TurretFacing: 500
 		Owner: Ants
+		TurretFacing: 500
 	Actor56: spiders_colony
 		Location: 126,130
 		Faction:
@@ -201,15 +201,6 @@ Actors:
 	Actor97: plant_cherry_flower
 		Owner: Neutral
 		Location: 150,142
-	Actor98: plant_cherry_flower
-		Owner: Neutral
-		Location: 120,122
-	Actor99: plant_cherry_flower
-		Owner: Neutral
-		Location: 137,122
-	Actor100: plant_cherry_flower
-		Owner: Neutral
-		Location: 137,142
 	Actor112: plant_moon_mushroom
 		Owner: Neutral
 		Location: 186,108
@@ -477,18 +468,12 @@ Actors:
 	Actor208: plant_cherry_flower
 		Owner: Neutral
 		Location: 158,115
-	Actor209: plant_cherry_flower
-		Owner: Neutral
-		Location: 120,115
 	Actor211: plant_cherry_flower
 		Owner: Neutral
 		Location: 120,151
 	Actor212: plant_cherry_flower
 		Owner: Neutral
 		Location: 137,151
-	Actor101: plant_cherry_flower
-		Owner: Neutral
-		Location: 120,142
 	Actor213: plant_clover
 		Owner: Neutral
 		Location: 86,102
@@ -588,9 +573,6 @@ Actors:
 	Actor256: plant_clover
 		Owner: Neutral
 		Location: 82,57
-	Actor210: plant_cherry_flower
-		Owner: Neutral
-		Location: 137,115
 	Actor276: scorpions_colony_turret
 		Faction: Random
 		Location: 91,187
@@ -627,43 +609,55 @@ Actors:
 		Owner: Creeps
 		Location: 247,217
 	Actor271: wasps_colony_turret
-		Owner: Creeps
 		Location: 88,104
+		Faction:
+		TurretFacing: 500
+		Owner: Beetles
 	Actor272: wasps_colony_turret
-		Owner: Creeps
 		Location: 169,104
+		Faction:
+		TurretFacing: 500
+		Owner: Ants
+	Actor273: wasps_colony_turret
+		Location: 139,153
+		Faction:
+		TurretFacing: 500
+		Owner: Ants
+	Actor274: wasps_colony_turret
+		Location: 118,153
+		Faction:
+		TurretFacing: 500
+		Owner: Beetles
 	Actor270: startcamera
 		Owner: Wasps
 		Location: 128,188
+	Actor266: wasps_colony
+		Owner: Beetles
+		Location: 113,130
+		TurretFacing: 500
 	Actor246: ants_heavy
 		Owner: Wasps
-		Facing: 384
 		Location: 128,190
+		Facing: 0
 	Actor247: beetles_heavy
 		Owner: Wasps
-		Facing: 384
 		Location: 129,191
+		Facing: 0
 	Actor248: wasps_heavy
 		Owner: Wasps
-		Facing: 384
 		Location: 128,192
+		Facing: 0
 	Actor249: spiders_heavy
 		Owner: Wasps
-		Facing: 384
 		Location: 129,193
+		Facing: 0
 	Actor250: scorpions_heavy
 		Owner: Wasps
 		Location: 129,189
-		Facing: 384
+		Facing: 0
 	Actor251: ants_colony
 		Owner: Creeps
 		Location: 59,7
-	Actor253: ants_colony
-		Owner: Creeps
-		Location: 111,45
-	Actor267: ants_colony
-		Owner: Creeps
-		Location: 141,45
 	Actor245: ants_colony
 		Owner: Creeps
 		Location: 193,115
@@ -721,60 +715,125 @@ Actors:
 	Actor280: beetles_colony
 		Owner: Creeps
 		Location: 245,185
-	Actor281: scorpions_light
-		Owner: Ants
-		Location: 135,124
-		Facing: 0
-	Actor282: spiders_light
+	Actor281: wasps_colony_turret
 		Owner: Spiders
-		Location: 129,124
+		Location: 121,124
+	Actor282: wasps_colony_turret
+		Owner: Spiders
+		Location: 136,124
+	Actor292: spiders_heavy
+		Owner: Spiders
+		Location: 132,129
 		Facing: 0
-	Actor283: beetles_medium
+	Actor295: spiders_heavy
+		Owner: Spiders
+		Location: 125,136
+		Facing: 0
+	Actor297: scorpions_heavy
+		Owner: Ants
+		Location: 138,136
+		Facing: 0
+	Actor299: scorpions_heavy
+		Owner: Ants
+		Location: 145,129
+		Facing: 0
+	Actor301: wasps_heavy
 		Owner: Beetles
-		Location: 123,124
+		Location: 112,136
 		Facing: 0
-	Actor295: wasps_colony
+	Actor303: wasps_heavy
+		Owner: Beetles
+		Location: 119,129
+		Facing: 0
+	Actor253: beetles_colony_turret
 		Owner: Creeps
-		Location: 6,6
-	Actor294: wasps_colony
+		Location: 113,47
+	Actor267: beetles_colony_turret
 		Owner: Creeps
-		Location: 6,244
-	Actor292: wasps_colony
+		Location: 143,47
+	Actor304: plant_cherry_flower
+		Owner: Neutral
+		Location: 141,115
+	Actor305: plant_cherry_flower
+		Owner: Neutral
+		Location: 141,122
+	Actor306: plant_cherry_flower
+		Owner: Neutral
+		Location: 116,115
+	Actor307: plant_cherry_flower
+		Owner: Neutral
+		Location: 116,122
+	Actor308: plant_cherry_flower
+		Owner: Neutral
+		Location: 106,136
+	Actor309: plant_cherry_flower
+		Owner: Neutral
+		Location: 151,136
+	Actor310: plant_cherry_flower
+		Owner: Neutral
+		Location: 99,136
+	Actor311: plant_cherry_flower
+		Owner: Neutral
+		Location: 99,141
+	Actor312: plant_cherry_flower
+		Owner: Neutral
+		Location: 158,141
+	Actor313: plant_cherry_flower
+		Owner: Neutral
+		Location: 158,136
+	Actor314: plant_cherry_flower
+		Owner: Neutral
+		Location: 138,143
+	Actor315: plant_cherry_flower
+		Owner: Neutral
+		Location: 143,143
+	Actor316: plant_cherry_flower
+		Owner: Neutral
+		Location: 143,150
+	Actor317: plant_cherry_flower
+		Owner: Neutral
+		Location: 114,143
+	Actor318: plant_cherry_flower
+		Owner: Neutral
+		Location: 119,143
+	Actor319: plant_cherry_flower
+		Owner: Neutral
+		Location: 114,150
+	Actor320: wasps_colony
 		Owner: Creeps
 		Location: 244,244
-	Actor296: wasps_colony
+	Actor321: wasps_colony
+		Owner: Creeps
+		Location: 6,244
+	Actor322: wasps_colony
+		Owner: Creeps
+		Location: 6,6
+	Actor323: wasps_colony
 		Owner: Creeps
 		Location: 244,6
-	Actor297: ants_colony
-		Owner: Creeps
-		Location: 127,105
-	Actor266: wasps_colony
+	Actor283: spiders_medium
+		Owner: Spiders
+		Location: 132,136
+		Facing: 0
+	Actor294: spiders_medium
+		Owner: Spiders
+		Location: 125,129
+		Facing: 0
+	Actor296: wasps_light
 		Owner: Beetles
-		Location: 113,130
-		TurretFacing: 500
-	Actor273: plant_moon_mushroom
-		Owner: Neutral
-		Location: 44,112
-	Actor300: plant_moon_mushroom
-		Owner: Neutral
-		Location: 214,112
-	Actor302: plant_moon_mushroom
-		Owner: Neutral
-		Location: 3,112
-	Actor303: plant_moon_mushroom
-		Owner: Neutral
-		Location: 3,122
-	Actor298: plant_moon_mushroom
-		Owner: Neutral
-		Location: 44,122
-	Actor274: plant_moon_mushroom
-		Owner: Neutral
-		Location: 253,112
-	Actor299: plant_moon_mushroom
-		Owner: Neutral
-		Location: 253,122
-	Actor301: plant_moon_mushroom
-		Owner: Neutral
-		Location: 214,122
+		Location: 119,136
+		Facing: 0
+	Actor300: wasps_light
+		Owner: Beetles
+		Location: 112,129
+		Facing: 0
+	Actor302: scorpions_medium
+		Owner: Ants
+		Location: 145,136
+		Facing: 0
+	Actor298: scorpions_medium
+		Owner: Ants
+		Location: 138,129
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml
