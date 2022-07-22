@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -19,7 +19,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public override object Create(ActorInitializer init) { return new PirateAnt(init.Self); }
 	}
 
-	class PirateAnt : INotifyCreated, INotifyActorDisposing
+	class PirateAnt : INotifyAddedToWorld, INotifyActorDisposing
 	{
 		readonly PirateSpawner spawner;
 		readonly Mobile mobile;
@@ -33,8 +33,12 @@ namespace OpenRA.Mods.OpenSA.Traits
 			spawner = self.World.WorldActor.Trait<PirateSpawner>();
 		}
 
-		void INotifyCreated.Created(Actor self)
+		void INotifyAddedToWorld.AddedToWorld(Actor self)
 		{
+			// pre-placed actors
+			if (self.World.WorldTick == 0)
+				return;
+
 			for (var i = 0; i < 3; i++)
 				mobile.Nudge(self);
 		}
