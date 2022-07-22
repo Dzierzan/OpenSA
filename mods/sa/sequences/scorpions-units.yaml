@@ -139,58 +139,58 @@ scorpions_medium:
 scorpions_heavy:
 	idle:
 		Combine:
-			sprites|UNSCOSTB_STT.ANI:
-			sprites|UNSCOSTB_STTL.ANI:
-			sprites|UNSCOSTB_STL.ANI:
-			sprites|UNSCOSTB_STBL.ANI:
-			sprites|UNSCOSTB_STB.ANI:
-			sprites|UNSCOSTB_STBR.ANI:
-			sprites|UNSCOSTB_STR.ANI:
-			sprites|UNSCOSTB_STTR.ANI:
+			sprites|UNSCOSTG_STT.ANI:
+			sprites|UNSCOSTG_STTL.ANI:
+			sprites|UNSCOSTG_STL.ANI:
+			sprites|UNSCOSTG_STBL.ANI:
+			sprites|UNSCOSTG_STB.ANI:
+			sprites|UNSCOSTG_STBR.ANI:
+			sprites|UNSCOSTG_STR.ANI:
+			sprites|UNSCOSTG_STTR.ANI:
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNSCOSTB_ATT.ANI:
+			sprites|UNSCOSTG_ATT.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATTL.ANI:
+			sprites|UNSCOSTG_ATTL.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATL.ANI:
+			sprites|UNSCOSTG_ATL.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATBL.ANI:
+			sprites|UNSCOSTG_ATBL.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATB.ANI:
+			sprites|UNSCOSTG_ATB.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATBR.ANI:
+			sprites|UNSCOSTG_ATBR.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATR.ANI:
+			sprites|UNSCOSTG_ATR.ANI:
 				Length: 2
-			sprites|UNSCOSTB_ATTR.ANI:
+			sprites|UNSCOSTG_ATTR.ANI:
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 107
 	move:
 		Combine:
-			sprites|UNSCOSTB_WAT.ANI:
+			sprites|UNSCOSTG_WAT.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WATL.ANI:
+			sprites|UNSCOSTG_WATL.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WAL.ANI:
+			sprites|UNSCOSTG_WAL.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WABL.ANI:
+			sprites|UNSCOSTG_WABL.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WAB.ANI:
+			sprites|UNSCOSTG_WAB.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WABR.ANI:
+			sprites|UNSCOSTG_WABR.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WAR.ANI:
+			sprites|UNSCOSTG_WAR.ANI:
 				Length: 3
-			sprites|UNSCOSTB_WATR.ANI:
+			sprites|UNSCOSTG_WATR.ANI:
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNSCOSTB_DEAD.ANI
+	die: sprites|UNSCOSTG_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000

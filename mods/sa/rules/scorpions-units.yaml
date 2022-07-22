@@ -64,6 +64,8 @@ scorpions_heavy:
 		PauseOnCondition: paralyzed
 	AutoTarget:
 		ScanRadius: 13
+	RenderSprites:
+		PlayerPalette: green
 
 scorpions.colorpicker:
 	Inherits: scorpions_light
