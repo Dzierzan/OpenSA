@@ -12,7 +12,7 @@ MapSize: 130,130
 
 Bounds: 1,1,128,128
 
-Visibility: Lobby, MissionSelector
+Visibility: MissionSelector
 
 Categories: Campaign
 
