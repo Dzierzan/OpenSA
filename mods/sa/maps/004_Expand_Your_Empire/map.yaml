@@ -265,7 +265,7 @@ Actors:
 		Location: 46,53
 		Facing: 48
 	Actor71: startcamera
-		Owner: Creeps
+		Owner: Neutral
 		Location: 34,53
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

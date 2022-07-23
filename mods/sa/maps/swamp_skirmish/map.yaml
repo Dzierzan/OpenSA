@@ -85,7 +85,7 @@ Actors:
 		Location: 84,43
 		TurretFacing: 531
 	Actor12: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 33,114
 	Actor13: spiders_colony
 		Owner: Creeps

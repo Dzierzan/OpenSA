@@ -111,7 +111,7 @@ Actors:
 		Owner: Creeps
 		TurretFacing: 520
 	Actor21: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 87,107
 	Actor29: plant_clover
 		Owner: Neutral

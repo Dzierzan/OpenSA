@@ -297,7 +297,7 @@ Actors:
 		Owner: Beetles
 		Location: 86,52
 	Actor134: startcamera
-		Owner: Spiders
+		Owner: Neutral
 		Location: 113,113
 	Actor137: ants_heavy
 		Owner: Spiders

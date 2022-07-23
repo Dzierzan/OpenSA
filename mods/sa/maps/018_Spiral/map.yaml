@@ -635,7 +635,7 @@ Actors:
 		Location: 87,47
 		Owner: Creeps
 	Actor195: startcamera
-		Owner: Creeps
+		Owner: Neutral
 		Location: 110,116
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

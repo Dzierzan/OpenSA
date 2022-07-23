@@ -629,7 +629,7 @@ Actors:
 		TurretFacing: 500
 		Owner: Beetles
 	Actor270: startcamera
-		Owner: Wasps
+		Owner: Neutral
 		Location: 128,188
 	Actor266: wasps_colony
 		Owner: Beetles

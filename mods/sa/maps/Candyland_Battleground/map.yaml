@@ -42,10 +42,10 @@ Players:
 
 Actors:
 	Actor0: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 61,31
 	Actor1: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 97,90
 	Actor2: beetles_colony
 		Owner: Creeps

@@ -42,10 +42,10 @@ Players:
 
 Actors:
 	Actor0: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 12,9
 	Actor1: mpspawn
-		Owner: Creeps
+		Owner: Neutral
 		Location: 120,122
 	Actor2: ants_colony
 		Owner: Ants
