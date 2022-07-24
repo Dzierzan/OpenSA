@@ -73,6 +73,7 @@ ants_flying_machine_pilot:
 		ScanRadius: 8
 		InitialStance: AttackAnything
 		InitialStanceAI: AttackAnything
+	-MapEditorData:
 
 ants_bazooka_pirate:
 	Inherits@1: ^CoreNeutralUnit
