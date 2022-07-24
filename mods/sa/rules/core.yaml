@@ -185,6 +185,7 @@
 	Inherits: ^CoreCreature
 	Mobile:
 		Locomotor: unit
+		PreviewFacing: 0
 	Targetable:
 		TargetTypes: Ground
 	Selectable:
