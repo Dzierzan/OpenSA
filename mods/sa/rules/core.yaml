@@ -400,3 +400,4 @@
 	# Decorations will be owned by Neutral by default.
 	RequiresSpecificOwners:
 		ValidOwnerNames: Neutral
+	Interactable:

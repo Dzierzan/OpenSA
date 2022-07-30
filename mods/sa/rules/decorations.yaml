@@ -6,8 +6,8 @@ plant_flower:
 		Image: plant_flower_1
 	WithRandomSpriteBody:
 		Images: plant_flower_1, plant_flower_2, plant_flower_3
-	MapEditorData:
-		RequireTilesets: NORMAL
+	EditorOnlyTooltip:
+		Name: Normal tileset plant.
 
 plant_broad_leaf_grass:
 	Inherits: ^CoreDecoration
@@ -15,8 +15,8 @@ plant_broad_leaf_grass:
 		Image: plant_broad_leaf_grass_1
 	WithRandomSpriteBody:
 		Images: plant_broad_leaf_grass_1, plant_broad_leaf_grass_2, plant_broad_leaf_grass_3
-	MapEditorData:
-		RequireTilesets: NORMAL
+	EditorOnlyTooltip:
+		Name: Normal tileset plant.
 
 plant_brown_mushroom:
 	Inherits: ^CoreDecoration
@@ -24,8 +24,8 @@ plant_brown_mushroom:
 		Image: plant_brown_mushroom_1
 	WithRandomSpriteBody:
 		Images: plant_brown_mushroom_1, plant_brown_mushroom_2, plant_brown_mushroom_3
-	MapEditorData:
-		RequireTilesets: NORMAL
+	EditorOnlyTooltip:
+		Name: Normal tileset plant.
 
 plant_toad_stool:
 	Inherits: ^CoreDecoration
@@ -33,8 +33,8 @@ plant_toad_stool:
 		Image: plant_toad_stool_1
 	WithRandomSpriteBody:
 		Images: plant_toad_stool_1, plant_toad_stool_2, plant_toad_stool_3
-	MapEditorData:
-		RequireTilesets: NORMAL
+	EditorOnlyTooltip:
+		Name: Normal tileset plant.
 
 plant_desert_grass:
 	Inherits: ^CoreDecoration
@@ -42,8 +42,8 @@ plant_desert_grass:
 		Image: plant_desert_grass_1
 	WithRandomSpriteBody:
 		Images: plant_desert_grass_1, plant_desert_grass_2, plant_desert_grass_3
-	MapEditorData:
-		RequireTilesets: DESERT
+	EditorOnlyTooltip:
+		Name: Desert tileset plant.
 
 plant_serata:
 	Inherits: ^CoreDecoration
@@ -51,8 +51,8 @@ plant_serata:
 		Image: plant_serata_1
 	WithRandomSpriteBody:
 		Images: plant_serata_1, plant_serata_2, plant_serata_3
-	MapEditorData:
-		RequireTilesets: DESERT
+	EditorOnlyTooltip:
+		Name: Desert tileset plant.
 
 plant_desert_flower:
 	Inherits: ^CoreDecoration
@@ -62,8 +62,8 @@ plant_desert_flower:
 		Image: plant_desert_flower_1
 	WithRandomSpriteBody:
 		Images: plant_desert_flower_1, plant_desert_flower_2, plant_desert_flower_3
-	MapEditorData:
-		RequireTilesets: DESERT
+	EditorOnlyTooltip:
+		Name: Desert tileset plant.
 
 plant_gumnut:
 	Inherits: ^CoreDecoration
@@ -71,8 +71,8 @@ plant_gumnut:
 		Image: plant_gumnut_1
 	WithRandomSpriteBody:
 		Images: plant_gumnut_1, plant_gumnut_2, plant_gumnut_3
-	MapEditorData:
-		RequireTilesets: DESERT
+	EditorOnlyTooltip:
+		Name: Desert tileset plant.
 
 plant_clover:
 	Inherits: ^CoreDecoration
@@ -80,8 +80,8 @@ plant_clover:
 		Image: plant_clover_1
 	WithRandomSpriteBody:
 		Images: plant_clover_1, plant_clover_2, plant_clover_3
-	MapEditorData:
-		RequireTilesets: SWAMP
+	EditorOnlyTooltip:
+		Name: Swamp tileset plant.
 
 plant_moon_mushroom:
 	Inherits: ^CoreDecoration
@@ -89,8 +89,8 @@ plant_moon_mushroom:
 		Image: plant_moon_mushroom_1
 	WithRandomSpriteBody:
 		Images: plant_moon_mushroom_1, plant_moon_mushroom_2, plant_moon_mushroom_3
-	MapEditorData:
-		RequireTilesets: SWAMP
+	EditorOnlyTooltip:
+		Name: Swamp tileset plant.
 
 plant_cherry_flower:
 	Inherits: ^CoreDecoration
@@ -100,8 +100,8 @@ plant_cherry_flower:
 		Image: plant_cherry_flower_1
 	WithRandomSpriteBody:
 		Images: plant_cherry_flower_1, plant_cherry_flower_2, plant_cherry_flower_3
-	MapEditorData:
-		RequireTilesets: SWAMP
+	EditorOnlyTooltip:
+		Name: Swamp tileset plant.
 
 plant_moon_flower:
 	Inherits: ^CoreDecoration
@@ -109,8 +109,8 @@ plant_moon_flower:
 		Image: plant_moon_flower_1
 	WithRandomSpriteBody:
 		Images: plant_moon_flower_1, plant_moon_flower_2, plant_moon_flower_3
-	MapEditorData:
-		RequireTilesets: SWAMP
+	EditorOnlyTooltip:
+		Name: Swamp tileset plant.
 
 plant_smarty:
 	Inherits: ^CoreDecoration
@@ -120,8 +120,8 @@ plant_smarty:
 		Image: plant_smarty_1
 	WithRandomSpriteBody:
 		Images: plant_smarty_1, plant_smarty_2, plant_smarty_3
-	MapEditorData:
-		RequireTilesets: CANDY
+	EditorOnlyTooltip:
+		Name: Candyland tileset plant.
 
 plant_jelly_bean:
 	Inherits: ^CoreDecoration
@@ -129,8 +129,8 @@ plant_jelly_bean:
 		Image: plant_jelly_bean_1
 	WithRandomSpriteBody:
 		Images: plant_jelly_bean_1, plant_jelly_bean_2, plant_jelly_bean_3
-	MapEditorData:
-		RequireTilesets: CANDY
+	EditorOnlyTooltip:
+		Name: Candyland tileset plant.
 
 plant_jaffa:
 	Inherits: ^CoreDecoration
@@ -138,8 +138,8 @@ plant_jaffa:
 		Image: plant_jaffa_1
 	WithRandomSpriteBody:
 		Images: plant_jaffa_1, plant_jaffa_2, plant_jaffa_3
-	MapEditorData:
-		RequireTilesets: CANDY
+	EditorOnlyTooltip:
+		Name: Candyland tileset plant.
 
 plant_choc_chip:
 	Inherits: ^CoreDecoration
@@ -149,8 +149,8 @@ plant_choc_chip:
 		Image: plant_choc_chip_1
 	WithRandomSpriteBody:
 		Images: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
-	MapEditorData:
-		RequireTilesets: CANDY
+	EditorOnlyTooltip:
+		Name: Candyland tileset plant.
 
 #object_48:
 #Inherits: ^CoreDecoration
