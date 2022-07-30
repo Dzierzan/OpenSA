@@ -296,3 +296,20 @@ STARTCAMERA:
 		Categories: System
 	RequiresSpecificOwners:
 		ValidOwnerNames: Neutral
+
+RANDOMCOLONY:
+	Interactable:
+	AlwaysVisible:
+	EditorOnlyTooltip:
+		Name: Spawns a random colony
+	Immobile:
+		OccupiesSpace: false
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+	MapEditorData:
+		Categories: System
+	SpawnRandomActorOnDeath:
+		Actors: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
+	KillsSelf:
