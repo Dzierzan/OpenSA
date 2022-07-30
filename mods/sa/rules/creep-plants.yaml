@@ -61,6 +61,8 @@ popcorn:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Popcorn Plant. Normal tileset hostile plant.
 
 venus:
 	Inherits@1: ^AutoTargetDefault
@@ -85,6 +87,8 @@ venus:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Venus Flytrap. Normal tileset hostile plant.
 
 puff:
 	Inherits: ^CoreNeutralTowerCreep
@@ -113,6 +117,8 @@ puff:
 		LocalOffset: 0,0,0
 		PauseOnCondition: !seed_attack || injured || !grown
 	Plant:
+	EditorOnlyTooltip:
+		Name: Seed Ball. Swamp tileset hostile plant.
 
 seed:
 	SpawnActorOnDeath:
@@ -146,6 +152,8 @@ mushroom:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Posion Mushroom. Swamp tileset hostile plant.
 
 thorn:
 	Inherits@1: ^AutoTargetDefault
@@ -160,6 +168,8 @@ thorn:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Thorn Bush. Desert tileset hostile plant.
 
 Gumnut:
 	Inherits@1: ^AutoTargetDefault
@@ -176,6 +186,8 @@ Gumnut:
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Gumnut. Desert tileset hostile plant.
 
 freckle:
 	Inherits@1: ^AutoTargetDefault
@@ -206,6 +218,8 @@ freckle:
 	-WithSpriteTurret:
 	-Turreted:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Choc Freckle. Candyland tileset hostile plant.
 
 lolly_blue:
 	Inherits@1: ^AutoTargetDefault
@@ -230,6 +244,8 @@ lolly_blue:
 	-WithSpriteTurret:
 	-Husk:
 	Plant:
+	EditorOnlyTooltip:
+		Name: Death Lolly. Candyland tileset hostile plant.
 
 lolly_orange:
 	Inherits: lolly_blue
