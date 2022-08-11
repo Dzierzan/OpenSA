@@ -55,3 +55,11 @@ spacefighter:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
+
+sunflowerbooster:
+	idle-overlay: bits/sunflowerbooster.png
+		Start: 0
+		ZOffset: 2500
+	idle: bits/sunflowerbooster.png
+		ZOffset: -1024
+		Start: 1

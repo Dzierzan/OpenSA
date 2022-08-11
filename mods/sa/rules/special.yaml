@@ -78,3 +78,66 @@ spacefighter:
 		Color: A0000060
 		TrailWidth: 0c192
 		TrailLength: 5
+
+sunflowerbooster:
+	Inherits: ^CoreBuilding
+	AppearsOnRadar:
+	Tooltip:
+		Name: Sunflower Farm. Increases unit production in all team colonies by 10%.
+	Health:
+		HP: 75000
+	Selectable:
+		Bounds: 3072, 2048, 256, 0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+		LocalCenterOffset: -280,-150,0
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -1256, -904
+			BottomRight: 1800, 1104
+	Turreted:
+	WithIdleOverlay:
+	Colony:
+		SpawnsActor: defeated_sunflowerbooster
+		LostSound: sa|bits/sounds/turretPowerDown.wav
+	-Production:
+	-ProductionQueue:
+	-GrantConditionWhileProducing:
+	-RallyPoint:
+	-CustomAppearsOnRadar:
+
+defeated_sunflowerbooster:
+	Inherits: ^CoreUnclaimedBuilding
+	Tooltip:
+		Name: Sunflower Farm. Increases unit production in all team colonies by 10%.
+	Health:
+		HP: 75000
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2,3
+		LocalCenterOffset: 0,0,0
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -1024, -1024
+			BottomRight: 1024, 1024
+	Turreted:
+	WithIdleOverlay:
+	RenderSprites:
+		Image: sunflowerbooster
+	DefeatedColony:
+		SpawnsActor: sunflowerbooster
+		BitFireDelay: 50 #Time before colony bits are launched
+		NumberOfBits: 7 #How many colony bits are launched
+		MinRange: 3 #Min range of colony bits
+		MaxRange: 7 #Max range of colony bits
+		ResurrectHealth: 25
+		Weapon: colony_bit
+		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
+		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
+		Explode: dieTurret
+	AppearsOnRadar:
+	-CustomAppearsOnRadar:
+	-RadarColorFromFaction:

@@ -167,3 +167,8 @@ Description: Secret debug unit.
 Author: Dzierzan
 Source: Self-made
 Description: Random colony marker
+
+**sunflowerbooster.png**
+Author: Dzierzan
+Source: Self-made
+Description: Production booster.
