@@ -62,6 +62,44 @@ Player:
 	PlayerStatistics:
 	# This actor enables the radar minimap.
 	ProvidesRadar:
+	# Sunflower farm production booster:
+	ProvidesPrerequisite@ProductionTimeMultiplier_1:
+		Prerequisite: multiplier1
+		RequiresCondition: production-multiplier == 1
+	ProvidesPrerequisite@ProductionTimeMultiplier_2:
+		Prerequisite: multiplier2
+		RequiresCondition: production-multiplier == 2
+	ProvidesPrerequisite@ProductionTimeMultiplier_3:
+		Prerequisite: multiplier3
+		RequiresCondition: production-multiplier == 3
+	ProvidesPrerequisite@ProductionTimeMultiplier_4:
+		Prerequisite: multiplier4
+		RequiresCondition: production-multiplier == 4
+	ProvidesPrerequisite@ProductionTimeMultiplier_5:
+		Prerequisite: multiplier5
+		RequiresCondition: production-multiplier == 5
+	ProvidesPrerequisite@ProductionTimeMultiplier_6:
+		Prerequisite: multiplier6
+		RequiresCondition: production-multiplier == 6
+	ProvidesPrerequisite@ProductionTimeMultiplier_7:
+		Prerequisite: multiplier7
+		RequiresCondition: production-multiplier == 7
+	ProvidesPrerequisite@ProductionTimeMultiplier_8:
+		Prerequisite: multiplier8
+		RequiresCondition: production-multiplier == 8
+	ProvidesPrerequisite@ProductionTimeMultiplier_9:
+		Prerequisite: multiplier9
+		RequiresCondition: production-multiplier == 9
+	ProvidesPrerequisite@ProductionTimeMultiplier_10:
+		Prerequisite: multiplier10
+		RequiresCondition: production-multiplier == 10
+	ProvidesPrerequisite@ProductionTimeMultiplier_MoreThan10:
+		Prerequisite: multiplier10
+		RequiresCondition: production-multiplier >= 10
+	ExternalCondition@ProductionMultiplier:
+		Condition: production-multiplier
+		SourceCap: 10
+		TotalCap: 10
 
 EditorPlayer:
 	Inherits: ^CorePlayer

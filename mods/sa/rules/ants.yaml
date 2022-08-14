@@ -14,6 +14,36 @@ World:
 	ProductionTimeMultiplier@AntFactionSpecialization:
 		Multiplier: 75
 		Prerequisites: ants_faction_true
+	ProductionTimeMultiplier@ProductionBooster_1:
+		Prerequisites: multiplier1
+		Multiplier: 90
+	ProductionTimeMultiplier@ProductionBooster_2:
+		Prerequisites: multiplier2
+		Multiplier: 80
+	ProductionTimeMultiplier@ProductionBooster_3:
+		Prerequisites: multiplier3
+		Multiplier: 70
+	ProductionTimeMultiplier@ProductionBooster_4:
+		Prerequisites: multiplier4
+		Multiplier: 60
+	ProductionTimeMultiplier@ProductionBooster_5:
+		Prerequisites: multiplier5
+		Multiplier: 50
+	ProductionTimeMultiplier@ProductionBooster_6:
+		Prerequisites: multiplier6
+		Multiplier: 40
+	ProductionTimeMultiplier@ProductionBooster_7:
+		Prerequisites: multiplier7
+		Multiplier: 30
+	ProductionTimeMultiplier@ProductionBooster_8:
+		Prerequisites: multiplier8
+		Multiplier: 20
+	ProductionTimeMultiplier@ProductionBooster_9:
+		Prerequisites: multiplier9
+		Multiplier: 10
+	ProductionTimeMultiplier@ProductionBooster_10:
+		Prerequisites: multiplier10
+		Multiplier: 5
 	Buildable:
 		Queue: Unit.Ants
 		Prerequisites: ~ants_colony

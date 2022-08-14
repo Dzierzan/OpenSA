@@ -83,6 +83,8 @@ sunflowerbooster:
 	Inherits: ^CoreBuilding
 	AppearsOnRadar:
 	Tooltip:
+		Name: Sunflower Farm
+	EditorOnlyTooltip:
 		Name: Sunflower Farm. Increases unit production in all team colonies by 10%.
 	Health:
 		HP: 75000
@@ -102,6 +104,11 @@ sunflowerbooster:
 	Colony:
 		SpawnsActor: defeated_sunflowerbooster
 		LostSound: sa|bits/sounds/turretPowerDown.wav
+	GrantConditionOnNeutralOwner:
+		Condition: ownerless
+	GrantExternalConditionToOwner@ProductionMultiplier:
+		Condition: production-multiplier
+		RequiresCondition: !ownerless
 	-Production:
 	-ProductionQueue:
 	-GrantConditionWhileProducing:
@@ -111,18 +118,20 @@ sunflowerbooster:
 defeated_sunflowerbooster:
 	Inherits: ^CoreUnclaimedBuilding
 	Tooltip:
-		Name: Sunflower Farm. Increases unit production in all team colonies by 10%.
+		Name: Defeated Sunflower Farm
 	Health:
 		HP: 75000
+	Selectable:
+		Bounds: 3072, 2048, 256, 0
 	Building:
-		Footprint: xx xx xx
-		Dimensions: 2,3
-		LocalCenterOffset: 0,0,0
+		Footprint: xxx xxx
+		Dimensions: 3,2
+		LocalCenterOffset: -280,-150,0
 	HitShape:
 		UseTargetableCellsOffsets: true
 		Type: Rectangle
-			TopLeft: -1024, -1024
-			BottomRight: 1024, 1024
+			TopLeft: -1256, -904
+			BottomRight: 1800, 1104
 	Turreted:
 	WithIdleOverlay:
 	RenderSprites:
