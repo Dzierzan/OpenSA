@@ -46,3 +46,27 @@ spacefigher:
 		Explosions: small_explosion
 		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water, Colony, Colony
+
+electricity:
+	ReloadDelay: 10
+	Range: 12c0
+	Report: electricity.wav
+	Projectile: EnergyBolt
+		Radius: 2
+		Duration: 5
+		InnerLightness: 250
+		OuterLightness: 96
+		Color: 00fefe
+		Distortion: 350
+		DistortionAnimation: 250
+		SegmentLength: 0c512
+		ZOffset: 1750
+	Warhead@Damage: SpreadDamage
+		Damage: 1000
+		Spread: 256
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ImpactSounds: sounds|RIC1.SDF, sounds|RIC2.SDF, sounds|RIC3.SDF, sounds|RIC4.SDF
+		ValidTargets: Ground, Air, Paralyzed, Water, Colony, Colony

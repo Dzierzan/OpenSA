@@ -63,3 +63,20 @@ sunflowerbooster:
 	idle: bits/sunflowerbooster.png
 		ZOffset: -1024
 		Start: 1
+
+tesla_coil_turret:
+	idle-overlay: bits/teslacoilturret.png
+		Start: 0
+		ZOffset: 1500
+	idle: bits/teslacoilturret.png
+		Start: 10
+		ZOffset: -1024
+	turret: bits/teslacoilturret.png
+		Frames: 1, 1, 1, 1, 1, 1, 1, 1
+		Facings: 8
+		ZOffset: 2000
+	shoot: bits/teslacoilturret.png
+		Start: 2
+		Facings: 8
+		Tick: 40
+		ZOffset: 2000

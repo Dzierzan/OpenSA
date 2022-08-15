@@ -150,3 +150,51 @@ defeated_sunflowerbooster:
 	AppearsOnRadar:
 	-CustomAppearsOnRadar:
 	-RadarColorFromFaction:
+
+tesla_coil_turret:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefaultColony
+	Tooltip:
+		Name: Tesla Coil Turret
+	Selectable:
+		Bounds: 1024, 1524, 225, -175
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -200,-125,0
+	HitShape:
+		Type: Circle
+			Radius: 512
+	WithIdleOverlay:
+	Turreted:
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
+	Armament:
+		Weapon: electricity
+		LocalOffset: 256,0,512
+	WithTurretAttackAnimation:
+	WithSpriteTurret:
+	AttackTurreted:
+	Colony:
+		SpawnsActor: defeated_tesla_coil_turret
+
+defeated_tesla_coil_turret:
+	Inherits: ^CoreUnclaimedTurretBuilding
+	Tooltip:
+		Name: Defeated Tesla Coil Turret
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -400,-125,0
+	DefeatedColony:
+		SpawnsActor: tesla_coil_turret
+	RenderSprites:
+		Image: tesla_coil_turret
+	Turreted:
+	Armament:
+		Weapon: electricity
+	AttackTurreted:
+

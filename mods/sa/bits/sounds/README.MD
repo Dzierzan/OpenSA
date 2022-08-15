@@ -47,3 +47,8 @@ Description: Click sound.
 Author: newlocknew
 Source: https://freesound.org/people/newlocknew/sounds/520056/
 Description: Click sound.
+
+**electricity.wav**
+Author: jeremysykes
+Source: https://freesound.org/people/jeremysykes/sounds/341666/
+Description: Tesla coil tower sound.
