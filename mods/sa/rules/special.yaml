@@ -188,7 +188,7 @@ defeated_tesla_coil_turret:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
-		LocalCenterOffset: -400,-125,0
+		LocalCenterOffset: -200,-125,0
 	DefeatedColony:
 		SpawnsActor: tesla_coil_turret
 	RenderSprites:

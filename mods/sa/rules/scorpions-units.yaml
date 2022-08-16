@@ -66,6 +66,8 @@ scorpions_heavy:
 		ScanRadius: 13
 	RenderSprites:
 		PlayerPalette: green
+	WithDeathAnimation:
+		DeathSequencePalette: green
 
 scorpions.colorpicker:
 	Inherits: scorpions_light
