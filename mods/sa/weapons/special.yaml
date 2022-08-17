@@ -48,6 +48,7 @@ spacefigher:
 		ValidTargets: Ground, Air, Paralyzed, Water, Colony, Colony
 
 electricity:
+	ValidTargets: Ground, Paralyzed, Air, Water, Colony
 	ReloadDelay: 10
 	Range: 12c0
 	Report: electricity.wav
