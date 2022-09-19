@@ -1,4 +1,10 @@
 World:
+	MissionData:
+		Briefing: \n
+		StartVideo: sa|bits/videos/TeamLogoYellow.vqa
+		WinVideo: sa|bits/videos/TeamWinYellow.vqa
+
+World:
 	PirateSpawner:
 		SpawnInterval: 100, 200
 		InitialSpawnDelay: 100, 200

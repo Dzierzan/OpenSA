@@ -1,4 +1,10 @@
 World:
+	MissionData:
+		Briefing: \n
+		StartVideo: sa|bits/videos/TeamLogoBlue.vqa
+		WinVideo: sa|bits/videos/TeamWinBlue.vqa
+
+World:
 	PirateSpawner:
 		SpawnInterval: 1200, 1700
 		InitialSpawnDelay: 1200, 1700

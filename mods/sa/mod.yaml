@@ -18,6 +18,7 @@ Packages:
 	~Sprites/Start.DDF: sprites
 	sa|uibits
 	sa|bits/sounds
+	sa|bits/videos
 
 MapFolders:
 	sa|maps: System
@@ -97,6 +98,7 @@ Chrome:
 
 Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
 	^BinDir|OpenRA.Mods.OpenSA.dll
 
 ChromeLayout:
@@ -156,7 +158,7 @@ ChromeLayout:
 	common|chrome/text-notifications.yaml
 
 AssetBrowser:
-	SupportedExtensions: .ani
+	SupportedExtensions: .ani, .vqa
 
 WebServices:
 
@@ -248,7 +250,7 @@ SoundFormats: Sdf, Wav
 
 SpriteFormats: Ani, Ddf, PngSheet
 
-VideoFormats:
+VideoFormats: Vqa
 
 TerrainFormat: CustomTerrain
 
