@@ -172,13 +172,13 @@ spacefighter:
 		TrailWidth: 0c192
 		TrailLength: 5
 
-sunflowerbooster:
+productionbooster:
 	Inherits: ^CoreBuilding
 	AppearsOnRadar:
 	Tooltip:
-		Name: Sunflower Farm
+		Name: Production Booster
 	EditorOnlyTooltip:
-		Name: Sunflower Farm. Increases unit production in all team colonies by 10%.
+		Name: Production Booster. Increases unit production in all team colonies by 10%.
 	Health:
 		HP: 75000
 	Selectable:
@@ -196,7 +196,7 @@ sunflowerbooster:
 	Turreted:
 	WithIdleOverlay:
 	Colony:
-		SpawnsActor: defeated_sunflowerbooster
+		SpawnsActor: defeated_productionbooster
 		LostSound: sa|bits/sounds/turretPowerDown.wav
 	GrantConditionOnNeutralOwner:
 		Condition: ownerless
@@ -208,10 +208,10 @@ sunflowerbooster:
 	-RallyPoint:
 	-CustomAppearsOnRadar:
 
-defeated_sunflowerbooster:
+defeated_productionbooster:
 	Inherits: ^CoreUnclaimedBuilding
 	Tooltip:
-		Name: Defeated Sunflower Farm
+		Name: Defeated Production Booster
 	Health:
 		HP: 75000
 	Selectable:
@@ -229,9 +229,9 @@ defeated_sunflowerbooster:
 	Turreted:
 	WithIdleOverlay:
 	RenderSprites:
-		Image: sunflowerbooster
+		Image: productionbooster
 	DefeatedColony:
-		SpawnsActor: sunflowerbooster
+		SpawnsActor: productionbooster
 		BitFireDelay: 50 #Time before colony bits are launched
 		NumberOfBits: 7 #How many colony bits are launched
 		MinRange: 3 #Min range of colony bits

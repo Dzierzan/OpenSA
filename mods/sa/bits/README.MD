@@ -168,7 +168,12 @@ Author: Dzierzan
 Source: Self-made
 Description: Random colony marker
 
-**sunflowerbooster.png**
+**productionbooster.png**
 Author: Dzierzan
 Source: Self-made
 Description: Production booster.
+
+**firepowerbooster.png**
+Author: Dzierzan
+Source: Self-made
+Description: Firepower booster.

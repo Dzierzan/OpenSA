@@ -56,11 +56,11 @@ spacefighter:
 		Length: 4
 		ZOffset: 1700
 
-sunflowerbooster:
-	idle-overlay: bits/sunflowerbooster.png
+productionbooster:
+	idle-overlay: bits/productionbooster.png
 		Start: 0
 		ZOffset: 2500
-	idle: bits/sunflowerbooster.png
+	idle: bits/productionbooster.png
 		ZOffset: -1024
 		Start: 1
 
