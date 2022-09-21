@@ -26,6 +26,9 @@ ChromeLayout:
 Notifications:
 	sacontent|notifications.yaml
 
+Translations:
+	common|languages/en.ftl
+
 LoadScreen: ModContentLoadScreen
 	Image: sacontent|chrome.png
 
