@@ -2,34 +2,34 @@ explosions:
 	big_explosion_1: sprites|ExplosionA.ANI
 		Length: 25
 		Tick: 20
-		ZOffset: 5000
+		ZOffset: 7000
 	big_explosion_2: sprites|ExplosionG.ANI
 		Length: 25
 		Tick: 20
-		ZOffset: 5000
+		ZOffset: 7000
 	medium_explosion: sprites|ExplosionD.ANI
 		Length: 19
 		Tick: 20
-		ZOffset: 5000
+		ZOffset: 7000
 	small_explosion: sprites|ExplosionE.ANI
 		Length: 9
 		Tick: 20
-		ZOffset: 5000
+		ZOffset: 7000
 	colony_explosion: sprites|ExplosionC.ANI
 		Length: 28
 		Tick: 40
 		Offset: 0,-30
-		ZOffset: 5000
+		ZOffset: 7000
 	shrapnel_explosion: sprites|ExplosionB.ANI
 		Length: 13
 		Tick: 20
-		ZOffset: 5000
+		ZOffset: 7000
 	paralyze_explosion: sprites|ExplosionF.ANI
 		Length: 6
 		Tick: 60
-		ZOffset: 5000
+		ZOffset: 7000
 	gas_end: bits/gas.png
 		Start: 6
 		Length: 6
 		Tick: 40
-		ZOffset: 5000
+		ZOffset: 7000
