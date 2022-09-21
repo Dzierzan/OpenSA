@@ -2,99 +2,99 @@ projectiles:
 	grenade: WEAPON_GRENADE.ANI
 		Length: 2
 		Tick: 30
-		ZOffset: 4900
+		ZOffset: 6000
 	bazooka: bits/rocket.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	cannon: WEAPON_CANNON.ANI
-		ZOffset: 4900
+		ZOffset: 6000
 	missile: bits/missile.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	small_bullet: WEAPON_SMALL.ANI
-		ZOffset: 4900
+		ZOffset: 6000
 	medium_bullet: WEAPON_MEDIUM.ANI
-		ZOffset: 4900
+		ZOffset: 6000
 	gun_bullet: WEAPON_GUN.ANI
-		ZOffset: 4900
+		ZOffset: 6000
 	star: WEAPON_STAR.ANI
 		Length: 2
 		Tick: 50
-		ZOffset: 4900
+		ZOffset: 6000
 	arrow: bits/arrow.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	spear: bits/spear.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	sonic: bits/sonic.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	homing: bits/Homing.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	freckles: WEAPON_FRECKLE.ANI
 		Length: 1
-		ZOffset: 4900
+		ZOffset: 6000
 	popcorn: bits/whip.png
 		Length: 1
 		Facings: 1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	spike: bits/thorn.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 	puff: WEAPON_PUFFBALL.ANI
 		Length: 1
-		ZOffset: 4900
+		ZOffset: 6000
 	gobstopper: WEAPON_GOBSTOPPER.ANI
 		Length: 5
 		Tick: 60
-		ZOffset: 4900
+		ZOffset: 6000
 	brakebombleft: bits/breakbombleft.png
 		Length: 4
 		Tick: 250
 		Facings: -16
-		ZOffset: 4900
+		ZOffset: 6000
 	brakebombright: bits/breakbombright.png
 		Length: 4
 		Tick: 250
 		Facings: -16
-		ZOffset: 4900
+		ZOffset: 6000
 	bouncebomb: WEAPON_BOUNCEBOMB.ANI
 		Length: 6
 		Tick: 60
-		ZOffset: 4900
+		ZOffset: 6000
 	gas: bits/gas.png
 		Length: 6
 		Tick: 80
-		ZOffset: 4900
+		ZOffset: 6000
 	colonybit: COLONYBIT.ANI
 		Length: 4
 		Tick: 60
-		ZOffset: 4900
+		ZOffset: 6000
 	gumnutmissile: bits/gumnutmissile.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
-		ZOffset: 4900
+		ZOffset: 6000
 
 smoke_trail:
 	idle: SMOKEPUFF.ANI
-		ZOffset: 4800
+		ZOffset: 6000
 		Length: 7
 		Tick: 40

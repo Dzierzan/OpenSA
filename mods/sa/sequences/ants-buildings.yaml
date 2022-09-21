@@ -66,7 +66,7 @@ ants_colony:
 ants_colony_turret:
 	idle-overlay: bits/AntsColonyTurret.png
 		Start: 0
-		ZOffset: 2000
+		ZOffset: 1024
 	idle: bits/AntsColonyTurret.png
 		Start: 1
 		ZOffset: -100
@@ -89,7 +89,7 @@ ants_colony_turret:
 			sprites|STCLYANB_WNORMALTR.ANI:
 			sprites|STCLYANB_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2600
+		ZOffset: 1256
 	shoot:
 		Combine:
 			sprites|STCLYANB_WFIRET.ANI:
@@ -127,5 +127,5 @@ ants_colony_turret:
 		Length: 2
 		Facings: 16
 		Tick: 80
-		ZOffset: 2600
+		ZOffset: 1256
 	name: sprites|NAMEANTCOLONY.ANI #TODO PLACEHOLDER

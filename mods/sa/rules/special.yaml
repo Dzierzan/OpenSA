@@ -198,6 +198,9 @@ productionbooster:
 	GrantExternalConditionToOwner@ProductionMultiplier:
 		Condition: production-multiplier
 		RequiresCondition: !ownerless
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
 	-Production:
 	-ProductionQueue:
 	-RallyPoint:
@@ -272,6 +275,9 @@ firepowerbooster:
 	GrantExternalConditionToOwner@FirepowerModifier:
 		Condition: firepower-modifier
 		RequiresCondition: !ownerless
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
 	-Production:
 	-ProductionQueue:
 	-RallyPoint:

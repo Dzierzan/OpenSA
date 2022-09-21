@@ -49,7 +49,7 @@ scorpions_colony:
 scorpions_colony_turret:
 	idle-overlay: bits/ScorpionsColonyTurret.png
 		Start: 0
-		ZOffset: 2000
+		ZOffset: 1024
 	idle: bits/ScorpionsColonyTurret.png
 		Start: 1
 		ZOffset: -100
@@ -72,7 +72,7 @@ scorpions_colony_turret:
 			sprites|STCLYSCR_WNORMALTR.ANI:
 			sprites|STCLYSCR_WNORMALTR2.ANI:
 		Facings: 16
-		ZOffset: 2600
+		ZOffset: 1256
 	shoot:
 		Combine:
 			sprites|STCLYSCR_WFIRET.ANI:
@@ -93,5 +93,5 @@ scorpions_colony_turret:
 			sprites|STCLYSCR_WFIRETR2.ANI:
 		Facings: 16
 		Tick: 160
-		ZOffset: 2600
+		ZOffset: 1256
 	name: sprites|NAMESCORPIONCOLONY.ANI #TODO PLACEHOLDER

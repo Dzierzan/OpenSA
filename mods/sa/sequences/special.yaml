@@ -59,7 +59,7 @@ spacefighter:
 productionbooster:
 	idle-overlay: bits/productionbooster.png
 		Start: 0
-		ZOffset: 2500
+		ZOffset: 1024
 	idle: bits/productionbooster.png
 		ZOffset: -1024
 		Start: 1
@@ -67,7 +67,7 @@ productionbooster:
 firepowerbooster:
 	idle-overlay: bits/firepowerbooster.png
 		Start: 0
-		ZOffset: 2500
+		ZOffset: 1024
 	idle: bits/firepowerbooster.png
 		ZOffset: -1024
 		Start: 1
@@ -82,9 +82,9 @@ tesla_coil_turret:
 	turret: bits/teslacoilturret.png
 		Frames: 1, 1, 1, 1, 1, 1, 1, 1
 		Facings: 8
-		ZOffset: 2000
+		ZOffset: 5256
 	shoot: bits/teslacoilturret.png
 		Start: 2
 		Facings: 8
 		Tick: 40
-		ZOffset: 2000
+		ZOffset: 5256

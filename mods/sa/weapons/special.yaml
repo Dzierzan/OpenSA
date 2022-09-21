@@ -63,7 +63,7 @@ electricity:
 		Distortion: 350
 		DistortionAnimation: 250
 		SegmentLength: 0c512
-		ZOffset: 1750
+		ZOffset: 5000
 	Warhead@Damage: SpreadDamage
 		Damage: 1000
 		Spread: 256
