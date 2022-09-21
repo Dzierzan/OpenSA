@@ -188,7 +188,8 @@ sunflowerbooster:
 		Dimensions: 3,2
 		LocalCenterOffset: -280,-150,0
 	HitShape:
-		UseTargetableCellsOffsets: true
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
@@ -220,7 +221,8 @@ defeated_sunflowerbooster:
 		Dimensions: 3,2
 		LocalCenterOffset: -280,-150,0
 	HitShape:
-		UseTargetableCellsOffsets: true
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
