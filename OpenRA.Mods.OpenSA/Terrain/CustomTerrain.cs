@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -21,6 +21,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 {
 	public class CustomTerrainLoader : ITerrainLoader
 	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "IDE0060:Remove unused parameter", Justification = "Load game API")]
 		public CustomTerrainLoader(ModData modData) { }
 
 		public ITerrainInfo ParseTerrain(IReadOnlyFileSystem fileSystem, string path)

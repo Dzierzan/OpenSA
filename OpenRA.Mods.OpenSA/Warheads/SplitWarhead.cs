@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2021, 2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
@@ -95,10 +96,10 @@ namespace OpenRA.Mods.OpenSA.Warheads
 					DamageModifiers = args.DamageModifiers,
 
 					InaccuracyModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IInaccuracyModifier>()
-						.Select(a => a.GetInaccuracyModifier()).ToArray() : new int[0],
+						.Select(a => a.GetInaccuracyModifier()).ToArray() : Array.Empty<int>(),
 
 					RangeModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IRangeModifier>()
-						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
+						.Select(a => a.GetRangeModifier()).ToArray() : Array.Empty<int>(),
 
 					Source = position,
 					CurrentSource = () => position,

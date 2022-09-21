@@ -204,22 +204,21 @@ EditorPlayer:
 			Water: 100
 			Air: 100
 		TransitionCost: 0
-	# Required to show the map grid.
 	TerrainGeometryOverlay:
-	# Required for debug overlays:
-	DebugVisualizations:
 
 World:
 	Inherits: ^CoreWorld
 	ChatCommands:
 	DevCommands:
+	DebugVisualizations:
+	PathFinderOverlay:
+	HierarchicalPathFinderOverlay:
 	PlayerCommands:
 	HelpCommand:
 	ScreenShaker:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
-	DomainIndex:
 	SpawnMapActors:
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxEnabled: False

@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
@@ -115,7 +116,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			return tiles;
 		}
 
-		private void LaunchBits(Actor self, CPos tile)
+		void LaunchBits(Actor self, CPos tile)
 		{
 			var projectile = new ProjectileArgs
 			{
@@ -123,9 +124,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 				Source = self.CenterPosition,
 				SourceActor = self,
 				PassiveTarget = self.World.Map.CenterOfCell(tile),
-				RangeModifiers = new int[0],
-				DamageModifiers = new int[0],
-				InaccuracyModifiers = new int[0]
+				RangeModifiers = Array.Empty<int>(),
+				DamageModifiers = Array.Empty<int>(),
+				InaccuracyModifiers = Array.Empty<int>()
 			};
 
 			self.World.AddFrameEndTask(w => w.Add(projectile.Weapon.Projectile.Create(projectile)));

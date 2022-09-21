@@ -45,8 +45,8 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 		readonly EditorCursorLayer editorCursor;
 
 		[ObjectCreator.UseCtor]
-		public CustomTileSelectorLogic(Widget widget, World world, WorldRenderer worldRenderer)
-			: base(widget, world, worldRenderer, "TILETEMPLATE_LIST", "TILEPREVIEW_TEMPLATE")
+		public CustomTileSelectorLogic(Widget widget, ModData modData, World world, WorldRenderer worldRenderer)
+			: base(widget,  modData, world, worldRenderer, "TILETEMPLATE_LIST", "TILEPREVIEW_TEMPLATE")
 		{
 			terrainInfo = world.Map.Rules.TerrainInfo as ITemplatedTerrainInfo;
 			if (terrainInfo == null)
