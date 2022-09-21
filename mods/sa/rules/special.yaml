@@ -204,7 +204,6 @@ sunflowerbooster:
 		RequiresCondition: !ownerless
 	-Production:
 	-ProductionQueue:
-	-GrantConditionWhileProducing:
 	-RallyPoint:
 	-CustomAppearsOnRadar:
 
@@ -243,6 +242,7 @@ defeated_sunflowerbooster:
 	AppearsOnRadar:
 	-CustomAppearsOnRadar:
 	-RadarColorFromFaction:
+	-Interactable:
 
 firepowerbooster:
 	Inherits: ^CoreBuilding
@@ -277,7 +277,6 @@ firepowerbooster:
 		RequiresCondition: !ownerless
 	-Production:
 	-ProductionQueue:
-	-GrantConditionWhileProducing:
 	-RallyPoint:
 	-CustomAppearsOnRadar:
 
@@ -317,6 +316,7 @@ defeated_firepowerbooster:
 	AppearsOnRadar:
 	-CustomAppearsOnRadar:
 	-RadarColorFromFaction:
+	-Interactable:
 
 tesla_coil_turret:
 	Inherits@1: ^CoreTurretBuilding

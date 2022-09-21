@@ -53,12 +53,6 @@
 		Categories: Building
 	RevealsShroud:
 		Range: 10c0
-	ChangesHealth:
-		Step: 100
-		StartIfBelow: 100
-		RequiresCondition: !production
-	GrantConditionWhileProducing:
-		Condition: production
 	CustomAppearsOnRadar:
 	RadarColorFromFaction:
 	Production:

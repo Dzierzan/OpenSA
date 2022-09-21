@@ -70,6 +70,12 @@ spiders_colony:
 		Turrets: primary, secondary
 	Colony:
 		SpawnsActor: defeated_spiders_colony
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
+		RequiresCondition: !production
+	GrantConditionWhileProducing:
+		Condition: production
 
 defeated_spiders_colony:
 	Inherits: ^CoreUnclaimedBuilding

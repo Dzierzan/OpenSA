@@ -43,6 +43,12 @@ beetles_colony:
 		RealignDelay: -1
 	Colony:
 		SpawnsActor: defeated_beetles_colony
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
+		RequiresCondition: !production
+	GrantConditionWhileProducing:
+		Condition: production
 
 defeated_beetles_colony:
 	Inherits: ^CoreUnclaimedBuilding

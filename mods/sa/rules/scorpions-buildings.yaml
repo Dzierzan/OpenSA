@@ -48,6 +48,12 @@ scorpions_colony:
 		RealignDelay: -1
 	Colony:
 		SpawnsActor: defeated_scorpions_colony
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
+		RequiresCondition: !production
+	GrantConditionWhileProducing:
+		Condition: production
 
 defeated_scorpions_colony:
 	Inherits@1: ^CoreUnclaimedBuilding

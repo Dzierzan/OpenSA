@@ -73,6 +73,12 @@ ants_colony:
 		Delay: 6
 	Colony:
 		SpawnsActor: defeated_ants_colony
+	ChangesHealth:
+		Step: 100
+		StartIfBelow: 100
+		RequiresCondition: !production
+	GrantConditionWhileProducing:
+		Condition: production
 
 defeated_ants_colony:
 	Inherits: ^CoreUnclaimedBuilding
