@@ -62,7 +62,8 @@ Player:
 	PlayerStatistics:
 	# This actor enables the radar minimap.
 	ProvidesRadar:
-	# Sunflower farm production booster:
+	GrantConditionOnPrerequisiteManager:
+	# Production booster prerequisites:
 	ProvidesPrerequisite@ProductionTimeMultiplier_1:
 		Prerequisite: multiplier1
 		RequiresCondition: production-multiplier == 1
@@ -98,6 +99,44 @@ Player:
 		RequiresCondition: production-multiplier >= 10
 	ExternalCondition@ProductionMultiplier:
 		Condition: production-multiplier
+		SourceCap: 10
+		TotalCap: 10
+	# Firepower booster prerequisites:
+	ProvidesPrerequisite@FirepowerMultiplier_1:
+		Prerequisite: modifier1
+		RequiresCondition: firepower-modifier == 1
+	ProvidesPrerequisite@FirepowerMultiplier_2:
+		Prerequisite: modifier2
+		RequiresCondition: firepower-modifier == 2
+	ProvidesPrerequisite@FirepowerMultiplier_3:
+		Prerequisite: modifier3
+		RequiresCondition: firepower-modifier == 3
+	ProvidesPrerequisite@FirepowerMultiplier_4:
+		Prerequisite: modifier4
+		RequiresCondition: firepower-modifier == 4
+	ProvidesPrerequisite@FirepowerMultiplier_5:
+		Prerequisite: modifier5
+		RequiresCondition: firepower-modifier == 5
+	ProvidesPrerequisite@FirepowerMultiplier_6:
+		Prerequisite: modifier6
+		RequiresCondition: firepower-modifier == 6
+	ProvidesPrerequisite@FirepowerMultiplier_7:
+		Prerequisite: modifier7
+		RequiresCondition: firepower-modifier == 7
+	ProvidesPrerequisite@FirepowerMultiplier_8:
+		Prerequisite: modifier8
+		RequiresCondition: firepower-modifier == 8
+	ProvidesPrerequisite@FirepowerMultiplier_9:
+		Prerequisite: modifier9
+		RequiresCondition: firepower-modifier == 9
+	ProvidesPrerequisite@FirepowerMultiplier_10:
+		Prerequisite: modifier10
+		RequiresCondition: firepower-modifier == 10
+	ProvidesPrerequisite@FirepowerMultiplier_MoreThan10:
+		Prerequisite: modifier10
+		RequiresCondition: firepower-modifier >= 10
+	ExternalCondition@FirepowerMultiplier:
+		Condition: firepower-modifier
 		SourceCap: 10
 		TotalCap: 10
 

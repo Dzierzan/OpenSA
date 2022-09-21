@@ -33,6 +33,99 @@
 	EditorOnlyTooltip:
 		Name: Special debug unit.
 
+	ProductionTimeMultiplier@ProductionBooster_1:
+		Prerequisites: multiplier1
+		Multiplier: 90
+	ProductionTimeMultiplier@ProductionBooster_2:
+		Prerequisites: multiplier2
+		Multiplier: 80
+	ProductionTimeMultiplier@ProductionBooster_3:
+		Prerequisites: multiplier3
+		Multiplier: 70
+	ProductionTimeMultiplier@ProductionBooster_4:
+		Prerequisites: multiplier4
+		Multiplier: 60
+	ProductionTimeMultiplier@ProductionBooster_5:
+		Prerequisites: multiplier5
+		Multiplier: 50
+	ProductionTimeMultiplier@ProductionBooster_6:
+		Prerequisites: multiplier6
+		Multiplier: 40
+	ProductionTimeMultiplier@ProductionBooster_7:
+		Prerequisites: multiplier7
+		Multiplier: 30
+	ProductionTimeMultiplier@ProductionBooster_8:
+		Prerequisites: multiplier8
+		Multiplier: 20
+	ProductionTimeMultiplier@ProductionBooster_9:
+		Prerequisites: multiplier9
+		Multiplier: 10
+	ProductionTimeMultiplier@ProductionBooster_10:
+		Prerequisites: multiplier10
+		Multiplier: 5
+
+	GrantConditionOnPrerequisite@@FirepowerBooster_1:
+		Condition: firepower_1
+		Prerequisites: modifier1
+	GrantConditionOnPrerequisite@@FirepowerBooster_2:
+		Condition: firepower_2
+		Prerequisites: modifier2
+	GrantConditionOnPrerequisite@@FirepowerBooster_3:
+		Condition: firepower_3
+		Prerequisites: modifier3
+	GrantConditionOnPrerequisite@@FirepowerBooster_4:
+		Condition: firepower_4
+		Prerequisites: modifier4
+	GrantConditionOnPrerequisite@@FirepowerBooster_5:
+		Condition: firepower_5
+		Prerequisites: modifier5
+	GrantConditionOnPrerequisite@@FirepowerBooster_6:
+		Condition: firepower_6
+		Prerequisites: modifier6
+	GrantConditionOnPrerequisite@@FirepowerBooster_7:
+		Condition: firepower_7
+		Prerequisites: modifier7
+	GrantConditionOnPrerequisite@@FirepowerBooster_8:
+		Condition: firepower_8
+		Prerequisites: modifier8
+	GrantConditionOnPrerequisite@@FirepowerBooster_9:
+		Condition: firepower_9
+		Prerequisites: modifier9
+	GrantConditionOnPrerequisite@@FirepowerBooster_10:
+		Condition: firepower_10
+		Prerequisites: modifier10
+
+	FirepowerMultiplier@FirepowerBooster_1:
+		RequiresCondition: firepower_1
+		Modifier: 110
+	FirepowerMultiplier@FirepowerBooster_2:
+		RequiresCondition: firepower_2
+		Modifier: 120
+	FirepowerMultiplier@FirepowerBooster_3:
+		RequiresCondition: firepower_3
+		Modifier: 130
+	FirepowerMultiplier@FirepowerBooster_4:
+		RequiresCondition: firepower_4
+		Modifier: 140
+	FirepowerMultiplier@FirepowerBooster_5:
+		RequiresCondition: firepower_5
+		Modifier: 150
+	FirepowerMultiplier@FirepowerBooster_6:
+		RequiresCondition: firepower_6
+		Modifier: 160
+	FirepowerMultiplier@FirepowerBooster_7:
+		RequiresCondition: firepower_7
+		Modifier: 170
+	FirepowerMultiplier@FirepowerBooster_8:
+		RequiresCondition: firepower_8
+		Modifier: 180
+	FirepowerMultiplier@FirepowerBooster_9:
+		RequiresCondition: firepower_9
+		Modifier: 190
+	FirepowerMultiplier@FirepowerBooster_10:
+		RequiresCondition: firepower_10
+		Modifier: 200
+
 slapfighter:
 	Inherits@1: ^SpecialUnit
 	Inherits@2: ^AutoTargetDefault
@@ -151,6 +244,80 @@ defeated_sunflowerbooster:
 	-CustomAppearsOnRadar:
 	-RadarColorFromFaction:
 
+firepowerbooster:
+	Inherits: ^CoreBuilding
+	AppearsOnRadar:
+	Tooltip:
+		Name: Firepower Booster
+	EditorOnlyTooltip:
+		Name: Firepower Booster. Increases firepower of all team units by 10%.
+	Health:
+		HP: 75000
+	Selectable:
+		Bounds: 3072, 2048, 256, 0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+		LocalCenterOffset: -180,-300,0
+	HitShape:
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
+		Type: Rectangle
+			TopLeft: -1256, -904
+			BottomRight: 1800, 1104
+	Turreted:
+	WithIdleOverlay:
+	Colony:
+		SpawnsActor: defeated_firepowerbooster
+		LostSound: sa|bits/sounds/turretPowerDown.wav
+	GrantConditionOnNeutralOwner:
+		Condition: ownerless
+	GrantExternalConditionToOwner@FirepowerModifier:
+		Condition: firepower-modifier
+		RequiresCondition: !ownerless
+	-Production:
+	-ProductionQueue:
+	-GrantConditionWhileProducing:
+	-RallyPoint:
+	-CustomAppearsOnRadar:
+
+defeated_firepowerbooster:
+	Inherits: ^CoreUnclaimedBuilding
+	Tooltip:
+		Name: Defeated Damage Booster
+	Health:
+		HP: 75000
+	Selectable:
+		Bounds: 3072, 2048, 256, 0
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+		LocalCenterOffset: -180,-300,0
+	HitShape:
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
+		Type: Rectangle
+			TopLeft: -1256, -904
+			BottomRight: 1800, 1104
+	Turreted:
+	WithIdleOverlay:
+	RenderSprites:
+		Image: firepowerbooster
+	DefeatedColony:
+		SpawnsActor: firepowerbooster
+		BitFireDelay: 50 #Time before colony bits are launched
+		NumberOfBits: 7 #How many colony bits are launched
+		MinRange: 3 #Min range of colony bits
+		MaxRange: 7 #Max range of colony bits
+		ResurrectHealth: 25
+		Weapon: colony_bit
+		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
+		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
+		Explode: dieTurret
+	AppearsOnRadar:
+	-CustomAppearsOnRadar:
+	-RadarColorFromFaction:
+
 tesla_coil_turret:
 	Inherits@1: ^CoreTurretBuilding
 	Inherits@2: ^AutoTargetDefaultColony
@@ -197,4 +364,3 @@ defeated_tesla_coil_turret:
 	Armament:
 		Weapon: electricity
 	AttackTurreted:
-
