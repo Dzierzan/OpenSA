@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
@@ -28,7 +29,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 
 		[Desc("Actors to spawn.")]
 		[ActorReference]
-		public readonly string[] Actors = { };
+		public readonly string[] Actors = Array.Empty<string>();
 
 		[Desc("Map player to use when 'InternalName' is defined on 'OwnerType'.")]
 		public readonly string InternalOwner = "Neutral";
@@ -45,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		public readonly string Palette = "effect";
 
 		[Desc("List of sounds that can be played at the spawning location.")]
-		public readonly string[] Sounds = new string[0];
+		public readonly string[] Sounds = Array.Empty<string>();
 
 		[FieldLoader.Require]
 		[Desc("The terrain types that the actor is allowed to spawn.")]

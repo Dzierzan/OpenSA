@@ -168,18 +168,18 @@ namespace OpenRA.Mods.OpenSA.SpriteLoaders
 				aniStream.Position += 32 * numScripts;
 				var returnPosition = aniStream.Position;
 
-				long metaPosition;
-				if (aniStream.MetaIndex.TryGetValue(metaName, out metaPosition))
+				if (aniStream.MetaIndex.TryGetValue(metaName, out var metaPosition))
 				{
-					var metaStream = new SegmentStream(aniStream, 0, aniStream.Length);
-					metaStream.Position = metaPosition;
+					var metaStream = new SegmentStream(aniStream, 0, aniStream.Length)
+					{
+						Position = metaPosition
+					};
 
 					var ddfName = metaStream.ReadASCII(32).Replace("\0", string.Empty);
 					metaStream.Position += 4 * 3;
 					var offset = new float2(metaStream.ReadInt32(), metaStream.ReadInt32());
 
-					long ddfPosition;
-					if (aniStream.DdfIndex.TryGetValue(ddfName, out ddfPosition))
+					if (aniStream.DdfIndex.TryGetValue(ddfName, out var ddfPosition))
 					{
 						var ddfStream = aniStream.DdfStream;
 						ddfStream.Position = ddfPosition;

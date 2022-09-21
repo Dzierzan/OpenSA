@@ -36,9 +36,9 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	public class ColonyBit : ITick, ICrushable, INotifyCrushed
 	{
-		private readonly ColonyBitInfo info;
-		private readonly DefeatedColony colony;
-		private int lifetime;
+		readonly ColonyBitInfo info;
+		readonly DefeatedColony colony;
+		int lifetime;
 
 		public ColonyBit(ActorInitializer init, ColonyBitInfo info)
 		{

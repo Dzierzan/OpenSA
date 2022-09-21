@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.Traits;
 
@@ -23,7 +24,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		[FieldLoader.Require]
 		[Desc("Tile set IDs to trigger the condition.")]
-		public readonly string[] TileSets = { };
+		public readonly string[] TileSets = Array.Empty<string>();
 
 		public override object Create(ActorInitializer init) { return new GrantConditionOnTileSet(this); }
 	}

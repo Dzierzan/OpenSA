@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common.Traits;
@@ -92,10 +93,10 @@ namespace OpenRA.Mods.OpenSA.Warheads
 					DamageModifiers = args.DamageModifiers,
 
 					InaccuracyModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IInaccuracyModifier>()
-						.Select(a => a.GetInaccuracyModifier()).ToArray() : new int[0],
+						.Select(a => a.GetInaccuracyModifier()).ToArray() : Array.Empty<int>(),
 
 					RangeModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IRangeModifier>()
-						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
+						.Select(a => a.GetRangeModifier()).ToArray() : Array.Empty<int>(),
 
 					Source = targetPostion,
 					CurrentSource = () => targetPostion,

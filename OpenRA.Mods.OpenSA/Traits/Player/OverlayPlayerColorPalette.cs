@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using OpenRA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -28,7 +29,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public readonly string BaseName = "player";
 
 		[Desc("Remap these indices to player colors.")]
-		public readonly int[] RemapIndex = { };
+		public readonly int[] RemapIndex = Array.Empty<int>();
 
 		[Desc("Allow palette modifiers to change the palette.")]
 		public readonly bool AllowModifiers = true;
@@ -38,7 +39,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	public class OverlayPlayerColorPalette : ILoadsPlayerPalettes
 	{
-		private readonly OverlayPlayerColorPaletteInfo info;
+		readonly OverlayPlayerColorPaletteInfo info;
 
 		public OverlayPlayerColorPalette(OverlayPlayerColorPaletteInfo info)
 		{
