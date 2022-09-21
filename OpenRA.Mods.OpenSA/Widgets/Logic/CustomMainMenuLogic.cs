@@ -88,7 +88,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			singleplayerMenu.IsVisible = () => menuType == MenuType.Singleplayer;
 
 			var missionsButton = singleplayerMenu.Get<ButtonWidget>("MISSIONS_BUTTON");
-			missionsButton.OnClick = OpenMissionBrowserPanel;
+			missionsButton.OnClick = () => OpenMissionBrowserPanel(modData.MapCache.PickLastModifiedMap(MapVisibility.MissionSelector));
 
 			var hasCampaign = modData.Manifest.Missions.Any();
 			var hasMissions = modData.MapCache
@@ -324,10 +324,9 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 
 		void LoadMapIntoEditor(string uid)
 		{
-			ConnectionLogic.Connect(Game.CreateLocalServer(uid),
-				"",
-				() => { Game.LoadEditor(uid); },
-				() => { Game.CloseServer(); SwitchMenu(MenuType.MapEditor); });
+			// HACK: Work around a synced-code change check.
+			// It's not clear why this is needed here, but not in the other places that load maps.
+			Game.RunAfterTick(() => Game.LoadEditor(uid));
 
 			DiscordService.UpdateStatus(DiscordState.InMapEditor);
 
@@ -357,13 +356,14 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 				() => { Game.CloseServer(); SwitchMenu(MenuType.Main); });
 		}
 
-		void OpenMissionBrowserPanel()
+		void OpenMissionBrowserPanel(string map)
 		{
 			SwitchMenu(MenuType.None);
 			Game.OpenWindow("MISSIONBROWSER_PANEL", new WidgetArgs
 			{
 				{ "onExit", () => SwitchMenu(MenuType.Singleplayer) },
-				{ "onStart", () => { RemoveShellmapUI(); lastGameState = MenuPanel.Missions; } }
+				{ "onStart", () => { RemoveShellmapUI(); lastGameState = MenuPanel.Missions; } },
+				{ "initialMap", map }
 			});
 		}
 
@@ -428,7 +428,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			switch (lastGameState)
 			{
 				case MenuPanel.Missions:
-					OpenMissionBrowserPanel();
+					OpenMissionBrowserPanel(null);
 					break;
 
 				case MenuPanel.Replays:
