@@ -2,6 +2,8 @@ slapfighter:
 	ValidTargets: Ground, Paralyzed, Air, Water, Colony
 	Range: 16c0
 	ReloadDelay: 40
+	Burst: 2
+	BurstDelays: 5
 	Report: sounds|SLAPFIGHTFIRE.SDF
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
