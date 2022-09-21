@@ -16,7 +16,7 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 - seamless zooming in and out,
 - ability to queue units,
 - rally points,
-- units controled by player are less likely to wander than units controled by AI,
+- units controlled by player are less likely to wander than units controlled by AI,
 - more advanced map editor with the ability of creating own missions with objectives,
 - ability of adding own units to the game,
 - there's no random map generator in OpenSA, however the project is able to convert legacy maps to ORA format, so nothing is lost.
@@ -48,7 +48,7 @@ I would love to thank:
 
 * Matthias Mailänder (Mailaender) for helping out with writing a lot of custom traits which pushed this project forward.
 
-* Zimmermann Gyula (Graion Dilach) for using his traits written for his Attacque Superior project (https://github.com/AttacqueSuperior/Engine).
+* Zimmermann Gyula (Graion Dilach) for using his traits written for his [Attacque Superior](https://github.com/AttacqueSuperior/Engine) project.
 
 * MikillRosen (sayedmamdouh) for creating extra cursors and Ant Hole variants.
 
