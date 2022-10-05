@@ -248,68 +248,68 @@ moth:
 	portrait: sprites|COLONYNEUTRALMOTH3D.ANI
 
 dragonfly:
-	idle:
-		Combine:
-			sprites|UNDRABOB_WAT.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAB.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATR.ANI:
-				Length: 3
+	idle: bits/dragonfly.png #Fixed sprites
+		#Combine: #Legacy sprites
+		#	sprites|UNDRABOB_WAT.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAB.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATR.ANI:
+		#		Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	shoot:
-		Combine:
-			sprites|UNDRABOB_WAT.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAB.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATR.ANI:
-				Length: 3
+	shoot: bits/dragonfly.png #Fixed sprites
+		#Combine: #Legacy sprites
+		#	sprites|UNDRABOB_WAT.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAB.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATR.ANI:
+		#		Length: 3
 		Length: 3
 		Facings: 8
 		Tick: 80
 		ZOffset: 3000
-	move:
-		Combine:
-			sprites|UNDRABOB_WAT.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABL.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAB.ANI:
-				Length: 3
-			sprites|UNDRABOB_WABR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WAR.ANI:
-				Length: 3
-			sprites|UNDRABOB_WATR.ANI:
-				Length: 3
+	move: bits/dragonfly.png #Fixed sprites
+		#Combine: #Legacy sprites
+		#	sprites|UNDRABOB_WAT.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABL.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAB.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WABR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WAR.ANI:
+		#		Length: 3
+		#	sprites|UNDRABOB_WATR.ANI:
+		#		Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8

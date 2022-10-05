@@ -177,3 +177,8 @@ Description: Production booster.
 Author: Dzierzan
 Source: Self-made
 Description: Firepower booster.
+
+**dragonfly.png**
+Author: Gate 5 Creations
+Source: Swarm Assault
+Description: Updated artwork to fill gaps.
