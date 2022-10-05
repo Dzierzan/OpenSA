@@ -82,15 +82,16 @@ beetles_colony_turret:
 	Health:
 		HP: 50000
 	Building:
-		Dimensions: 2,2
-		Footprint: xx xx
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -50,-50,0
 	HitShape:
 		Type: Circle
 			Radius: 512
 	WithIdleOverlay:
 	Turreted:
 		Turret: primary
-		Offset: 100,100,0
+		Offset: 200,100,0
 		TurnSpeed: 120
 		InitialFacing: 500
 		RealignDelay: -1
@@ -117,14 +118,15 @@ defeated_beetles_turret:
 	RenderSprites:
 		Image: beetles_colony_turret
 	Building:
-		Dimensions: 2,2
-		Footprint: xx xx
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -50,-50,0
 	HitShape:
 		Type: Circle
 			Radius: 512
 	Turreted:
 		Turret: primary
-		Offset: 100,100,0
+		Offset: 200,100,0
 		TurnSpeed: 120
 		InitialFacing: 500
 		RealignDelay: -1

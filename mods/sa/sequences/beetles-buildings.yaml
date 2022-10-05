@@ -74,10 +74,10 @@ beetles_colony:
 	name: sprites|NAMEBEETLECOLONY.ANI
 
 beetles_colony_turret:
-	idle-overlay: bits/BeetlesColonyTurret.png
+	idle-overlay: bits/beetlesColonyTurret.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/BeetlesColonyTurret.png
+	idle: bits/beetlesColonyTurret.png
 		Start: 1
 		ZOffset: -100
 	turret:
