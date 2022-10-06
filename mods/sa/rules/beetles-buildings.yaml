@@ -85,6 +85,8 @@ beetles_colony_turret:
 		Dimensions: 1,1
 		Footprint: x
 		LocalCenterOffset: -50,-50,0
+	Selectable:
+		Bounds: 1224, 1224, 75, 0
 	HitShape:
 		Type: Circle
 			Radius: 512

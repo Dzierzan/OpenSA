@@ -138,6 +138,8 @@ spiders_colony_turret:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
+	Selectable:
+		Bounds: 1024, 1624, 0, -350
 	HitShape:
 		Type: Circle
 			Radius: 256

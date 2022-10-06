@@ -94,6 +94,8 @@ scorpions_colony_turret:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Selectable:
+		Bounds: 1500, 2048, -100, -100
 	HitShape:
 		Type: Circle
 			Radius: 512
