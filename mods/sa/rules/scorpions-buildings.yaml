@@ -140,3 +140,52 @@ defeated_scorpions_turret:
 		Name: secondary
 		Weapon: scorpions_colony
 		LocalOffset: 0,-256,0
+
+scorpions_colony_turret_small:
+	Inherits@1: ^CoreTurretBuilding
+	Inherits@2: ^AutoTargetDefaultColony
+	Tooltip:
+		Name: Scorpions Colony Turret
+	Selectable:
+		Bounds: 1024, 1824, 100, -175
+	Health:
+		HP: 50000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -100,-250,0
+	HitShape:
+		Type: Circle
+			Radius: 512
+	WithIdleOverlay:
+	Turreted:
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
+	Armament:
+		Weapon: scorpions_medium
+		LocalOffset: 700,0,500
+	Colony:
+		SpawnsActor: defeated_scorpions_turret_small
+
+defeated_scorpions_turret_small:
+	Inherits@1: ^CoreUnclaimedTurretBuilding
+	Inherits@2: ^CoreTurret
+	DefeatedColony:
+		SpawnsActor: scorpions_colony_turret_small
+	RenderSprites:
+		Image: scorpions_colony_turret_small
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		LocalCenterOffset: -100,-250,0
+	HitShape:
+		Type: Circle
+			Radius: 512
+	Turreted:
+		TurnSpeed: 120
+		InitialFacing: 500
+		RealignDelay: -1
+	Armament:
+		Weapon: scorpions_medium
+		LocalOffset: 700,0,500

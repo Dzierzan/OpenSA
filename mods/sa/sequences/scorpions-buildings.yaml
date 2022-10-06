@@ -95,3 +95,20 @@ scorpions_colony_turret:
 		Tick: 160
 		ZOffset: 1256
 	name: sprites|NAMESCORPIONCOLONY.ANI #TODO PLACEHOLDER
+
+scorpions_colony_turret_small:
+	idle-overlay: bits/ScorpionsColonyTurretSmall.png
+		Start: 0
+		ZOffset: 1024
+	idle: bits/ScorpionsColonyTurretSmall.png
+		Start: 1
+		ZOffset: -100
+	turret: bits/ScorpionsColonyTurretSmall.png
+		Start: 2
+		Facings: 16
+		ZOffset: 1256
+	shoot: bits/ScorpionsColonyTurretSmall.png
+		Start: 18
+		Facings: 16
+		Tick: 160
+		ZOffset: 1256

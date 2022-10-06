@@ -182,3 +182,8 @@ Description: Firepower booster.
 Author: Gate 5 Creations
 Source: Swarm Assault
 Description: Updated artwork to fill gaps.
+
+**ScorpionsColonyTurretSmall.png**
+Author: Dzierzan, Gate 5 Creations
+Source: Self-made based on Scorpions Colony.
+Description: Custom tower.
