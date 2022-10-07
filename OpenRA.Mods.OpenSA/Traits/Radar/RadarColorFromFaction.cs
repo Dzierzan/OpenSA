@@ -27,7 +27,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 
 		public readonly Color SpidersOverride = Color.FromArgb(253, 2, 0);
 
-		public readonly Color ScorpionsOverride = Color.FromArgb(227, 217, 205);
+		public readonly Color ScorpionsOverride = Color.FromArgb(185, 30, 242);
 
 		public override object Create(ActorInitializer init) { return new RadarColorFromFaction(this); }
 	}

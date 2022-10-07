@@ -11,6 +11,9 @@ Player:
 	ModularBot@SpidersAI:
 		Name: Spiders AI
 		Type: spiders-ai
+	ModularBot@ScorpionsAI:
+		Name: Scorpions AI
+		Type: scorpions-ai
 	GrantConditionOnBotOwner@AntsAI:
 		Condition: enable-ants-ai
 		Bots: ants-ai
@@ -23,10 +26,13 @@ Player:
 	GrantConditionOnBotOwner@SpidersAI:
 		Condition: enable-spiders-ai
 		Bots: spiders-ai
+	GrantConditionOnBotOwner@ScorpionsAI:
+		Condition: enable-scorpions-ai
+		Bots: scorpions-ai
 	ColonyBitPickupBotModule@allAI:
-		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
+		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai || enable-scorpions-ai
 	HealColonyBotModule@allAI:
-		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai
+		RequiresCondition: enable-ants-ai || enable-beetles-ai || enable-wasps-ai || enable-spiders-ai || enable-scorpions-ai
 	SquadManagerBotModule@AntsAI:
 		RequiresCondition: enable-ants-ai
 		SquadSize: 10
@@ -85,5 +91,20 @@ Player:
 		ProtectionTypes:
 	UnitBuilderBotModule@SpidersAI:
 		RequiresCondition: enable-spiders-ai
+		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+		UnitsToBuild:
+	SquadManagerBotModule@ScorpionsAI:
+		RequiresCondition: enable-scorpions-ai
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+		RushInterval: 500
+		AssignRolesInterval: 25
+		AttackForceInterval: 40
+		RushAttackScanRadius: 25
+		ExcludeFromSquadsTypes: ants_light, spiders_light, scorpions_light
+		AirUnitsTypes:
+		ProtectionTypes:
+	UnitBuilderBotModule@ScorpionsAI:
+		RequiresCondition: enable-scorpions-ai
 		UnitQueues: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
 		UnitsToBuild:

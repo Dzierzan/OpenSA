@@ -1,0 +1,116 @@
+World:
+	MissionData:
+		Briefing: Mission created by Hooet.
+		StartVideo: sa|bits/videos/TeamLogoBlue.vqa
+		WinVideo: sa|bits/videos/TeamWinBlue.vqa
+
+World:
+	PirateSpawner:
+		SpawnInterval: 100, 200
+		InitialSpawnDelay: 500, 700
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	CreepFlyerSpawner@flyingmachine:
+		SpawnInterval: 100, 200
+		InitialSpawnDelay: 500, 700
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	PlantSpawner@CANDY:
+		SpawnInterval: 100, 200
+		InitialSpawnDelay: 500, 700
+
+Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			#ants_light: 0
+			ants_medium: 20
+			ants_heavy: 80
+			beetles_light: 5
+			beetles_medium: 25
+			beetles_heavy: 70
+			wasps_light: 10
+			wasps_medium: 30
+			wasps_heavy: 60
+			spiders_light: 15
+			spiders_medium: 35
+			spiders_heavy: 50
+			scorpions_light: 20
+			scorpions_medium: 40
+			scorpions_heavy: 40
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			ants_light: 15
+			ants_medium: 35
+			ants_heavy: 50
+			beetles_light: 20
+			beetles_medium: 40
+			beetles_heavy: 40
+			#wasps_light: 0
+			wasps_medium: 20
+			wasps_heavy: 80
+			spiders_light: 5
+			spiders_medium: 25
+			spiders_heavy: 70
+			scorpions_light: 10
+			scorpions_medium: 30
+			scorpions_heavy: 60
+	SquadManagerBotModule@WaspsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@SpidersAI:
+	ExternalCondition@SpidersAI:
+		Condition: enable-spiders-ai
+	UnitBuilderBotModule@SpidersAI:
+		UnitsToBuild:
+			ants_light: 10
+			ants_medium: 30
+			ants_heavy: 60
+			beetles_light: 15
+			beetles_medium: 35
+			beetles_heavy: 50
+			wasps_light: 20
+			wasps_medium: 40
+			wasps_heavy: 40
+			#spiders_light: 0
+			spiders_medium: 20
+			spiders_heavy: 80
+			scorpions_light: 5
+			scorpions_medium: 25
+			scorpions_heavy: 70
+	SquadManagerBotModule@SpidersAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@ScorpionsAI:
+	ExternalCondition@ScorpionsAI:
+		Condition: enable-scorpions-ai
+	UnitBuilderBotModule@ScorpionsAI:
+		UnitsToBuild:
+			ants_light: 33
+			ants_medium: 33
+			ants_heavy: 33
+			beetles_light: 33
+			beetles_medium: 33
+			beetles_heavy: 33
+			wasps_light: 33
+			wasps_medium: 33
+			wasps_heavy: 33
+			spiders_light: 33
+			spiders_medium: 33
+			spiders_heavy: 33
+			#scorpions_light: 0
+			scorpions_medium: 33
+			scorpions_heavy: 33
+	SquadManagerBotModule@ScorpionsAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
