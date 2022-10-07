@@ -177,13 +177,13 @@ stance-icons:
 flags:
 	Inherits: ^Glyphs
 	Regions:
-		ants: 234, 58, 22, 22
-		beetles: 233, 80, 23, 22
-		wasps: 231, 125, 25, 21
-		scorpions: 234, 147, 20, 21
-		spiders: 234, 102, 23, 23
-		spectator: 234, 235, 22, 21
-		Random: 234, 235, 22, 21
+		ants: 65, 193, 30, 30, 100, 100
+		beetles: 97, 193, 30, 30
+		wasps: 161, 193, 30, 30
+		scorpions: 193, 193, 30, 30
+		spiders: 129, 193, 30, 30
+		spectator: 225, 193, 30, 30
+		Random: 225, 193, 30, 30
 
 # Used for the menu
 dialog:
