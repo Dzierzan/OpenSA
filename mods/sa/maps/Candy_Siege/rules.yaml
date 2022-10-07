@@ -1,6 +1,6 @@
 World:
 	MissionData:
-		Briefing: \n
+		Briefing: Mission created by Hooet.
 		StartVideo: sa|bits/videos/TeamLogoRed.vqa
 		WinVideo: sa|bits/videos/TeamWinRed.vqa
 

@@ -1,6 +1,5 @@
 World:
 	MissionData:
-		Briefing: \n
 		StartVideo: sa|bits/videos/TeamLogoGreen.vqa
 		WinVideo: sa|bits/videos/TeamWinGreen.vqa
 		BriefingVideo: sa|bits/videos/G5Logo.vqa

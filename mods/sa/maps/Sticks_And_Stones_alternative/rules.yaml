@@ -1,6 +1,6 @@
 World:
 	MissionData:
-		Briefing: \n
+		Briefing: Mission created by using OpenRA's map editor by Dzierzan. Loosely based on NumberJuan77's map 'Sticks And Stones'.
 		StartVideo: sa|bits/videos/TeamLogoBlue.vqa
 		WinVideo: sa|bits/videos/TeamWinBlue.vqa
 

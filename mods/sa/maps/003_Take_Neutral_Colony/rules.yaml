@@ -1,6 +1,5 @@
 World:
 	MissionData:
-		Briefing: \n
 		StartVideo: sa|bits/videos/TeamLogoBlue.vqa
 		WinVideo: sa|bits/videos/TeamWinBlue.vqa
 

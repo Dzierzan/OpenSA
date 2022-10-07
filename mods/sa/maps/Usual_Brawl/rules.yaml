@@ -1,6 +1,6 @@
 World:
 	MissionData:
-		Briefing: \n
+		Briefing: Map created by using Swarm Assault random map generator. Mission created by Dzierzan.
 		StartVideo: sa|bits/videos/TeamLogoRed.vqa
 		WinVideo: sa|bits/videos/TeamWinRed.vqa
 
