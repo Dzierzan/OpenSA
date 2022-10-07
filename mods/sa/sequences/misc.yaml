@@ -127,4 +127,5 @@ startcamera:
 
 randomcolony:
 	idle: bits/random-colony.png
+		Offset: 48, 48
 		ZOffset: 10000
