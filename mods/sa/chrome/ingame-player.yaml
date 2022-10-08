@@ -383,7 +383,7 @@ Container@PLAYER_WIDGETS:
 					IconSpriteOffset: 0, 0
 					MinimumRows: 1
 					MaximumRows: 6
-					ClockPalette: shadow
+					ClockPalette: OpenSA
 					NotBuildablePalette: shadow
 					HotkeyPrefix: Production
 					HotkeyCount: 24

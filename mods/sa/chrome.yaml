@@ -15,7 +15,7 @@ sidebar:
 	Regions:
 		background-top: 0, 0, 226, 295
 		background-iconrow: 0, 295, 226, 48
-		background-bottom: 0, 343, 226, 13
+		background-bottom: 0, 343, 226, 33
 
 sidebar-button:
 	Inherits: ^Chrome
@@ -102,17 +102,17 @@ production-icons:
 order-icons:
 	Inherits: ^Chrome
 	Regions:
-		debug: 10, 357, 34, 35
-		debug-disabled: 10, 393, 34, 35
-		debug-active: 10, 430, 34, 35
-		guard: 49, 357, 34, 35
-		guard-disabled: 49, 393, 34, 35
-		guard-active: 49, 430, 34, 35
-		options: 165, 357, 40, 38
-		options-disabled: 165, 393, 40, 38
+		debug: 512, 512, 1, 1
+		debug-disabled: 512, 512, 1, 1
+		debug-active: 512, 512, 1, 1
+		guard: 512, 512, 1, 1
+		guard-disabled: 512, 512, 1, 1
+		guard-active: 512, 512, 1, 1
+		options: 165, 394, 40, 38
+		options-disabled: 165, 394, 40, 38
 		options-active: 165, 430, 40, 38
-		beacon: 209, 357, 36, 35
-		beacon-disabled: 209, 393, 36, 35
+		beacon: 209, 394, 36, 35
+		beacon-disabled: 209, 394, 36, 35
 		beacon-active: 209, 430, 36, 35
 
 command-button:
@@ -489,6 +489,8 @@ checkmark-mute:
 checkmark-highlighted-mute:
 	Inherits: checkmark-mute
 
+scrollitem:
+
 scrollitem-selected:
 	Inherits: ^Dialog
 	Regions:
@@ -520,6 +522,8 @@ scrollheader-selected:
 
 scrollitem-nohover:
 	Inherits: ^Dialog
+
+scrollitem-nohover-highlighted:
 
 scrollpanel-decorations:
 	Inherits: ^Glyphs

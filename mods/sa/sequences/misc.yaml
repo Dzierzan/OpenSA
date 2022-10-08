@@ -18,7 +18,8 @@ shroud:
 
 clock:
 	idle: bits/clock.png
-		Length: 42
+		Length: 13
+		Offset: -2,43
 
 mpspawn:
 	idle: bits/mpspawn.png
