@@ -21,6 +21,9 @@ clock:
 		Length: 13
 		Offset: -2,43
 
+clock_empty:
+	idle: bits/empty.png
+
 mpspawn:
 	idle: bits/mpspawn.png
 

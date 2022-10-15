@@ -139,6 +139,35 @@ Player:
 		Condition: firepower-modifier
 		SourceCap: 10
 		TotalCap: 10
+	SupportPowerManager:
+	SpawnActorPower@slapfighter:
+		OrderName: SupportPowerSlapfighter
+		Actor: slapfighter
+		LifeTime: -1
+		IconImage: slapfighter
+		Icon: icon
+		IconPalette: OpenSA
+		Description: Spawns Slapfighter debug unit.
+		Cursor: attack
+		StartFullyCharged: True
+		EffectImage: explosions
+		EffectSequence: paralyze_explosion
+		AllowMultiple: True
+		Prerequisites: ~debug
+	SpawnActorPower@spacefighter:
+		OrderName: SupportPowerSpacefighter
+		Actor: spacefighter
+		LifeTime: -1
+		IconImage: spacefighter
+		Icon: icon
+		IconPalette: OpenSA
+		Description: Spawns Spacefighter debug unit.
+		Cursor: attack
+		StartFullyCharged: True
+		EffectImage: explosions
+		EffectSequence: paralyze_explosion
+		AllowMultiple: True
+		Prerequisites: ~debug
 
 EditorPlayer:
 	Inherits: ^CorePlayer

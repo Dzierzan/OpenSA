@@ -8,10 +8,10 @@
 		Speed: 200
 	RevealsShroud:
 		Range: 16c0
-	Buildable:
-		Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
-		BuildDurationModifier: 100
-		Prerequisites: ~disabled
+	#Buildable:
+	#	Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
+	#	BuildDurationModifier: 100
+	#	Prerequisites: ~disabled
 	WithInfantryBody:
 		RequiresCondition: !airborne
 		DefaultAttackSequence: shoot
@@ -132,9 +132,9 @@ slapfighter:
 	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Slapfight Fighter
-	Buildable:
-		BuildDuration: 75
-		Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
+	#Buildable:
+	#	BuildDuration: 75
+	#	Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
 	Armament:
 		Name: primary
 		Weapon: slapfighter
@@ -147,9 +147,9 @@ spacefighter:
 	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Spacefighter
-	Buildable:
-		BuildDuration: 75
-		Description: Shoots long range laser.\nSuper long range unit.\nDebug.
+	#Buildable:
+	#	BuildDuration: 75
+	#	Description: Shoots long range laser.\nSuper long range unit.\nDebug.
 	Armament:
 		Weapon: spacefigher
 		LocalOffset: 150,450,0,   150,-450,0
