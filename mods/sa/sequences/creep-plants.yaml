@@ -239,19 +239,31 @@ anthole_normal:
 		ZOffset: -6000
 
 anthole_desert:
-	inherits: anthole_normal
 	idle: bits/antholes.png
 		Start: 3
+		ZOffset: -6000
 	close: bits/antholes.png
 		Start: 4
+		Length: 3
+		Tick: 500
+		ZOffset: -6000
 	open: bits/antholes.png
 		Start: 0
+		Length: 3
+		Tick: 500
+		ZOffset: -6000
 
 anthole_swamp:
-	inherits: anthole_normal
 	idle: bits/antholes.png
 		Start: 19
+		ZOffset: -6000
 	close: bits/antholes.png
 		Start: 20
+		Length: 3
+		Tick: 500
+		ZOffset: -6000
 	open: bits/antholes.png
 		Start: 16
+		Length: 3
+		Tick: 500
+		ZOffset: -6000
