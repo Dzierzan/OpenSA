@@ -235,7 +235,7 @@ defeated_productionbooster:
 		MinRange: 3 #Min range of colony bits
 		MaxRange: 7 #Max range of colony bits
 		ResurrectHealth: 25
-		Weapon: colony_bit
+		Weapon: green_colony_bit
 		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
 		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
 		Explode: dieTurret
@@ -312,7 +312,7 @@ defeated_firepowerbooster:
 		MinRange: 3 #Min range of colony bits
 		MaxRange: 7 #Max range of colony bits
 		ResurrectHealth: 25
-		Weapon: colony_bit
+		Weapon: green_colony_bit
 		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
 		ColonyExplosionSound: sa|bits/sounds/TurretExplosion.wav
 		Explode: dieTurret

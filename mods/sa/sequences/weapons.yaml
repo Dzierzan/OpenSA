@@ -92,6 +92,10 @@ projectiles:
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
+	greencolonybit: bits/greencolonybits.png
+		Length: 4
+		Tick: 60
+		ZOffset: 6000
 
 smoke_trail:
 	idle: SMOKEPUFF.ANI

@@ -187,3 +187,8 @@ Description: Updated artwork to fill gaps.
 Author: Dzierzan, Gate 5 Creations
 Source: Self-made based on Scorpions Colony.
 Description: Custom tower.
+
+**greencolonybits.png**
+Author: Dzierzan, Gate 5 Creations
+Source: Self-made based on original colony bits.
+Description: Custom colony bits.

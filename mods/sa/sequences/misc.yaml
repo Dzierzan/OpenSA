@@ -54,6 +54,38 @@ colony_bit4:
 		Length: 7
 		ZOffset: -900
 
+green_colony_bit1:
+	idle: bits/greencolonybits.png
+		Start: 5
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit2:
+	idle: bits/greencolonybits.png
+		Start: 10
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit3:
+	idle: bits/greencolonybits.png
+		Start: 15
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit4:
+	idle: bits/greencolonybits.png
+		Start: 10
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
 pips:
 	groups:
 		Combine:
