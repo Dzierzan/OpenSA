@@ -516,13 +516,33 @@ scrollitem-nohover-highlighted:
 
 # Background art for example for mission brower headers.
 scrollheader:
-	Inherits: button
+	Inherits: ^Dialog
+	Regions:
+		background: 468,466,119,10
+		border-r: 587, 466, 4, 11
+		border-l: 464, 466, 4, 11
+		border-b: 468, 476, 119, 4
+		border-t: 468, 462, 119, 4
+		corner-tl: 464, 462, 4, 4
+		corner-tr: 587, 462, 4, 4
+		corner-bl: 464, 476, 4, 4
+		corner-br: 587, 476, 4, 4
 
 scrollheader-highlighted:
-	Inherits: button-hover
+	Inherits: ^Dialog
+	Regions:
+		background: 468,485,119,10
+		border-r: 587, 485, 4, 11
+		border-l: 464, 485, 4, 11
+		border-b: 468, 495, 119, 4
+		border-t: 468, 481, 119, 4
+		corner-tl: 464, 481, 4, 4
+		corner-tr: 587, 481, 4, 4
+		corner-bl: 464, 495, 4, 4
+		corner-br: 587, 495, 4, 4
 
 scrollheader-selected:
-	Inherits: button-pressed
+	Inherits: scrollheader
 
 scrollitem-nohover:
 	Inherits: ^Dialog
