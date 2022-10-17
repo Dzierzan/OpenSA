@@ -402,6 +402,15 @@ Container@OBSERVER_WIDGETS:
 									Text: Lost
 									Align: Right
 									Shadow: True
+								Label@VISION_HEADER:
+									X: 305
+									Y: 0
+									Width: 60
+									Height: PARENT_BOTTOM
+									Font: Bold
+									Text: Vision
+									Align: Right
+									Shadow: True
 				ScrollPanel@PLAYER_STATS_PANEL:
 					X: 0
 					Y: 55
@@ -644,6 +653,13 @@ Container@OBSERVER_WIDGETS:
 									X: 215
 									Y: 0
 									Width: 80
+									Height: PARENT_BOTTOM
+									Align: Right
+									Shadow: True
+								Label@VISION:
+									X: 275
+									Y: 0
+									Width: 60
 									Height: PARENT_BOTTOM
 									Align: Right
 									Shadow: True

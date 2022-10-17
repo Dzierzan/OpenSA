@@ -156,14 +156,14 @@ spacefighter:
 		PauseOnCondition: paralyzed
 	Contrail@left:
 		Offset: -375,450,0
-		UsePlayerColor: false
-		Color: A0000060
+		StartColorUsePlayerColor: false
+		StartColor: A0000060
 		TrailWidth: 0c192
 		TrailLength: 5
 	Contrail@right:
 		Offset: -375,-450,0
-		UsePlayerColor: false
-		Color: A0000060
+		StartColorUsePlayerColor: false
+		StartColor: A0000060
 		TrailWidth: 0c192
 		TrailLength: 5
 
