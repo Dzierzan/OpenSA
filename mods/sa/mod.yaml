@@ -186,7 +186,7 @@ Hotkeys:
 	common|hotkeys/editor.yaml
 
 LoadScreen: RandomImageLoadScreen
-	Image: sa|uibits/loading0.png, sa|uibits/loading1.png, sa|uibits/loading2.png, sa|uibits/loading3.png
+	Image: sa|uibits/loading0.png, sa|uibits/loading1.png, sa|uibits/loading2.png, sa|uibits/loading3.png, sa|uibits/loading4.png, sa|uibits/loading5.png
 	Text: Loading...
 
 ServerTraits:
