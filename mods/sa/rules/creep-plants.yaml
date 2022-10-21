@@ -12,7 +12,7 @@ popcorn:
 		Armaments: primary, secondary, tertiary, quaternary, quintary, sextary, septimary, octary
 	Armament@1:
 		Name: primary
-		Weapon: popcorn
+		Weapon: popcorn_sound
 		FireDelay: 5
 		LocalOffset: 0,0,500
 		RequiresCondition: !injured && grown

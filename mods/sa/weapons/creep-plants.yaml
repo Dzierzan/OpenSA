@@ -4,7 +4,6 @@ popcorn:
 	Range: 6c0
 	Burst: 1
 	BurstDelays: 0
-	StartBurstReport: sounds|WHIPFIRE.SDF
 	Projectile: Missile
 		LockOnProbability: 100 #Homing probability
 		Speed: 150
@@ -17,6 +16,10 @@ popcorn:
 		Spread: 125
 		Damage: 253
 		ValidTargets: Ground, Paralyzed, Water, Air, Colony
+
+popcorn_sound:
+	Inherits: popcorn
+	StartBurstReport: sounds|WHIPFIRE.SDF
 
 venus:
 	ValidTargets: Ground, Paralyzed, Water
