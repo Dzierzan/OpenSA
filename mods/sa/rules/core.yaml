@@ -31,7 +31,9 @@
 
 # Base for all stationary buildings.
 ^CoreBuilding:
-	Inherits: ^CoreVisibleActor
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^AffectsDeathLolly
+	Inherits@3: ^AffectsSeedBall
 	# Last seen state of a building will be rendered till the area is explored again.
 	-HiddenUnderFog:
 	FrozenUnderFog:
@@ -101,7 +103,9 @@
 		TargetTypes: Ground, Colony
 
 ^CoreTurretBuilding:
-	Inherits: ^CoreVisibleActor
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^AffectsDeathLolly
+	Inherits@3: ^AffectsSeedBall
 	# Last seen state of a building will be rendered till the area is explored again.
 	-HiddenUnderFog:
 	FrozenUnderFog:
