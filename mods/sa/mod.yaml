@@ -105,7 +105,7 @@ ChromeLayout:
 	common|chrome/ingame.yaml
 	common|chrome/ingame-chat.yaml
 	common|chrome/ingame-transients.yaml
-	common|chrome/ingame-fmvplayer.yaml
+	sa|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
@@ -147,7 +147,7 @@ ChromeLayout:
 	common|chrome/tooltips.yaml
 	sa|chrome/tooltips.yaml
 	common|chrome/assetbrowser.yaml
-	common|chrome/missionbrowser.yaml
+	sa|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	sa|chrome/editor.yaml
 	common|chrome/replaybrowser.yaml

@@ -1,0 +1,12 @@
+Background@FMVPLAYER:
+	Width: WINDOW_RIGHT
+	Height: WINDOW_BOTTOM
+	Background: dialog5
+	Children:
+		VideoPlayer@PLAYER:
+			X: (WINDOW_RIGHT - WIDTH) / 2
+			Y: (WINDOW_BOTTOM - HEIGHT) / 2
+			Width: 320
+			Height: 240
+			AspectRatio: 1.2
+			DrawOverlay: False
