@@ -489,6 +489,57 @@ checkmark-mute:
 checkmark-highlighted-mute:
 	Inherits: checkmark-mute
 
+checkmark-mute:
+	Inherits: ^Glyphs
+	Regions:
+		unchecked: 0, 170, 16, 16
+		unchecked-pressed: 17, 170, 16, 16
+		checked: 17, 170, 16, 16
+		checked-pressed: 0, 170, 16, 16
+
+checkmark-highlighted-mute:
+	Inherits: checkmark-mute
+
+checkbox-hover:
+	Inherits: ^Dialog
+	PanelRegion: 640, 128, 2, 2, 124, 124, 2, 2
+
+checkbox-pressed:
+	Inherits: checkbox-hover
+
+checkbox-disabled:
+	Inherits: ^Dialog
+	PanelRegion: 640, 256, 2, 2, 124, 124, 2, 2
+
+checkbox-highlighted:
+	Inherits: ^Dialog
+	PanelRegion: 896, 0, 2, 2, 124, 124, 2, 2
+
+checkbox-highlighted-hover:
+	Inherits: checkbox-highlighted
+
+checkbox-highlighted-pressed:
+	Inherits: checkbox-highlighted
+
+checkbox-highlighted-disabled:
+	Inherits: checkbox-disabled
+
+checkbox-toggle:
+
+checkbox-toggle-hover:
+	Inherits: button
+
+checkbox-toggle-pressed:
+	Inherits: checkbox-pressed
+
+checkbox-toggle-highlighted:
+
+checkbox-toggle-highlighted-hover:
+	Inherits: button-highlighted
+
+checkbox-toggle-highlighted-pressed:
+	Inherits: checkbox-highlighted-pressed
+
 scrollitem:
 
 scrollitem-hover:
