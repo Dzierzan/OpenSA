@@ -27,3 +27,7 @@ World:
 			normal: Normal
 			hard: Hard
 		Default: normal
+
+^CoreBuilding:
+	ProductionQueue:
+		InfiniteBuildLimit: 0
