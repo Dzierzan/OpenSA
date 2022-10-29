@@ -70,7 +70,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Render
 		protected override IEnumerable<IRenderable> RenderSelectionBox(Actor self, WorldRenderer wr, Color color)
 		{
 			var bounds = interactable.DecorationBounds(self, wr);
-			yield return new SelectionBoxAnnotationRenderable(self, bounds, color);
+			yield return new CustomSelectionBoxAnnotationRenderable(self, bounds, color);
 		}
 
 		protected override IEnumerable<IRenderable> RenderSelectionBars(Actor self, WorldRenderer wr, bool displayHealth, bool displayExtra)
