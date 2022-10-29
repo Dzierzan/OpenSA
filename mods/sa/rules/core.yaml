@@ -45,7 +45,7 @@
 		TargetTypes: Colony
 	HitShape:
 	Colony:
-	VerticalSelectionDecorations:
+	VerticalSelectionDecorationsColony:
 	Selectable:
 		Priority: 10
 		Bounds: 4096, 4096, 0, 0

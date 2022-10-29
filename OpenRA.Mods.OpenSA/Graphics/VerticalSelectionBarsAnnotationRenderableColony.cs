@@ -15,7 +15,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenSA.Graphics
 {
-	public struct VerticalSelectionBarsAnnotationRenderable : IRenderable, IFinalizedRenderable
+	public struct VerticalSelectionBarsAnnotationRenderableColony : IRenderable, IFinalizedRenderable
 	{
 		readonly WPos pos;
 		readonly Actor actor;
@@ -23,14 +23,14 @@ namespace OpenRA.Mods.OpenSA.Graphics
 		readonly bool displayExtra;
 		readonly Rectangle decorationBounds;
 
-		public VerticalSelectionBarsAnnotationRenderable(Actor actor, Rectangle decorationBounds, bool displayHealth, bool displayExtra)
+		public VerticalSelectionBarsAnnotationRenderableColony(Actor actor, Rectangle decorationBounds, bool displayHealth, bool displayExtra)
 			: this(actor.CenterPosition, actor, decorationBounds)
 		{
 			this.displayHealth = displayHealth;
 			this.displayExtra = displayExtra;
 		}
 
-		public VerticalSelectionBarsAnnotationRenderable(WPos pos, Actor actor, Rectangle decorationBounds)
+		public VerticalSelectionBarsAnnotationRenderableColony(WPos pos, Actor actor, Rectangle decorationBounds)
 			: this()
 		{
 			this.pos = pos;
@@ -46,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 		public bool IsDecoration { get { return true; } }
 
 		public IRenderable WithZOffset(int newOffset) { return this; }
-		public IRenderable OffsetBy(in WVec vec) { return new VerticalSelectionBarsAnnotationRenderable(pos + vec, actor, decorationBounds); }
+		public IRenderable OffsetBy(in WVec vec) { return new VerticalSelectionBarsAnnotationRenderableColony(pos + vec, actor, decorationBounds); }
 		public IRenderable AsDecoration() { return this; }
 
 		void DrawExtraBars(float2 start, float2 end)
@@ -105,6 +105,8 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			var q = new float2(-3, 0);
 			var r = new float2(-2, 0);
 			var t = new float2(-1, 0);
+			var f = new float2(0, 0);
+			var g = new float2(1, 0);
 
 			var up = new float2(0, -1);
 			var down = new float2(0, 1);			
@@ -121,28 +123,36 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(end + p + up, end + p, 1, blackcolor);
 			cr.DrawLine(end + q + up, end + q, 1, blackcolor);
 			cr.DrawLine(end + r + up, end + r, 1, blackcolor);
-			cr.DrawLine(end + t + up, end + t, 1, blackcolor);
+			cr.DrawLine(end + t + up, end + t, 1, blackcolor);			
+			cr.DrawLine(end + f + up, end + f, 1, blackcolor);
+			cr.DrawLine(end + g + up, end + g, 1, blackcolor);
 
 			//MIDDLE
 
 			cr.DrawLine(start + p, end + p, 1, blackcolor);
 			cr.DrawLine(start + q, end + q, 1, greycolor);
 			cr.DrawLine(start + r, end + r, 1, greycolor);
-			cr.DrawLine(start + t, end + t, 1, blackcolor);
+			cr.DrawLine(start + t, end + t, 1, greycolor);
+			cr.DrawLine(start + f, end + f, 1, greycolor);			
+			cr.DrawLine(start + g, end + g, 1, blackcolor);
 
 			//BOTTOM
 
 			cr.DrawLine(start + p + down, start + p, 1, blackcolor);
 			cr.DrawLine(start + q + down, start + q, 1, blackcolor);
 			cr.DrawLine(start + r + down, start + r, 1, blackcolor);
-			cr.DrawLine(start + t + down, start + t, 1, blackcolor);
+			cr.DrawLine(start + t + down, start + t, 1, blackcolor);			
+			cr.DrawLine(start + f + down, start + f, 1, blackcolor);
+			cr.DrawLine(start + g + down, start + g, 1, blackcolor);
 
 			//HEALTH
 
 			cr.DrawLine(start + p, z + p, 1, healthColor2);
 			cr.DrawLine(start + q, z + q, 1, healthColor);
 			cr.DrawLine(start + r, z + r, 1, healthColor);
-			cr.DrawLine(start + t, z + t, 1, healthColor2);
+			cr.DrawLine(start + t, z + t, 1, healthColor);
+			cr.DrawLine(start + f, z + f, 1, healthColor);			
+			cr.DrawLine(start + g, z + g, 1, healthColor2);
 
 			if (health.DisplayHP != health.HP)
 			{
@@ -157,7 +167,9 @@ namespace OpenRA.Mods.OpenSA.Graphics
 				cr.DrawLine(z + p, zz + p, 1, deltaColor2);
 				cr.DrawLine(z + q, zz + q, 1, deltaColor);
 				cr.DrawLine(z + r, zz + r, 1, deltaColor);
-				cr.DrawLine(z + t, zz + t, 1, deltaColor2);
+				cr.DrawLine(z + t, zz + t, 1, deltaColor);
+				cr.DrawLine(z + f, zz + f, 1, deltaColor);
+				cr.DrawLine(z + g, zz + g, 1, deltaColor2);
 			}
 		}
 
