@@ -1,14 +1,14 @@
 # About
 
-This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material.
+This repository contains a recreated Swarm Assault game in OpenRA engine. The goal of this project is to bring modern controls and quality life improvements to Swarm Assault game released in 1999 while still being faithful as much as possible to the original source material. Although the project does not hesitate to add new content which enriches the overall gameplay.
 
 # Current status
 
-At the moment the project is highly complete, nearly all required features are there and what's left is purely cosmetical like HP bars or video support. Moreover all missions have been recreated. Feel free to give any feedback or even help to progress further this project.
+At the moment the project is highly complete, all required features are there and what's left is purely cosmetical or very minor. Moreover all 100 missions have been recreated and the project adds several more additional levels to play. Feel free to give any feedback or even help to progress further this project.
 
 # Swarm Assault vs OpenSA
 
-Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of quality life improvements plus additional stuff has been added to the project. Here are the key features:
+Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of quality life improvements. Here are the key features:
 
 - open source,
 - multiplayer,
@@ -17,7 +17,7 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 - ability to queue units,
 - rally points,
 - units controlled by player are less likely to wander than units controlled by AI,
-- more advanced map editor with the ability of creating own missions with objectives,
+- advanced map editor with the ability of creating own missions with objectives,
 - ability of adding own units to the game,
 - there's no random map generator in OpenSA, however the project is able to convert legacy maps to ORA format, so nothing is lost.
 
@@ -60,8 +60,8 @@ I would love to thank:
 
 # Screenshots
 
-![](https://media.moddb.com/cache/images/mods/1/42/41459/thumb_620x2000/OpenRA-2020-05-31T094932231Z.png)
-![](https://media.moddb.com/cache/images/mods/1/42/41459/thumb_620x2000/OpenRA-2020-05-31T085512814Z.png)
-![](https://media.moddb.com/cache/images/mods/1/42/41459/thumb_620x2000/OpenRA-2020-05-31T085338835Z.png)
-![](https://media.moddb.com/cache/images/mods/1/42/41459/thumb_620x2000/OpenRA-2020-05-31T085934410Z.png)
-![](https://media.moddb.com/cache/images/mods/1/42/41459/thumb_620x2000/OpenRA-2020-05-31T090120130Z.png)
+![](https://imgur.com/b7Tvm0d.png)
+![](https://imgur.com/iqgi2zG.png)
+![](https://imgur.com/vNBYOJj.png)
+![](https://imgur.com/tLpOrWL.png)
+![](https://imgur.com/1pp7k4f.png)
