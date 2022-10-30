@@ -324,7 +324,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 
 		bool HandleEvent(ProductionIcon icon, MouseButton btn, Modifiers modifiers)
 		{
-			var startCount = modifiers.HasModifier(Modifiers.Shift) ? 5 : 1;
+			var startCount = modifiers.HasModifier(Modifiers.Shift) ? 10 : 2;
 
 			// PERF: avoid an unnecessary enumeration by casting back to its known type
 			var cancelCount = modifiers.HasModifier(Modifiers.Ctrl) ? ((List<ProductionItem>)CurrentQueue.AllQueued()).Count : startCount;
