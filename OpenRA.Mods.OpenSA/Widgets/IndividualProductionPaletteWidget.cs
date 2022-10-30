@@ -29,10 +29,11 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		public string Name;
 		public HotkeyReference Hotkey;
 		public Sprite Sprite;
+		public Sprite PressedSprite;
 		public PaletteReference Palette;
-		public PaletteReference IconClockPalette;
-		public PaletteReference IconDarkenPalette;
-		public float2 Pos;
+		public PaletteReference ClockPalette;
+		public PaletteReference DarkenPalette;
+		public float2 Position;
 		public List<ProductionItem> Queued;
 		public ProductionQueue ProductionQueue;
 	}
@@ -64,6 +65,8 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		public readonly string NotBuildableAnimation = "clock";
 		public readonly string NotBuildableSequence = "idle";
 		public readonly string NotBuildablePalette = "chrome";
+
+		public readonly string BuildableIconClickedSuffix = "-clicked";
 
 		public readonly string OverlayFont = "TinyBold";
 		public readonly string SymbolsFont = "Symbols";
@@ -120,7 +123,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		float2 iconOffset, holdOffset, readyOffset, timeOffset, queuedOffset, infiniteOffset;
 
 		Player cachedQueueOwner;
-		IProductionIconOverlay[] pios;
+		IProductionIconOverlay[] productionOverlays;
 
 		[CustomLintableHotkeyNames]
 		public static IEnumerable<string> LinterHotkeyNames(MiniYamlNode widgetNode, Action<string> emitError)
@@ -378,7 +381,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		void UpdateCachedProductionIconOverlays()
 		{
 			cachedQueueOwner = CurrentQueue.Actor.Owner;
-			pios = cachedQueueOwner.PlayerActor.TraitsImplementing<IProductionIconOverlay>().ToArray();
+			productionOverlays = cachedQueueOwner.PlayerActor.TraitsImplementing<IProductionIconOverlay>().ToArray();
 		}
 
 		public void RefreshIcons()
@@ -399,37 +402,40 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			var oldIconCount = DisplayedIconCount;
 			DisplayedIconCount = 0;
 
-			var rb = RenderBounds;
+			var renderBounds = RenderBounds;
 			var faction = producer.Trait.Faction;
 
 			foreach (var item in AllBuildables.Skip(IconRowOffset * Columns).Take(MaxIconRowOffset * Columns))
 			{
 				var x = DisplayedIconCount % Columns;
 				var y = DisplayedIconCount / Columns;
-				var rect = new Rectangle(rb.X + x * (IconSize.X + IconMargin.X), rb.Y + y * (IconSize.Y + IconMargin.Y), IconSize.X, IconSize.Y);
+				var iconSize = new Rectangle(renderBounds.X + x * (IconSize.X + IconMargin.X), renderBounds.Y + y * (IconSize.Y + IconMargin.Y), IconSize.X, IconSize.Y);
 
-				var rsi = item.TraitInfo<RenderSpritesInfo>();
-				var icon = new Animation(World, rsi.GetImage(item, faction));
-				var bi = item.TraitInfo<BuildableInfo>();
-				icon.Play(bi.Icon);
+				var renderSprites = item.TraitInfo<RenderSpritesInfo>();
+				var icon = new Animation(World, renderSprites.GetImage(item, faction));
+				var buildable = item.TraitInfo<BuildableInfo>();
+				icon.Play(buildable.Icon);
+				var pressedIcon = new Animation(World, renderSprites.GetImage(item, faction));
+				pressedIcon.Play(buildable.Icon + BuildableIconClickedSuffix);
 
-				var palette = bi.IconPaletteIsPlayerPalette ? bi.IconPalette + producer.Actor.Owner.InternalName : bi.IconPalette;
+				var palette = buildable.IconPaletteIsPlayerPalette ? buildable.IconPalette + producer.Actor.Owner.InternalName : buildable.IconPalette;
 
-				var pi = new ProductionIcon()
+				var productionIcon = new ProductionIcon()
 				{
 					Actor = item,
 					Name = item.Name,
 					Hotkey = DisplayedIconCount < HotkeyCount ? hotkeys[DisplayedIconCount] : null,
 					Sprite = icon.Image,
+					PressedSprite = pressedIcon.Image,
 					Palette = worldRenderer.Palette(palette),
-					IconClockPalette = worldRenderer.Palette(ClockPalette),
-					IconDarkenPalette = worldRenderer.Palette(NotBuildablePalette),
-					Pos = new float2(rect.Location),
+					ClockPalette = worldRenderer.Palette(ClockPalette),
+					DarkenPalette = worldRenderer.Palette(NotBuildablePalette),
+					Position = new float2(iconSize.Location),
 					Queued = currentQueue.AllQueued().Where(a => a.Item == item.Name).ToList(),
 					ProductionQueue = currentQueue
 				};
 
-				icons.Add(rect, pi);
+				icons.Add(iconSize, productionIcon);
 				DisplayedIconCount++;
 			}
 
@@ -452,25 +458,27 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			Game.Renderer.EnableAntialiasingFilter();
 			foreach (var icon in icons.Values)
 			{
-				WidgetUtils.DrawSpriteCentered(icon.Sprite, icon.Palette, icon.Pos + iconOffset);
+				WidgetUtils.DrawSpriteCentered(icon.Sprite, icon.Palette, icon.Position + iconOffset);
 
 				// Draw the ProductionIconOverlay's sprites
-				foreach (var pio in pios.Where(p => p.IsOverlayActive(icon.Actor)))
-					WidgetUtils.DrawSpriteCentered(pio.Sprite, worldRenderer.Palette(pio.Palette), icon.Pos + iconOffset + pio.Offset(IconSize));
+				foreach (var productionOverlay in productionOverlays.Where(p => p.IsOverlayActive(icon.Actor)))
+					WidgetUtils.DrawSpriteCentered(productionOverlay.Sprite, worldRenderer.Palette(productionOverlay.Palette), icon.Position + iconOffset + productionOverlay.Offset(IconSize));
 
 				// Build progress
 				if (icon.Queued.Count > 0)
 				{
+					WidgetUtils.DrawSpriteCentered(icon.PressedSprite, icon.Palette, icon.Position + iconOffset);
+
 					var first = icon.Queued[0];
 					clock.PlayFetchIndex(ClockSequence,
 						() => (first.TotalTime - first.RemainingTime)
 							* (clock.CurrentSequence.Length - 1) / first.TotalTime);
 					clock.Tick();
 
-					WidgetUtils.DrawSpriteCentered(clock.Image, icon.IconClockPalette, icon.Pos + iconOffset);
+					WidgetUtils.DrawSpriteCentered(clock.Image, icon.ClockPalette, icon.Position + iconOffset);
 				}
 				else if (!buildableItems.Any(a => a.Name == icon.Name))
-					WidgetUtils.DrawSpriteCentered(cantBuild.Image, icon.IconDarkenPalette, icon.Pos + iconOffset);
+					WidgetUtils.DrawSpriteCentered(cantBuild.Image, icon.DarkenPalette, icon.Position + iconOffset);
 			}
 
 			Game.Renderer.DisableAntialiasingFilter();
@@ -486,26 +494,26 @@ namespace OpenRA.Mods.OpenSA.Widgets
 					if (first.Done)
 					{
 						if (ReadyTextStyle == ReadyTextStyleOptions.Solid || orderManager.LocalFrameNumber * worldRenderer.World.Timestep / 360 % 2 == 0)
-							overlayFont.DrawTextWithContrast(ReadyText, icon.Pos + readyOffset, Color.White, Color.Black, 1);
+							overlayFont.DrawTextWithContrast(ReadyText, icon.Position + readyOffset, Color.White, Color.Black, 1);
 						else if (ReadyTextStyle == ReadyTextStyleOptions.AlternatingColor)
-							overlayFont.DrawTextWithContrast(ReadyText, icon.Pos + readyOffset, ReadyTextAltColor, Color.Black, 1);
+							overlayFont.DrawTextWithContrast(ReadyText, icon.Position + readyOffset, ReadyTextAltColor, Color.Black, 1);
 					}
 					else if (first.Paused)
 						overlayFont.DrawTextWithContrast(HoldText,
-							icon.Pos + holdOffset,
+							icon.Position + holdOffset,
 							Color.White, Color.Black, 1);
 					else if (!waiting && DrawTime)
 						overlayFont.DrawTextWithContrast(WidgetUtils.FormatTime(first.Queue.RemainingTimeActual(first), World.Timestep),
-							icon.Pos + timeOffset,
+							icon.Position + timeOffset,
 							Color.White, Color.Black, 1);
 
 					if (first.Infinite && symbolFont != null)
 						symbolFont.DrawTextWithContrast(InfiniteSymbol,
-							icon.Pos + infiniteOffset,
+							icon.Position + infiniteOffset,
 							Color.White, Color.Black, 1);
 					else if (total > 1 || waiting)
 						overlayFont.DrawTextWithContrast(total.ToString(),
-							icon.Pos + queuedOffset,
+							icon.Position + queuedOffset,
 							Color.White, Color.Black, 1);
 				}
 			}
