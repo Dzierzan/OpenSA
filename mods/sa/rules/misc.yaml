@@ -246,7 +246,7 @@ World:
 	HelpCommand:
 	ScreenShaker:
 	BuildingInfluence:
-	ProductionQueueFromSelection:
+	IndividualProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
 	SpawnMapActors:
 	MapBuildRadius:

@@ -367,7 +367,7 @@ Container@PLAYER_WIDGETS:
 					Align: Center
 					Font: TinyBold
 		Container@SIDEBAR_PRODUCTION:
-			Logic: ClassicProductionLogic
+			Logic: IndividualProductionLogic
 			X: WINDOW_RIGHT - 226 #226
 			Y: 279 #279
 			Width: 226
@@ -388,7 +388,7 @@ Container@PLAYER_WIDGETS:
 							ImageCollection: sidebar
 							ImageName: background-bottom
 				LogicTicker@PRODUCTION_TICKER:
-				ProductionPalette@PRODUCTION_PALETTE:
+				IndividualProductionPalette@PRODUCTION_PALETTE:
 					X: 25 #39
 					Y: 1
 					TooltipContainer: TOOLTIP_CONTAINER
