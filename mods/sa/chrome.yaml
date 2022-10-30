@@ -500,20 +500,8 @@ checkmark-mute:
 checkmark-highlighted-mute:
 	Inherits: checkmark-mute
 
-checkbox-hover:
-	Inherits: ^Dialog
-	PanelRegion: 640, 128, 2, 2, 124, 124, 2, 2
-
 checkbox-pressed:
 	Inherits: checkbox-hover
-
-checkbox-disabled:
-	Inherits: ^Dialog
-	PanelRegion: 640, 256, 2, 2, 124, 124, 2, 2
-
-checkbox-highlighted:
-	Inherits: ^Dialog
-	PanelRegion: 896, 0, 2, 2, 124, 124, 2, 2
 
 checkbox-highlighted-hover:
 	Inherits: checkbox-highlighted
