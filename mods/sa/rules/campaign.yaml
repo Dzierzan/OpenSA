@@ -33,4 +33,4 @@ World:
 		# -1  = infinite production disabled
 		#  0  = infinite production
 		# n>0 = infinite production will start after reaching "n" value
-		InfiniteBuildLimit: 0
+		InfiniteBuildLimit: 1
