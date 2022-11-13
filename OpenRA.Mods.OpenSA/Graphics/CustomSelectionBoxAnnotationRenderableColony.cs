@@ -62,13 +62,13 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(tl + e + moveleftboxtl, tl + e + a + moveleftboxtl, 1, color);
 			cr.DrawLine(tl + e + e + moveleftboxtl, tl + e + e + c + moveleftboxtl, 1, color);
 
-			cr.DrawLine(tl + f + moveleftboxtl, tl + a + f + moveleftboxtl, 1, color); //For zooming
+			cr.DrawLine(tl + f + moveleftboxtl, tl + a + f + moveleftboxtl, 1, color);
 
 			cr.DrawLine(bl + moveleftboxbl, bl + a + moveleftboxbl, 1, color);
 			cr.DrawLine(bl + d + moveleftboxbl, bl + d + a + moveleftboxbl, 1, color);
 			cr.DrawLine(bl + d + d + moveleftboxbl, bl + d + d + c + moveleftboxbl, 1, color);
 
-			cr.DrawLine(bl + g + moveleftboxbl, bl + a + g + moveleftboxbl, 1, color); //For zooming
+			cr.DrawLine(bl + g + moveleftboxbl, bl + a + g + moveleftboxbl, 1, color);
 		}
 
 		public void RenderDebugGeometry(WorldRenderer wr) { }

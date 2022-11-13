@@ -99,8 +99,8 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			if (health == null || health.IsDead)
 				return;
 
-			var blackcolor = Color.FromArgb(255, 0, 0, 0); // Default (128, 30, 30, 30)
-			var greycolor = Color.FromArgb(255, 128, 128, 128); // Default (128, 10, 10, 10)
+			var blackcolor = Color.FromArgb(255, 0, 0, 0);
+			var greycolor = Color.FromArgb(255, 128, 128, 128);
 			var p = new float2(-4, 0);
 			var q = new float2(-3, 0);
 			var r = new float2(-2, 0);
@@ -118,8 +118,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 
 			var cr = Game.Renderer.RgbaColorRenderer;
 
-			//TOP
-
+			// TOP
 			cr.DrawLine(end + p + up, end + p, 1, blackcolor);
 			cr.DrawLine(end + q + up, end + q, 1, blackcolor);
 			cr.DrawLine(end + r + up, end + r, 1, blackcolor);
@@ -127,8 +126,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(end + f + up, end + f, 1, blackcolor);
 			cr.DrawLine(end + g + up, end + g, 1, blackcolor);
 
-			//MIDDLE
-
+			// MIDDLE
 			cr.DrawLine(start + p, end + p, 1, blackcolor);
 			cr.DrawLine(start + q, end + q, 1, greycolor);
 			cr.DrawLine(start + r, end + r, 1, greycolor);
@@ -136,8 +134,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(start + f, end + f, 1, greycolor);			
 			cr.DrawLine(start + g, end + g, 1, blackcolor);
 
-			//BOTTOM
-
+			// BOTTOM
 			cr.DrawLine(start + p + down, start + p, 1, blackcolor);
 			cr.DrawLine(start + q + down, start + q, 1, blackcolor);
 			cr.DrawLine(start + r + down, start + r, 1, blackcolor);
@@ -145,8 +142,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(start + f + down, start + f, 1, blackcolor);
 			cr.DrawLine(start + g + down, start + g, 1, blackcolor);
 
-			//HEALTH
-
+			// HEALTH
 			cr.DrawLine(start + p, z + p, 1, healthColor2);
 			cr.DrawLine(start + q, z + q, 1, healthColor);
 			cr.DrawLine(start + r, z + r, 1, healthColor);
