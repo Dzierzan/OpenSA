@@ -163,16 +163,20 @@ stance-icons:
 	Regions:
 		attack-anything: 416, 248, 16, 16
 		attack-anything-disabled: 432, 248, 16, 16
-		attack-anything-active: 448, 248, 16, 16
 		defend: 464, 248, 16, 16
 		defend-disabled: 480, 248, 16, 16
-		defend-active: 496, 248, 16, 16
 		return-fire: 416, 264, 16, 16
 		return-fire-disabled: 432, 264, 16, 16
-		return-fire-active: 448, 264, 16, 16
 		hold-fire: 464, 264, 16, 16
 		hold-fire-disabled: 480, 264, 16, 16
-		hold-fire-active: 496, 264, 16, 16
+
+stance-icons-highlighted:
+	Inherits: stance-icons
+	Regions:
+		attack-anything: 448, 248, 16, 16
+		defend: 496, 248, 16, 16
+		return-fire: 448, 264, 16, 16
+		hold-fire: 496, 264, 16, 16
 
 flags:
 	Inherits: ^Glyphs
@@ -227,6 +231,7 @@ lobby-bits:
 	Regions:
 		spawn-unclaimed: 91, 119, 22, 22
 		spawn-claimed: 68, 119, 22, 22
+		spawn-disabled: 68, 119, 22, 22
 		admin: 170, 0, 6, 5
 		colorpicker: 68, 119, 22, 22
 		huepicker: 136, 0, 7, 15

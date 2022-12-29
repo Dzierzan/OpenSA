@@ -12,7 +12,7 @@
 using OpenRA.Mods.Common.Widgets;
 using OpenRA.Widgets;
 
-namespace OpenRA.Mods.SA.Widgets.Logic
+namespace OpenRA.Mods.OpenSA.Widgets.Logic
 {
 	public class PreReleaseWarningPrompt : ChromeLogic
 	{
