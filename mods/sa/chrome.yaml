@@ -158,6 +158,18 @@ command-icons:
 		queue-orders: 486, 196, 26, 26
 		queue-orders-disabled: 486, 222, 26, 26
 
+command-icons-highlighted:
+	Inherits: command-icons
+	Regions:
+		attack-move: 768, 296, 24, 24
+		force-move: 793, 296, 24, 24
+		force-attack: 818, 296, 24, 24
+		guard: 843, 296, 24, 24
+		deploy: 868, 296, 24, 24
+		scatter: 893, 296, 24, 24
+		stop: 918, 296, 24, 24
+		queue-orders: 943, 296, 24, 24
+
 stance-icons:
 	Inherits: ^Chrome
 	Regions:
