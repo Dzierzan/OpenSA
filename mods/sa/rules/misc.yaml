@@ -430,3 +430,7 @@ RANDOMCOLONY:
 	SpawnRandomActorOnDeath:
 		Actors: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 	KillsSelf:
+	MapEditorData:
+		Categories: System
+	Colony:
+	Turreted:
