@@ -433,4 +433,27 @@ RANDOMCOLONY:
 	MapEditorData:
 		Categories: System
 	Colony:
+		SpawnsActor: BLANK1
 	Turreted:
+
+BLANK1:
+	Interactable:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	DefeatedColony:
+		SpawnsActor: BLANK2
+	Turreted:
+
+BLANK2:
+	Inherits: BLANK1
+	-DefeatedColony:
+	Colony:
+		SpawnsActor: BLANK1

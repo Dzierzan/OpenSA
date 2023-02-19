@@ -165,3 +165,9 @@ randomcolony:
 	idle: bits/random-colony.png
 		Offset: 48, 48
 		ZOffset: 10000
+
+blank1:
+	idle: bits/empty.png
+
+blank2:
+	idle: bits/empty.png
