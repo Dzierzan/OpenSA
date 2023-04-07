@@ -101,12 +101,13 @@ Swarm Assault Campaign:
 	100_Farewell
 
 OpenSA Originals:
-	Sticks_And_Stones
-	Usual_Brawl
-	Tough_Enemies
-	En_Garde
-	Candy_Siege
-	Skull
-	Puck-Man
-	Swarm_Assault
-	Firepower_Boosters
+	Custom_Mission_Sticks_And_Stones
+	Custom_Mission_Usual_Brawl
+	Custom_Mission_Tough_Enemies
+	Custom_Mission_En_Garde
+	Custom_Mission_Candy_Siege
+	Custom_Mission_Skull
+	Custom_Mission_Puck-Man
+	Custom_Mission_Swarm_Assault
+	Custom_Mission_Firepower_Boosters
+	Custom_Mission_Sunken_Snake

@@ -1,0 +1,88 @@
+World:
+	MissionData:
+		Briefing: Mission created by Hooet.
+		StartVideo: sa|bits/videos/TeamLogoRed.vqa
+		WinVideo: sa|bits/videos/TeamWinRed.vqa
+
+World:
+	PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+Player:
+	-GrantConditionOnBotOwner@AntsAI:
+	ExternalCondition@AntsAI:
+		Condition: enable-ants-ai
+	UnitBuilderBotModule@AntsAI:
+		UnitsToBuild:
+			#ants_light: 0
+			ants_medium: 20
+			ants_heavy: 80
+			beetles_light: 5
+			beetles_medium: 25
+			beetles_heavy: 70
+			wasps_light: 10
+			wasps_medium: 30
+			wasps_heavy: 60
+			spiders_light: 15
+			spiders_medium: 35
+			spiders_heavy: 50
+			scorpions_light: 20
+			scorpions_medium: 40
+			scorpions_heavy: 40
+	SquadManagerBotModule@AntsAI:
+		SquadSize: 99
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@BeetlesAI:
+	ExternalCondition@BeetlesAI:
+		Condition: enable-beetles-ai
+	UnitBuilderBotModule@BeetlesAI:
+		UnitsToBuild:
+			ants_light: 20
+			ants_medium: 40
+			ants_heavy: 40
+			#beetles_light: 0
+			beetles_medium: 20
+			beetles_heavy: 80
+			wasps_light: 5
+			wasps_medium: 25
+			wasps_heavy: 70
+			spiders_light: 10
+			spiders_medium: 30
+			spiders_heavy: 60
+			scorpions_light: 15
+			scorpions_medium: 35
+			scorpions_heavy: 50
+	SquadManagerBotModule@BeetlesAI:
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+	-GrantConditionOnBotOwner@WaspsAI:
+	ExternalCondition@WaspsAI:
+		Condition: enable-wasps-ai
+	UnitBuilderBotModule@WaspsAI:
+		UnitsToBuild:
+			ants_light: 15
+			ants_medium: 35
+			ants_heavy: 50
+			beetles_light: 20
+			beetles_medium: 40
+			beetles_heavy: 40
+			#wasps_light: 0
+			wasps_medium: 20
+			wasps_heavy: 80
+			spiders_light: 5
+			spiders_medium: 25
+			spiders_heavy: 70
+			scorpions_light: 10
+			scorpions_medium: 30
+			scorpions_heavy: 60
+	SquadManagerBotModule@WaspsAI:
+		SquadSize: 10
+		SquadSizeRandomBonus: 5
+
