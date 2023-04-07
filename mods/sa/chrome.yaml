@@ -51,7 +51,7 @@ sidebar-bits:
 commandbar:
 	Inherits: ^Chrome
 	Regions:
-		background: 0, 469, 454, 43
+		background: 0, 466, 433, 46
 
 minimap-overlay:
 	Inherits: ^Chrome
@@ -117,13 +117,15 @@ order-icons:
 
 command-button:
 	Inherits: ^Chrome
-	PanelRegion: 331, 427, 0, 0, 34, 41, 0, 0
+	PanelRegion: 331, 433, 0, 0, 33, 32, 0, 0
 	PanelSides: Center
 command-button-hover:
-	Inherits: command-button
+	Inherits: ^Chrome
+	PanelRegion: 366, 433, 0, 0, 33, 32, 0, 0
+	PanelSides: Center
 command-button-pressed:
 	Inherits: ^Chrome
-	PanelRegion: 401, 427, 0, 0, 34, 41, 0, 0
+	PanelRegion: 436, 433, 0, 0, 33, 32, 0, 0
 	PanelSides: Center
 command-button-highlighted:
 	Inherits: command-button-pressed
@@ -133,7 +135,7 @@ command-button-highlighted-pressed:
 	Inherits: command-button-pressed
 command-button-disabled:
 	Inherits: ^Chrome
-	PanelRegion: 366, 427, 0, 0, 34, 41, 0, 0
+	PanelRegion: 401, 433, 0, 0, 33, 32, 0, 0
 	PanelSides: Center
 command-button-highlighted-disabled:
 	Inherits: command-button-disabled
@@ -161,26 +163,26 @@ command-icons:
 command-icons-highlighted:
 	Inherits: command-icons
 	Regions:
-		attack-move: 768, 296, 24, 24
-		force-move: 793, 296, 24, 24
-		force-attack: 818, 296, 24, 24
-		guard: 843, 296, 24, 24
-		deploy: 868, 296, 24, 24
-		scatter: 893, 296, 24, 24
-		stop: 918, 296, 24, 24
-		queue-orders: 943, 296, 24, 24
+		attack-move: 408, 144, 26, 26
+		force-move: 434, 144, 26, 26
+		force-attack: 460, 144, 26, 26
+		guard: 486, 144, 26, 26
+		deploy: 408, 196, 26, 26
+		scatter: 434, 196, 26, 26
+		stop: 460, 196, 26, 26
+		queue-orders: 486, 196, 26, 26
 
 stance-icons:
 	Inherits: ^Chrome
 	Regions:
-		attack-anything: 416, 248, 16, 16
-		attack-anything-disabled: 432, 248, 16, 16
-		defend: 464, 248, 16, 16
-		defend-disabled: 480, 248, 16, 16
-		return-fire: 416, 264, 16, 16
-		return-fire-disabled: 432, 264, 16, 16
-		hold-fire: 464, 264, 16, 16
-		hold-fire-disabled: 480, 264, 16, 16
+		attack-anything: 432, 248, 16, 16
+		attack-anything-disabled: 416, 248, 16, 16
+		defend: 480, 248, 16, 16
+		defend-disabled: 464, 248, 16, 16
+		return-fire: 432, 264, 16, 16
+		return-fire-disabled: 416, 264, 16, 16
+		hold-fire: 480, 264, 16, 16
+		hold-fire-disabled: 464, 264, 16, 16
 
 stance-icons-highlighted:
 	Inherits: stance-icons

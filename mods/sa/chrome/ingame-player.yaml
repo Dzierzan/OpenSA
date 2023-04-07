@@ -37,15 +37,15 @@ Container@PLAYER_WIDGETS:
 			ImageName: background
 		Container@COMMAND_BAR:
 			Logic: CommandBarLogic
-			X: 16 #24
-			Y: WINDOW_BOTTOM - HEIGHT - 4 #9
-			Width: 275
-			Height: 41
+			X: 4
+			Y: WINDOW_BOTTOM - HEIGHT + 9
+			Width: 286
+			Height: 46
 			Children:
 				LogicKeyListener@MODIFIER_OVERRIDES:
 				Button@ATTACK_MOVE:
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					Key: AttackMove
@@ -57,13 +57,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: attack-move
 				Button@FORCE_MOVE:
 					X: 35
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					DisableKeySound: true
@@ -74,13 +74,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: force-move
 				Button@FORCE_ATTACK:
 					X: 70
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					DisableKeySound: true
@@ -91,13 +91,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: force-attack
 				Button@GUARD:
 					X: 105
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					Key: Guard
@@ -108,13 +108,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: guard
 				Button@DEPLOY:
 					X: 140
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					Key: Deploy
@@ -126,13 +126,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: deploy
 				Button@SCATTER:
 					X: 175
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					Key: Scatter
@@ -144,13 +144,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: scatter
 				Button@STOP:
 					X: 210
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					Key: Stop
@@ -162,13 +162,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: stop
 				Button@QUEUE_ORDERS:
 					X: 245
-					Width: 34
-					Height: 41
+					Width: 33
+					Height: 32
 					VisualHeight: 0
 					Background: command-button
 					DisableKeySound: true
@@ -179,21 +179,21 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON:
 							X: 4
-							Y: 8
+							Y: 2
 							ImageCollection: command-icons
 							ImageName: queue-orders
 		Container@STANCE_BAR:
 			Logic: StanceSelectorLogic
-			X: 324 #316
-			Y: WINDOW_BOTTOM - HEIGHT - 9
-			Width: 138
-			Height: 26
+			X: 290
+			Y: WINDOW_BOTTOM - HEIGHT + 9
+			Width: 147
+			Height: 46
 			Children:
 				Button@STANCE_ATTACKANYTHING:
-					Width: 29
-					Height: 26
+					Width: 33
+					Height: 32
 					VisualHeight: 0
-					Background:
+					Background: command-button
 					Key: StanceAttackAnything
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -202,16 +202,16 @@ Container@PLAYER_WIDGETS:
 					TooltipContainer: TOOLTIP_CONTAINER
 					Children:
 						Image@ICON:
-							X: 6
-							Y: 5
+							X: 9
+							Y: 6
 							ImageCollection: stance-icons
 							ImageName: attack-anything
 				Button@STANCE_DEFEND:
-					X: 29
-					Width: 29
-					Height: 26
+					X: 35
+					Width: 33
+					Height: 32
 					VisualHeight: 0
-					Background:
+					Background: command-button
 					Key: StanceDefend
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -220,16 +220,16 @@ Container@PLAYER_WIDGETS:
 					TooltipContainer: TOOLTIP_CONTAINER
 					Children:
 						Image@ICON:
-							X: 6
-							Y: 5
+							X: 9
+							Y: 6
 							ImageCollection: stance-icons
 							ImageName: defend
 				Button@STANCE_RETURNFIRE:
-					X: 58
-					Width: 29
-					Height: 26
+					X: 70
+					Width: 33
+					Height: 32
 					VisualHeight: 0
-					Background:
+					Background: command-button
 					Key: StanceReturnFire
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -238,16 +238,16 @@ Container@PLAYER_WIDGETS:
 					TooltipContainer: TOOLTIP_CONTAINER
 					Children:
 						Image@ICON:
-							X: 6
-							Y: 5
+							X: 9
+							Y: 6
 							ImageCollection: stance-icons
 							ImageName: return-fire
 				Button@STANCE_HOLDFIRE:
-					X: 87
-					Width: 29
-					Height: 26
+					X: 105
+					Width: 33
+					Height: 32
 					VisualHeight: 0
-					Background:
+					Background: command-button
 					Key: StanceHoldFire
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -256,8 +256,8 @@ Container@PLAYER_WIDGETS:
 					TooltipContainer: TOOLTIP_CONTAINER
 					Children:
 						Image@ICON:
-							X: 6
-							Y: 5
+							X: 9
+							Y: 6
 							ImageCollection: stance-icons
 							ImageName: hold-fire
 		Container@MUTE_INDICATOR:
@@ -291,8 +291,8 @@ Container@PLAYER_WIDGETS:
 			Children:
 				Container@TOP_BUTTONS:
 					Logic: MenuButtonsChromeLogic
-					X: 72 #16
-					Y: 3 #240
+					X: 72
+					Y: 3
 					Children:
 						Button@BEACON_BUTTON:
 							Logic: BeaconOrderButtonLogic
@@ -368,28 +368,28 @@ Container@PLAYER_WIDGETS:
 					Font: TinyBold
 		Container@SIDEBAR_PRODUCTION:
 			Logic: IndividualProductionLogic
-			X: WINDOW_RIGHT - 226 #226
-			Y: 279 #279
+			X: WINDOW_RIGHT - 226
+			Y: 279
 			Width: 226
-			Height: 250 #250
+			Height: 250
 			Children:
 				Container@PALETTE_BACKGROUND:
 					Children:
 						Image@ROW_TEMPLATE:
 							Width: 226
-							Height: 48 #48
+							Height: 48
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-iconrow
 						Image@BOTTOM_CAP:
 							Width: 250
-							Height: 13 #13
+							Height: 13
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
 				LogicTicker@PRODUCTION_TICKER:
 				IndividualProductionPalette@PRODUCTION_PALETTE:
-					X: 25 #39
+					X: 25
 					Y: 1
 					TooltipContainer: TOOLTIP_CONTAINER
 					ReadyText: READY
