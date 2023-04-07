@@ -280,71 +280,43 @@ Container@PLAYER_WIDGETS:
 					Align: Right
 					Text: Audio Muted
 					Contrast: true
-		Image@SIDEBAR_BACKGROUND_TOP:
-			X: WINDOW_RIGHT - 226
+		Image@SIDEBAR_BACKGROUND:
+			X: WINDOW_RIGHT - WIDTH
 			Y: 0
 			Width: 226
-			Height: 295
+			Height: 448
 			ImageCollection: sidebar
-			ImageName: background-top
+			ImageName: background-sidebar
 			ClickThrough: false
 			Children:
 				Container@TOP_BUTTONS:
 					Logic: MenuButtonsChromeLogic
-					X: 72
-					Y: 3
+					X: 75
+					Y: 15
 					Children:
-						Button@BEACON_BUTTON:
-							Logic: BeaconOrderButtonLogic
-							X: 115
-							Width: 36
-							Height: 35
-							Background:
-							Key: PlaceBeacon
-							TooltipText: Place Beacon
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 0
-									Y: 0
-									ImageCollection: order-icons
 						MenuButton@OPTIONS_BUTTON:
 							Key: escape
-							X: 78
-							Y: 1
-							Width: 40
-							Height: 38
+							Width: 70
+							Height: 70
 							Background:
 							TooltipText: Options
 							TooltipContainer: TOOLTIP_CONTAINER
 							DisableWorldSounds: true
 							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 0
-									Y: 0
-									ImageCollection: order-icons
-									ImageName: options
 				Container@RADAR:
 					Logic: IngameRadarDisplayLogic
 					Children:
 						LogicTicker@RADAR_TICKER:
 						Image@INSIGNIA:
 							Logic: AddFactionSuffixLogic
-							X: 63
-							Y: 88
+							X: 72
+							Y: 8
 							ImageCollection: radar
 							ImageName: insignia
-						ColorBlock@RADAR_FADETOBLACK:
-							X: 12
-							Y: 50
-							Width: 202
-							Height: 202
 						Radar@RADAR_MINIMAP:
 							WorldInteractionController: INTERACTION_CONTROLLER
-							X: 12
-							Y: 50
+							X: 13
+							Y: 108
 							Width: 202
 							Height: 202
 							Children:
@@ -354,39 +326,20 @@ Container@PLAYER_WIDGETS:
 							Width: 202
 							Height: 202
 							Skippable: false
-						Container@MINIMAP_OVERLAY:
-							X: 12
-							Y: 34
-							Children:
 				Label@GAME_TIMER:
 					Logic: GameTimerLogic
-					X: 2
-					Y: 15
+					X: 25
+					Y: 14
 					Width: PARENT_RIGHT
 					Height: 22
-					Align: Center
 					Font: TinyBold
 		Container@SIDEBAR_PRODUCTION:
 			Logic: IndividualProductionLogic
 			X: WINDOW_RIGHT - 226
-			Y: 279
+			Y: 332
 			Width: 226
 			Height: 250
 			Children:
-				Container@PALETTE_BACKGROUND:
-					Children:
-						Image@ROW_TEMPLATE:
-							Width: 226
-							Height: 48
-							ClickThrough: false
-							ImageCollection: sidebar
-							ImageName: background-iconrow
-						Image@BOTTOM_CAP:
-							Width: 250
-							Height: 13
-							ClickThrough: false
-							ImageCollection: sidebar
-							ImageName: background-bottom
 				LogicTicker@PRODUCTION_TICKER:
 				IndividualProductionPalette@PRODUCTION_PALETTE:
 					X: 25

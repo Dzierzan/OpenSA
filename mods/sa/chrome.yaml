@@ -13,9 +13,7 @@
 sidebar:
 	Inherits: ^Chrome
 	Regions:
-		background-top: 0, 0, 226, 295
-		background-iconrow: 0, 295, 226, 48
-		background-bottom: 0, 343, 226, 33
+		background-sidebar: 0, 0, 226, 448
 
 sidebar-button:
 	Inherits: ^Chrome
@@ -67,27 +65,27 @@ minimap-overlay:
 radar-ants:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 315, 43, 70, 70
+		insignia: 312, 30, 82, 82
 
 radar-beetles:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 238, 41, 72, 73
+		insignia: 230, 30, 82, 82
 
 radar-wasps:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 314, 124, 79, 69
+		insignia: 312, 112, 82, 82
 
 radar-scorpions:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 236, 195, 77, 79
+		insignia: 230, 194, 82, 82
 
 radar-spiders:
 	Inherits: ^Chrome
 	Regions:
-		insignia: 236, 117, 74, 75
+		insignia: 230, 112, 82, 82
 
 power-icons:
 	Inherits: ^Glyphs
