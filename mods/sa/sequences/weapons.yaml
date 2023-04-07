@@ -68,12 +68,14 @@ projectiles:
 	brakebombleft: bits/breakbombleft.png
 		Length: 4
 		Tick: 250
-		Facings: -16
+		Facings: -1
+		InterpolatedFacings: 8
 		ZOffset: 6000
 	brakebombright: bits/breakbombright.png
 		Length: 4
 		Tick: 250
-		Facings: -16
+		Facings: -1
+		InterpolatedFacings: 8
 		ZOffset: 6000
 	bouncebomb: WEAPON_BOUNCEBOMB.ANI
 		Length: 6
