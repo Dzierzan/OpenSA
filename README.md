@@ -4,7 +4,7 @@ This repository contains a recreated Swarm Assault game in OpenRA engine. The go
 
 # Current status
 
-At the moment the project is highly complete, all required features are there and what's left is purely cosmetical or very minor. Moreover all 100 missions have been recreated and the project adds several more additional levels to play. Feel free to give any feedback or even help to progress further this project.
+At the moment the project is highly complete, all required features are there and what's left is purely cosmetical or very minor. Moreover all 100 missions have been recreated and the project adds several more additional levels to play.
 
 # Swarm Assault vs OpenSA
 
@@ -12,9 +12,9 @@ Since OpenSA project is based on the OpenRA Mod SDK, it carries on a lot of qual
 
 - open source,
 - multiplayer,
+- Windows, macOS and Linux support,
 - support of HD resolutions,
 - seamless zooming in and out,
-- ability to queue units,
 - rally points,
 - units controlled by player are less likely to wander than units controlled by AI,
 - advanced map editor with the ability of creating own missions with objectives,
@@ -31,7 +31,7 @@ Otherwise, go to releases and get the latest stable version.
 
 # Swarm Assault assets status
 
-This project does not include any libre assets. It still requires vanilla Swarm Assault. The game itself hasn't been sold for more than 20 years, the developers are unreachable and the last publisher Mountain King Studios confirmed they do not possess the IP nor they have any contact to the original developers. It's safe to assume the game is abandonware. For this reason, when you launch OpenSA project for the first time, the assets will be downloaded and only assets. No exe files, so the vanilla game cannot be run.
+This project does not include any libre assets. It still requires original Swarm Assault. The game itself hasn't been sold for more than 20 years, the developers are unreachable and the last publisher Mountain King Studios confirmed they do not possess the IP nor they have any contact to the original developers. It's safe to assume the game is abandonware. For this reason, when you launch OpenSA for the first time, the assets will be downloaded and only assets. No exe files, so the original game cannot be run.
 
 # Legal disclaimers
 
@@ -44,15 +44,17 @@ This project does not include any libre assets. It still requires vanilla Swarm 
 
 I would love to thank:
 
-* Andre Mohren (IceReaper), his expertise in reverse engineering game asset formats was very helpful. Without this knowledge, this project wouldn't be possible.
+* **Andre Mohren** ([IceReaper](https://github.com/IceReaper)) for his expertise in reverse engineering game asset formats. Without this knowledge, this project wouldn't be possible.
 
-* Matthias Mailänder (Mailaender) for helping out with writing a lot of custom traits which pushed this project forward.
+* **Matthias Mailänder** ([Mailaender](https://github.com/Mailaender)) for helping out with writing a lot of custom traits which pushed this project forward.
 
-* Zimmermann Gyula (Graion Dilach) for using his traits written for his [Attacque Superior](https://github.com/AttacqueSuperior/Engine) project.
+* **Zimmermann Gyula** ([GraionDilach](https://github.com/GraionDilach)) for using his traits written for his [Attacque Superior](https://github.com/AttacqueSuperior/Engine) project.
 
-* MikillRosen (sayedmamdouh) for creating extra cursors and Ant Hole variants.
+* **sayedmamdouh ([MikillRosen](https://github.com/MikillRosen))** for creating extra cursors and Ant Hole variants.
 
-* phredreeke for upscaling logos which are used for mission preview images.
+* **phredreeke** for upscaling logos which are used for mission preview images.
+
+* **Hooet (교니체)** for creating new missions.
 
 * OpenRA developers for creating this open source engine.
 
