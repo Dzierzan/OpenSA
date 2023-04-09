@@ -3,7 +3,6 @@ Sounds:
 	Notifications:
 		ChatLine: click.wav
 		ClickSound: click.wav
-		Beacon: beacon.wav
 		TabClick:
 
 Speech:

@@ -51,11 +51,6 @@ Player:
 	TechTree:
 	# Required for FrozenUnderFog to work
 	FrozenActorLayer:
-	# Allows placing beacon
-	PlaceBeacon:
-		ArrowSequence:
-		CircleSequence: x
-		Duration: 250
 	PlayerRadarTerrain:
 	BaseAttackNotifier:
 		Notification: BaseAttack

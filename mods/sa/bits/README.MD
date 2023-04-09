@@ -13,11 +13,6 @@ Author: Dzierzan, Gate 5 Creations
 Source: Swarm Assault
 Description: Additional facings.
 
-**beacon.png**
-Author: Dzierzan
-Source: Self-made
-Description: Beacon.
-
 **BeetlesColonyTurret.png**
 Author: Dzierzan, Gate 5 Creations
 Source: Self-made based on Beetle Colony.

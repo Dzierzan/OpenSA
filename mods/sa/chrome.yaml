@@ -109,9 +109,6 @@ order-icons:
 		options: 165, 394, 40, 38
 		options-disabled: 165, 394, 40, 38
 		options-active: 165, 430, 40, 38
-		beacon: 209, 394, 36, 35
-		beacon-disabled: 209, 394, 36, 35
-		beacon-active: 209, 430, 36, 35
 
 command-button:
 	Inherits: ^Chrome

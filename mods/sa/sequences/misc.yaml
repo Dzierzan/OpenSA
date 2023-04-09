@@ -101,11 +101,6 @@ pips:
 			sprites|NUMBER9.ANI:
 		Length: 10
 
-beacon:
-	x: bits/beacon.png
-		Length: 40
-		Tick: 60
-
 progressbar:
 	colony:
 		Combine:
