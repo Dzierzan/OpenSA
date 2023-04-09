@@ -1,6 +1,6 @@
 basefiles: Base game files
 	SHA1: e3f2e9231752a42581f15d52f090f7d96d716876
-	MirrorList: https://gist.githubusercontent.com/Dzierzan/842bbd4f1beb35c3ba840373d615f118/raw/c350afb07edd4f4222502a5d9dc2936abb7945cc/gistfile1.txt
+	MirrorList: https://gist.githubusercontent.com/Dzierzan/842bbd4f1beb35c3ba840373d615f118/raw/c350afb07edd4f4222502a5d9dc2936abb7945cc
 	Extract:
 		^SupportDir|Content/sa/Sprites/Game.ANI: Game/Game.ANI
 		^SupportDir|Content/sa/Sprites/Game.DDF: Game/Game.DDF
