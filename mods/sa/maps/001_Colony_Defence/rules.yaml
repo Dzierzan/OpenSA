@@ -38,16 +38,3 @@ Player:
 			wasps_light: 100
 			#wasps_medium: 20
 			#wasps_heavy: 60
-
-^PlayerHandicaps:
-	GrantConditionOnDifficulty@Easy:
-		Difficulty: easy
-		Condition: reduced-firepower
-		AppliesToPlayer: false
-	GrantConditionOnDifficulty@Hard:
-		Difficulty: hard
-		Condition: reduced-firepower
-		AppliesToPlayer: true
-	FirepowerMultiplier@Reduced:
-		Modifier: 90
-		RequiresCondition: reduced-firepower
