@@ -411,12 +411,12 @@
 		Condition: increased-firepower
 		AppliesToPlayer: true
 	FirepowerMultiplier@Increased:
-		Modifier: 150
+		Modifier: 125
 		RequiresCondition: increased-firepower
 	GrantConditionOnDifficulty@Hard:
 		Difficulty: hard
 		Condition: reduced-firepower
 		AppliesToPlayer: true
 	FirepowerMultiplier@Reduced:
-		Modifier: 50
+		Modifier: 25
 		RequiresCondition: reduced-firepower
