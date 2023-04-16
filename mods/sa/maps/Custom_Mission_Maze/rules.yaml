@@ -1,0 +1,20 @@
+World:
+	MissionData:
+		Briefing: Mission created by Hooet.
+		StartVideo: sa|bits/videos/TeamLogoGreen.vqa
+		WinVideo: sa|bits/videos/TeamWinGreen.vqa
+
+
+World:
+	PirateSpawner:
+	-CreepFlyerSpawner@dragonfly:
+	CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	-PlantSpawner@NORMAL:
+	PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+
+Player:
