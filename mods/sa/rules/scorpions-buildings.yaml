@@ -39,7 +39,7 @@ scorpions_colony:
 		LocalOffset: 0,256,0
 	Armament@secondary:
 		Name: secondary
-		Weapon: scorpions_colony
+		Weapon: scorpions_colony_nosound
 		LocalOffset: 0,-256,0
 	Turreted:
 		Offset: 3450,440,0
@@ -68,7 +68,7 @@ defeated_scorpions_colony:
 		LocalOffset: 0,256,0
 	Armament@secondary:
 		Name: secondary
-		Weapon: scorpions_colony
+		Weapon: scorpions_colony_nosound
 		LocalOffset: 0,-256,0
 	Turreted:
 		Offset: 3450,440,0
@@ -111,7 +111,7 @@ scorpions_colony_turret:
 		LocalOffset: 0,256,0
 	Armament@secondary:
 		Name: secondary
-		Weapon: scorpions_colony
+		Weapon: scorpions_colony_nosound
 		LocalOffset: 0,-256,0
 	Colony:
 		SpawnsActor: defeated_scorpions_turret
@@ -140,7 +140,7 @@ defeated_scorpions_turret:
 		LocalOffset: 0,256,0
 	Armament@secondary:
 		Name: secondary
-		Weapon: scorpions_colony
+		Weapon: scorpions_colony_nosound
 		LocalOffset: 0,-256,0
 
 scorpions_colony_turret_small:

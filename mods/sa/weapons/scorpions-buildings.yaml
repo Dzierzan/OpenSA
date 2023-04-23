@@ -1,8 +1,7 @@
-scorpions_colony:
+scorpions_colony_nosound:
 	ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	ReloadDelay: 30
 	Range: 18c0
-	Report: sounds|SPEAR.SDF
 	Projectile: Bullet
 		Speed: 450
 		Inaccuracy: 1000
@@ -16,3 +15,7 @@ scorpions_colony:
 	Warhead@Effect: CreateEffect
 		ImpactSounds: sounds|SNIPERHIT.SDF
 		ValidTargets: Ground, Air, Paralyzed, Water, Colony
+
+scorpions_colony:
+	Inherits: scorpions_colony_nosound
+	Report: sounds|SPEAR.SDF
