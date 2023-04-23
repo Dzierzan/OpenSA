@@ -1,0 +1,39 @@
+World:
+	MissionData:
+		Briefing: Mission created by Hooet.
+
+World:
+	PirateSpawner:
+	CreepFlyerSpawner@dragonfly:
+	-CreepFlyerSpawner@fly:
+	-CreepFlyerSpawner@moth:
+	-CreepFlyerSpawner@flyingmachine:
+	PlantSpawner@NORMAL:
+	-PlantSpawner@DESERT:
+	-PlantSpawner@SWAMP:
+	-PlantSpawner@CANDY:
+
+Player:
+	-GrantConditionOnBotOwner@SpidersAI:
+	ExternalCondition@SpidersAI:
+		Condition: enable-spiders-ai
+	UnitBuilderBotModule@SpidersAI:
+		UnitsToBuild:
+			ants_light: 10
+			ants_medium: 90
+			#ants_heavy: 10
+			beetles_light: 90
+			beetles_medium: 10
+			#beetles_heavy: 60
+			wasps_light: 100
+			#wasps_medium: 10
+			#wasps_heavy: 30
+			spiders_light: 10
+			spiders_medium: 90
+			#spiders_heavy: 60
+			scorpions_light: 10
+			scorpions_medium: 90
+			#scorpions_heavy: 30
+	SquadManagerBotModule@SpidersAI:
+		SquadSize: 15
+		SquadSizeRandomBonus: 5
