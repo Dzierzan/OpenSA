@@ -28,7 +28,6 @@ Players:
 		Enemies: Ants, Wasps, Scorpions
 	PlayerReference@Ants:
 		Name: Ants
-		Bot: ants-ai
 		Playable: True
 		Required: True
 		LockFaction: True
@@ -360,14 +359,6 @@ Actors:
 		Location: 4,62
 		Faction:
 		Owner: Scorpions
-	Actor142: scorpions_heavy
-		Owner: Ants
-		Location: 34,31
-		Facing: 0
-	Actor143: scorpions_heavy
-		Owner: Ants
-		Location: 35,32
-		Facing: 0
 	Actor145: ants_heavy
 		Owner: Wasps
 		Location: 8,8
@@ -520,14 +511,6 @@ Actors:
 		Owner: Wasps
 		Location: 62,58
 		Facing: 0
-	Actor190: scorpions_heavy
-		Owner: Ants
-		Location: 35,31
-		Facing: 0
-	Actor191: scorpions_heavy
-		Owner: Ants
-		Location: 34,32
-		Facing: 0
 	Actor192: ants_medium
 		Owner: Wasps
 		Location: 24,20
@@ -569,5 +552,25 @@ Actors:
 	Actor161: plant_desert_grass
 		Owner: Neutral
 		Location: 8,17
+	Actor153: scorpions_heavy
+		Owner: Ants
+		Location: 34,31
+		Facing: 0
+	Actor157: scorpions_heavy
+		Owner: Ants
+		Location: 35,32
+		Facing: 0
+	Actor158: scorpions_heavy
+		Owner: Ants
+		Location: 34,33
+		Facing: 0
+	Actor159: scorpions_heavy
+		Owner: Ants
+		Location: 35,34
+		Facing: 0
+	Actor160: scorpions_heavy
+		Owner: Ants
+		Location: 34,35
+		Facing: 0
 
 Rules: sa|rules/campaign.yaml, sa|rules/ai-campaign.yaml, rules.yaml

@@ -4,7 +4,6 @@ World:
 		StartVideo: sa|bits/videos/TeamLogoGreen.vqa
 		WinVideo: sa|bits/videos/TeamWinGreen.vqa
 
-
 World:
 	PirateSpawner:
 	-CreepFlyerSpawner@dragonfly:
@@ -15,6 +14,3 @@ World:
 	PlantSpawner@DESERT:
 	-PlantSpawner@SWAMP:
 	-PlantSpawner@CANDY:
-
-
-Player:
