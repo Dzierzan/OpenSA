@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -13,10 +13,11 @@ using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.OpenSA.Traits.Colony;
 using OpenRA.Network;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Player
 {
 	[TraitLocation(SystemActors.World)]
 	public class ColonyConquestVictoryConditionsInfo : TraitInfo, Requires<MissionObjectivesInfo>
@@ -36,14 +37,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public override object Create(ActorInitializer init) { return new ColonyConquestVictoryConditions(init.Self, this); }
 	}
 
-	public class ColonyConquestVictoryConditions : ITick, INotifyWinStateChanged, INotifyTimeLimit
+	public class ColonyConquestVictoryConditions : ITick, INotifyWinStateChanged, INotifyTimeLimit, INotifyCreated
 	{
 		readonly ColonyConquestVictoryConditionsInfo info;
 		readonly MissionObjectives missionObjectives;
 		readonly bool shortGame;
-		readonly IEnumerable<Actor> colonies;
 
-		Player[] otherPlayers;
+		OpenRA.Player[] enemies;
 		int colonyObjectiveID = -1;
 		int conquestObjectiveID = -1;
 
@@ -52,7 +52,13 @@ namespace OpenRA.Mods.OpenSA.Traits
 			this.info = info;
 			missionObjectives = self.Trait<MissionObjectives>();
 			shortGame = self.Owner.World.WorldActor.Trait<MapOptions>().ShortGame;
-			colonies = self.World.ActorsHavingTrait<Colony>();
+		}
+
+		void INotifyCreated.Created(Actor self)
+		{
+			// Players, NonCombatants, and IsAlliedWith are all fixed once the game starts, so we can cache the result.
+			if (enemies == null)
+				enemies = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
 		}
 
 		void ITick.Tick(Actor self)
@@ -66,28 +72,32 @@ namespace OpenRA.Mods.OpenSA.Traits
 			if (colonyObjectiveID < 0)
 				colonyObjectiveID = missionObjectives.Add(self.Owner, info.ColonyObjective, "Primary", inhibitAnnouncement: true);
 
+			// Require neutral colonies to get captured first.
+			if (self.World.ActorsHavingTrait<DefeatedColony>().Any())
+				return;
+
+			var colonies = self.World.ActorsHavingTrait<Colony.Colony>().ToArray();
+
 			// Nothing can be done in this case so don't frustrate human players and lose immediately.
 			if (!self.Owner.NonCombatant && !self.Owner.IsBot && !colonies.Any(c => c.Owner == self.Owner) && self.Owner.HasNoRequiredUnits(shortGame))
 			{
 				missionObjectives.MarkFailed(self.Owner, conquestObjectiveID);
 				missionObjectives.MarkFailed(self.Owner, colonyObjectiveID);
-			}
 
-			// Require neutral colonies to get captured first.
-			if (self.World.ActorsHavingTrait<DefeatedColony>().Any())
 				return;
-
-			// Players, NonCombatants, and IsAlliedWith are all fixed once the game starts, so we can cache the result.
-			if (otherPlayers == null)
-				otherPlayers = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
+			}
 
 			// Don't win the game on enemy colony defeat, but on re-capture.
 			if (colonies.All(c => c.Owner == self.Owner || c.Owner.IsAlliedWith(self.Owner)))
 				missionObjectives.MarkCompleted(self.Owner, colonyObjectiveID);
+			else if (missionObjectives.Objectives[colonyObjectiveID].State == ObjectiveState.Completed)
+				colonyObjectiveID = missionObjectives.Add(self.Owner, info.ColonyObjective, "Primary", inhibitAnnouncement: true);
 
 			// Also require all units to be killed.
-			if (otherPlayers.All(o => o.HasNoRequiredUnits(shortGame)))
+			if (enemies.All(o => o.HasNoRequiredUnits(shortGame)))
 				missionObjectives.MarkCompleted(self.Owner, conquestObjectiveID);
+			else if (missionObjectives.Objectives[conquestObjectiveID].State == ObjectiveState.Completed)
+				conquestObjectiveID = missionObjectives.Add(self.Owner, info.ConquestObjective, "Primary", inhibitAnnouncement: true);
 		}
 
 		void INotifyTimeLimit.NotifyTimerExpired(Actor self)
@@ -113,7 +123,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			missionObjectives.MarkFailed(self.Owner, conquestObjectiveID);
 		}
 
-		void INotifyWinStateChanged.OnPlayerLost(Player player)
+		void INotifyWinStateChanged.OnPlayerLost(OpenRA.Player player)
 		{
 			foreach (var a in player.World.ActorsWithTrait<INotifyOwnerLost>().Where(a => a.Actor.Owner == player))
 				a.Trait.OnOwnerLost(a.Actor);
@@ -129,7 +139,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			});
 		}
 
-		void INotifyWinStateChanged.OnPlayerWon(Player player)
+		void INotifyWinStateChanged.OnPlayerWon(OpenRA.Player player)
 		{
 			if (info.SuppressNotifications)
 				return;

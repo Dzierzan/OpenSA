@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -10,9 +10,10 @@
 #endregion
 
 using System.Linq;
+using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.Common.Traits.Render
+namespace OpenRA.Mods.OpenSA.Traits.Render
 {
 	[Desc("Replaces the default animation when actor is created and grants a condition when finished.")]
 	public class WithGrowAnimationInfo : TraitInfo, Requires<WithSpriteBodyInfo>

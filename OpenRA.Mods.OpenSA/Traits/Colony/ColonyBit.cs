@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -11,19 +11,17 @@
 
 using System.Linq;
 using OpenRA.Mods.Common;
-using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.OpenSA.Warheads;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Colony
 {
 	public class ColonyBitInfo : TraitInfo
 	{
 		public readonly int MinLifetime = 500;
 		public readonly int MaxLifetime = 1000;
-		public readonly int AutoPickupRadius = 5;
 		public readonly string CrushClass = "colony_bit";
 		public readonly string PickupSound = "sounds|COLONYPICKUP.SDF";
 		public readonly string TimeoutSound = "sounds|COLONYPICKUPTIMEOUT.SDF";
@@ -53,19 +51,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		void ITick.Tick(Actor self)
 		{
 			if (--lifetime > 0)
-			{
-				var actors = self.World.FindActorsInCircle(self.CenterPosition, WDist.FromCells(info.AutoPickupRadius));
-				foreach (var actor in actors)
-				{
-					if (!actor.IsIdle || !actor.Info.HasTraitInfo<MobileInfo>())
-						continue;
-
-					actor.QueueActivity(new Move(actor, self.Location));
-					break;
-				}
-
 				return;
-			}
 
 			colony.PickBit(self.World.Players.First(player => player.InternalName == "Creeps"));
 			Game.Sound.Play(SoundType.World, info.TimeoutSound, self.CenterPosition);

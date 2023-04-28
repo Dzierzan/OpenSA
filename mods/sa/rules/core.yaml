@@ -61,10 +61,11 @@
 	RadarColorFromFaction:
 	Production:
 	ProductionQueue:
-		InfiniteBuildLimit: 25
+		InfiniteBuildLimit: 1
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		CancelledAudio: CancelledAudio
+		DisallowPaused: true
 	RallyPoint:
 		Cursor: move
 		Path: 5,5
@@ -147,7 +148,7 @@
 	WithSpriteTurret:
 	WithTurretAttackAnimation:
 		Sequence: shoot
-	AppearsOnRadar:
+	CustomAppearsOnRadar:
 
 ^CoreUnclaimedTurretBuilding:
 	Inherits: ^CoreVisibleActor
@@ -237,6 +238,10 @@
 	# Units should die when owner lost the game.
 	OwnerLostAction:
 		Action: Kill
+	TakeColonyBitOnIdle:
+		Radius: 10
+		Delay: 50
+		OnTick: 50
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreUnit

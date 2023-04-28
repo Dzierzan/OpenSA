@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2021, 2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -15,7 +15,7 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Attack
 {
 	[Desc("Random attack with a rotational movement.")]
 	public class AttackVortexInfo : AttackOmniInfo, Requires<IFacingInfo>

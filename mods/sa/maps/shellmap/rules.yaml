@@ -4,20 +4,10 @@ Player:
 World:
 	-SpawnStartingUnits:
 	-MapStartingLocations:
-	MusicPlaylist:
-		DisableWorldSounds: False
 	Randomizer:
 	-PirateSpawner:
 	-CreepFlyerSpawner@dragonfly:
-	-CreepFlyerSpawner@fly:
-	-CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
 	-PlantSpawner@NORMAL:
-	-PlantSpawner@DESERT:
-	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
-	MuteableAmbientSound@Normal:
-		SoundFiles: sounds_MENU|STARTBACKGROUND.SDF
 
 ^CoreUnit:
 	-Wanders@PLAYER:

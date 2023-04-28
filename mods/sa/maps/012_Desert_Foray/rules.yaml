@@ -5,19 +5,13 @@ World:
 
 World:
 	-PirateSpawner:
-	-CreepFlyerSpawner@dragonfly:
 	CreepFlyerSpawner@fly:
 		SpawnInterval: 525, 625
 		InitialSpawnDelay: 525, 625
-	-CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
-	-PlantSpawner@NORMAL:
 	PlantSpawner@DESERT:
 		Maximum: 4
 		SpawnInterval: 225, 425
 		InitialSpawnDelay: 225, 425
-	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
 
 Player:
 	-GrantConditionOnBotOwner@AntsAI:

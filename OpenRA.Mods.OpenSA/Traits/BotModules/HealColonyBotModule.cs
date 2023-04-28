@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -14,7 +14,7 @@ using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.BotModules
 {
 	[Desc("Put this on the Player actor. Manages colony healing by halting production.")]
 	public class HealColonyBotModuleInfo : ConditionalTraitInfo
@@ -27,8 +27,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	public class HealColonyBotModule : ConditionalTrait<HealColonyBotModuleInfo>, IBotTick
 	{
-		readonly World world;
-		readonly Player player;
+		readonly OpenRA.World world;
+		readonly OpenRA.Player player;
 
 		public HealColonyBotModule(Actor self, HealColonyBotModuleInfo info)
 			: base(info)
@@ -39,7 +39,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		void IBotTick.BotTick(IBot bot)
 		{
-			var colonies = AIUtils.GetActorsWithTrait<Colony>(world).Where(c => c.Owner == player).ToArray();
+			var colonies = AIUtils.GetActorsWithTrait<Colony.Colony>(world).Where(c => c.Owner == player).ToArray();
 			foreach (var colony in colonies)
 			{
 				var health = colony.Trait<IHealth>();

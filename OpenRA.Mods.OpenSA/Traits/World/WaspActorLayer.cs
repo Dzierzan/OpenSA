@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -14,7 +14,7 @@ using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.World
 {
 	[TraitLocation(SystemActors.World)]
 	public class WaspActorLayerInfo : TraitInfo, ICustomMovementLayerInfo
@@ -27,7 +27,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	public class WaspActorLayer : ICustomMovementLayer
 	{
-		readonly World world;
+		readonly OpenRA.World world;
 
 		readonly byte terrainIndex;
 
@@ -72,7 +72,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		byte ICustomMovementLayer.GetTerrainIndex(CPos cell)
 		{
-			if (world.ActorMap.GetActorsAt(cell).Any(a => a.TraitOrDefault<Colony>() != null))
+			if (world.ActorMap.GetActorsAt(cell).Any(a => a.TraitOrDefault<Colony.Colony>() != null))
 				return byte.MaxValue;
 
 			return terrainIndex;

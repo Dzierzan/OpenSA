@@ -1,0 +1,19 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "OpenRA.Mods.OpenSA": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=sa Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "Utility": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
+      "commandLineArgs": "sa --check-yaml",
+      "environmentVariables": {
+        "ENGINE_DIR": "..\\..\\engine",
+        "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"
+      }
+    }
+  }
+}

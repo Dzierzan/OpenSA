@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -109,7 +109,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			var g = new float2(1, 0);
 
 			var up = new float2(0, -1);
-			var down = new float2(0, 1);			
+			var down = new float2(0, 1);
 
 			var healthColor = GetHealthColor(health);
 			var healthColor2 = Color.FromArgb(0, 0, 254, 0);
@@ -122,7 +122,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(end + p + up, end + p, 1, blackcolor);
 			cr.DrawLine(end + q + up, end + q, 1, blackcolor);
 			cr.DrawLine(end + r + up, end + r, 1, blackcolor);
-			cr.DrawLine(end + t + up, end + t, 1, blackcolor);			
+			cr.DrawLine(end + t + up, end + t, 1, blackcolor);
 			cr.DrawLine(end + f + up, end + f, 1, blackcolor);
 			cr.DrawLine(end + g + up, end + g, 1, blackcolor);
 
@@ -131,14 +131,14 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(start + q, end + q, 1, greycolor);
 			cr.DrawLine(start + r, end + r, 1, greycolor);
 			cr.DrawLine(start + t, end + t, 1, greycolor);
-			cr.DrawLine(start + f, end + f, 1, greycolor);			
+			cr.DrawLine(start + f, end + f, 1, greycolor);
 			cr.DrawLine(start + g, end + g, 1, blackcolor);
 
 			// BOTTOM
 			cr.DrawLine(start + p + down, start + p, 1, blackcolor);
 			cr.DrawLine(start + q + down, start + q, 1, blackcolor);
 			cr.DrawLine(start + r + down, start + r, 1, blackcolor);
-			cr.DrawLine(start + t + down, start + t, 1, blackcolor);			
+			cr.DrawLine(start + t + down, start + t, 1, blackcolor);
 			cr.DrawLine(start + f + down, start + f, 1, blackcolor);
 			cr.DrawLine(start + g + down, start + g, 1, blackcolor);
 
@@ -147,7 +147,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			cr.DrawLine(start + q, z + q, 1, healthColor);
 			cr.DrawLine(start + r, z + r, 1, healthColor);
 			cr.DrawLine(start + t, z + t, 1, healthColor);
-			cr.DrawLine(start + f, z + f, 1, healthColor);			
+			cr.DrawLine(start + f, z + f, 1, healthColor);
 			cr.DrawLine(start + g, z + g, 1, healthColor2);
 
 			if (health.DisplayHP != health.HP)

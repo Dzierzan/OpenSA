@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -16,7 +16,7 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.World
 {
 	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	class PaletteFromDdfInfo : TraitInfo, IProvidesCursorPaletteInfo
@@ -61,10 +61,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	class PaletteFromDdf : ILoadsPalettes, IProvidesAssetBrowserPalettes
 	{
-		readonly World world;
+		readonly OpenRA.World world;
 		readonly PaletteFromDdfInfo info;
 
-		public PaletteFromDdf(World world, PaletteFromDdfInfo info)
+		public PaletteFromDdf(OpenRA.World world, PaletteFromDdfInfo info)
 		{
 			this.world = world;
 			this.info = info;

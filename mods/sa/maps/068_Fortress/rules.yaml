@@ -7,19 +7,13 @@ World:
 	PirateSpawner:
 		SpawnInterval: 900, 1300
 		InitialSpawnDelay: 900, 1300
-	-CreepFlyerSpawner@dragonfly:
 	CreepFlyerSpawner@fly:
 		SpawnInterval: 525, 725
 		InitialSpawnDelay: 525, 725
-	-CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
-	-PlantSpawner@NORMAL:
 	PlantSpawner@DESERT:
 		Maximum: 8
 		SpawnInterval: 255, 455
 		InitialSpawnDelay: 255, 455
-	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
 
 Player:
 	-GrantConditionOnBotOwner@WaspsAI:

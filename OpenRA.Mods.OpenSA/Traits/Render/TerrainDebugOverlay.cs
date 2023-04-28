@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -16,7 +16,7 @@ using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.Common.Terrain;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Render
 {
 	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	[Desc("Displays terrain tile IDs colored by terrain type.")]
@@ -41,7 +41,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			font = Game.Renderer.Fonts[info.Font];
 		}
 
-		void IWorldLoaded.WorldLoaded(World w, WorldRenderer wr)
+		void IWorldLoaded.WorldLoaded(OpenRA.World w, WorldRenderer wr)
 		{
 			var console = w.WorldActor.TraitOrDefault<ChatCommands>();
 			var help = w.WorldActor.TraitOrDefault<HelpCommand>();

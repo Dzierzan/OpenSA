@@ -1,6 +1,6 @@
 ﻿#region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -66,7 +66,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	class SpawnsShrapnel : PausableConditionalTrait<SpawnsShrapnelInfo>, ITick, ISync
 	{
-		readonly World world;
+		readonly OpenRA.World world;
 		readonly BodyOrientation body;
 
 		[Sync]

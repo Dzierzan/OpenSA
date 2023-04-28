@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -19,7 +19,7 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Widgets;
 using OpenRA.Mods.OpenSA.Terrain;
 
-namespace OpenRA.Mods.OpenSA.Widgets
+namespace OpenRA.Mods.OpenSA.EditorBrushes
 {
 	public sealed class CustomEditorTileBrush : IEditorBrush
 	{

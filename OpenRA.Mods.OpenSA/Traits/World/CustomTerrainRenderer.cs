@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -15,10 +15,11 @@ using System.IO;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Terrain;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.OpenSA.Terrain;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Terrain
+namespace OpenRA.Mods.OpenSA.Traits.World
 {
 	[TraitLocation(SystemActors.World | SystemActors.EditorWorld)]
 	public class CustomTerrainRendererInfo : TraitInfo, ITiledTerrainRendererInfo
@@ -69,7 +70,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 		WorldRenderer worldRenderer;
 		bool disposed;
 
-		public CustomTerrainRenderer(World world)
+		public CustomTerrainRenderer(OpenRA.World world)
 		{
 			map = world.Map;
 			terrainInfo = map.Rules.TerrainInfo as CustomTerrain;
@@ -79,7 +80,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 			tileCache = new CustomTileCache(terrainInfo);
 		}
 
-		void IWorldLoaded.WorldLoaded(World world, WorldRenderer wr)
+		void IWorldLoaded.WorldLoaded(OpenRA.World world, WorldRenderer wr)
 		{
 			worldRenderer = wr;
 			spriteLayer = new TerrainSpriteLayer(world, wr, tileCache.MissingTile, BlendMode.Alpha, world.Type != WorldType.Editor);

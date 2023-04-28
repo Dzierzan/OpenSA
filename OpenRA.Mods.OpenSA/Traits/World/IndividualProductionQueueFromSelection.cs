@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -16,7 +16,7 @@ using OpenRA.Mods.OpenSA.Widgets;
 using OpenRA.Traits;
 using OpenRA.Widgets;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.World
 {
 	[TraitLocation(SystemActors.World)]
 	class IndividualProductionQueueFromSelectionInfo : TraitInfo
@@ -28,10 +28,10 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	class IndividualProductionQueueFromSelection : INotifySelection
 	{
-		readonly World world;
+		readonly OpenRA.World world;
 		readonly Lazy<IndividualProductionPaletteWidget> paletteWidget;
 
-		public IndividualProductionQueueFromSelection(World world, IndividualProductionQueueFromSelectionInfo info)
+		public IndividualProductionQueueFromSelection(OpenRA.World world, IndividualProductionQueueFromSelectionInfo info)
 		{
 			this.world = world;
 

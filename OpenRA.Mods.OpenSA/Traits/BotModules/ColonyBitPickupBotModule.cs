@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2021 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -13,9 +13,10 @@ using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.OpenSA.Traits.Colony;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.BotModules
 {
 	[Desc("Put this on the Player actor. Manages colony bit collection.")]
 	public class ColonyBitPickupBotModuleInfo : ConditionalTraitInfo
@@ -40,8 +41,8 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 	public class ColonyBitPickupBotModule : ConditionalTrait<ColonyBitPickupBotModuleInfo>, IBotTick
 	{
-		readonly World world;
-		readonly Player player;
+		readonly OpenRA.World world;
+		readonly OpenRA.Player player;
 
 		readonly int maxProximity;
 

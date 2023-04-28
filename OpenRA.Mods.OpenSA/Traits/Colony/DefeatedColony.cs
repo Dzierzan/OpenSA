@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -18,11 +18,9 @@ using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Colony
 {
-	public enum ExplosionType { Footprint, CenterPosition }
-
-	public class DefeatedColonyInfo : TraitInfo, IRulesetLoaded, Requires<TurretedInfo>
+	public class DefeatedColonyInfo : TraitInfo, IRulesetLoaded
 	{
 		public readonly int BitFireDelay = 50;
 		public readonly int NumberOfBits = 8;
@@ -50,7 +48,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		public override object Create(ActorInitializer init)
 		{
-			return new DefeatedColony(this, init.Self);
+			return new DefeatedColony(this);
 		}
 
 		public WeaponInfo WeaponInfo { get; private set; }
@@ -79,16 +77,14 @@ namespace OpenRA.Mods.OpenSA.Traits
 	public class DefeatedColony : ITick, INotifyKilled
 	{
 		readonly DefeatedColonyInfo info;
-		readonly Dictionary<Player, int> bitPickers = new Dictionary<Player, int>();
-		readonly IEnumerable<Turreted> turreted;
+		readonly Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
 
 		int fireBitTimer;
-		Player newOwner;
+		OpenRA.Player newOwner;
 
-		public DefeatedColony(DefeatedColonyInfo info, Actor self)
+		public DefeatedColony(DefeatedColonyInfo info)
 		{
 			this.info = info;
-			turreted = self.TraitsImplementing<Turreted>();
 
 			fireBitTimer = info.BitFireDelay;
 		}
@@ -139,7 +135,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 			Game.Sound.Play(SoundType.World, info.ColonyExplosionSound, self.CenterPosition);
 		}
 
-		public void PickBit(Player player)
+		public void PickBit(OpenRA.Player player)
 		{
 			if (!bitPickers.ContainsKey(player))
 				bitPickers.Add(player, 0);
@@ -193,7 +189,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				new HealthInit(info.ResurrectHealth),
 			};
 
-			foreach (var t in turreted)
+			foreach (var t in self.TraitsImplementing<Turreted>())
 				td.Add(new TurretFacingInit(t.Info, t.LocalOrientation.Yaw));
 
 			self.World.AddFrameEndTask(w => w.CreateActor(info.SpawnsActor, td));

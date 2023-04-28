@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,15 +9,14 @@
  */
 #endregion
 
-using System.Collections.Generic;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.OpenSA.Traits
+namespace OpenRA.Mods.OpenSA.Traits.Colony
 {
-	public class ColonyInfo : TraitInfo, Requires<TurretedInfo>
+	public class ColonyInfo : TraitInfo
 	{
 		public readonly string LostSound = "sounds|POWERDOWN.SDF";
 
@@ -30,19 +29,17 @@ namespace OpenRA.Mods.OpenSA.Traits
 
 		public override object Create(ActorInitializer init)
 		{
-			return new Colony(this, init.Self);
+			return new Colony(this);
 		}
 	}
 
 	public class Colony : INotifyKilled
 	{
 		readonly ColonyInfo info;
-		readonly IEnumerable<Turreted> turreted;
 
-		public Colony(ColonyInfo info, Actor self)
+		public Colony(ColonyInfo info)
 		{
 			this.info = info;
-			turreted = self.TraitsImplementing<Turreted>();
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -60,7 +57,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 				new OwnerInit(info.NewOwner),
 			};
 
-			foreach (var t in turreted)
+			foreach (var t in self.TraitsImplementing<Turreted>())
 				td.Add(new TurretFacingInit(t.Info, t.LocalOrientation.Yaw));
 
 			self.World.AddFrameEndTask(w => w.CreateActor(info.SpawnsActor, td));

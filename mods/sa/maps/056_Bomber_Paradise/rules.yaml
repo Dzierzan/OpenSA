@@ -8,16 +8,10 @@ World:
 	CreepFlyerSpawner@dragonfly:
 		SpawnInterval: 50, 100
 		InitialSpawnDelay: 50, 100
-	-CreepFlyerSpawner@fly:
-	-CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
 	PlantSpawner@NORMAL:
 		Maximum: 8
 		SpawnInterval: 255, 555
 		InitialSpawnDelay: 255, 555
-	-PlantSpawner@DESERT:
-	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
 
 Player:
 	-GrantConditionOnBotOwner@WaspsAI:

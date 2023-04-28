@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2019-2022 The OpenSA Developers (see CREDITS)
+ * Copyright The OpenSA Developers (see CREDITS)
  * This file is part of OpenSA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -107,7 +107,7 @@ namespace OpenRA.Mods.OpenSA.Graphics
 			var t = new float2(-1, 0);
 
 			var up = new float2(0, -1);
-			var down = new float2(0, 1);			
+			var down = new float2(0, 1);
 
 			var healthColor = GetHealthColor(health);
 			var healthColor2 = Color.FromArgb(0, 0, 254, 0);

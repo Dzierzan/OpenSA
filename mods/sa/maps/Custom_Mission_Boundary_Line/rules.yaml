@@ -2,17 +2,6 @@ World:
 	MissionData:
 		Briefing: Mission created by Hooet.
 
-World:
-	PirateSpawner:
-	CreepFlyerSpawner@dragonfly:
-	-CreepFlyerSpawner@fly:
-	-CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
-	PlantSpawner@NORMAL:
-	-PlantSpawner@DESERT:
-	-PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
-
 Player:
 	-GrantConditionOnBotOwner@SpidersAI:
 	ExternalCondition@SpidersAI:

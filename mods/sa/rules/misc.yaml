@@ -174,30 +174,14 @@ EditorPlayer:
 	ControlGroups:
 	ScreenMap:
 	ActorMap:
-	GrantConditionOnTileSet@Normal:
-		TileSets: NORMAL
-		Condition: normal
-	MuteableAmbientSound@Normal:
-		RequiresCondition: normal
-		SoundFiles: sounds|FROGS.SDF
-	GrantConditionOnTileSet@Desert:
-		TileSets: DESERT
-		Condition: desert
-	MuteableAmbientSound@Desert:
-		RequiresCondition: desert
-		SoundFiles: sounds|WIND.SDF
-	GrantConditionOnTileSet@Swamp:
-		TileSets: SWAMP
-		Condition: swamp
-	MuteableAmbientSound@Swamp:
-		RequiresCondition: swamp
-		SoundFiles: sounds|CRICKETS.SDF
-	GrantConditionOnTileSet@Candy:
-		TileSets: CANDY
-		Condition: candy
-	MuteableAmbientSound@Candy:
-		RequiresCondition: candy
-		SoundFiles: sounds|DREAMSCAPE.SDF
+	MusicPlaylistBuilder:
+		Extension: SDF
+		Shellmap: sounds_MENU|STARTBACKGROUND
+		Tilesets:
+			NORMAL: sounds|FROGS
+			DESERT: sounds|WIND
+			SWAMP: sounds|CRICKETS
+			CANDY: sounds|DREAMSCAPE
 	MusicPlaylist:
 	TerrainGeometryOverlay:
 	CustomTerrainRenderer:
@@ -228,7 +212,6 @@ EditorPlayer:
 			Water: 100
 			Air: 100
 		TransitionCost: 0
-	TerrainGeometryOverlay:
 
 World:
 	Inherits: ^CoreWorld
@@ -370,7 +353,6 @@ colony_bit1:
 	ColonyBit:
 		MinLifetime: 500
 		MaxLifetime: 750
-		AutoPickupRadius: 10
 
 colony_bit2:
 	Inherits: colony_bit1
@@ -425,30 +407,5 @@ RANDOMCOLONY:
 	SpawnRandomActorOnDeath:
 		Actors: ants_colony, beetles_colony, scorpions_colony, spiders_colony, wasps_colony
 	KillsSelf:
-	MapEditorData:
-		Categories: System
-	Colony:
-		SpawnsActor: BLANK1
-	Turreted:
-
-BLANK1:
-	Interactable:
-	AlwaysVisible:
-	Immobile:
-		OccupiesSpace: false
-	RenderSpritesEditorOnly:
-	WithSpriteBody:
-	BodyOrientation:
-		QuantizedFacings: 1
-	MapEditorData:
-	RequiresSpecificOwners:
-		ValidOwnerNames: Neutral
-	DefeatedColony:
-		SpawnsActor: BLANK2
-	Turreted:
-
-BLANK2:
-	Inherits: BLANK1
-	-DefeatedColony:
-	Colony:
-		SpawnsActor: BLANK1
+	MustBeDestroyed:
+		RequiredForShortGame: true

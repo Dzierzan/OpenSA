@@ -4,17 +4,6 @@ World:
 		StartVideo: sa|bits/videos/TeamLogoRed.vqa
 		WinVideo: sa|bits/videos/TeamWinRed.vqa
 
-World:
-	PirateSpawner:
-	-CreepFlyerSpawner@dragonfly:
-	-CreepFlyerSpawner@fly:
-	CreepFlyerSpawner@moth:
-	-CreepFlyerSpawner@flyingmachine:
-	-PlantSpawner@NORMAL:
-	-PlantSpawner@DESERT:
-	PlantSpawner@SWAMP:
-	-PlantSpawner@CANDY:
-
 Player:
 	-GrantConditionOnBotOwner@AntsAI:
 	ExternalCondition@AntsAI:

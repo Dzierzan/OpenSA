@@ -188,7 +188,6 @@ productionbooster:
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
-	Turreted:
 	WithIdleOverlay:
 	Colony:
 		SpawnsActor: defeated_productionbooster
@@ -224,7 +223,6 @@ defeated_productionbooster:
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
-	Turreted:
 	WithIdleOverlay:
 	RenderSprites:
 		Image: productionbooster
@@ -265,7 +263,6 @@ firepowerbooster:
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
-	Turreted:
 	WithIdleOverlay:
 	Colony:
 		SpawnsActor: defeated_firepowerbooster
@@ -301,7 +298,6 @@ defeated_firepowerbooster:
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1800, 1104
-	Turreted:
 	WithIdleOverlay:
 	RenderSprites:
 		Image: firepowerbooster
