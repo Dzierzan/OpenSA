@@ -43,6 +43,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 		IRadarColorModifier modifier;
 
 		float t = 0;
+		bool isLarge;
 
 		public CustomAppearsOnRadar(Actor self, CustomAppearsOnRadarInfo info)
 		{
@@ -67,6 +68,8 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 		void INotifyCreated.Created(Actor self)
 		{
 			modifier = self.TraitsImplementing<IRadarColorModifier>().FirstOrDefault();
+			var dim = self.TraitOrDefault<Building>()?.Info.Dimensions ?? new CVec(0, 0);
+			isLarge = dim.X == 6 && dim.Y == 6;
 		}
 
 		void ITick.Tick(Actor self)
@@ -84,7 +87,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 
 			var rotate = (int)t % 12;
 
-			if (self.TraitOrDefault<Colony.Colony>() != null || self.TraitOrDefault<DefeatedColony>() != null)
+			if (isLarge)
 			{
 				for (var y = 0; y < 6; y++)
 				{

@@ -73,6 +73,8 @@
 	# Units should die when owner lost the game.
 	OwnerLostAction:
 		Action: Kill
+	MustBeDestroyed:
+		RequiredForShortGame: true
 
 ^CoreUnclaimedBuilding:
 	Inherits: ^CoreVisibleActor
@@ -127,7 +129,7 @@
 		Priority: 10
 	WithSpriteBody:
 	MustBeDestroyed:
-		RequiredForShortGame: true
+		RequiredForShortGame: false
 	# Group all buildings in the map editor.
 	MapEditorData:
 		Categories: Building

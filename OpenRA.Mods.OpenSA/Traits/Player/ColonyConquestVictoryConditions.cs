@@ -9,8 +9,8 @@
  */
 #endregion
 
-using System.Collections.Generic;
 using System.Linq;
+using OpenRA.Graphics;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.OpenSA.Traits.Colony;
@@ -37,7 +37,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Player
 		public override object Create(ActorInitializer init) { return new ColonyConquestVictoryConditions(init.Self, this); }
 	}
 
-	public class ColonyConquestVictoryConditions : ITick, INotifyWinStateChanged, INotifyTimeLimit, INotifyCreated
+	public class ColonyConquestVictoryConditions : ITick, INotifyWinStateChanged, INotifyTimeLimit, IWorldLoaded
 	{
 		readonly ColonyConquestVictoryConditionsInfo info;
 		readonly MissionObjectives missionObjectives;
@@ -54,16 +54,19 @@ namespace OpenRA.Mods.OpenSA.Traits.Player
 			shortGame = self.Owner.World.WorldActor.Trait<MapOptions>().ShortGame;
 		}
 
-		void INotifyCreated.Created(Actor self)
+		void IWorldLoaded.WorldLoaded(OpenRA.World world, WorldRenderer wr)
 		{
 			// Players, NonCombatants, and IsAlliedWith are all fixed once the game starts, so we can cache the result.
 			if (enemies == null)
-				enemies = self.World.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(self.Owner)).ToArray();
+				enemies = world.Players.Where(p => !p.NonCombatant && !p.IsAlliedWith(world.LocalPlayer)).ToArray();
 		}
 
 		void ITick.Tick(Actor self)
 		{
 			if (self.Owner.WinState != WinState.Undefined || self.Owner.NonCombatant)
+				return;
+
+			if (self.World.Actors.Any(a => a.Info.Name == "randomcolony"))
 				return;
 
 			if (conquestObjectiveID < 0)
