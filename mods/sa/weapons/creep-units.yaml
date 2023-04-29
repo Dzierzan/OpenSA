@@ -175,7 +175,7 @@ flying_machine:
 		LaunchAngle: 125, 200
 		Inaccuracy: 3000
 		BounceCount: 2
-		BounceSound: sa|bits/sounds/BOUNCE.wav #sounds|BOUNCE.SDF
+		BounceSound: sounds|BOUNCE_Z.SDF
 		InvalidBounceTerrain: Water
 		Image: projectiles
 		Sequences: gobstopper
