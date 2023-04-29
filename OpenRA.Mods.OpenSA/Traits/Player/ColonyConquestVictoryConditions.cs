@@ -26,10 +26,10 @@ namespace OpenRA.Mods.OpenSA.Traits.Player
 		public readonly int NotificationDelay = 1500;
 
 		[Desc("Description of the objective.")]
-		public readonly string ColonyObjective = "Conquer all colonies!";
+		public readonly string ColonyObjective = "Conquer all colonies and boosters!";
 
 		[Desc("Description of the objective.")]
-		public readonly string ConquestObjective = "Destroy all opposition!";
+		public readonly string ConquestObjective = "Destroy all enemy units!";
 
 		[Desc("Disable the win/loss messages and audio notifications?")]
 		public readonly bool SuppressNotifications = false;
