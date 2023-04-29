@@ -242,8 +242,8 @@
 		Action: Kill
 	TakeColonyBitOnIdle:
 		Radius: 10
-		Delay: 50
-		OnTick: 50
+		Delay: 1
+		OnTick: 10
 
 ^CoreNeutralUnit:
 	Inherits: ^CoreUnit
