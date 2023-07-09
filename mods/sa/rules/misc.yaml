@@ -375,6 +375,18 @@ green_colony_bit3:
 green_colony_bit4:
 	Inherits: colony_bit1
 
+green_colony_bit_small1:
+	Inherits: colony_bit1
+
+green_colony_bit_small2:
+	Inherits: colony_bit1
+
+green_colony_bit_small3:
+	Inherits: colony_bit1
+
+green_colony_bit_small4:
+	Inherits: colony_bit1
+
 STARTCAMERA:
 	Interactable:
 	AlwaysVisible:

@@ -30,6 +30,13 @@ green_colony_bit:
 	Warhead@ColonyBit: SpawnColonyBit
 		BitActors: green_colony_bit1, green_colony_bit2, green_colony_bit3, green_colony_bit4
 
+green_colony_bit_small:
+	Inherits: colony_bit
+	Projectile: Bullet
+		Sequences: greencolonybit
+	Warhead@ColonyBit: SpawnColonyBit
+		BitActors: green_colony_bit_small1, green_colony_bit_small2, green_colony_bit_small3, green_colony_bit_small4
+
 dieFlyingMachine:
 	Warhead@Effect: CreateEffect
 		Image: explosions

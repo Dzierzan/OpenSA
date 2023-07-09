@@ -79,8 +79,39 @@ green_colony_bit3:
 		ZOffset: -900
 
 green_colony_bit4:
-	idle: bits/greencolonybits.png
+	idle: bits/greencolonybits-small.png
 		Start: 10
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit_small1:
+	idle: bits/greencolonybits-small.png
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit_small2:
+	idle: bits/greencolonybits-small.png
+		Start: 5
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit_small3:
+	idle: bits/greencolonybits-small.png
+		Start: 10
+		Tick: 100
+		Reverses: True
+		Length: 5
+		ZOffset: -900
+
+green_colony_bit_small4:
+	idle: bits/greencolonybits-small.png
+		Start: 15
 		Tick: 100
 		Reverses: True
 		Length: 5
