@@ -331,8 +331,11 @@ tesla_coil_turret:
 		Footprint: x
 		LocalCenterOffset: -200,-125,0
 	HitShape:
-		Type: Circle
-			Radius: 512
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 0,226,0
+		Type: Rectangle
+			TopLeft: -312, -412
+			BottomRight: 652, 552
 	WithIdleOverlay:
 	Turreted:
 		TurnSpeed: 120
