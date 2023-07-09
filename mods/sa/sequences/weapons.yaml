@@ -1,106 +1,131 @@
 projectiles:
-	grenade: WEAPON_GRENADE.ANI
+	grenade:
+		Filename: WEAPON_GRENADE.ANI
 		Length: 2
 		Tick: 30
 		ZOffset: 6000
-	bazooka: bits/rocket.png
+	bazooka:
+		Filename: bits/rocket.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	cannon: WEAPON_CANNON.ANI
+	cannon:
+		Filename: WEAPON_CANNON.ANI
 		ZOffset: 6000
-	missile: bits/missile.png
+	missile:
+		Filename: bits/missile.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	small_bullet: WEAPON_SMALL.ANI
+	small_bullet:
+		Filename: WEAPON_SMALL.ANI
 		ZOffset: 6000
-	medium_bullet: WEAPON_MEDIUM.ANI
+	medium_bullet:
+		Filename: WEAPON_MEDIUM.ANI
 		ZOffset: 6000
-	gun_bullet: WEAPON_GUN.ANI
+	gun_bullet:
+		Filename: WEAPON_GUN.ANI
 		ZOffset: 6000
-	star: WEAPON_STAR.ANI
+	star:
+		Filename: WEAPON_STAR.ANI
 		Length: 2
 		Tick: 50
 		ZOffset: 6000
-	arrow: bits/arrow.png
+	arrow:
+		Filename: bits/arrow.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	spear: bits/spear.png
+	spear:
+		Filename: bits/spear.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	sonic: bits/sonic.png
+	sonic:
+		Filename: bits/sonic.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	homing: bits/Homing.png
+	homing:
+		Filename: bits/Homing.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	freckles: WEAPON_FRECKLE.ANI
+	freckles:
+		Filename: WEAPON_FRECKLE.ANI
 		Length: 1
 		ZOffset: 6000
-	popcorn: bits/whip.png
+	popcorn:
+		Filename: bits/whip.png
 		Length: 1
 		Facings: 1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	spike: bits/thorn.png
+	spike:
+		Filename: bits/thorn.png
 		Length: 1
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	puff: WEAPON_PUFFBALL.ANI
+	puff:
+		Filename: WEAPON_PUFFBALL.ANI
 		Length: 1
 		ZOffset: 6000
-	gobstopper: WEAPON_GOBSTOPPER.ANI
+	gobstopper:
+		Filename: WEAPON_GOBSTOPPER.ANI
 		Length: 5
 		Tick: 60
 		ZOffset: 6000
-	brakebombleft: bits/breakbombleft.png
+	brakebombleft:
+		Filename: bits/breakbombleft.png
 		Length: 4
 		Tick: 250
 		Facings: -1
 		InterpolatedFacings: 8
 		ZOffset: 6000
-	brakebombright: bits/breakbombright.png
+	brakebombright:
+		Filename: bits/breakbombright.png
 		Length: 4
 		Tick: 250
 		Facings: -1
 		InterpolatedFacings: 8
 		ZOffset: 6000
-	bouncebomb: WEAPON_BOUNCEBOMB.ANI
+	bouncebomb:
+		Filename: WEAPON_BOUNCEBOMB.ANI
 		Length: 6
 		Tick: 60
 		ZOffset: 6000
-	gas: bits/gas.png
+	gas:
+		Filename: bits/gas.png
 		Length: 6
 		Tick: 80
 		ZOffset: 6000
-	colonybit: COLONYBIT.ANI
+	colonybit:
+		Filename: COLONYBIT.ANI
 		Length: 4
 		Tick: 60
 		ZOffset: 6000
-	gumnutmissile: bits/gumnutmissile.png
+	gumnutmissile:
+		Filename: bits/gumnutmissile.png
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 6000
-	greencolonybit: bits/greencolonybits.png
+	greencolonybit:
+		Filename: bits/greencolonybits.png
 		Length: 4
 		Tick: 60
 		ZOffset: 6000
 
 smoke_trail:
-	idle: SMOKEPUFF.ANI
+	idle:
+		Filename: SMOKEPUFF.ANI
 		ZOffset: 6000
 		Length: 7
 		Tick: 40

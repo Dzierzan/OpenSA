@@ -21,6 +21,12 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 {
 	public class CustomMainMenuLogic : ChromeLogic
 	{
+		[TranslationReference]
+		const string LoadingNews = "label-loading-news";
+
+		[TranslationReference("author", "datetime")]
+		const string AuthorDateTime = "label-author-datetime";
+
 		protected enum MenuType { Main, Singleplayer, Extras, MapEditor, StartupPrompts, None }
 
 		protected enum MenuPanel { None, Missions, Skirmish, Multiplayer, MapEditor, Replays, GameSaves }
@@ -195,7 +201,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 				newsPanel.RemoveChild(newsTemplate);
 
 				newsStatus = newsPanel.Get<LabelWidget>("NEWS_STATUS");
-				SetNewsStatus("Loading news");
+				SetNewsStatus(TranslationProvider.GetString(LoadingNews));
 			}
 
 			Game.OnRemoteDirectConnect += OnRemoteDirectConnect;
@@ -258,13 +264,19 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 
 		void LoadAndDisplayNews(GitHubWebServices webServices, Widget newsBG)
 		{
-			if (newsBG != null && Game.Settings.Game.FetchNews)
+			if (!Game.Settings.Game.FetchNews)
+				return;
+
+			if (newsBG != null)
 			{
 				var newsButton = newsBG.GetOrNull<DropDownButtonWidget>("NEWS_BUTTON");
 				if (newsButton != null)
 				{
 					DisplayNews(webServices);
 					newsButton.OnClick = () => OpenNewsPanel(newsButton);
+
+					if (menuType == MenuType.None || menuType == MenuType.StartupPrompts)
+						return;
 
 					if (webServices.NewsAlert)
 						OpenNewsPanel(newsButton);
@@ -283,14 +295,17 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			var newsItem = webServices.NewsItem;
 			if (newsItem == null)
 			{
-				SetNewsStatus("Failed to retrieve news");
+				Log.Write("debug", "News retrieval failed.");
 				return;
 			}
 
 			titleLabel.GetText = () => newsItem.Title;
 
 			var authorDateTimeLabel = newsWidget.Get<LabelWidget>("AUTHOR_DATETIME");
-			var authorDateTime = authorDateTimeLabel.Text.F(newsItem.Author, newsItem.DateTime.ToLocalTime());
+			var authorDateTime = TranslationProvider.GetString(AuthorDateTime, Translation.Arguments(
+					"author", newsItem.Author,
+					"datetime", newsItem.DateTime.ToLocalTime()));
+
 			authorDateTimeLabel.GetText = () => authorDateTime;
 
 			var contentLabel = newsWidget.Get<LabelWidget>("CONTENT");
@@ -322,7 +337,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			});
 		}
 
-		void LoadMapIntoEditor(string uid)
+		static void LoadMapIntoEditor(string uid)
 		{
 			// HACK: Work around a synced-code change check.
 			// It's not clear why this is needed here, but not in the other places that load maps.

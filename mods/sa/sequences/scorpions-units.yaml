@@ -1,206 +1,296 @@
 scorpions_light:
 	idle:
 		Combine:
-			sprites|UNSCOSAB_STT.ANI:
-			sprites|UNSCOSAB_STTL.ANI:
-			sprites|UNSCOSAB_STL.ANI:
-			sprites|UNSCOSAB_STBL.ANI:
-			sprites|UNSCOSAB_STB.ANI:
-			sprites|UNSCOSAB_STBR.ANI:
-			sprites|UNSCOSAB_STR.ANI:
-			sprites|UNSCOSAB_STTR.ANI:
+			0:
+				Filename: sprites|UNSCOSAB_STT.ANI
+			1:
+				Filename: sprites|UNSCOSAB_STTL.ANI
+			2:
+				Filename: sprites|UNSCOSAB_STL.ANI
+			3:
+				Filename: sprites|UNSCOSAB_STBL.ANI
+			4:
+				Filename: sprites|UNSCOSAB_STB.ANI
+			5:
+				Filename: sprites|UNSCOSAB_STBR.ANI
+			6:
+				Filename: sprites|UNSCOSAB_STR.ANI
+			7:
+				Filename: sprites|UNSCOSAB_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNSCOSAB_ATT.ANI:
+			0:
+				Filename: sprites|UNSCOSAB_ATT.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATTL.ANI:
+			1:
+				Filename: sprites|UNSCOSAB_ATTL.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATL.ANI:
+			2:
+				Filename: sprites|UNSCOSAB_ATL.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATBL.ANI:
+			3:
+				Filename: sprites|UNSCOSAB_ATBL.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATB.ANI:
+			4:
+				Filename: sprites|UNSCOSAB_ATB.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATBR.ANI:
+			5:
+				Filename: sprites|UNSCOSAB_ATBR.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATR.ANI:
+			6:
+				Filename: sprites|UNSCOSAB_ATR.ANI
 				Length: 2
-			sprites|UNSCOSAB_ATTR.ANI:
+			7:
+				Filename: sprites|UNSCOSAB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 213
 	move:
 		Combine:
-			sprites|UNSCOSAB_WAT.ANI:
+			0:
+				Filename: sprites|UNSCOSAB_WAT.ANI
 				Length: 3
-			sprites|UNSCOSAB_WATL.ANI:
+			1:
+				Filename: sprites|UNSCOSAB_WATL.ANI
 				Length: 3
-			sprites|UNSCOSAB_WAL.ANI:
+			2:
+				Filename: sprites|UNSCOSAB_WAL.ANI
 				Length: 3
-			sprites|UNSCOSAB_WABL.ANI:
+			3:
+				Filename: sprites|UNSCOSAB_WABL.ANI
 				Length: 3
-			sprites|UNSCOSAB_WAB.ANI:
+			4:
+				Filename: sprites|UNSCOSAB_WAB.ANI
 				Length: 3
-			sprites|UNSCOSAB_WABR.ANI:
+			5:
+				Filename: sprites|UNSCOSAB_WABR.ANI
 				Length: 3
-			sprites|UNSCOSAB_WAR.ANI:
+			6:
+				Filename: sprites|UNSCOSAB_WAR.ANI
 				Length: 3
-			sprites|UNSCOSAB_WATR.ANI:
+			7:
+				Filename: sprites|UNSCOSAB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNSCOSAB_DEAD.ANI
+	die:
+		Filename: sprites|UNSCOSAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 24
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 25
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMESCORPIONSAVAGE.ANI
-	portrait: sprites|COLONYSCORPIONA3DB.ANI
+	name:
+		Filename: sprites|NAMESCORPIONSAVAGE.ANI
+	portrait:
+		Filename: sprites|COLONYSCORPIONA3DB.ANI
 
 scorpions_medium:
 	idle:
 		Combine:
-			sprites|UNSCOSGB_STT.ANI:
-			sprites|UNSCOSGB_STTL.ANI:
-			sprites|UNSCOSGB_STL.ANI:
-			sprites|UNSCOSGB_STBL.ANI:
-			sprites|UNSCOSGB_STB.ANI:
-			sprites|UNSCOSGB_STBR.ANI:
-			sprites|UNSCOSGB_STR.ANI:
-			sprites|UNSCOSGB_STTR.ANI:
+			0:
+				Filename: sprites|UNSCOSGB_STT.ANI
+			1:
+				Filename: sprites|UNSCOSGB_STTL.ANI
+			2:
+				Filename: sprites|UNSCOSGB_STL.ANI
+			3:
+				Filename: sprites|UNSCOSGB_STBL.ANI
+			4:
+				Filename: sprites|UNSCOSGB_STB.ANI
+			5:
+				Filename: sprites|UNSCOSGB_STBR.ANI
+			6:
+				Filename: sprites|UNSCOSGB_STR.ANI
+			7:
+				Filename: sprites|UNSCOSGB_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNSCOSGB_ATT.ANI:
+			0:
+				Filename: sprites|UNSCOSGB_ATT.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATTL.ANI:
+			1:
+				Filename: sprites|UNSCOSGB_ATTL.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATL.ANI:
+			2:
+				Filename: sprites|UNSCOSGB_ATL.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATBL.ANI:
+			3:
+				Filename: sprites|UNSCOSGB_ATBL.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATB.ANI:
+			4:
+				Filename: sprites|UNSCOSGB_ATB.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATBR.ANI:
+			5:
+				Filename: sprites|UNSCOSGB_ATBR.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATR.ANI:
+			6:
+				Filename: sprites|UNSCOSGB_ATR.ANI
 				Length: 2
-			sprites|UNSCOSGB_ATTR.ANI:
+			7:
+				Filename: sprites|UNSCOSGB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 107
 	move:
 		Combine:
-			sprites|UNSCOSGB_WAT.ANI:
+			0:
+				Filename: sprites|UNSCOSGB_WAT.ANI
 				Length: 3
-			sprites|UNSCOSGB_WATL.ANI:
+			1:
+				Filename: sprites|UNSCOSGB_WATL.ANI
 				Length: 3
-			sprites|UNSCOSGB_WAL.ANI:
+			2:
+				Filename: sprites|UNSCOSGB_WAL.ANI
 				Length: 3
-			sprites|UNSCOSGB_WABL.ANI:
+			3:
+				Filename: sprites|UNSCOSGB_WABL.ANI
 				Length: 3
-			sprites|UNSCOSGB_WAB.ANI:
+			4:
+				Filename: sprites|UNSCOSGB_WAB.ANI
 				Length: 3
-			sprites|UNSCOSGB_WABR.ANI:
+			5:
+				Filename: sprites|UNSCOSGB_WABR.ANI
 				Length: 3
-			sprites|UNSCOSGB_WAR.ANI:
+			6:
+				Filename: sprites|UNSCOSGB_WAR.ANI
 				Length: 3
-			sprites|UNSCOSGB_WATR.ANI:
+			7:
+				Filename: sprites|UNSCOSGB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNSCOSGB_DEAD.ANI
+	die:
+		Filename: sprites|UNSCOSGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 26
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 27
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMESCORPIONSAVAGE.ANI
-	portrait: sprites|COLONYSCORPIONB3DB.ANI
+	name:
+		Filename: sprites|NAMESCORPIONSAVAGE.ANI
+	portrait:
+		Filename: sprites|COLONYSCORPIONB3DB.ANI
 
 scorpions_heavy:
 	idle:
 		Combine:
-			sprites|UNSCOSTG_STT.ANI:
-			sprites|UNSCOSTG_STTL.ANI:
-			sprites|UNSCOSTG_STL.ANI:
-			sprites|UNSCOSTG_STBL.ANI:
-			sprites|UNSCOSTG_STB.ANI:
-			sprites|UNSCOSTG_STBR.ANI:
-			sprites|UNSCOSTG_STR.ANI:
-			sprites|UNSCOSTG_STTR.ANI:
+			0:
+				Filename: sprites|UNSCOSTG_STT.ANI
+			1:
+				Filename: sprites|UNSCOSTG_STTL.ANI
+			2:
+				Filename: sprites|UNSCOSTG_STL.ANI
+			3:
+				Filename: sprites|UNSCOSTG_STBL.ANI
+			4:
+				Filename: sprites|UNSCOSTG_STB.ANI
+			5:
+				Filename: sprites|UNSCOSTG_STBR.ANI
+			6:
+				Filename: sprites|UNSCOSTG_STR.ANI
+			7:
+				Filename: sprites|UNSCOSTG_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNSCOSTG_ATT.ANI:
+			0:
+				Filename: sprites|UNSCOSTG_ATT.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATTL.ANI:
+			1:
+				Filename: sprites|UNSCOSTG_ATTL.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATL.ANI:
+			2:
+				Filename: sprites|UNSCOSTG_ATL.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATBL.ANI:
+			3:
+				Filename: sprites|UNSCOSTG_ATBL.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATB.ANI:
+			4:
+				Filename: sprites|UNSCOSTG_ATB.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATBR.ANI:
+			5:
+				Filename: sprites|UNSCOSTG_ATBR.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATR.ANI:
+			6:
+				Filename: sprites|UNSCOSTG_ATR.ANI
 				Length: 2
-			sprites|UNSCOSTG_ATTR.ANI:
+			7:
+				Filename: sprites|UNSCOSTG_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 107
 	move:
 		Combine:
-			sprites|UNSCOSTG_WAT.ANI:
+			0:
+				Filename: sprites|UNSCOSTG_WAT.ANI
 				Length: 3
-			sprites|UNSCOSTG_WATL.ANI:
+			1:
+				Filename: sprites|UNSCOSTG_WATL.ANI
 				Length: 3
-			sprites|UNSCOSTG_WAL.ANI:
+			2:
+				Filename: sprites|UNSCOSTG_WAL.ANI
 				Length: 3
-			sprites|UNSCOSTG_WABL.ANI:
+			3:
+				Filename: sprites|UNSCOSTG_WABL.ANI
 				Length: 3
-			sprites|UNSCOSTG_WAB.ANI:
+			4:
+				Filename: sprites|UNSCOSTG_WAB.ANI
 				Length: 3
-			sprites|UNSCOSTG_WABR.ANI:
+			5:
+				Filename: sprites|UNSCOSTG_WABR.ANI
 				Length: 3
-			sprites|UNSCOSTG_WAR.ANI:
+			6:
+				Filename: sprites|UNSCOSTG_WAR.ANI
 				Length: 3
-			sprites|UNSCOSTG_WATR.ANI:
+			7:
+				Filename: sprites|UNSCOSTG_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNSCOSTG_DEAD.ANI
+	die:
+		Filename: sprites|UNSCOSTG_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 28
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 29
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMESCORPIONNINJA.ANI
-	portrait: sprites|COLONYSCORPIONC3DB.ANI
+	name:
+		Filename: sprites|NAMESCORPIONNINJA.ANI
+	portrait:
+		Filename: sprites|COLONYSCORPIONC3DB.ANI

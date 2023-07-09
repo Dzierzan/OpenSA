@@ -1,61 +1,76 @@
 editor-overlay:
-	copy: bits/copypaste.png
+	copy:
+		Filename: bits/copypaste.png
 		Start: 0
 		Length: 1
-	paste: bits/copypaste.png
+	paste:
+		Filename: bits/copypaste.png
 		Start: 1
 		Length: 1
 
 shroud:
-	shroud: bits/shroud.png
+	shroud:
+		Filename: bits/shroud.png
 		Length: 16
-	shroudfull: bits/shroud.png
+	shroudfull:
+		Filename: bits/shroud.png
 		Start: 1
-	fog: bits/shroud.png
+	fog:
+		Filename: bits/shroud.png
 		Length: 16
-	fogfull: bits/shroud.png
+	fogfull:
+		Filename: bits/shroud.png
 		Start: 1
 
 clock:
-	idle: bits/clock.png
+	idle:
+		Filename: bits/clock.png
 		Length: 13
 		Offset: -2,43
 
 clock_empty:
-	idle: bits/empty.png
+	idle:
+		Filename: bits/empty.png
 
 mpspawn:
-	idle: bits/mpspawn.png
+	idle:
+		Filename: bits/mpspawn.png
 
 moveflsh:
-	idle: bits/empty.png
+	idle:
+		Filename: bits/empty.png
 
 colony_bit1:
-	idle: sprites|COLONYPICKUPA.ANI
+	idle:
+		Filename: sprites|COLONYPICKUPA.ANI
 		Tick: 100
 		Length: 7
 		ZOffset: -900
 
 colony_bit2:
-	idle: sprites|COLONYPICKUPB.ANI
+	idle:
+		Filename: sprites|COLONYPICKUPB.ANI
 		Tick: 100
 		Length: 7
 		ZOffset: -900
 
 colony_bit3:
-	idle: sprites|COLONYPICKUPC.ANI
+	idle:
+		Filename: sprites|COLONYPICKUPC.ANI
 		Tick: 100
 		Length: 7
 		ZOffset: -900
 
 colony_bit4:
-	idle: sprites|COLONYPICKUPD.ANI
+	idle:
+		Filename: sprites|COLONYPICKUPD.ANI
 		Tick: 100
 		Length: 7
 		ZOffset: -900
 
 green_colony_bit1:
-	idle: bits/greencolonybits.png
+	idle:
+		Filename: bits/greencolonybits.png
 		Start: 5
 		Tick: 100
 		Reverses: True
@@ -63,7 +78,8 @@ green_colony_bit1:
 		ZOffset: -900
 
 green_colony_bit2:
-	idle: bits/greencolonybits.png
+	idle:
+		Filename: bits/greencolonybits.png
 		Start: 10
 		Tick: 100
 		Reverses: True
@@ -71,7 +87,8 @@ green_colony_bit2:
 		ZOffset: -900
 
 green_colony_bit3:
-	idle: bits/greencolonybits.png
+	idle:
+		Filename: bits/greencolonybits.png
 		Start: 15
 		Tick: 100
 		Reverses: True
@@ -79,7 +96,8 @@ green_colony_bit3:
 		ZOffset: -900
 
 green_colony_bit4:
-	idle: bits/greencolonybits-small.png
+	idle:
+		Filename: bits/greencolonybits-small.png
 		Start: 10
 		Tick: 100
 		Reverses: True
@@ -87,14 +105,16 @@ green_colony_bit4:
 		ZOffset: -900
 
 green_colony_bit_small1:
-	idle: bits/greencolonybits-small.png
+	idle:
+		Filename: bits/greencolonybits-small.png
 		Tick: 100
 		Reverses: True
 		Length: 5
 		ZOffset: -900
 
 green_colony_bit_small2:
-	idle: bits/greencolonybits-small.png
+	idle:
+		Filename: bits/greencolonybits-small.png
 		Start: 5
 		Tick: 100
 		Reverses: True
@@ -102,7 +122,8 @@ green_colony_bit_small2:
 		ZOffset: -900
 
 green_colony_bit_small3:
-	idle: bits/greencolonybits-small.png
+	idle:
+		Filename: bits/greencolonybits-small.png
 		Start: 10
 		Tick: 100
 		Reverses: True
@@ -110,7 +131,8 @@ green_colony_bit_small3:
 		ZOffset: -900
 
 green_colony_bit_small4:
-	idle: bits/greencolonybits-small.png
+	idle:
+		Filename: bits/greencolonybits-small.png
 		Start: 15
 		Tick: 100
 		Reverses: True
@@ -120,80 +142,129 @@ green_colony_bit_small4:
 pips:
 	groups:
 		Combine:
-			sprites|NUMBER0.ANI:
-			sprites|NUMBER1.ANI:
-			sprites|NUMBER2.ANI:
-			sprites|NUMBER3.ANI:
-			sprites|NUMBER4.ANI:
-			sprites|NUMBER5.ANI:
-			sprites|NUMBER6.ANI:
-			sprites|NUMBER7.ANI:
-			sprites|NUMBER8.ANI:
-			sprites|NUMBER9.ANI:
+			0:
+				Filename: sprites|NUMBER0.ANI
+			1:
+				Filename: sprites|NUMBER1.ANI
+			2:
+				Filename: sprites|NUMBER2.ANI
+			3:
+				Filename: sprites|NUMBER3.ANI
+			4:
+				Filename: sprites|NUMBER4.ANI
+			5:
+				Filename: sprites|NUMBER5.ANI
+			6:
+				Filename: sprites|NUMBER6.ANI
+			7:
+				Filename: sprites|NUMBER7.ANI
+			8:
+				Filename: sprites|NUMBER8.ANI
+			9:
+				Filename: sprites|NUMBER9.ANI
 		Length: 10
 
 progressbar:
 	colony:
 		Combine:
-			sprites|COLONYPROGRESS00.ANI:
-			sprites|COLONYPROGRESS01.ANI:
-			sprites|COLONYPROGRESS02.ANI:
-			sprites|COLONYPROGRESS03.ANI:
-			sprites|COLONYPROGRESS04.ANI:
-			sprites|COLONYPROGRESS05.ANI:
-			sprites|COLONYPROGRESS06.ANI:
-			sprites|COLONYPROGRESS07.ANI:
-			sprites|COLONYPROGRESS08.ANI:
-			sprites|COLONYPROGRESS09.ANI:
-			sprites|COLONYPROGRESS10.ANI:
-			sprites|COLONYPROGRESS11.ANI:
-			sprites|COLONYPROGRESS12.ANI:
-			sprites|COLONYPROGRESS13.ANI:
-			sprites|COLONYPROGRESS14.ANI:
-			sprites|COLONYPROGRESS15.ANI:
-			sprites|COLONYPROGRESS16.ANI:
-			sprites|COLONYPROGRESS17.ANI:
-			sprites|COLONYPROGRESS18.ANI:
-			sprites|COLONYPROGRESS19.ANI:
-			sprites|COLONYPROGRESS20.ANI:
-			sprites|COLONYPROGRESS21.ANI:
-			sprites|COLONYPROGRESS22.ANI:
-			sprites|COLONYPROGRESS23.ANI:
-			sprites|COLONYPROGRESS24.ANI:
-			sprites|COLONYPROGRESS25.ANI:
-			sprites|COLONYPROGRESS26.ANI:
-			sprites|COLONYPROGRESS27.ANI:
-			sprites|COLONYPROGRESS28.ANI:
-			sprites|COLONYPROGRESS29.ANI:
-			sprites|COLONYPROGRESS30.ANI:
-			sprites|COLONYPROGRESS31.ANI:
+			0:
+				Filename: sprites|COLONYPROGRESS00.ANI
+			1:
+				Filename: sprites|COLONYPROGRESS01.ANI
+			2:
+				Filename: sprites|COLONYPROGRESS02.ANI
+			3:
+				Filename: sprites|COLONYPROGRESS03.ANI
+			4:
+				Filename: sprites|COLONYPROGRESS04.ANI
+			5:
+				Filename: sprites|COLONYPROGRESS05.ANI
+			6:
+				Filename: sprites|COLONYPROGRESS06.ANI
+			7:
+				Filename: sprites|COLONYPROGRESS07.ANI
+			8:
+				Filename: sprites|COLONYPROGRESS08.ANI
+			9:
+				Filename: sprites|COLONYPROGRESS09.ANI
+			10:
+				Filename: sprites|COLONYPROGRESS10.ANI
+			11:
+				Filename: sprites|COLONYPROGRESS11.ANI
+			12:
+				Filename: sprites|COLONYPROGRESS12.ANI
+			13:
+				Filename: sprites|COLONYPROGRESS13.ANI
+			14:
+				Filename: sprites|COLONYPROGRESS14.ANI
+			15:
+				Filename: sprites|COLONYPROGRESS15.ANI
+			16:
+				Filename: sprites|COLONYPROGRESS16.ANI
+			17:
+				Filename: sprites|COLONYPROGRESS17.ANI
+			18:
+				Filename: sprites|COLONYPROGRESS18.ANI
+			19:
+				Filename: sprites|COLONYPROGRESS19.ANI
+			20:
+				Filename: sprites|COLONYPROGRESS20.ANI
+			21:
+				Filename: sprites|COLONYPROGRESS21.ANI
+			22:
+				Filename: sprites|COLONYPROGRESS22.ANI
+			23:
+				Filename: sprites|COLONYPROGRESS23.ANI
+			24:
+				Filename: sprites|COLONYPROGRESS24.ANI
+			25:
+				Filename: sprites|COLONYPROGRESS25.ANI
+			26:
+				Filename: sprites|COLONYPROGRESS26.ANI
+			27:
+				Filename: sprites|COLONYPROGRESS27.ANI
+			28:
+				Filename: sprites|COLONYPROGRESS28.ANI
+			29:
+				Filename: sprites|COLONYPROGRESS29.ANI
+			30:
+				Filename: sprites|COLONYPROGRESS30.ANI
+			31:
+				Filename: sprites|COLONYPROGRESS31.ANI
 		Length: 32
 
 rallypoint:
-	flag: bits/flag.png
+	flag:
+		Filename: bits/flag.png
 		Length: 5
 		ZOffset: 3072
 		Tick: 150
 		Reverses: true
 		Offset: -6,-6
-	circles: bits/empty.png
+	circles:
+		Filename: bits/empty.png
 
 minimapproduce:
-	idle: sprites|MiniMapProduce.ANI
+	idle:
+		Filename: sprites|MiniMapProduce.ANI
 		Length: 6
 		Tick: 100
 
 startcamera:
-	idle: bits/camera.png
+	idle:
+		Filename: bits/camera.png
 		ZOffset: 10000
 
 randomcolony:
-	idle: bits/random-colony.png
+	idle:
+		Filename: bits/random-colony.png
 		Offset: 48, 48
 		ZOffset: 10000
 
 blank1:
-	idle: bits/empty.png
+	idle:
+		Filename: bits/empty.png
 
 blank2:
-	idle: bits/empty.png
+	idle:
+		Filename: bits/empty.png

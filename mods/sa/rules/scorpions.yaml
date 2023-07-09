@@ -5,7 +5,7 @@ World:
 		Description: Specialization: -25% breeding time for scorpion units.
 	StartingUnits@Scorpions:
 		Class: none
-		ClassName: Colony
+		ClassName: options-starting-units.colony
 		BaseActor: scorpions_colony
 		Factions: scorpions
 
@@ -14,7 +14,6 @@ World:
 	ProductionTimeMultiplier@ScorpionFactionSpecialization:
 		Multiplier: 75
 		Prerequisites: scorpions_faction_true
-
 	ProductionTimeMultiplier@ProductionBooster_1:
 		Prerequisites: multiplier1
 		Multiplier: 90
@@ -45,7 +44,6 @@ World:
 	ProductionTimeMultiplier@ProductionBooster_10:
 		Prerequisites: multiplier10
 		Multiplier: 5
-
 	GrantConditionOnPrerequisite@@FirepowerBooster_1:
 		Condition: firepower_1
 		Prerequisites: modifier1
@@ -76,7 +74,6 @@ World:
 	GrantConditionOnPrerequisite@@FirepowerBooster_10:
 		Condition: firepower_10
 		Prerequisites: modifier10
-
 	FirepowerMultiplier@FirepowerBooster_1:
 		RequiresCondition: firepower_1
 		Modifier: 110
@@ -107,7 +104,6 @@ World:
 	FirepowerMultiplier@FirepowerBooster_10:
 		RequiresCondition: firepower_10
 		Modifier: 200
-
 	Buildable:
 		Queue: Unit.Scorpions
 		Prerequisites: ~scorpions_colony

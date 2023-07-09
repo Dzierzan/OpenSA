@@ -1,151 +1,221 @@
 beetles_colony:
-	idle-overlay: sprites|STCLYBTB_COLONY.ANI
+	idle-overlay:
+		Filename: sprites|STCLYBTB_COLONY.ANI
 		ZOffset: 2500
-	idle: sprites|STCLYBTX_COLONYBASE.ANI
+	idle:
+		Filename: sprites|STCLYBTX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYBTG_WNORMALT.ANI:
-			sprites|STCLYBTG_WNORMALT2.ANI:
-			sprites|STCLYBTG_WNORMALTL.ANI:
-			sprites|STCLYBTG_WNORMALTL2.ANI:
-			sprites|STCLYBTG_WNORMALL.ANI:
-			sprites|STCLYBTG_WNORMALL2.ANI:
-			sprites|STCLYBTG_WNORMALBL.ANI:
-			sprites|STCLYBTG_WNORMALBL2.ANI:
-			sprites|STCLYBTG_WNORMALB.ANI:
-			sprites|STCLYBTG_WNORMALB2.ANI:
-			sprites|STCLYBTG_WNORMALBR.ANI:
-			sprites|STCLYBTG_WNORMALBR2.ANI:
-			sprites|STCLYBTG_WNORMALR.ANI:
-			sprites|STCLYBTG_WNORMALR2.ANI:
-			sprites|STCLYBTG_WNORMALTR.ANI:
-			sprites|STCLYBTG_WNORMALTR2.ANI:
+			0:
+				Filename: sprites|STCLYBTG_WNORMALT.ANI
+			1:
+				Filename: sprites|STCLYBTG_WNORMALT2.ANI
+			2:
+				Filename: sprites|STCLYBTG_WNORMALTL.ANI
+			3:
+				Filename: sprites|STCLYBTG_WNORMALTL2.ANI
+			4:
+				Filename: sprites|STCLYBTG_WNORMALL.ANI
+			5:
+				Filename: sprites|STCLYBTG_WNORMALL2.ANI
+			6:
+				Filename: sprites|STCLYBTG_WNORMALBL.ANI
+			7:
+				Filename: sprites|STCLYBTG_WNORMALBL2.ANI
+			8:
+				Filename: sprites|STCLYBTG_WNORMALB.ANI
+			9:
+				Filename: sprites|STCLYBTG_WNORMALB2.ANI
+			10:
+				Filename: sprites|STCLYBTG_WNORMALBR.ANI
+			11:
+				Filename: sprites|STCLYBTG_WNORMALBR2.ANI
+			12:
+				Filename: sprites|STCLYBTG_WNORMALR.ANI
+			13:
+				Filename: sprites|STCLYBTG_WNORMALR2.ANI
+			14:
+				Filename: sprites|STCLYBTG_WNORMALTR.ANI
+			15:
+				Filename: sprites|STCLYBTG_WNORMALTR2.ANI
 		Facings: 16
 		ZOffset: 2600
 	shoot:
 		Combine:
-			sprites|STCLYBTG_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYBTG_WFIRET.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRET2.ANI:
+			1:
+				Filename: sprites|STCLYBTG_WFIRET2.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYBTG_WFIRETL.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETL2.ANI:
-				Length: 2
-				Offset: 0,1
-			sprites|STCLYBTG_WFIREL.ANI:
-				Length: 2
-				Offset: 0,1
-			sprites|STCLYBTG_WFIREL2.ANI:
+			3:
+				Filename: sprites|STCLYBTG_WFIRETL2.ANI
 				Length: 2
 				Offset: 0,1
-			sprites|STCLYBTG_WFIREBL.ANI:
+			4:
+				Filename: sprites|STCLYBTG_WFIREL.ANI
 				Length: 2
 				Offset: 0,1
-			sprites|STCLYBTG_WFIREBL2.ANI:
+			5:
+				Filename: sprites|STCLYBTG_WFIREL2.ANI
+				Length: 2
+				Offset: 0,1
+			6:
+				Filename: sprites|STCLYBTG_WFIREBL.ANI
+				Length: 2
+				Offset: 0,1
+			7:
+				Filename: sprites|STCLYBTG_WFIREBL2.ANI
 				Length: 2
 				Offset: 1,1
-			sprites|STCLYBTG_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYBTG_WFIREB.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREB2.ANI:
+			9:
+				Filename: sprites|STCLYBTG_WFIREB2.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYBTG_WFIREBR.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREBR2.ANI:
+			11:
+				Filename: sprites|STCLYBTG_WFIREBR2.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYBTG_WFIRER.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIRER2.ANI:
+			13:
+				Filename: sprites|STCLYBTG_WFIRER2.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYBTG_WFIRETR.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETR2.ANI:
+			15:
+				Filename: sprites|STCLYBTG_WFIRETR2.ANI
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 40
 		ZOffset: 2600
-	name: sprites|NAMEBEETLECOLONY.ANI
+	name:
+		Filename: sprites|NAMEBEETLECOLONY.ANI
 
 beetles_colony_turret:
-	idle-overlay: bits/beetlesColonyTurret.png
+	idle-overlay:
+		Filename: bits/beetlesColonyTurret.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/beetlesColonyTurret.png
+	idle:
+		Filename: bits/beetlesColonyTurret.png
 		Start: 1
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYBTG_WNORMALT.ANI:
-			sprites|STCLYBTG_WNORMALT2.ANI:
-			sprites|STCLYBTG_WNORMALTL.ANI:
-			sprites|STCLYBTG_WNORMALTL2.ANI:
-			sprites|STCLYBTG_WNORMALL.ANI:
-			sprites|STCLYBTG_WNORMALL2.ANI:
-			sprites|STCLYBTG_WNORMALBL.ANI:
-			sprites|STCLYBTG_WNORMALBL2.ANI:
-			sprites|STCLYBTG_WNORMALB.ANI:
-			sprites|STCLYBTG_WNORMALB2.ANI:
-			sprites|STCLYBTG_WNORMALBR.ANI:
-			sprites|STCLYBTG_WNORMALBR2.ANI:
-			sprites|STCLYBTG_WNORMALR.ANI:
-			sprites|STCLYBTG_WNORMALR2.ANI:
-			sprites|STCLYBTG_WNORMALTR.ANI:
-			sprites|STCLYBTG_WNORMALTR2.ANI:
+			0:
+				Filename: sprites|STCLYBTG_WNORMALT.ANI
+			1:
+				Filename: sprites|STCLYBTG_WNORMALT2.ANI
+			2:
+				Filename: sprites|STCLYBTG_WNORMALTL.ANI
+			3:
+				Filename: sprites|STCLYBTG_WNORMALTL2.ANI
+			4:
+				Filename: sprites|STCLYBTG_WNORMALL.ANI
+			5:
+				Filename: sprites|STCLYBTG_WNORMALL2.ANI
+			6:
+				Filename: sprites|STCLYBTG_WNORMALBL.ANI
+			7:
+				Filename: sprites|STCLYBTG_WNORMALBL2.ANI
+			8:
+				Filename: sprites|STCLYBTG_WNORMALB.ANI
+			9:
+				Filename: sprites|STCLYBTG_WNORMALB2.ANI
+			10:
+				Filename: sprites|STCLYBTG_WNORMALBR.ANI
+			11:
+				Filename: sprites|STCLYBTG_WNORMALBR2.ANI
+			12:
+				Filename: sprites|STCLYBTG_WNORMALR.ANI
+			13:
+				Filename: sprites|STCLYBTG_WNORMALR2.ANI
+			14:
+				Filename: sprites|STCLYBTG_WNORMALTR.ANI
+			15:
+				Filename: sprites|STCLYBTG_WNORMALTR2.ANI
 		Facings: 16
 		ZOffset: 1256
 	shoot:
 		Combine:
-			sprites|STCLYBTG_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYBTG_WFIRET.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRET2.ANI:
+			1:
+				Filename: sprites|STCLYBTG_WFIRET2.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYBTG_WFIRETL.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETL2.ANI:
-				Length: 2
-				Offset: 0,1
-			sprites|STCLYBTG_WFIREL.ANI:
-				Length: 2
-				Offset: 0,1
-			sprites|STCLYBTG_WFIREL2.ANI:
+			3:
+				Filename: sprites|STCLYBTG_WFIRETL2.ANI
 				Length: 2
 				Offset: 0,1
-			sprites|STCLYBTG_WFIREBL.ANI:
+			4:
+				Filename: sprites|STCLYBTG_WFIREL.ANI
 				Length: 2
 				Offset: 0,1
-			sprites|STCLYBTG_WFIREBL2.ANI:
+			5:
+				Filename: sprites|STCLYBTG_WFIREL2.ANI
+				Length: 2
+				Offset: 0,1
+			6:
+				Filename: sprites|STCLYBTG_WFIREBL.ANI
+				Length: 2
+				Offset: 0,1
+			7:
+				Filename: sprites|STCLYBTG_WFIREBL2.ANI
 				Length: 2
 				Offset: 1,1
-			sprites|STCLYBTG_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYBTG_WFIREB.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREB2.ANI:
+			9:
+				Filename: sprites|STCLYBTG_WFIREB2.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYBTG_WFIREBR.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIREBR2.ANI:
+			11:
+				Filename: sprites|STCLYBTG_WFIREBR2.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYBTG_WFIRER.ANI
 				Length: 2
 				Offset: 1,0
-			sprites|STCLYBTG_WFIRER2.ANI:
+			13:
+				Filename: sprites|STCLYBTG_WFIRER2.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYBTG_WFIRETR.ANI
 				Length: 2
-			sprites|STCLYBTG_WFIRETR2.ANI:
+			15:
+				Filename: sprites|STCLYBTG_WFIRETR2.ANI
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 40
 		ZOffset: 1256
-	name: sprites|NAMEBEETLECOLONY.ANI #TODO PLACEHOLDER
+	name: #TODO PLACEHOLDER
+		Filename: sprites|NAMEBEETLECOLONY.ANI

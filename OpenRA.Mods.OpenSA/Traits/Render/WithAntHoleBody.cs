@@ -46,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Render
 			this.info = info;
 			renderSprites = self.Trait<RenderSprites>();
 			var tileset = self.World.Map.Tileset.ToLowerInvariant();
-			var image = "{0}_{1}".F(renderSprites.GetImage(self), tileset);
+			var image = $"{renderSprites.GetImage(self)}_{tileset}";
 
 			defaultAnimation = new Animation(self.World, image);
 			defaultAnimation.Play(info.IdleSequence);

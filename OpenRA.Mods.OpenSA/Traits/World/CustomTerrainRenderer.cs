@@ -30,7 +30,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 			var failed = false;
 			Action<uint, string> onMissingImage = (id, f) =>
 			{
-				onError("\tTemplate `{0}` references sprite `{1}` that does not exist.".F(id, f));
+				onError($"\tTemplate `{id}` references sprite `{f}` that does not exist.");
 				missingImages.Add(f);
 				failed = true;
 			};
@@ -48,7 +48,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 							if (t.Value[i] == null || tileCache.HasTileSprite(new TerrainTile(t.Key, (byte)i), v))
 								continue;
 
-							onError("\tTemplate `{0}` references frame {1} that does not exist in sprite `{2}`.".F(t.Key, i, templateInfo.Images[v]));
+							onError($"\tTemplate `{t.Key}` references frame {i} that does not exist in sprite `{templateInfo.Images[v]}`");
 							failed = true;
 						}
 					}

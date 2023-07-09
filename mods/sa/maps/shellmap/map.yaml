@@ -16,8 +16,6 @@ Visibility: Shellmap
 
 Categories: Shellmap
 
-Translations:
-
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral

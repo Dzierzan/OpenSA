@@ -87,7 +87,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 			mapSize = new Size(x * 2, y * 2);
 
 			if (!Game.ModData.DefaultTerrainInfo.TryGetValue(tileset, out var terrainInfo))
-				throw new InvalidDataException("Unknown tileset {0}".F(tileset));
+				throw new InvalidDataException($"Unknown tileset {tileset}");
 
 			this.terrainInfo = terrainInfo as CustomTerrain;
 
@@ -157,7 +157,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 		{
 			if (!terrainInfo.Templates.TryGetValue(tileIndex, out var template))
 			{
-				Console.WriteLine("Tile with Id {0} could not be found. Defaulting to clear.".F(tileIndex));
+				Console.WriteLine($"Tile with Id {tileIndex} could not be found. Defaulting to clear.");
 				return clearTile;
 			}
 
@@ -176,7 +176,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 				var invalidLocation = false;
 				if (x < 0 || x > mapSize.Width || y < 0 || y > mapSize.Height)
 				{
-					Console.WriteLine("Invalid coordinates {0},{1} for actor type {2}.".F(x, y, type));
+					Console.WriteLine($"Invalid coordinates {x},{y} for actor type {type}.");
 					invalidLocation = true;
 				}
 
@@ -195,7 +195,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 
 				if (!ActorMap.ContainsKey(type))
 				{
-					Console.WriteLine("Ignoring unknown actor type: `{0}` @ {1},{2}".F(type, x, y));
+					Console.WriteLine($"Ignoring unknown actor type: `{type}` @ {x},{y}");
 					continue;
 				}
 
@@ -227,7 +227,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 				var actorCount = map.ActorDefinitions.Count;
 
 				if (!map.Rules.Actors.ContainsKey(actorType))
-					Console.WriteLine("Ignoring unknown actor type: `{0}`".F(actorType));
+					Console.WriteLine($"Ignoring unknown actor type: `{actorType}`");
 				else
 					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + actorCount++, actor.Save()));
 			}

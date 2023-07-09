@@ -60,7 +60,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 			{
 				var weaponToLower = Weapon.ToLowerInvariant();
 				if (!rules.Weapons.TryGetValue(weaponToLower, out var weapon))
-					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
+					throw new YamlException($"Weapons Ruleset does not contain an entry '{weaponToLower}'");
 				WeaponInfo = weapon;
 			}
 
@@ -68,7 +68,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 			{
 				var explodesWeaponToLower = Explode.ToLowerInvariant();
 				if (!rules.Weapons.TryGetValue(explodesWeaponToLower, out var explodesInfo))
-					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(explodesWeaponToLower));
+					throw new YamlException($"Weapons Ruleset does not contain an entry '{explodesWeaponToLower}'");
 				ExplodeWeaponInfo = explodesInfo;
 			}
 		}

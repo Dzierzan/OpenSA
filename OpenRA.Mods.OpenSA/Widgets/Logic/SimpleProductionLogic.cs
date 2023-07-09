@@ -20,6 +20,9 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 {
 	public class SimpleProductionTooltipLogic : ChromeLogic
 	{
+		[TranslationReference("prequisites")]
+		const string Requires = "label-requires";
+
 		[ObjectCreator.UseCtor]
 		public SimpleProductionTooltipLogic(Widget widget, TooltipContainerWidget tooltipContainer, Player player, Func<ProductionIcon> getTooltipIcon)
 		{
@@ -43,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			var requiresFormat = requiresLabel.Text;
 
 			ActorInfo lastActor = null;
-			Hotkey lastHotkey = Hotkey.Invalid;
+			var lastHotkey = Hotkey.Invalid;
 			var descLabelY = descLabel.Bounds.Y;
 			var descLabelPadding = descLabel.Bounds.Height;
 
@@ -83,7 +86,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 
 				if (hotkeyLabel.Visible)
 				{
-					var hotkeyText = "({0})".F(hotkey.DisplayString());
+					var hotkeyText = $"({hotkey.DisplayString()})";
 
 					hotkeyWidth = font.Measure(hotkeyText).X + 2 * nameLabel.Bounds.X;
 					hotkeyLabel.Text = hotkeyText;
@@ -96,7 +99,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 				var requiresSize = int2.Zero;
 				if (prereqs.Any())
 				{
-					requiresLabel.Text = requiresFormat.F(prereqs.JoinWith(", "));
+					requiresLabel.Text = TranslationProvider.GetString(Requires, Translation.Arguments("prequisites", prereqs.JoinWith(", ")));
 					requiresSize = requiresFont.Measure(requiresLabel.Text);
 					requiresLabel.Visible = true;
 					descLabel.Bounds.Y = descLabelY + requiresLabel.Bounds.Height;
