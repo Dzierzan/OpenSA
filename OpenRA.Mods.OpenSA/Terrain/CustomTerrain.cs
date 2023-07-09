@@ -79,7 +79,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 
 		[FieldLoader.Ignore]
 		public readonly TerrainTypeInfo[] TerrainInfo;
-		readonly Dictionary<string, byte> terrainIndexByType = new Dictionary<string, byte>();
+		readonly Dictionary<string, byte> terrainIndexByType = new();
 		readonly byte defaultWalkableTerrainIndex;
 
 		public CustomTerrain(IReadOnlyFileSystem fileSystem, string filepath)
@@ -197,7 +197,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 					var randomTile = similarTiles.Random(r);
 					for (var f = 0; f < 4; f++)
 					{
-						var cell = new MPos(i + (f % 2), j + (f / 2));
+						var cell = new MPos(i + f % 2, j + f / 2);
 						map.Tiles[cell] = new TerrainTile(randomTile.Key, (byte)f);
 					}
 				}

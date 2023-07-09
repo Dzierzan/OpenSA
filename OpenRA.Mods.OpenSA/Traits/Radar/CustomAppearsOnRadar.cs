@@ -12,7 +12,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.OpenSA.Traits.Colony;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
@@ -38,7 +37,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 
 		readonly CustomAppearsOnRadarInfo info;
 
-		readonly List<CVec> clockCells = new List<CVec>();
+		readonly List<CVec> clockCells = new();
 
 		IRadarColorModifier modifier;
 
@@ -77,7 +76,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Radar
 			t += info.TimeStep;
 		}
 
-		void IRadarSignature.PopulateRadarSignatureCells(Actor self, List<(CPos, Color)> destinationBuffer)
+		void IRadarSignature.PopulateRadarSignatureCells(Actor self, List<(CPos Cell, Color Color)> destinationBuffer)
 		{
 			var isProducing = productionQueues.Any(queue => queue.AllQueued().Any());
 

@@ -23,7 +23,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 		public readonly short TransitionCost = 0;
 
 		[Desc("The terrain types that this actor can transition on. Leave empty to allow any.")]
-		public readonly HashSet<string> TransitionTerrainTypes = new HashSet<string>();
+		public readonly HashSet<string> TransitionTerrainTypes = new();
 
 		public override bool DisableDomainPassabilityCheck { get { return true; } }
 

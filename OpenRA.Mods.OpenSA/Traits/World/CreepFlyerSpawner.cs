@@ -36,7 +36,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 		public readonly int QuantizedFacings = 8;
 
 		[Desc("Spawn and remove the creeps this far outside the map.")]
-		public readonly WDist Cordon = new WDist(7680);
+		public readonly WDist Cordon = new(7680);
 
 		[Desc("Map player to use when 'InternalName' is defined on 'OwnerType'.")]
 		public readonly string InternalOwner = "Creeps";

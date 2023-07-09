@@ -32,7 +32,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		public readonly string ExplodeWeapon = null;
 
 		[Desc("Terrain where the projectile explodes instead of bouncing.")]
-		public readonly HashSet<string> InvalidBounceTerrain = new HashSet<string>();
+		public readonly HashSet<string> InvalidBounceTerrain = new();
 
 		[Desc("Modify distance of each bounce by this percentage of previous distance.")]
 		public readonly int BounceRangeModifier = 100;

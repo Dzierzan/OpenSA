@@ -35,7 +35,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 
 	public sealed class CustomTileCache : IDisposable
 	{
-		readonly Dictionary<ushort, TheaterTemplate> templates = new Dictionary<ushort, TheaterTemplate>();
+		readonly Dictionary<ushort, TheaterTemplate> templates = new();
 		readonly Cache<SheetType, SheetBuilder> sheetBuilders;
 		readonly Sprite missingTile;
 		readonly MersenneTwister random;

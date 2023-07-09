@@ -42,7 +42,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 		[ActorReference(typeof(ColonyInfo))]
 		public readonly string SpawnsActor = "Colony";
 
-		public readonly CVec Offset = new CVec(0, 0);
+		public readonly CVec Offset = new(0, 0);
 
 		public readonly string BackfallOwner = "Creeps";
 
@@ -77,7 +77,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 	public class DefeatedColony : ITick, INotifyKilled
 	{
 		readonly DefeatedColonyInfo info;
-		readonly Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
+		readonly Dictionary<OpenRA.Player, int> bitPickers = new();
 
 		int fireBitTimer;
 		OpenRA.Player newOwner;

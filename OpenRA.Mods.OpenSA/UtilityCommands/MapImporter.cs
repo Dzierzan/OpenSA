@@ -48,7 +48,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 				var type = stream.ReadASCII(82);
 
 				if (!(magic.Contains("GameA.DDF") || magic.Contains("Game.DDF")) || !type.Contains("Landscape"))
-					throw new ArgumentException("The map is in an unrecognized format!", "filename");
+					throw new ArgumentException("The map is in an unrecognized format!", nameof(filename));
 
 				Initialize(filename);
 				FillMap();
@@ -141,12 +141,12 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 
 					var tileInfo = (byte)(rawTile - offset);
 
-					var unknown = stream.ReadUInt8();
+					stream.ReadUInt8(); // unknown
 
-					for (int f = 0; f < 4; f++)
+					for (var f = 0; f < 4; f++)
 					{
 						var tile = GetTile(tileInfo, (byte)f);
-						var cell = new CPos(x + (f % 2), y + (f / 2));
+						var cell = new CPos(x + f % 2, y + f / 2);
 						map.Tiles[cell] = tile;
 					}
 				}
@@ -233,7 +233,7 @@ namespace OpenRA.Mods.OpenSA.UtilityCommands
 			}
 		}
 
-		public static Dictionary<int, (string ActorType, Color Color)> ActorMap = new Dictionary<int, (string, Color)>
+		public static Dictionary<int, (string ActorType, Color Color)> ActorMap = new()
 		{
 			{ 7, ("ants_light", Color.Red) },
 			{ 13, ("ants_light", Color.Yellow) },

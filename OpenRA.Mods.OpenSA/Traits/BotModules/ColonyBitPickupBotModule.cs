@@ -22,10 +22,10 @@ namespace OpenRA.Mods.OpenSA.Traits.BotModules
 	public class ColonyBitPickupBotModuleInfo : ConditionalTraitInfo
 	{
 		[Desc("Actor types that should not start hunting for colony bits.")]
-		public readonly HashSet<string> ExcludedUnitTypes = new HashSet<string>();
+		public readonly HashSet<string> ExcludedUnitTypes = new();
 
 		[Desc("Only these actor types should start hunting for colony bits.")]
-		public readonly HashSet<string> IncludedUnitTypes = new HashSet<string>();
+		public readonly HashSet<string> IncludedUnitTypes = new();
 
 		[Desc("Interval (in ticks) between giving out orders to idle units.")]
 		public readonly int ScanInterval = 50;

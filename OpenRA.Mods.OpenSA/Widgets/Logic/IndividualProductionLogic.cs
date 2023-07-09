@@ -120,7 +120,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 					// Select the first active tab
 					foreach (var b in typesContainer.Children)
 					{
-						if (!(b is ProductionTypeButtonWidget button) || button.IsDisabled())
+						if (b is not ProductionTypeButtonWidget button || button.IsDisabled())
 							continue;
 
 						button.OnClick();

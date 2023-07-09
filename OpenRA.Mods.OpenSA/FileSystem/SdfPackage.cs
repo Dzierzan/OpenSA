@@ -38,7 +38,7 @@ namespace OpenRA.Mods.OpenSA.FileSystem
 			public string Name { get; private set; }
 			public IEnumerable<string> Contents { get { return index.Keys; } }
 
-			readonly Dictionary<string, long> index = new Dictionary<string, long>();
+			readonly Dictionary<string, long> index = new();
 			readonly Stream s;
 
 			public SdfPackage(Stream sBase, string filename)
@@ -62,9 +62,7 @@ namespace OpenRA.Mods.OpenSA.FileSystem
 
 			public Stream GetStream(string filename)
 			{
-				long e;
-
-				if (!index.TryGetValue(filename, out e))
+				if (!index.TryGetValue(filename, out var e))
 					return null;
 
 				return new SdfSegmentStream(s, e);

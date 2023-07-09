@@ -142,7 +142,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 			{
 				for (var x = 0; x < template.Size.X; x++)
 				{
-					var tile = new TerrainTile(template.Id, (byte)(i++));
+					var tile = new TerrainTile(template.Id, (byte)i++);
 					if (!terrainInfo.TryGetTileInfo(tile, out var tileInfo))
 						continue;
 
@@ -190,7 +190,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 
 		IEnumerable<IRenderable> ITiledTerrainRenderer.RenderPreview(WorldRenderer wr, TerrainTemplateInfo t, WPos origin)
 		{
-			if (!(t is CustomTerrainTemplateInfo template))
+			if (t is not CustomTerrainTemplateInfo template)
 				yield break;
 
 			var i = 0;

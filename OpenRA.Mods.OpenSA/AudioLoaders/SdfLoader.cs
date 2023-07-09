@@ -17,7 +17,7 @@ namespace OpenRA.Mods.OpenSA.AudioLoaders
 {
 	public class SdfLoader : ISoundLoader
 	{
-		bool IsSdf(Stream s)
+		static bool IsSdf(Stream s)
 		{
 			return s is SdfPackageLoader.SdfSegmentStream;
 		}

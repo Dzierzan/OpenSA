@@ -65,10 +65,10 @@ namespace OpenRA.Mods.OpenSA.FileSystem
 			public string Name { get; private set; }
 			public IEnumerable<string> Contents { get { return filesList; } }
 
-			readonly Dictionary<string, long> ddfIndex = new Dictionary<string, long>();
-			readonly Dictionary<string, long> aniIndex = new Dictionary<string, long>();
-			readonly Dictionary<string, long> metaIndex = new Dictionary<string, long>();
-			readonly List<string> filesList = new List<string>();
+			readonly Dictionary<string, long> ddfIndex = new();
+			readonly Dictionary<string, long> aniIndex = new();
+			readonly Dictionary<string, long> metaIndex = new();
+			readonly List<string> filesList = new();
 			readonly Stream ddfStream;
 			readonly Stream aniStream;
 			readonly long palettePosition;
@@ -140,16 +140,14 @@ namespace OpenRA.Mods.OpenSA.FileSystem
 
 			public Stream GetStream(string filename)
 			{
-				long e;
-
 				if (filename.Equals("OpenSA.PAL"))
 					return new UndisposingSegmentStream(ddfStream, palettePosition, 256 * 4);
 
-				if (aniIndex.TryGetValue(filename.Replace(".ANI", ""), out e))
-					return new AniSegmentStream(aniStream, e, ddfStream, ddfIndex, metaIndex);
+				if (aniIndex.TryGetValue(filename.Replace(".ANI", ""), out var aniOffset))
+					return new AniSegmentStream(aniStream, aniOffset, ddfStream, ddfIndex, metaIndex);
 
-				if (ddfIndex.TryGetValue(filename.Replace(".DDF", ""), out e))
-					return new DdfSegmentStream(ddfStream, e, filename.StartsWith("TE"));
+				if (ddfIndex.TryGetValue(filename.Replace(".DDF", ""), out var ddfOffset))
+					return new DdfSegmentStream(ddfStream, ddfOffset, filename.StartsWith("TE"));
 
 				return null;
 			}

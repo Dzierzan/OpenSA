@@ -25,7 +25,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 
 		public readonly string NewOwner = "Neutral";
 
-		public readonly CVec Offset = new CVec(0, 0);
+		public readonly CVec Offset = new(0, 0);
 
 		public override object Create(ActorInitializer init)
 		{
