@@ -157,8 +157,11 @@ scorpions_colony_turret_small:
 		Footprint: x
 		LocalCenterOffset: -100,-250,0
 	HitShape:
-		Type: Circle
-			Radius: 512
+		UseTargetableCellsOffsets: False
+		TargetableOffsets: 0,186,0
+		Type: Rectangle
+			TopLeft: -312, -412
+			BottomRight: 652, 552
 	WithIdleOverlay:
 	Turreted:
 		TurnSpeed: 120
