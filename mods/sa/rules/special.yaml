@@ -186,8 +186,8 @@ productionbooster:
 		UseTargetableCellsOffsets: False
 		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0
 		Type: Rectangle
-			TopLeft: -1256, -904
-			BottomRight: 1800, 1104
+			TopLeft: -1156, -904
+			BottomRight: 1600, 1104
 	WithIdleOverlay:
 	Colony:
 		SpawnsActor: defeated_productionbooster
@@ -221,8 +221,8 @@ defeated_productionbooster:
 		UseTargetableCellsOffsets: False
 		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0
 		Type: Rectangle
-			TopLeft: -1256, -904
-			BottomRight: 1800, 1104
+			TopLeft: -1156, -904
+			BottomRight: 1600, 1104
 	WithIdleOverlay:
 	RenderSprites:
 		Image: productionbooster
@@ -297,7 +297,7 @@ defeated_firepowerbooster:
 		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
 		Type: Rectangle
 			TopLeft: -1256, -904
-			BottomRight: 1800, 1104
+			BottomRight: 1600, 1104
 	WithIdleOverlay:
 	RenderSprites:
 		Image: firepowerbooster
