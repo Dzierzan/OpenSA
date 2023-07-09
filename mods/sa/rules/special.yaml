@@ -262,7 +262,7 @@ firepowerbooster:
 		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
 		Type: Rectangle
 			TopLeft: -1256, -904
-			BottomRight: 1800, 1104
+			BottomRight: 1600, 1104
 	WithIdleOverlay:
 	Colony:
 		SpawnsActor: defeated_firepowerbooster
