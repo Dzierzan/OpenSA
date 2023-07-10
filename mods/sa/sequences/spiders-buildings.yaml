@@ -1,163 +1,233 @@
 spiders_colony:
-	idle-overlay: sprites|STCLYSPB_COLONY.ANI
+	idle-overlay:
+		Filename: sprites|STCLYSPB_COLONY.ANI
 		ZOffset: 2500
-	idle: sprites|STCLYSPX_COLONYBASE.ANI
+	idle:
+		Filename: sprites|STCLYSPX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYSPB_WNORMALT.ANI:
-			bits/STCLYSPB.png:
+			0:
+				Filename: sprites|STCLYSPB_WNORMALT.ANI
+			1:
+				Filename: bits/STCLYSPB.png
 				Start: 0
-			sprites|STCLYSPB_WNORMALTL.ANI:
-			bits/STCLYSPB.png:
+			2:
+				Filename: sprites|STCLYSPB_WNORMALTL.ANI
+			3:
+				Filename: bits/STCLYSPB.png
 				Start: 1
-			sprites|STCLYSPB_WNORMALL.ANI:
-			bits/STCLYSPB.png:
+			4:
+				Filename: sprites|STCLYSPB_WNORMALL.ANI
+			5:
+				Filename: bits/STCLYSPB.png
 				Start: 2
-			sprites|STCLYSPB_WNORMALBL.ANI:
-			bits/STCLYSPB.png:
+			6:
+				Filename: sprites|STCLYSPB_WNORMALBL.ANI
+			7:
+				Filename: bits/STCLYSPB.png
 				Start: 3
-			sprites|STCLYSPB_WNORMALB.ANI:
-			bits/STCLYSPB.png:
+			8:
+				Filename: sprites|STCLYSPB_WNORMALB.ANI
+			9:
+				Filename: bits/STCLYSPB.png
 				Start: 4
-			sprites|STCLYSPB_WNORMALBR.ANI:
-			bits/STCLYSPB.png:
+			10:
+				Filename: sprites|STCLYSPB_WNORMALBR.ANI
+			11:
+				Filename: bits/STCLYSPB.png
 				Start: 5
-			sprites|STCLYSPB_WNORMALR.ANI:
-			bits/STCLYSPB.png:
+			12:
+				Filename: sprites|STCLYSPB_WNORMALR.ANI
+			13:
+				Filename: bits/STCLYSPB.png
 				Start: 6
-			sprites|STCLYSPB_WNORMALTR.ANI:
-			bits/STCLYSPB.png:
+			14:
+				Filename: sprites|STCLYSPB_WNORMALTR.ANI
+			15:
+				Filename: bits/STCLYSPB.png
 				Start: 7
 		Facings: 16
 		ZOffset: 2600
 	shoot:
 		Combine:
-			sprites|STCLYSPB_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYSPB_WFIRET.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			1:
+				Filename: bits/STCLYSPB.png
 				Start: 8
 				Length: 2
-			sprites|STCLYSPB_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYSPB_WFIRETL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			3:
+				Filename: bits/STCLYSPB.png
 				Start: 10
 				Length: 2
-			sprites|STCLYSPB_WFIREL.ANI:
+			4:
+				Filename: sprites|STCLYSPB_WFIREL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			5:
+				Filename: bits/STCLYSPB.png
 				Start: 12
 				Length: 2
-			sprites|STCLYSPB_WFIREBL.ANI:
+			6:
+				Filename: sprites|STCLYSPB_WFIREBL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			7:
+				Filename: bits/STCLYSPB.png
 				Start: 14
 				Length: 2
-			sprites|STCLYSPB_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYSPB_WFIREB.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			9:
+				Filename: bits/STCLYSPB.png
 				Start: 16
 				Length: 2
-			sprites|STCLYSPB_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYSPB_WFIREBR.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			11:
+				Filename: bits/STCLYSPB.png
 				Start: 18
 				Length: 2
-			sprites|STCLYSPB_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYSPB_WFIRER.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			13:
+				Filename: bits/STCLYSPB.png
 				Start: 20
 				Length: 2
-			sprites|STCLYSPB_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYSPB_WFIRETR.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			15:
+				Filename: bits/STCLYSPB.png
 				Start: 22
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 80
 		ZOffset: 2600
-	name: sprites|NAMESPIDERCOLONY.ANI
+	name:
+		Filename: sprites|NAMESPIDERCOLONY.ANI
 
 spiders_colony_turret:
-	idle-overlay: bits/SpidersColonyTurret.png
+	idle-overlay:
+		Filename: bits/SpidersColonyTurret.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/SpidersColonyTurret.png
+	idle:
+		Filename: bits/SpidersColonyTurret.png
 		Start: 1
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYSPB_WNORMALT.ANI:
-			bits/STCLYSPB.png:
+			0:
+				Filename: sprites|STCLYSPB_WNORMALT.ANI
+			1:
+				Filename: bits/STCLYSPB.png
 				Start: 0
-			sprites|STCLYSPB_WNORMALTL.ANI:
-			bits/STCLYSPB.png:
+			2:
+				Filename: sprites|STCLYSPB_WNORMALTL.ANI
+			3:
+				Filename: bits/STCLYSPB.png
 				Start: 1
-			sprites|STCLYSPB_WNORMALL.ANI:
-			bits/STCLYSPB.png:
+			4:
+				Filename: sprites|STCLYSPB_WNORMALL.ANI
+			5:
+				Filename: bits/STCLYSPB.png
 				Start: 2
-			sprites|STCLYSPB_WNORMALBL.ANI:
-			bits/STCLYSPB.png:
+			6:
+				Filename: sprites|STCLYSPB_WNORMALBL.ANI
+			7:
+				Filename: bits/STCLYSPB.png
 				Start: 3
-			sprites|STCLYSPB_WNORMALB.ANI:
-			bits/STCLYSPB.png:
+			8:
+				Filename: sprites|STCLYSPB_WNORMALB.ANI
+			9:
+				Filename: bits/STCLYSPB.png
 				Start: 4
-			sprites|STCLYSPB_WNORMALBR.ANI:
-			bits/STCLYSPB.png:
+			10:
+				Filename: sprites|STCLYSPB_WNORMALBR.ANI
+			11:
+				Filename: bits/STCLYSPB.png
 				Start: 5
-			sprites|STCLYSPB_WNORMALR.ANI:
-			bits/STCLYSPB.png:
+			12:
+				Filename: sprites|STCLYSPB_WNORMALR.ANI
+			13:
+				Filename: bits/STCLYSPB.png
 				Start: 6
-			sprites|STCLYSPB_WNORMALTR.ANI:
-			bits/STCLYSPB.png:
+			14:
+				Filename: sprites|STCLYSPB_WNORMALTR.ANI
+			15:
+				Filename: bits/STCLYSPB.png
 				Start: 7
 		Facings: 16
 		ZOffset: 1256
 	shoot:
 		Combine:
-			sprites|STCLYSPB_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYSPB_WFIRET.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			1:
+				Filename: bits/STCLYSPB.png
 				Start: 8
 				Length: 2
-			sprites|STCLYSPB_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYSPB_WFIRETL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			3:
+				Filename: bits/STCLYSPB.png
 				Start: 10
 				Length: 2
-			sprites|STCLYSPB_WFIREL.ANI:
+			4:
+				Filename: sprites|STCLYSPB_WFIREL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			5:
+				Filename: bits/STCLYSPB.png
 				Start: 12
 				Length: 2
-			sprites|STCLYSPB_WFIREBL.ANI:
+			6:
+				Filename: sprites|STCLYSPB_WFIREBL.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			7:
+				Filename: bits/STCLYSPB.png
 				Start: 14
 				Length: 2
-			sprites|STCLYSPB_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYSPB_WFIREB.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			9:
+				Filename: bits/STCLYSPB.png
 				Start: 16
 				Length: 2
-			sprites|STCLYSPB_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYSPB_WFIREBR.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			11:
+				Filename: bits/STCLYSPB.png
 				Start: 18
 				Length: 2
-			sprites|STCLYSPB_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYSPB_WFIRER.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			13:
+				Filename: bits/STCLYSPB.png
 				Start: 20
 				Length: 2
-			sprites|STCLYSPB_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYSPB_WFIRETR.ANI
 				Length: 2
-			bits/STCLYSPB.png:
+			15:
+				Filename: bits/STCLYSPB.png
 				Start: 22
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 80
 		ZOffset: 1256
-	name: sprites|NAMESPIDERBLACKWIDOW.ANI #TODO PLACEHOLDER
+	name: #TODO PLACEHOLDER
+		Filename: sprites|NAMESPIDERBLACKWIDOW.ANI

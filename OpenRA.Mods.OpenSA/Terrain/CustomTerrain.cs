@@ -79,7 +79,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 
 		[FieldLoader.Ignore]
 		public readonly TerrainTypeInfo[] TerrainInfo;
-		readonly Dictionary<string, byte> terrainIndexByType = new Dictionary<string, byte>();
+		readonly Dictionary<string, byte> terrainIndexByType = new();
 		readonly byte defaultWalkableTerrainIndex;
 
 		public CustomTerrain(IReadOnlyFileSystem fileSystem, string filepath)
@@ -104,7 +104,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 				var tt = TerrainInfo[i].Type;
 
 				if (terrainIndexByType.ContainsKey(tt))
-					throw new YamlException("Duplicate terrain type '{0}' in '{1}'.".F(tt, filepath));
+					throw new YamlException($"Duplicate terrain type '{tt}' in '{filepath}'.");
 
 				terrainIndexByType.Add(tt, i);
 			}
@@ -126,7 +126,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 			if (terrainIndexByType.TryGetValue(type, out var index))
 				return index;
 
-			throw new InvalidDataException("Tileset '{0}' lacks terrain type '{1}'".F(Id, type));
+			throw new InvalidDataException("Tileset '{Id}' lacks terrain type '{type}'");
 		}
 
 		public byte GetTerrainIndex(TerrainTile r)
@@ -197,7 +197,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 					var randomTile = similarTiles.Random(r);
 					for (var f = 0; f < 4; f++)
 					{
-						var cell = new MPos(i + (f % 2), j + (f / 2));
+						var cell = new MPos(i + f % 2, j + f / 2);
 						map.Tiles[cell] = new TerrainTile(randomTile.Key, (byte)f);
 					}
 				}

@@ -27,7 +27,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 				ShowMainMenu(world);
 		}
 
-		void ShowMainMenu(World world)
+		static void ShowMainMenu(World world)
 		{
 			promptAccepted = true;
 			Ui.ResetAll();

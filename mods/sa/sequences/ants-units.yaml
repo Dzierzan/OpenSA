@@ -11,26 +11,35 @@ ants_light:
 	#		sprites|UNANTSOB_STTR.ANI:
 	#	Facings: 8
 	#	ZOffset: 100
-	idle: bits/antblue.png #Upscaled/fixed sprites
+	idle: #Upscaled/fixed sprites
+		Filename: bits/antblue.png
 		Facings: 8
 		ZOffset: 100
 	shoot:
 		Combine:
-			sprites|UNANTSOB_ATT.ANI:
+			0:
+				Filename: sprites|UNANTSOB_ATT.ANI
 				Length: 2
-			sprites|UNANTSOB_ATTL.ANI:
+			1:
+				Filename: sprites|UNANTSOB_ATTL.ANI
 				Length: 2
-			sprites|UNANTSOB_ATL.ANI:
+			2:
+				Filename: sprites|UNANTSOB_ATL.ANI
 				Length: 2
-			sprites|UNANTSOB_ATBL.ANI:
+			3:
+				Filename: sprites|UNANTSOB_ATBL.ANI
 				Length: 2
-			sprites|UNANTSOB_ATB.ANI:
+			4:
+				Filename: sprites|UNANTSOB_ATB.ANI
 				Length: 2
-			sprites|UNANTSOB_ATBR.ANI:
+			5:
+				Filename: sprites|UNANTSOB_ATBR.ANI
 				Length: 2
-			sprites|UNANTSOB_ATR.ANI:
+			6:
+				Filename: sprites|UNANTSOB_ATR.ANI
 				Length: 2
-			sprites|UNANTSOB_ATTR.ANI:
+			7:
+				Filename: sprites|UNANTSOB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
@@ -38,71 +47,101 @@ ants_light:
 		ZOffset: 100
 	move:
 		Combine:
-			sprites|UNANTSOB_WAT.ANI:
+			0:
+				Filename: sprites|UNANTSOB_WAT.ANI
 				Length: 3
-			sprites|UNANTSOB_WATL.ANI:
+			1:
+				Filename: sprites|UNANTSOB_WATL.ANI
 				Length: 3
-			sprites|UNANTSOB_WAL.ANI:
+			2:
+				Filename: sprites|UNANTSOB_WAL.ANI
 				Length: 3
-			sprites|UNANTSOB_WABL.ANI:
+			3:
+				Filename: sprites|UNANTSOB_WABL.ANI
 				Length: 3
-			sprites|UNANTSOB_WAB.ANI:
+			4:
+				Filename: sprites|UNANTSOB_WAB.ANI
 				Length: 3
-			sprites|UNANTSOB_WABR.ANI:
+			5:
+				Filename: sprites|UNANTSOB_WABR.ANI
 				Length: 3
-			sprites|UNANTSOB_WAR.ANI:
+			6:
+				Filename: sprites|UNANTSOB_WAR.ANI
 				Length: 3
-			sprites|UNANTSOB_WATR.ANI:
+			7:
+				Filename: sprites|UNANTSOB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: sprites|UNANTSOB_DEAD.ANI
+	die:
+		Filename: sprites|UNANTSOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 0
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 1
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEANTSOLDIER.ANI
-	portrait: sprites|COLONYANTA3DB.ANI
+	name:
+		Filename: sprites|NAMEANTSOLDIER.ANI
+	portrait:
+		Filename: sprites|COLONYANTA3DB.ANI
 
 ants_medium:
 	idle:
 		Combine:
-			sprites|UNANTRGB_STT.ANI:
-			sprites|UNANTRGB_STTL.ANI:
-			sprites|UNANTRGB_STL.ANI:
-			sprites|UNANTRGB_STBL.ANI:
-			sprites|UNANTRGB_STB.ANI:
-			sprites|UNANTRGB_STBR.ANI:
-			sprites|UNANTRGB_STR.ANI:
-			sprites|UNANTRGB_STTR.ANI:
+			0:
+				Filename: sprites|UNANTRGB_STT.ANI
+			1:
+				Filename: sprites|UNANTRGB_STTL.ANI
+			2:
+				Filename: sprites|UNANTRGB_STL.ANI
+			3:
+				Filename: sprites|UNANTRGB_STBL.ANI
+			4:
+				Filename: sprites|UNANTRGB_STB.ANI
+			5:
+				Filename: sprites|UNANTRGB_STBR.ANI
+			6:
+				Filename: sprites|UNANTRGB_STR.ANI
+			7:
+				Filename: sprites|UNANTRGB_STTR.ANI
 		Facings: 8
 		ZOffset: 100
 	shoot:
 		Combine:
-			sprites|UNANTRGB_ATT.ANI:
+			0:
+				Filename: sprites|UNANTRGB_ATT.ANI
 				Length: 2
-			sprites|UNANTRGB_ATTL.ANI:
+			1:
+				Filename: sprites|UNANTRGB_ATTL.ANI
 				Length: 2
-			sprites|UNANTRGB_ATL.ANI:
+			2:
+				Filename: sprites|UNANTRGB_ATL.ANI
 				Length: 2
-			sprites|UNANTRGB_ATBL.ANI:
+			3:
+				Filename: sprites|UNANTRGB_ATBL.ANI
 				Length: 2
-			sprites|UNANTRGB_ATB.ANI:
+			4:
+				Filename: sprites|UNANTRGB_ATB.ANI
 				Length: 2
-			sprites|UNANTRGB_ATBR.ANI:
+			5:
+				Filename: sprites|UNANTRGB_ATBR.ANI
 				Length: 2
-			sprites|UNANTRGB_ATR.ANI:
+			6:
+				Filename: sprites|UNANTRGB_ATR.ANI
 				Length: 2
-			sprites|UNANTRGB_ATTR.ANI:
+			7:
+				Filename: sprites|UNANTRGB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
@@ -110,71 +149,101 @@ ants_medium:
 		ZOffset: 100
 	move:
 		Combine:
-			sprites|UNANTRGB_WAT.ANI:
+			0:
+				Filename: sprites|UNANTRGB_WAT.ANI
 				Length: 3
-			sprites|UNANTRGB_WATL.ANI:
+			1:
+				Filename: sprites|UNANTRGB_WATL.ANI
 				Length: 3
-			sprites|UNANTRGB_WAL.ANI:
+			2:
+				Filename: sprites|UNANTRGB_WAL.ANI
 				Length: 3
-			sprites|UNANTRGB_WABL.ANI:
+			3:
+				Filename: sprites|UNANTRGB_WABL.ANI
 				Length: 3
-			sprites|UNANTRGB_WAB.ANI:
+			4:
+				Filename: sprites|UNANTRGB_WAB.ANI
 				Length: 3
-			sprites|UNANTRGB_WABR.ANI:
+			5:
+				Filename: sprites|UNANTRGB_WABR.ANI
 				Length: 3
-			sprites|UNANTRGB_WAR.ANI:
+			6:
+				Filename: sprites|UNANTRGB_WAR.ANI
 				Length: 3
-			sprites|UNANTRGB_WATR.ANI:
+			7:
+				Filename: sprites|UNANTRGB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: sprites|UNANTRGB_DEAD.ANI
+	die:
+		Filename: sprites|UNANTRGB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 2
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 3
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEANTGRENADIER.ANI
-	portrait: sprites|COLONYANTB3DB.ANI
+	name:
+		Filename: sprites|NAMEANTGRENADIER.ANI
+	portrait:
+		Filename: sprites|COLONYANTB3DB.ANI
 
 ants_heavy:
 	idle:
 		Combine:
-			sprites|UNANTBZB_STT.ANI:
-			sprites|UNANTBZB_STTL.ANI:
-			sprites|UNANTBZB_STL.ANI:
-			sprites|UNANTBZB_STBL.ANI:
-			sprites|UNANTBZB_STB.ANI:
-			sprites|UNANTBZB_STBR.ANI:
-			sprites|UNANTBZB_STR.ANI:
-			sprites|UNANTBZB_STTR.ANI:
+			0:
+				Filename: sprites|UNANTBZB_STT.ANI
+			1:
+				Filename: sprites|UNANTBZB_STTL.ANI
+			2:
+				Filename: sprites|UNANTBZB_STL.ANI
+			3:
+				Filename: sprites|UNANTBZB_STBL.ANI
+			4:
+				Filename: sprites|UNANTBZB_STB.ANI
+			5:
+				Filename: sprites|UNANTBZB_STBR.ANI
+			6:
+				Filename: sprites|UNANTBZB_STR.ANI
+			7:
+				Filename: sprites|UNANTBZB_STTR.ANI
 		Facings: 8
 		ZOffset: 100
 	shoot:
 		Combine:
-			sprites|UNANTBZB_ATT.ANI:
+			0:
+				Filename: sprites|UNANTBZB_ATT.ANI
 				Length: 2
-			sprites|UNANTBZB_ATTL.ANI:
+			1:
+				Filename: sprites|UNANTBZB_ATTL.ANI
 				Length: 2
-			sprites|UNANTBZB_ATL.ANI:
+			2:
+				Filename: sprites|UNANTBZB_ATL.ANI
 				Length: 2
-			sprites|UNANTBZB_ATBL.ANI:
+			3:
+				Filename: sprites|UNANTBZB_ATBL.ANI
 				Length: 2
-			sprites|UNANTBZB_ATB.ANI:
+			4:
+				Filename: sprites|UNANTBZB_ATB.ANI
 				Length: 2
-			sprites|UNANTBZB_ATBR.ANI:
+			5:
+				Filename: sprites|UNANTBZB_ATBR.ANI
 				Length: 2
-			sprites|UNANTBZB_ATR.ANI:
+			6:
+				Filename: sprites|UNANTBZB_ATR.ANI
 				Length: 2
-			sprites|UNANTBZB_ATTR.ANI:
+			7:
+				Filename: sprites|UNANTBZB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
@@ -182,37 +251,51 @@ ants_heavy:
 		ZOffset: 100
 	move:
 		Combine:
-			sprites|UNANTBZB_WAT.ANI:
+			0:
+				Filename: sprites|UNANTBZB_WAT.ANI
 				Length: 3
-			sprites|UNANTBZB_WATL.ANI:
+			1:
+				Filename: sprites|UNANTBZB_WATL.ANI
 				Length: 3
-			sprites|UNANTBZB_WAL.ANI:
+			2:
+				Filename: sprites|UNANTBZB_WAL.ANI
 				Length: 3
-			sprites|UNANTBZB_WABL.ANI:
+			3:
+				Filename: sprites|UNANTBZB_WABL.ANI
 				Length: 3
-			sprites|UNANTBZB_WAB.ANI:
+			4:
+				Filename: sprites|UNANTBZB_WAB.ANI
 				Length: 3
-			sprites|UNANTBZB_WABR.ANI:
+			5:
+				Filename: sprites|UNANTBZB_WABR.ANI
 				Length: 3
-			sprites|UNANTBZB_WAR.ANI:
+			6:
+				Filename: sprites|UNANTBZB_WAR.ANI
 				Length: 3
-			sprites|UNANTBZB_WATR.ANI:
+			7:
+				Filename: sprites|UNANTBZB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: sprites|UNANTBZB_DEAD.ANI
+	die:
+		Filename: sprites|UNANTBZB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 4
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 5
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEANTBAZOOKA.ANI
-	portrait: sprites|COLONYANTC3DB.ANI
+	name:
+		Filename: sprites|NAMEANTBAZOOKA.ANI
+	portrait:
+		Filename: sprites|COLONYANTC3DB.ANI

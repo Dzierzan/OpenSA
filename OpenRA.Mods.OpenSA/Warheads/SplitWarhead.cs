@@ -32,7 +32,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		public readonly string ExplodeWeapon = null;
 
 		[Desc("Terrain where the projectile explodes instead of bouncing.")]
-		public readonly HashSet<string> InvalidBounceTerrain = new HashSet<string>();
+		public readonly HashSet<string> InvalidBounceTerrain = new();
 
 		[Desc("Modify distance of each bounce by this percentage of previous distance.")]
 		public readonly int BounceRangeModifier = 100;
@@ -46,7 +46,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 		public void RulesetLoaded(Ruleset rules, WeaponInfo info)
 		{
 			if (!rules.Weapons.TryGetValue(Weapon.ToLowerInvariant(), out splitWeapon))
-				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(Weapon.ToLowerInvariant()));
+				throw new YamlException($"Weapons Ruleset does not contain an entry '{Weapon.ToLowerInvariant()}'");
 
 			rules.Weapons.TryGetValue(Weapon.ToLowerInvariant(), out explodeWeapon);
 		}

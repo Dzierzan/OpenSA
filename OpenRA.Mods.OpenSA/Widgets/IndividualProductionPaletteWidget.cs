@@ -18,7 +18,6 @@ using OpenRA.Mods.Common.Orders;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Mods.Common.Widgets;
-using OpenRA.Network;
 using OpenRA.Primitives;
 using OpenRA.Widgets;
 
@@ -57,7 +56,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		// Note: LinterHotkeyNames assumes that these are disabled by default
 		public readonly string HotkeyPrefix = null;
 		public readonly int HotkeyCount = 0;
-		public readonly HotkeyReference SelectProductionBuildingHotkey = new HotkeyReference();
+		public readonly HotkeyReference SelectProductionBuildingHotkey = new();
 
 		public readonly string ClockAnimation = "clock";
 		public readonly string ClockSequence = "idle";
@@ -88,7 +87,6 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		public Func<ProductionIcon> GetTooltipIcon;
 		public readonly World World;
 		readonly ModData modData;
-		readonly OrderManager orderManager;
 
 		public int MinimumRows = 4;
 		public int MaximumRows = int.MaxValue;
@@ -114,15 +112,14 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		}
 
 		public override Rectangle EventBounds => eventBounds;
-		Dictionary<Rectangle, ProductionIcon> icons = new Dictionary<Rectangle, ProductionIcon>();
+		Dictionary<Rectangle, ProductionIcon> icons = new();
 		Animation cantBuild;
 		Animation clock;
 		Rectangle eventBounds = Rectangle.Empty;
 
 		readonly WorldRenderer worldRenderer;
 
-		SpriteFont overlayFont, symbolFont;
-		float2 iconOffset, holdOffset, readyOffset, timeOffset, queuedOffset, infiniteOffset;
+		float2 iconOffset;
 
 		Player cachedQueueOwner;
 		IProductionIconOverlay[] pios;
@@ -150,10 +147,9 @@ namespace OpenRA.Mods.OpenSA.Widgets
 		}
 
 		[ObjectCreator.UseCtor]
-		public IndividualProductionPaletteWidget(ModData modData, OrderManager orderManager, World world, WorldRenderer worldRenderer)
+		public IndividualProductionPaletteWidget(ModData modData, World world, WorldRenderer worldRenderer)
 		{
 			this.modData = modData;
-			this.orderManager = orderManager;
 			World = world;
 			this.worldRenderer = worldRenderer;
 			GetTooltipIcon = () => TooltipIcon;
@@ -171,18 +167,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			hotkeys = Exts.MakeArray(HotkeyCount,
 				i => modData.Hotkeys[HotkeyPrefix + (i + 1).ToString("D2")]);
 
-			overlayFont = Game.Renderer.Fonts[OverlayFont];
-			Game.Renderer.Fonts.TryGetValue(SymbolsFont, out symbolFont);
-
 			iconOffset = 0.5f * IconSize.ToFloat2() + IconSpriteOffset;
-			queuedOffset = new float2(4, 2);
-			holdOffset = iconOffset - overlayFont.Measure(HoldText) / 2;
-			readyOffset = iconOffset - overlayFont.Measure(ReadyText) / 2;
-
-			if (ChromeMetrics.TryGet("InfiniteOffset", out infiniteOffset))
-				infiniteOffset += queuedOffset;
-			else
-				infiniteOffset = queuedOffset;
 		}
 
 		public void ScrollDown()
@@ -365,12 +350,12 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			return false;
 		}
 
-		bool HandleRightClick(ProductionItem item, ProductionIcon icon, int handleCount)
+		bool HandleRightClick(ProductionItem item, ProductionIcon icon)
 		{
 			if (item == null)
 				return false;
 
-			handleCount = 2;
+			var handleCount = 2;
 
 			Game.Sound.PlayNotification(World.Map.Rules, World.LocalPlayer, "Sounds", ClickSound, null);
 
@@ -417,7 +402,7 @@ namespace OpenRA.Mods.OpenSA.Widgets
 			var cancelCount = modifiers.HasModifier(Modifiers.Ctrl) ? ((List<ProductionItem>)CurrentQueue.AllQueued()).Count : startCount;
 			var item = icon.Queued.FirstOrDefault();
 			var handled = btn == MouseButton.Left ? HandleLeftClick(item, icon, startCount, modifiers)
-				: btn == MouseButton.Right ? HandleRightClick(item, icon, cancelCount)
+				: btn == MouseButton.Right ? HandleRightClick(item, icon)
 				: btn == MouseButton.Middle && HandleMiddleClick(item, icon, cancelCount);
 
 			if (!handled)
@@ -533,8 +518,6 @@ namespace OpenRA.Mods.OpenSA.Widgets
 
 		public override void Draw()
 		{
-			timeOffset = iconOffset - overlayFont.Measure(WidgetUtils.FormatTime(0, World.Timestep)) / 2;
-
 			if (CurrentQueue == null)
 				return;
 

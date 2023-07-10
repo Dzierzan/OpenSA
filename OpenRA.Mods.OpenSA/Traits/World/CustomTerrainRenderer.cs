@@ -30,7 +30,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 			var failed = false;
 			Action<uint, string> onMissingImage = (id, f) =>
 			{
-				onError("\tTemplate `{0}` references sprite `{1}` that does not exist.".F(id, f));
+				onError($"\tTemplate `{id}` references sprite `{f}` that does not exist.");
 				missingImages.Add(f);
 				failed = true;
 			};
@@ -48,7 +48,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 							if (t.Value[i] == null || tileCache.HasTileSprite(new TerrainTile(t.Key, (byte)i), v))
 								continue;
 
-							onError("\tTemplate `{0}` references frame {1} that does not exist in sprite `{2}`.".F(t.Key, i, templateInfo.Images[v]));
+							onError($"\tTemplate `{t.Key}` references frame {i} that does not exist in sprite `{templateInfo.Images[v]}`");
 							failed = true;
 						}
 					}
@@ -142,7 +142,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 			{
 				for (var x = 0; x < template.Size.X; x++)
 				{
-					var tile = new TerrainTile(template.Id, (byte)(i++));
+					var tile = new TerrainTile(template.Id, (byte)i++);
 					if (!terrainInfo.TryGetTileInfo(tile, out var tileInfo))
 						continue;
 
@@ -190,7 +190,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 
 		IEnumerable<IRenderable> ITiledTerrainRenderer.RenderPreview(WorldRenderer wr, TerrainTemplateInfo t, WPos origin)
 		{
-			if (!(t is CustomTerrainTemplateInfo template))
+			if (t is not CustomTerrainTemplateInfo template)
 				yield break;
 
 			var i = 0;

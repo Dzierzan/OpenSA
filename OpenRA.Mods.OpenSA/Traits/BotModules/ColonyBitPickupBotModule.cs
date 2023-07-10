@@ -22,10 +22,10 @@ namespace OpenRA.Mods.OpenSA.Traits.BotModules
 	public class ColonyBitPickupBotModuleInfo : ConditionalTraitInfo
 	{
 		[Desc("Actor types that should not start hunting for colony bits.")]
-		public readonly HashSet<string> ExcludedUnitTypes = new HashSet<string>();
+		public readonly HashSet<string> ExcludedUnitTypes = new();
 
 		[Desc("Only these actor types should start hunting for colony bits.")]
-		public readonly HashSet<string> IncludedUnitTypes = new HashSet<string>();
+		public readonly HashSet<string> IncludedUnitTypes = new();
 
 		[Desc("Interval (in ticks) between giving out orders to idle units.")]
 		public readonly int ScanInterval = 50;
@@ -106,7 +106,7 @@ namespace OpenRA.Mods.OpenSA.Traits.BotModules
 				}
 
 				var target = Target.FromCell(world, bit.Location);
-				AIUtils.BotDebug("{0}: Ordering unit {1} to {2} for colony bit pick up.".F(player.PlayerName, bitCollector, target));
+				AIUtils.BotDebug($"{player.PlayerName}: Ordering unit {bitCollector} to {target} for colony bit pick up.");
 				bot.QueueOrder(new Order("Stop", bitCollector, false));
 				bot.QueueOrder(new Order("Move", bitCollector, target, false));
 			}

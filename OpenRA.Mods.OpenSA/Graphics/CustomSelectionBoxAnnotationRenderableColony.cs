@@ -44,7 +44,6 @@ namespace OpenRA.Mods.OpenSA.Graphics
 		{
 			var tl = wr.Viewport.WorldToViewPx(new float2(decorationBounds.Left, decorationBounds.Top)).ToFloat2();
 			var br = wr.Viewport.WorldToViewPx(new float2(decorationBounds.Right, decorationBounds.Bottom)).ToFloat2();
-			var tr = new float2(br.X, tl.Y);
 			var bl = new float2(tl.X, br.Y);
 
 			var a = new float2(4, 0);

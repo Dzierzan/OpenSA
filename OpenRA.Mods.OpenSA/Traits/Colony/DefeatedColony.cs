@@ -42,7 +42,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 		[ActorReference(typeof(ColonyInfo))]
 		public readonly string SpawnsActor = "Colony";
 
-		public readonly CVec Offset = new CVec(0, 0);
+		public readonly CVec Offset = new(0, 0);
 
 		public readonly string BackfallOwner = "Creeps";
 
@@ -60,7 +60,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 			{
 				var weaponToLower = Weapon.ToLowerInvariant();
 				if (!rules.Weapons.TryGetValue(weaponToLower, out var weapon))
-					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
+					throw new YamlException($"Weapons Ruleset does not contain an entry '{weaponToLower}'");
 				WeaponInfo = weapon;
 			}
 
@@ -68,7 +68,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 			{
 				var explodesWeaponToLower = Explode.ToLowerInvariant();
 				if (!rules.Weapons.TryGetValue(explodesWeaponToLower, out var explodesInfo))
-					throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(explodesWeaponToLower));
+					throw new YamlException($"Weapons Ruleset does not contain an entry '{explodesWeaponToLower}'");
 				ExplodeWeaponInfo = explodesInfo;
 			}
 		}
@@ -77,7 +77,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 	public class DefeatedColony : ITick, INotifyKilled
 	{
 		readonly DefeatedColonyInfo info;
-		readonly Dictionary<OpenRA.Player, int> bitPickers = new Dictionary<OpenRA.Player, int>();
+		readonly Dictionary<OpenRA.Player, int> bitPickers = new();
 
 		int fireBitTimer;
 		OpenRA.Player newOwner;

@@ -56,7 +56,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			this.worldRenderer = worldRenderer;
 
 			MiniYaml yaml;
-			string[] keyNames = Enum.GetNames(typeof(ObserverStatsPanel));
+			var keyNames = Enum.GetNames(typeof(ObserverStatsPanel));
 			var statsHotkeys = new HotkeyReference[keyNames.Length];
 			for (var i = 0; i < keyNames.Length; i++)
 				statsHotkeys[i] = logicArgs.TryGetValue("Statistics" + keyNames[i] + "Key", out yaml) ? modData.Hotkeys[yaml.Value] : new HotkeyReference();
@@ -347,7 +347,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			return template;
 		}
 
-		void SetupPlayerColor(Player player, ScrollItemWidget template, ColorBlockWidget colorBlockWidget, GradientColorBlockWidget gradientColorBlockWidget)
+		static void SetupPlayerColor(Player player, ScrollItemWidget template, ColorBlockWidget colorBlockWidget, GradientColorBlockWidget gradientColorBlockWidget)
 		{
 			var color = Color.FromArgb(128, player.Color.R, player.Color.G, player.Color.B);
 			var hoverColor = Color.FromArgb(192, player.Color.R, player.Color.G, player.Color.B);
@@ -425,18 +425,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 			return (world.WorldTick == 0 ? 0 : orders / (world.WorldTick / 1500.0)).ToString("F1");
 		}
 
-		static Color GetPowerColor(PowerState state)
-		{
-			if (state == PowerState.Critical)
-				return Color.Red;
-
-			if (state == PowerState.Low)
-				return Color.Orange;
-
-			return Color.LimeGreen;
-		}
-
-		// HACK The height of the templates and the scrollpanel needs to be kept in synch
+		// HACK The height of the templates and the scrollpanel needs to be kept in sync
 		bool ShowScrollBar
 		{
 			get { return players.Count() + (hasTeams ? teams.Count() : 0) > 10; }

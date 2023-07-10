@@ -1,87 +1,109 @@
 slapfighter:
-	idle: bits/spaceship.png
+	idle:
+		Filename: bits/spaceship.png
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 500
-	shoot: bits/spaceship.png
+	shoot:
+		Filename: bits/spaceship.png
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 500
-	move: bits/spaceship.png
+	move:
+		Filename: bits/spaceship.png
 		Start: 1
 		Length: 4
 		Facings: -1
 		InterpolatedFacings: 64
 		ZOffset: 500
-	die: bits/spaceship.png
+	die:
+		Filename: bits/spaceship.png
 		Start: 5
 		Length: 2
 		Tick: 9000
 		ZOffset: -511
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 30
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 31
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
 
 spacefighter:
-	idle: bits/ship.png
+	idle:
+		Filename: bits/ship.png
 		Facings: -16
 		InterpolatedFacings: 64
 		ZOffset: 500
-	shoot: bits/ship.png
+	shoot:
+		Filename: bits/ship.png
 		Facings: -16
 		InterpolatedFacings: 64
 		ZOffset: 500
-	move: bits/ship.png
+	move:
+		Filename: bits/ship.png
 		Facings: -16
 		InterpolatedFacings: 64
 		ZOffset: 500
-	die: bits/ship.png
+	die:
+		Filename: bits/ship.png
 		Start: 16
 		Length: 2
 		Tick: 9000
 		ZOffset: -511
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 32
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 33
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
 
 productionbooster:
-	idle-overlay: bits/productionbooster.png
+	idle-overlay:
+		Filename: bits/productionbooster.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/productionbooster.png
+	idle:
+		Filename: bits/productionbooster.png
 		ZOffset: -1024
 		Start: 1
 
 firepowerbooster:
-	idle-overlay: bits/firepowerbooster.png
+	idle-overlay:
+		Filename: bits/firepowerbooster.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/firepowerbooster.png
+	idle:
+		Filename: bits/firepowerbooster.png
 		ZOffset: -1024
 		Start: 1
 
 tesla_coil_turret:
-	idle-overlay: bits/teslacoilturret.png
+	idle-overlay:
+		Filename: bits/teslacoilturret.png
 		Start: 0
 		ZOffset: 1500
-	idle: bits/teslacoilturret.png
+	idle:
+		Filename: bits/teslacoilturret.png
 		Start: 10
 		ZOffset: -1024
-	turret: bits/teslacoilturret.png
+	turret:
+		Filename: bits/teslacoilturret.png
 		Frames: 1, 1, 1, 1, 1, 1, 1, 1
 		Facings: 8
 		ZOffset: 5256
-	shoot: bits/teslacoilturret.png
+	shoot:
+		Filename: bits/teslacoilturret.png
 		Start: 2
 		Facings: 8
 		Tick: 40

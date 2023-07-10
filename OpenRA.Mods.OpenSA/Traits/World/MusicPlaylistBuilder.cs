@@ -22,7 +22,7 @@ namespace OpenRA.Mods.OpenSA.Traits.World
 	{
 		public readonly string Shellmap;
 		public readonly string Extension;
-		public readonly Dictionary<string, string> Tilesets = new Dictionary<string, string>();
+		public readonly Dictionary<string, string> Tilesets = new();
 
 		public override object Create(ActorInitializer init)
 		{

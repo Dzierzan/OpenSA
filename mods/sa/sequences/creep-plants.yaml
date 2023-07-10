@@ -1,41 +1,57 @@
 popcorn:
-	idle: sprites|OBWHIPPL_NORMAL.ANI
-	scratched-idle: sprites|OBWHIPPL_DAMAGEA.ANI
-	damaged-idle: sprites|OBWHIPPL_DAMAGEB.ANI
-	critical-idle: sprites|OBWHIPPL_DAMAGEC.ANI
-	grow: sprites|OBWHIPPL_GROW.ANI
+	idle:
+		Filename: sprites|OBWHIPPL_NORMAL.ANI
+	scratched-idle:
+		Filename: sprites|OBWHIPPL_DAMAGEA.ANI
+	damaged-idle:
+		Filename: sprites|OBWHIPPL_DAMAGEB.ANI
+	critical-idle:
+		Filename: sprites|OBWHIPPL_DAMAGEC.ANI
+	grow:
+		Filename: sprites|OBWHIPPL_GROW.ANI
 		Length: 5
 		Tick: 1000
-	shoot: sprites|OBWHIPPL_ATTACK.ANI
+	shoot:
+		Filename: sprites|OBWHIPPL_ATTACK.ANI
 		Length: 6
 		Tick: 100
-	die: sprites|OBWHIPPL_DEAD.ANI
+	die:
+		Filename: sprites|OBWHIPPL_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALPOPCORN.ANI
-	portrait: sprites|COLONYNEUTRALPOPCORN3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALPOPCORN.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALPOPCORN3D.ANI
 
 venus:
-	idle: sprites|OBVENUSNORMAL.ANI
+	idle:
+		Filename: sprites|OBVENUSNORMAL.ANI
 	#scratched-idle: bits/VenusFlytrap.png
 	#	Start: 9
-	damaged-idle: bits/VenusFlytrap.png
+	damaged-idle:
+		Filename: bits/VenusFlytrap.png
 		Start: 10
-	critical-idle: bits/VenusFlytrap.png
+	critical-idle:
+		Filename: bits/VenusFlytrap.png
 		Start: 11
-	grow: bits/VenusFlytrap.png
+	grow:
+		Filename: bits/VenusFlytrap.png
 		Start: 0
 		Length: 5
 		Tick: 1000
-	shoot: sprites|OBVENUSCLOSE.ANI
+	shoot:
+		Filename: sprites|OBVENUSCLOSE.ANI
 		Length: 4
 		Tick: 100
-	damaged-shoot: bits/VenusFlytrap.png
+	damaged-shoot:
+		Filename: bits/VenusFlytrap.png
 		Start: 5
 		Length: 4
 		Tick: 100
-	die: bits/VenusFlytrap.png
+	die:
+		Filename: bits/VenusFlytrap.png
 		Start: 12
 		Length: 2
 		Tick: 9000
@@ -44,61 +60,83 @@ venus:
 	#portrait: bits/empty.png
 
 puff:
-	idle: sprites|OBPUFFBL_NORMAL.ANI
-	scuffed-idle: sprites|OBPUFFBL_DAMAGEA.ANI
-	scratched-idle: sprites|OBPUFFBL_DAMAGEB.ANI
-	damaged-idle: sprites|OBPUFFBL_DAMAGEC.ANI
-	critical-idle: sprites|OBPUFFBL_DAMAGED.ANI
-	grow: sprites|OBPUFFBL_GROW.ANI
+	idle:
+		Filename: sprites|OBPUFFBL_NORMAL.ANI
+	scuffed-idle:
+		Filename: sprites|OBPUFFBL_DAMAGEA.ANI
+	scratched-idle:
+		Filename: sprites|OBPUFFBL_DAMAGEB.ANI
+	damaged-idle:
+		Filename: sprites|OBPUFFBL_DAMAGEC.ANI
+	critical-idle:
+		Filename: sprites|OBPUFFBL_DAMAGED.ANI
+	grow:
+		Filename: sprites|OBPUFFBL_GROW.ANI
 		Length: 4
 		Tick: 1000
-	shoot: sprites|OBPUFFBL_SPAWN.ANI
+	shoot:
+		Filename: sprites|OBPUFFBL_SPAWN.ANI
 		Length: 6
 		Tick: 80
-	die: sprites|OBPUFFBL_DEAD.ANI
+	die:
+		Filename: sprites|OBPUFFBL_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALSEEDBALL.ANI
-	portrait: sprites|COLONYNEUTRALSEEDBALL3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALSEEDBALL.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALSEEDBALL3D.ANI
 
 seed:
-	idle: bits/seed.png
+	idle:
+		Filename: bits/seed.png
 		Start: 0
 		ZOffset: -2100
-	scuffed-idle: bits/seed.png
+	scuffed-idle:
+		Filename: bits/seed.png
 		Start: 1
 		ZOffset: -2100
-	scratched-idle: bits/seed.png
+	scratched-idle:
+		Filename: bits/seed.png
 		Start: 2
 		ZOffset: -2100
-	damaged-idle: bits/seed.png
+	damaged-idle:
+		Filename: bits/seed.png
 		Start: 3
 		ZOffset: -2100
-	critical-idle: bits/seed.png
+	critical-idle:
+		Filename: bits/seed.png
 		Start: 4
 		ZOffset: -2100
-	die: bits/seed.png
+	die:
+		Filename: bits/seed.png
 		Start: 5
 		Tick: 1000
 		ZOffset: -2100
 
 mushroom:
-	idle: bits/mushroom.png
+	idle:
+		Filename: bits/mushroom.png
 		Start: 4
-	damaged-idle: bits/mushroom.png
+	damaged-idle:
+		Filename: bits/mushroom.png
 		Start: 14
-	critical-idle: bits/mushroom.png
+	critical-idle:
+		Filename: bits/mushroom.png
 		Start: 15
-	grow: bits/mushroom.png
+	grow:
+		Filename: bits/mushroom.png
 		Start: 0
 		Length: 4
 		Tick: 1000
-	shoot: bits/mushroom.png
+	shoot:
+		Filename: bits/mushroom.png
 		Start: 6
 		Length: 8
 		Tick: 50
-	die: bits/mushroom.png
+	die:
+		Filename: bits/mushroom.png
 		Start: 16
 		Length: 2
 		Tick: 9000
@@ -107,36 +145,50 @@ mushroom:
 	#portrait: bits/empty.png
 
 thorn:
-	idle: sprites|OBTHORNB_NORMAL.ANI
-	damaged-idle: sprites|OBTHORNB_DAMAGEA.ANI
-	critical-idle: sprites|OBTHORNB_DAMAGEB.ANI
-	grow: sprites|OBTHORNB_GROW.ANI
+	idle:
+		Filename: sprites|OBTHORNB_NORMAL.ANI
+	damaged-idle:
+		Filename: sprites|OBTHORNB_DAMAGEA.ANI
+	critical-idle:
+		Filename: sprites|OBTHORNB_DAMAGEB.ANI
+	grow:
+		Filename: sprites|OBTHORNB_GROW.ANI
 		Length: 5
 		Tick: 1000
-	shoot: sprites|OBTHORNB_NORMAL.ANI
-	die: sprites|OBTHORNB_DEAD.ANI
+	shoot:
+		Filename: sprites|OBTHORNB_NORMAL.ANI
+	die:
+		Filename: sprites|OBTHORNB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALTHORNBUSH.ANI
-	portrait: sprites|COLONYNEUTRALTHORNBUSH3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALTHORNBUSH.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALTHORNBUSH3D.ANI
 
 gumnut:
-	idle: bits/Gumnut.png
+	idle:
+		Filename: bits/Gumnut.png
 		Start: 4
-	damaged-idle: bits/Gumnut.png
+	damaged-idle:
+		Filename: bits/Gumnut.png
 		Start: 14
-	critical-idle: bits/Gumnut.png
+	critical-idle:
+		Filename: bits/Gumnut.png
 		Start: 15
-	grow: bits/Gumnut.png
+	grow:
+		Filename: bits/Gumnut.png
 		Start: 0
 		Length: 4
 		Tick: 1000
-	shoot: bits/Gumnut.png
+	shoot:
+		Filename: bits/Gumnut.png
 		Start: 5
 		Length: 9
 		Tick: 100
-	die: bits/Gumnut.png
+	die:
+		Filename: bits/Gumnut.png
 		Start: 16
 		Length: 2
 		Tick: 9000
@@ -145,124 +197,168 @@ gumnut:
 	#portrait: bits/empty.png
 
 freckle:
-	idle: sprites|FRECKLE_NORMAL.ANI
-	damaged-idle: sprites|FRECKLE_DAMAGEA.ANI
-	critical-idle: sprites|FRECKLE_DAMAGEB.ANI
-	grow: sprites|FRECKLE_GROW.ANI
+	idle:
+		Filename: sprites|FRECKLE_NORMAL.ANI
+	damaged-idle:
+		Filename: sprites|FRECKLE_DAMAGEA.ANI
+	critical-idle:
+		Filename: sprites|FRECKLE_DAMAGEB.ANI
+	grow:
+		Filename: sprites|FRECKLE_GROW.ANI
 		Length: 5
 		Tick: 1000
-	shoot: sprites|FRECKLE_NORMAL.ANI
-	die: sprites|FRECKLE_DEAD.ANI
+	shoot:
+		Filename: sprites|FRECKLE_NORMAL.ANI
+	die:
+		Filename: sprites|FRECKLE_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALFRECKLE.ANI
-	portrait: sprites|COLONYNEUTRALFRECKLE3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALFRECKLE.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALFRECKLE3D.ANI
 
 lolly_blue:
-	idle: sprites|OBLOLLYB_NORMAL.ANI
-	grow: sprites|OBLOLLYB_GROW.ANI
+	idle:
+		Filename: sprites|OBLOLLYB_NORMAL.ANI
+	grow:
+		Filename: sprites|OBLOLLYB_GROW.ANI
 		Length: 4
 		Tick: 1000
-	shoot: sprites|OBLOLLYB_NORMAL.ANI
-	die: sprites|OBLOLLYB_DEAD.ANI
+	shoot:
+		Filename: sprites|OBLOLLYB_NORMAL.ANI
+	die:
+		Filename: sprites|OBLOLLYB_DEAD.ANI
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALLOLLY.ANI
-	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALLOLLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_orange:
-	idle: sprites|OBLOLLYO_NORMAL.ANI
-	grow: sprites|OBLOLLYO_GROW.ANI
+	idle:
+		Filename: sprites|OBLOLLYO_NORMAL.ANI
+	grow:
+		Filename: sprites|OBLOLLYO_GROW.ANI
 		Length: 4
 		Tick: 1000
-	shoot: sprites|OBLOLLYO_NORMAL.ANI
-	die: sprites|OBLOLLYO_DEAD.ANI
+	shoot:
+		Filename: sprites|OBLOLLYO_NORMAL.ANI
+	die:
+		Filename: sprites|OBLOLLYO_DEAD.ANI
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALLOLLY.ANI
-	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALLOLLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_white:
-	idle: sprites|OBLOLLYP_NORMAL.ANI
-	grow: sprites|OBLOLLYP_GROW.ANI
+	idle:
+		Filename: sprites|OBLOLLYP_NORMAL.ANI
+	grow:
+		Filename: sprites|OBLOLLYP_GROW.ANI
 		Length: 4
 		Tick: 1000
-	shoot: sprites|OBLOLLYP_NORMAL.ANI
-	die: sprites|OBLOLLYP_DEAD.ANI
+	shoot:
+		Filename: sprites|OBLOLLYP_NORMAL.ANI
+	die:
+		Filename: sprites|OBLOLLYP_DEAD.ANI
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALLOLLY.ANI
-	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALLOLLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_red:
-	idle: sprites|OBLOLLYS_NORMAL.ANI
-	grow: sprites|OBLOLLYS_GROW.ANI
+	idle:
+		Filename: sprites|OBLOLLYS_NORMAL.ANI
+	grow:
+		Filename: sprites|OBLOLLYS_GROW.ANI
 		Length: 4
 		Tick: 1000
-	shoot: sprites|OBLOLLYS_NORMAL.ANI
-	die: sprites|OBLOLLYS_DEAD.ANI
+	shoot:
+		Filename: sprites|OBLOLLYS_NORMAL.ANI
+	die:
+		Filename: sprites|OBLOLLYS_DEAD.ANI
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name: sprites|NAMENEUTRALLOLLY.ANI
-	portrait: sprites|COLONYNEUTRALLOLLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALLOLLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 anthole_candy:
-	idle: sprites|ANTHOLE_NORMAL.ANI
+	idle:
+		Filename: sprites|ANTHOLE_NORMAL.ANI
 		ZOffset: -6000
-	close: sprites|ANTHOLE_CLOSE.ANI
+	close:
+		Filename: sprites|ANTHOLE_CLOSE.ANI
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
-	open: sprites|ANTHOLE_OPEN.ANI
+	open:
+		Filename: sprites|ANTHOLE_OPEN.ANI
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
 
 anthole_normal:
-	idle: bits/antholes.png
+	idle:
+		Filename: bits/antholes.png
 		Start: 11
 		ZOffset: -6000
-	close: bits/antholes.png
+	close:
+		Filename: bits/antholes.png
 		Start: 12
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
-	open: bits/antholes.png
+	open:
+		Filename: bits/antholes.png
 		Start: 8
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
 
 anthole_desert:
-	idle: bits/antholes.png
+	idle:
+		Filename: bits/antholes.png
 		Start: 3
 		ZOffset: -6000
-	close: bits/antholes.png
+	close:
+		Filename: bits/antholes.png
 		Start: 4
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
-	open: bits/antholes.png
+	open:
+		Filename: bits/antholes.png
 		Start: 0
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
 
 anthole_swamp:
-	idle: bits/antholes.png
+	idle:
+		Filename: bits/antholes.png
 		Start: 19
 		ZOffset: -6000
-	close: bits/antholes.png
+	close:
+		Filename: bits/antholes.png
 		Start: 20
 		Length: 3
 		Tick: 500
 		ZOffset: -6000
-	open: bits/antholes.png
+	open:
+		Filename: bits/antholes.png
 		Start: 16
 		Length: 3
 		Tick: 500

@@ -29,8 +29,8 @@ namespace OpenRA.Mods.OpenSA.Traits.Colony
 
 	public class TakeColonyBitOnIdle : ITick
 	{
-		private readonly TakeColonyBitOnIdleInfo info;
-		private int idleSince;
+		readonly TakeColonyBitOnIdleInfo info;
+		int idleSince;
 
 		public TakeColonyBitOnIdle(TakeColonyBitOnIdleInfo info)
 		{

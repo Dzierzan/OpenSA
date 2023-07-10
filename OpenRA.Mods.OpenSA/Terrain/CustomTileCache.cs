@@ -35,7 +35,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 
 	public sealed class CustomTileCache : IDisposable
 	{
-		readonly Dictionary<ushort, TheaterTemplate> templates = new Dictionary<ushort, TheaterTemplate>();
+		readonly Dictionary<ushort, TheaterTemplate> templates = new();
 		readonly Cache<SheetType, SheetBuilder> sheetBuilders;
 		readonly Sprite missingTile;
 		readonly MersenneTwister random;
@@ -79,8 +79,7 @@ namespace OpenRA.Mods.OpenSA.Terrain
 					var start = indices.Min();
 					var end = indices.Max();
 					if (start < 0 || end >= frameCount)
-						throw new YamlException("Template `{0}` uses frames [{1}..{2}] of {3}, but only [0..{4}] actually exist"
-							.F(t.Key, start, end, i, frameCount - 1));
+						throw new YamlException($"Template `{t.Key}` uses frames [{start}..{end}] of {i}, but only [0..{frameCount - 1}] actually exist");
 
 					variants.Add(indices.Select(j =>
 					{

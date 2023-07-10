@@ -22,7 +22,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public readonly int Lifetime = 0;
 
 		[Desc("Allowed to land on.")]
-		public readonly HashSet<string> TerrainTypes = new HashSet<string>();
+		public readonly HashSet<string> TerrainTypes = new();
 
 		public override object Create(ActorInitializer init) { return new Plant(this); }
 	}

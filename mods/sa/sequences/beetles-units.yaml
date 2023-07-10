@@ -1,206 +1,296 @@
 beetles_light:
 	idle:
 		Combine:
-			sprites|UNBETLBB_STT.ANI:
-			sprites|UNBETLBB_STTL.ANI:
-			sprites|UNBETLBB_STL.ANI:
-			sprites|UNBETLBB_STBL.ANI:
-			sprites|UNBETLBB_STB.ANI:
-			sprites|UNBETLBB_STBR.ANI:
-			sprites|UNBETLBB_STR.ANI:
-			sprites|UNBETLBB_STTR.ANI:
+			0:
+				Filename: sprites|UNBETLBB_STT.ANI
+			1:
+				Filename: sprites|UNBETLBB_STTL.ANI
+			2:
+				Filename: sprites|UNBETLBB_STL.ANI
+			3:
+				Filename: sprites|UNBETLBB_STBL.ANI
+			4:
+				Filename: sprites|UNBETLBB_STB.ANI
+			5:
+				Filename: sprites|UNBETLBB_STBR.ANI
+			6:
+				Filename: sprites|UNBETLBB_STR.ANI
+			7:
+				Filename: sprites|UNBETLBB_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNBETLBB_ATT.ANI:
+			0:
+				Filename: sprites|UNBETLBB_ATT.ANI
 				Length: 2
-			sprites|UNBETLBB_ATTL.ANI:
+			1:
+				Filename: sprites|UNBETLBB_ATTL.ANI
 				Length: 2
-			sprites|UNBETLBB_ATL.ANI:
+			2:
+				Filename: sprites|UNBETLBB_ATL.ANI
 				Length: 2
-			sprites|UNBETLBB_ATBL.ANI:
+			3:
+				Filename: sprites|UNBETLBB_ATBL.ANI
 				Length: 2
-			sprites|UNBETLBB_ATB.ANI:
+			4:
+				Filename: sprites|UNBETLBB_ATB.ANI
 				Length: 2
-			sprites|UNBETLBB_ATBR.ANI:
+			5:
+				Filename: sprites|UNBETLBB_ATBR.ANI
 				Length: 2
-			sprites|UNBETLBB_ATR.ANI:
+			6:
+				Filename: sprites|UNBETLBB_ATR.ANI
 				Length: 2
-			sprites|UNBETLBB_ATTR.ANI:
+			7:
+				Filename: sprites|UNBETLBB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 107
 	move:
 		Combine:
-			sprites|UNBETLBB_WAT.ANI:
+			0:
+				Filename: sprites|UNBETLBB_WAT.ANI
 				Length: 3
-			sprites|UNBETLBB_WATL.ANI:
+			1:
+				Filename: sprites|UNBETLBB_WATL.ANI
 				Length: 3
-			sprites|UNBETLBB_WAL.ANI:
+			2:
+				Filename: sprites|UNBETLBB_WAL.ANI
 				Length: 3
-			sprites|UNBETLBB_WABL.ANI:
+			3:
+				Filename: sprites|UNBETLBB_WABL.ANI
 				Length: 3
-			sprites|UNBETLBB_WAB.ANI:
+			4:
+				Filename: sprites|UNBETLBB_WAB.ANI
 				Length: 3
-			sprites|UNBETLBB_WABR.ANI:
+			5:
+				Filename: sprites|UNBETLBB_WABR.ANI
 				Length: 3
-			sprites|UNBETLBB_WAR.ANI:
+			6:
+				Filename: sprites|UNBETLBB_WAR.ANI
 				Length: 3
-			sprites|UNBETLBB_WATR.ANI:
+			7:
+				Filename: sprites|UNBETLBB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNBETLBB_DEAD.ANI
+	die:
+		Filename: sprites|UNBETLBB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 6
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 7
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEBEETLELADYBUG.ANI
-	portrait: sprites|COLONYBEETLEA3DB.ANI
+	name:
+		Filename: sprites|NAMEBEETLELADYBUG.ANI
+	portrait:
+		Filename: sprites|COLONYBEETLEA3DB.ANI
 
 beetles_medium:
 	idle:
 		Combine:
-			sprites|UNBETSHB_STT.ANI:
-			sprites|UNBETSHB_STTL.ANI:
-			sprites|UNBETSHB_STL.ANI:
-			sprites|UNBETSHB_STBL.ANI:
-			sprites|UNBETSHB_STB.ANI:
-			sprites|UNBETSHB_STBR.ANI:
-			sprites|UNBETSHB_STR.ANI:
-			sprites|UNBETSHB_STTR.ANI:
+			0:
+				Filename: sprites|UNBETSHB_STT.ANI
+			1:
+				Filename: sprites|UNBETSHB_STTL.ANI
+			2:
+				Filename: sprites|UNBETSHB_STL.ANI
+			3:
+				Filename: sprites|UNBETSHB_STBL.ANI
+			4:
+				Filename: sprites|UNBETSHB_STB.ANI
+			5:
+				Filename: sprites|UNBETSHB_STBR.ANI
+			6:
+				Filename: sprites|UNBETSHB_STR.ANI
+			7:
+				Filename: sprites|UNBETSHB_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNBETSHB_ATT.ANI:
+			0:
+				Filename: sprites|UNBETSHB_ATT.ANI
 				Length: 2
-			sprites|UNBETSHB_ATTL.ANI:
+			1:
+				Filename: sprites|UNBETSHB_ATTL.ANI
 				Length: 2
-			sprites|UNBETSHB_ATL.ANI:
+			2:
+				Filename: sprites|UNBETSHB_ATL.ANI
 				Length: 2
-			sprites|UNBETSHB_ATBL.ANI:
+			3:
+				Filename: sprites|UNBETSHB_ATBL.ANI
 				Length: 2
-			sprites|UNBETSHB_ATB.ANI:
+			4:
+				Filename: sprites|UNBETSHB_ATB.ANI
 				Length: 2
-			sprites|UNBETSHB_ATBR.ANI:
+			5:
+				Filename: sprites|UNBETSHB_ATBR.ANI
 				Length: 2
-			sprites|UNBETSHB_ATR.ANI:
+			6:
+				Filename: sprites|UNBETSHB_ATR.ANI
 				Length: 2
-			sprites|UNBETSHB_ATTR.ANI:
+			7:
+				Filename: sprites|UNBETSHB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 133
 	move:
 		Combine:
-			sprites|UNBETSHB_WAT.ANI:
+			0:
+				Filename: sprites|UNBETSHB_WAT.ANI
 				Length: 3
-			sprites|UNBETSHB_WATL.ANI:
+			1:
+				Filename: sprites|UNBETSHB_WATL.ANI
 				Length: 3
-			sprites|UNBETSHB_WAL.ANI:
+			2:
+				Filename: sprites|UNBETSHB_WAL.ANI
 				Length: 3
-			sprites|UNBETSHB_WABL.ANI:
+			3:
+				Filename: sprites|UNBETSHB_WABL.ANI
 				Length: 3
-			sprites|UNBETSHB_WAB.ANI:
+			4:
+				Filename: sprites|UNBETSHB_WAB.ANI
 				Length: 3
-			sprites|UNBETSHB_WABR.ANI:
+			5:
+				Filename: sprites|UNBETSHB_WABR.ANI
 				Length: 3
-			sprites|UNBETSHB_WAR.ANI:
+			6:
+				Filename: sprites|UNBETSHB_WAR.ANI
 				Length: 3
-			sprites|UNBETSHB_WATR.ANI:
+			7:
+				Filename: sprites|UNBETSHB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNBETSHB_DEAD.ANI
+	die:
+		Filename: sprites|UNBETSHB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 8
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 9
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEBEETLESHRAPNEL.ANI
-	portrait: sprites|COLONYBEETLEB3DB.ANI
+	name:
+		Filename: sprites|NAMEBEETLESHRAPNEL.ANI
+	portrait:
+		Filename: sprites|COLONYBEETLEB3DB.ANI
 
 beetles_heavy:
 	idle:
 		Combine:
-			sprites|UNBETCAB_STT.ANI:
-			sprites|UNBETCAB_STTL.ANI:
-			sprites|UNBETCAB_STL.ANI:
-			sprites|UNBETCAB_STBL.ANI:
-			sprites|UNBETCAB_STB.ANI:
-			sprites|UNBETCAB_STBR.ANI:
-			sprites|UNBETCAB_STR.ANI:
-			sprites|UNBETCAB_STTR.ANI:
+			0:
+				Filename: sprites|UNBETCAB_STT.ANI
+			1:
+				Filename: sprites|UNBETCAB_STTL.ANI
+			2:
+				Filename: sprites|UNBETCAB_STL.ANI
+			3:
+				Filename: sprites|UNBETCAB_STBL.ANI
+			4:
+				Filename: sprites|UNBETCAB_STB.ANI
+			5:
+				Filename: sprites|UNBETCAB_STBR.ANI
+			6:
+				Filename: sprites|UNBETCAB_STR.ANI
+			7:
+				Filename: sprites|UNBETCAB_STTR.ANI
 		Facings: 8
 	shoot:
 		Combine:
-			sprites|UNBETCAB_ATT.ANI:
+			0:
+				Filename: sprites|UNBETCAB_ATT.ANI
 				Length: 2
-			sprites|UNBETCAB_ATTL.ANI:
+			1:
+				Filename: sprites|UNBETCAB_ATTL.ANI
 				Length: 2
-			sprites|UNBETCAB_ATL.ANI:
+			2:
+				Filename: sprites|UNBETCAB_ATL.ANI
 				Length: 2
-			sprites|UNBETCAB_ATBL.ANI:
+			3:
+				Filename: sprites|UNBETCAB_ATBL.ANI
 				Length: 2
-			sprites|UNBETCAB_ATB.ANI:
+			4:
+				Filename: sprites|UNBETCAB_ATB.ANI
 				Length: 2
-			sprites|UNBETCAB_ATBR.ANI:
+			5:
+				Filename: sprites|UNBETCAB_ATBR.ANI
 				Length: 2
-			sprites|UNBETCAB_ATR.ANI:
+			6:
+				Filename: sprites|UNBETCAB_ATR.ANI
 				Length: 2
-			sprites|UNBETCAB_ATTR.ANI:
+			7:
+				Filename: sprites|UNBETCAB_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
 		Tick: 80
 	move:
 		Combine:
-			sprites|UNBETCAB_WAT.ANI:
+			0:
+				Filename: sprites|UNBETCAB_WAT.ANI
 				Length: 3
-			sprites|UNBETCAB_WATL.ANI:
+			1:
+				Filename: sprites|UNBETCAB_WATL.ANI
 				Length: 3
-			sprites|UNBETCAB_WAL.ANI:
+			2:
+				Filename: sprites|UNBETCAB_WAL.ANI
 				Length: 3
-			sprites|UNBETCAB_WABL.ANI:
+			3:
+				Filename: sprites|UNBETCAB_WABL.ANI
 				Length: 3
-			sprites|UNBETCAB_WAB.ANI:
+			4:
+				Filename: sprites|UNBETCAB_WAB.ANI
 				Length: 3
-			sprites|UNBETCAB_WABR.ANI:
+			5:
+				Filename: sprites|UNBETCAB_WABR.ANI
 				Length: 3
-			sprites|UNBETCAB_WAR.ANI:
+			6:
+				Filename: sprites|UNBETCAB_WAR.ANI
 				Length: 3
-			sprites|UNBETCAB_WATR.ANI:
+			7:
+				Filename: sprites|UNBETCAB_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
-	die: sprites|UNBETCAB_DEAD.ANI
+	die:
+		Filename: sprites|UNBETCAB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: bits/icons.png
+	icon:
+		Filename: bits/icons.png
 		Start: 10
-	icon-clicked: bits/icons.png
+	icon-clicked:
+		Filename: bits/icons.png
 		Start: 11
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name: sprites|NAMEBEETLECANNON.ANI
-	portrait: sprites|COLONYBEETLEC3DB.ANI
+	name:
+		Filename: sprites|NAMEBEETLECANNON.ANI
+	portrait:
+		Filename: sprites|COLONYBEETLEC3DB.ANI

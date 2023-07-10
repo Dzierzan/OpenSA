@@ -74,4 +74,3 @@ Player:
 	SquadManagerBotModule@WaspsAI:
 		SquadSize: 10
 		SquadSizeRandomBonus: 5
-

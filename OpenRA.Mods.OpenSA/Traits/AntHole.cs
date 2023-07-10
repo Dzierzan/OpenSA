@@ -29,7 +29,7 @@ namespace OpenRA.Mods.OpenSA.Traits
 		public readonly int[] ActorShares = null;
 
 		[Desc("Minimum and Maximum number of actors spawning.")]
-		public readonly int2 Amount = new int2(1, 5);
+		public readonly int2 Amount = new(1, 5);
 
 		[Desc("Time in ticks between each ant crawling out of the hole.")]
 		public readonly int Delay = 40;

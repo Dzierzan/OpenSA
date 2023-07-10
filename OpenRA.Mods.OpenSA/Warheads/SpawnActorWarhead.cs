@@ -50,7 +50,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 
 		[FieldLoader.Require]
 		[Desc("The terrain types that the actor is allowed to spawn.")]
-		public readonly HashSet<string> TerrainTypes = new HashSet<string>();
+		public readonly HashSet<string> TerrainTypes = new();
 
 		public readonly bool UsePlayerPalette = false;
 
@@ -62,7 +62,7 @@ namespace OpenRA.Mods.OpenSA.Warheads
 				var buildingInfo = actorInfo.TraitInfoOrDefault<BuildingInfo>();
 
 				if (buildingInfo != null)
-					throw new YamlException("SpawnActorWarhead cannot be used to spawn building actor '{0}'!".F(a));
+					throw new YamlException($"SpawnActorWarhead cannot be used to spawn building actor '{a}'!");
 			}
 		}
 

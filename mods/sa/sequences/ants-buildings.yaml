@@ -1,131 +1,201 @@
 ants_colony:
-	idle-overlay: sprites|STCLYANB_COLONY.ANI
+	idle-overlay:
+		Filename: sprites|STCLYANB_COLONY.ANI
 		ZOffset: 2500
-	idle: sprites|STCLYANX_COLONYBASE.ANI
+	idle:
+		Filename: sprites|STCLYANX_COLONYBASE.ANI
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYANB_WNORMALT.ANI:
-			sprites|STCLYANB_WNORMALT2.ANI:
-			sprites|STCLYANB_WNORMALTL.ANI:
-			sprites|STCLYANB_WNORMALTL2.ANI:
-			sprites|STCLYANB_WNORMALL.ANI:
-			sprites|STCLYANB_WNORMALL2.ANI:
-			sprites|STCLYANB_WNORMALBL.ANI:
-			sprites|STCLYANB_WNORMALBL2.ANI:
-			sprites|STCLYANB_WNORMALB.ANI:
-			sprites|STCLYANB_WNORMALB2.ANI:
-			sprites|STCLYANB_WNORMALBR.ANI:
-			sprites|STCLYANB_WNORMALBR2.ANI:
-			sprites|STCLYANB_WNORMALR.ANI:
-			sprites|STCLYANB_WNORMALR2.ANI:
-			sprites|STCLYANB_WNORMALTR.ANI:
-			sprites|STCLYANB_WNORMALTR2.ANI:
+			0:
+				Filename: sprites|STCLYANB_WNORMALT.ANI
+			1:
+				Filename: sprites|STCLYANB_WNORMALT2.ANI
+			2:
+				Filename: sprites|STCLYANB_WNORMALTL.ANI
+			3:
+				Filename: sprites|STCLYANB_WNORMALTL2.ANI
+			4:
+				Filename: sprites|STCLYANB_WNORMALL.ANI
+			5:
+				Filename: sprites|STCLYANB_WNORMALL2.ANI
+			6:
+				Filename: sprites|STCLYANB_WNORMALBL.ANI
+			7:
+				Filename: sprites|STCLYANB_WNORMALBL2.ANI
+			8:
+				Filename: sprites|STCLYANB_WNORMALB.ANI
+			9:
+				Filename: sprites|STCLYANB_WNORMALB2.ANI
+			10:
+				Filename: sprites|STCLYANB_WNORMALBR.ANI
+			11:
+				Filename: sprites|STCLYANB_WNORMALBR2.ANI
+			12:
+				Filename: sprites|STCLYANB_WNORMALR.ANI
+			13:
+				Filename: sprites|STCLYANB_WNORMALR2.ANI
+			14:
+				Filename: sprites|STCLYANB_WNORMALTR.ANI
+			15:
+				Filename: sprites|STCLYANB_WNORMALTR2.ANI
 		Facings: 16
 		ZOffset: 2600
 	shoot:
 		Combine:
-			sprites|STCLYANB_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYANB_WFIRET.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRET2.ANI:
+			1:
+				Filename: sprites|STCLYANB_WFIRET2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYANB_WFIRETL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETL2.ANI:
+			3:
+				Filename: sprites|STCLYANB_WFIRETL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREL.ANI:
+			4:
+				Filename: sprites|STCLYANB_WFIREL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREL2.ANI:
+			5:
+				Filename: sprites|STCLYANB_WFIREL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBL.ANI:
+			6:
+				Filename: sprites|STCLYANB_WFIREBL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBL2.ANI:
+			7:
+				Filename: sprites|STCLYANB_WFIREBL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYANB_WFIREB.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREB2.ANI:
+			9:
+				Filename: sprites|STCLYANB_WFIREB2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYANB_WFIREBR.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBR2.ANI:
+			11:
+				Filename: sprites|STCLYANB_WFIREBR2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYANB_WFIRER.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRER2.ANI:
+			13:
+				Filename: sprites|STCLYANB_WFIRER2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYANB_WFIRETR.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETR2.ANI:
+			15:
+				Filename: sprites|STCLYANB_WFIRETR2.ANI
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 80
 		ZOffset: 2600
-	name: sprites|NAMEANTCOLONY.ANI
+	name:
+		Filename: sprites|NAMEANTCOLONY.ANI
 
 ants_colony_turret:
-	idle-overlay: bits/AntsColonyTurret.png
+	idle-overlay:
+		Filename: bits/AntsColonyTurret.png
 		Start: 0
 		ZOffset: 1024
-	idle: bits/AntsColonyTurret.png
+	idle:
+		Filename: bits/AntsColonyTurret.png
 		Start: 1
 		ZOffset: -100
 	turret:
 		Combine:
-			sprites|STCLYANB_WNORMALT.ANI:
-			sprites|STCLYANB_WNORMALT2.ANI:
-			sprites|STCLYANB_WNORMALTL.ANI:
-			sprites|STCLYANB_WNORMALTL2.ANI:
-			sprites|STCLYANB_WNORMALL.ANI:
-			sprites|STCLYANB_WNORMALL2.ANI:
-			sprites|STCLYANB_WNORMALBL.ANI:
-			sprites|STCLYANB_WNORMALBL2.ANI:
-			sprites|STCLYANB_WNORMALB.ANI:
-			sprites|STCLYANB_WNORMALB2.ANI:
-			sprites|STCLYANB_WNORMALBR.ANI:
-			sprites|STCLYANB_WNORMALBR2.ANI:
-			sprites|STCLYANB_WNORMALR.ANI:
-			sprites|STCLYANB_WNORMALR2.ANI:
-			sprites|STCLYANB_WNORMALTR.ANI:
-			sprites|STCLYANB_WNORMALTR2.ANI:
+			0:
+				Filename: sprites|STCLYANB_WNORMALT.ANI
+			1:
+				Filename: sprites|STCLYANB_WNORMALT2.ANI
+			2:
+				Filename: sprites|STCLYANB_WNORMALTL.ANI
+			3:
+				Filename: sprites|STCLYANB_WNORMALTL2.ANI
+			4:
+				Filename: sprites|STCLYANB_WNORMALL.ANI
+			5:
+				Filename: sprites|STCLYANB_WNORMALL2.ANI
+			6:
+				Filename: sprites|STCLYANB_WNORMALBL.ANI
+			7:
+				Filename: sprites|STCLYANB_WNORMALBL2.ANI
+			8:
+				Filename: sprites|STCLYANB_WNORMALB.ANI
+			9:
+				Filename: sprites|STCLYANB_WNORMALB2.ANI
+			10:
+				Filename: sprites|STCLYANB_WNORMALBR.ANI
+			11:
+				Filename: sprites|STCLYANB_WNORMALBR2.ANI
+			12:
+				Filename: sprites|STCLYANB_WNORMALR.ANI
+			13:
+				Filename: sprites|STCLYANB_WNORMALR2.ANI
+			14:
+				Filename: sprites|STCLYANB_WNORMALTR.ANI
+			15:
+				Filename: sprites|STCLYANB_WNORMALTR2.ANI
 		Facings: 16
 		ZOffset: 1256
 	shoot:
 		Combine:
-			sprites|STCLYANB_WFIRET.ANI:
+			0:
+				Filename: sprites|STCLYANB_WFIRET.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRET2.ANI:
+			1:
+				Filename: sprites|STCLYANB_WFIRET2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETL.ANI:
+			2:
+				Filename: sprites|STCLYANB_WFIRETL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETL2.ANI:
+			3:
+				Filename: sprites|STCLYANB_WFIRETL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREL.ANI:
+			4:
+				Filename: sprites|STCLYANB_WFIREL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREL2.ANI:
+			5:
+				Filename: sprites|STCLYANB_WFIREL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBL.ANI:
+			6:
+				Filename: sprites|STCLYANB_WFIREBL.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBL2.ANI:
+			7:
+				Filename: sprites|STCLYANB_WFIREBL2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREB.ANI:
+			8:
+				Filename: sprites|STCLYANB_WFIREB.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREB2.ANI:
+			9:
+				Filename: sprites|STCLYANB_WFIREB2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBR.ANI:
+			10:
+				Filename: sprites|STCLYANB_WFIREBR.ANI
 				Length: 2
-			sprites|STCLYANB_WFIREBR2.ANI:
+			11:
+				Filename: sprites|STCLYANB_WFIREBR2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRER.ANI:
+			12:
+				Filename: sprites|STCLYANB_WFIRER.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRER2.ANI:
+			13:
+				Filename: sprites|STCLYANB_WFIRER2.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETR.ANI:
+			14:
+				Filename: sprites|STCLYANB_WFIRETR.ANI
 				Length: 2
-			sprites|STCLYANB_WFIRETR2.ANI:
+			15:
+				Filename: sprites|STCLYANB_WFIRETR2.ANI
 				Length: 2
 		Length: 2
 		Facings: 16
 		Tick: 80
 		ZOffset: 1256
-	name: sprites|NAMEANTCOLONY.ANI #TODO PLACEHOLDER
+	name: #TODO PLACEHOLDER
+		Filename: sprites|NAMEANTCOLONY.ANI

@@ -1,33 +1,49 @@
 ant_bull_pirate:
 	idle:
 		Combine:
-			sprites|UNANTSOX_STT.ANI:
-			sprites|UNANTSOX_STTL.ANI:
-			sprites|UNANTSOX_STL.ANI:
-			sprites|UNANTSOX_STBL.ANI:
-			sprites|UNANTSOX_STB.ANI:
-			sprites|UNANTSOX_STBR.ANI:
-			sprites|UNANTSOX_STR.ANI:
-			sprites|UNANTSOX_STTR.ANI:
+			0:
+				Filename: sprites|UNANTSOX_STT.ANI
+			1:
+				Filename: sprites|UNANTSOX_STTL.ANI
+			2:
+				Filename: sprites|UNANTSOX_STL.ANI
+			3:
+				Filename: sprites|UNANTSOX_STBL.ANI
+			4:
+				Filename: sprites|UNANTSOX_STB.ANI
+			5:
+				Filename: sprites|UNANTSOX_STBR.ANI
+			6:
+				Filename: sprites|UNANTSOX_STR.ANI
+			7:
+				Filename: sprites|UNANTSOX_STTR.ANI
 		Facings: 8
 		ZOffset: 100
 	shoot:
 		Combine:
-			sprites|UNANTSOX_ATT.ANI:
+			0:
+				Filename: sprites|UNANTSOX_ATT.ANI
 				Length: 2
-			sprites|UNANTSOX_ATTL.ANI:
+			1:
+				Filename: sprites|UNANTSOX_ATTL.ANI
 				Length: 2
-			sprites|UNANTSOX_ATL.ANI:
+			2:
+				Filename: sprites|UNANTSOX_ATL.ANI
 				Length: 2
-			sprites|UNANTSOX_ATBL.ANI:
+			3:
+				Filename: sprites|UNANTSOX_ATBL.ANI
 				Length: 2
-			sprites|UNANTSOX_ATB.ANI:
+			4:
+				Filename: sprites|UNANTSOX_ATB.ANI
 				Length: 2
-			sprites|UNANTSOX_ATBR.ANI:
+			5:
+				Filename: sprites|UNANTSOX_ATBR.ANI
 				Length: 2
-			sprites|UNANTSOX_ATR.ANI:
+			6:
+				Filename: sprites|UNANTSOX_ATR.ANI
 				Length: 2
-			sprites|UNANTSOX_ATTR.ANI:
+			7:
+				Filename: sprites|UNANTSOX_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
@@ -35,69 +51,99 @@ ant_bull_pirate:
 		ZOffset: 100
 	move:
 		Combine:
-			sprites|UNANTSOX_WAT.ANI:
+			0:
+				Filename: sprites|UNANTSOX_WAT.ANI
 				Length: 3
-			sprites|UNANTSOX_WATL.ANI:
+			1:
+				Filename: sprites|UNANTSOX_WATL.ANI
 				Length: 3
-			sprites|UNANTSOX_WAL.ANI:
+			2:
+				Filename: sprites|UNANTSOX_WAL.ANI
 				Length: 3
-			sprites|UNANTSOX_WABL.ANI:
+			3:
+				Filename: sprites|UNANTSOX_WABL.ANI
 				Length: 3
-			sprites|UNANTSOX_WAB.ANI:
+			4:
+				Filename: sprites|UNANTSOX_WAB.ANI
 				Length: 3
-			sprites|UNANTSOX_WABR.ANI:
+			5:
+				Filename: sprites|UNANTSOX_WABR.ANI
 				Length: 3
-			sprites|UNANTSOX_WAR.ANI:
+			6:
+				Filename: sprites|UNANTSOX_WAR.ANI
 				Length: 3
-			sprites|UNANTSOX_WATR.ANI:
+			7:
+				Filename: sprites|UNANTSOX_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: sprites|UNANTSOX_DEAD.ANI
+	die:
+		Filename: sprites|UNANTSOX_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: sprites|COLONYANTA00.ANI
-	icon-clicked: sprites|COLONYANTA01.ANI
-	paralysis: sprites|PARALYSIS.ANI
+	icon:
+		Filename: sprites|COLONYANTA00.ANI
+	icon-clicked:
+		Filename: sprites|COLONYANTA01.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
-	name: sprites|NAMENEUTRALANTBULL.ANI
-	portrait: sprites|COLONYNEUTRALANTBULL3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALANTBULL.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALANTBULL3D.ANI
 
 ants_grenadier_pirate:
 	idle:
 		Combine:
-			sprites|UNANTRGX_STT.ANI:
-			sprites|UNANTRGX_STTL.ANI:
-			sprites|UNANTRGX_STL.ANI:
-			sprites|UNANTRGX_STBL.ANI:
-			sprites|UNANTRGX_STB.ANI:
-			sprites|UNANTRGX_STBR.ANI:
-			sprites|UNANTRGX_STR.ANI:
-			sprites|UNANTRGX_STTR.ANI:
+			0:
+				Filename: sprites|UNANTRGX_STT.ANI
+			1:
+				Filename: sprites|UNANTRGX_STTL.ANI
+			2:
+				Filename: sprites|UNANTRGX_STL.ANI
+			3:
+				Filename: sprites|UNANTRGX_STBL.ANI
+			4:
+				Filename: sprites|UNANTRGX_STB.ANI
+			5:
+				Filename: sprites|UNANTRGX_STBR.ANI
+			6:
+				Filename: sprites|UNANTRGX_STR.ANI
+			7:
+				Filename: sprites|UNANTRGX_STTR.ANI
 		Facings: 8
 		ZOffset: 1000
 	shoot:
 		Combine:
-			sprites|UNANTRGX_ATT.ANI:
+			0:
+				Filename: sprites|UNANTRGX_ATT.ANI
 				Length: 2
-			sprites|UNANTRGX_ATTL.ANI:
+			1:
+				Filename: sprites|UNANTRGX_ATTL.ANI
 				Length: 2
-			sprites|UNANTRGX_ATL.ANI:
+			2:
+				Filename: sprites|UNANTRGX_ATL.ANI
 				Length: 2
-			sprites|UNANTRGX_ATBL.ANI:
+			3:
+				Filename: sprites|UNANTRGX_ATBL.ANI
 				Length: 2
-			sprites|UNANTRGX_ATB.ANI:
+			4:
+				Filename: sprites|UNANTRGX_ATB.ANI
 				Length: 2
-			sprites|UNANTRGX_ATBR.ANI:
+			5:
+				Filename: sprites|UNANTRGX_ATBR.ANI
 				Length: 2
-			sprites|UNANTRGX_ATR.ANI:
+			6:
+				Filename: sprites|UNANTRGX_ATR.ANI
 				Length: 2
-			sprites|UNANTRGX_ATTR.ANI:
+			7:
+				Filename: sprites|UNANTRGX_ATTR.ANI
 				Length: 2
 		Length: 2
 		Facings: 8
@@ -105,88 +151,119 @@ ants_grenadier_pirate:
 		ZOffset: 100
 	move:
 		Combine:
-			sprites|UNANTRGX_WAT.ANI:
+			0:
+				Filename: sprites|UNANTRGX_WAT.ANI
 				Length: 3
-			sprites|UNANTRGX_WATL.ANI:
+			1:
+				Filename: sprites|UNANTRGX_WATL.ANI
 				Length: 3
-			sprites|UNANTRGX_WAL.ANI:
+			2:
+				Filename: sprites|UNANTRGX_WAL.ANI
 				Length: 3
-			sprites|UNANTRGX_WABL.ANI:
+			3:
+				Filename: sprites|UNANTRGX_WABL.ANI
 				Length: 3
-			sprites|UNANTRGX_WAB.ANI:
+			4:
+				Filename: sprites|UNANTRGX_WAB.ANI
 				Length: 3
-			sprites|UNANTRGX_WABR.ANI:
+			5:
+				Filename: sprites|UNANTRGX_WABR.ANI
 				Length: 3
-			sprites|UNANTRGX_WAR.ANI:
+			6:
+				Filename: sprites|UNANTRGX_WAR.ANI
 				Length: 3
-			sprites|UNANTRGX_WATR.ANI:
+			7:
+				Filename: sprites|UNANTRGX_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: sprites|UNANTRGX_DEAD.ANI
+	die:
+		Filename: sprites|UNANTRGX_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: sprites|COLONYANTB00.ANI
-	icon-clicked: sprites|COLONYANTB01.ANI
-	paralysis: sprites|PARALYSIS.ANI
+	icon:
+		Filename: sprites|COLONYANTB00.ANI
+	icon-clicked:
+		Filename: sprites|COLONYANTB01.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
-	name: sprites|NAMENEUTRALANTGRENADIER.ANI
-	portrait: sprites|COLONYNEUTRALANTGRENADIER3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALANTGRENADIER.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALANTGRENADIER3D.ANI
 
 ants_bazooka_pirate:
-	idle: bits/PirateBazooka.png
+	idle:
+		Filename: bits/PirateBazooka.png
 		Start: 0
 		Facings: 8
 		ZOffset: 1000
-	shoot: bits/PirateBazooka.png
+	shoot:
+		Filename: bits/PirateBazooka.png
 		Start: 32
 		Length: 2
 		Facings: 8
 		Tick: 267
 		ZOffset: 100
-	move: bits/PirateBazooka.png
+	move:
+		Filename: bits/PirateBazooka.png
 		Start: 8
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 100
-	die: bits/PirateBazooka.png
+	die:
+		Filename: bits/PirateBazooka.png
 		Start: 48
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	icon: sprites|COLONYANTC00.ANI
-	icon-clicked: sprites|COLONYANTC01.ANI
-	paralysis: sprites|PARALYSIS.ANI
+	icon:
+		Filename: sprites|COLONYANTC00.ANI
+	icon-clicked:
+		Filename: sprites|COLONYANTC01.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 1000
-	name: sprites|NAMEANTBAZOOKA.ANI
-	portrait: bits/empty.png
+	name:
+		Filename: sprites|NAMEANTBAZOOKA.ANI
+	portrait:
+		Filename: bits/empty.png
 
 moth:
 	idle:
 		Combine:
-			sprites|UNDEMOTH_WAT.ANI:
+			0:
+				Filename: sprites|UNDEMOTH_WAT.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATL.ANI:
+			1:
+				Filename: sprites|UNDEMOTH_WATL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAL.ANI:
+			2:
+				Filename: sprites|UNDEMOTH_WAL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABL.ANI:
+			3:
+				Filename: sprites|UNDEMOTH_WABL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAB.ANI:
+			4:
+				Filename: sprites|UNDEMOTH_WAB.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABR.ANI:
+			5:
+				Filename: sprites|UNDEMOTH_WABR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAR.ANI:
+			6:
+				Filename: sprites|UNDEMOTH_WAR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATR.ANI:
+			7:
+				Filename: sprites|UNDEMOTH_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
@@ -194,21 +271,29 @@ moth:
 		ZOffset: 3000
 	shoot:
 		Combine:
-			sprites|UNDEMOTH_WAT.ANI:
+			0:
+				Filename: sprites|UNDEMOTH_WAT.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATL.ANI:
+			1:
+				Filename: sprites|UNDEMOTH_WATL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAL.ANI:
+			2:
+				Filename: sprites|UNDEMOTH_WAL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABL.ANI:
+			3:
+				Filename: sprites|UNDEMOTH_WABL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAB.ANI:
+			4:
+				Filename: sprites|UNDEMOTH_WAB.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABR.ANI:
+			5:
+				Filename: sprites|UNDEMOTH_WABR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAR.ANI:
+			6:
+				Filename: sprites|UNDEMOTH_WAR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATR.ANI:
+			7:
+				Filename: sprites|UNDEMOTH_WATR.ANI
 				Length: 3
 		Length: 3
 		Facings: 8
@@ -216,39 +301,52 @@ moth:
 		ZOffset: 3000
 	move:
 		Combine:
-			sprites|UNDEMOTH_WAT.ANI:
+			0:
+				Filename: sprites|UNDEMOTH_WAT.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATL.ANI:
+			1:
+				Filename: sprites|UNDEMOTH_WATL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAL.ANI:
+			2:
+				Filename: sprites|UNDEMOTH_WAL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABL.ANI:
+			3:
+				Filename: sprites|UNDEMOTH_WABL.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAB.ANI:
+			4:
+				Filename: sprites|UNDEMOTH_WAB.ANI
 				Length: 3
-			sprites|UNDEMOTH_WABR.ANI:
+			5:
+				Filename: sprites|UNDEMOTH_WABR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WAR.ANI:
+			6:
+				Filename: sprites|UNDEMOTH_WAR.ANI
 				Length: 3
-			sprites|UNDEMOTH_WATR.ANI:
+			7:
+				Filename: sprites|UNDEMOTH_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	die: sprites|UNDEMOTH_DEAD.ANI
+	die:
+		Filename: sprites|UNDEMOTH_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 3500
-	name: sprites|NAMENEUTRALMOTH.ANI
-	portrait: sprites|COLONYNEUTRALMOTH3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALMOTH.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALMOTH3D.ANI
 
 dragonfly:
-	idle: bits/dragonfly.png #Fixed sprites
+	idle: #Fixed sprites
+		Filename: bits/dragonfly.png
 		#Combine: #Legacy sprites
 		#	sprites|UNDRABOB_WAT.ANI:
 		#		Length: 3
@@ -270,7 +368,8 @@ dragonfly:
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	shoot: bits/dragonfly.png #Fixed sprites
+	shoot: #Fixed sprites
+		Filename: bits/dragonfly.png
 		#Combine: #Legacy sprites
 		#	sprites|UNDRABOB_WAT.ANI:
 		#		Length: 3
@@ -292,7 +391,8 @@ dragonfly:
 		Facings: 8
 		Tick: 80
 		ZOffset: 3000
-	move: bits/dragonfly.png #Fixed sprites
+	move: #Fixed sprites
+		Filename: bits/dragonfly.png
 		#Combine: #Legacy sprites
 		#	sprites|UNDRABOB_WAT.ANI:
 		#		Length: 3
@@ -314,35 +414,47 @@ dragonfly:
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	die: sprites|UNDRABOB_DEAD.ANI
+	die:
+		Filename: sprites|UNDRABOB_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 3500
-	name: sprites|NAMENEUTRALDRAGONFLY.ANI
-	portrait: sprites|COLONYNEUTRALDRAGONFLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALDRAGONFLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALDRAGONFLY3D.ANI
 
 fly:
 	idle:
 		Combine:
-			sprites|UNFLYBIG_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYBIG_WAT.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYBIG_WATL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYBIG_WAL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYBIG_WABL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYBIG_WAB.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYBIG_WABR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYBIG_WAR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYBIG_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
@@ -350,21 +462,29 @@ fly:
 		ZOffset: 3000
 	shoot:
 		Combine:
-			sprites|UNFLYBIG_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYBIG_WAT.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYBIG_WATL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYBIG_WAL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYBIG_WABL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYBIG_WAB.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYBIG_WABR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYBIG_WAR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYBIG_WATR.ANI
 				Length: 3
 		Length: 3
 		Facings: 8
@@ -372,55 +492,75 @@ fly:
 		ZOffset: 3000
 	move:
 		Combine:
-			sprites|UNFLYBIG_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYBIG_WAT.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYBIG_WATL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYBIG_WAL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYBIG_WABL.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYBIG_WAB.ANI
 				Length: 3
-			sprites|UNFLYBIG_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYBIG_WABR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYBIG_WAR.ANI
 				Length: 3
-			sprites|UNFLYBIG_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYBIG_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	die: sprites|UNFLYBIG_DEAD.ANI
+	die:
+		Filename: sprites|UNFLYBIG_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 3500
-	name: sprites|NAMENEUTRALFLY.ANI
-	portrait: sprites|COLONYNEUTRALFLY3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALFLY.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALFLY3D.ANI
 
 flying_machine:
 	idle:
 		Combine:
-			sprites|UNFLYMCH_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYMCH_WAT.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYMCH_WATL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYMCH_WAL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYMCH_WABL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYMCH_WAB.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYMCH_WABR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYMCH_WAR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYMCH_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
@@ -428,21 +568,29 @@ flying_machine:
 		ZOffset: 3000
 	shoot:
 		Combine:
-			sprites|UNFLYMCH_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYMCH_WAT.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYMCH_WATL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYMCH_WAL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYMCH_WABL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYMCH_WAB.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYMCH_WABR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYMCH_WAR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYMCH_WATR.ANI
 				Length: 3
 		Length: 3
 		Facings: 8
@@ -450,33 +598,45 @@ flying_machine:
 		ZOffset: 3000
 	move:
 		Combine:
-			sprites|UNFLYMCH_WAT.ANI:
+			0:
+				Filename: sprites|UNFLYMCH_WAT.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATL.ANI:
+			1:
+				Filename: sprites|UNFLYMCH_WATL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAL.ANI:
+			2:
+				Filename: sprites|UNFLYMCH_WAL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABL.ANI:
+			3:
+				Filename: sprites|UNFLYMCH_WABL.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAB.ANI:
+			4:
+				Filename: sprites|UNFLYMCH_WAB.ANI
 				Length: 3
-			sprites|UNFLYMCH_WABR.ANI:
+			5:
+				Filename: sprites|UNFLYMCH_WABR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WAR.ANI:
+			6:
+				Filename: sprites|UNFLYMCH_WAR.ANI
 				Length: 3
-			sprites|UNFLYMCH_WATR.ANI:
+			7:
+				Filename: sprites|UNFLYMCH_WATR.ANI
 				Length: 3
 		Length: 3
 		Tick: 80
 		Facings: 8
 		ZOffset: 3000
-	die: sprites|UNFLYMCH_DEAD.ANI
+	die:
+		Filename: sprites|UNFLYMCH_DEAD.ANI
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	paralysis: sprites|PARALYSIS.ANI
+	paralysis:
+		Filename: sprites|PARALYSIS.ANI
 		Tick: 50
 		Length: 4
 		ZOffset: 3500
-	name: sprites|NAMENEUTRALFLYINGMACHINE.ANI
-	portrait: sprites|COLONYNEUTRALFLYINGMACHINE3D.ANI
+	name:
+		Filename: sprites|NAMENEUTRALFLYINGMACHINE.ANI
+	portrait:
+		Filename: sprites|COLONYNEUTRALFLYINGMACHINE3D.ANI

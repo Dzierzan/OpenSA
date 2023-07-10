@@ -1,34 +1,42 @@
 explosions:
-	big_explosion_1: sprites|ExplosionA.ANI
+	big_explosion_1:
+		Filename: sprites|ExplosionA.ANI
 		Length: 25
 		Tick: 20
 		ZOffset: 7000
-	big_explosion_2: sprites|ExplosionG.ANI
+	big_explosion_2:
+		Filename: sprites|ExplosionG.ANI
 		Length: 25
 		Tick: 20
 		ZOffset: 7000
-	medium_explosion: sprites|ExplosionD.ANI
+	medium_explosion:
+		Filename: sprites|ExplosionD.ANI
 		Length: 19
 		Tick: 20
 		ZOffset: 7000
-	small_explosion: sprites|ExplosionE.ANI
+	small_explosion:
+		Filename: sprites|ExplosionE.ANI
 		Length: 9
 		Tick: 20
 		ZOffset: 7000
-	colony_explosion: sprites|ExplosionC.ANI
+	colony_explosion:
+		Filename: sprites|ExplosionC.ANI
 		Length: 28
 		Tick: 40
 		Offset: 0,-30
 		ZOffset: 7000
-	shrapnel_explosion: sprites|ExplosionB.ANI
+	shrapnel_explosion:
+		Filename: sprites|ExplosionB.ANI
 		Length: 13
 		Tick: 20
 		ZOffset: 7000
-	paralyze_explosion: sprites|ExplosionF.ANI
+	paralyze_explosion:
+		Filename: sprites|ExplosionF.ANI
 		Length: 6
 		Tick: 60
 		ZOffset: 7000
-	gas_end: bits/gas.png
+	gas_end:
+		Filename: bits/gas.png
 		Start: 6
 		Length: 6
 		Tick: 40

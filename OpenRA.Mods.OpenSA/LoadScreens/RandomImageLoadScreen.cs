@@ -38,7 +38,7 @@ namespace OpenRA.Mods.OpenSA.LoadScreens
 			if (s != lastSheet || density != lastDensity)
 			{
 				lastSheet = s;
-				Rectangle rect = new Rectangle(0, 0, s.Size.Width, s.Size.Height);
+				var rect = new Rectangle(0, 0, s.Size.Width, s.Size.Height);
 
 				lastDensity = density;
 

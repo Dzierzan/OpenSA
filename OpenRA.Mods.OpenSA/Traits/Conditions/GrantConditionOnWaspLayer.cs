@@ -21,7 +21,7 @@ namespace OpenRA.Mods.OpenSA.Traits.Conditions
 		public override void RulesetLoaded(Ruleset rules, ActorInfo ai)
 		{
 			var mobileInfo = ai.TraitInfoOrDefault<MobileInfo>();
-			if (mobileInfo == null || !(mobileInfo.LocomotorInfo is WaspLocomotorInfo))
+			if (mobileInfo == null || mobileInfo.LocomotorInfo is not WaspLocomotorInfo)
 				throw new YamlException("GrantConditionOnWaspLayer requires Mobile to be linked to a WaspLocomotor!");
 
 			base.RulesetLoaded(rules, ai);
