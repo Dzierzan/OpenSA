@@ -78,8 +78,6 @@ scorpions_colony:
 		Facings: 16
 		Tick: 160
 		ZOffset: 2600
-	name:
-		Filename: sprites|NAMESCORPIONCOLONY.ANI
 
 scorpions_colony_turret:
 	idle-overlay:
@@ -163,8 +161,6 @@ scorpions_colony_turret:
 		Facings: 16
 		Tick: 160
 		ZOffset: 1256
-	name: #TODO PLACEHOLDER
-		Filename: sprites|NAMESCORPIONCOLONY.ANI
 
 scorpions_colony_turret_small:
 	idle-overlay:

@@ -46,7 +46,7 @@ wasps_light:
 				Length: 2
 		Length: 2
 		Facings: 8
-		Tick: 130 #
+		Tick: 130
 	move:
 		Combine:
 			0:
@@ -93,10 +93,6 @@ wasps_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEWASPASSAULT.ANI
-	portrait:
-		Filename: sprites|COLONYWASPA3DB.ANI
 
 wasps_medium:
 	idle:
@@ -193,10 +189,6 @@ wasps_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEWASPPARALYSIS.ANI
-	portrait:
-		Filename: sprites|COLONYWASPB3DB.ANI
 
 wasps_heavy:
 	idle:
@@ -246,7 +238,7 @@ wasps_heavy:
 				Length: 2
 		Length: 2
 		Facings: 8
-		Tick: 100 #53
+		Tick: 100
 	move:
 		Combine:
 			0:
@@ -293,7 +285,3 @@ wasps_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEWASPSONIC.ANI
-	portrait:
-		Filename: sprites|COLONYWASPC3DB.ANI

@@ -92,10 +92,6 @@ beetles_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEBEETLELADYBUG.ANI
-	portrait:
-		Filename: sprites|COLONYBEETLEA3DB.ANI
 
 beetles_medium:
 	idle:
@@ -191,10 +187,6 @@ beetles_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEBEETLESHRAPNEL.ANI
-	portrait:
-		Filename: sprites|COLONYBEETLEB3DB.ANI
 
 beetles_heavy:
 	idle:
@@ -290,7 +282,3 @@ beetles_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEBEETLECANNON.ANI
-	portrait:
-		Filename: sprites|COLONYBEETLEC3DB.ANI

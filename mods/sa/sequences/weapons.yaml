@@ -2,7 +2,6 @@ projectiles:
 	grenade:
 		Filename: WEAPON_GRENADE.ANI
 		Length: 2
-		Tick: 30
 		ZOffset: 6000
 	bazooka:
 		Filename: bits/rocket.png
@@ -129,7 +128,6 @@ smoke_trail:
 		Filename: SMOKEPUFF.ANI
 		ZOffset: 6000
 		Length: 7
-		Tick: 40
 
 gas_trail:
 	idle:

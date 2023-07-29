@@ -20,10 +20,6 @@ popcorn:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALPOPCORN.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALPOPCORN3D.ANI
 
 venus:
 	idle:
@@ -81,10 +77,6 @@ puff:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALSEEDBALL.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALSEEDBALL3D.ANI
 
 seed:
 	idle:
@@ -157,10 +149,6 @@ thorn:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALTHORNBUSH.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALTHORNBUSH3D.ANI
 
 gumnut:
 	idle:
@@ -207,10 +195,6 @@ freckle:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALFRECKLE.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALFRECKLE3D.ANI
 
 lolly_blue:
 	idle:
@@ -226,10 +210,6 @@ lolly_blue:
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALLOLLY.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_orange:
 	idle:
@@ -245,10 +225,6 @@ lolly_orange:
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALLOLLY.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_white:
 	idle:
@@ -264,10 +240,6 @@ lolly_white:
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALLOLLY.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 lolly_red:
 	idle:
@@ -283,10 +255,6 @@ lolly_red:
 		Length: 3
 		Tick: 9000
 		ZOffset: -5000
-	name:
-		Filename: sprites|NAMENEUTRALLOLLY.ANI
-	portrait:
-		Filename: sprites|COLONYNEUTRALLOLLY3D.ANI
 
 anthole_candy:
 	idle:

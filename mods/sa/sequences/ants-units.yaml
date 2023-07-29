@@ -91,10 +91,6 @@ ants_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEANTSOLDIER.ANI
-	portrait:
-		Filename: sprites|COLONYANTA3DB.ANI
 
 ants_medium:
 	idle:
@@ -193,10 +189,6 @@ ants_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEANTGRENADIER.ANI
-	portrait:
-		Filename: sprites|COLONYANTB3DB.ANI
 
 ants_heavy:
 	idle:
@@ -295,7 +287,3 @@ ants_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMEANTBAZOOKA.ANI
-	portrait:
-		Filename: sprites|COLONYANTC3DB.ANI

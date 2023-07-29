@@ -22,7 +22,6 @@ explosions:
 	colony_explosion:
 		Filename: sprites|ExplosionC.ANI
 		Length: 28
-		Tick: 40
 		Offset: 0,-30
 		ZOffset: 7000
 	shrapnel_explosion:

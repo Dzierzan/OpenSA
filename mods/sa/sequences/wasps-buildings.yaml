@@ -95,8 +95,6 @@ wasps_colony:
 		Facings: 16
 		Tick: 80
 		ZOffset: 2600
-	name:
-		Filename: sprites|NAMEWASPCOLONY.ANI
 
 wasps_colony_turret:
 	idle-overlay:
@@ -197,5 +195,3 @@ wasps_colony_turret:
 		Facings: 16
 		Tick: 80
 		ZOffset: 1256
-	name: #TODO PLACEHOLDER
-		Filename: sprites|NAMEWASPASSAULT.ANI

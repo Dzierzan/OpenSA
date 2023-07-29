@@ -92,10 +92,6 @@ scorpions_light:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMESCORPIONSAVAGE.ANI
-	portrait:
-		Filename: sprites|COLONYSCORPIONA3DB.ANI
 
 scorpions_medium:
 	idle:
@@ -191,10 +187,6 @@ scorpions_medium:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMESCORPIONSAVAGE.ANI
-	portrait:
-		Filename: sprites|COLONYSCORPIONB3DB.ANI
 
 scorpions_heavy:
 	idle:
@@ -290,7 +282,3 @@ scorpions_heavy:
 		Tick: 50
 		Length: 4
 		ZOffset: 1700
-	name:
-		Filename: sprites|NAMESCORPIONNINJA.ANI
-	portrait:
-		Filename: sprites|COLONYSCORPIONC3DB.ANI

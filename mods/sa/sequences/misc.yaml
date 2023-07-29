@@ -164,75 +164,6 @@ pips:
 				Filename: sprites|NUMBER9.ANI
 		Length: 10
 
-progressbar:
-	colony:
-		Combine:
-			0:
-				Filename: sprites|COLONYPROGRESS00.ANI
-			1:
-				Filename: sprites|COLONYPROGRESS01.ANI
-			2:
-				Filename: sprites|COLONYPROGRESS02.ANI
-			3:
-				Filename: sprites|COLONYPROGRESS03.ANI
-			4:
-				Filename: sprites|COLONYPROGRESS04.ANI
-			5:
-				Filename: sprites|COLONYPROGRESS05.ANI
-			6:
-				Filename: sprites|COLONYPROGRESS06.ANI
-			7:
-				Filename: sprites|COLONYPROGRESS07.ANI
-			8:
-				Filename: sprites|COLONYPROGRESS08.ANI
-			9:
-				Filename: sprites|COLONYPROGRESS09.ANI
-			10:
-				Filename: sprites|COLONYPROGRESS10.ANI
-			11:
-				Filename: sprites|COLONYPROGRESS11.ANI
-			12:
-				Filename: sprites|COLONYPROGRESS12.ANI
-			13:
-				Filename: sprites|COLONYPROGRESS13.ANI
-			14:
-				Filename: sprites|COLONYPROGRESS14.ANI
-			15:
-				Filename: sprites|COLONYPROGRESS15.ANI
-			16:
-				Filename: sprites|COLONYPROGRESS16.ANI
-			17:
-				Filename: sprites|COLONYPROGRESS17.ANI
-			18:
-				Filename: sprites|COLONYPROGRESS18.ANI
-			19:
-				Filename: sprites|COLONYPROGRESS19.ANI
-			20:
-				Filename: sprites|COLONYPROGRESS20.ANI
-			21:
-				Filename: sprites|COLONYPROGRESS21.ANI
-			22:
-				Filename: sprites|COLONYPROGRESS22.ANI
-			23:
-				Filename: sprites|COLONYPROGRESS23.ANI
-			24:
-				Filename: sprites|COLONYPROGRESS24.ANI
-			25:
-				Filename: sprites|COLONYPROGRESS25.ANI
-			26:
-				Filename: sprites|COLONYPROGRESS26.ANI
-			27:
-				Filename: sprites|COLONYPROGRESS27.ANI
-			28:
-				Filename: sprites|COLONYPROGRESS28.ANI
-			29:
-				Filename: sprites|COLONYPROGRESS29.ANI
-			30:
-				Filename: sprites|COLONYPROGRESS30.ANI
-			31:
-				Filename: sprites|COLONYPROGRESS31.ANI
-		Length: 32
-
 rallypoint:
 	flag:
 		Filename: bits/flag.png
@@ -244,12 +175,6 @@ rallypoint:
 	circles:
 		Filename: bits/empty.png
 
-minimapproduce:
-	idle:
-		Filename: sprites|MiniMapProduce.ANI
-		Length: 6
-		Tick: 100
-
 startcamera:
 	idle:
 		Filename: bits/camera.png
@@ -260,11 +185,3 @@ randomcolony:
 		Filename: bits/random-colony.png
 		Offset: 48, 48
 		ZOffset: 10000
-
-blank1:
-	idle:
-		Filename: bits/empty.png
-
-blank2:
-	idle:
-		Filename: bits/empty.png

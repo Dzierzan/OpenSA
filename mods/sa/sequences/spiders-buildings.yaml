@@ -111,8 +111,6 @@ spiders_colony:
 		Facings: 16
 		Tick: 80
 		ZOffset: 2600
-	name:
-		Filename: sprites|NAMESPIDERCOLONY.ANI
 
 spiders_colony_turret:
 	idle-overlay:
@@ -229,5 +227,3 @@ spiders_colony_turret:
 		Facings: 16
 		Tick: 80
 		ZOffset: 1256
-	name: #TODO PLACEHOLDER
-		Filename: sprites|NAMESPIDERBLACKWIDOW.ANI
