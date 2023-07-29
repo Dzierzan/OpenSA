@@ -27,4 +27,5 @@ World:
 			easy: Easy
 			normal: Normal
 			hard: Hard
+			veryhard: Very Hard
 		Default: normal

@@ -2,7 +2,8 @@ BotDelay =
 {
 	easy = 9,
 	normal = 3,
-	hard = 1
+	hard = 1,
+	veryhard = 1
 }
 
 WorldLoaded = function()
