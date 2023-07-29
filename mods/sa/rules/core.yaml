@@ -236,7 +236,7 @@
 		MaxMoveDelay: 4000
 	GrantConditionOnBotOwner:
 		Condition: bot-wanders
-		Bots: beetles-ai, ants-ai, wasps-ai, spiders-ai, easy-ai, medium-ai, hard-ai
+		Bots: beetles-ai, ants-ai, wasps-ai, spiders-ai, scorpions-ai, easy-ai, medium-ai, hard-ai
 	# Units should die when owner lost the game.
 	OwnerLostAction:
 		Action: Kill
