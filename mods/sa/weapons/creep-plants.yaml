@@ -130,13 +130,40 @@ gas:
 	Range: 6c0
 	Report: sa|bits/sounds/gas.wav
 	Projectile: Bullet
-		Speed: 125
-		Inaccuracy: 100
+		Speed: 175
+		Inaccuracy: 128
 		Image: projectiles
 		Sequences: gas
+		TrailImage: gas_trail
 	Warhead@Damage: SpreadDamage
 		Spread: 256
-		Damage: 500
+		Damage: 1000
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: gas_end
+		ValidTargets: Ground, Paralyzed, Water, Air, Colony
+	Warhead@Cluster: FireCluster
+		Weapon: gas_cluster
+		RandomClusterCount: 6
+		Dimensions: 3,3
+		Footprint: xXx XXX xXx
+
+gas_cluster:
+	ValidTargets: Ground, Paralyzed, Water, Air, Colony
+	ReloadDelay: 50
+	Range: 6c0
+	Projectile: Bullet
+		Speed: 125
+		Inaccuracy: 0c512
+		InaccuracyType: Absolute
+		LaunchAngle: 32,128
+		Image: projectiles
+		Sequences: gas
+		TrailImage: gas_trail
+	Warhead@Damage: SpreadDamage
+		Spread: 256
+		Damage: 256
 		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Effect: CreateEffect
 		Image: explosions

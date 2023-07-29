@@ -39,5 +39,5 @@ explosions:
 		Filename: bits/gas.png
 		Start: 6
 		Length: 6
-		Tick: 40
 		ZOffset: 7000
+		BlendMode: Additive

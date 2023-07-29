@@ -106,6 +106,7 @@ projectiles:
 		Length: 6
 		Tick: 80
 		ZOffset: 6000
+		BlendMode: Additive
 	colonybit:
 		Filename: COLONYBIT.ANI
 		Length: 4
@@ -129,3 +130,11 @@ smoke_trail:
 		ZOffset: 6000
 		Length: 7
 		Tick: 40
+
+gas_trail:
+	idle:
+		Filename: bits/gas.png
+		Start: 12
+		ZOffset: 6000
+		Length: 6
+		BlendMode: Additive

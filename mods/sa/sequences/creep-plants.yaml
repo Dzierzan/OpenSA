@@ -56,8 +56,6 @@ venus:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	#name: bits/empty.png
-	#portrait: bits/empty.png
 
 puff:
 	idle:
@@ -134,15 +132,12 @@ mushroom:
 		Filename: bits/mushroom.png
 		Start: 6
 		Length: 8
-		Tick: 50
 	die:
 		Filename: bits/mushroom.png
 		Start: 16
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	#name: bits/empty.png
-	#portrait: bits/empty.png
 
 thorn:
 	idle:
@@ -193,8 +188,6 @@ gumnut:
 		Length: 2
 		Tick: 9000
 		ZOffset: -5000
-	#name: bits/empty.png
-	#portrait: bits/empty.png
 
 freckle:
 	idle:
