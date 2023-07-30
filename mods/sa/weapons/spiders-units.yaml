@@ -35,13 +35,11 @@ spiders_heavy:
 	AfterFireSoundDelay: 20
 	Report: sounds|MISSILELAUNCH.SDF
 	Projectile: Missile
-		LockOnProbability: 100 #Homing probability
 		MinimumLaunchSpeed: 25
 		MaximumLaunchSpeed: 100
 		Speed: 350
 		Acceleration: 12
-		RangeLimit: 40c0 #Run out of fuel after covering this distance
-		ExplodeWhenEmpty: true #Explode when running out of fuel
+		RangeLimit: 40c0
 		Inaccuracy: 100
 		Image: projectiles
 		Sequences: missile

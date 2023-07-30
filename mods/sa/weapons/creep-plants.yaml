@@ -5,10 +5,8 @@ popcorn:
 	Burst: 1
 	BurstDelays: 0
 	Projectile: Missile
-		LockOnProbability: 100 #Homing probability
 		Speed: 150
-		RangeLimit: 20c0 #Run out of fuel after covering this distance
-		ExplodeWhenEmpty: true #Explode when running out of fuel
+		RangeLimit: 20c0
 		Inaccuracy: 100
 		Image: projectiles
 		Sequences: popcorn
@@ -37,7 +35,7 @@ spike:
 	ReloadDelay: 30
 	Range: 6c0
 	Projectile: Bullet
-		Speed: 450 #TODO Verify!
+		Speed: 450
 		Inaccuracy: 100
 		Image: projectiles
 		Sequences: spike
@@ -56,15 +54,13 @@ gumnut:
 	ReloadDelay: 75
 	Report: sa|bits/sounds/Missle_Launch.wav
 	Projectile: Missile
-		LockOnProbability: 100 #Homing probability
 		MinimumLaunchSpeed: 25
 		MaximumLaunchSpeed: 100
 		MinimumLaunchAngle: 1000
 		MaximumLaunchAngle: 100
 		Speed: 350
 		Acceleration: 12
-		RangeLimit: 15c0 #Run out of fuel after covering this distance
-		ExplodeWhenEmpty: true #Explode when running out of fuel
+		RangeLimit: 15c0
 		Inaccuracy: 100
 		Image: projectiles
 		Sequences: gumnutmissile
