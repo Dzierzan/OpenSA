@@ -37,7 +37,7 @@ spacefigher:
 	Projectile: LaserZap
 		Width: 0c100
 		Shape: Cylindrical
-		ZOffset: 2000
+		ZOffset: 10000
 		Color: FE0303
 	Warhead@Damage: SpreadDamage
 		Damage: 1500
