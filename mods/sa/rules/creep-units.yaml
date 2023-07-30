@@ -192,6 +192,7 @@ flying_machine:
 		HP: 25000
 	Aircraft:
 		Speed: 105
+		CruiseAltitude: 0c128
 	PeriodicDischarge@1:
 		Weapon: flying_machine_discharge
 		LocalOffset: 0,0,0
