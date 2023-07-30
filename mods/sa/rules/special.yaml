@@ -8,10 +8,6 @@
 		Speed: 200
 	RevealsShroud:
 		Range: 16c0
-	#Buildable:
-	#	Queue: Unit.Ants, Unit.Beetles, Unit.Scorpions, Unit.Spiders, Unit.Wasps
-	#	BuildDurationModifier: 100
-	#	Prerequisites: ~disabled
 	WithInfantryBody:
 		RequiresCondition: !airborne
 		DefaultAttackSequence: shoot
@@ -132,9 +128,6 @@ slapfighter:
 	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Slapfight Fighter
-	#Buildable:
-	#	BuildDuration: 75
-	#	Description: Shoots long range guided missiles.\nSuper long range unit.\nDebug.
 	Armament:
 		Name: primary
 		Weapon: slapfighter
@@ -147,9 +140,6 @@ spacefighter:
 	Inherits@3: ^Paralyzed
 	Tooltip:
 		Name: Spacefighter
-	#Buildable:
-	#	BuildDuration: 75
-	#	Description: Shoots long range laser.\nSuper long range unit.\nDebug.
 	Armament:
 		Weapon: spacefigher
 		LocalOffset: 150,450,0,   150,-450,0
@@ -219,7 +209,7 @@ defeated_productionbooster:
 		LocalCenterOffset: -280,-150,0
 	HitShape:
 		UseTargetableCellsOffsets: False
-		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0
+		TargetableOffsets: 800,-650,0,   800,200,0,   800,1024,0,   -600,-650,0,   -600,200,0,   -600,1024,0 # Y,X,Z
 		Type: Rectangle
 			TopLeft: -1156, -904
 			BottomRight: 1600, 1104
@@ -228,10 +218,10 @@ defeated_productionbooster:
 		Image: productionbooster
 	DefeatedColony:
 		SpawnsActor: productionbooster
-		BitFireDelay: 50 #Time before colony bits are launched
-		NumberOfBits: 7 #How many colony bits are launched
-		MinRange: 3 #Min range of colony bits
-		MaxRange: 7 #Max range of colony bits
+		BitFireDelay: 50
+		NumberOfBits: 7
+		MinRange: 3
+		MaxRange: 7
 		ResurrectHealth: 25
 		Weapon: green_colony_bit
 		CaptureSound: sa|bits/sounds/TurretPowerUp.wav
@@ -259,7 +249,7 @@ firepowerbooster:
 		LocalCenterOffset: -180,-300,0
 	HitShape:
 		UseTargetableCellsOffsets: False
-		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
+		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0 # Y,X,Z
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1600, 1104
@@ -294,7 +284,7 @@ defeated_firepowerbooster:
 		LocalCenterOffset: -180,-300,0
 	HitShape:
 		UseTargetableCellsOffsets: False
-		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0
+		TargetableOffsets: 1024,-650,0,   1024,200,0,   1024,1024,0,   -700,-650,0,   -700,200,0,   -700,1024,0 # Y,X,Z
 		Type: Rectangle
 			TopLeft: -1256, -904
 			BottomRight: 1600, 1104
@@ -303,10 +293,10 @@ defeated_firepowerbooster:
 		Image: firepowerbooster
 	DefeatedColony:
 		SpawnsActor: firepowerbooster
-		BitFireDelay: 50 #Time before colony bits are launched
-		NumberOfBits: 7 #How many colony bits are launched
-		MinRange: 3 #Min range of colony bits
-		MaxRange: 7 #Max range of colony bits
+		BitFireDelay: 50
+		NumberOfBits: 7
+		MinRange: 3
+		MaxRange: 7
 		ResurrectHealth: 25
 		Weapon: green_colony_bit
 		CaptureSound: sa|bits/sounds/TurretPowerUp.wav

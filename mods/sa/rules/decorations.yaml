@@ -151,8 +151,3 @@ plant_choc_chip:
 		Images: plant_choc_chip_1, plant_choc_chip_2, plant_choc_chip_3
 	EditorOnlyTooltip:
 		Name: Candyland tileset plant.
-
-#object_48:
-#Inherits: ^CoreDecoration
-#WithIdleOverlay:
-#	Sequence: close
