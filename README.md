@@ -62,8 +62,7 @@ I would love to thank:
 
 # Screenshots
 
-![](https://imgur.com/b7Tvm0d.png)
-![](https://imgur.com/iqgi2zG.png)
-![](https://imgur.com/vNBYOJj.png)
-![](https://imgur.com/tLpOrWL.png)
-![](https://imgur.com/1pp7k4f.png)
+![](https://imgur.com/Fiv7Kux.png)
+![](https://imgur.com/3MVhFSn.png)
+![](https://imgur.com/b8tsTs6.png)
+![](https://imgur.com/C6QqtJS.png)
