@@ -48,7 +48,12 @@ Author: newlocknew
 Source: https://freesound.org/people/newlocknew/sounds/520056/
 Description: Click sound.
 
-**electricity.wav**
+**gas_explosion.wav**
 Author: jeremysykes
 Source: https://freesound.org/people/jeremysykes/sounds/341666/
 Description: Tesla coil tower sound.
+
+**electricity.wav**
+Author: Godowan
+Source: https://freesound.org/people/Godowan/sounds/240462/
+Description: Gas explosion sound.

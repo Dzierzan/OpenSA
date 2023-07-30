@@ -138,6 +138,7 @@ gas:
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: gas_end
+		ImpactSounds: sa|bits/sounds/gas_explosion.wav
 		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 	Warhead@Cluster: FireCluster
 		Weapon: gas_cluster
@@ -164,6 +165,7 @@ gas_cluster:
 	Warhead@Effect: CreateEffect
 		Image: explosions
 		Explosions: gas_end
+		ImpactSounds: sa|bits/sounds/gas_explosion.wav
 		ValidTargets: Ground, Paralyzed, Water, Air, Colony
 
 freckles:
