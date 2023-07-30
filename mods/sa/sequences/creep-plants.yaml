@@ -24,8 +24,9 @@ popcorn:
 venus:
 	idle:
 		Filename: sprites|OBVENUSNORMAL.ANI
-	#scratched-idle: bits/VenusFlytrap.png
-	#	Start: 9
+	scratched-idle:
+		Filename: bits/VenusFlytrap.png
+		Start: 9
 	damaged-idle:
 		Filename: bits/VenusFlytrap.png
 		Start: 10
@@ -41,7 +42,7 @@ venus:
 		Filename: sprites|OBVENUSCLOSE.ANI
 		Length: 4
 		Tick: 100
-	damaged-shoot:
+	scratched-shoot:
 		Filename: bits/VenusFlytrap.png
 		Start: 5
 		Length: 4

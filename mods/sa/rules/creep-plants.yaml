@@ -74,16 +74,6 @@ venus:
 		HP: 30000
 	Armament:
 		Weapon: venus
-	#WithAttackAnimation@normal:
-	#	Sequence: shoot
-	#	RequiresCondition: !lightly-damaged
-	#WithAttackAnimation@scratched:
-	#	Sequence: damaged-shoot
-	#	RequiresCondition: lightly-damaged
-	#GrantConditionOnDamageState@scratched:
-	#	Condition: lightly-damaged
-	#	ValidDamageStates: Light, Medium
-	#	GrantPermanently: False
 	-WithTurretAttackAnimation:
 	-WithSpriteTurret:
 	Plant:
