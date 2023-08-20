@@ -112,7 +112,7 @@
 	MapEditorData:
 		Categories: Building
 	RevealsShroud:
-		Range: 15c0
+		Range: 18c0
 	ChangesHealth:
 		Step: 50
 		StartIfBelow: 100
