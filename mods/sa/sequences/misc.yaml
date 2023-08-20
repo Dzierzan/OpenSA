@@ -143,25 +143,25 @@ pips:
 	groups:
 		Combine:
 			0:
-				Filename: sprites|NUMBER0.ANI
-			1:
 				Filename: sprites|NUMBER1.ANI
-			2:
+			1:
 				Filename: sprites|NUMBER2.ANI
-			3:
+			2:
 				Filename: sprites|NUMBER3.ANI
-			4:
+			3:
 				Filename: sprites|NUMBER4.ANI
-			5:
+			4:
 				Filename: sprites|NUMBER5.ANI
-			6:
+			5:
 				Filename: sprites|NUMBER6.ANI
-			7:
+			6:
 				Filename: sprites|NUMBER7.ANI
-			8:
+			7:
 				Filename: sprites|NUMBER8.ANI
-			9:
+			8:
 				Filename: sprites|NUMBER9.ANI
+			9:
+				Filename: sprites|NUMBER0.ANI
 		Length: 10
 
 rallypoint:
