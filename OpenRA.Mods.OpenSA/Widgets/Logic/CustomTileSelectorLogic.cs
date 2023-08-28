@@ -126,6 +126,7 @@ namespace OpenRA.Mods.OpenSA.Widgets.Logic
 				while (scale * bounds.Width > ItemTemplate.Bounds.Width)
 					scale /= 2;
 
+				preview.SetTemplate(template);
 				preview.GetScale = () => scale;
 				preview.Bounds.Width = (int)(scale * bounds.Width);
 				preview.Bounds.Height = (int)(scale * bounds.Height);
