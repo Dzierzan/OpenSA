@@ -639,7 +639,7 @@ Actors:
 		Owner: Neutral
 		Location: 105,118
 	Actor214: ants_colony
-		Owner: Neutral
+		Owner: Creeps
 		Location: 27,37
 	Actor215: beetles_colony
 		Owner: Creeps
