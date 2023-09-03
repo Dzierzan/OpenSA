@@ -33,7 +33,7 @@ scorpions_medium:
 		BuildDuration: 500
 		Description: Long range harpoon attack.\nLong range unit.
 	RevealsShroud:
-		Range: 12c0
+		Range: 15c0
 	Armament:
 		Weapon: scorpions_medium
 		FireDelay: 4

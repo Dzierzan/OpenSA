@@ -93,7 +93,7 @@ beetles_heavy:
 		BuildDuration: 700
 		Description: Long range heavy artillery attack.\nLong range unit.
 	RevealsShroud:
-		Range: 12c0
+		Range: 14c0
 	Armament:
 		Weapon: beetles_heavy
 		LocalOffset: 500,0,0

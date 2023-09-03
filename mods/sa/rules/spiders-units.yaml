@@ -33,7 +33,7 @@ spiders_medium:
 		BuildDuration: 450
 		Description: Long range deadly sniper attack.\nLong range unit.
 	RevealsShroud:
-		Range: 12c0
+		Range: 14c0
 	Armament:
 		Weapon: spiders_medium
 		PauseOnCondition: paralyzed
@@ -54,7 +54,7 @@ spiders_heavy:
 		BuildDuration: 550
 		Description: Fires long range cruise missiles.\nLong range unit.
 	RevealsShroud:
-		Range: 12c0
+		Range: 18c0
 	Armament:
 		Weapon: spiders_heavy
 		FireDelay: 2

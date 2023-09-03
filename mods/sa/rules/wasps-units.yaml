@@ -34,7 +34,7 @@ wasps_medium:
 		BuildDuration: 350
 		Description: Shoots arrows which paralyze units.\nLong range unit.\nCannot target colonies, plants or other wasp units.
 	RevealsShroud:
-		Range: 12c0
+		Range: 15c0
 	Armament:
 		Weapon: wasps_medium
 		FireDelay: 1
