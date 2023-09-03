@@ -36,7 +36,6 @@ scorpions_heavy:
 	Range: 12c0
 	Report: sounds|STARLAUNCH.SDF
 	Projectile: Missile
-		LockOnProbability: 100 #Homing probability
 		Speed: 400
 		Inaccuracy: 500
 		Image: projectiles
